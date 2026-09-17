@@ -9,6 +9,6 @@ import { Component, input } from '@angular/core';
 export class Tab {
   label = input.required<string>();
   disabled = input(false);
-  title = input<string>();
+  title = input.required<string>();
   active = input<boolean>(false);
 }
