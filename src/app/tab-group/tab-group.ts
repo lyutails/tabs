@@ -1,4 +1,4 @@
-import { Component, computed, contentChild } from '@angular/core';
+import { Component, computed, contentChild, contentChildren, effect, QueryList } from '@angular/core';
 import { Tab } from '../tab/tab';
 
 @Component({
@@ -10,12 +10,11 @@ import { Tab } from '../tab/tab';
 export class TabGroup {
   tab = contentChild(Tab);
   toggleTab = computed(() => this.tab()?.disabled());
+  tabs = contentChildren(Tab);
 
-  getEnabledTabs() {
-    return;
-  }
-
-  activateFirstEnabledTab() {
-    return;
+  constructor() {
+    effect(() => {
+      console.log('tabs:', this.tabs());
+    });
   }
 }

@@ -10,4 +10,5 @@ export class Tab {
   label = input.required<string>();
   disabled = input(false);
   title = input<string>();
+  active = input<boolean>(false);
 }
