@@ -4,12 +4,16 @@ import { Tab } from './tab/tab';
 import { TabGroup } from './tab-group/tab-group';
 import { CommonModule } from '@angular/common';
 import { ActiveContent } from './active-content/active-content';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'tabs-root',
-  imports: [RouterOutlet, TabGroup, Tab, CommonModule, ActiveContent],
+  imports: [RouterOutlet, TabGroup, Tab, CommonModule, ActiveContent, MatIconModule],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
+  host: {
+    '[class.dark]': "theme() === 'dark'"
+  }
 })
 export class App implements OnInit {
   title = signal('tabs');
@@ -20,10 +24,14 @@ export class App implements OnInit {
   disabledSingleState = signal<boolean[]>(Array(this.tabTitles.length).fill(true));
   tabOrderName: string[] = ['first', 'second', 'third', 'fourth'];
   activeTab = signal<number>(0);
+  theme = signal<'dark' | 'light'>('light');
 
   ngOnInit() {
     this.disabledSingleState()[1] = false;
     this.activeTab.update(() => this.disabledSingleState().indexOf(true));
+    document.fonts.load('24px "Material Symbols Outlined"').then(() => {
+      document.body.classList.add('material-icons-loaded');
+    });
   }
 
   toggleAllTabs() {
@@ -45,8 +53,16 @@ export class App implements OnInit {
   }
 
   activateTab(index: number) {
-    if(this.disabledSingleState()[index] === true) {
+    if (this.disabledSingleState()[index] === true) {
       this.activeTab.set(index);
+    }
+  }
+
+  toggleTheme() {
+    if (this.theme() === 'light') {
+      this.theme.set('dark');
+    } else {
+      this.theme.set('light');
     }
   }
 }
