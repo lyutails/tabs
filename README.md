@@ -3,6 +3,9 @@
 ## Deploy: 
 [click here to see the tabs deploy](https://tabs-phi-three.vercel.app/)
 
+<img width="1264" height="794" alt="image" src="https://github.com/user-attachments/assets/d0a15a0d-b1af-4b10-bda4-7e89fbd5e4c2" />
+
+
 ## Logic / UI structure:
 https://www.figma.com/design/G2noZXD7EdPerwVG6bD5Nc/Tabs?node-id=0-1&p=f&t=TB9fJqKrRehnWJw6-0
 
