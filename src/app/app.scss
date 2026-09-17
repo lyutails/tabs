@@ -25,6 +25,10 @@ tabs-tab {
         cursor: pointer;
         background: rgba(var(--button-global-color), 0.8);
     }
+
+    &:disabled {
+        user-select: none;
+    }
 }
 
 .tab_button {
@@ -36,10 +40,15 @@ tabs-tab {
         cursor: pointer;
     }
     
-    &[disabled] {
+    &:disabled {
         background: lightgray;
         color: gray;
+        user-select: none;
     }
+}
+
+.let-title {
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 680px) {

@@ -8,7 +8,9 @@
       <input #editInput matInput [value]="tabName" [disabled]="editIndex() === i ? false : true"
     /></mat-form-field>
   }
-  <button (click)="getTabsNames()" [disabled]="tabsNames().length > 0">get tabs names</button>
+  <button (click)="getTabsNames()" [disabled]="tabsNames().length > 0" class="tabs_get-names">
+    get tabs names
+  </button>
 </div>
 <div class="tabs">
   <ng-content></ng-content>
