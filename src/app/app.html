@@ -201,6 +201,7 @@
         [style.backgroundColor]="
           i === activeTab() ? 'red' : disabledSingleState()[i] === false ? 'lightgrey' : 'pink'
         "
+        [style.pointerEvents]="disabledSingleState()[i] === false ? 'none' : 'auto'"
         [label]="tab"
         [disabled]="disabledSingleState()[i]"
         [title]="tabTitle"
@@ -221,6 +222,7 @@
           button="type"
           (click)="toggleSingleTab(i)"
           [disabled]="i === activeTab()"
+          [style.pointerEvents]="'auto'"
         >
           {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
         </button>
