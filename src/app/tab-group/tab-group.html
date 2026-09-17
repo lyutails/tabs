@@ -1,4 +1,10 @@
+<div class="tabs_group-info">
+  <p>{{ toggleTab() }}</p>
+  @for (tabName of tabsNames(); track tab) {
+    <p>{{ tabName }}</p>
+  }
+  <button (click)="getTabsNames()" [disabled]="tabsNames().length > 0">get tabs names</button>
+</div>
 <div class="tabs">
-    <p>{{ toggleTab() }}</p>
-    <ng-content></ng-content>
+  <ng-content></ng-content>
 </div>

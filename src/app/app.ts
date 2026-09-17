@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Tab } from './tab/tab';
 import { TabGroup } from './tab-group/tab-group';
 import { CommonModule } from '@angular/common';
+import { ActiveContent } from './active-content/active-content';
 
 @Component({
   selector: 'tabs-root',
-  imports: [RouterOutlet, TabGroup, Tab, CommonModule],
+  imports: [RouterOutlet, TabGroup, Tab, CommonModule, ActiveContent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

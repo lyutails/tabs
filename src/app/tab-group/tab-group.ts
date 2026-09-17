@@ -1,4 +1,4 @@
-import { Component, computed, contentChild, contentChildren, effect } from '@angular/core';
+import { Component, computed, contentChild, contentChildren, signal, OnInit } from '@angular/core';
 import { Tab } from '../tab/tab';
 
 @Component({
@@ -11,12 +11,13 @@ export class TabGroup {
   tab = contentChild(Tab);
   toggleTab = computed(() => this.tab()?.disabled());
   tabs = contentChildren(Tab);
+  tabsNames = signal<string[]>([]);
 
-  constructor() {
-    effect(() => {
-      this.tabs().forEach((tab, indes) => {
-        console.log(tab.title());
-      })
-    });
+  getTabsNames() {
+    this.tabs().forEach((tab, index) => {
+      if (tab) {
+        this.tabsNames.update((names) => [...names, tab.title()]);
+      }
+    })
   }
 }
