@@ -15,6 +15,28 @@ tabs-tab {
     width: 25%;
 }
 
+.tabs_button {
+    background: rgb(var(--button-global-color));
+    color: var(--button-tab-color);
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(var(--button-global-color), 0.8);
+    }
+}
+
+.tab_button {
+    background: var(--button-tab-color);
+    color: var(--font-secondary-color);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 680px) {
     tabs-tab {
         width: 100%;
