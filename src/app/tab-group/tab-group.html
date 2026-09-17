@@ -1,7 +1,7 @@
 <div class="tabs_group-info">
   <p>{{ toggleTab() }}</p>
   @for (tabName of tabsNames(); track tab) {
-    <p>{{ tabName }}</p>
+    <button>{{ tabName }}</button>
   }
   <button (click)="getTabsNames()" [disabled]="tabsNames().length > 0">get tabs names</button>
 </div>
