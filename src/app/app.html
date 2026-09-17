@@ -30,6 +30,16 @@
     height: 100dvh;
   }
 
+  :host(.dark) {
+    --dark-primary-color: darkblue;
+    --dark-inactive-color: #e1e1e1;
+    --dark-secondary-color: lightblue;
+
+    --primary-color: var(--dark-primary-color);
+    --inactive-color: var(--dark-inactive-color);
+    --secondary-color: var(--dark-secondary-color);
+  }
+
   h1 {
     font-size: 3.125rem;
     color: var(--gray-900);
@@ -84,6 +94,9 @@
 @let projectName = 'Tabs';
 
 <main class="main">
+  <button class="theme-button" (click)="toggleTheme()">
+    <mat-icon class="theme-icon">{{ theme() === 'light' ? 'light_mode' : 'dark_mode' }}</mat-icon>
+  </button>
   <h1 class="let-title">{{ projectName }}</h1>
   <tabs-tab-group>
     @for (tabTitle of tabTitles; track i; let i = $index) {

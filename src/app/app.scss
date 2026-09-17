@@ -51,6 +51,15 @@ tabs-tab {
     margin-bottom: 50px;
 }
 
+.theme-button {
+    margin-left: auto;
+    background-color: transparent;
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 680px) {
     tabs-tab {
         width: 100%;
