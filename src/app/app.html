@@ -4,7 +4,7 @@
     --secondary-color: #ffa7b7;
     --inactive-color: #e1e1e1;
     --button-tab-color: #ffffff;
-    --button-tabname-color: #41e6d3;
+    --button-tabname-color: 65, 230, 211;
     --button-global-color: 81, 78, 140;
     --font-primary-color: #ffffff;
     --font-secondary-color: #000000;
@@ -81,7 +81,10 @@
   }
 </style>
 
+@let projectName = 'Tabs';
+
 <main class="main">
+  <h1 class="let-title">{{ projectName }}</h1>
   <tabs-tab-group>
     @for (tabTitle of tabTitles; track i; let i = $index) {
       <tabs-tab
