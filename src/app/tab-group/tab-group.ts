@@ -14,7 +14,9 @@ export class TabGroup {
 
   constructor() {
     effect(() => {
-      console.log('tabs:', this.tabs());
+      this.tabs().forEach((tab, indes) => {
+        console.log(tab.title());
+      })
     });
   }
 }

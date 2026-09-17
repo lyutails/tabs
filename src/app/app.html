@@ -209,7 +209,8 @@
         } @else {
           <p>this is my {{ tabOrderName[i] }} tab</p>
         }
-        <button class="tab_button" button="type" (click)="toggleSingleTab(i)">
+        <button class="tab_button" button="type" (click)="toggleSingleTab(i)"
+          [disabled]="i === activeTab()">
           {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
         </button>
       </tabs-tab>

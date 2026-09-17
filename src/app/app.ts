@@ -37,6 +37,7 @@ export class App implements OnInit {
   }
 
   toggleSingleTab(index: number) {
+    event?.stopPropagation();
     this.disabledSingleState.update((states) =>
       states.map((state, i) => i === index ? !state : state))
   }
