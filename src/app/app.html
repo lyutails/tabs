@@ -1,13 +1,14 @@
 <style>
   :host {
-    --primary-color: #FFA7B7;
-    --secondary-color: #F1C823;
+    --primary-color: #d12646;
+    --secondary-color: #ffa7b7;
     --inactive-color: #e1e1e1;
-    --button-tab-color: #41E6D3;
-    --button-global-color: #514E8C;
-    --font-primary-color: #000000;
-    --font-secondary-color: #ffffff;
-    --font-enabled-tab-color: #514E8C;
+    --button-tab-color: #ffffff;
+    --button-tabname-color: #41e6d3;
+    --button-global-color: 81, 78, 140;
+    --font-primary-color: #ffffff;
+    --font-secondary-color: #000000;
+    --font-enabled-tab-color: #514e8c;
     --font-disabled-tab-color: gray;
 
     font-family:
@@ -134,7 +135,9 @@
       <p>here projected content of the active tab goes</p>
     </tabs-active-content>
   </ng-container>
-  <button (click)="toggleAllTabs()" type="button" class="tabs_button">{{ buttonName }}</button>
+  <button (click)="toggleAllTabs()" type="button" class="tabs_button">
+    {{ buttonName }}
+  </button>
 </main>
 
 <router-outlet />
