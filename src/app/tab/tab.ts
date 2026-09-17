@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, model } from '@angular/core';
 
 @Component({
   imports: [],
@@ -9,6 +9,6 @@ import { Component, input } from '@angular/core';
 export class Tab {
   label = input.required<string>();
   disabled = input(false);
-  title = input.required<string>();
+  title = model.required<string>();
   active = input<boolean>(false);
 }

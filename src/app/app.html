@@ -123,7 +123,7 @@
           button="type"
           (click)="toggleSingleTab(i)"
           [disabled]="i === activeTab()"
-          [style.pointerEvents]="'auto'"
+          [style.pointerEvents]="i === activeTab() ? 'none' : 'auto'"
         >
           {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
         </button>

@@ -35,6 +35,11 @@ tabs-tab {
     &:hover {
         cursor: pointer;
     }
+    
+    &[disabled] {
+        background: lightgray;
+        color: gray;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 680px) {
