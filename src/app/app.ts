@@ -2,10 +2,11 @@ import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Tab } from './tab/tab';
 import { TabGroup } from './tab-group/tab-group';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'tabs-root',
-  imports: [RouterOutlet, TabGroup, Tab],
+  imports: [RouterOutlet, TabGroup, Tab, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

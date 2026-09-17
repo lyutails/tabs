@@ -198,19 +198,30 @@
     @for (tabTitle of tabTitles; track i; let i = $index) {
       <tabs-tab
         (click)="activateTab(i)"
-        [style.backgroundColor]="i === activeTab() ? 'red' :
-        disabledSingleState()[i] === false ? 'lightgrey' : 'pink'"
+        [style.backgroundColor]="
+          i === activeTab() ? 'red' : disabledSingleState()[i] === false ? 'lightgrey' : 'pink'
+        "
         [label]="tab"
         [disabled]="disabledSingleState()[i]"
         [title]="tabTitle"
         [active]="i === activeTab()"
       >
+        <ng-container *ngIf="i === activeTab(); else templateA"
+          ><p>i'm active and full of life {{ tabOrderName[i] }} tab and in ng-container</p></ng-container
+        >
+        <ng-template #templateA>
+          <p>{{ tabOrderName[i] }}</p>
+        </ng-template>
         @if (disabledSingleState()[i] === false) {
         } @else {
           <p>this is my {{ tabOrderName[i] }} tab</p>
         }
-        <button class="tab_button" button="type" (click)="toggleSingleTab(i)"
-          [disabled]="i === activeTab()">
+        <button
+          class="tab_button"
+          button="type"
+          (click)="toggleSingleTab(i)"
+          [disabled]="i === activeTab()"
+        >
           {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
         </button>
       </tabs-tab>

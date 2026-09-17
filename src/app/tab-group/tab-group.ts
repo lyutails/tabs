@@ -1,4 +1,4 @@
-import { Component, computed, contentChild, contentChildren, effect, QueryList } from '@angular/core';
+import { Component, computed, contentChild, contentChildren, effect } from '@angular/core';
 import { Tab } from '../tab/tab';
 
 @Component({
