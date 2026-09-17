@@ -4,7 +4,7 @@
     <button (click)="clickEdit($event, i, editInput)" [attr.aria-label]="'Edit icon'">
       <mat-icon>{{ editIndex() === i ? 'edit_off' : 'edit' }}</mat-icon>
     </button>
-    <mat-form-field>
+    <mat-form-field subscriptSizing="dynamic">
       <input #editInput matInput [value]="tabName" [disabled]="editIndex() === i ? false : true"
     /></mat-form-field>
   }
