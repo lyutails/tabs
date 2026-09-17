@@ -54,6 +54,8 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+Logic / UI structure:
+https://www.figma.com/design/G2noZXD7EdPerwVG6bD5Nc/Tabs?node-id=0-1&p=f&t=TB9fJqKrRehnWJw6-0
+<img width="1000" height="1600" alt="logic components structure" src="https://github.com/user-attachments/assets/8a604847-99bd-4998-8e92-77a285d3ad0b" />
+<img width="1200" height="955" alt="UI structure" src="https://github.com/user-attachments/assets/8df5460c-aff0-40e5-b0e5-1a5bf3bfa965" />
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
