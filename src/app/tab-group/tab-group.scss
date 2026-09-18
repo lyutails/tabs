@@ -12,6 +12,7 @@
 }
 
 .tabs_get-names {
+    margin: 20px 0 20px 0;
     background: rgb(var(--button-tabname-color));
     transition: all 0.3s ease-in-out;
 
@@ -28,12 +29,13 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 680px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .tabs {
-        flex-direction: column;
+        flex-wrap: wrap;
 
         &_group-info {
             flex-direction: column;
+            height: 100%;
         }
     }
 }
