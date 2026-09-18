@@ -101,6 +101,7 @@
   <tabs-tab-group>
     @for (tabTitle of tabTitles; track i; let i = $index) {
       <tabs-tab
+        class="tabs_tab"
         (click)="activateTab(i)"
         [style.backgroundColor]="
           i === activeTab()
@@ -148,7 +149,7 @@
   </tabs-tab-group>
   <ng-container>
     <tabs-active-content>
-      <p>here projected content of the active tab goes</p>
+      <p>here projected content of the {{ tabOrderName[activeTab()] }} active tab goes</p>
     </tabs-active-content>
   </ng-container>
   <button (click)="toggleAllTabs()" type="button" class="tabs_button">
