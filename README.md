@@ -9,7 +9,7 @@
 
 https://www.figma.com/design/G2noZXD7EdPerwVG6bD5Nc/Tabs?node-id=0-1&p=f&t=TB9fJqKrRehnWJw6-0
 
-<img width="1083" height="1102" alt="logic components structure" src="https://github.com/user-attachments/assets/0efa21e4-69c8-4b7c-8f54-1b052b3f5cb0" />
+<img width="542" height="551" alt="logic components structure" src="https://github.com/user-attachments/assets/0efa21e4-69c8-4b7c-8f54-1b052b3f5cb0" />
 
 ## UI Structure / Concept:
 
