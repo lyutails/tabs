@@ -1,3 +1,5 @@
+@use '../mixins' as mixins;
+
 main {
     display: flex;
     flex-direction: column;
@@ -15,11 +17,27 @@ tabs-tab {
     width: 25%;
 }
 
+.tabs {
+    &_tab {
+        border-radius: 5px 5px 0 0;
+    }
+
+    &_reset-names {
+        background-color: lightblue;
+        @include mixins.transition;
+
+        &:hover {
+            background-color: lightpink;
+            cursor: pointer;
+        }
+    }
+}
+
 .tabs_button {
     background: rgb(var(--button-global-color));
     color: var(--button-tab-color);
     margin: 20px;
-    transition: all 0.3s ease-in-out;
+    @include mixins.transition;
 
     &:hover {
         cursor: pointer;
@@ -34,7 +52,7 @@ tabs-tab {
 .tab_button {
     background: var(--button-tab-color);
     color: var(--font-secondary-color);
-    transition: all 0.3s ease-in-out;
+    @include mixins.transition;
 
     &:hover {
         cursor: pointer;
@@ -49,6 +67,10 @@ tabs-tab {
 
 .let-title {
     margin-bottom: 50px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .theme-button {
