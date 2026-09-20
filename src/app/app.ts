@@ -20,7 +20,7 @@ import { Reset } from './reset/reset';
 })
 export class App implements OnInit {
   title = signal('tabs');
-  tab = 'new tab';
+  tab = 'initial tab';
   tabTitles: string[] = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4'];
   disabledAllState = signal<boolean>(false);
   buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
@@ -79,5 +79,12 @@ export class App implements OnInit {
   setDefaultTabTitlesSize(): void {
     this.defaultTabsTitleSize.update((sizes) =>
       sizes.map((size) => size = 25));
+  }
+
+  addTab(): void {
+    if (this.tabTitles.length === 4) {
+      this.tabTitles.push('Tab 5');
+      this.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
+    }
   }
 }
