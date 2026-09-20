@@ -29,6 +29,8 @@ export class App implements OnInit {
   activeTab = signal<number>(0);
   theme = signal<'dark' | 'light'>('light');
   resetButtonName = signal<string>('');
+  defaultTabsTitleSize = signal<number[]>(Array(this.tabTitles.length).fill(25));
+  setSizeButtonName = 'Set default titles size';
 
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
@@ -72,5 +74,10 @@ export class App implements OnInit {
 
   getResetButtonName(value: string): void {
     this.resetButtonName.set(value);
+  }
+
+  setDefaultTabTitlesSize(): void {
+    this.defaultTabsTitleSize.update((sizes) =>
+      sizes.map((size) => size = 25));
   }
 }
