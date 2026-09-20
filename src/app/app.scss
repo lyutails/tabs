@@ -22,7 +22,7 @@ tabs-tab {
         border-radius: 5px 5px 0 0;
     }
 
-    &_reset-names, &_set-size {
+    &_reset-names, &_set-size, &_add-tab {
         background-color: lightblue;
         @include mixins.transition;
 

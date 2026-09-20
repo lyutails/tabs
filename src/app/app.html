@@ -118,7 +118,7 @@
               : 'var(--font-enabled-tab-color)'
         "
         [style.pointerEvents]="disabledSingleState()[i] === false ? 'none' : 'auto'"
-        [label]="tab"
+        [label]="i === 4 ? 'new tab' : tab"
         [disabled]="disabledSingleState()[i]"
         [title]="tabTitle"
         [active]="i === activeTab()"
@@ -171,7 +171,12 @@
         class="tabs_set-size"
         (click)="setDefaultTabTitlesSize()"
       >
-        {{ setSizeButtonName | uppercase}}
+        {{ setSizeButtonName | uppercase }}
+      </button>
+      @let buttonAddTabName = 'Add tab';
+      <button (click)="addTab()" aria-label="Add tab" class="tabs_add-tab"
+      [disabled]="tabTitles.length > 4">
+        {{ buttonAddTabName | uppercase }}
       </button>
     </div>
   </ng-template>
