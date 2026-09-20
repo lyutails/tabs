@@ -97,8 +97,8 @@
   <button class="theme-button" (click)="toggleTheme()">
     <mat-icon class="theme-icon">{{ theme() === 'light' ? 'light_mode' : 'dark_mode' }}</mat-icon>
   </button>
-  <h1 class="let-title">{{ projectName }}</h1>
-  <tabs-tab-group>
+  <h1 class="let-title" tabsTitleHighlight>{{ projectName | uppercase}}</h1>
+  <tabs-tab-group (resetName)="getResetButtonName($event)">
     @for (tabTitle of tabTitles; track i; let i = $index) {
       <tabs-tab
         class="tabs_tab"
@@ -155,6 +155,12 @@
   <button (click)="toggleAllTabs()" type="button" class="tabs_button">
     {{ buttonName }}
   </button>
+  <ng-container *ngTemplateOutlet="templateTab"></ng-container>
+  <ng-template #templateTab>
+    @let buttonName = resetButtonName();
+    <button tabs-reset [buttonName]="buttonName" aria-label="Reset tabs names"
+    class="tabs_reset-names"></button>
+  </ng-template>
 </main>
 
 <router-outlet />

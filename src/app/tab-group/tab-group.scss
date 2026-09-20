@@ -1,7 +1,10 @@
+@use '../../mixins' as mixins;
+
 .tabs {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5px;
 
     &_group-info {
         display: flex;
@@ -14,7 +17,7 @@
 .tabs_get-names {
     margin: 20px 0 20px 0;
     background: rgb(var(--button-tabname-color));
-    transition: all 0.3s ease-in-out;
+    @include mixins.transition;
 
     &:hover {
         cursor: pointer;

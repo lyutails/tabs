@@ -1,4 +1,4 @@
-import { Component, computed, contentChild, contentChildren, signal, OnInit } from '@angular/core';
+import { Component, computed, contentChild, contentChildren, signal, OnInit, output } from '@angular/core';
 import { Tab } from '../tab/tab';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -17,8 +17,13 @@ export class TabGroup {
   tabs = contentChildren(Tab);
   tabsNames = signal<string[]>([]);
   editIndex = signal<number | null>(null);
+  resetName = output<string>();
 
-  getTabsNames() {
+  ngOnInit() {
+    this.setResetButtonName();
+  }
+
+  getTabsNames(): void {
     this.tabs().forEach((tab) => {
       if (tab) {
         this.tabsNames.update((names) => [...names, tab.title()]);
@@ -26,11 +31,15 @@ export class TabGroup {
     })
   }
 
-  clickEdit(event: MouseEvent, index: number, input: HTMLInputElement) {
+  clickEdit(event: MouseEvent, index: number, input: HTMLInputElement): void {
     this.editIndex.update((currentIndex) => {
       return currentIndex === index ? null : index
     })
     this.tabs()[index].title.set(input.value);
     event.stopPropagation();
+  }
+
+  setResetButtonName(): void {
+    this.resetName.emit('Reset names');
   }
 }

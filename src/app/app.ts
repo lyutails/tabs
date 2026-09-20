@@ -1,14 +1,17 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit, signal, SimpleChanges } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Tab } from './tab/tab';
 import { TabGroup } from './tab-group/tab-group';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgTemplateOutlet, UpperCasePipe } from '@angular/common';
 import { ActiveContent } from './active-content/active-content';
 import { MatIconModule } from '@angular/material/icon';
+import { TitleHighlight } from './directives/title-highlight/title-highlight';
+import { Reset } from './reset/reset';
 
 @Component({
   selector: 'tabs-root',
-  imports: [RouterOutlet, TabGroup, Tab, CommonModule, ActiveContent, MatIconModule],
+  imports: [RouterOutlet, TabGroup, Tab, CommonModule, ActiveContent, MatIconModule,
+    NgTemplateOutlet, TitleHighlight, Reset, UpperCasePipe],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   host: {
@@ -25,8 +28,9 @@ export class App implements OnInit {
   tabOrderName: string[] = ['first', 'second', 'third', 'fourth'];
   activeTab = signal<number>(0);
   theme = signal<'dark' | 'light'>('light');
+  resetButtonName = signal<string>('');
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.disabledSingleState()[1] = false;
     this.activeTab.update(() => this.disabledSingleState().indexOf(true));
     document.fonts.load('24px "Material Symbols Outlined"').then(() => {
@@ -34,7 +38,7 @@ export class App implements OnInit {
     });
   }
 
-  toggleAllTabs() {
+  toggleAllTabs(): void {
     if (this.disabledAllState() === true) {
       this.disabledAllState.set(false);
       this.buttonName = 'deactivate enabled';
@@ -46,23 +50,27 @@ export class App implements OnInit {
     }
   }
 
-  toggleSingleTab(index: number) {
+  toggleSingleTab(index: number): void {
     event?.stopPropagation();
     this.disabledSingleState.update((states) =>
       states.map((state, i) => i === index ? !state : state))
   }
 
-  activateTab(index: number) {
+  activateTab(index: number): void {
     if (this.disabledSingleState()[index] === true) {
       this.activeTab.set(index);
     }
   }
 
-  toggleTheme() {
+  toggleTheme(): void {
     if (this.theme() === 'light') {
       this.theme.set('dark');
     } else {
       this.theme.set('light');
     }
+  }
+
+  getResetButtonName(value: string): void {
+    this.resetButtonName.set(value);
   }
 }
