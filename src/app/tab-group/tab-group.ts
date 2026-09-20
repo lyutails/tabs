@@ -1,4 +1,4 @@
-import { Component, computed, contentChild, contentChildren, signal, OnInit, output } from '@angular/core';
+import { Component, computed, contentChild, contentChildren, signal, OnInit, output, model } from '@angular/core';
 import { Tab } from '../tab/tab';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';

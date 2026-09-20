@@ -11,4 +11,17 @@ export class Tab {
   disabled = input(false);
   title = model.required<string>();
   active = input<boolean>(false);
+  sizeTitle = model(20);
+
+  increaseSize() {
+    this.sizeTitle.update((previousSize) => previousSize + 1);
+    event?.stopPropagation();
+  }
+
+  decreaseSize() {
+    if (this.sizeTitle() > 10) {
+      this.sizeTitle.update((previousSize) => previousSize - 1);
+    }
+    event?.stopPropagation();
+  }
 }

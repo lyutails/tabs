@@ -1,5 +1,10 @@
 <div class="tab">
-  <h2>{{ title() }}</h2>
+  <h2 [style.font-size.px]="sizeTitle()">{{ title() }}</h2>
+  <div class="tab_size-buttons">
+    <button aria-label="Increase title size" (click)="increaseSize()">+</button>
+    <span>{{ sizeTitle() }}</span>
+    <button aria-label="Decrease title size" (click)="decreaseSize()">-</button>
+  </div>
   <h2>{{ label() }}</h2>
   <p>
     {{ active() ? 'I am active' : disabled() === false ? 'I am disabled' : 'I am enabled' }}

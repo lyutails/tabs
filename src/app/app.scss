@@ -22,7 +22,7 @@ tabs-tab {
         border-radius: 5px 5px 0 0;
     }
 
-    &_reset-names {
+    &_reset-names, &_set-size {
         background-color: lightblue;
         @include mixins.transition;
 
@@ -30,6 +30,11 @@ tabs-tab {
             background-color: lightpink;
             cursor: pointer;
         }
+    }
+
+    &_titles-buttons {
+        display: flex;
+        gap: 50px;
     }
 }
 
