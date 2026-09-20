@@ -85,6 +85,8 @@ export class App implements OnInit {
     if (this.tabTitles.length === 4) {
       this.tabTitles.push('Tab 5');
       this.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
+      this.disabledSingleState.update((states) => [...states, true]);
+      this.tabOrderName.push('fifth');
     }
   }
 }
