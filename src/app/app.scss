@@ -36,6 +36,10 @@ tabs-tab {
         display: flex;
         gap: 50px;
     }
+
+    &_text {
+        text-align: center;
+    }
 }
 
 .tabs_button {
