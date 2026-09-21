@@ -12,6 +12,10 @@ describe('Tab', () => {
 
     fixture = TestBed.createComponent(Tab);
     component = fixture.componentInstance;
+
+    fixture.componentRef.setInput('title', 'Test title');
+    fixture.componentRef.setInput('label', 'Test label');
+
     await fixture.whenStable();
   });
 

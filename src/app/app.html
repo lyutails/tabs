@@ -33,7 +33,7 @@
   :host(.dark) {
     --dark-primary-color: darkblue;
     --dark-inactive-color: #e1e1e1;
-    --dark-secondary-color: lightblue;
+    --dark-secondary-color: #add8e6;
 
     --primary-color: var(--dark-primary-color);
     --inactive-color: var(--dark-inactive-color);
@@ -74,20 +74,6 @@
     align-items: center;
     box-sizing: inherit;
     position: relative;
-  }
-
-  @media screen and (max-width: 650px) {
-    .content {
-      flex-direction: column;
-      width: max-content;
-    }
-
-    .divider {
-      height: 1px;
-      width: 100%;
-      background: var(--red-to-pink-to-purple-horizontal-gradient);
-      margin-block: 1.5rem;
-    }
   }
 </style>
 
