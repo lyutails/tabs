@@ -33,6 +33,7 @@ export class App implements OnInit {
   setSizeButtonName = 'Set default titles size';
   tabGroup = viewChild(TabGroup);
   addTabState = signal<boolean>(true);
+  tabTextarea = signal<string[]>(Array(this.tabTitles.length).fill(''));
 
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
@@ -89,6 +90,7 @@ export class App implements OnInit {
       this.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
       this.disabledSingleState.update((states) => [...states, true]);
       this.tabOrderName.push('fifth');
+      this.tabTextarea.update((texts) => [...texts, ''])
       this.addTabState.set(false);
     } else {
       {
@@ -102,9 +104,22 @@ export class App implements OnInit {
           return states;
         });
         this.tabOrderName.pop();
+        this.tabTextarea.update((texts) => texts.slice(0, -1))
         this.addTabState.set(true);
       }
     }
+  }
+
+  updateTabTextarea(event: Event): void {
+    const textarea = event.target as HTMLTextAreaElement;
+    const index = this.activeTab();
+
+    this.tabTextarea.update((texts) => {
+      const newTexts = [...texts];
+      newTexts[index] = textarea.value;
+
+      return newTexts;
+    })
   }
 
   resetNames() {

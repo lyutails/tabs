@@ -6,4 +6,10 @@
         color: var(--font-primary-color);
         border-radius: 0 0 5px 5px;
     }
+
+    &_text {
+        margin: 0;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
 }

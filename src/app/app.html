@@ -150,7 +150,9 @@
   </tabs-tab-group>
   <ng-container>
     <tabs-active-content>
-      <p>here projected content of the {{ tabOrderName[activeTab()] }} active tab goes</p>
+      <p class="tabs_textarea-name">here projected content of the {{ tabOrderName[activeTab()] }} active tab goes</p>
+      <textarea class="tabs_textarea" [value]="tabTextarea()[activeTab()]"
+      (input)="updateTabTextarea($event)"></textarea>
     </tabs-active-content>
   </ng-container>
   <button (click)="toggleAllTabs()" type="button" class="tabs_button">
