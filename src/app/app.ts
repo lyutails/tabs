@@ -32,6 +32,7 @@ export class App implements OnInit {
   defaultTabsTitleSize = signal<number[]>(Array(this.tabTitles.length).fill(25));
   setSizeButtonName = 'Set default titles size';
   tabGroup = viewChild(TabGroup);
+  addTabState = signal<boolean>(true);
 
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
@@ -82,12 +83,27 @@ export class App implements OnInit {
       sizes.map((size) => size = 25));
   }
 
-  addTab(): void {
+  addDeleteTab(): void {
     if (this.tabTitles.length === 4) {
       this.tabTitles.push('Tab 5');
       this.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
       this.disabledSingleState.update((states) => [...states, true]);
       this.tabOrderName.push('fifth');
+      this.addTabState.set(false);
+    } else {
+      {
+        this.tabTitles.pop();
+        this.defaultTabsTitleSize.update((sizes) => {
+          sizes.pop();
+          return sizes;
+        });
+        this.disabledSingleState.update((states) => {
+          states.pop();
+          return states;
+        });
+        this.tabOrderName.pop();
+        this.addTabState.set(true);
+      }
     }
   }
 

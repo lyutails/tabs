@@ -1,5 +1,4 @@
 <div class="tabs_group-info">
-  <p>{{ toggleTab() }}</p>
   @for (tab of tabs(); track i; let i = $index) {
     <button (click)="clickEdit($event, i, editInput)" [attr.aria-label]="'Edit icon'">
       <mat-icon>{{ editIndex() === i ? 'edit_off' : 'edit' }}</mat-icon>
