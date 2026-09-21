@@ -3,7 +3,7 @@
 ## Deploy: 
 [click here to see the tabs deploy](https://tabs-phi-three.vercel.app/)
 
-<img width="614" height="469" alt="site" src="https://github.com/user-attachments/assets/2e0a34d2-e8cf-4e44-a0b6-4f81a9606869" />
+<img width="606" height="483" alt="tabs" src="https://github.com/user-attachments/assets/18f1e2a4-0641-4819-9439-c834ea8a065d" />
 
 ## Logic:
 
