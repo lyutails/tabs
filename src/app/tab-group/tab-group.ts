@@ -15,20 +15,11 @@ export class TabGroup {
   tab = contentChild(Tab);
   toggleTab = computed(() => this.tab()?.disabled());
   tabs = contentChildren(Tab);
-  tabsNames = signal<string[]>([]);
   editIndex = signal<number | null>(null);
   resetName = output<string>();
 
   ngOnInit() {
     this.setResetButtonName();
-  }
-
-  getTabsNames(): void {
-    this.tabs().forEach((tab) => {
-      if (tab) {
-        this.tabsNames.update((names) => [...names, tab.title()]);
-      }
-    })
   }
 
   clickEdit(event: MouseEvent, index: number, input: HTMLInputElement): void {
@@ -41,5 +32,11 @@ export class TabGroup {
 
   setResetButtonName(): void {
     this.resetName.emit('Reset names');
+  }
+
+  resetNames(): void {
+    this.tabs().forEach((tab, i) => {
+      tab.title.set('Tab ' + (i + 1));
+    });
   }
 }

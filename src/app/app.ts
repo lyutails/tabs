@@ -1,4 +1,4 @@
-import { Component, OnInit, signal, SimpleChanges } from '@angular/core';
+import { Component, OnInit, signal, SimpleChanges, viewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Tab } from './tab/tab';
 import { TabGroup } from './tab-group/tab-group';
@@ -31,6 +31,7 @@ export class App implements OnInit {
   resetButtonName = signal<string>('');
   defaultTabsTitleSize = signal<number[]>(Array(this.tabTitles.length).fill(25));
   setSizeButtonName = 'Set default titles size';
+  tabGroup = viewChild(TabGroup);
 
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
@@ -88,5 +89,9 @@ export class App implements OnInit {
       this.disabledSingleState.update((states) => [...states, true]);
       this.tabOrderName.push('fifth');
     }
+  }
+
+  resetNames() {
+    this.tabGroup()?.resetNames()
   }
 }

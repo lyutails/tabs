@@ -125,7 +125,7 @@
         [(sizeTitle)]="defaultTabsTitleSize()[i]"
       >
         <ng-container *ngIf="i === activeTab(); else templateA"
-          ><p>
+          ><p class="tabs_text">
             i'm active and full of life {{ tabOrderName[i] }} tab and in ng-container
           </p></ng-container
         >
@@ -165,6 +165,7 @@
         [buttonName]="buttonName"
         aria-label="Reset tabs names"
         class="tabs_reset-names"
+        (click)="resetNames()"
       ></button>
       <button
         aria-label="Set titles size"

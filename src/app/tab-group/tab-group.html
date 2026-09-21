@@ -1,16 +1,13 @@
 <div class="tabs_group-info">
   <p>{{ toggleTab() }}</p>
-  @for (tabName of tabsNames(); track i; let i = $index) {
+  @for (tab of tabs(); track i; let i = $index) {
     <button (click)="clickEdit($event, i, editInput)" [attr.aria-label]="'Edit icon'">
       <mat-icon>{{ editIndex() === i ? 'edit_off' : 'edit' }}</mat-icon>
     </button>
     <mat-form-field subscriptSizing="dynamic">
-      <input #editInput matInput [value]="tabName" [disabled]="editIndex() === i ? false : true"
+      <input #editInput matInput [value]="tab.title()" [disabled]="editIndex() === i ? false : true"
     /></mat-form-field>
   }
-  <button (click)="getTabsNames()" [disabled]="tabsNames().length > 0" class="tabs_get-names">
-    change tabs names
-  </button>
 </div>
 <div class="tabs">
   <ng-content></ng-content>
