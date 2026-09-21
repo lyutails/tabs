@@ -38,7 +38,7 @@ export class App implements OnInit {
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
     this.activeTab.update(() => this.disabledSingleState().indexOf(true));
-    document.fonts.load('24px "Material Symbols Outlined"').then(() => {
+    document.fonts?.load('24px "Material Symbols Outlined"').then(() => {
       document.body.classList.add('material-icons-loaded');
     });
   }
