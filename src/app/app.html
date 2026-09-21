@@ -174,9 +174,8 @@
       >
         {{ setSizeButtonName | uppercase }}
       </button>
-      @let buttonAddTabName = 'Add tab';
-      <button (click)="addTab()" aria-label="Add tab" class="tabs_add-tab"
-      [disabled]="tabTitles.length > 4">
+      @let buttonAddTabName = addTabState() === true ? 'Add tab' : 'Delete tab';
+      <button (click)="addDeleteTab()" aria-label="Add tab" class="tabs_add-tab">
         {{ buttonAddTabName | uppercase }}
       </button>
     </div>

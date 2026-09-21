@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class TabGroup {
   tab = contentChild(Tab);
-  toggleTab = computed(() => this.tab()?.disabled());
   tabs = contentChildren(Tab);
   editIndex = signal<number | null>(null);
   resetName = output<string>();
