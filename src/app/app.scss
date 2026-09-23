@@ -17,6 +17,10 @@ tabs-tab {
     width: 25%;
 }
 
+body:not(.material-icons-loaded) .mat-icon {
+    visibility: hidden;
+}
+
 .tabs {
     &_tab {
         border-radius: 5px 5px 0 0;

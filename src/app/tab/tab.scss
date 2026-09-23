@@ -17,6 +17,25 @@
     }
 }
 
+:host(.tab_background-color) {
+    animation-name: tab_background_anim;
+    animation-duration: 2s;
+}
+
 .active {
     background-color: green;
+}
+
+@keyframes tab_background_anim {
+    0% {
+        background-color: violet;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: violet;
+    }
 }
