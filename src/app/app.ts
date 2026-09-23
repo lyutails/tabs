@@ -16,30 +16,33 @@ import { Reset } from './reset/reset';
   styleUrl: './app.scss',
   host: {
     '[class.dark]': "theme() === 'dark'"
-  }
+  },
 })
 export class App implements OnInit {
-  title = signal('tabs');
-  tab = 'initial tab';
-  tabTitles: string[] = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4'];
-  disabledAllState = signal<boolean>(false);
-  buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
-  disabledSingleState = signal<boolean[]>(Array(this.tabTitles.length).fill(true));
-  tabOrderName: string[] = ['first', 'second', 'third', 'fourth'];
-  activeTab = signal<number>(0);
-  theme = signal<'dark' | 'light'>('light');
-  resetButtonName = signal<string>('');
-  defaultTabsTitleSize = signal<number[]>(Array(this.tabTitles.length).fill(25));
-  setSizeButtonName = 'Set default titles size';
-  tabGroup = viewChild(TabGroup);
-  addTabState = signal<boolean>(true);
-  tabTextarea = signal<string[]>(Array(this.tabTitles.length).fill(''));
+  protected title = signal('tabs');
+  protected tab = 'initial tab';
+  protected tabTitles: string[] = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4'];
+  protected disabledAllState = signal<boolean>(false);
+  protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
+  protected disabledSingleState = signal<boolean[]>(Array(this.tabTitles.length).fill(true));
+  protected tabOrderName: string[] = ['first', 'second', 'third', 'fourth'];
+  protected activeTab = signal<number>(0);
+  protected theme = signal<'dark' | 'light'>('light');
+  protected resetButtonName = signal<string>('');
+  protected defaultTabsTitleSize = signal<number[]>(Array(this.tabTitles.length).fill(25));
+  protected setSizeButtonName = 'Set default titles size';
+  protected tabGroup = viewChild(TabGroup);
+  protected addTabState = signal<boolean>(true);
+  protected tabTextarea = signal<string[]>(Array(this.tabTitles.length).fill(''));
 
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
     this.activeTab.update(() => this.disabledSingleState().indexOf(true));
-    document.fonts?.load('24px "Material Symbols Outlined"').then(() => {
+    document.fonts?.load('24px "Material Icons"').then(() => {
       document.body.classList.add('material-icons-loaded');
+    });
+    document.fonts?.load('24px "Material Symbols Outlined"').then(() => {
+      document.body.classList.add('material-symbols-loaded');
     });
   }
 
@@ -122,7 +125,8 @@ export class App implements OnInit {
     })
   }
 
-  resetNames() {
+  resetNames(): void {
     this.tabGroup()?.resetNames()
   }
 }
+

@@ -13,11 +13,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './tab-group.html',
 })
 export class TabGroup implements OnInit {
-  tab = contentChild(Tab, { read: ElementRef });
-  tabs = contentChildren(Tab);
-  editIndex = signal<number | null>(null);
-  resetName = output<string>();
-  snackBar = inject(MatSnackBar);
+  protected tab = contentChild(Tab, { read: ElementRef });
+  protected tabs = contentChildren(Tab);
+  protected editIndex = signal<number | null>(null);
+  protected resetName = output<string>();
+  protected snackBar = inject(MatSnackBar);
 
   ngOnInit() {
     this.setResetButtonName();
