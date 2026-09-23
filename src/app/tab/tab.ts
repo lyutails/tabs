@@ -5,6 +5,9 @@ import { Component, input, model } from '@angular/core';
   selector: 'tabs-tab',
   styleUrl: './tab.scss',
   templateUrl: './tab.html',
+  host: {
+    '[class.tab_background-color]': 'sizeTitle() % 10 === 0',
+  }
 })
 export class Tab {
   label = input.required<string>();

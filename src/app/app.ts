@@ -1,4 +1,4 @@
-import { Component, OnInit, signal, SimpleChanges, viewChild } from '@angular/core';
+import { Component, OnInit, signal, viewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Tab } from './tab/tab';
 import { TabGroup } from './tab-group/tab-group';

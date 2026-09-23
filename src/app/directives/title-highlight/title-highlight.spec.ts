@@ -27,8 +27,6 @@ describe('TitleHighlight', () => {
   });
 
   it('should use the specified color on mouse enter', async () => {
-    const title = fixture.nativeElement.querySelector('h1');
-
     debug.triggerEventHandler('mouseenter', null);
     fixture.detectChanges();
 

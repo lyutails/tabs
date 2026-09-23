@@ -4,7 +4,11 @@
       <mat-icon>{{ editIndex() === i ? 'edit_off' : 'edit' }}</mat-icon>
     </button>
     <mat-form-field subscriptSizing="dynamic">
-      <input #editInput matInput [value]="tab.title()" [disabled]="editIndex() === i ? false : true"
+      <input
+        #editInput
+        matInput
+        [value]="tab.title()"
+        [disabled]="editIndex() === i ? false : true"
     /></mat-form-field>
   }
 </div>
