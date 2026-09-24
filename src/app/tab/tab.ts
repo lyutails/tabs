@@ -47,10 +47,10 @@ export class Tab {
     event?.stopPropagation();
 
     const tabSig = this.tabSignalView(); 
-    tabSig?.nativeElement.animate(
+    tabSig?.nativeElement.querySelector('h2')?.animate(
       [
         { transform: 'scale(1)' },
-        { transform: 'scale(1.05)' },
+        { transform: 'scale(1.1)' },
         { transform: 'scale(1)' },
       ],
       {
