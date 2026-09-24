@@ -21,6 +21,10 @@ body:not(.material-icons-loaded) .mat-icon {
     visibility: hidden;
 }
 
+body:not(.material-symbols-loaded) .mat-icon {
+    visibility: hidden;
+}
+
 .tabs {
     &_tab {
         border-radius: 5px 5px 0 0;
@@ -103,6 +107,19 @@ body:not(.material-icons-loaded) .mat-icon {
 
     :hover {
         cursor: pointer;
+    }
+}
+
+.fade-in {
+    animation: fade-in 500ms ease-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 

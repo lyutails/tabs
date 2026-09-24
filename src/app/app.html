@@ -83,7 +83,8 @@
   <button class="theme-button" (click)="toggleTheme()">
     <mat-icon class="theme-icon">{{ theme() === 'light' ? 'light_mode' : 'dark_mode' }}</mat-icon>
   </button>
-  <h1 class="let-title" tabsTitleHighlight>{{ projectName | uppercase }}</h1>
+  <h1 class="let-title" tabsTitleHighlight
+  animate.enter="fade-in">{{ projectName | uppercase }}</h1>
   <tabs-tab-group (resetName)="getResetButtonName($event)">
     @for (tabTitle of tabTitles; track i; let i = $index) {
       <tabs-tab
@@ -136,9 +137,14 @@
   </tabs-tab-group>
   <ng-container>
     <tabs-active-content>
-      <p class="tabs_textarea-name">here projected content of the {{ tabOrderName[activeTab()] }} active tab goes</p>
-      <textarea class="tabs_textarea" [value]="tabTextarea()[activeTab()]"
-      (input)="updateTabTextarea($event)"></textarea>
+      <p class="tabs_textarea-name">
+        here projected content of the {{ tabOrderName[activeTab()] }} active tab goes
+      </p>
+      <textarea
+        class="tabs_textarea"
+        [value]="tabTextarea()[activeTab()]"
+        (input)="updateTabTextarea($event)"
+      ></textarea>
     </tabs-active-content>
   </ng-container>
   <button (click)="toggleAllTabs()" type="button" class="tabs_button">

@@ -8,7 +8,7 @@ import { Component, input } from '@angular/core';
 })
 
 export class Reset {
-  buttonName = input<string, string>('', { transform: upperCase });
+  public buttonName = input<string, string>('', { transform: upperCase });
 }
 
 function upperCase(value: string): string {
