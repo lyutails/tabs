@@ -1,15 +1,16 @@
 import { Component, inject, signal, viewChild } from '@angular/core';
 import { TabGroup } from '../tab-group/tab-group';
 import { Tab } from '../tab/tab';
-import { CommonModule, NgTemplateOutlet, UpperCasePipe } from '@angular/common';
+import { CommonModule, NgTemplateOutlet } from '@angular/common';
 import { ActiveContent } from '../active-content/active-content';
 import { MatIconModule } from '@angular/material/icon';
-import { Reset } from '../reset/reset';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ControlButtons } from '../control-buttons/control-buttons';
+import { TabsState } from './services/tabs-state';
+import { Router } from '@angular/router';
 
 @Component({
   imports: [TabGroup, Tab, CommonModule, ActiveContent, MatIconModule,
-    NgTemplateOutlet, Reset, UpperCasePipe],
+    NgTemplateOutlet, ControlButtons],
   selector: 'tabs-tabs',
   styleUrl: './tabs.scss',
   templateUrl: './tabs.html',
@@ -18,37 +19,31 @@ export class Tabs {
   protected title = signal('tabs');
   protected tab = 'initial tab';
   protected newTab = 'New tab';
-  protected tabTitles: string[] = ['Profile', 'Plans', this.newTab, this.newTab];
-  protected disabledAllState = signal<boolean>(false);
   protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
-  protected disabledSingleState = signal<boolean[]>(Array(this.tabTitles.length).fill(true));
-  protected tabOrderName: string[] = ['first', 'second', 'third', 'fourth'];
   protected activeTab = signal<number>(0);
-  protected resetButtonName = signal<string>('');
-  protected defaultTabsTitleSize = signal<number[]>(Array(this.tabTitles.length).fill(25));
-  protected setSizeButtonName = 'Set default titles size';
   protected tabGroup = viewChild(TabGroup);
-  protected addTabState = signal<boolean>(true);
-  protected tabTextarea = signal<string[]>(Array(this.tabTitles.length).fill(''));
   protected router = inject(Router);
-  private route = inject(ActivatedRoute);
+  tabsStateService = inject(TabsState);
+  protected disabledSingleState = this.tabsStateService.disabledSingleState;
+  protected defaultTabsTitleSize = this.tabsStateService.defaultTabsTitleSize;
+  protected tabTextarea = this.tabsStateService.tabTextarea;
+  protected tabOrderName = this.tabsStateService.tabOrderName;
+  protected disabledAllState = this.tabsStateService.disabledAllState;
 
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
     this.activeTab.update(() => this.disabledSingleState().indexOf(true));
-
-    console.log(this.route.snapshot.paramMap.get('/'))
   }
 
   toggleAllTabs(): void {
     if (this.disabledAllState() === true) {
       this.disabledAllState.set(false);
       this.buttonName = 'deactivate enabled';
-      this.disabledSingleState.set(Array(this.tabTitles.length).fill(true));
+      this.disabledSingleState.set(Array(this.tabsStateService.tabTitles().length).fill(true));
     } else {
       this.disabledAllState.set(true);
       this.buttonName = 'activate disabled';
-      this.disabledSingleState.set(Array(this.tabTitles.length).fill(false));
+      this.disabledSingleState.set(Array(this.tabsStateService.tabTitles().length).fill(false));
     }
   }
 
@@ -64,41 +59,6 @@ export class Tabs {
     }
   }
 
-  getResetButtonName(value: string): void {
-    this.resetButtonName.set(value);
-  }
-
-  setDefaultTabTitlesSize(): void {
-    this.defaultTabsTitleSize.update((sizes) =>
-      sizes.map((size) => size = 25));
-  }
-
-  addDeleteTab(): void {
-    if (this.tabTitles.length === 4) {
-      this.tabTitles.push(this.newTab);
-      this.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
-      this.disabledSingleState.update((states) => [...states, true]);
-      this.tabOrderName.push('fifth');
-      this.tabTextarea.update((texts) => [...texts, ''])
-      this.addTabState.set(false);
-    } else {
-      {
-        this.tabTitles.pop();
-        this.defaultTabsTitleSize.update((sizes) => {
-          sizes.pop();
-          return sizes;
-        });
-        this.disabledSingleState.update((states) => {
-          states.pop();
-          return states;
-        });
-        this.tabOrderName.pop();
-        this.tabTextarea.update((texts) => texts.slice(0, -1))
-        this.addTabState.set(true);
-      }
-    }
-  }
-
   updateTabTextarea(event: Event): void {
     const textarea = event.target as HTMLTextAreaElement;
     const index = this.activeTab();
@@ -111,11 +71,11 @@ export class Tabs {
     })
   }
 
-  resetNames(): void {
-    this.tabGroup()?.resetNames()
-  }
-
-  openEditor(): void {
-    this.router.navigate(['/editor']);
+  setTabTitleSize(i: number, size: number): void {
+    this.defaultTabsTitleSize.update((sizes) => {
+      const newSizes = [...sizes];
+      newSizes[i] = size;
+      return newSizes;
+    })
   }
 }

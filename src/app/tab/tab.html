@@ -7,7 +7,7 @@
     <button aria-label="Decrease title size" (click)="decreaseSize()">-</button>
   </div>
   <h2>{{ label() }}</h2>
-  <p>
+  <p> Status:
     {{ active() ? 'I am active' : disabled() === false ? 'I am disabled' : 'I am enabled' }}
   </p>
   <ng-content>Default tab</ng-content>

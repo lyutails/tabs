@@ -1,5 +1,5 @@
-   <tabs-tab-group (resetName)="getResetButtonName($event)">
-    @for (tabTitle of tabTitles; track i; let i = $index) {
+   <tabs-tab-group>
+    @for (tabTitle of tabsStateService.tabTitles(); track $index; let i = $index) {
       <tabs-tab
         class="tabs_tab"
         (click)="activateTab(i)"
@@ -22,20 +22,17 @@
         [disabled]="disabledSingleState()[i]"
         [title]="tabTitle"
         [active]="i === activeTab()"
-        [(sizeTitle)]="defaultTabsTitleSize()[i]"
+        [sizeTitle]="tabsStateService.defaultTabsTitleSize()[i]"
+        (sizeTitleChange)="setTabTitleSize(i, $event)"
       >
         <ng-container *ngIf="i === activeTab(); else templateA"
           ><p class="tabs_text">
-            i'm active and full of life {{ tabOrderName[i] }} tab and in ng-container
+            i'm active and full of life <strong>{{ tabOrderName[i] }}</strong> tab and in ng-container
           </p></ng-container
         >
         <ng-template #templateA>
-          <p>{{ tabOrderName[i] }}</p>
+          <strong>{{ tabOrderName[i] }}</strong>
         </ng-template>
-        @if (disabledSingleState()[i] === false) {
-        } @else {
-          <p>this is my {{ tabOrderName[i] }} tab</p>
-        }
         <button
           class="tab_button"
           button="type"
@@ -65,29 +62,5 @@
   </button>
   <ng-container *ngTemplateOutlet="templateTab"></ng-container>
   <ng-template #templateTab>
-    <div class="tabs_titles-buttons">
-      @let buttonName = resetButtonName();
-      <button
-        tabs-reset
-        [buttonName]="buttonName"
-        aria-label="Reset tabs names"
-        class="tabs_reset-names"
-        (click)="resetNames()"
-      ></button>
-      <button
-        aria-label="Set titles size"
-        class="tabs_set-size"
-        (click)="setDefaultTabTitlesSize()"
-      >
-        {{ setSizeButtonName | uppercase }}
-      </button>
-      @let buttonAddTabName = addTabState() === true ? 'Add tab' : 'Delete tab';
-      <button (click)="addDeleteTab()" aria-label="Add tab" class="tabs_add-tab">
-        {{ buttonAddTabName | uppercase }}
-      </button>
-      @let buttonTabsEditor = 'Tabs editor';
-      <button (click)="openEditor()" aria-label="Tabs editor" class="tabs_editor">
-        {{ buttonTabsEditor | uppercase }}
-      </button>
-    </div>
+    <tabs-control-buttons></tabs-control-buttons>
   </ng-template>
