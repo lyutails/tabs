@@ -1,6 +1,7 @@
 @let projectName = 'Tabs';
 
-<h1 class="let-title" tabsTitleHighlight animate.enter="fade-in">
+<h1 class="let-title" tabsTitleHighlight animate.enter="fade-in"
+(click)="navigateTabs()">
   {{ projectName | uppercase }}
 </h1>
 <button class="theme-button" (click)="themeService.toggleTheme()">

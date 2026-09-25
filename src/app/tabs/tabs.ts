@@ -1,10 +1,11 @@
-import { Component, signal, viewChild } from '@angular/core';
+import { Component, inject, signal, viewChild } from '@angular/core';
 import { TabGroup } from '../tab-group/tab-group';
 import { Tab } from '../tab/tab';
 import { CommonModule, NgTemplateOutlet, UpperCasePipe } from '@angular/common';
 import { ActiveContent } from '../active-content/active-content';
 import { MatIconModule } from '@angular/material/icon';
 import { Reset } from '../reset/reset';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   imports: [TabGroup, Tab, CommonModule, ActiveContent, MatIconModule,
@@ -16,7 +17,8 @@ import { Reset } from '../reset/reset';
 export class Tabs {
   protected title = signal('tabs');
   protected tab = 'initial tab';
-  protected tabTitles: string[] = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4'];
+  protected newTab = 'New tab';
+  protected tabTitles: string[] = ['Profile', 'Plans', this.newTab, this.newTab];
   protected disabledAllState = signal<boolean>(false);
   protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
   protected disabledSingleState = signal<boolean[]>(Array(this.tabTitles.length).fill(true));
@@ -28,10 +30,14 @@ export class Tabs {
   protected tabGroup = viewChild(TabGroup);
   protected addTabState = signal<boolean>(true);
   protected tabTextarea = signal<string[]>(Array(this.tabTitles.length).fill(''));
+  protected router = inject(Router);
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
     this.activeTab.update(() => this.disabledSingleState().indexOf(true));
+
+    console.log(this.route.snapshot.paramMap.get('/'))
   }
 
   toggleAllTabs(): void {
@@ -69,7 +75,7 @@ export class Tabs {
 
   addDeleteTab(): void {
     if (this.tabTitles.length === 4) {
-      this.tabTitles.push('Tab 5');
+      this.tabTitles.push(this.newTab);
       this.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
       this.disabledSingleState.update((states) => [...states, true]);
       this.tabOrderName.push('fifth');
@@ -107,5 +113,9 @@ export class Tabs {
 
   resetNames(): void {
     this.tabGroup()?.resetNames()
+  }
+
+  openEditor(): void {
+    this.router.navigate(['/editor']);
   }
 }
