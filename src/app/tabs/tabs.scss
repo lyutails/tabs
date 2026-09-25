@@ -19,7 +19,8 @@ tabs-tab {
 
     &_reset-names,
     &_set-size,
-    &_add-tab {
+    &_add-tab,
+    &_editor {
         background-color: lightblue;
         @include mixins.transition;
 

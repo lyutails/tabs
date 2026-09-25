@@ -85,5 +85,9 @@
       <button (click)="addDeleteTab()" aria-label="Add tab" class="tabs_add-tab">
         {{ buttonAddTabName | uppercase }}
       </button>
+      @let buttonTabsEditor = 'Tabs editor';
+      <button (click)="openEditor()" aria-label="Tabs editor" class="tabs_editor">
+        {{ buttonTabsEditor | uppercase }}
+      </button>
     </div>
   </ng-template>

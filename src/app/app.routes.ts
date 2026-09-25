@@ -8,9 +8,15 @@ export const routes: Routes = [
         title: 'Tabs'
     },
     {
+        path: 'editor',
+        loadComponent: () =>
+            import('./editor/editor').then(m => m.Editor),
+        title: 'Tabs Editor'
+    },
+    {
         path: '**',
         loadComponent: () =>
-            import('./tabs/tabs').then(m => m.Tabs),
-        title: 'Tabs'
+            import('./core/not-found/not-found').then(m => m.NotFound),
+        title: '404'
     },
 ];

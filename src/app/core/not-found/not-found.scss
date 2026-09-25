@@ -1,0 +1,19 @@
+@use '../../../mixins.scss' as mixins;
+
+p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.not-found {
+    &_button {
+        font-size: 25px;
+        background-color: lightblue;
+        @include mixins.transition;
+
+        &:hover {
+            background-color: lightpink;
+            cursor: pointer;
+        }
+    }
+}
