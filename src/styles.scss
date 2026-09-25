@@ -26,6 +26,13 @@ tabs-root {
     width: 90%;
 }
 
+tabs-tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 button {
     border: none;
     outline: none;
