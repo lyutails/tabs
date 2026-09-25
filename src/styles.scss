@@ -36,3 +36,7 @@ button {
 body:not(.material-icons-loaded) .mat-icon {
     visibility: hidden;
 }
+
+body:not(.material-symbols-loaded) .mat-icon {
+    visibility: hidden;
+}

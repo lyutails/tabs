@@ -1,0 +1,8 @@
+@let projectName = 'Tabs';
+
+<h1 class="let-title" tabsTitleHighlight animate.enter="fade-in">
+  {{ projectName | uppercase }}
+</h1>
+<button class="theme-button" (click)="themeService.toggleTheme()">
+  <mat-icon class="theme-icon">{{ themeService.theme() === 'light' ? 'light_mode' : 'dark_mode' }}</mat-icon>
+</button>

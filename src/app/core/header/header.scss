@@ -1,0 +1,16 @@
+.theme-button {
+    margin-left: auto;
+    background-color: transparent;
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.let-title {
+    margin-bottom: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
