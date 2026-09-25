@@ -1,0 +1,15 @@
+@use '../../../mixins.scss' as mixins;
+
+.footer {
+    &_title {
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--font-secondary-color);
+        @include mixins.transition;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--font-enabled-tab-color);
+        }
+    }
+}

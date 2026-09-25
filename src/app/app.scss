@@ -1,11 +1,26 @@
 main {
+    width: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: inherit;
+    position: relative;
 }
 
 tabs-header {
+    width: 100%;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+tabs-footer {
     width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }

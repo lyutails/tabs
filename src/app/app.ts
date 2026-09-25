@@ -2,10 +2,11 @@ import { Component, inject, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './core/header/header';
 import { Theme } from './core/theme-service/theme';
+import { Footer } from './core/footer/footer';
 
 @Component({
   selector: 'tabs-root',
-  imports: [RouterOutlet, Header],
+  imports: [RouterOutlet, Header, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   host: {
