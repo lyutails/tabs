@@ -18,7 +18,7 @@
               : 'var(--font-enabled-tab-color)'
         "
         [style.pointerEvents]="disabledSingleState()[i] === false ? 'none' : 'auto'"
-        [label]="i === 4 ? 'new tab' : tab"
+        [label]="i === 4 ? 'new tab' : tabLabels[i]"
         [disabled]="disabledSingleState()[i]"
         [title]="tabTitle"
         [active]="i === tabsStateService.activeTab()"
@@ -27,21 +27,22 @@
       >
         <ng-container *ngIf="i === tabsStateService.activeTab(); else templateA"
           ><p class="tabs_text">
-            i'm active and full of life <strong>{{ tabOrderName[i] }}</strong> tab and in ng-container
+            active <strong>{{ tabOrderName[i] }}</strong> tab
           </p></ng-container
         >
         <ng-template #templateA>
-          <strong>{{ tabOrderName[i] }}</strong>
+          <strong>{{ tabOrderName[i] }} tab</strong>
         </ng-template>
         <button
           class="tab_button"
-          button="type"
           (click)="toggleSingleTab(i)"
           [disabled]="i === tabsStateService.activeTab()"
           [style.pointerEvents]="i === tabsStateService.activeTab() ? 'none' : 'auto'"
         >
           {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
         </button>
+        <button class="tab_details" (click)="navigate(i)"
+          [disabled]="!disabledSingleState()[i]">Details</button>
       </tabs-tab>
     }
   </tabs-tab-group>
@@ -52,7 +53,7 @@
       </p>
       <textarea
         class="tabs_textarea"
-        [value]="tabTextarea()[tabsStateService.activeTab()]"
+        [value]="tabsStateService.tabTextarea()[tabsStateService.activeTab()]"
         (input)="updateTabTextarea($event)"
       ></textarea>
     </tabs-active-content>

@@ -1,0 +1,12 @@
+<button type="button" (click)="getBrandProducts()" class="search_button">Search</button>
+<div class="search_items">
+  @if (results()?.length !== 0) {
+    @for (result of results(); track result.code; let i = $index) {
+      <tabs-search-item
+      [brandName]="result.brand.name"
+      [imgSrc]="result.listingImage.url"
+      [itemName]="result.name"
+      [price]="result.price.formattedValue"></tabs-search-item>
+    }
+  }
+</div>

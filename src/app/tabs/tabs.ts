@@ -18,6 +18,7 @@ import { Router } from '@angular/router';
 export class Tabs {
   protected title = signal('tabs');
   protected tab = 'initial tab';
+  protected tabLabels = ['About you', 'What you wanna?', 'You found', 'Drag here wanted'];
   protected newTab = 'New tab';
   protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
   protected tabGroup = viewChild(TabGroup);
@@ -25,7 +26,6 @@ export class Tabs {
   tabsStateService = inject(TabsState);
   protected disabledSingleState = this.tabsStateService.disabledSingleState;
   protected defaultTabsTitleSize = this.tabsStateService.defaultTabsTitleSize;
-  protected tabTextarea = this.tabsStateService.tabTextarea;
   protected tabOrderName = this.tabsStateService.tabOrderName;
   protected disabledAllState = this.tabsStateService.disabledAllState;
 
@@ -62,7 +62,7 @@ export class Tabs {
     const textarea = event.target as HTMLTextAreaElement;
     const index = this.tabsStateService.activeTab();
 
-    this.tabTextarea.update((texts) => {
+    this.tabsStateService.tabTextarea.update((texts) => {
       const newTexts = [...texts];
       newTexts[index] = textarea.value;
 
@@ -76,5 +76,24 @@ export class Tabs {
       newSizes[i] = size;
       return newSizes;
     })
+  }
+
+  navigate(index: number): void {
+    switch (index) {
+      case 0:
+        this.router.navigate(['profile']);
+        break;
+      case 1:
+        this.router.navigate(['search']);
+        break;
+      case 2:
+        this.router.navigate(['found']);
+        break;
+      case 3:
+        this.router.navigate(['buy']);
+        break;
+      default:
+        this.router.navigate(['']);
+    }
   }
 }

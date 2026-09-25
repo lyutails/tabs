@@ -8,9 +8,27 @@ export const routes: Routes = [
         title: 'Tabs'
     },
     {
-        path: 'editor',
+        path: 'profile',
         loadComponent: () =>
-            import('./editor/editor').then(m => m.Editor),
+            import('./profile/profile').then(m => m.Profile),
+        title: 'Tabs Editor'
+    },
+    {
+        path: 'search',
+        loadComponent: () =>
+            import('./search/search').then(m => m.Search),
+        title: 'Tabs Editor'
+    },
+    {
+        path: 'found',
+        loadComponent: () =>
+            import('./found/found').then(m => m.Found),
+        title: 'Tabs Editor'
+    },
+    {
+        path: 'buy',
+        loadComponent: () =>
+            import('./buy/buy').then(m => m.Buy),
         title: 'Tabs Editor'
     },
     {

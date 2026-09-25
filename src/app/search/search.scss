@@ -1,0 +1,32 @@
+tabs-search-item {
+    width: 20%;
+}
+
+.search {
+    &_button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &_items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 768.9px) and (max-width: 1200px) {
+    tabs-search-item {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    tabs-search-item {
+        width: 40%;
+    }
+}
