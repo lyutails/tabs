@@ -1,0 +1,38 @@
+@use '../../mixins' as mixins;
+
+.tabs {
+    &_tab {
+        border-radius: 5px 5px 0 0;
+    }
+
+    &_reset-names,
+    &_set-size,
+    &_add-tab,
+    &_editor {
+        background-color: lightblue;
+        @include mixins.transition;
+
+        &:hover {
+            background-color: lightpink;
+            cursor: pointer;
+        }
+    }
+
+    &_titles-buttons {
+        display: flex;
+        gap: 50px;
+    }
+
+    &_text {
+        text-align: center;
+    }
+
+    &_textarea {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    &_textarea-name {
+        margin-left: 10px;
+    }
+}
