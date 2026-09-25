@@ -7,7 +7,7 @@
 
 ## Logic:
 
-<img width="1388" height="1464" alt="tabs drawio (2)" src="https://github.com/user-attachments/assets/9157df37-a511-42c1-8ba1-9c5f137c5d7b" />
+<img width="1286" height="1884" alt="tabs drawio" src="https://github.com/user-attachments/assets/7ba2dba9-ede3-4120-8227-3bb1b3b7cd15" />
 
 ## UI Structure / Concept:
 
