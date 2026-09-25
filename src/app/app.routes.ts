@@ -7,4 +7,10 @@ export const routes: Routes = [
             import('./tabs/tabs').then(m => m.Tabs),
         title: 'Tabs'
     },
+    {
+        path: '**',
+        loadComponent: () =>
+            import('./tabs/tabs').then(m => m.Tabs),
+        title: 'Tabs'
+    },
 ];
