@@ -10,10 +10,10 @@
   <button aria-label="Set titles size" class="tabs_set-size" (click)="setDefaultTabTitlesSize()">
     {{ setSizeButtonName | uppercase }}
   </button>
-  <!-- @let buttonAddTabName = addTabState() === true ? 'Add tab' : 'Delete tab';
+  @let buttonAddTabName = tabsStateService.addTabState() === true ? 'Add tab' : 'Delete tab';
   <button (click)="addDeleteTab()" aria-label="Add tab" class="tabs_add-tab">
     {{ buttonAddTabName | uppercase }}
-  </button> -->
+  </button>
   @let buttonTabsEditor = 'Tabs editor';
   <button (click)="openEditor()" aria-label="Tabs editor" class="tabs_editor">
     {{ buttonTabsEditor | uppercase }}
