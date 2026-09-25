@@ -18,8 +18,7 @@ export class ControlButtons {
   protected snackBar = inject(MatSnackBar);
   protected setSizeButtonName = 'Set default titles size';
   protected router = inject(Router);
-  protected addTabState = signal<boolean>(true);
-  private tabsStateService = inject(TabsState);
+  tabsStateService = inject(TabsState);
   protected tabTitles = this.tabsStateService.tabTitles;
   protected defaultTabsTitleSize = this.tabsStateService.defaultTabsTitleSize;
   protected disabledSingleState = this.tabsStateService.disabledSingleState;
@@ -49,31 +48,31 @@ export class ControlButtons {
   }
 
   addDeleteTab(): void {
-    if (this.tabTitles.length === 4) {
+    if (this.tabsStateService.tabTitles().length === 4) {
       this.tabsStateService.addNewTab();
-      this.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
-      this.disabledSingleState.update((states) => [...states, true]);
+      this.tabsStateService.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
+      this.tabsStateService.disabledSingleState.update((states) => [...states, true]);
       this.tabsStateService.tabOrderName.push('fifth');
       this.tabTextarea.update((texts) => [...texts, ''])
-      this.addTabState.set(false);
+      this.tabsStateService.addTabState.set(false);
     } else {
       {
-        this.tabTitles.update((titles) => {
+        this.tabsStateService.tabTitles.update((titles) => {
           const newTitles = [...titles];
           newTitles.pop();
           return newTitles;
         });
-        this.defaultTabsTitleSize.update((sizes) => {
+        this.tabsStateService.defaultTabsTitleSize.update((sizes) => {
           sizes.pop();
           return sizes;
         });
-        this.disabledSingleState.update((states) => {
+        this.tabsStateService.disabledSingleState.update((states) => {
           states.pop();
           return states;
         });
         this.tabsStateService.tabOrderName.pop();
         this.tabTextarea.update((texts) => texts.slice(0, -1))
-        this.addTabState.set(true);
+        this.tabsStateService.addTabState.set(true);
       }
     }
   }

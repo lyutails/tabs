@@ -11,6 +11,7 @@ export class TabsState {
     tabTextarea = signal<string[]>(Array(this.tabTitles().length).fill(''));
     disabledAllState = signal<boolean>(false);
     tabs: readonly Tab[] = [];
+    addTabState = signal<boolean>(true);
 
     addNewTab(): void {
         this.tabTitles.update((titles) => [...titles, this.newTab]) ;
