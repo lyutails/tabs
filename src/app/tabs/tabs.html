@@ -4,14 +4,14 @@
         class="tabs_tab"
         (click)="activateTab(i)"
         [style.backgroundColor]="
-          i === activeTab()
+          i === tabsStateService.activeTab()
             ? 'var(--primary-color)'
             : disabledSingleState()[i] === false
               ? 'var(--inactive-color)'
               : 'var(--secondary-color)'
         "
         [style.color]="
-          i === activeTab()
+          i === tabsStateService.activeTab()
             ? 'var(--font-primary-color)'
             : disabledSingleState()[i] === false
               ? 'var(--font-disabled-tab-color)'
@@ -21,11 +21,11 @@
         [label]="i === 4 ? 'new tab' : tab"
         [disabled]="disabledSingleState()[i]"
         [title]="tabTitle"
-        [active]="i === activeTab()"
+        [active]="i === tabsStateService.activeTab()"
         [sizeTitle]="tabsStateService.defaultTabsTitleSize()[i]"
         (sizeTitleChange)="setTabTitleSize(i, $event)"
       >
-        <ng-container *ngIf="i === activeTab(); else templateA"
+        <ng-container *ngIf="i === tabsStateService.activeTab(); else templateA"
           ><p class="tabs_text">
             i'm active and full of life <strong>{{ tabOrderName[i] }}</strong> tab and in ng-container
           </p></ng-container
@@ -37,8 +37,8 @@
           class="tab_button"
           button="type"
           (click)="toggleSingleTab(i)"
-          [disabled]="i === activeTab()"
-          [style.pointerEvents]="i === activeTab() ? 'none' : 'auto'"
+          [disabled]="i === tabsStateService.activeTab()"
+          [style.pointerEvents]="i === tabsStateService.activeTab() ? 'none' : 'auto'"
         >
           {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
         </button>
@@ -48,11 +48,11 @@
   <ng-container>
     <tabs-active-content>
       <p class="tabs_textarea-name">
-        here projected content of the {{ tabOrderName[activeTab()] }} active tab goes
+        here projected content of the {{ tabOrderName[tabsStateService.activeTab()] }} active tab goes
       </p>
       <textarea
         class="tabs_textarea"
-        [value]="tabTextarea()[activeTab()]"
+        [value]="tabTextarea()[tabsStateService.activeTab()]"
         (input)="updateTabTextarea($event)"
       ></textarea>
     </tabs-active-content>

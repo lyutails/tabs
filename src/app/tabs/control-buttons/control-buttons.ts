@@ -1,13 +1,12 @@
-import { Component, inject, input, isSignal, output, signal } from '@angular/core';
-import { Reset } from '../reset/reset';
+import { Component, inject, output, signal } from '@angular/core';
+import { Reset } from './reset/reset';
 import { UpperCasePipe } from '@angular/common';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Tab } from '../tab/tab';
 import { Router } from '@angular/router';
-import { TabsState } from '../tabs/services/tabs-state';
+import { TabsState } from '../services/tabs-state';
 
 @Component({
-  imports: [Reset, UpperCasePipe,],
+  imports: [UpperCasePipe, Reset],
   selector: 'tabs-control-buttons',
   styleUrl: './control-buttons.scss',
   templateUrl: './control-buttons.html',
@@ -73,6 +72,10 @@ export class ControlButtons {
         this.tabsStateService.tabOrderName.pop();
         this.tabTextarea.update((texts) => texts.slice(0, -1))
         this.tabsStateService.addTabState.set(true);
+        if (this.tabsStateService.activeTab() === 4) {
+          const indexOfFirstEnabledTab = this.tabsStateService.disabledSingleState().indexOf(true);
+          this.tabsStateService.activeTab.set(indexOfFirstEnabledTab);
+        }
       }
     }
   }

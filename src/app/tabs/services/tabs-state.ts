@@ -1,5 +1,5 @@
 import { Service, signal } from '@angular/core';
-import { Tab } from '../../tab/tab';
+import { Tab } from '../tab/tab';
 
 @Service()
 export class TabsState {
@@ -12,6 +12,7 @@ export class TabsState {
     disabledAllState = signal<boolean>(false);
     tabs: readonly Tab[] = [];
     addTabState = signal<boolean>(true);
+    activeTab = signal<number>(0);
 
     addNewTab(): void {
         this.tabTitles.update((titles) => [...titles, this.newTab]) ;

@@ -1,10 +1,10 @@
 import { Component, inject, signal, viewChild } from '@angular/core';
-import { TabGroup } from '../tab-group/tab-group';
-import { Tab } from '../tab/tab';
+import { TabGroup } from './tab-group/tab-group';
+import { Tab } from './tab/tab';
 import { CommonModule, NgTemplateOutlet } from '@angular/common';
-import { ActiveContent } from '../active-content/active-content';
+import { ActiveContent } from './active-content/active-content';
 import { MatIconModule } from '@angular/material/icon';
-import { ControlButtons } from '../control-buttons/control-buttons';
+import { ControlButtons } from './control-buttons/control-buttons';
 import { TabsState } from './services/tabs-state';
 import { Router } from '@angular/router';
 
@@ -20,7 +20,6 @@ export class Tabs {
   protected tab = 'initial tab';
   protected newTab = 'New tab';
   protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
-  protected activeTab = signal<number>(0);
   protected tabGroup = viewChild(TabGroup);
   protected router = inject(Router);
   tabsStateService = inject(TabsState);
@@ -32,7 +31,7 @@ export class Tabs {
 
   ngOnInit(): void {
     this.disabledSingleState()[1] = false;
-    this.activeTab.update(() => this.disabledSingleState().indexOf(true));
+    this.tabsStateService.activeTab.update(() => this.disabledSingleState().indexOf(true));
   }
 
   toggleAllTabs(): void {
@@ -55,13 +54,13 @@ export class Tabs {
 
   activateTab(index: number): void {
     if (this.disabledSingleState()[index] === true) {
-      this.activeTab.set(index);
+      this.tabsStateService.activeTab.set(index);
     }
   }
 
   updateTabTextarea(event: Event): void {
     const textarea = event.target as HTMLTextAreaElement;
-    const index = this.activeTab();
+    const index = this.tabsStateService.activeTab();
 
     this.tabTextarea.update((texts) => {
       const newTexts = [...texts];
