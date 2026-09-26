@@ -1,76 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, signal } from '@angular/core';
-import { Observable } from 'rxjs';
+import { finalize, Observable } from 'rxjs';
 import { SearchItem } from './search-item/search-item';
-
-export interface RGCatalogResponse {
-  results: Result[];
-}
-
-interface Result {
-  addedToCart: boolean;
-  addedToWishlist: boolean;
-  basePrice: BasePrice;
-  brand: Brand;
-  canAddToCart: boolean;
-  code: string;
-  firstVariant: string;
-  foreign: boolean;
-  hasVariantType: boolean;
-  inStockVariantCodes: number[];
-  listingImage: ListingImage;
-  listingImagesCount: number;
-  name: string;
-  notifyStockAvailability: boolean;
-  price: Price;
-  showcases: Showcase[];
-  stock: Stock;
-  subtitle: string;
-  url: string;
-  variantAttributeType: string;
-  variantOptions: string[];
-}
-
-interface BasePrice {
-  currencyIso: string;
-  formattedValue: string;
-  value: number;
-}
-
-interface Brand {
-  code: string;
-  name: string;
-}
-
-interface ListingImage {
-  code: string;
-  format: string;
-  height: number;
-  mime: string;
-  url: string;
-  width: number;
-}
-
-interface Price {
-  currencyIso: string;
-  formattedValue: string;
-  priceType: string;
-  value: number;
-}
-
-interface Showcase {
-  backgroundColor: string;
-  canCopy: boolean;
-  code: string;
-  discountPercent: number;
-  fontColor: string;
-  name: string;
-}
-
-type Stock = { stockLevelStatus: string };
+import { Result, RGCatalogResponse } from './search.model';
+import { BRANDS_CODES } from './brands.constants';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
-  imports: [SearchItem],
+  imports: [SearchItem, MatProgressSpinnerModule],
   selector: 'tabs-search',
   styleUrl: './search.scss',
   templateUrl: './search.html',
@@ -80,15 +17,17 @@ export class Search {
   private rgAPI = '/rivegauche-api/';
   results = signal<Result[]>([]);
   readonly baseUrl = 'https://api.rivegauche.ru';
+  brandCode = 0;
+  isLoading = signal<boolean>(false);
 
-  getBrand(): Observable<RGCatalogResponse> {
+  getBrand(code: number): Observable<RGCatalogResponse> {
     return this.http.get<RGCatalogResponse>(`${this.rgAPI}rg/v1/newRG/products/search`, {
       params: {
         fields: 'BASIC',
         currentPage: 0,
         pageSize: 36,
         categoryCode: 'NewNav',
-        brandCode: 'rg_brand_1386',
+        brandCode: `rg_brand_${code}`,
         rmSessionId: '68862355df126c3f7464b3e8',
         locale: 'ru',
       },
@@ -100,6 +39,22 @@ export class Search {
   }
 
   getBrandProducts(): void {
-    this.getBrand().subscribe((data) => this.results.set(data.results));
+    this.isLoading.set(true);
+
+    this.getBrand(this.brandCode)
+      .pipe(
+        finalize(() => {
+          this.isLoading.set(false);
+        })
+      ).subscribe((data) => { return this.results.set(data.results)});
+  }
+
+  searchBrand(event: Event) {
+    const input = event.target as HTMLInputElement;
+
+    this.brandCode = BRANDS_CODES[input.value];
+    if(this.brandCode !== 0) {
+      this.getBrandProducts();
+    }
   }
 }

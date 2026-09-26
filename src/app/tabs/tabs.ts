@@ -18,7 +18,7 @@ import { Router } from '@angular/router';
 export class Tabs {
   protected title = signal('tabs');
   protected tab = 'initial tab';
-  protected tabLabels = ['About you', 'What you wanna?', 'You found', 'Drag here wanted'];
+  protected tabLabels = ['About you', 'What you wanna?', 'Searched and found', 'Drag here wanted'];
   protected newTab = 'New tab';
   protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
   protected tabGroup = viewChild(TabGroup);
@@ -30,7 +30,7 @@ export class Tabs {
   protected disabledAllState = this.tabsStateService.disabledAllState;
 
   ngOnInit(): void {
-    this.disabledSingleState()[1] = false;
+    this.disabledSingleState()[2] = false;
     this.tabsStateService.activeTab.update(() => this.disabledSingleState().indexOf(true));
   }
 
