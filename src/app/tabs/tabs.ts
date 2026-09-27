@@ -18,7 +18,7 @@ import { Router } from '@angular/router';
 export class Tabs {
   protected title = signal('tabs');
   protected tab = 'initial tab';
-  protected tabLabels = ['About you', 'What you wanna?', 'Searched and found', 'Drag here wanted'];
+  protected tabLabels = ['What you wanna?', 'Searched and found', 'Drag here wanted', 'About you'];
   protected newTab = 'New tab';
   protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
   protected tabGroup = viewChild(TabGroup);
@@ -81,16 +81,16 @@ export class Tabs {
   navigate(index: number): void {
     switch (index) {
       case 0:
-        this.router.navigate(['profile']);
-        break;
-      case 1:
         this.router.navigate(['search']);
         break;
-      case 2:
+      case 1:
         this.router.navigate(['found']);
         break;
-      case 3:
+      case 2:
         this.router.navigate(['buy']);
+        break;
+      case 3:
+        this.router.navigate(['profile']);
         break;
       default:
         this.router.navigate(['']);

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 
 @Component({
   imports: [],
@@ -11,4 +11,5 @@ export class SearchItem {
   imgSrc = input<string>('');
   itemName = input<string>('');
   price = input<string>('');
+  formattedPrice = computed(() => this.price().replace(/&nbsp;/g, ' '));
 }

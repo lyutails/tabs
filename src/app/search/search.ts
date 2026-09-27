@@ -10,10 +10,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
-    FormsModule, MatFormFieldModule
+    FormsModule, MatFormFieldModule, MatIconModule
   ],
   selector: 'tabs-search',
   styleUrl: './search.scss',
@@ -31,6 +32,7 @@ export class Search {
   brandSuggestions = signal<string[]>(Object.keys(BRANDS_CODES));
   filteredCodes = signal<number[]>([]);
   protected snackBar = inject(MatSnackBar);
+  suggestions = viewChild<ElementRef<HTMLElement>>('suggestions');
 
   getBrand(codes: number[]): Observable<RGCatalogResponse[]> {
     const requestedBrandsItems = codes.map((code) =>
@@ -100,7 +102,7 @@ export class Search {
     const input = event.target as HTMLInputElement;
     const value = input.value.toLowerCase();
     this.brandName.set(value);
-    const isEnglish = /^[a-z]+$/i.test(value);
+    const isEnglish = /^[a-z\s.'-]+$/i.test(value);
     const isEmpty = value.length === 0;
     if (!isEnglish && !isEmpty) {
       this.snackBar.open('Change layout to English, please', 'ok', { duration: 5000 });
@@ -113,10 +115,12 @@ export class Search {
       console.log(filteredCodes);
       this.getBrandProducts();
     }
-    // if (this.brandCode !== 0) {
-    //   this.getBrandProducts();
-    // } else {
-    //   this.searchPopular();
-    // }
+  }
+
+  scrollSuggestions(direction: 'left' | 'right'): void {
+    this.suggestions()?.nativeElement.scrollBy({
+      left: direction === 'right' ? 200 : -200,
+      behavior: 'smooth',
+    })
   }
 }
