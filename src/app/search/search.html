@@ -1,5 +1,24 @@
-<button type="button" (click)="getBrandProducts()" class="search_button">Search Popular</button>
-<input (change)="searchBrand($event)" />
+<button matButton="filled" type="button" (click)="searchPopular()" class="search_popular-button">
+  Search Popular
+</button>
+<mat-form-field class="search_form">
+  <mat-label>Search</mat-label>
+  <input matInput [value]="brandName()" (input)="onInput($event)" #input />
+</mat-form-field>
+<div class="search_suggestions">
+  @if (brandName() !== '') {
+    @for (brand of brandSuggestions(); track brand) {
+      <button
+        matButton="elevated"
+        type="button"
+        (click)="searchBrand(brand)"
+        class="search_brand-button"
+      >
+        {{ brand }}
+      </button>
+    }
+  }
+</div>
 <div class="search_items">
   @if (isLoading()) {
     <mat-spinner></mat-spinner>

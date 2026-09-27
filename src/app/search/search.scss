@@ -17,6 +17,20 @@ tabs-search-item {
         justify-content: space-between;
         gap: 10px;
     }
+
+    &_brand-button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &_popular-button {
+        margin-bottom: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 @media screen and (min-width: 768.9px) and (max-width: 1200px) {
