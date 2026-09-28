@@ -27,7 +27,8 @@
     >
       <mat-icon class="found_remove-all">delete</mat-icon>
     </button>
-    <button [style.background]="'transparent'" matTooltip="Buy selected" (click)="buySeleted()">
+    <button [style.background]="'transparent'" matTooltip="Buy selected"
+    (click)="navigate('buy')">
       <mat-icon class="found_dropped-remove">shopping_cart_checkout</mat-icon>
     </button>
   }
@@ -50,7 +51,12 @@
       >
         <mat-icon>delete_forever</mat-icon>
       </button>
-      <button class="found_add-to-cart" [style.background]="'transparent'" matTooltip="Add to cart">
+      <button
+        class="found_add-to-cart"
+        [style.background]="'transparent'"
+        matTooltip="Add to cart"
+        (click)="addToCart(result.code)"
+      >
         <mat-icon>add_shopping_cart</mat-icon>
       </button>
     </div>

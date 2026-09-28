@@ -1,0 +1,30 @@
+.buy {
+    &_products {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &_product {
+        width: 20%;
+        aspect-ratio: 1/1;
+    }
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form {
+    &_field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+mat-error {
+    color: red;
+}

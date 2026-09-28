@@ -1,1 +1,37 @@
-<p>buy works!</p>
+<div class="buy_products">
+  @for (buyItem of buyStore.buyResults(); track buyItem.code) {
+    <div class="buy_product">
+      <span>{{ buyItem.brand.name }}</span>
+      <span>{{ buyItem.name }}</span>
+      <img [src]="buyItem.listingImage.url" />
+      <span> {{ buyItem.price.formattedValue | formatPrice }}</span>
+    </div>
+  }
+</div>
+<div class="buy_form">
+  <mat-form-field class="form_field">
+    <mat-label for="cardNumber">Card Number</mat-label>
+    <input id="cardNumber" matInput type="text" [formField]="buyForm.cardNumber" />
+  </mat-form-field>
+  <mat-form-field class="form_field">
+    <mat-label for="name">Name</mat-label>
+    <input id="name" matInput type="text" [formField]="buyForm.name" />
+  </mat-form-field>
+  <mat-form-field class="form_field">
+    <mat-label for="surname">Surname</mat-label>
+    <input id="surname" matInput type="text" [formField]="buyForm.surname" />
+  </mat-form-field>
+  <mat-form-field class="form_field">
+    <mat-label for="validTill">Valid till month/year</mat-label>
+    <input id="validTill" matInput type="date" [formField]="buyForm.validTill" />
+  </mat-form-field>
+  <mat-form-field class="form_field">
+    <mat-label for="cvv">CVV</mat-label>
+    <input id="cvv" matInput type="number" inputmode="numeric" [formField]="buyForm.cvv" />
+    @if (buyForm.cvv().touched() && buyForm.cvv().invalid()) {
+      @for (error of buyForm.cvv().errors(); track error) {
+        <mat-error>{{ error.message }}</mat-error>
+      }
+    }
+  </mat-form-field>
+</div>
