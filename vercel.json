@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/rivegauche-api/:path*",
+      "destination": "https://api.rivegauche.ru/:path*"
+    }
+  ]
+}

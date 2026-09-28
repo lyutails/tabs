@@ -18,7 +18,7 @@ import { Router } from '@angular/router';
 export class Tabs {
   protected title = signal('tabs');
   protected tab = 'initial tab';
-  protected tabLabels = ['What you wanna?', 'Searched and found', 'Drag here wanted', 'About you'];
+  protected tabLabels = ['What you wanna?', 'Drag here wanted', 'Checkout', 'About you'];
   protected newTab = 'New tab';
   protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
   protected tabGroup = viewChild(TabGroup);
