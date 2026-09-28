@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ControlButtons } from './control-buttons/control-buttons';
 import { TabsState } from './services/tabs-state';
 import { Router } from '@angular/router';
+import { Navigate } from '../core/services/navigate';
 
 @Component({
   imports: [TabGroup, Tab, CommonModule, ActiveContent, MatIconModule,
@@ -28,6 +29,7 @@ export class Tabs {
   protected defaultTabsTitleSize = this.tabsStateService.defaultTabsTitleSize;
   protected tabOrderName = this.tabsStateService.tabOrderName;
   protected disabledAllState = this.tabsStateService.disabledAllState;
+  navigateService = inject(Navigate);
 
   ngOnInit(): void {
     this.disabledSingleState()[2] = false;
@@ -79,21 +81,6 @@ export class Tabs {
   }
 
   navigate(index: number): void {
-    switch (index) {
-      case 0:
-        this.router.navigate(['search']);
-        break;
-      case 1:
-        this.router.navigate(['liked']);
-        break;
-      case 2:
-        this.router.navigate(['buy']);
-        break;
-      case 3:
-        this.router.navigate(['profile']);
-        break;
-      default:
-        this.router.navigate(['']);
-    }
+    this.navigateService.navigate(index);
   }
 }

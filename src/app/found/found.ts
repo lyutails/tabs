@@ -25,8 +25,8 @@ export class Found implements OnInit {
     this.searchStore.likedResults.set([]);
   }
 
-  removeSingleLiked(index: number): void {
-    this.searchStore.likedResults.update((items) => items.filter((items, i) => i !== index))
+  removeSingleLiked(code: string): void {
+    this.searchStore.likedResults.update((items) => items.filter((item) => item.code !== code))
   }
 
   navigate(value: string) {
@@ -36,4 +36,6 @@ export class Found implements OnInit {
       this.router.navigate(['/search']);
     }
   }
+
+  buySeleted() {}
 }

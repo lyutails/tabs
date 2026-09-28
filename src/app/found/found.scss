@@ -1,8 +1,12 @@
 tabs-search-item {
-    width: 20%;
+    width: 100%;
 }
 
 .found {
+    &_item-wrapper {
+        width: 20%;
+    }
+
     &_interested {
         display: flex;
         flex-direction: row;
@@ -13,6 +17,7 @@ tabs-search-item {
     }
 
     &_title-wrapper {
+        height: 100px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -25,51 +30,60 @@ tabs-search-item {
         text-align: center;
         margin: 20px 0 20px 0;
     }
+
+    &_remove-single {
+        position: relative;
+    }
+
+    &_add-to-cart {
+        position: relative;
+    }
+
+}
+
+button {
+    border: 1px black solid;
 }
 
 @media screen and (min-width: 768.9px) and (max-width: 1600px) {
-    tabs-search-item {
-        width: 30%;
-    }
-
     .found {
         &_dropped-title {
             font-size: 1.2rem;
+        }
+
+        &_item-wrapper {
+            width: 30%;
         }
     }
 }
 
 @media screen and (min-width: 768.9px) and (max-width: 1000px) {
-    tabs-search-item {
-        width: 45%;
-    }
-
     .found {
         &_dropped-title {
             font-size: 1.1rem;
+        }
+
+        &_item-wrapper {
+            width: 30%;
         }
     }
 }
 
 @media screen and (min-width: 600.9px) and (max-width: 768px) {
-    tabs-search-item {
-        width: 45%;
-    }
-
     .found {
         &_dropped-title {
             font-size: 1rem;
             text-align: start;
             margin-left: 10px;
         }
+
+        &_item-wrapper {
+            width: 40%;
+        }
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
-    tabs-search-item {
-        width: 100%;
-    }
-
     .found {
         &_dropped-title {
             font-size: 0.8rem;
@@ -85,6 +99,10 @@ tabs-search-item {
             &:hover {
                 cursor: pointer;
             }
+        }
+
+        &_item-wrapper {
+            width: 100%;
         }
     }
 }

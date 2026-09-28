@@ -123,8 +123,4 @@ export class Search {
       return [...items, result];
     })
   }
-
-  removeDropped(): void {
-    this.searchStore.likedResults.set([]);
-  }
 }
