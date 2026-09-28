@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { SearchService } from './service/search-service';
-import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDrag, CdkDragDrop, CdkDropList, copyArrayItem, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
@@ -23,6 +23,7 @@ import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk
 })
 export class Search {
   protected results = signal<Result[]>([]);
+  protected likedResults = signal<Result[]>([]);
   protected brandCode = 0;
   protected isLoading = signal<boolean>(false);
   protected input = viewChild<ElementRef<HTMLInputElement>>('input');
@@ -105,8 +106,22 @@ export class Search {
     })
   }
 
+  dropToLiked(event: CdkDragDrop<Result[]>): void {
+    if (event.previousContainer.id !== 'resultsList') {
+      return;
+    }
 
-  drop(event: CdkDragDrop<string[]>) {
-    moveItemInArray(this.results(), event.previousIndex, event.currentIndex);
+    const result = event.item.data;
+
+    this.likedResults.update((items) => {
+      if (items.some(item => item.code === result.code)) {
+        return items;
+      }
+      return [...items, result];
+    })
+  }
+
+  removeDropped(): void {
+    this.likedResults.set([]);
   }
 }
