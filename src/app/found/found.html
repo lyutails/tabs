@@ -1,9 +1,13 @@
 <div class="found_title-wrapper">
   @if (currentPage !== 'liked') {
-    <button [style.background]="'transparent'" class="found_heart">
-      <mat-icon class="found_dropped-remove" (click)="goToLiked()">favorite</mat-icon>
+    <button [style.background]="'transparent'" class="found_heart" matTooltip="Go to liked">
+      <mat-icon class="found_dropped-remove" (click)="navigate('liked')">favorite</mat-icon>
     </button>
-  <p class="found_dropped-title">Drag here what you like</p>
+    <p class="found_dropped-title">Drag here what you like</p>
+  } @else {
+    <button [style.background]="'transparent'" class="found_search" matTooltip="Continue search">
+      <mat-icon class="found_dropped-remove" (click)="navigate('search')">search</mat-icon>
+    </button>
   }
   @if (searchStore.likedResults().length !== 0) {
     <button [style.background]="'transparent'" matTooltip="Delete all products">
