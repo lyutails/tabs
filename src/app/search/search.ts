@@ -11,10 +11,11 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { SearchService } from './service/search-service';
+import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
-    FormsModule, MatFormFieldModule, MatIconModule
+    FormsModule, MatFormFieldModule, MatIconModule, CdkDrag, CdkDropList
   ],
   selector: 'tabs-search',
   styleUrl: './search.scss',
@@ -102,5 +103,10 @@ export class Search {
       left: direction === 'right' ? 200 : -200,
       behavior: 'smooth',
     })
+  }
+
+
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.results(), event.previousIndex, event.currentIndex);
   }
 }

@@ -1,5 +1,4 @@
 <div class="search_control-wrapper">
-  <div class="search_left-side">
     <button
       matButton="filled"
       type="button"
@@ -42,15 +41,17 @@
         <mat-icon>arrow_right</mat-icon>
       </button>
     </div>
-  </div>
   <div class="search_interested">Drag here what you like</div>
 </div>
-<div class="search_items">
+<div class="search_items" cdkDropList
+  (cdkDropListDropped)="drop($event)">
   @if (isLoading()) {
     <mat-spinner></mat-spinner>
   } @else if (results().length > 0) {
     @for (result of results(); track result.code) {
       <tabs-search-item
+        cdkDrag
+        class="search_item"
         [brandName]="result.brand.name"
         [imgSrc]="result.listingImage.url"
         [itemName]="result.name"
