@@ -1,8 +1,7 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
-import { finalize, forkJoin, Observable } from 'rxjs';
+import { finalize } from 'rxjs';
 import { SearchItem } from './search-item/search-item';
-import { Result, RGCatalogResponse } from './search.model';
+import { Result } from './search.model';
 import { BRANDS_CODES } from './brands.constants';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -11,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { SearchService } from './service/search-service';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
@@ -21,44 +21,21 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './search.html',
 })
 export class Search {
-  private http = inject(HttpClient);
-  private rgAPI = '/rivegauche-api/';
-  results = signal<Result[]>([]);
-  readonly baseUrl = 'https://api.rivegauche.ru';
-  brandCode = 0;
-  isLoading = signal<boolean>(false);
-  input = viewChild<ElementRef<HTMLInputElement>>('input');
-  brandName = signal('');
-  brandSuggestions = signal<string[]>(Object.keys(BRANDS_CODES));
-  filteredCodes = signal<number[]>([]);
+  protected results = signal<Result[]>([]);
+  protected brandCode = 0;
+  protected isLoading = signal<boolean>(false);
+  protected input = viewChild<ElementRef<HTMLInputElement>>('input');
+  protected brandName = signal('');
+  protected brandSuggestions = signal<string[]>(Object.keys(BRANDS_CODES));
+  protected filteredCodes = signal<number[]>([]);
   protected snackBar = inject(MatSnackBar);
-  suggestions = viewChild<ElementRef<HTMLElement>>('suggestions');
-
-  getBrand(codes: number[]): Observable<RGCatalogResponse[]> {
-    const requestedBrandsItems = codes.map((code) =>
-      this.http.get<RGCatalogResponse>(`${this.rgAPI}rg/v1/newRG/products/search`, {
-        params: {
-          fields: 'BASIC',
-          currentPage: 0,
-          pageSize: 36,
-          categoryCode: 'NewNav',
-          brandCode: `rg_brand_${code}`,
-          rmSessionId: '68862355df126c3f7464b3e8',
-          locale: 'ru',
-        },
-        headers: {
-          Accept: 'application/json, text/plain, */*',
-          'Accept-Language': 'ru',
-        }
-      })
-    )
-    return forkJoin(requestedBrandsItems);
-  }
+  protected suggestions = viewChild<ElementRef<HTMLElement>>('suggestions');
+  private searchService = inject(SearchService);
 
   getBrandProducts(): void {
     this.isLoading.set(true);
 
-    this.getBrand(this.filteredCodes())
+    this.searchService.getBrand(this.filteredCodes())
       .pipe(
         finalize(() => {
           this.isLoading.set(false);
@@ -87,7 +64,7 @@ export class Search {
 
     this.brandCode = 0;
 
-    this.getBrand([this.brandCode])
+    this.searchService.getBrand([this.brandCode])
       .pipe(
         finalize(() => {
           this.isLoading.set(false);
@@ -96,6 +73,10 @@ export class Search {
         const products = data.flatMap(response => response.results);
         this.results.set(products);
       });
+  }
+
+  normalizeBrand(value: string): string {
+    return value.toLowerCase().replace(/[\s-]+/g, '');
   }
 
   onInput(event: Event): void {
@@ -108,11 +89,10 @@ export class Search {
       this.snackBar.open('Change layout to English, please', 'ok', { duration: 5000 });
     } else {
       this.brandCode = BRANDS_CODES[this.brandName()];
-      const filteredBrands = Object.keys(BRANDS_CODES).filter((brand) => brand.includes(value));
+      const filteredBrands = Object.keys(BRANDS_CODES).filter((brand) => this.normalizeBrand(brand).includes(this.normalizeBrand(value)));
       this.brandSuggestions.set(filteredBrands);
       const filteredCodes = filteredBrands.map((brand) => BRANDS_CODES[brand as keyof typeof BRANDS_CODES]);
       this.filteredCodes.set(filteredCodes);
-      console.log(filteredCodes);
       this.getBrandProducts();
     }
   }
