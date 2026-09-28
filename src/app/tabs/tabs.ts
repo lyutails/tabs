@@ -84,7 +84,7 @@ export class Tabs {
         this.router.navigate(['search']);
         break;
       case 1:
-        this.router.navigate(['found']);
+        this.router.navigate(['liked']);
         break;
       case 2:
         this.router.navigate(['buy']);

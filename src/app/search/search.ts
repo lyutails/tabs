@@ -11,11 +11,14 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { SearchService } from './service/search-service';
-import { CdkDrag, CdkDragDrop, CdkDropList, copyArrayItem, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDrag, CdkDragDrop, CdkDropList } from '@angular/cdk/drag-drop';
+import { SearchStore } from './services/search-store';
+import { Found } from '../found/found';
+import { Router } from '@angular/router';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
-    FormsModule, MatFormFieldModule, MatIconModule, CdkDrag, CdkDropList
+    FormsModule, MatFormFieldModule, MatIconModule, CdkDrag, CdkDropList, Found
   ],
   selector: 'tabs-search',
   styleUrl: './search.scss',
@@ -23,7 +26,6 @@ import { CdkDrag, CdkDragDrop, CdkDropList, copyArrayItem, moveItemInArray } fro
 })
 export class Search {
   protected results = signal<Result[]>([]);
-  protected likedResults = signal<Result[]>([]);
   protected brandCode = 0;
   protected isLoading = signal<boolean>(false);
   protected input = viewChild<ElementRef<HTMLInputElement>>('input');
@@ -33,6 +35,7 @@ export class Search {
   protected snackBar = inject(MatSnackBar);
   protected suggestions = viewChild<ElementRef<HTMLElement>>('suggestions');
   private searchService = inject(SearchService);
+  searchStore = inject(SearchStore);
 
   getBrandProducts(): void {
     this.isLoading.set(true);
@@ -113,7 +116,7 @@ export class Search {
 
     const result = event.item.data;
 
-    this.likedResults.update((items) => {
+    this.searchStore.likedResults.update((items) => {
       if (items.some(item => item.code === result.code)) {
         return items;
       }
@@ -122,6 +125,6 @@ export class Search {
   }
 
   removeDropped(): void {
-    this.likedResults.set([]);
+    this.searchStore.likedResults.set([]);
   }
 }

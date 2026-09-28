@@ -38,21 +38,7 @@
     id="likedList"
     (cdkDropListDropped)="dropToLiked($event)"
   >
-    <p class="search_dropped-title">Drag here what you like</p>
-    @if (this.likedResults().length !== 0) {
-      <mat-icon class="search_dropped-remove" (click)="removeDropped()">close</mat-icon>
-    }
-    <div class="search_interested">
-      @for (result of likedResults(); track result.code) {
-        <tabs-search-item
-          class="search_item"
-          [brandName]="result.brand.name"
-          [imgSrc]="result.listingImage.url"
-          [itemName]="result.name"
-          [price]="result.price.formattedValue"
-        ></tabs-search-item>
-      }
-    </div>
+    <tabs-found></tabs-found>
   </div>
 </div>
 <div class="search_items" cdkDropList id="resultsList" (cdkDropListDropped)="dropToLiked($event)">

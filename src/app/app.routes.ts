@@ -20,7 +20,7 @@ export const routes: Routes = [
         title: 'Tabs Editor'
     },
     {
-        path: 'found',
+        path: 'liked',
         loadComponent: () =>
             import('./found/found').then(m => m.Found),
         title: 'Tabs Editor'
