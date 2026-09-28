@@ -1,0 +1,1 @@
+export const RIVE_GAUCHE_API = '/rivegauche-api/';

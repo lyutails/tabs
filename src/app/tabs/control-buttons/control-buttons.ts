@@ -18,10 +18,6 @@ export class ControlButtons {
   protected setSizeButtonName = 'Set default titles size';
   protected router = inject(Router);
   tabsStateService = inject(TabsState);
-  protected tabTitles = this.tabsStateService.tabTitles;
-  protected defaultTabsTitleSize = this.tabsStateService.defaultTabsTitleSize;
-  protected disabledSingleState = this.tabsStateService.disabledSingleState;
-  protected tabTextarea = this.tabsStateService.tabTextarea;
 
   ngOnInit() {
     this.setResetButtonName();
@@ -52,7 +48,7 @@ export class ControlButtons {
       this.tabsStateService.defaultTabsTitleSize.update((sizes) => [...sizes, 25]);
       this.tabsStateService.disabledSingleState.update((states) => [...states, true]);
       this.tabsStateService.tabOrderName.push('fifth');
-      this.tabTextarea.update((texts) => [...texts, ''])
+      this.tabsStateService.tabTextarea.update((texts) => [...texts, ''])
       this.tabsStateService.addTabState.set(false);
     } else {
       {
@@ -70,7 +66,7 @@ export class ControlButtons {
           return states;
         });
         this.tabsStateService.tabOrderName.pop();
-        this.tabTextarea.update((texts) => texts.slice(0, -1))
+        this.tabsStateService.tabTextarea.update((texts) => texts.slice(0, -1))
         this.tabsStateService.addTabState.set(true);
         if (this.tabsStateService.activeTab() === 4) {
           const indexOfFirstEnabledTab = this.tabsStateService.disabledSingleState().indexOf(true);
@@ -81,7 +77,7 @@ export class ControlButtons {
   }
 
   setDefaultTabTitlesSize(): void {
-    this.defaultTabsTitleSize.update((sizes) =>
+    this.tabsStateService.defaultTabsTitleSize.update((sizes) =>
       sizes.map((size) => size = 25));
   }
 }

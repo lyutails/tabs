@@ -4,7 +4,7 @@ import { Tab } from '../tab/tab';
 @Service()
 export class TabsState {
     protected newTab = 'New tab';
-    tabTitles = signal<string[]>(['Profile', 'Plans', this.newTab, this.newTab]);
+    tabTitles = signal<string[]>(['Search', 'Interested', 'Buy', 'Profile']);
     defaultTabsTitleSize = signal<number[]>(Array(this.tabTitles().length).fill(25));
     disabledSingleState = signal<boolean[]>(Array(this.tabTitles().length).fill(true));
     tabOrderName: string[] = ['first', 'second', 'third', 'fourth'];

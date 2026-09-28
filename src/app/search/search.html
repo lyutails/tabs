@@ -1,0 +1,63 @@
+<div class="search_control-wrapper">
+  <div class="search_left-side">
+    <button
+      matButton="filled"
+      type="button"
+      (click)="searchPopular()"
+      class="search_popular-button"
+    >
+      Search Popular
+    </button>
+    <mat-form-field class="search_form">
+      <mat-label>Search</mat-label>
+      <input matInput [value]="brandName()" (input)="onInput($event)" #input />
+    </mat-form-field>
+    <div class="search_suggestions-wrapper">
+      <button
+        type="button"
+        class="search_suggestions-arrow left"
+        (click)="scrollSuggestions('left')"
+      >
+        <mat-icon>arrow_left</mat-icon>
+      </button>
+      <div class="search_suggestions" #suggestions>
+        @if (brandName() !== '') {
+          @for (brand of brandSuggestions(); track brand) {
+            <button
+              matButton="elevated"
+              type="button"
+              (click)="searchBrand(brand)"
+              class="search_brand-button"
+            >
+              {{ brand }}
+            </button>
+          }
+        }
+      </div>
+      <button
+        type="button"
+        class="search_suggestions-arrow right"
+        (click)="scrollSuggestions('right')"
+      >
+        <mat-icon>arrow_right</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="search_interested">Drag here what you like</div>
+</div>
+<div class="search_items">
+  @if (isLoading()) {
+    <mat-spinner></mat-spinner>
+  } @else if (results().length > 0) {
+    @for (result of results(); track result.code) {
+      <tabs-search-item
+        [brandName]="result.brand.name"
+        [imgSrc]="result.listingImage.url"
+        [itemName]="result.name"
+        [price]="result.price.formattedValue"
+      ></tabs-search-item>
+    }
+  } @else {
+    <p>Currently no results</p>
+  }
+</div>

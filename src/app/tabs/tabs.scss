@@ -65,7 +65,7 @@ tabs-tab {
     }
 }
 
-.tab_button {
+.tab_button, .tab_details {
     background: var(--button-tab-color);
     color: var(--font-secondary-color);
     @include mixins.transition;

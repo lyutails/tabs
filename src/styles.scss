@@ -33,6 +33,13 @@ tabs-tabs {
     align-items: center;
 }
 
+tabs-search {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 button {
     border: none;
     outline: none;
