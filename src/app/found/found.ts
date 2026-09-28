@@ -29,7 +29,11 @@ export class Found implements OnInit {
     this.searchStore.likedResults.update((items) => items.filter((items, i) => i !== index))
   }
 
-  goToLiked() {
-    this.router.navigate(['/liked']);
+  navigate(value: string) {
+    if (value === 'liked') {
+      this.router.navigate(['/liked']);
+    } else {
+      this.router.navigate(['/search']);
+    }
   }
 }
