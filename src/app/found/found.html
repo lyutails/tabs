@@ -1,1 +1,7 @@
-<p>found works!</p>
+@for (result of searchStore.likedResults(); track result.code) {
+  {{ result.name }}
+  {{ result.brand.name }}
+  <img [src]="result.listingImage.url" [alt]="result.name" class="item_image"/>
+  {{ result.name }} 
+  {{ result.price.formattedValue }}
+}

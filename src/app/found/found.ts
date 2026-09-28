@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { SearchStore } from '../search/services/search-store';
 
 @Component({
   imports: [],
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './found.scss',
   templateUrl: './found.html',
 })
-export class Found {}
+export class Found {
+  searchStore = inject(SearchStore);
+}
