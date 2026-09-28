@@ -14,6 +14,7 @@ import { SearchService } from './service/search-service';
 import { CdkDrag, CdkDragDrop, CdkDropList } from '@angular/cdk/drag-drop';
 import { SearchStore } from './services/search-store';
 import { Found } from '../found/found';
+import { Router } from '@angular/router';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,

@@ -96,21 +96,6 @@ tabs-search-item {
         flex-direction: column;
     }
 
-    &_dropped-title {
-        font-size: 1.5rem;
-        text-align: center;
-        margin: 20px 0 20px 0;
-    }
-
-    &_interested {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
     &_control-wrapper {
         width: 50%;
         display: flex;
@@ -131,6 +116,15 @@ tabs-search-item {
         position: absolute;
         right: 20px;
         top: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &_heart {
+        position: absolute;
+        left: 20px;
 
         &:hover {
             cursor: pointer;

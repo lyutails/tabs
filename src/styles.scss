@@ -41,6 +41,14 @@ tabs-search {
     gap: 10px;
 }
 
+tabs-found {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 button {
     border: none;
     outline: none;

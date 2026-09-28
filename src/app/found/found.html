@@ -1,7 +1,27 @@
-@for (result of searchStore.likedResults(); track result.code) {
-  {{ result.name }}
-  {{ result.brand.name }}
-  <img [src]="result.listingImage.url" [alt]="result.name" class="item_image"/>
-  {{ result.name }} 
-  {{ result.price.formattedValue }}
-}
+<div class="found_title-wrapper">
+  @if (currentPage !== 'liked') {
+    <button [style.background]="'transparent'" class="found_heart">
+      <mat-icon class="found_dropped-remove" (click)="goToLiked()">favorite</mat-icon>
+    </button>
+  <p class="found_dropped-title">Drag here what you like</p>
+  }
+  @if (searchStore.likedResults().length !== 0) {
+    <button [style.background]="'transparent'" matTooltip="Delete all products">
+      <mat-icon class="found_remove-all" (click)="removeAllLiked()">delete</mat-icon>
+    </button>
+  }
+</div>
+<div class="found_interested">
+  @for (result of searchStore.likedResults(); track result.code; let i = $index) {
+    <tabs-search-item
+      class="found_item"
+      [brandName]="result.brand.name"
+      [imgSrc]="result.listingImage.url"
+      [itemName]="result.name"
+      [price]="result.price.formattedValue"
+    ></tabs-search-item>
+    <button [style.background]="'transparent'" matTooltip="Delete this product">
+      <mat-icon class="found_remove-single" (click)="removeSingleLiked(i)">delete_forever</mat-icon>
+    </button>
+  }
+</div>
