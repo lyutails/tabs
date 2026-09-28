@@ -1,5 +1,4 @@
 .theme-button {
-    margin-left: auto;
     background-color: transparent;
 
     :hover {
@@ -11,4 +10,8 @@
     &:hover {
         cursor: pointer;
     }
+}
+
+button:hover {
+    cursor: pointer;
 }

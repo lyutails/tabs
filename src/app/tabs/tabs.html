@@ -1,67 +1,66 @@
-   <tabs-tab-group>
-    @for (tabTitle of tabsStateService.tabTitles(); track $index; let i = $index) {
-      <tabs-tab
-        class="tabs_tab"
-        (click)="activateTab(i)"
-        [style.backgroundColor]="
-          i === tabsStateService.activeTab()
-            ? 'var(--primary-color)'
-            : disabledSingleState()[i] === false
-              ? 'var(--inactive-color)'
-              : 'var(--secondary-color)'
-        "
-        [style.color]="
-          i === tabsStateService.activeTab()
-            ? 'var(--font-primary-color)'
-            : disabledSingleState()[i] === false
-              ? 'var(--font-disabled-tab-color)'
-              : 'var(--font-enabled-tab-color)'
-        "
-        [style.pointerEvents]="disabledSingleState()[i] === false ? 'none' : 'auto'"
-        [label]="i === 4 ? 'new tab' : tabLabels[i]"
-        [disabled]="disabledSingleState()[i]"
-        [title]="tabTitle"
-        [active]="i === tabsStateService.activeTab()"
-        [sizeTitle]="tabsStateService.defaultTabsTitleSize()[i]"
-        (sizeTitleChange)="setTabTitleSize(i, $event)"
+<tabs-tab-group>
+  @for (tabTitle of tabsStateService.tabTitles(); track $index; let i = $index) {
+    <tabs-tab
+      class="tabs_tab"
+      (click)="activateTab(i)"
+      [style.backgroundColor]="
+        i === tabsStateService.activeTab()
+          ? 'var(--primary-color)'
+          : disabledSingleState()[i] === false
+            ? 'var(--inactive-color)'
+            : 'var(--secondary-color)'
+      "
+      [style.color]="
+        i === tabsStateService.activeTab()
+          ? 'var(--font-primary-color)'
+          : disabledSingleState()[i] === false
+            ? 'var(--font-disabled-tab-color)'
+            : 'var(--font-enabled-tab-color)'
+      "
+      [style.pointerEvents]="disabledSingleState()[i] === false ? 'none' : 'auto'"
+      [label]="i === 4 ? 'new tab' : tabLabels[i]"
+      [disabled]="disabledSingleState()[i]"
+      [title]="tabTitle"
+      [active]="i === tabsStateService.activeTab()"
+      [sizeTitle]="tabsStateService.defaultTabsTitleSize()[i]"
+      (sizeTitleChange)="setTabTitleSize(i, $event)"
+    >
+      <ng-container *ngIf="i === tabsStateService.activeTab(); else templateA">
+        <mat-icon [style.color]="'yellow'">{{ tabsStateService.tabIcons()[i] }}</mat-icon>
+      </ng-container>
+      <ng-template #templateA>
+        <mat-icon>{{ tabsStateService.tabIcons()[i] }}</mat-icon>
+      </ng-template>
+      <button
+        class="tab_button"
+        (click)="toggleSingleTab(i)"
+        [disabled]="i === tabsStateService.activeTab()"
+        [style.pointerEvents]="i === tabsStateService.activeTab() ? 'none' : 'auto'"
       >
-        <ng-container *ngIf="i === tabsStateService.activeTab(); else templateA"
-          ><p class="tabs_text">
-            active <strong>{{ tabOrderName[i] }}</strong> tab
-          </p></ng-container
-        >
-        <ng-template #templateA>
-          <strong>{{ tabOrderName[i] }} tab</strong>
-        </ng-template>
-        <button
-          class="tab_button"
-          (click)="toggleSingleTab(i)"
-          [disabled]="i === tabsStateService.activeTab()"
-          [style.pointerEvents]="i === tabsStateService.activeTab() ? 'none' : 'auto'"
-        >
-          {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
-        </button>
-        <button class="tab_details" (click)="navigate(i)"
-          [disabled]="!disabledSingleState()[i]">Details</button>
-      </tabs-tab>
-    }
-  </tabs-tab-group>
-  <ng-container>
-    <tabs-active-content>
-      <p class="tabs_textarea-name">
-        here projected content of the {{ tabOrderName[tabsStateService.activeTab()] }} active tab goes
-      </p>
-      <textarea
-        class="tabs_textarea"
-        [value]="tabsStateService.tabTextarea()[tabsStateService.activeTab()]"
-        (input)="updateTabTextarea($event)"
-      ></textarea>
-    </tabs-active-content>
-  </ng-container>
-  <button (click)="toggleAllTabs()" type="button" class="tabs_button">
-    {{ buttonName }}
-  </button>
-  <ng-container *ngTemplateOutlet="templateTab"></ng-container>
-  <ng-template #templateTab>
-    <tabs-control-buttons></tabs-control-buttons>
-  </ng-template>
+        {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
+      </button>
+      <button class="tab_details" (click)="navigate(i)" [disabled]="!disabledSingleState()[i]">
+        Go to
+      </button>
+    </tabs-tab>
+  }
+</tabs-tab-group>
+<ng-container>
+  <tabs-active-content>
+    <p class="tabs_textarea-name">
+      here projected content of the {{ tabOrderName[tabsStateService.activeTab()] }} active tab goes
+    </p>
+    <textarea
+      class="tabs_textarea"
+      [value]="tabsStateService.tabTextarea()[tabsStateService.activeTab()]"
+      (input)="updateTabTextarea($event)"
+    ></textarea>
+  </tabs-active-content>
+</ng-container>
+<button (click)="toggleAllTabs()" type="button" class="tabs_button">
+  {{ buttonName }}
+</button>
+<ng-container *ngTemplateOutlet="templateTab"></ng-container>
+<ng-template #templateTab>
+  <tabs-control-buttons></tabs-control-buttons>
+</ng-template>

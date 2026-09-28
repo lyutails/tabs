@@ -13,6 +13,7 @@ export class TabsState {
     tabs: readonly Tab[] = [];
     addTabState = signal<boolean>(true);
     activeTab = signal<number>(0);
+    tabIcons = signal<string[]>(['search', 'favorite', 'credit_card', 'person']);
 
     addNewTab(): void {
         this.tabTitles.update((titles) => [...titles, this.newTab]) ;

@@ -1,9 +1,18 @@
-@let projectName = 'Tabs';
+@let projectName = 'beauty TABS';
 
-<h1 class="let-title" tabsTitleHighlight animate.enter="fade-in"
-(click)="navigateTabs()">
-  {{ projectName | uppercase }}
+<h1 class="let-title" tabsTitleHighlight animate.enter="fade-in" (click)="navigate('')">
+  {{ projectName }}
 </h1>
-<button class="theme-button" (click)="themeService.toggleTheme()">
-  <mat-icon class="theme-icon">{{ themeService.theme() === 'light' ? 'light_mode' : 'dark_mode' }}</mat-icon>
-</button>
+<div class="header_buttons">
+  <button [style.background]="'transparent'" matTooltip="Go to liked" (click)="navigate('liked')">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button [style.background]="'transparent'" matTooltip="Buy selected" (click)="navigate('buy')">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+  <button class="theme-button" (click)="themeService.toggleTheme()">
+    <mat-icon class="theme-icon">{{
+      themeService.theme() === 'light' ? 'light_mode' : 'dark_mode'
+    }}</mat-icon>
+  </button>
+</div>
