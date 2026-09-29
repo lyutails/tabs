@@ -45,6 +45,11 @@ button {
     border: 1px black solid;
 }
 
+.found-container--side {
+    height: 300px;
+    overflow-y: auto;
+}
+
 @media screen and (min-width: 768.9px) and (max-width: 1600px) {
     .found {
         &_dropped-title {

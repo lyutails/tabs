@@ -43,7 +43,7 @@
 </tabs-tab-group>
 <ng-container>
   <tabs-active-content>
-    <div class="tabs_textarea-wrapper">
+    <!-- <div class="tabs_textarea-wrapper">
       <p class="tabs_textarea-name">
         Your thoughts for the {{ tabOrderName[tabsStateService.activeTab()] }} tab goes here.
       </p>
@@ -52,7 +52,7 @@
         [value]="tabsStateService.tabTextarea()[tabsStateService.activeTab()]"
         (input)="updateTabTextarea($event)"
       ></textarea>
-    </div>
+    </div> -->
     <ng-container *ngTemplateOutlet="templateTab"></ng-container>
   </tabs-active-content>
 </ng-container>
@@ -62,10 +62,10 @@
 <ng-template #templateTab>
   @switch (tabsStateService.activeTab()) {
     @case (0) {
-      <tabs-search></tabs-search>
+      <tabs-search [layout]="'side'"></tabs-search>
     }
     @case (1) {
-      <tabs-found></tabs-found>
+      <tabs-found [layout]="'side'"></tabs-found>
     }
     @case (2) {
       <tabs-buy></tabs-buy>

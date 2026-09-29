@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, inject, input, signal, viewChild } from '@angular/core';
 import { finalize } from 'rxjs';
 import { SearchItem } from './search-item/search-item';
 import { Result } from './search.model';
@@ -14,7 +14,6 @@ import { SearchService } from './service/search-service';
 import { CdkDrag, CdkDragDrop, CdkDropList } from '@angular/cdk/drag-drop';
 import { SearchStore } from './services/search-store';
 import { Found } from '../found/found';
-import { Router } from '@angular/router';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
@@ -36,6 +35,7 @@ export class Search {
   protected suggestions = viewChild<ElementRef<HTMLElement>>('suggestions');
   private searchService = inject(SearchService);
   searchStore = inject(SearchStore);
+  layout = input<'default' | 'side'>('default');
 
   getBrandProducts(): void {
     this.isLoading.set(true);
