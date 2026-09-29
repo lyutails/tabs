@@ -1,3 +1,4 @@
+@let openTabButton = 'OPEN';
 <tabs-tab-group>
   @for (tabTitle of tabsStateService.tabTitles(); track $index; let i = $index) {
     <tabs-tab
@@ -24,43 +25,53 @@
       [active]="i === tabsStateService.activeTab()"
       [sizeTitle]="tabsStateService.defaultTabsTitleSize()[i]"
       (sizeTitleChange)="setTabTitleSize(i, $event)"
+      [index]="$index"
     >
-      <ng-container *ngIf="i === tabsStateService.activeTab(); else templateA">
-        <mat-icon [style.color]="'yellow'">{{ tabsStateService.tabIcons()[i] }}</mat-icon>
-      </ng-container>
-      <ng-template #templateA>
-        <mat-icon>{{ tabsStateService.tabIcons()[i] }}</mat-icon>
-      </ng-template>
+      <button class="tab_details" (click)="navigate(i)" [disabled]="!disabledSingleState()[i]">
+        {{ openTabButton }}
+      </button>
       <button
         class="tab_button"
         (click)="toggleSingleTab(i)"
         [disabled]="i === tabsStateService.activeTab()"
         [style.pointerEvents]="i === tabsStateService.activeTab() ? 'none' : 'auto'"
       >
-        {{ disabledSingleState()[i] === true ? 'disable' : 'enable' }}
-      </button>
-      <button class="tab_details" (click)="navigate(i)" [disabled]="!disabledSingleState()[i]">
-        Go to
+        <mat-icon> {{ disabledSingleState()[i] === true ? 'lock' : 'lock_open' }}</mat-icon>
       </button>
     </tabs-tab>
   }
 </tabs-tab-group>
 <ng-container>
   <tabs-active-content>
-    <p class="tabs_textarea-name">
-      here projected content of the {{ tabOrderName[tabsStateService.activeTab()] }} active tab goes
-    </p>
-    <textarea
-      class="tabs_textarea"
-      [value]="tabsStateService.tabTextarea()[tabsStateService.activeTab()]"
-      (input)="updateTabTextarea($event)"
-    ></textarea>
+    <div class="tabs_textarea-wrapper">
+      <p class="tabs_textarea-name">
+        Your thoughts for the {{ tabOrderName[tabsStateService.activeTab()] }} tab goes here.
+      </p>
+      <textarea
+        class="tabs_textarea"
+        [value]="tabsStateService.tabTextarea()[tabsStateService.activeTab()]"
+        (input)="updateTabTextarea($event)"
+      ></textarea>
+    </div>
+    <ng-container *ngTemplateOutlet="templateTab"></ng-container>
   </tabs-active-content>
 </ng-container>
-<button (click)="toggleAllTabs()" type="button" class="tabs_button">
+<!-- <button (click)="toggleAllTabs()" type="button" class="tabs_button">
   {{ buttonName }}
-</button>
-<ng-container *ngTemplateOutlet="templateTab"></ng-container>
+</button> -->
 <ng-template #templateTab>
-  <tabs-control-buttons></tabs-control-buttons>
+  @switch (tabsStateService.activeTab()) {
+    @case (0) {
+      <tabs-search></tabs-search>
+    }
+    @case (1) {
+      <tabs-found></tabs-found>
+    }
+    @case (2) {
+      <tabs-buy></tabs-buy>
+    }
+    @case (3) {
+      <tabs-profile></tabs-profile>
+    }
+  }
 </ng-template>

@@ -8,10 +8,14 @@ import { ControlButtons } from './control-buttons/control-buttons';
 import { TabsState } from './services/tabs-state';
 import { Router } from '@angular/router';
 import { Navigate } from '../core/services/navigate';
+import { Found } from '../found/found';
+import { Buy } from '../buy/buy';
+import { Search } from '../search/search';
+import { Profile } from '../profile/profile';
 
 @Component({
   imports: [TabGroup, Tab, CommonModule, ActiveContent, MatIconModule,
-    NgTemplateOutlet, ControlButtons],
+    NgTemplateOutlet, Found, Buy, Search, Profile],
   selector: 'tabs-tabs',
   styleUrl: './tabs.scss',
   templateUrl: './tabs.html',
