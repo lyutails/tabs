@@ -3,6 +3,9 @@
   <span class="header_logo-name">冬</span>
 </div>
 <div class="header_buttons">
+  <button [style.background]="'transparent'" matTooltip="Go to liked" (click)="navigate('search')">
+    <mat-icon>search</mat-icon>
+  </button>
   <button [style.background]="'transparent'" matTooltip="Go to liked" (click)="navigate('liked')">
     <mat-icon>favorite</mat-icon>
   </button>

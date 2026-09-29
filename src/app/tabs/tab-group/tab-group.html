@@ -1,17 +1,3 @@
-<!-- <div class="tabs_group-info">
-  @for (tab of tabs(); track i; let i = $index) {
-    <button (click)="clickEdit($event, i, editInput)" [attr.aria-label]="'Edit icon'">
-      <mat-icon>{{ editIndex() === i ? 'edit_off' : 'edit' }}</mat-icon>
-    </button>
-    <mat-form-field subscriptSizing="dynamic">
-      <input
-        #editInput
-        matInput
-        [value]="tab.title()"
-        [disabled]="editIndex() === i ? false : true"
-    /></mat-form-field>
-  }
-</div> -->
 <div class="tabs">
   <ng-content></ng-content>
 </div>
