@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Navigate } from '../services/navigate';
 
 @Component({
-  imports: [MatIconModule, CommonModule, TitleHighlight],
+  imports: [MatIconModule, CommonModule],
   selector: 'tabs-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',

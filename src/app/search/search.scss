@@ -14,7 +14,7 @@ tabs-search-item {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 10px;
     }
@@ -137,6 +137,19 @@ tabs-search-item {
             cursor: pointer;
         }
     }
+
+    &_no-results-text {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 20px 0;
+        font-size: 1.2rem;
+    }
+
+    &_divider {
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
 }
 
 .search-container--side {
@@ -159,6 +172,10 @@ tabs-search-item {
 
     .search_dropped-container {
         height: 300px;
+    }
+
+    .search_dropped-container {
+        background-color: transparent;
     }
 }
 

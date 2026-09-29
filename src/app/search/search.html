@@ -49,10 +49,20 @@
     id="likedList"
     (cdkDropListDropped)="dropToLiked($event)"
   >
-    <tabs-found></tabs-found>
+    @if (currentPage !== 'search') {
+      <tabs-found [layout]="'search'"></tabs-found>
+    } @else {
+      <tabs-found></tabs-found>
+    }
   </div>
 </div>
 
+    <button
+      type="button"
+      class="search_divider"
+    >
+      <mat-icon>arrow_forward</mat-icon>
+    </button>
 <div
   class="search_items"
   cdkDropList
@@ -75,6 +85,6 @@
       ></tabs-search-item>
     }
   } @else {
-    <p>Currently no results</p>
+    <p class="search_no-results-text">Currently no results</p>
   }
 </div>
