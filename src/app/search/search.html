@@ -13,13 +13,15 @@
       <input matInput [value]="brandName()" (input)="onInput($event)" #input />
     </mat-form-field>
     <div class="search_suggestions-wrapper">
-      <button
-        type="button"
-        class="search_suggestions-arrow left"
-        (click)="scrollSuggestions('left')"
-      >
-        <mat-icon>arrow_left</mat-icon>
-      </button>
+      @if (isHiddenSliderArrows()) {
+        <button
+          type="button"
+          class="search_suggestions-arrow left"
+          (click)="scrollSuggestions('left')"
+        >
+          <mat-icon>arrow_left</mat-icon>
+        </button>
+      }
       <div class="search_suggestions" #suggestions>
         @if (brandName() !== '') {
           @for (brand of brandSuggestions(); track brand) {
@@ -34,13 +36,15 @@
           }
         }
       </div>
-      <button
-        type="button"
-        class="search_suggestions-arrow right"
-        (click)="scrollSuggestions('right')"
-      >
-        <mat-icon>arrow_right</mat-icon>
-      </button>
+      @if (isHiddenSliderArrows()) {
+        <button
+          type="button"
+          class="search_suggestions-arrow right"
+          (click)="scrollSuggestions('right')"
+        >
+          <mat-icon>arrow_right</mat-icon>
+        </button>
+      }
     </div>
   </div>
   <div
@@ -57,12 +61,9 @@
   </div>
 </div>
 
-    <button
-      type="button"
-      class="search_divider"
-    >
-      <mat-icon>arrow_forward</mat-icon>
-    </button>
+<button type="button" class="search_divider">
+  <mat-icon>arrow_forward</mat-icon>
+</button>
 <div
   class="search_items"
   cdkDropList
