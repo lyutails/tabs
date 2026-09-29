@@ -20,7 +20,7 @@ export class Found implements OnInit {
   currentPage = '';
   buyStore = inject(BuyStore);
   navigateService = inject(Navigate);
-  layout = input<'default' | 'side'>('default');
+  layout = input<'default' | 'side' | 'search'>('default');
 
   ngOnInit() {
     this.currentPage = this.route.snapshot.url[0]?.path;
