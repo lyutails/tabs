@@ -8,85 +8,88 @@
     </div>
   }
 </div>
-<form class="buy_form" (ngSubmit)="buy()">
-  <div class="form_field">
-    <div class="form_label-error">
-      <mat-label for="cardNumber">Card Number</mat-label>
-      @if (buyForm.cardNumber().touched() && buyForm.cardNumber().invalid()) {
-        @for (error of buyForm.cardNumber().errors(); track error) {
-          <mat-error>*{{ error.message }}</mat-error>
-        }
-      }
-    </div>
-    <input
-      class="buy_input"
-      id="cardNumber"
-      matInput
-      type="text"
-      [formField]="buyForm.cardNumber"
-    />
-  </div>
-  <div class="form_name-surname">
-    <div class="form_field">
+<div class="form_wrapper">
+  <form class="buy_form" (ngSubmit)="buy()">
+    <div class="form_field" [style.padding-top]="'100px'">
       <div class="form_label-error">
-        <mat-label for="name">Name</mat-label>
-        @if (buyForm.name().touched() && buyForm.name().invalid()) {
-          @for (error of buyForm.name().errors(); track error) {
-            <mat-error>*{{ error.message }}</mat-error>
-          }
-        }
-      </div>
-      <input class="buy_input" id="name" matInput type="text" [formField]="buyForm.name" />
-    </div>
-    <div class="form_field">
-      <div class="form_label-error">
-        <mat-label for="surname">Surname</mat-label>
-        @if (buyForm.surname().touched() && buyForm.surname().invalid()) {
-          @for (error of buyForm.surname().errors(); track error) {
-            <mat-error>*{{ error.message }}</mat-error>
-          }
-        }
-      </div>
-      <input class="buy_input" id="surname" matInput type="text" [formField]="buyForm.surname" />
-    </div>
-  </div>
-  <div class="form_date-cvv">
-    <div class="form_field date">
-      <div class="form_label-error">
-        <mat-label for="validTill">Valid till month/year</mat-label>
-        @if (buyForm.validTill().touched() && buyForm.validTill().invalid()) {
-          @for (error of buyForm.validTill().errors(); track error) {
+        <mat-label for="cardNumber">Card Number</mat-label>
+        @if (buyForm.cardNumber().touched() && buyForm.cardNumber().invalid()) {
+          @for (error of buyForm.cardNumber().errors(); track error) {
             <mat-error>*{{ error.message }}</mat-error>
           }
         }
       </div>
       <input
         class="buy_input"
-        id="validTill"
+        id="cardNumber"
         matInput
-        type="date"
-        [formField]="buyForm.validTill"
+        type="text"
+        [formField]="buyForm.cardNumber"
       />
     </div>
-    <div class="form_field cvv">
-      <div class="form_label-error">
-        <mat-label for="cvv">CVV</mat-label>
-        @if (buyForm.cvv().touched() && buyForm.cvv().invalid()) {
-          @for (error of buyForm.cvv().errors(); track error) {
-            <mat-error>*{{ error.message }}</mat-error>
+    <div class="form_name-surname">
+      <div class="form_field">
+        <div class="form_label-error">
+          <mat-label for="name">Name</mat-label>
+          @if (buyForm.name().touched() && buyForm.name().invalid()) {
+            @for (error of buyForm.name().errors(); track error) {
+              <mat-error>*{{ error.message }}</mat-error>
+            }
           }
-        }
+        </div>
+        <input class="buy_input" id="name" matInput type="text" [formField]="buyForm.name" />
       </div>
-      <input
-        class="buy_input"
-        id="cvv"
-        matInput
-        type="number"
-        inputmode="numeric"
-        [formField]="buyForm.cvv"
-      />
+      <div class="form_field">
+        <div class="form_label-error">
+          <mat-label for="surname">Surname</mat-label>
+          @if (buyForm.surname().touched() && buyForm.surname().invalid()) {
+            @for (error of buyForm.surname().errors(); track error) {
+              <mat-error>*{{ error.message }}</mat-error>
+            }
+          }
+        </div>
+        <input class="buy_input" id="surname" matInput type="text" [formField]="buyForm.surname" />
+      </div>
     </div>
-  </div>
-  <button type="submit" [disabled]="buyForm().invalid()">Buy</button>
-  <div class="background"></div>
-</form>
+    <div class="form_date-cvv">
+      <div class="form_field date">
+        <div class="form_label-error">
+          <mat-label for="validTill">Valid till month/year</mat-label>
+          @if (buyForm.validTill().touched() && buyForm.validTill().invalid()) {
+            @for (error of buyForm.validTill().errors(); track error) {
+              <mat-error>*{{ error.message }}</mat-error>
+            }
+          }
+        </div>
+        <input
+          class="buy_input"
+          id="validTill"
+          matInput
+          type="date"
+          [formField]="buyForm.validTill"
+        />
+      </div>
+      <div class="form_field cvv">
+        <div class="form_label-error">
+          <mat-label for="cvv">CVV</mat-label>
+          @if (buyForm.cvv().touched() && buyForm.cvv().invalid()) {
+            @for (error of buyForm.cvv().errors(); track error) {
+              <mat-error>*{{ error.message }}</mat-error>
+            }
+          }
+        </div>
+        <input
+          class="buy_input"
+          id="cvv"
+          matInput
+          type="number"
+          inputmode="numeric"
+          [formField]="buyForm.cvv"
+        />
+      </div>
+    </div>
+  </form>
+  <button type="submit" [disabled]="buyForm().invalid()"
+  class="form_submit">Buy</button>
+</div>
+<div class="background"></div>

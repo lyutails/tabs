@@ -15,11 +15,15 @@
     &_form {
         display: flex;
         flex-direction: column;
-        height: 100%;
-        width: 500px;
+        height: 400px;
+        width: 600px;
         align-items: center;
         justify-content: center;
-        padding-top: 100px;
+        background-image: url('../../../public/credit\ card.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        inset: 0;
     }
 
     &_input {
@@ -32,6 +36,12 @@
 }
 
 .form {
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &_field {
         display: flex;
         flex-direction: column;
@@ -67,6 +77,11 @@
 
     &_label-error {
         display: flex;
+    }
+
+    &_submit {
+        background-color: #f12152;
+        width: 50%;
     }
 }
 
