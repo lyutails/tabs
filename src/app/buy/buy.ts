@@ -30,12 +30,23 @@ export class Buy {
     cvv: '',
   })
   buyForm = form(this.buyModel, (schemaPath) => {
-    required(schemaPath.cardNumber);
-    required(schemaPath.name);
-    required(schemaPath.surname);
-    required(schemaPath.validTill);
-    required(schemaPath.cvv);
+    required(schemaPath.cardNumber, { message: 'required' });
+    required(schemaPath.name, { message: 'required' });
+    required(schemaPath.surname, { message: 'required' });
+    required(schemaPath.validTill, { message: 'required' });
+    required(schemaPath.cvv, { message: 'required' });
     maxLength(schemaPath.cvv, 3, { message: 'cvv should be 3 digits long' });
     minLength(schemaPath.cvv, 3, { message: 'cvv should be 3 digits long' })
   });
+
+  buy(): void {
+    if (this.buyForm().invalid()) {
+      this.buyForm().markAsTouched();
+      return;
+    }
+
+    const checkoutData = this.buyModel();
+
+    console.log(checkoutData);
+  }
 }
