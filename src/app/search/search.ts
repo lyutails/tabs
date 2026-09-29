@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, input, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, inject, input, linkedSignal, signal, viewChild } from '@angular/core';
 import { finalize } from 'rxjs';
 import { SearchItem } from './search-item/search-item';
 import { Result } from './search.model';
@@ -39,6 +39,7 @@ export class Search {
   layout = input<'default' | 'side' | 'search'>('default');
   currentPage = '';
   private route = inject(ActivatedRoute);
+  isHiddenSliderArrows = linkedSignal<boolean>(() => false);
 
   ngOnInit() {
     this.currentPage = this.route.snapshot.url[0]?.path;
@@ -102,6 +103,11 @@ export class Search {
     } else {
       this.brandCode = BRANDS_CODES[this.brandName()];
       const filteredBrands = Object.keys(BRANDS_CODES).filter((brand) => this.normalizeBrand(brand).includes(this.normalizeBrand(value)));
+      if (value) {
+        this.isHiddenSliderArrows.set(true)
+      } else {
+        this.isHiddenSliderArrows.set(false)
+      }
       this.brandSuggestions.set(filteredBrands);
       const filteredCodes = filteredBrands.map((brand) => BRANDS_CODES[brand as keyof typeof BRANDS_CODES]);
       this.filteredCodes.set(filteredCodes);
