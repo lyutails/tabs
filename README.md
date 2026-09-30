@@ -1,6 +1,6 @@
 # Tabs
 
-Created using Angular v22, fetching products from beauty store API, Signal Form with validation, different types of signals.
+Created using Angular v22, fetching products from beauty store API, Signal Form with validation, different types of signals for state managing.
 
 ## Deploy: 
 [Click here to see the deploy](https://tabs-phi-three.vercel.app/)
