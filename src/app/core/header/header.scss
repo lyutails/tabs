@@ -38,11 +38,23 @@ button:hover {
         // color: black;
     }
 
-    &_profile-img{
+    &_profile-img {
         width: 30px;
         height: 30px;
         object-fit: cover;
         border-radius: 50%;
         overflow: hidden;
+    }
+
+    &_products-count {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(18px, -35px);
     }
 }

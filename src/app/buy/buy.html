@@ -9,6 +9,9 @@
     </div>
   }
 </div>
+<button type="button" (click)="removeAllFromCart()">
+  <mat-icon>delete</mat-icon>
+</button>
 <div class="form_wrapper">
   <form class="buy_form" (ngSubmit)="buy()">
     <div class="form_field" [style.padding-top]="'100px'">
