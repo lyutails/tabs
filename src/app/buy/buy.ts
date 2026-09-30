@@ -5,18 +5,10 @@ import { form, FormField, maxLength, minLength, required } from '@angular/forms/
 import { MatError, MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { DateCutterPipe } from './pipes/date-cutter-pipe';
-
-interface CheckoutData {
-  cardNumber: string;
-  name: string;
-  surname: string;
-  validTill: string;
-  cvv: string;
-}
+import { CheckoutData } from './models/buy.model';
 
 @Component({
-  imports: [FormatPricePipe, FormField, MatError, FormsModule, MatFormFieldModule, MatInputModule, DateCutterPipe],
+  imports: [FormatPricePipe, FormField, MatError, FormsModule, MatFormFieldModule, MatInputModule],
   selector: 'tabs-buy',
   styleUrl: './buy.scss',
   templateUrl: './buy.html',
@@ -48,8 +40,6 @@ export class Buy {
     }
 
     const checkoutData = this.buyModel();
-
-    console.log(checkoutData);
   } 
   
   onValidTillChange(event: Event): void {
