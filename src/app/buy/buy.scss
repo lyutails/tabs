@@ -29,7 +29,7 @@
         width: 600px;
         align-items: center;
         justify-content: center;
-        background-image: url('../../../public/credit\ card.png');
+        background-image: url('../../../public/credit_card2.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -100,7 +100,15 @@
     &_submit {
         background-color: #f12152;
         width: 50%;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
+}
+
+.form_submit:disabled {
+    background-color: lightgrey;
 }
 
 mat-error {
