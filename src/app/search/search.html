@@ -85,6 +85,14 @@
         [itemName]="result.name"
         [price]="result.price.formattedValue"
       ></tabs-search-item>
+      <button
+        class="found_add-to-cart"
+        [style.background]="'transparent'"
+        matTooltip="Add to cart"
+        (click)="buyStore.addToCart(result.code)"
+      >
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
     }
   } @else {
     <p class="search_no-results-text">Currently no results</p>
