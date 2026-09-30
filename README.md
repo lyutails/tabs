@@ -13,6 +13,6 @@ Created using Angular v22, fetching products from beauty store API, Signal Form 
 
 ## UI Structure / Concept:
 
-<img width="600" height="478" alt="UI structure" src="https://github.com/user-attachments/assets/188e8ea5-00b8-4a8b-846f-f2ef3f4e887e" />
+<img width="1200" height="845" alt="concept (initial states)" src="https://github.com/user-attachments/assets/51975cbb-03ad-4ffb-b85a-c756facc4f02" />
 
 https://www.figma.com/design/G2noZXD7EdPerwVG6bD5Nc/Tabs?node-id=0-1&p=f&t=TB9fJqKrRehnWJw6-0
