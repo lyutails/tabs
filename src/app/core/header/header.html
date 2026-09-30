@@ -3,14 +3,21 @@
   <span class="header_logo-name">冬</span>
 </div>
 <div class="header_buttons">
-  <button [style.background]="'transparent'" matTooltip="Go to liked" (click)="navigate('search')">
+  <button [style.background]="'transparent'" (click)="navigate('search')">
     <mat-icon>search</mat-icon>
   </button>
-  <button [style.background]="'transparent'" matTooltip="Go to liked" (click)="navigate('liked')">
+  <button [style.background]="'transparent'" (click)="navigate('liked')">
     <mat-icon>favorite</mat-icon>
   </button>
-  <button [style.background]="'transparent'" matTooltip="Buy selected" (click)="navigate('buy')">
+  <button [style.background]="'transparent'" (click)="navigate('buy')">
     <mat-icon>shopping_cart</mat-icon>
+  </button>
+  <button [style.background]="'transparent'" (click)="navigate('profile')">
+    @if (profileService.isUploaded()) {
+      <img class="header_profile-img" [src]="profileService.previewUrl()"/>
+    } @else {
+      <mat-icon>person</mat-icon>
+    }
   </button>
   <button class="theme-button" (click)="themeService.toggleTheme()">
     <mat-icon class="theme-icon">{{

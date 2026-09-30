@@ -1,4 +1,6 @@
 <div class="buy_products">
+  <p>Products: {{ this.buyStore.buyResults().length }}</p>
+  <p>Price: {{ this.buyStore.total() }}</p>
   @for (buyItem of buyStore.buyResults(); track buyItem.code) {
     <div class="buy_product">
       <span>{{ buyItem.brand.name }}</span>
