@@ -3,7 +3,10 @@
   <div class="tab_subtitle">
     <p>{{ label() }}</p>
     @if (searchStore.likedResults().length && index() === 1) {
-      <span class="tab_likes-number">{{ this.searchStore.likedResults().length }}</span>
+      <span class="tab_likes-number">{{ searchStore.likedResults().length }}</span>
+    }
+    @if (buyStore.buyResults().length && index() === 2) {
+      <span class="tab_likes-number">{{ buyStore.buyResults().length }}</span>
     }
   </div>
   <ng-container *ngIf="index() === tabsStateService.activeTab(); else templateA">

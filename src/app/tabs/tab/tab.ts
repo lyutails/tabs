@@ -3,6 +3,7 @@ import { TabsState } from '../services/tabs-state';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { SearchStore } from '../../search/services/search-store';
+import { BuyStore } from '../../buy/store/buy-store';
 
 @Component({
   imports: [MatIconModule, CommonModule],
@@ -24,6 +25,7 @@ export class Tab {
   index = input.required<number>();
   protected tabsStateService = inject(TabsState);
   protected searchStore = inject(SearchStore);
+  protected buyStore = inject(BuyStore);
 
   ngAfterViewInit() {
     const tabDec = this.tabDecoratorView?.nativeElement;
