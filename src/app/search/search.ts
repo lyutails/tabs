@@ -58,6 +58,7 @@ export class Search {
       ).subscribe((data) => {
         const products = data.flatMap(response => response.results);
         this.results.set(products);
+        this.searchStore.searchResults.set(products);
       });
   }
 
