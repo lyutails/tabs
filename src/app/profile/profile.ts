@@ -47,11 +47,9 @@ export class Profile {
 
   toggleEditEmail() {
     this.isEditEmail.set(!this.isEditEmail());
-    console.log('edit')
   }
 
   toggleEditName() {
     this.isEditName.set(!this.isEditName());
-    console.log('edit')
   }
  }

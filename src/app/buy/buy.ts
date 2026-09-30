@@ -40,8 +40,6 @@ export class Buy {
     }
 
     const checkoutData = this.buyModel();
-
-    console.log(checkoutData);
   } 
   
   onValidTillChange(event: Event): void {
