@@ -116,6 +116,8 @@ mat-error {
     background-size: cover;
     background-position: center;
     position: fixed;
+    // mix-blend-mode: overlay;
+    opacity: 0.1;
     inset: 0;
     z-index: -1;
 }
