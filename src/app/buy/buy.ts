@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { BuyStore } from './store/buy-store';
 import { FormatPricePipe } from './pipes/format-price-pipe';
 import { form, FormField, maxLength, minLength, required } from '@angular/forms/signals';
@@ -34,6 +34,8 @@ export class Buy {
     maxLength(schemaPath.cvv, 3, { message: 'required 3 digits' });
     minLength(schemaPath.cvv, 3, { message: 'required 3 digits' })
   });
+  position = 0;
+  products = viewChild<ElementRef>('products');
 
   buy(): void {
     if (this.buyForm().invalid()) {
@@ -60,5 +62,27 @@ export class Buy {
 
   removeAllFromCart() {
     this.buyStore.removeAllFromCart();
+  }
+
+
+  moveRight() {
+    this.position -= 100;
+  }
+
+  moveLeft() {
+    this.position += 100;
+  }
+
+  get canMoveLeft() {
+    return this.position < 0;
+  }
+
+  get canMoveRight() {
+    const element = this.products()?.nativeElement;
+    const container = element?.parentElement;
+
+    if (!element || !container) return false;
+
+    return this.position < element.scrollWidth - container.clientWidth;
   }
 }

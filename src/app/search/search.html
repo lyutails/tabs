@@ -74,6 +74,7 @@
   @if (isLoading()) {
     <mat-spinner></mat-spinner>
   } @else if (results().length > 0) {
+    <p class="search_no-results-text">Results</p>
     @for (result of results(); track result.code) {
       <tabs-search-item
         cdkDrag

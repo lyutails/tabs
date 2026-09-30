@@ -1,17 +1,40 @@
-<div class="buy_products">
-  <p>Products: {{ this.buyStore.buyResults().length }}</p>
-  <p>Price: {{ this.buyStore.total() }}</p>
-  @for (buyItem of buyStore.buyResults(); track buyItem.code) {
-    <div class="buy_product">
-      <span>{{ buyItem.brand.name }}</span>
-      <img [src]="buyItem.listingImage.url" class="buy_image" />
-      <span> {{ buyItem.price.formattedValue | formatPrice }}</span>
-    </div>
-  }
+@let currency = '₽';
+<div class="buy_products-wrapper">
+  <div class="buy_products-info">
+    <p>Products: {{ this.buyStore.buyResults().length }}</p>
+    <p>Price: {{ this.buyStore.total() }} {{ currency }}</p>
+    <button type="button" (click)="removeAllFromCart()" class="buy_delete-products">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+  <div class="buy_products" [style.transform]="'translateX(' + position + 'px)'" #products>
+    @for (buyItem of buyStore.buyResults(); track buyItem.code) {
+      <div class="buy_product">
+        <span>{{ buyItem.brand.name }}</span>
+        <img [src]="buyItem.listingImage.url" class="buy_image" />
+        <span> {{ buyItem.price.formattedValue | formatPrice }}</span>
+      </div>
+    }
+  </div>
+  <div class="buy_slider-buttons">
+    <button
+      type="button"
+      (click)="moveLeft()"
+      class="buy_slider-button left"
+      [disabled]="!canMoveLeft"
+    >
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <button
+      type="button"
+      (click)="moveRight()"
+      class="buy_slider-button right"
+      [disabled]="!canMoveRight"
+    >
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
 </div>
-<button type="button" (click)="removeAllFromCart()">
-  <mat-icon>delete</mat-icon>
-</button>
 <div class="form_wrapper">
   <form class="buy_form" (ngSubmit)="buy()">
     <div class="form_field" [style.padding-top]="'100px'">
@@ -69,7 +92,7 @@
           class="buy_input"
           id="validTill"
           matInput
-          type="text"
+          type="password"
           placeholder="MM/YY"
           [formField]="buyForm.validTill"
           (input)="onValidTillChange($event)"
