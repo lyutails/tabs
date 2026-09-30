@@ -1,7 +1,9 @@
 # Tabs
 
+Created using Angular v22, fetching products from beauty store API, Signal Form with validation, different types of signals.
+
 ## Deploy: 
-[click here to see the tabs deploy](https://tabs-phi-three.vercel.app/)
+[Click here to see the deploy](https://tabs-phi-three.vercel.app/)
 
 <img width="1250" height="1063" alt="image" src="https://github.com/user-attachments/assets/34b4ef5b-7463-487c-a861-5ae3008c90b7" />
 
