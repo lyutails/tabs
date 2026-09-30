@@ -90,7 +90,7 @@ tabs-search-item {
     &_dropped-container {
         width: 100%;
         height: 100%;
-        background-color: lightpink;
+        background-color: var(--secondary-color);
         position: relative;
         display: flex;
         flex-direction: column;
