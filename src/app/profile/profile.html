@@ -11,8 +11,60 @@
   </button>
 </div>
 <div class="profile_info">
-  <label>Your email</label>
-  <input />
-  <label>Your name</label>
-  <input />
+  <div class="profile_label-error">
+    <label for="email">Your email</label>
+    @if (isEditEmail()) {
+      @if (profileForm.email().touched() && profileForm.email().invalid()) {
+        @for (error of profileForm.email().errors(); track error) {
+          <mat-error>*{{ error.message }}</mat-error>
+        }
+      }
+    }
+  </div>
+  <div class="profile_input-wrapper">
+    @if (isEditEmail()) {
+      <input
+        class="profile_input"
+        id="email"
+        [formField]="profileForm.email"
+        placeholder="email@email.com"
+        [readOnly]="!isEditEmail()"
+      />
+    } @else {
+      <span class="profile_input-placeholder">{{
+        profileForm.email().value() ? profileForm.email().value() : emailPlaceholder
+      }}</span>
+    }
+    <button class="profile_edit-button" (click)="toggleEditEmail()">
+      <mat-icon>{{ isEditEmail() === true ? 'edit_off' : 'edit' }}</mat-icon>
+    </button>
+  </div>
+  <div class="profile_label-error">
+    <label for="name">Your name</label>
+    @if (isEditName()) {
+      @if (profileForm.name().touched() && profileForm.name().invalid()) {
+        @for (error of profileForm.name().errors(); track error) {
+          <mat-error>*{{ error.message }}</mat-error>
+        }
+      }
+    }
+  </div>
+  <div class="profile_input-wrapper">
+    @if (isEditName()) {
+      <input
+        class="profile_input"
+        id="name"
+        [formField]="profileForm.name"
+        placeholder="Name"
+        [readOnly]="!isEditName()"
+      />
+    } @else {
+      <span class="profile_input-placeholder">{{
+        profileForm.name().value() ? profileForm.name().value() : namePlaceholder
+      }}</span>
+    }
+    <button class="profile_edit-button" (click)="toggleEditName()">
+      <mat-icon>{{ isEditName() === true ? 'edit_off' : 'edit' }}</mat-icon>
+    </button>
+  </div>
 </div>

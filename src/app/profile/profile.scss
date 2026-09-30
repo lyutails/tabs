@@ -46,6 +46,32 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    &_edit-button {
+        background-color: transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &_input-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &_input-placeholder {
+        color: black;
+        width: 180px;
+    }
+
+    &_input {
+        width: 180px;
+    }
+
+    &_label-error {
+        display: flex;
+    }
 }
 
 p {
@@ -56,4 +82,8 @@ p {
 span {
     color: #777;
     font-size: 14px;
+}
+
+mat-error {
+    color: black
 }
