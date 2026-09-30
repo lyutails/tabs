@@ -42,7 +42,6 @@ export class Found implements OnInit {
     const result = this.searchStore.likedResults().find((item) => item.code === value);
     if (result) {
       this.buyStore.buyResults.update((items) => [...items, result]);
-      this.buyStore.countTotalPrice();
     }
   }
 }

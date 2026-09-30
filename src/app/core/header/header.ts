@@ -6,6 +6,7 @@ import { TitleHighlight } from '../directives/title-highlight/title-highlight';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Navigate } from '../services/navigate';
 import { ProfileService } from '../../profile/services/profile-service';
+import { BuyStore } from '../../buy/store/buy-store';
 
 @Component({
   imports: [MatIconModule, CommonModule],
@@ -20,6 +21,7 @@ export class Header implements OnInit {
   route = inject(ActivatedRoute);
   protected currentRoute = '';
   protected profileService = inject(ProfileService);
+  protected buyStore = inject(BuyStore);
 
   ngOnInit() {
     this.currentRoute = this.route.snapshot.url[0]?.path;

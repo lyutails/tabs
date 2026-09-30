@@ -6,9 +6,10 @@ import { MatError, MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CheckoutData } from './models/buy.model';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  imports: [FormatPricePipe, FormField, MatError, FormsModule, MatFormFieldModule, MatInputModule],
+  imports: [FormatPricePipe, FormField, MatError, FormsModule, MatFormFieldModule, MatInputModule, MatIconModule],
   selector: 'tabs-buy',
   styleUrl: './buy.scss',
   templateUrl: './buy.html',
@@ -40,8 +41,8 @@ export class Buy {
     }
 
     const checkoutData = this.buyModel();
-  } 
-  
+  }
+
   onValidTillChange(event: Event): void {
     const input = event.target as HTMLInputElement;
     let value = input.value.replace(/\D/g, '');
@@ -54,5 +55,9 @@ export class Buy {
       ...model,
       validTill: value
     }));
+  }
+
+  removeAllFromCart() {
+    this.buyStore.removeAllFromCart();
   }
 }

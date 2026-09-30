@@ -11,6 +11,7 @@
   </button>
   <button [style.background]="'transparent'" (click)="navigate('buy')">
     <mat-icon>shopping_cart</mat-icon>
+    <span class="header_products-count">{{ buyStore.buyResults().length }}</span>
   </button>
   <button [style.background]="'transparent'" (click)="navigate('profile')">
     @if (profileService.isUploaded()) {
