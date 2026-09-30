@@ -15,6 +15,17 @@
         align-items: center;
         gap: 10px;
     }
+
+    &_subtitle {
+        display: flex;
+        align-items: center;
+    }
+
+    &_likes-number {
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
 }
 
 :host(.tab_background-color) {

@@ -7,9 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CheckoutData } from './models/buy.model';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Component({
-  imports: [FormatPricePipe, FormField, MatError, FormsModule, MatFormFieldModule, MatInputModule, MatIconModule],
+  imports: [FormatPricePipe, FormField, MatError, FormsModule, MatFormFieldModule, MatInputModule, MatIconModule, MatTooltip],
   selector: 'tabs-buy',
   styleUrl: './buy.scss',
   templateUrl: './buy.html',

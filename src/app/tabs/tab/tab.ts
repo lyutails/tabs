@@ -1,7 +1,8 @@
-import { Component, ElementRef, inject, input, model, ViewChild, viewChild } from '@angular/core';
+import { Component, ElementRef, inject, input, model, signal, ViewChild, viewChild } from '@angular/core';
 import { TabsState } from '../services/tabs-state';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { SearchStore } from '../../search/services/search-store';
 
 @Component({
   imports: [MatIconModule, CommonModule],
@@ -20,8 +21,9 @@ export class Tab {
   public sizeTitle = model(20);
   @ViewChild('tab') tabDecoratorView!: ElementRef<HTMLDivElement>;
   protected tabSignalView = viewChild<ElementRef<HTMLDivElement>>('tab');
-  tabsStateService = inject(TabsState);
   index = input.required<number>();
+  protected tabsStateService = inject(TabsState);
+  protected searchStore = inject(SearchStore);
 
   ngAfterViewInit() {
     const tabDec = this.tabDecoratorView?.nativeElement;
