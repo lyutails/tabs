@@ -1,9 +1,10 @@
 <div class="buy_products">
+  <p>Products: {{ this.buyStore.buyResults().length }}</p>
+  <p>Price: {{ this.buyStore.total() }}</p>
   @for (buyItem of buyStore.buyResults(); track buyItem.code) {
     <div class="buy_product">
       <span>{{ buyItem.brand.name }}</span>
-      <span>{{ buyItem.name }}</span>
-      <img [src]="buyItem.listingImage.url" />
+      <img [src]="buyItem.listingImage.url" class="buy_image" />
       <span> {{ buyItem.price.formattedValue | formatPrice }}</span>
     </div>
   }
@@ -28,7 +29,7 @@
       />
     </div>
     <div class="form_name-surname">
-      <div class="form_field">
+      <div class="form_field name">
         <div class="form_label-error">
           <mat-label for="name">Name</mat-label>
           @if (buyForm.name().touched() && buyForm.name().invalid()) {
@@ -39,7 +40,7 @@
         </div>
         <input class="buy_input" id="name" matInput type="text" [formField]="buyForm.name" />
       </div>
-      <div class="form_field">
+      <div class="form_field surname">
         <div class="form_label-error">
           <mat-label for="surname">Surname</mat-label>
           @if (buyForm.surname().touched() && buyForm.surname().invalid()) {
@@ -54,7 +55,7 @@
     <div class="form_date-cvv">
       <div class="form_field date">
         <div class="form_label-error">
-          <mat-label for="validTill">Valid till month/year</mat-label>
+          <mat-label for="validTill">Valid till</mat-label>
           @if (buyForm.validTill().touched() && buyForm.validTill().invalid()) {
             @for (error of buyForm.validTill().errors(); track error) {
               <mat-error>*{{ error.message }}</mat-error>
@@ -65,8 +66,10 @@
           class="buy_input"
           id="validTill"
           matInput
-          type="date"
+          type="text"
+          placeholder="MM/YY"
           [formField]="buyForm.validTill"
+          (input)="onValidTillChange($event)"
         />
       </div>
       <div class="form_field cvv">
@@ -89,7 +92,6 @@
       </div>
     </div>
   </form>
-  <button type="submit" [disabled]="buyForm().invalid()"
-  class="form_submit">Buy</button>
+  <button type="submit" [disabled]="buyForm().invalid()" class="form_submit">Buy</button>
 </div>
 <div class="background"></div>

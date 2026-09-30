@@ -4,7 +4,6 @@ import { Tab } from './tab/tab';
 import { CommonModule, NgTemplateOutlet } from '@angular/common';
 import { ActiveContent } from './active-content/active-content';
 import { MatIconModule } from '@angular/material/icon';
-import { ControlButtons } from './control-buttons/control-buttons';
 import { TabsState } from './services/tabs-state';
 import { Router } from '@angular/router';
 import { Navigate } from '../core/services/navigate';
@@ -36,7 +35,6 @@ export class Tabs {
   navigateService = inject(Navigate);
 
   ngOnInit(): void {
-    this.disabledSingleState()[2] = false;
     this.tabsStateService.activeTab.update(() => this.disabledSingleState().indexOf(true));
   }
 

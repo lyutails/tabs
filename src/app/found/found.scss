@@ -5,6 +5,8 @@ tabs-search-item {
 .found {
     &_item-wrapper {
         width: 20%;
+        height: 100%;
+        position: relative;
     }
 
     &_interested {
@@ -17,7 +19,7 @@ tabs-search-item {
     }
 
     &_title-wrapper {
-        height: 100px;
+        height: 80px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -28,15 +30,23 @@ tabs-search-item {
     &_dropped-title {
         font-size: 1.5rem;
         text-align: center;
-        margin: 20px 0 20px 0;
+        margin-top: 20px;
     }
 
     &_remove-single {
-        position: relative;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        border: none;
+        padding: 0;
     }
 
     &_add-to-cart {
-        position: relative;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        border: none;
+        padding: 0;
     }
 
 }

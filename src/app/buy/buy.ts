@@ -5,6 +5,7 @@ import { form, FormField, maxLength, minLength, required } from '@angular/forms/
 import { MatError, MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { DateCutterPipe } from './pipes/date-cutter-pipe';
 
 interface CheckoutData {
   cardNumber: string;
@@ -15,7 +16,7 @@ interface CheckoutData {
 }
 
 @Component({
-  imports: [FormatPricePipe, FormField, MatError, FormsModule, MatFormFieldModule, MatInputModule],
+  imports: [FormatPricePipe, FormField, MatError, FormsModule, MatFormFieldModule, MatInputModule, DateCutterPipe],
   selector: 'tabs-buy',
   styleUrl: './buy.scss',
   templateUrl: './buy.html',
@@ -34,9 +35,10 @@ export class Buy {
     required(schemaPath.name, { message: 'required' });
     required(schemaPath.surname, { message: 'required' });
     required(schemaPath.validTill, { message: 'required' });
+    maxLength(schemaPath.validTill, 5, { message: 'format MM/YY' });
     required(schemaPath.cvv, { message: 'required' });
-    maxLength(schemaPath.cvv, 3, { message: 'cvv should be 3 digits long' });
-    minLength(schemaPath.cvv, 3, { message: 'cvv should be 3 digits long' })
+    maxLength(schemaPath.cvv, 3, { message: 'required 3 digits' });
+    minLength(schemaPath.cvv, 3, { message: 'required 3 digits' })
   });
 
   buy(): void {
@@ -48,5 +50,19 @@ export class Buy {
     const checkoutData = this.buyModel();
 
     console.log(checkoutData);
+  } 
+  
+  onValidTillChange(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    let value = input.value.replace(/\D/g, '');
+    value = value.slice(0, 4);
+    if (value.length > 2) {
+      value = `${value.slice(0, 2)}/${value.slice(2)}`;
+    }
+    input.value = value;
+    this.buyModel.update(model => ({
+      ...model,
+      validTill: value
+    }));
   }
 }

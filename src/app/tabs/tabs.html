@@ -43,22 +43,9 @@
 </tabs-tab-group>
 <ng-container>
   <tabs-active-content>
-    <!-- <div class="tabs_textarea-wrapper">
-      <p class="tabs_textarea-name">
-        Your thoughts for the {{ tabOrderName[tabsStateService.activeTab()] }} tab goes here.
-      </p>
-      <textarea
-        class="tabs_textarea"
-        [value]="tabsStateService.tabTextarea()[tabsStateService.activeTab()]"
-        (input)="updateTabTextarea($event)"
-      ></textarea>
-    </div> -->
     <ng-container *ngTemplateOutlet="templateTab"></ng-container>
   </tabs-active-content>
 </ng-container>
-<!-- <button (click)="toggleAllTabs()" type="button" class="tabs_button">
-  {{ buttonName }}
-</button> -->
 <ng-template #templateTab>
   @switch (tabsStateService.activeTab()) {
     @case (0) {

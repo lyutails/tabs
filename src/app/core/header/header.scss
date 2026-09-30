@@ -37,4 +37,12 @@ button:hover {
         color: #f12152;
         // color: black;
     }
+
+    &_profile-img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;
+    }
 }

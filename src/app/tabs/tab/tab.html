@@ -1,11 +1,5 @@
 <div class="tab" #tab>
   <h2 [style.font-size.px]="sizeTitle()">{{ title() }}</h2>
-  <!-- <div class="tab_size-buttons">
-    <span>Title size</span>
-    <button aria-label="Increase title size" (click)="increaseSize()">+</button>
-    <span>{{ sizeTitle() }}</span>
-    <button aria-label="Decrease title size" (click)="decreaseSize()">-</button>
-  </div> -->
   <p>{{ label() }}</p>
   <ng-container *ngIf="index() === tabsStateService.activeTab(); else templateA">
     <mat-icon [style.color]="'yellow'">{{ tabsStateService.tabIcons()[index()] }}</mat-icon>
@@ -14,8 +8,4 @@
     <mat-icon>{{ tabsStateService.tabIcons()[index()] }}</mat-icon>
   </ng-template>
   <ng-content>Default tab</ng-content>
-  <!-- <p>
-    Status:
-    {{ active() ? 'I am active' : disabled() === false ? 'I am disabled' : 'I am enabled' }}
-  </p> -->
 </div>

@@ -5,6 +5,7 @@ import { Theme } from '../theme-service/theme';
 import { TitleHighlight } from '../directives/title-highlight/title-highlight';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Navigate } from '../services/navigate';
+import { ProfileService } from '../../profile/services/profile-service';
 
 @Component({
   imports: [MatIconModule, CommonModule],
@@ -18,6 +19,7 @@ export class Header implements OnInit {
   navigateService = inject(Navigate);
   route = inject(ActivatedRoute);
   protected currentRoute = '';
+  protected profileService = inject(ProfileService);
 
   ngOnInit() {
     this.currentRoute = this.route.snapshot.url[0]?.path;
