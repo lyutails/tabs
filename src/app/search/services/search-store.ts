@@ -4,4 +4,5 @@ import { Result } from '../search.model';
 @Service()
 export class SearchStore {
     likedResults = signal<Result[]>([]);
+    searchResults = signal<Result[]>([]);
 }

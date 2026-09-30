@@ -2,7 +2,11 @@
   @if (layout() !== 'side') {
     <div class="found_title-wrapper">
       @if (currentPage !== 'liked') {
-        <p class="found_dropped-title">Drag here what you like</p>
+        @if (searchStore.likedResults().length === 0) {
+          <p class="found_dropped-title">Drag here what you like</p>
+        } @else {
+          <p class="found_dropped-title">Your favorites</p>
+        }
         @if (layout() !== 'search') {
           <button
             [style.background]="'transparent'"

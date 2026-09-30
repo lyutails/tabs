@@ -15,6 +15,7 @@ import { CdkDrag, CdkDragDrop, CdkDropList } from '@angular/cdk/drag-drop';
 import { SearchStore } from './services/search-store';
 import { Found } from '../found/found';
 import { ActivatedRoute } from '@angular/router';
+import { BuyStore } from '../buy/store/buy-store';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
@@ -40,6 +41,7 @@ export class Search {
   currentPage = '';
   private route = inject(ActivatedRoute);
   isHiddenSliderArrows = linkedSignal<boolean>(() => false);
+  protected buyStore = inject(BuyStore);
 
   ngOnInit() {
     this.currentPage = this.route.snapshot.url[0]?.path;
@@ -56,6 +58,7 @@ export class Search {
       ).subscribe((data) => {
         const products = data.flatMap(response => response.results);
         this.results.set(products);
+        this.searchStore.searchResults.set(products);
       });
   }
 
@@ -85,6 +88,7 @@ export class Search {
       ).subscribe((data) => {
         const products = data.flatMap(response => response.results);
         this.results.set(products);
+        this.searchStore.searchResults.set(products);
       });
   }
 
