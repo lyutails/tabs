@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CheckoutData } from './models/buy.model';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTooltip } from '@angular/material/tooltip';
 import { MatDialog } from '@angular/material/dialog';
 import { Dialog } from '../core/utils/dialog/dialog';
 
@@ -44,6 +43,7 @@ export class Buy {
   readonly dialog = inject(MatDialog);
   purchaseMessage = 'We start working on it, the details and the receipt are sent to your email. 💖';
   customerName = '';
+  isCvvVisible = signal<boolean>(true);
 
   buy(): void {
     if (this.buyForm().invalid()) {
@@ -113,5 +113,9 @@ export class Buy {
     if (!element || !container) return false;
 
     return this.position < element.scrollWidth - container.clientWidth;
+  }
+
+  toggleCvvVisibility() {
+    this.isCvvVisible.set(!this.isCvvVisible());
   }
 }

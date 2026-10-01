@@ -144,7 +144,16 @@
           inputmode="numeric"
           placeholder="111"
           [formField]="buyForm.cvv"
+          [type]="isCvvVisible() ? 'password' : 'text'"
         />
+        <button
+          class="buy_cvv-visibiity"
+          type="button"
+          (click)="toggleCvvVisibility()"
+          [class.buy-card--side]="layout() === 'side'"
+        >
+          <mat-icon>{{ isCvvVisible() ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
       </div>
     </div>
   </form>
