@@ -47,9 +47,15 @@ export class Profile {
 
   toggleEditEmail() {
     this.isEditEmail.set(!this.isEditEmail());
+    if (this.profileModel().email) {
+      this.profileService.email.set(this.profileModel().email);
+    }
   }
 
   toggleEditName() {
     this.isEditName.set(!this.isEditName());
+    if (this.profileModel().name) {
+      this.profileService.name.set(this.profileModel().name);
+    }
   }
  }

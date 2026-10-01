@@ -60,10 +60,11 @@
     }
   </div>
 </div>
-
-<button type="button" class="search_divider" [style.background-color]="'transparent'">
-  <mat-icon>arrow_forward</mat-icon>
-</button>
+@if (searchStore.searchResults().length > 0) {
+  <button type="button" class="search_divider" [style.background-color]="'transparent'">
+    <mat-icon>arrow_forward</mat-icon>
+  </button>
+}
 <div
   class="search_items"
   cdkDropList
