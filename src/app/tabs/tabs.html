@@ -1,3 +1,6 @@
+<tabs-advertisment-line
+  [style.display]="advertismentService.isAdvertisment() === true ? 'flex' : 'none'"
+></tabs-advertisment-line>
 @let openTabButton = 'OPEN';
 <tabs-tab-group>
   @for (tabTitle of tabsStateService.tabTitles(); track $index; let i = $index) {

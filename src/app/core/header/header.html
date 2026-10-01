@@ -31,6 +31,13 @@
         <mat-icon>person</mat-icon>
       }
     </button>
+    <button
+      class="header_adv-toggle"
+      matTooltip="on/off promo"
+      (click)="advertismentService.toggleAdvertisment()"
+    >
+      <mat-icon>{{ advertismentService.isAdvertisment() === true ? 'check' : 'remove' }}</mat-icon>
+    </button>
     <button class="header_button theme-button" (click)="themeService.toggleTheme()">
       <mat-icon class="theme-icon">{{
         themeService.theme() === 'light' ? 'light_mode' : 'dark_mode'

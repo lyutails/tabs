@@ -1,0 +1,30 @@
+.adv {
+    &_phrase {
+        font-size: 16px;
+        display: inline-block;
+        white-space: nowrap;
+    }
+}
+
+.marquee {
+    overflow: hidden;
+}
+
+.marquee_track {
+    display: flex;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+    gap: 20px;
+}
+
+.marquee_group {
+    display: flex;
+    flex-shrink: 0;
+    gap: 20px;
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}

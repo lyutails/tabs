@@ -33,9 +33,7 @@ button:hover {
 
     &_logo-name {
         font-size: 30px;
-        // font-weight: bold;
         color: #f12152;
-        // color: black;
     }
 
     &_profile-img {
@@ -56,6 +54,36 @@ button:hover {
         align-items: center;
         justify-content: center;
         transform: translate(18px, -35px);
+    }
+
+    &_adv-toggle {
+        box-sizing: border-box;
+        width: 22px;
+        height: 22px;
+        min-width: 22px;
+        min-height: 22px;
+        padding: 0;
+        margin: 15px 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 2px solid black;
+        border-radius: 50%;
+        background: transparent;
+
+        mat-icon {
+            width: 16px;
+            height: 16px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+
+    &_buttons {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -112,6 +140,10 @@ button:hover {
             z-index: 4;
             display: block;
             transition: right 0.5s;
+        }
+
+        &_adv-toggle {
+            margin: 25px 10px 15px 10px;
         }
     }
 

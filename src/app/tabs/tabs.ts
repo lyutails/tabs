@@ -11,10 +11,12 @@ import { Found } from '../found/found';
 import { Buy } from '../buy/buy';
 import { Search } from '../search/search';
 import { Profile } from '../profile/profile';
+import { AdvertismentLine } from '../advertisment-line/advertisment-line';
+import { AdvertismentService } from '../advertisment-line/services/advertisment-service';
 
 @Component({
   imports: [TabGroup, Tab, CommonModule, ActiveContent, MatIconModule,
-    NgTemplateOutlet, Found, Buy, Search, Profile],
+    NgTemplateOutlet, Found, Buy, Search, Profile, AdvertismentLine],
   selector: 'tabs-tabs',
   styleUrl: './tabs.scss',
   templateUrl: './tabs.html',
@@ -33,6 +35,7 @@ export class Tabs {
   protected tabOrderName = this.tabsStateService.tabOrderName;
   protected disabledAllState = this.tabsStateService.disabledAllState;
   navigateService = inject(Navigate);
+  advertismentService = inject(AdvertismentService);
 
   ngOnInit(): void {
     this.tabsStateService.activeTab.update(() => this.disabledSingleState().indexOf(true));

@@ -1,0 +1,11 @@
+<div class="marquee">
+  <div class="marquee_track">
+    @for (copy of [1, 2]; track copy) {
+      <div class="marquee_group">
+        @for (phrase of advertismentPhrases; track i; let i = $index) {
+          <span class="adv_phrase">{{ phrase }}</span>
+        }
+      </div>
+    }
+  </div>
+</div>
