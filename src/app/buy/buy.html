@@ -3,8 +3,12 @@
   <div class="buy_products-info">
     <p class="buy_products-info-text">Products: {{ buyStore.buyResults().length }}</p>
     <p class="buy_products-info-text">Price: {{ buyStore.total() }} {{ currency }}</p>
-    <button type="button" (click)="removeAllFromCart()" class="buy_delete-products"
-    [disabled]="buyStore.buyResults().length === 0">
+    <button
+      type="button"
+      (click)="removeAllFromCart()"
+      class="buy_delete-products"
+      [disabled]="buyStore.buyResults().length === 0"
+    >
       <mat-icon>delete</mat-icon>
     </button>
   </div>
@@ -37,13 +41,13 @@
   </div>
 </div>
 <div class="form_wrapper">
-  <form class="buy_form" (ngSubmit)="buy()">
-    <div class="form_field" [style.padding-top]="'100px'">
+  <form class="buy_form" (ngSubmit)="buy()" [class.buy-card--side]="layout() === 'side'">
+    <div class="form_field card">
       <div class="form_label-error">
-        <mat-label for="cardNumber">Card Number</mat-label>
+        <mat-label class="form_input-label" for="cardNumber">Card Number</mat-label>
         @if (buyForm.cardNumber().touched() && buyForm.cardNumber().invalid()) {
           @for (error of buyForm.cardNumber().errors(); track error) {
-            <mat-error>*{{ error.message }}</mat-error>
+            <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
           }
         }
       </div>
@@ -52,40 +56,55 @@
         id="cardNumber"
         matInput
         type="text"
+        placeholder="0000 0000 0000 0000"
         [formField]="buyForm.cardNumber"
       />
     </div>
     <div class="form_name-surname">
       <div class="form_field name">
         <div class="form_label-error">
-          <mat-label for="name">Name</mat-label>
+          <mat-label class="form_input-label" for="name">Name</mat-label>
           @if (buyForm.name().touched() && buyForm.name().invalid()) {
             @for (error of buyForm.name().errors(); track error) {
-              <mat-error>*{{ error.message }}</mat-error>
+              <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
             }
           }
         </div>
-        <input class="buy_input" id="name" matInput type="text" [formField]="buyForm.name" />
+        <input
+          class="buy_input"
+          id="name"
+          matInput
+          type="text"
+          [formField]="buyForm.name"
+          placeholder="Name"
+        />
       </div>
       <div class="form_field surname">
         <div class="form_label-error">
-          <mat-label for="surname">Surname</mat-label>
+          <mat-label class="form_input-label" for="surname">Surname</mat-label>
           @if (buyForm.surname().touched() && buyForm.surname().invalid()) {
             @for (error of buyForm.surname().errors(); track error) {
-              <mat-error>*{{ error.message }}</mat-error>
+              <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
             }
           }
         </div>
-        <input class="buy_input" id="surname" matInput type="text" [formField]="buyForm.surname" />
+        <input
+          class="buy_input"
+          id="surname"
+          matInput
+          type="text"
+          [formField]="buyForm.surname"
+          placeholder="Surname"
+        />
       </div>
     </div>
     <div class="form_date-cvv">
       <div class="form_field date">
         <div class="form_label-error">
-          <mat-label for="validTill">Valid till</mat-label>
+          <mat-label class="form_input-label" for="validTill">Valid till</mat-label>
           @if (buyForm.validTill().touched() && buyForm.validTill().invalid()) {
             @for (error of buyForm.validTill().errors(); track error) {
-              <mat-error>*{{ error.message }}</mat-error>
+              <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
             }
           }
         </div>
@@ -101,10 +120,10 @@
       </div>
       <div class="form_field cvv">
         <div class="form_label-error">
-          <mat-label for="cvv">CVV</mat-label>
+          <mat-label class="form_input-label" for="cvv">CVV</mat-label>
           @if (buyForm.cvv().touched() && buyForm.cvv().invalid()) {
             @for (error of buyForm.cvv().errors(); track error) {
-              <mat-error>*{{ error.message }}</mat-error>
+              <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
             }
           }
         </div>
@@ -114,6 +133,7 @@
           matInput
           type="number"
           inputmode="numeric"
+          placeholder="111"
           [formField]="buyForm.cvv"
         />
       </div>

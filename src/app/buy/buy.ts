@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, inject, input, signal, viewChild } from '@angular/core';
 import { BuyStore } from './store/buy-store';
 import { FormatPricePipe } from './pipes/format-price-pipe';
 import { form, FormField, maxLength, minLength, required } from '@angular/forms/signals';
@@ -36,6 +36,7 @@ export class Buy {
   });
   position = 0;
   products = viewChild<ElementRef>('products');
+  layout = input<'default' | 'side' | 'search'>('default');
 
   buy(): void {
     if (this.buyForm().invalid()) {
