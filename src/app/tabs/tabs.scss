@@ -127,6 +127,18 @@ tabs-tab::after {
     animation: fade-in 500ms ease-out;
 }
 
+tabs-advertisment-line {
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    overflow: hidden;
+    background-color: rgb(250, 166, 121);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -142,5 +154,9 @@ tabs-tab::after {
         &_tab {
             width: 50%;
         }
+    }
+
+    tabs-advertisment-line {
+        top: 90px;
     }
 }
