@@ -9,7 +9,7 @@ Created using Angular v22, fetching products from beauty store API, Signal Form 
 
 ## Logic:
 
-<img width="1586" height="1824" alt="tabs drawio (1)" src="https://github.com/user-attachments/assets/9e6eaa66-576c-47a8-8b87-75d25ba2e926" />
+<img width="1586" height="1824" alt="tabs drawio" src="https://github.com/user-attachments/assets/f8720f06-3b09-4425-b450-22198e9476cd" />
 
 ## UI Structure / Concept:
 
