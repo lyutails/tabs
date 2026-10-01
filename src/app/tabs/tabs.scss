@@ -71,6 +71,14 @@ tabs-tab::after {
         display: flex;
         flex-direction: column;
     }
+
+    &_profile-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-10px);
+    }
 }
 
 .tabs_button {

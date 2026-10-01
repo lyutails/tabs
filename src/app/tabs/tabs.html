@@ -41,6 +41,9 @@
       >
         <mat-icon> {{ disabledSingleState()[i] === true ? 'lock' : 'lock_open' }}</mat-icon>
       </button>
+      @if (profileService.isUploaded() && i === 3) {
+        <img class="tabs_profile-img" [src]="profileService.previewUrl()" />
+      }
     </tabs-tab>
   }
 </tabs-tab-group>
