@@ -22,7 +22,6 @@ export class Header implements OnInit {
   protected profileService = inject(ProfileService);
   protected buyStore = inject(BuyStore);
   isBurgerOpen = signal<boolean>(false);
-  isBurgerVisible = signal<boolean>(false);
   burger = viewChild<ElementRef>('burger');
   isMobile = window.matchMedia('(max-width: 768px)').matches;
 

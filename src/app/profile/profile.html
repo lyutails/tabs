@@ -32,7 +32,7 @@
       />
     } @else {
       <span class="profile_input-placeholder">{{
-        profileForm.email().value() ? profileForm.email().value() : emailPlaceholder
+        profileService.email() ? profileService.email() : emailPlaceholder
       }}</span>
     }
     <button class="profile_edit-button" (click)="toggleEditEmail()">
@@ -60,7 +60,7 @@
       />
     } @else {
       <span class="profile_input-placeholder">{{
-        profileForm.name().value() ? profileForm.name().value() : namePlaceholder
+        profileService.name() ? profileService.name() : namePlaceholder
       }}</span>
     }
     <button class="profile_edit-button" (click)="toggleEditName()">
