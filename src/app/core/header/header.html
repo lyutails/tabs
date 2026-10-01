@@ -2,27 +2,40 @@
   <span class="header_logo-image"></span>
   <span class="header_logo-name">冬</span>
 </div>
-<div class="header_buttons">
-  <button [style.background]="'transparent'" (click)="navigate('search')">
-    <mat-icon>search</mat-icon>
+
+@if (!isMobile) {
+  <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
+} @else {
+  <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
+  <button class="burger_button" (click)="toggleBurgerMenu()" #burger>
+    <mat-icon class="burger_icon">{{ isBurgerOpen() ? 'close' : 'menu' }}</mat-icon>
   </button>
-  <button [style.background]="'transparent'" (click)="navigate('liked')">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button [style.background]="'transparent'" (click)="navigate('buy')">
-    <mat-icon>shopping_cart</mat-icon>
-    <span class="header_products-count">{{ buyStore.buyResults().length }}</span>
-  </button>
-  <button [style.background]="'transparent'" (click)="navigate('profile')">
-    @if (profileService.isUploaded()) {
-      <img class="header_profile-img" [src]="profileService.previewUrl()"/>
-    } @else {
-      <mat-icon>person</mat-icon>
-    }
-  </button>
-  <button class="theme-button" (click)="themeService.toggleTheme()">
-    <mat-icon class="theme-icon">{{
-      themeService.theme() === 'light' ? 'light_mode' : 'dark_mode'
-    }}</mat-icon>
-  </button>
-</div>
+}
+
+<ng-template #headerTemplate>
+  <div class="header_buttons" [class.openBurger]="isBurgerOpen()">
+    <button class="header_button" [style.background]="'transparent'" (click)="navigate('search')">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button class="header_button" [style.background]="'transparent'" (click)="navigate('liked')">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button class="header_button" [style.background]="'transparent'" (click)="navigate('buy')">
+      <mat-icon>shopping_cart</mat-icon>
+      <span class="header_products-count">{{ buyStore.buyResults().length }}</span>
+    </button>
+    <button class="header_button" [style.background]="'transparent'" (click)="navigate('profile')">
+      @if (profileService.isUploaded()) {
+        <img class="header_profile-img" [src]="profileService.previewUrl()" />
+      } @else {
+        <mat-icon>person</mat-icon>
+      }
+    </button>
+    <button class="header_button theme-button" (click)="themeService.toggleTheme()">
+      <mat-icon class="theme-icon">{{
+        themeService.theme() === 'light' ? 'light_mode' : 'dark_mode'
+      }}</mat-icon>
+    </button>
+  </div>
+  <div class="header_buttons-background" [class.openBurgerBack]="isBurgerOpen()"></div
+></ng-template>
