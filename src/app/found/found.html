@@ -1,22 +1,42 @@
 <div [class.found-container--side]="layout() === 'side'">
   @if (layout() !== 'side') {
-    <div class="found_title-wrapper">
+    <div class="found_title-wrapper" [class.found-container--side]="layout() === 'search'">
       @if (currentPage !== 'liked') {
         @if (searchStore.likedResults().length === 0) {
           <p class="found_dropped-title">Drag here what you like</p>
         } @else {
           <p class="found_dropped-title">Your favorites</p>
         }
-        @if (layout() !== 'search') {
-          <button
-            [style.background]="'transparent'"
-            class="found_heart"
-            matTooltip="Go to liked"
-            (click)="navigate('liked')"
-          >
-            <mat-icon class="found_dropped-remove">favorite</mat-icon>
-          </button>
-        }
+        <div class="found_nav">
+          @if (layout() !== 'search') {
+            <button
+              [style.background]="'transparent'"
+              class="found_heart"
+              matTooltip="Go to liked"
+              (click)="navigate('liked')"
+            >
+              <mat-icon class="found_dropped-remove">favorite</mat-icon>
+            </button>
+          }
+          @if (searchStore.likedResults().length !== 0) {
+            @if (layout() !== 'search') {
+              <button
+                [style.background]="'transparent'"
+                matTooltip="Delete all products"
+                (click)="removeAllLiked()"
+              >
+                <mat-icon class="found_remove-all">delete</mat-icon>
+              </button>
+              <button
+                [style.background]="'transparent'"
+                matTooltip="Buy selected"
+                (click)="navigate('buy')"
+              >
+                <mat-icon class="found_dropped-remove">shopping_cart_checkout</mat-icon>
+              </button>
+            }
+          }
+        </div>
       } @else {
         @if (layout() !== 'search') {
           <button
@@ -26,24 +46,6 @@
             (click)="navigate('search')"
           >
             <mat-icon class="found_dropped-remove">search</mat-icon>
-          </button>
-        }
-      }
-      @if (searchStore.likedResults().length !== 0) {
-        @if (layout() !== 'search') {
-          <button
-            [style.background]="'transparent'"
-            matTooltip="Delete all products"
-            (click)="removeAllLiked()"
-          >
-            <mat-icon class="found_remove-all">delete</mat-icon>
-          </button>
-          <button
-            [style.background]="'transparent'"
-            matTooltip="Buy selected"
-            (click)="navigate('buy')"
-          >
-            <mat-icon class="found_dropped-remove">shopping_cart_checkout</mat-icon>
           </button>
         }
       }
