@@ -68,15 +68,15 @@ button {
     padding-top: 0;
 }
 
-// .found-container--side {
-//     height: 300px;
-//     overflow-y: auto;
-// }
-
 .found_title-wrapper.found-container--side {
     justify-content: center;
     width: 100%;
     height: 40px;
+}
+
+.found-container--side.found_interested {
+    height: 300px;
+    overflow-y: scroll;
 }
 
 
