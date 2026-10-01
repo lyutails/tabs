@@ -1,4 +1,4 @@
-import { inject, Service } from '@angular/core';
+import { inject, Service, signal } from '@angular/core';
 import { RGCatalogResponse } from '../search.model';
 import { forkJoin, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
@@ -7,6 +7,7 @@ import { RIVE_GAUCHE_API } from '../../core/constants/api.constants';
 @Service()
 export class SearchService {
     private http = inject(HttpClient);
+    isLoading = signal<boolean>(false);
     
     getBrand(codes: number[]): Observable<RGCatalogResponse[]> {
         const requestedBrandsItems = codes.map((code) =>
