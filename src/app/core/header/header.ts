@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, OnInit, signal, viewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Theme } from '../theme-service/theme';
-import { TitleHighlight } from '../directives/title-highlight/title-highlight';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Navigate } from '../services/navigate';
 import { ProfileService } from '../../profile/services/profile-service';
@@ -22,6 +21,16 @@ export class Header implements OnInit {
   protected currentRoute = '';
   protected profileService = inject(ProfileService);
   protected buyStore = inject(BuyStore);
+  isBurgerOpen = signal<boolean>(false);
+  isBurgerVisible = signal<boolean>(false);
+  burger = viewChild<ElementRef>('burger');
+  isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+  @HostListener('window:resize')
+  onResize() {
+    this.isMobile = window.innerWidth <= 768;
+  }
+
 
   ngOnInit() {
     this.currentRoute = this.route.snapshot.url[0]?.path;
@@ -29,5 +38,9 @@ export class Header implements OnInit {
 
   navigate(route: string): void {
     this.navigateService.navigate(route);
+  }
+
+  toggleBurgerMenu(): void {
+    this.isBurgerOpen.set(!this.isBurgerOpen());
   }
 }

@@ -1,8 +1,8 @@
 @let currency = '₽';
 <div class="buy_products-wrapper">
   <div class="buy_products-info">
-    <p>Products: {{ buyStore.buyResults().length }}</p>
-    <p>Price: {{ buyStore.total() }} {{ currency }}</p>
+    <p class="buy_products-info-text">Products: {{ buyStore.buyResults().length }}</p>
+    <p class="buy_products-info-text">Price: {{ buyStore.total() }} {{ currency }}</p>
     <button type="button" (click)="removeAllFromCart()" class="buy_delete-products"
     [disabled]="buyStore.buyResults().length === 0">
       <mat-icon>delete</mat-icon>

@@ -58,3 +58,68 @@ button:hover {
         transform: translate(18px, -35px);
     }
 }
+
+.burger_button {
+    display: none;
+    z-index: 10;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header_buttons-background {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .burger {
+        &_button {
+            background-color: transparent;
+            display: block;
+            z-index: 10;
+            position: fixed;
+            right: 35px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .header {
+        &_buttons {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: -150px;
+            top: 60px;
+            z-index: 5;
+            transition: right 0.5s;
+        }
+
+        &_button {
+            margin-top: 20px;
+        }
+
+        &_buttons-background {
+            width: 130px;
+            top: 0;
+            bottom: 0;
+            position: fixed;
+            background-color: white;
+            right: -200px;
+            z-index: 4;
+            display: block;
+            transition: right 0.5s;
+        }
+    }
+
+    .openBurger {
+        right: 35px;
+    }
+
+    .openBurgerBack {
+        right: 0px;
+    }
+}
