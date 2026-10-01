@@ -1,7 +1,3 @@
-tabs-search-item {
-    width: 100%;
-}
-
 .search {
     &_button {
         &:hover {
@@ -25,6 +21,17 @@ tabs-search-item {
 
         &:hover {
             cursor: pointer;
+        }
+    }
+
+    &_popular-button {
+        width: 100%;
+        background-color: var(--secondary-color);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(255, 255, 123);
         }
     }
 
@@ -81,17 +88,11 @@ tabs-search-item {
     &_dropped-container {
         width: 100%;
         height: 100%;
-        // background-color: var(--secondary-color);
+        background-color: var(--secondary-color);
         position: relative;
         display: flex;
         flex-direction: column;
         overflow-y: auto;
-    }
-
-    &_wrapper {
-        display: flex;
-        flex-direction: row-reverse;
-        height: 100%;
     }
 
     &_container {
@@ -102,13 +103,21 @@ tabs-search-item {
         justify-content: space-between;
         gap: 10px;
         margin-bottom: 50px;
-        height: 100%;
     }
 
     &_control-wrapper {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    &_button-input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 20px;
     }
 
     &_item {
@@ -139,9 +148,8 @@ tabs-search-item {
     &_no-results-text {
         width: 100%;
         text-align: center;
-        height: 40px;
-        font-size: 1.4rem;
-        margin-bottom: 10px;
+        margin: 20px 0 20px 0;
+        font-size: 1.2rem;
     }
 
     &_divider {
@@ -157,7 +165,7 @@ tabs-search-item {
     &_background {
         width: 100%;
         height: 100%;
-        background-image: url('../../../public/Firefly1.png');
+        background-image: url('../../../../public/Firefly1.png');
         background-repeat: no-repeat;
         background-size: contain;
         position: fixed;
@@ -176,6 +184,22 @@ tabs-search-item {
         width: 20%;
         position: relative;
     }
+
+    &_form-input {
+        width: 100%;
+        height: 35px;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 5px;
+        background-color: var(--secondary-color);
+        padding-left: 10px;
+        outline: none;
+        border: none;
+
+        &::placeholder {
+            padding-left: 10px;
+        }
+    }
 }
 
 .search-container--side {
@@ -183,7 +207,7 @@ tabs-search-item {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 180px;
+    height: 300px;
     margin-bottom: 0;
 
     .search_container {
@@ -210,84 +234,6 @@ tabs-search-item {
 }
 
 .search-container--items-side {
-    height: 180px;
+    height: 300px;
     overflow-y: auto;
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1600px) {
-    .search {
-        &_no-results-text {
-            width: 100%;
-            text-align: center;
-            height: 40px;
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-    }
-}
-
-@media screen and (min-width: 768.9px) and (max-width: 1200px) {
-    .search {
-        &_no-results-text {
-            font-size: 1.2rem;
-        }
-
-        &_item-wrapper {
-            width: 30%;
-            position: relative;
-        }
-    }
-}
-
-@media screen and (min-width: 600.9px) and (max-width: 768px) {
-    .search {
-        &_no-results-text {
-            font-size: 1.1rem;
-        }
-
-        &_item-wrapper {
-            width: 42%;
-            position: relative;
-        }
-    }
-}
-
-@media screen and (min-width: 451px) and (max-width: 600px) {
-    .search {
-        &_no-results-text {
-            font-size: 1rem;
-        }
-
-        &_item-wrapper {
-            width: 42%;
-            position: relative;
-        }
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 450px) {
-    .search {
-        &_no-results-text {
-            font-size: 0.9rem;
-        }
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 600px) {
-    .search {
-        &_dropped-remove {
-            position: absolute;
-            right: 0px;
-            top: 10px;
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        &_item-wrapper {
-            width: 100%;
-            position: relative;
-        }
-    }
 }
