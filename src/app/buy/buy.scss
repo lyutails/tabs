@@ -91,6 +91,19 @@
         border-bottom: 1px solid black;
         height: 30px;
     }
+
+    &_cvv-visibiity {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        position: absolute;
+        transform: translate(480%, 80%);
+    }
+}
+
+.buy_cvv-visibiity.buy-card--side {
+    transform: translate(400%, 20%);
+
 }
 
 .form {
