@@ -5,7 +5,7 @@ Created using Angular v22, fetching products from beauty store API, Signal Form 
 ## Deploy: 
 [Click here to see the deploy](https://tabs-phi-three.vercel.app/)
 
-<img width="1250" height="1063" alt="image" src="https://github.com/user-attachments/assets/34b4ef5b-7463-487c-a861-5ae3008c90b7" />
+<img width="1212" height="1061" alt="image" src="https://github.com/user-attachments/assets/8c0f92b8-ae4b-43f9-b577-d30953fe47fe" />
 
 ## Logic:
 
