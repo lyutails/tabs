@@ -58,6 +58,7 @@
         type="text"
         placeholder="0000 0000 0000 0000"
         [formField]="buyForm.cardNumber"
+        (input)="onValidCardNumberChange($event)"
       />
     </div>
     <div class="form_name-surname">
@@ -66,7 +67,9 @@
           <mat-label class="form_input-label" for="name">Name</mat-label>
           @if (buyForm.name().touched() && buyForm.name().invalid()) {
             @for (error of buyForm.name().errors(); track error) {
-              <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
+              <mat-error [class.buy-card--side]="layout() === 'side'"
+                >*{{ error.message }}</mat-error
+              >
             }
           }
         </div>
@@ -84,7 +87,9 @@
           <mat-label class="form_input-label" for="surname">Surname</mat-label>
           @if (buyForm.surname().touched() && buyForm.surname().invalid()) {
             @for (error of buyForm.surname().errors(); track error) {
-              <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
+              <mat-error [class.buy-card--side]="layout() === 'side'"
+                >*{{ error.message }}</mat-error
+              >
             }
           }
         </div>
@@ -104,7 +109,9 @@
           <mat-label class="form_input-label" for="validTill">Valid till</mat-label>
           @if (buyForm.validTill().touched() && buyForm.validTill().invalid()) {
             @for (error of buyForm.validTill().errors(); track error) {
-              <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
+              <mat-error [class.buy-card--side]="layout() === 'side'"
+                >*{{ error.message }}</mat-error
+              >
             }
           }
         </div>
@@ -112,7 +119,7 @@
           class="buy_input"
           id="validTill"
           matInput
-          type="password"
+          type="text"
           placeholder="MM/YY"
           [formField]="buyForm.validTill"
           (input)="onValidTillChange($event)"
@@ -123,7 +130,9 @@
           <mat-label class="form_input-label" for="cvv">CVV</mat-label>
           @if (buyForm.cvv().touched() && buyForm.cvv().invalid()) {
             @for (error of buyForm.cvv().errors(); track error) {
-              <mat-error [class.buy-card--side]="layout() === 'side'">*{{ error.message }}</mat-error>
+              <mat-error [class.buy-card--side]="layout() === 'side'"
+                >*{{ error.message }}</mat-error
+              >
             }
           }
         </div>
@@ -139,6 +148,8 @@
       </div>
     </div>
   </form>
-  <button type="submit" [disabled]="buyForm().invalid()" class="form_submit">Buy</button>
+  <button type="submit" [disabled]="buyForm().invalid()" class="form_submit" (click)="buy()">
+    Buy
+  </button>
 </div>
 <div class="background"></div>
