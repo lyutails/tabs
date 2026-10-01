@@ -1,58 +1,60 @@
-<div class="search_container" [class.search-container--side]="layout() === 'side'">
-  <tabs-search-control></tabs-search-control>
-  <div
-    class="search_dropped-container"
-    cdkDropList
-    id="likedList"
-    (cdkDropListDropped)="dropToLiked($event)"
+<tabs-search-control></tabs-search-control>
+<div class="search_wrapper">
+  <div class="search_container" [class.search-container--side]="layout() === 'side'">
+    <div
+      class="search_dropped-container"
+      cdkDropList
+      id="likedList"
+      (cdkDropListDropped)="dropToLiked($event)"
+    >
+      @if (currentPage !== 'search') {
+        <tabs-found [layout]="'search'"></tabs-found>
+      } @else {
+        <tabs-found></tabs-found>
+      }
+    </div>
+  </div>
+  <button
+    type="button"
+    class="search_divider"
+    [style.visibility]="searchStore.searchResults().length > 0 ? 'visible' : 'hidden'"
   >
-    @if (currentPage !== 'search') {
-      <tabs-found [layout]="'search'"></tabs-found>
+    <mat-icon>arrow_forward</mat-icon>
+  </button>
+  <div
+    class="search_items"
+    cdkDropList
+    id="resultsList"
+    (cdkDropListDropped)="dropToLiked($event)"
+    [class.search-container--items-side]="layout() === 'side'"
+  >
+    @if (searchService.isLoading()) {
+      <mat-spinner></mat-spinner>
+    } @else if (searchStore.searchResults().length > 0) {
+      <p class="search_no-results-text">Search results</p>
+      @for (result of searchStore.searchResults(); track result.code) {
+        <div class="search_item-wrapper">
+          <tabs-search-item
+            cdkDrag
+            [cdkDragData]="result"
+            class="search_item"
+            [brandName]="result.brand.name"
+            [imgSrc]="result.listingImage.url"
+            [itemName]="result.name"
+            [price]="result.price.formattedValue"
+          ></tabs-search-item>
+          <button
+            class="search_add-to-cart"
+            [style.background]="'transparent'"
+            matTooltip="Add to cart"
+            (click)="buyStore.addToCart(result.code)"
+          >
+            <mat-icon>add_shopping_cart</mat-icon>
+          </button>
+        </div>
+      }
     } @else {
-      <tabs-found></tabs-found>
+      <p class="search_no-results-text">Currently no results</p>
     }
   </div>
-</div>
-<button
-  type="button"
-  class="search_divider"
-  [style.visibility]="searchStore.searchResults().length > 0 ? 'visible' : 'hidden'"
->
-  <mat-icon>arrow_forward</mat-icon>
-</button>
-<div
-  class="search_items"
-  cdkDropList
-  id="resultsList"
-  (cdkDropListDropped)="dropToLiked($event)"
-  [class.search-container--items-side]="layout() === 'side'"
->
-  @if (searchService.isLoading()) {
-    <mat-spinner></mat-spinner>
-  } @else if (searchStore.searchResults().length > 0) {
-    <p class="search_no-results-text">Results</p>
-    @for (result of searchStore.searchResults(); track result.code) {
-      <div class="search_item-wrapper">
-        <tabs-search-item
-          cdkDrag
-          [cdkDragData]="result"
-          class="search_item"
-          [brandName]="result.brand.name"
-          [imgSrc]="result.listingImage.url"
-          [itemName]="result.name"
-          [price]="result.price.formattedValue"
-        ></tabs-search-item>
-        <button
-          class="search_add-to-cart"
-          [style.background]="'transparent'"
-          matTooltip="Add to cart"
-          (click)="buyStore.addToCart(result.code)"
-        >
-          <mat-icon>add_shopping_cart</mat-icon>
-        </button>
-      </div>
-    }
-  } @else {
-    <p class="search_no-results-text">Currently no results</p>
-  }
 </div>

@@ -20,18 +20,18 @@ tabs-search-item {
     }
 
     &_title-wrapper {
-        height: 80px;
+        height: 40px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
         gap: 10px;
+        margin-bottom: 10px;
     }
 
     &_dropped-title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: center;
-        margin-top: 20px;
     }
 
     &_remove-single {
@@ -76,7 +76,7 @@ button {
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
     .found {
         &_dropped-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
         &_item-wrapper {
@@ -88,7 +88,7 @@ button {
 @media screen and (min-width: 768.9px) and (max-width: 1200px) {
     .found {
         &_dropped-title {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         &_item-wrapper {
@@ -100,7 +100,7 @@ button {
 @media screen and (min-width: 600.9px) and (max-width: 768px) {
     .found {
         &_dropped-title {
-            font-size: 1rem;
+            font-size: 1.1rem;
             text-align: start;
             margin-left: 10px;
         }
@@ -111,10 +111,24 @@ button {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 451px) and (max-width: 600px) {
     .found {
         &_dropped-title {
-            font-size: 0.8rem;
+            font-size: 1rem;
+            text-align: start;
+            margin-left: 10px;
+        }
+
+        &_item-wrapper {
+            width: 42%;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .found {
+        &_dropped-title {
+            font-size: 0.9rem;
             text-align: start;
             margin-top: 10px;
         }
@@ -130,7 +144,7 @@ button {
         }
 
         &_item-wrapper {
-            width: 42%;
+            width: 100%;
         }
     }
 }
