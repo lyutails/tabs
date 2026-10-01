@@ -108,6 +108,10 @@
         max-width: 500px;
         background-color: transparent;
 
+        &.card {
+            padding-top: 100px;
+        }
+
         &.cvv {
             width: 40%;
         }
@@ -182,6 +186,54 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.buy_form.buy-card--side {
+    height: 220px;
+}
+
+mat-error.buy-card--side {
+    display: none;
+}
+
+.buy-card--side {
+    background-size: 60%;
+
+    .form_field {
+        width: 50%;
+
+        &.card {
+            padding-top: 50px;
+        }
+
+        &.name {
+            width: 40%;
+        }
+
+        &.surname {
+            width: 40%;
+        }
+
+        &.date {
+            width: 40%;
+        }
+
+        &.cvv {
+            width: 40%;
+        }
+    }
+
+    .form_input-label {
+        display: none;
+    }
+
+    .form_name-surname {
+        width: 50%;
+    }
+
+    .form_date-cvv {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1200px) {
