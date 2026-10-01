@@ -13,6 +13,7 @@ import { Search } from '../search/search';
 import { Profile } from '../profile/profile';
 import { AdvertismentLine } from '../advertisment-line/advertisment-line';
 import { AdvertismentService } from '../advertisment-line/services/advertisment-service';
+import { ProfileService } from '../profile/services/profile-service';
 
 @Component({
   imports: [TabGroup, Tab, CommonModule, ActiveContent, MatIconModule,
@@ -36,6 +37,7 @@ export class Tabs {
   protected disabledAllState = this.tabsStateService.disabledAllState;
   navigateService = inject(Navigate);
   advertismentService = inject(AdvertismentService);
+  profileService = inject(ProfileService);
 
   ngOnInit(): void {
     this.tabsStateService.activeTab.update(() => this.disabledSingleState().indexOf(true));
