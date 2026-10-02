@@ -174,8 +174,9 @@ tabs-search-item {
 
     &_add-to-cart {
         position: absolute;
-        top: 10px;
-        right: -20px;
+        top: 20px;
+        right: 0;
+        padding: 0;
     }
 
     &_item-wrapper {
@@ -189,7 +190,7 @@ tabs-search-item {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 220px;
+    height: 240px;
     margin-bottom: 0;
 
     .search_container {
@@ -212,7 +213,7 @@ tabs-search-item {
 }
 
 .search-container--items-side {
-    height: 220px;
+    height: 240px;
     overflow-y: auto;
 }
 

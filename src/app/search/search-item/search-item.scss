@@ -1,11 +1,11 @@
 .item {
     &_image-wrapper {
-    width: 100%;
-    aspect-ratio: 1/1.2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+        width: 100%;
+        aspect-ratio: 1/1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
     }
 
     &_image {
@@ -15,6 +15,12 @@
     }
 
     &_brand {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &_name {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
