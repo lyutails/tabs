@@ -59,11 +59,9 @@ export class SearchControl {
   searchPopular() {
     this.searchService.isLoading.set(true);
 
-    this.brandName.set('');
-
     this.brandCode = 0;
 
-    this.searchService.getBrand([this.brandName()])
+    this.searchService.getBrand(['clinique'])
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
