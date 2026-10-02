@@ -2,12 +2,22 @@
   <h2 [style.font-size.px]="sizeTitle()">{{ title() }}</h2>
   <div class="tab_subtitle">
     <p>{{ label() }}</p>
-    @if (searchStore.likedResults().length && index() === 1) {
-      <span class="tab_likes-number">{{ searchStore.likedResults().length }}</span>
-    }
-    @if (buyStore.buyResults().length && index() === 2) {
-      <span class="tab_likes-number">{{ buyStore.buyResults().length }}</span>
-    }
+    <span class="number-container">
+      @if (searchStore.likedResults().length && index() === 1) {
+        <span class="tab_likes-number">{{ searchStore.likedResults().length }}</span>
+        <span class="anim-back" [class.number_anim1]="searchStore.animNumber()"></span>
+        <span class="anim-back" [class.number_anim2]="searchStore.animNumber()"></span>
+        <span class="anim-back" [class.number_anim3]="searchStore.animNumber()"></span>
+      }
+    </span>
+    <span class="number-container">
+      @if (buyStore.buyResults().length && index() === 2) {
+        <span class="tab_likes-number">{{ buyStore.buyResults().length }}</span>
+        <span class="anim-back" [class.number_anim1]="buyStore.animNumber()"></span>
+        <span class="anim-back" [class.number_anim2]="buyStore.animNumber()"></span>
+        <span class="anim-back" [class.number_anim3]="buyStore.animNumber()"></span>
+      }
+    </span>
   </div>
   <ng-container *ngIf="index() === tabsStateService.activeTab(); else templateA">
     <mat-icon [style.color]="'yellow'">{{ tabsStateService.tabIcons()[index()] }}</mat-icon>

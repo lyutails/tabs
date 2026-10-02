@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, input, viewChild } from '@angular/core';
+import { Component, ElementRef, inject, input, signal, viewChild } from '@angular/core';
 import { SearchItem } from './search-item/search-item';
 import { Result } from './search.model';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -50,5 +50,11 @@ export class Search {
       }
       return [...items, result];
     })
+
+    this.searchStore.animNumber.set(false);
+
+    requestAnimationFrame(() => {
+      this.searchStore.animNumber.set(true);
+    });
   }
 }
