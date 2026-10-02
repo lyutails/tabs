@@ -1,14 +1,14 @@
-import { Component, ElementRef, inject, input, linkedSignal, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, inject, linkedSignal, signal, viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { SearchService } from '../service/search-service';
 import { finalize } from 'rxjs';
-import { Result } from '../search.model';
 import { SearchStore } from '../services/search-store';
 import { BRANDS_CODES } from '../brands.constants';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Result } from '../../../catalog-importer/catalog-importer.model';
 
 @Component({
   imports: [MatIconModule, MatInputModule,
@@ -22,6 +22,7 @@ export class SearchControl {
   private searchService = inject(SearchService);
   protected isLoading = signal<boolean>(false);
   protected filteredCodes = signal<number[]>([]);
+  protected filteredNames = signal<string[]>([]);
   protected results = signal<Result[]>([]);
   searchStore = inject(SearchStore);
   isHiddenSliderArrows = linkedSignal<boolean>(() => false);
@@ -31,16 +32,16 @@ export class SearchControl {
   protected input = viewChild<ElementRef<HTMLInputElement>>('input');
   protected snackBar = inject(MatSnackBar);
 
-  getBrandProducts(): void {
+  getBrandProducts(brands: string[]): void {
     this.searchService.isLoading.set(true);
 
-    this.searchService.getBrand(this.filteredCodes())
+    this.searchService.getBrand(brands)
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
         })
-      ).subscribe((data) => {
-        const products = data.flatMap(response => response.results);
+    ).subscribe((data) => {
+        const products = data.flatMap(response => response);
         this.results.set(products);
         this.searchStore.searchResults.set(products);
       });
@@ -48,10 +49,8 @@ export class SearchControl {
 
   searchBrand(brand: string) {
     this.brandName.set(brand);
-    this.brandCode = BRANDS_CODES[this.brandName()];
-    this.filteredCodes.set([this.brandCode]);
-    if (this.brandCode !== 0) {
-      this.getBrandProducts();
+    if (BRANDS_CODES[this.brandName()]) {
+      this.getBrandProducts([brand]);
     } else {
       this.searchPopular();
     }
@@ -60,17 +59,18 @@ export class SearchControl {
   searchPopular() {
     this.searchService.isLoading.set(true);
 
-    this.brandName.set('');
-
     this.brandCode = 0;
 
-    this.searchService.getBrand([this.brandCode])
+    const brands = Object.keys(BRANDS_CODES);
+    const randomBrand = brands[Math.floor(Math.random() * brands.length)];
+
+    this.searchService.getBrand([randomBrand])
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
         })
       ).subscribe((data) => {
-        const products = data.flatMap(response => response.results);
+        const products = data.flatMap(response => response);
         this.results.set(products);
         this.searchStore.searchResults.set(products);
       });
@@ -89,7 +89,6 @@ export class SearchControl {
     if (!isEnglish && !isEmpty) {
       this.snackBar.open('Change layout to English, please', 'ok', { duration: 5000 });
     } else {
-      this.brandCode = BRANDS_CODES[this.brandName()];
       const filteredBrands = Object.keys(BRANDS_CODES).filter((brand) => this.normalizeBrand(brand).includes(this.normalizeBrand(value)));
       if (value) {
         this.isHiddenSliderArrows.set(true)
@@ -97,9 +96,7 @@ export class SearchControl {
         this.isHiddenSliderArrows.set(false)
       }
       this.brandSuggestions.set(filteredBrands);
-      const filteredCodes = filteredBrands.map((brand) => BRANDS_CODES[brand as keyof typeof BRANDS_CODES]);
-      this.filteredCodes.set(filteredCodes);
-      this.getBrandProducts();
+      this.getBrandProducts(this.brandSuggestions());
     }
   }
 

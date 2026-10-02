@@ -1,11 +1,8 @@
 {
-  "/api/rivegauche": {
-    "target": "https://api.rivegauche.ru",
-    "secure": true,
-    "changeOrigin": true,
-    "pathRewrite": {
-      "^/api/rivegauche": ""
-    }
+  "/api": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "changeOrigin": true
   },
   "/medias6": {
     "target": "https://api.rivegauche.ru",

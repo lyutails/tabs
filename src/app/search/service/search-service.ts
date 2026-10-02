@@ -1,25 +1,20 @@
 import { inject, Service, signal } from '@angular/core';
-import { RGCatalogResponse } from '../search.model';
 import { forkJoin, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { RIVE_GAUCHE_API } from '../../core/constants/api.constants';
+import { Result } from '../../../catalog-importer/catalog-importer.model';
 
 @Service()
 export class SearchService {
     private http = inject(HttpClient);
     isLoading = signal<boolean>(false);
     
-    getBrand(codes: number[]): Observable<RGCatalogResponse[]> {
-        const requestedBrandsItems = codes.map((code) =>
-            this.http.get<RGCatalogResponse>(`${RIVE_GAUCHE_API}rg/v1/newRG/products/search`, {
+    getBrand(brands: string[]): Observable<Result[][]> {
+        const requestedBrandsItems = brands.map((brand) =>
+            this.http.get<Result[]>('/api/products', {
                 params: {
-                    fields: 'BASIC',
-                    currentPage: 0,
+                    brand,
+                    page: 1,
                     pageSize: 36,
-                    categoryCode: 'NewNav',
-                    brandCode: `rg_brand_${code}`,
-                    rmSessionId: '68862355df126c3f7464b3e8',
-                    locale: 'ru',
                 },
                 headers: {
                     Accept: 'application/json, text/plain, */*',

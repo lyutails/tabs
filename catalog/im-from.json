@@ -1,0 +1,47 @@
+[
+  {
+    "brand": {
+      "code": "rg_brand_1305",
+      "name": "I'M FROM"
+    },
+    "code": "base_1083642",
+    "listingImage": {
+      "url": "/medias6/-normal-base-1083642-big-8809525930166.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMzc5MnxpbWFnZS9qcGVnfGltYWdlcy9oMzIvaDI3LzEyNzA2Njc2MjQ0NTEwLmpwZ3xkZGE2ZDI0OGU4OGJhOGVkNGFiODA4MjhmNTFhZTRmMDMwNTk1MDVkMTk0MGNiNWM4YWUwMjRmODhhODM3MWEw"
+    },
+    "name": "I'm from Yeongam Fig Boosting Essense",
+    "price": {
+      "formattedValue": "3 439&nbsp;₽",
+      "value": 3439
+    }
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1305",
+      "name": "I'M FROM"
+    },
+    "code": "1083648",
+    "listingImage": {
+      "url": "/medias6/-normal-1083648-big-8809595052836.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NjM2fGltYWdlL2pwZWd8aW1hZ2VzL2hlNS9oZTYvMTI3MDY2ODU2ODE2OTQuanBnfDkxZDczN2RjMDdiZDU5OWUxZGY4YjYzMGEyZWRjMjRiZjA5ZTdhNmVjYmJlNWIwYTY5YTVjODIyNTJjNWU0NjQ"
+    },
+    "name": "I'm from Geumsan Ginseng Eye Cream",
+    "price": {
+      "formattedValue": "3 220&nbsp;₽",
+      "value": 3220
+    }
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1305",
+      "name": "I'M FROM"
+    },
+    "code": "1083644",
+    "listingImage": {
+      "url": "/medias6/-normal-1083644-big-8809595052850.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NTc4fGltYWdlL2pwZWd8aW1hZ2VzL2g2MS9oNzYvMTI3MDY2ODQ4OTUyNjIuanBnfGY1MDFlNDkyOGU0NDRiNGZiNjU5MTc4NDYxOTkwYjE0MTUwYWQ2YzZhY2E3ZjNhMmUzMmMxODEzZTNhNDIzZTc"
+    },
+    "name": "I'm from Jiri Mountain Honey Glow Cream",
+    "price": {
+      "formattedValue": "3 144&nbsp;₽",
+      "value": 3144
+    }
+  }
+]
