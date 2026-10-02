@@ -20,7 +20,7 @@
     </span>
   </div>
   <ng-container *ngIf="index() === tabsStateService.activeTab(); else templateA">
-    <mat-icon [style.color]="'yellow'">{{ tabsStateService.tabIcons()[index()] }}</mat-icon>
+    <mat-icon [style.color]="'var(--tabs-button)'">{{ tabsStateService.tabIcons()[index()] }}</mat-icon>
   </ng-container>
   <ng-template #templateA>
     <mat-icon>{{ tabsStateService.tabIcons()[index()] }}</mat-icon>

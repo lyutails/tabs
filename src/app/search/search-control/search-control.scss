@@ -18,20 +18,24 @@
     &_brand-button {
         flex: 0 0 auto;
         scroll-snap-align: start;
+        background-color: var(--button-tab-color);
+        border: 1px solid var(--primary-color);
 
         &:hover {
             cursor: pointer;
+            background-color: var(--tabs-button);
         }
     }
 
     &_popular-button {
-        width: 100%;
-        background-color: var(--secondary-color);
+        width: 30%;
+        background-color: var(--button-tab-color);
+        border: 1px solid var(--primary-color);
         transition: all 0.2s ease-in-out;
 
         &:hover {
             cursor: pointer;
-            background-color: yellow;
+            background-color: var(--tabs-button);
         }
     }
 
@@ -41,11 +45,11 @@
 
     &_suggestions-wrapper {
         position: relative;
-        width: 100%;
+        width: 30%;
     }
 
     &_suggestions {
-        width: 100%;
+        width: 80%;
         height: 50px;
         display: flex;
         flex-wrap: nowrap;
@@ -56,6 +60,7 @@
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         scroll-snap-type: x mandatory;
+        margin-left: 40px;
 
         &::-webkit-scrollbar {
             display: none;
@@ -67,6 +72,8 @@
         z-index: 2;
         top: 50%;
         transform: translateY(-50%);
+        background-color: var(--secondary-color);
+        color: black;
 
         width: 32px;
         height: 32px;
@@ -107,15 +114,17 @@
 
     &_control-wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &_button-input {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 50px;
         margin-top: 20px;
     }
@@ -186,15 +195,16 @@
     }
 
     &_form-input {
-        width: 100%;
+        width: 30%;
         height: 35px;
         padding-left: 0;
         padding-right: 0;
         border-radius: 5px;
-        background-color: var(--secondary-color);
+        background-color: var(--button-tab-color);
         padding-left: 10px;
         outline: none;
         border: none;
+        border: 1px solid var(--primary-color);
 
         &::placeholder {
             padding-left: 10px;
@@ -230,6 +240,10 @@
 
     .search_dropped-container {
         background-color: transparent;
+    }
+
+    .search_popular-button {
+        background-color: var(--button-tab-color);
     }
 }
 

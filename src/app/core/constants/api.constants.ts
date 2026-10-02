@@ -1,1 +1,1 @@
-export const RIVE_GAUCHE_API = '/rivegauche-api/';
+export const RIVE_GAUCHE_API = '/api/rivegauche/';

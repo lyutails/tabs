@@ -31,6 +31,8 @@ export class BuyStore {
 
             requestAnimationFrame(() =>
                 this.animNumber.set(true));
+
+            console.log('buy');
         }
     }
 }
