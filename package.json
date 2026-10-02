@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "import:catalog": "tsx src/catalog-importer/import.ts"
   },
   "private": true,
   "packageManager": "npm@12.0.2",
@@ -30,6 +31,7 @@
     "@vitest/coverage-v8": "^4.1.11",
     "jsdom": "^28.0.0",
     "prettier": "^3.8.1",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.2",
     "vitest": "^4.0.8"
   }
