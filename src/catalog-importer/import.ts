@@ -1,11 +1,11 @@
+import { mkdir, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+
+import { BRANDS_CODES } from "../app/search/brands.constants";
 import { Result } from "./catalog-importer.model";
 
-
-const BRANDS_CODES: Record<string, number> = {
-    darphin: 267,
-};
-
 const API_URL = 'https://api.rivegauche.ru';
+const CATALOG_DIR = join(process.cwd(), 'catalog');
 
 async function getBrandPage(
     brandCode: number,
@@ -40,13 +40,8 @@ async function getBrandPage(
     return response.json();
 }
 
-async function main() {
-
-    const data = await getBrandPage(267, 0);
-
-    const result = data.results[0];
-
-    const product: Result = {
+function toResult(result: any): Result {
+    return {
         brand: {
             code: result.brand.code,
             name: result.brand.name,
@@ -61,24 +56,47 @@ async function main() {
             value: result.price.value,
         },
     };
+}
 
-    const products: Result[] = data.results.map((result: Result) => ({
-        brand: {
-            code: result.brand.code,
-            name: result.brand.name,
-        },
-        code: result.code,
-        listingImage: {
-            url: result.listingImage.url,
-        },
-        name: result.name,
-        price: {
-            formattedValue: result.price.formattedValue,
-            value: result.price.value,
-        },
-    }));
+async function getBrandProducts(brandCode: number): Promise<Result[]> {
+    const firstPage = await getBrandPage(brandCode, 0);
 
-    console.log(products);
+    const products: Result[] = firstPage.results.map(toResult);
+
+    for (
+        let page = 1;
+        page < firstPage.pagination.totalPages;
+        page++
+    ) {
+        const data = await getBrandPage(brandCode, page);
+
+        products.push(...data.results.map(toResult));
+    }
+
+    return products;
+}
+
+async function main() {
+    await mkdir(CATALOG_DIR, { recursive: true });
+
+    for (const [brandName, brandCode] of Object.entries(BRANDS_CODES)) {
+        const products = await getBrandProducts(brandCode);
+
+        const filePath = join(
+            CATALOG_DIR,
+            `${brandName}.json`,
+        );
+
+        await writeFile(
+            filePath,
+            JSON.stringify(products, null, 2),
+            'utf-8',
+        );
+
+        console.log(
+            `${brandName}: ${products.length} products`,
+        );
+    }
 }
 
 main();
