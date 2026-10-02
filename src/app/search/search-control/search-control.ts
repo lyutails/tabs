@@ -61,7 +61,10 @@ export class SearchControl {
 
     this.brandCode = 0;
 
-    this.searchService.getBrand(['clinique'])
+    const brands = Object.keys(BRANDS_CODES);
+    const randomBrand = brands[Math.floor(Math.random() * brands.length)];
+
+    this.searchService.getBrand([randomBrand])
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
