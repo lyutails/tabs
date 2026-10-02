@@ -1,6 +1,6 @@
 import { computed, inject, Service, signal } from '@angular/core';
-import { Result } from '../../search/search.model';
 import { SearchStore } from '../../search/services/search-store';
+import { Result } from '../../../catalog-importer/catalog-importer.model';
 
 @Service()
 export class BuyStore {
