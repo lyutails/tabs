@@ -15,6 +15,7 @@ export class BuyStore {
             return sum + price;
         }, 0)
     );
+    animNumber = signal<boolean>(false);
 
     removeAllFromCart() {
         this.buyResults.set([]);
@@ -25,6 +26,13 @@ export class BuyStore {
 
         if (result) {
             this.buyResults.update((items) => [...items, result]);
+
+            this.animNumber.set(false);
+
+            requestAnimationFrame(() =>
+                this.animNumber.set(true));
+
+            console.log('buy');
         }
     }
 }

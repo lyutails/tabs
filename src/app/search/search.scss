@@ -10,7 +10,7 @@ tabs-search-item {
     }
 
     &_items {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -19,9 +19,14 @@ tabs-search-item {
         gap: 10px;
     }
 
+    &_items-wrapper {
+        width: 50%;
+    }
+
     &_brand-button {
         flex: 0 0 auto;
         scroll-snap-align: start;
+        border: 1px solid var(--primary-color);
 
         &:hover {
             cursor: pointer;
@@ -149,7 +154,8 @@ tabs-search-item {
         height: 50px;
         position: sticky;
         top: 280px;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
+        color: white;
         border-radius: 50%;
         margin-top: 20px;
     }
@@ -183,7 +189,7 @@ tabs-search-item {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 180px;
+    height: 220px;
     margin-bottom: 0;
 
     .search_container {
@@ -200,17 +206,13 @@ tabs-search-item {
         flex-direction: row;
     }
 
-    .search_items {
-        flex: 1;
-    }
-
     .search_dropped-container {
         background-color: transparent;
     }
 }
 
 .search-container--items-side {
-    height: 180px;
+    height: 220px;
     overflow-y: auto;
 }
 
