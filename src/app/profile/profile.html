@@ -1,11 +1,16 @@
-<div class="profile_avatar">
-  <p>Your avatar</p>
+<div class="profile_avatar" [class.side]="layout() === 'side'">
+  @if (layout() !== 'side' || !isMobile) {
+    <p>Your avatar</p>
+  }
   <div class="profile_upload-area" [class.uploaded]="profileService.isUploaded()">
     <input #fileInput type="file" accept="image/*" hidden (change)="onFileSelected($event)" />
     @if (profileService.previewUrl(); as url) {
       <img class="profile_upload-img" [src]="url" alt="Preview" />
     }
   </div>
+  @if (layout() === 'side' && profileService.isUploaded() !== true && isMobile) {
+    <p class="profile_ava-info">Your avatar</p>
+  }
   <button type="button" class="profile_upload-button" (click)="fileInput.click()">
     Select image
   </button>

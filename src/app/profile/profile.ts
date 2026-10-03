@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, signal } from '@angular/core';
+import { Component, HostListener, inject, input, signal } from '@angular/core';
 import { ProfileService } from './services/profile-service';
 import { ProfileInfo } from './models/profile.mode';
 import { email, form, FormField, required } from '@angular/forms/signals';
@@ -27,6 +27,13 @@ export class Profile {
   isEditName = signal<boolean>(false);
   emailPlaceholder = 'email@email.com';
   namePlaceholder = 'Name';
+  layout = input<'default' | 'side' | 'search'>('default');
+  isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+  @HostListener('window:resize')
+  onResize() {
+    this.isMobile = window.innerWidth <= 768;
+  }
 
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;

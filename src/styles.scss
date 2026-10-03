@@ -112,3 +112,9 @@ p {
         flex-direction: column;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    tabs-profile {
+        flex-direction: column;
+    }
+}
