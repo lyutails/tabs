@@ -3,7 +3,7 @@
 Created using Angular v22, Signal Forms with validation, signals for state managing.
 
 ## Deploy: 
-https://tabs-phi-three.vercel.app/
+[beautyTABS](https://beauty-tabs.vercel.app/)
 
 <img width="1268" height="1058" alt="image" src="https://github.com/user-attachments/assets/1349c278-2fa5-4f3c-bc39-a4dc557aeaf0" />
 
