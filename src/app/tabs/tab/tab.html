@@ -1,3 +1,11 @@
+<button
+  class="tab_button"
+  (click)="toggleSingleTab(index())"
+  [disabled]="index() === tabsStateService.activeTab()"
+  [style.pointerEvents]="index() === tabsStateService.activeTab() ? 'none' : 'auto'"
+>
+  <mat-icon> {{ disabledSingleState()[index()] === true ? 'lock' : 'lock_open' }}</mat-icon>
+</button>
 <div class="tab" #tab>
   <h2 [style.font-size.px]="sizeTitle()">{{ title() }}</h2>
   <div class="tab_subtitle">
@@ -20,7 +28,9 @@
     </span>
   </div>
   <ng-container *ngIf="index() === tabsStateService.activeTab(); else templateA">
-    <mat-icon [style.color]="'var(--tabs-button)'">{{ tabsStateService.tabIcons()[index()] }}</mat-icon>
+    <mat-icon [style.color]="'var(--tabs-button)'">{{
+      tabsStateService.tabIcons()[index()]
+    }}</mat-icon>
   </ng-container>
   <ng-template #templateA>
     <mat-icon>{{ tabsStateService.tabIcons()[index()] }}</mat-icon>
