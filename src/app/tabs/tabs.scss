@@ -109,23 +109,6 @@ tabs-advertisment-line {
     }
 }
 
-.tab_button {
-    background: var(--button-tab-color);
-    color: var(--font-secondary-color);
-    @include mixins.transition;
-
-    &:hover {
-        cursor: pointer;
-        background-color: lightgray;
-    }
-
-    &:disabled {
-        background: lightgray;
-        color: gray;
-        user-select: none;
-    }
-}
-
 .fade-in {
     animation: fade-in 500ms ease-out;
 }

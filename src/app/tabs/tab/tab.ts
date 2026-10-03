@@ -26,6 +26,7 @@ export class Tab {
   protected tabsStateService = inject(TabsState);
   protected searchStore = inject(SearchStore);
   protected buyStore = inject(BuyStore);
+  protected disabledSingleState = this.tabsStateService.disabledSingleState;
 
   ngAfterViewInit() {
     const tabDec = this.tabDecoratorView?.nativeElement;
@@ -74,5 +75,11 @@ export class Tab {
       this.sizeTitle.update((previousSize) => previousSize - 1);
     }
     event?.stopPropagation();
+  }
+
+  toggleSingleTab(index: number): void {
+    event?.stopPropagation();
+    this.tabsStateService.disabledSingleState.update((states) =>
+      states.map((state, i) => i === index ? !state : state))
   }
 }

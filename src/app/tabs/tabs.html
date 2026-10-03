@@ -1,7 +1,7 @@
 <tabs-advertisment-line
   [style.display]="advertismentService.isAdvertisment() === true ? 'flex' : 'none'"
 ></tabs-advertisment-line>
-@let openTabButton = 'OPEN';
+@let openTabButton = 'explore';
 <tabs-tab-group>
   @for (tabTitle of tabsStateService.tabTitles(); track $index; let i = $index) {
     <tabs-tab
@@ -31,15 +31,7 @@
       [index]="$index"
     >
       <button class="tab_details" (click)="navigate(i)" [disabled]="!disabledSingleState()[i]">
-        {{ openTabButton }}
-      </button>
-      <button
-        class="tab_button"
-        (click)="toggleSingleTab(i)"
-        [disabled]="i === tabsStateService.activeTab()"
-        [style.pointerEvents]="i === tabsStateService.activeTab() ? 'none' : 'auto'"
-      >
-        <mat-icon> {{ disabledSingleState()[i] === true ? 'lock' : 'lock_open' }}</mat-icon>
+        {{ openTabButton | uppercase }}
       </button>
       @if (profileService.isUploaded() && i === 3) {
         <img class="tabs_profile-img" [src]="profileService.previewUrl()" />
