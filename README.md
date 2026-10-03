@@ -3,9 +3,9 @@
 Created using Angular v22, fetching products from beauty store API, Signal Form with validation, different types of signals for state managing.
 
 ## Deploy: 
-[Click here to see the deploy](https://tabs-phi-three.vercel.app/)
+https://tabs-phi-three.vercel.app/
 
-<img width="1245" height="1051" alt="image" src="https://github.com/user-attachments/assets/7c3ebdae-fdff-41db-9f69-022809c13a2c" />
+<img width="1300" height="1058" alt="image" src="https://github.com/user-attachments/assets/31e1f779-0de6-4360-be79-e4e6a1617780" />
 
 ## Logic:
 
