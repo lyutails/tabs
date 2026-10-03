@@ -25,23 +25,6 @@ tabs-advertisment-line {
     gap: 20px;
 }
 
-tabs-tab::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: url('../../../public/natural-nepalese-recycled-paper-texture.avif');
-    background-size: 100% 100%;
-    opacity: 0.2;
-    mix-blend-mode: multiply;
-    pointer-events: none;
-}
-
-.tabs-tab>* {
-    position: relative;
-    z-index: 1;
-}
-
 .tabs {
     &_tab {
         border-radius: 5px 5px 0 0;

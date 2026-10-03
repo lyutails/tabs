@@ -99,3 +99,30 @@ span {
 mat-error {
     color: black
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .profile_avatar {
+        margin-left: 0;
+    }
+
+    .side.profile_avatar {
+        flex-direction: row;
+    }
+
+    .side {
+        .profile_upload-area {
+            width: 80px;
+            height: 80px;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+
+        .profile_ava-info{
+            width: 80px;
+            position: absolute;
+            color: black;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
