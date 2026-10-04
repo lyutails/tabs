@@ -44,7 +44,7 @@ tabs-search {
 
 tabs-found {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -84,7 +84,7 @@ body:not(.material-symbols-loaded) .mat-icon {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     color: var(--gray-900);
     font-weight: 500;
     line-height: 100%;

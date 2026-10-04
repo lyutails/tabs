@@ -20,7 +20,7 @@ tabs-search-item {
     }
 
     &_items-wrapper {
-        width: 50%;
+        width: 40%;
     }
 
     &_brand-button {
@@ -96,11 +96,12 @@ tabs-search-item {
     &_wrapper {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
         height: 100%;
     }
 
     &_container {
-        width: 50%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -190,11 +191,12 @@ tabs-search-item {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 240px;
+    height: 190px;
     margin-bottom: 0;
 
     .search_container {
         margin-bottom: 0;
+        width: 40%;
     }
 
     .search_control-wrapper {
