@@ -9,7 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "import:catalog": "tsx src/catalog-importer/import.ts",
-    "server": "tsx server/server.ts"
+    "server": "tsx server/server.ts",
+    "mark:popular": "tsx src/catalog-mark-popular.ts"
   },
   "private": true,
   "packageManager": "npm@12.0.2",

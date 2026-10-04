@@ -8,7 +8,7 @@
       }
     </div>
   }
-  <div [class.found-container--side]="layout() === 'search'" class="found_interested">
+  <div [class.found-container--side]="layout() === 'side'" class="found_interested">
     @for (result of searchStore.likedResults(); track result.code; let i = $index) {
       <div class="found_item-wrapper">
         <tabs-search-item

@@ -432,7 +432,8 @@
     "price": {
       "formattedValue": "3 499&nbsp;₽",
       "value": 3499
-    }
+    },
+    "popular": true
   },
   {
     "brand": {
@@ -702,7 +703,8 @@
     "price": {
       "formattedValue": "4 080&nbsp;₽",
       "value": 4080
-    }
+    },
+    "popular": true
   },
   {
     "brand": {

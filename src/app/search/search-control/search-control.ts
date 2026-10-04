@@ -72,15 +72,17 @@ export class SearchControl {
     const brands = Object.keys(BRANDS_CODES);
     const randomBrand = brands[Math.floor(Math.random() * brands.length)];
 
-    this.searchService.getBrand([randomBrand])
+    this.searchService.getBrand(brands)
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
         })
       ).subscribe((data) => {
-        const products = data.flatMap(response => response);
-        this.results.set(products);
-        this.searchStore.searchResults.set(products);
+        const products = data.flatMap(response => response.filter((product) => product.popular));
+        if (products) {
+          this.results.set(products);
+          this.searchStore.searchResults.set(products);
+        }
       });
   }
 

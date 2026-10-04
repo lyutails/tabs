@@ -4,6 +4,7 @@ export interface Result {
     listingImage: ListingImage;
     name: string;
     price: Price;
+    popular?: boolean;
 }
 
 export interface Brand {

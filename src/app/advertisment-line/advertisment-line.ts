@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 export class AdvertismentLine {
   advertismentPhrases: string[] = ['Popular brands', 'from Korea Japan China Europe Russia',
     'Hyped Ingredients', 'PDRN 🧬', 'Backuchiol', 'modern Peptides and Retinol forms 🧪', 'Highly competent frienly consultants 🧝‍♀️',
-    'Quick delivery 📦', 'Full day support']
+    'Quick delivery 📦', 'Full day support', 'Online consultant'];
 }
