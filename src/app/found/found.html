@@ -4,54 +4,11 @@
       @if (currentPage !== 'liked') {
         @if (searchStore.likedResults().length === 0) {
           <p class="found_dropped-title">Drag here what you like</p>
-        } @else {
-          <p class="found_dropped-title">Your favorites</p>
-        }
-        <div class="found_nav">
-          @if (layout() !== 'search') {
-            <button
-              [style.background]="'transparent'"
-              class="found_heart"
-              matTooltip="Go to liked"
-              (click)="navigate('liked')"
-            >
-              <mat-icon class="found_dropped-remove">favorite</mat-icon>
-            </button>
-          }
-          @if (searchStore.likedResults().length !== 0) {
-            @if (layout() !== 'search') {
-              <button
-                [style.background]="'transparent'"
-                matTooltip="Delete all products"
-                (click)="removeAllLiked()"
-              >
-                <mat-icon class="found_remove-all">delete</mat-icon>
-              </button>
-              <button
-                [style.background]="'transparent'"
-                matTooltip="Buy selected"
-                (click)="navigate('buy')"
-              >
-                <mat-icon class="found_dropped-remove">shopping_cart_checkout</mat-icon>
-              </button>
-            }
-          }
-        </div>
-      } @else {
-        @if (layout() !== 'search') {
-          <button
-            [style.background]="'transparent'"
-            class="found_search"
-            matTooltip="Continue search"
-            (click)="navigate('search')"
-          >
-            <mat-icon class="found_dropped-remove">search</mat-icon>
-          </button>
         }
       }
     </div>
   }
-  <div [class.found-container--side]="layout() === 'side'" class="found_interested">
+  <div [class.found-container--side]="layout() === 'search'" class="found_interested">
     @for (result of searchStore.likedResults(); track result.code; let i = $index) {
       <div class="found_item-wrapper">
         <tabs-search-item
