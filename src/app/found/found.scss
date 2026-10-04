@@ -25,7 +25,6 @@ tabs-search-item {
         align-items: flex-start;
         justify-content: space-between;
         gap: 10px;
-        margin-bottom: 10px;
     }
 
     &_dropped-title {
@@ -35,7 +34,7 @@ tabs-search-item {
 
     &_remove-single {
         position: absolute;
-        top: 20px;
+        top: 0px;
         left: 0;
         border: none;
         padding: 0;
@@ -43,7 +42,7 @@ tabs-search-item {
 
     &_add-to-cart {
         position: absolute;
-        top: 20px;
+        top: 0px;
         right: 0;
         border: none;
         padding: 0;

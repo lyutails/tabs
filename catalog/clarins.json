@@ -1992,7 +1992,8 @@
     "price": {
       "formattedValue": "7 182&nbsp;₽",
       "value": 7182
-    }
+    },
+    "popular": true
   },
   {
     "brand": {
@@ -2802,7 +2803,8 @@
     "price": {
       "formattedValue": "9 945&nbsp;₽",
       "value": 9945
-    }
+    },
+    "popular": true
   },
   {
     "brand": {
@@ -3252,7 +3254,8 @@
     "price": {
       "formattedValue": "2 677&nbsp;₽",
       "value": 2677
-    }
+    },
+    "popular": true
   },
   {
     "brand": {
