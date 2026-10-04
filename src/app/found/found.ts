@@ -37,11 +37,4 @@ export class Found implements OnInit {
   navigate(value: string | number): void {
     this.navigateService.navigate(value);
   }
-
-  addToCart(value: string): void {
-    const result = this.searchStore.likedResults().find((item) => item.code === value);
-    if (result) {
-      this.buyStore.buyResults.update((items) => [...items, result]);
-    }
-  }
 }

@@ -31,6 +31,14 @@ export class SearchControl {
   protected brandCode = 0;
   protected input = viewChild<ElementRef<HTMLInputElement>>('input');
   protected snackBar = inject(MatSnackBar);
+  showBrands = { name: 'brand', signal: signal<boolean>(false) };
+  showCountry = { name: 'country', signal: signal<boolean>(false) };
+  showUse = { name: 'use', signal: signal<boolean>(false) };
+  showPurpose = { name: 'purpose', signal: signal<boolean>(false) };
+  showFilters = [this.showBrands, this.showCountry, this.showUse, this.showPurpose];
+  countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe'];
+  useCases: string[] = ['Cream', 'Serum', 'Eye cream', 'Toner', 'Milky Essence', 'Body'];
+  purpose: string[] = ['Moisture', 'Nourish', 'Repair'];
 
   getBrandProducts(brands: string[]): void {
     this.searchService.isLoading.set(true);
@@ -40,7 +48,7 @@ export class SearchControl {
         finalize(() => {
           this.searchService.isLoading.set(false);
         })
-    ).subscribe((data) => {
+      ).subscribe((data) => {
         const products = data.flatMap(response => response);
         this.results.set(products);
         this.searchStore.searchResults.set(products);
@@ -104,6 +112,19 @@ export class SearchControl {
     this.suggestions()?.nativeElement.scrollBy({
       left: direction === 'right' ? 200 : -200,
       behavior: 'smooth',
+    })
+  }
+
+  showAvailableFilter(value: string) {
+    this.showFilters.forEach((filter, index) => {
+      if (filter.name === value && filter.signal() === false) {
+        filter.signal.set(true);
+      } else {
+        filter.signal.set(false);
+      }
+      if (filter.name !== value) {
+        filter.signal.set(false);
+      }
     })
   }
 }

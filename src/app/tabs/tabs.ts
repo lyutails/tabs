@@ -25,7 +25,7 @@ import { ProfileService } from '../profile/services/profile-service';
 export class Tabs {
   protected title = signal('tabs');
   protected tab = 'initial tab';
-  protected tabLabels = ['What you wanna?', 'You liked', 'Checkout', 'About you'];
+  protected tabLabels = ['Some care and beauty?', 'You liked', 'Checkout', 'About you'];
   protected newTab = 'New tab';
   protected buttonName: 'activate disabled' | 'deactivate enabled' = 'deactivate enabled';
   protected tabGroup = viewChild(TabGroup);

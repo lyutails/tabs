@@ -1,19 +1,51 @@
+<div class="search_filters">
+  <button class="search_filter-button" type="button" (click)="showAvailableFilter('brand')">
+    Brand
+  </button>
+  @if (showBrands.signal() === true) {
+    @for (brand of brandSuggestions(); track brand) {
+      <button
+        matButton="elevated"
+        type="button"
+        (click)="searchBrand(brand)"
+        class="search_brand-button"
+      >
+        {{ brand }}
+      </button>
+    }
+  }
+  <button class="search_filter-button" type="button" (click)="showAvailableFilter('country')">
+    Country
+  </button>
+  @if (showCountry.signal() === true) {
+    @for (country of countries; track country) {
+      <button matButton="elevated" type="button" class="search_brand-button">
+        {{ country }}
+      </button>
+    }
+  }
+  <button class="search_filter-button" type="button" (click)="showAvailableFilter('use')">
+    Use
+  </button>
+</div>
+  @if (showUse.signal() === true) {
+    @for (useCase of useCases; track useCase) {
+      <button matButton="elevated" type="button" class="search_brand-button">
+        {{ useCase }}
+      </button>
+    }
+  }
 <div class="search_control-wrapper">
-    <button
-      matButton="filled"
-      type="button"
-      (click)="searchPopular()"
-      class="search_popular-button"
-    >
-      Search Popular
-    </button>
-    <input
-      [value]="brandName()"
-      (input)="onInput($event)"
-      #input
-      placeholder="Search"
-      class="search_form-input"
-    />
+  <button matButton="filled" type="button" (click)="searchPopular()" class="search_popular-button">
+    Search Popular
+  </button>
+  <input
+    [value]="brandName()"
+    (input)="onInput($event)"
+    #input
+    placeholder="Search"
+    class="search_form-input"
+  />
   <div class="search_suggestions-wrapper">
     @if (isHiddenSliderArrows()) {
       <button
