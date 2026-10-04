@@ -1,5 +1,9 @@
-<div class="header_logo" (click)="navigate('')">
+<div class="header_logo" (click)="navigate('')" tabsTitleHighlight>
   <span class="header_logo-image"></span>
+  @let projectName = 'beautyTABS';
+  <a class="let-title" animate.enter="fade-in" [style.font-size]="'18px'">
+    {{ projectName }}
+  </a>
 </div>
 
 @if (!isMobile) {
@@ -18,10 +22,15 @@
     </button>
     <button class="header_button" [style.background]="'transparent'" (click)="navigate('liked')">
       <mat-icon>favorite</mat-icon>
+      @if (searchStore.likedResults().length > 0) {
+        <span class="header_products-count">{{ searchStore.likedResults().length }}</span>
+      }
     </button>
     <button class="header_button" [style.background]="'transparent'" (click)="navigate('buy')">
       <mat-icon>shopping_cart</mat-icon>
-      <span class="header_products-count">{{ buyStore.buyResults().length }}</span>
+      @if (buyStore.buyResults().length > 0) {
+        <span class="header_products-count">{{ buyStore.buyResults().length }}</span>
+      }
     </button>
     <button class="header_button" [style.background]="'transparent'" (click)="navigate('profile')">
       @if (profileService.isUploaded()) {
