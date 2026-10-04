@@ -32,7 +32,6 @@
       @if (searchService.isLoading()) {
         <mat-spinner></mat-spinner>
       } @else if (searchStore.searchResults().length > 0) {
-        <p class="search_no-results-text">Search results</p>
         @for (result of searchStore.searchResults(); track result.code) {
           <div class="search_item-wrapper">
             <tabs-search-item
@@ -55,7 +54,7 @@
           </div>
         }
       } @else {
-        <p class="search_no-results-text">Currently no results</p>
+        <p class="search_no-results-text">Search results</p>
       }
     </div>
   </div>
