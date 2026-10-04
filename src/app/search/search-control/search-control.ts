@@ -38,7 +38,7 @@ export class SearchControl {
   showFilters = [this.showBrands, this.showCountry, this.showUse, this.showPurpose];
   countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe'];
   useCases: string[] = ['Cream', 'Serum', 'Eye cream', 'Toner', 'Milky Essence', 'Body'];
-  purpose: string[] = ['Moisture', 'Nourish', 'Repair'];
+  purposes: string[] = ['Moisture', 'Nourish', 'Repair'];
 
   getBrandProducts(brands: string[]): void {
     this.searchService.isLoading.set(true);

@@ -1,40 +1,78 @@
 <div class="search_filters">
-  <button class="search_filter-button" type="button" (click)="showAvailableFilter('brand')">
-    Brand
-  </button>
-  @if (showBrands.signal() === true) {
-    @for (brand of brandSuggestions(); track brand) {
-      <button
-        matButton="elevated"
-        type="button"
-        (click)="searchBrand(brand)"
-        class="search_brand-button"
-      >
-        {{ brand }}
-      </button>
-    }
-  }
-  <button class="search_filter-button" type="button" (click)="showAvailableFilter('country')">
-    Country
-  </button>
-  @if (showCountry.signal() === true) {
-    @for (country of countries; track country) {
-      <button matButton="elevated" type="button" class="search_brand-button">
-        {{ country }}
-      </button>
-    }
-  }
-  <button class="search_filter-button" type="button" (click)="showAvailableFilter('use')">
-    Use
-  </button>
+  <div class="search_filter-wrapper">
+    <button class="search_filter-button" type="button" (click)="showAvailableFilter('brand')">
+      Brand
+    </button>
+    <div
+      class="search_filter-options"
+      [style.overflow-y]="showBrands.signal() === true ? 'scroll' : 'auto'"
+    >
+      @if (showBrands.signal() === true) {
+        @for (brand of brandSuggestions(); track brand) {
+          <button
+            matButton="elevated"
+            type="button"
+            (click)="searchBrand(brand)"
+            class="search_brand-button"
+          >
+            {{ brand }}
+          </button>
+        }
+      }
+    </div>
+  </div>
+  <div class="search_filter-wrapper">
+    <button class="search_filter-button" type="button" (click)="showAvailableFilter('country')">
+      Country
+    </button>
+    <div
+      class="search_filter-options"
+      [style.overflow-y]="showCountry.signal() === true ? 'scroll' : 'auto'"
+    >
+      @if (showCountry.signal() === true) {
+        @for (country of countries; track country) {
+          <button matButton="elevated" type="button" class="search_brand-button">
+            {{ country }}
+          </button>
+        }
+      }
+    </div>
+  </div>
+  <div class="search_filter-wrapper">
+    <button class="search_filter-button" type="button" (click)="showAvailableFilter('use')">
+      Use
+    </button>
+    <div
+      class="search_filter-options"
+      [style.overflow-y]="showUse.signal() === true ? 'scroll' : 'auto'"
+    >
+      @if (showUse.signal() === true) {
+        @for (useCase of useCases; track useCase) {
+          <button matButton="elevated" type="button" class="search_brand-button">
+            {{ useCase }}
+          </button>
+        }
+      }
+    </div>
+  </div>
+  <div class="search_filter-wrapper">
+    <button class="search_filter-button" type="button" (click)="showAvailableFilter('purpose')">
+      Purpose
+    </button>
+    <div
+      class="search_filter-options"
+      [style.overflow-y]="showPurpose.signal() === true ? 'scroll' : 'auto'"
+    >
+      @if (showPurpose.signal() === true) {
+        @for (purpose of purposes; track purpose) {
+          <button matButton="elevated" type="button" class="search_brand-button">
+            {{ purpose }}
+          </button>
+        }
+      }
+    </div>
+  </div>
 </div>
-  @if (showUse.signal() === true) {
-    @for (useCase of useCases; track useCase) {
-      <button matButton="elevated" type="button" class="search_brand-button">
-        {{ useCase }}
-      </button>
-    }
-  }
 <div class="search_control-wrapper">
   <button matButton="filled" type="button" (click)="searchPopular()" class="search_popular-button">
     Search Popular
