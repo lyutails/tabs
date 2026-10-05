@@ -13,6 +13,7 @@ Created using Angular v22, Signal Forms with validation, signals for state manag
 
 ## UI Structure / Concept:
 
-<img width="1200" height="845" alt="concept (initial states)" src="https://github.com/user-attachments/assets/51975cbb-03ad-4ffb-b85a-c756facc4f02" />
+<img width="1200" height="845" alt="concept (initial states)" src="https://github.com/user-attachments/assets/44a9e8c1-8cea-421d-8e36-a07c02eb4aeb" />
+
 
 https://www.figma.com/design/G2noZXD7EdPerwVG6bD5Nc/Tabs?node-id=0-1&p=f&t=TB9fJqKrRehnWJw6-0
