@@ -39,11 +39,14 @@ export class SearchControl {
   countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe'];
   useCases: string[] = ['Cream', 'Serum', 'Eye cream', 'Toner', 'Milky Essence', 'Body'];
   purposes: string[] = ['Moisture', 'Nourish', 'Repair'];
+  searchPlaceholders: string[] = ['darphin', 'erborian', 'cream', 'serum', 'korea'];
+  selfTyping = signal<string>('');
+  searchInput = viewChild<ElementRef<HTMLInputElement>>('input');
 
-  getBrandProducts(brands: string[]): void {
+  getProduct(brands: string[], search: string): void {
     this.searchService.isLoading.set(true);
 
-    this.searchService.getBrand(brands)
+    this.searchService.getProducts(brands, search)
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
@@ -55,24 +58,25 @@ export class SearchControl {
       });
   }
 
-  searchBrand(brand: string) {
-    this.brandName.set(brand);
+  searchBrand(value: string) {
+    this.brandName.set(value);
     if (BRANDS_CODES[this.brandName()]) {
-      this.getBrandProducts([brand]);
+      this.getProduct([value], '');
     } else {
-      this.searchPopular();
+      this.getProduct([''], value);
     }
   }
 
   searchPopular() {
     this.searchService.isLoading.set(true);
 
+    this.brandName.set('');
+
     this.brandCode = 0;
 
     const brands = Object.keys(BRANDS_CODES);
-    const randomBrand = brands[Math.floor(Math.random() * brands.length)];
 
-    this.searchService.getBrand(brands)
+    this.searchService.getProducts(brands, '')
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
@@ -98,16 +102,20 @@ export class SearchControl {
     const isEmpty = value.length === 0;
     if (!isEnglish && !isEmpty) {
       this.snackBar.open('Change layout to English, please', 'ok', { duration: 5000 });
-    } else {
-      const filteredBrands = Object.keys(BRANDS_CODES).filter((brand) => this.normalizeBrand(brand).includes(this.normalizeBrand(value)));
-      if (value) {
-        this.isHiddenSliderArrows.set(true)
-      } else {
-        this.isHiddenSliderArrows.set(false)
-      }
-      this.brandSuggestions.set(filteredBrands);
-      this.getBrandProducts(this.brandSuggestions());
+      return;
     }
+    if (value) {
+      this.isHiddenSliderArrows.set(true)
+    } else {
+      this.isHiddenSliderArrows.set(false)
+    }
+    if (!value) { this.brandSuggestions.set([]); this.getProduct(Object.keys(BRANDS_CODES), ''); return; }
+    const matchedBrand = Object.keys(BRANDS_CODES).find((brand) => this.normalizeBrand(value).startsWith(this.normalizeBrand(brand)));
+    if (matchedBrand) {
+      const search = value.slice(matchedBrand.length).trim(); this.brandSuggestions.set([matchedBrand]); this.getProduct([matchedBrand], search); return;
+    }
+    const filteredBrands = Object.keys(BRANDS_CODES).filter((brand) => this.normalizeBrand(brand).includes(this.normalizeBrand(value)));
+    this.brandSuggestions.set(filteredBrands); this.getProduct(Object.keys(BRANDS_CODES), value);
   }
 
   scrollSuggestions(direction: 'left' | 'right'): void {

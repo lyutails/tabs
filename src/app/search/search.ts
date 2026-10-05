@@ -32,6 +32,7 @@ export class Search {
   protected buyStore = inject(BuyStore);
   searchStore = inject(SearchStore);
   protected searchService = inject(SearchService);
+  hoveredRemove = signal<string | null>(null);
 
   ngOnInit() {
     this.currentPage = this.route.snapshot.url[0]?.path;

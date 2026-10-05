@@ -197,7 +197,30 @@ tabs-search-item {
         position: absolute;
         top: 0px;
         right: 0;
+        border: none;
         padding: 0;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+
+            &>mat-icon {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    &_delete-from-cart {
+        position: absolute;
+        bottom: -3px;
+        right: 0;
+        border: none;
+        padding: 0;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &_item-wrapper {

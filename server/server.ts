@@ -1,7 +1,7 @@
 import express from 'express';
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
-import { Result } from '../src/catalog-importer/catalog-importer.model';
+import { Result } from '../src/catalog-importer/catalog-importer.model.js';
 
 const app = express();
 

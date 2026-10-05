@@ -21,18 +21,30 @@
         <button
           class="found_remove-single"
           [style.background]="'transparent'"
-          matTooltip="unlike"
           (click)="removeSingleLiked(result.code)"
+          (mouseenter)="hoveredLiked.set(result.code)"
+          (mouseleave)="hoveredLiked.set(null)"
         >
-          <mat-icon>favorite</mat-icon>
+          <mat-icon>{{ hoveredLiked() === result.code ? 'heart_broken' : 'favorite' }}</mat-icon>
         </button>
         <button
           class="found_add-to-cart"
           [style.background]="'transparent'"
-          matTooltip="Add to cart"
           (click)="buyStore.addToCart(result.code)"
+          [disabled]="buyStore.isInCart(result.code)"
         >
-          <mat-icon>add_shopping_cart</mat-icon>
+          <mat-icon>add_shopping_cart </mat-icon>
+        </button>
+        <button
+          class="found_delete-from-cart"
+          [style.background]="'transparent'"
+          matTooltip="remove from cart"
+          (click)="buyStore.removeFromCart(result.code)"
+          [disabled]="!buyStore.isInCart(result.code)"
+          (mouseenter)="hoveredRemove.set(result.code)"
+          (mouseleave)="hoveredRemove.set(null)"
+        >
+          <mat-icon>{{ hoveredRemove() === result.code ? 'delete_forever' : 'delete' }}</mat-icon>
         </button>
       </div>
     }
