@@ -185,11 +185,6 @@ export class SearchControl {
       this.snackBar.open('Change layout to English, please', 'ok', { duration: 5000 });
       return;
     }
-    if (value) {
-      this.isHiddenSliderArrows.set(true)
-    } else {
-      this.isHiddenSliderArrows.set(false)
-    }
     if (!value) { this.brandSuggestions.set([]); this.getProduct(Object.keys(BRANDS_CODES), ''); return; }
     const matchedBrand = Object.keys(BRANDS_CODES).find((brand) => this.normalizeBrand(value).startsWith(this.normalizeBrand(brand)));
     if (matchedBrand) {

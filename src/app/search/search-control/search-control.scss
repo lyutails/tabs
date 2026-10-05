@@ -28,7 +28,7 @@
     }
 
     &_popular-button {
-        width: 30%;
+        width: 100%;
         background-color: var(--button-tab-color);
         border: 1px solid var(--primary-color);
         transition: all 0.2s ease-in-out;
@@ -45,11 +45,11 @@
 
     &_suggestions-wrapper {
         position: relative;
-        width: 30%;
+        width: 48%;
     }
 
     &_suggestions {
-        width: 80%;
+        width: 88%;
         height: 50px;
         display: flex;
         flex-wrap: nowrap;
@@ -60,7 +60,7 @@
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         scroll-snap-type: x mandatory;
-        margin-left: 40px;
+        margin-left: 30px;
 
         &::-webkit-scrollbar {
             display: none;
@@ -81,6 +81,7 @@
 
         border: none;
         border-radius: 50%;
+        // filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.8));
         cursor: pointer;
 
         &.left {
@@ -89,6 +90,10 @@
 
         &.right {
             right: 0px;
+        }
+
+        &>mat-icon {
+            color: var(--decorative-elements);
         }
     }
 
@@ -196,7 +201,7 @@
     }
 
     &_form-input {
-        width: 30%;
+        width: 48%;
         height: 35px;
         padding-left: 0;
         padding-right: 0;
@@ -219,7 +224,7 @@
     }
 
     &_filter-wrapper {
-        width: 30%;
+        width: 18%;
     }
 
     &_filter-button {
