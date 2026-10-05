@@ -121,7 +121,7 @@ button:hover {
         &_button {
             background-color: transparent;
             display: block;
-            z-index: 10;
+            z-index: 16;
             position: fixed;
             right: 35px;
 
@@ -138,7 +138,7 @@ button:hover {
             position: fixed;
             right: -150px;
             top: 60px;
-            z-index: 5;
+            z-index: 15;
             transition: right 0.5s;
         }
 
@@ -153,7 +153,7 @@ button:hover {
             position: fixed;
             background-color: white;
             right: -200px;
-            z-index: 4;
+            z-index: 14;
             display: block;
             transition: right 0.5s;
         }
