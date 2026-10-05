@@ -102,23 +102,20 @@ export class SearchControl {
     const isEmpty = value.length === 0;
     if (!isEnglish && !isEmpty) {
       this.snackBar.open('Change layout to English, please', 'ok', { duration: 5000 });
-    } else {
-      const filteredBrands = Object.keys(BRANDS_CODES).filter((brand) => this.normalizeBrand(brand).includes(this.normalizeBrand(value)));
-      if (value) {
-        this.isHiddenSliderArrows.set(true)
-      } else {
-        this.isHiddenSliderArrows.set(false)
-      }
-      this.brandSuggestions.set(filteredBrands);
-      if (filteredBrands.length > 0) {
-        this.getProduct(this.brandSuggestions(), value);
-        return;
-      }
-      this.getProduct(
-        Object.keys(BRANDS_CODES),
-        value
-      );
+      return;
     }
+    if (value) {
+      this.isHiddenSliderArrows.set(true)
+    } else {
+      this.isHiddenSliderArrows.set(false)
+    }
+    if (!value) { this.brandSuggestions.set([]); this.getProduct(Object.keys(BRANDS_CODES), ''); return; }
+    const matchedBrand = Object.keys(BRANDS_CODES).find((brand) => this.normalizeBrand(value).startsWith(this.normalizeBrand(brand)));
+    if (matchedBrand) {
+      const search = value.slice(matchedBrand.length).trim(); this.brandSuggestions.set([matchedBrand]); this.getProduct([matchedBrand], search); return;
+    }
+    const filteredBrands = Object.keys(BRANDS_CODES).filter((brand) => this.normalizeBrand(brand).includes(this.normalizeBrand(value)));
+    this.brandSuggestions.set(filteredBrands); this.getProduct(Object.keys(BRANDS_CODES), value);
   }
 
   scrollSuggestions(direction: 'left' | 'right'): void {
