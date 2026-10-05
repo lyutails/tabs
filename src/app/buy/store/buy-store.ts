@@ -33,4 +33,20 @@ export class BuyStore {
                 this.animNumber.set(true));
         }
     }
+
+    removeFromCart(value: string): void {
+        this.buyResults.update((items) =>
+            items.filter((item) => item.code !== value)
+        );
+
+        this.animNumber.set(false);
+
+        requestAnimationFrame(() =>
+            this.animNumber.set(true)
+        );
+    }
+
+    isInCart(code: string): boolean {
+        return this.buyResults().some(item => item.code === code);
+    }
 }

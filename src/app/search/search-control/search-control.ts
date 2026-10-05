@@ -39,11 +39,14 @@ export class SearchControl {
   countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe'];
   useCases: string[] = ['Cream', 'Serum', 'Eye cream', 'Toner', 'Milky Essence', 'Body'];
   purposes: string[] = ['Moisture', 'Nourish', 'Repair'];
+  searchPlaceholders: string[] = ['darphin', 'erborian', 'cream', 'serum', 'korea'];
+  selfTyping = signal<string>('');
+  searchInput = viewChild<ElementRef<HTMLInputElement>>('input');
 
-  getBrandProducts(brands: string[]): void {
+  getProduct(brands: string[], search: string): void {
     this.searchService.isLoading.set(true);
 
-    this.searchService.getBrand(brands)
+    this.searchService.getProducts(brands, search)
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
@@ -55,24 +58,25 @@ export class SearchControl {
       });
   }
 
-  searchBrand(brand: string) {
-    this.brandName.set(brand);
+  searchBrand(value: string) {
+    this.brandName.set(value);
     if (BRANDS_CODES[this.brandName()]) {
-      this.getBrandProducts([brand]);
+      this.getProduct([value], '');
     } else {
-      this.searchPopular();
+      this.getProduct([''], value);
     }
   }
 
   searchPopular() {
     this.searchService.isLoading.set(true);
 
+    this.brandName.set('');
+
     this.brandCode = 0;
 
     const brands = Object.keys(BRANDS_CODES);
-    const randomBrand = brands[Math.floor(Math.random() * brands.length)];
 
-    this.searchService.getBrand(brands)
+    this.searchService.getProducts(brands, '')
       .pipe(
         finalize(() => {
           this.searchService.isLoading.set(false);
@@ -106,7 +110,14 @@ export class SearchControl {
         this.isHiddenSliderArrows.set(false)
       }
       this.brandSuggestions.set(filteredBrands);
-      this.getBrandProducts(this.brandSuggestions());
+      if (filteredBrands.length > 0) {
+        this.getProduct(this.brandSuggestions(), value);
+        return;
+      }
+      this.getProduct(
+        Object.keys(BRANDS_CODES),
+        value
+      );
     }
   }
 

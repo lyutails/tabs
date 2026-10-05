@@ -7,12 +7,13 @@ import { Result } from '../../../catalog-importer/catalog-importer.model';
 export class SearchService {
     private http = inject(HttpClient);
     isLoading = signal<boolean>(false);
-    
-    getBrand(brands: string[]): Observable<Result[][]> {
+
+    getProducts(brands: string[], search?: string): Observable<Result[][]> {
         const requestedBrandsItems = brands.map((brand) =>
             this.http.get<Result[]>('/api/products', {
                 params: {
                     brand,
+                    ...(search ? { search } : {}),
                     page: 1,
                     pageSize: 36,
                 },

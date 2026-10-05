@@ -1,4 +1,4 @@
-import { Component, inject, input, OnInit } from '@angular/core';
+import { Component, inject, input, OnInit, signal } from '@angular/core';
 import { SearchStore } from '../search/services/search-store';
 import { SearchItem } from '../search/search-item/search-item';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,7 +20,9 @@ export class Found implements OnInit {
   currentPage = '';
   buyStore = inject(BuyStore);
   navigateService = inject(Navigate);
-  layout = input<'default' | 'side' | 'search'>('default');
+  layout = input<'default' | 'side' | 'search'>('default'); 
+  hoveredLiked = signal<string | null>(null);
+  hoveredRemove = signal<string | null>(null);
 
   ngOnInit() {
     this.currentPage = this.route.snapshot.url[0]?.path;
