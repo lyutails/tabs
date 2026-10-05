@@ -36,7 +36,7 @@ export class SearchControl {
   showUse = { name: 'use', signal: signal<boolean>(false) };
   showPurpose = { name: 'purpose', signal: signal<boolean>(false) };
   showFilters = [this.showBrands, this.showCountry, this.showUse, this.showPurpose];
-  countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe'];
+  countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe', 'West (USA / Kanada)'];
   useCases: string[] = ['Cream', 'Serum', 'Eye cream', 'Toner', 'Milky Essence', 'Body'];
   purposes: string[] = ['Moisture', 'Nourish', 'Repair'];
   searchPlaceholders: string[] = ['darphin', 'erborian', 'cream', 'serum', 'korea'];
@@ -84,6 +84,37 @@ export class SearchControl {
       ).subscribe((data) => {
         const products = data.flatMap(response => response.filter((product) => product.popular));
         if (products) {
+          this.results.set(products);
+          this.searchStore.searchResults.set(products);
+        }
+      });
+  }
+
+  searchCountry(value: string) {
+    let country = value.toLowerCase();
+    if (value === 'West (USA / Kanada)') {
+      country = 'usa';
+    }
+    if (value === 'Japan') {
+      this.snackBar.open('Coming soon!', 'ok', { duration: 5000 });
+    }
+
+    this.searchService.isLoading.set(true);
+
+    this.brandName.set('');
+
+    this.brandCode = 0;
+
+    const brands = Object.keys(BRANDS_CODES);
+
+    this.searchService.getProducts(brands, '')
+      .pipe(
+        finalize(() => {
+          this.searchService.isLoading.set(false);
+        })
+      ).subscribe((data) => {
+        const products = data.flatMap(response => response.filter((product) => product.country === country));
+        if (products.length > 0) {
           this.results.set(products);
           this.searchStore.searchResults.set(products);
         }

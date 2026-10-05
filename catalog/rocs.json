@@ -12,7 +12,8 @@
     "price": {
       "formattedValue": "329&nbsp;₽",
       "value": 329
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -27,7 +28,8 @@
     "price": {
       "formattedValue": "449&nbsp;₽",
       "value": 449
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -42,7 +44,8 @@
     "price": {
       "formattedValue": "279&nbsp;₽",
       "value": 279
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -57,7 +60,8 @@
     "price": {
       "formattedValue": "379&nbsp;₽",
       "value": 379
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -72,7 +76,8 @@
     "price": {
       "formattedValue": "361&nbsp;₽",
       "value": 361
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -87,7 +92,8 @@
     "price": {
       "formattedValue": "349&nbsp;₽",
       "value": 349
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -103,7 +109,8 @@
       "formattedValue": "429&nbsp;₽",
       "value": 429
     },
-    "popular": true
+    "popular": true,
+    "country": "russia"
   },
   {
     "brand": {
@@ -118,7 +125,8 @@
     "price": {
       "formattedValue": "379&nbsp;₽",
       "value": 379
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -133,7 +141,8 @@
     "price": {
       "formattedValue": "379&nbsp;₽",
       "value": 379
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -148,7 +157,8 @@
     "price": {
       "formattedValue": "468&nbsp;₽",
       "value": 468
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -163,7 +173,8 @@
     "price": {
       "formattedValue": "269&nbsp;₽",
       "value": 269
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -178,7 +189,8 @@
     "price": {
       "formattedValue": "380&nbsp;₽",
       "value": 380
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -193,7 +205,8 @@
     "price": {
       "formattedValue": "343&nbsp;₽",
       "value": 343
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -208,7 +221,8 @@
     "price": {
       "formattedValue": "674&nbsp;₽",
       "value": 674
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -223,7 +237,8 @@
     "price": {
       "formattedValue": "299&nbsp;₽",
       "value": 299
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -238,7 +253,8 @@
     "price": {
       "formattedValue": "389&nbsp;₽",
       "value": 389
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -253,7 +269,8 @@
     "price": {
       "formattedValue": "279&nbsp;₽",
       "value": 279
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -268,7 +285,8 @@
     "price": {
       "formattedValue": "399&nbsp;₽",
       "value": 399
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -283,7 +301,8 @@
     "price": {
       "formattedValue": "539&nbsp;₽",
       "value": 539
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -298,7 +317,8 @@
     "price": {
       "formattedValue": "420&nbsp;₽",
       "value": 420
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -313,7 +333,8 @@
     "price": {
       "formattedValue": "379&nbsp;₽",
       "value": 379
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -328,7 +349,8 @@
     "price": {
       "formattedValue": "159&nbsp;₽",
       "value": 159
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -343,7 +365,8 @@
     "price": {
       "formattedValue": "279&nbsp;₽",
       "value": 279
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -358,7 +381,8 @@
     "price": {
       "formattedValue": "282&nbsp;₽",
       "value": 282
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -373,7 +397,8 @@
     "price": {
       "formattedValue": "279&nbsp;₽",
       "value": 279
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -388,7 +413,8 @@
     "price": {
       "formattedValue": "285&nbsp;₽",
       "value": 285
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -403,7 +429,8 @@
     "price": {
       "formattedValue": "379&nbsp;₽",
       "value": 379
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -418,7 +445,8 @@
     "price": {
       "formattedValue": "317&nbsp;₽",
       "value": 317
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -433,7 +461,8 @@
     "price": {
       "formattedValue": "380&nbsp;₽",
       "value": 380
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -448,7 +477,8 @@
     "price": {
       "formattedValue": "548&nbsp;₽",
       "value": 548
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -463,7 +493,8 @@
     "price": {
       "formattedValue": "499&nbsp;₽",
       "value": 499
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -478,7 +509,8 @@
     "price": {
       "formattedValue": "451&nbsp;₽",
       "value": 451
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -493,7 +525,8 @@
     "price": {
       "formattedValue": "489&nbsp;₽",
       "value": 489
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -508,7 +541,8 @@
     "price": {
       "formattedValue": "285&nbsp;₽",
       "value": 285
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -523,7 +557,8 @@
     "price": {
       "formattedValue": "279&nbsp;₽",
       "value": 279
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -538,7 +573,8 @@
     "price": {
       "formattedValue": "177&nbsp;₽",
       "value": 177
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -553,7 +589,8 @@
     "price": {
       "formattedValue": "406&nbsp;₽",
       "value": 406
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -568,7 +605,8 @@
     "price": {
       "formattedValue": "279&nbsp;₽",
       "value": 279
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -583,7 +621,8 @@
     "price": {
       "formattedValue": "279&nbsp;₽",
       "value": 279
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -598,7 +637,8 @@
     "price": {
       "formattedValue": "292&nbsp;₽",
       "value": 292
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -613,7 +653,8 @@
     "price": {
       "formattedValue": "330&nbsp;₽",
       "value": 330
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -628,7 +669,8 @@
     "price": {
       "formattedValue": "519&nbsp;₽",
       "value": 519
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -643,7 +685,8 @@
     "price": {
       "formattedValue": "399&nbsp;₽",
       "value": 399
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -658,7 +701,8 @@
     "price": {
       "formattedValue": "379&nbsp;₽",
       "value": 379
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -674,7 +718,8 @@
       "formattedValue": "341&nbsp;₽",
       "value": 341
     },
-    "popular": true
+    "popular": true,
+    "country": "russia"
   },
   {
     "brand": {
@@ -689,7 +734,8 @@
     "price": {
       "formattedValue": "300&nbsp;₽",
       "value": 300
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -704,7 +750,8 @@
     "price": {
       "formattedValue": "499&nbsp;₽",
       "value": 499
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -719,7 +766,8 @@
     "price": {
       "formattedValue": "325&nbsp;₽",
       "value": 325
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -734,7 +782,8 @@
     "price": {
       "formattedValue": "379&nbsp;₽",
       "value": 379
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -749,7 +798,8 @@
     "price": {
       "formattedValue": "449&nbsp;₽",
       "value": 449
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -764,7 +814,8 @@
     "price": {
       "formattedValue": "279&nbsp;₽",
       "value": 279
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -779,7 +830,8 @@
     "price": {
       "formattedValue": "329&nbsp;₽",
       "value": 329
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -794,7 +846,8 @@
     "price": {
       "formattedValue": "399&nbsp;₽",
       "value": 399
-    }
+    },
+    "country": "russia"
   },
   {
     "brand": {
@@ -809,6 +862,7 @@
     "price": {
       "formattedValue": "499&nbsp;₽",
       "value": 499
-    }
+    },
+    "country": "russia"
   }
 ]

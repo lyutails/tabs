@@ -12,7 +12,8 @@
     "price": {
       "formattedValue": "6 390&nbsp;₽",
       "value": 6390
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -28,7 +29,8 @@
       "formattedValue": "7 275&nbsp;₽",
       "value": 7275
     },
-    "popular": true
+    "popular": true,
+    "country": "usa"
   },
   {
     "brand": {
@@ -43,7 +45,8 @@
     "price": {
       "formattedValue": "5 325&nbsp;₽",
       "value": 5325
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -58,7 +61,8 @@
     "price": {
       "formattedValue": "9 300&nbsp;₽",
       "value": 9300
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -73,7 +77,8 @@
     "price": {
       "formattedValue": "5 200&nbsp;₽",
       "value": 5200
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -88,7 +93,8 @@
     "price": {
       "formattedValue": "11 700&nbsp;₽",
       "value": 11700
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -103,7 +109,8 @@
     "price": {
       "formattedValue": "11 925&nbsp;₽",
       "value": 11925
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -118,7 +125,8 @@
     "price": {
       "formattedValue": "14 145&nbsp;₽",
       "value": 14145
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -133,7 +141,8 @@
     "price": {
       "formattedValue": "13 346&nbsp;₽",
       "value": 13346
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -148,7 +157,8 @@
     "price": {
       "formattedValue": "11 925&nbsp;₽",
       "value": 11925
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -163,7 +173,8 @@
     "price": {
       "formattedValue": "5 325&nbsp;₽",
       "value": 5325
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -179,7 +190,8 @@
       "formattedValue": "12 543&nbsp;₽",
       "value": 12543
     },
-    "popular": true
+    "popular": true,
+    "country": "usa"
   },
   {
     "brand": {
@@ -194,7 +206,8 @@
     "price": {
       "formattedValue": "14 145&nbsp;₽",
       "value": 14145
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -209,7 +222,8 @@
     "price": {
       "formattedValue": "5 750&nbsp;₽",
       "value": 5750
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -224,7 +238,8 @@
     "price": {
       "formattedValue": "8 225&nbsp;₽",
       "value": 8225
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -239,7 +254,8 @@
     "price": {
       "formattedValue": "2 900&nbsp;₽",
       "value": 2900
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -254,7 +270,8 @@
     "price": {
       "formattedValue": "5 200&nbsp;₽",
       "value": 5200
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -269,7 +286,8 @@
     "price": {
       "formattedValue": "2 600&nbsp;₽",
       "value": 2600
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -284,7 +302,8 @@
     "price": {
       "formattedValue": "6 750&nbsp;₽",
       "value": 6750
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -299,7 +318,8 @@
     "price": {
       "formattedValue": "7 455&nbsp;₽",
       "value": 7455
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -314,7 +334,8 @@
     "price": {
       "formattedValue": "7 455&nbsp;₽",
       "value": 7455
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -329,7 +350,8 @@
     "price": {
       "formattedValue": "6 390&nbsp;₽",
       "value": 6390
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -345,7 +367,8 @@
       "formattedValue": "6 390&nbsp;₽",
       "value": 6390
     },
-    "popular": true
+    "popular": true,
+    "country": "usa"
   },
   {
     "brand": {
@@ -360,7 +383,8 @@
     "price": {
       "formattedValue": "4 117&nbsp;₽",
       "value": 4117
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -375,7 +399,8 @@
     "price": {
       "formattedValue": "5 917&nbsp;₽",
       "value": 5917
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -390,7 +415,8 @@
     "price": {
       "formattedValue": "5 359&nbsp;₽",
       "value": 5359
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -405,7 +431,8 @@
     "price": {
       "formattedValue": "4 927&nbsp;₽",
       "value": 4927
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -420,7 +447,8 @@
     "price": {
       "formattedValue": "3 245&nbsp;₽",
       "value": 3245
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -435,7 +463,8 @@
     "price": {
       "formattedValue": "2 850&nbsp;₽",
       "value": 2850
-    }
+    },
+    "country": "usa"
   },
   {
     "brand": {
@@ -450,6 +479,7 @@
     "price": {
       "formattedValue": "4 927&nbsp;₽",
       "value": 4927
-    }
+    },
+    "country": "usa"
   }
 ]
