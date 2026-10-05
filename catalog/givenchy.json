@@ -1391,7 +1391,8 @@
       "formattedValue": "11 030&nbsp;₽",
       "value": 11030
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1455,7 +1456,8 @@
       "formattedValue": "9 760&nbsp;₽",
       "value": 9760
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1567,7 +1569,8 @@
       "formattedValue": "4 170&nbsp;₽",
       "value": 4170
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1631,7 +1634,8 @@
       "formattedValue": "5 390&nbsp;₽",
       "value": 5390
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -1743,6 +1747,7 @@
       "formattedValue": "4 375&nbsp;₽",
       "value": 4375
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   }
 ]

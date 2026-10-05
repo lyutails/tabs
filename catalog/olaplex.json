@@ -46,7 +46,8 @@
       "formattedValue": "6 070&nbsp;₽",
       "value": 6070
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -111,7 +112,8 @@
       "formattedValue": "4 025&nbsp;₽",
       "value": 4025
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "cleanse"
   },
   {
     "brand": {

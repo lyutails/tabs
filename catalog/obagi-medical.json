@@ -45,7 +45,8 @@
       "formattedValue": "9 612&nbsp;₽",
       "value": 9612
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -61,7 +62,8 @@
       "formattedValue": "9 509&nbsp;₽",
       "value": 9509
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "retinol"
   },
   {
     "brand": {
@@ -77,7 +79,8 @@
       "formattedValue": "17 918&nbsp;₽",
       "value": 17918
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "peptides"
   },
   {
     "brand": {
@@ -109,7 +112,8 @@
       "formattedValue": "7 752&nbsp;₽",
       "value": 7752
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -190,7 +194,8 @@
       "formattedValue": "10 728&nbsp;₽",
       "value": 10728
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "repair"
   },
   {
     "brand": {
@@ -239,7 +244,8 @@
       "formattedValue": "24 055&nbsp;₽",
       "value": 24055
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "moisture"
   },
   {
     "brand": {

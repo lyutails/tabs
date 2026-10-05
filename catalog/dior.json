@@ -1760,7 +1760,8 @@
       "formattedValue": "9 050&nbsp;₽",
       "value": 9050
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -2032,7 +2033,8 @@
       "formattedValue": "5 400&nbsp;₽",
       "value": 5400
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {

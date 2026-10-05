@@ -591,7 +591,8 @@
       "formattedValue": "1 326&nbsp;₽",
       "value": 1326
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -719,7 +720,8 @@
       "formattedValue": "1 123&nbsp;₽",
       "value": 1123
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -975,7 +977,8 @@
       "formattedValue": "2 673&nbsp;₽",
       "value": 2673
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "repair"
   },
   {
     "brand": {

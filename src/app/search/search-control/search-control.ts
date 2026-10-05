@@ -36,9 +36,9 @@ export class SearchControl {
   showUse = { name: 'use', signal: signal<boolean>(false) };
   showPurpose = { name: 'purpose', signal: signal<boolean>(false) };
   showFilters = [this.showBrands, this.showCountry, this.showUse, this.showPurpose];
-  countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe', 'West (USA / Kanada)'];
-  useCases: string[] = ['Cream', 'Serum', 'Eye cream', 'Toner', 'Milky Essence', 'Body'];
-  purposes: string[] = ['Moisture', 'Nourish', 'Repair'];
+  countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe', 'USA / Kanada'];
+  useCases: string[] = ['Cream', 'Serum', 'Eye cream', 'Toner', 'Essence', 'Body', 'Milk'];
+  purposes: string[] = ['Cleanse', 'Moisture', 'Nourish', 'Repair', 'Exfoliate', 'Retinol', 'PDRN', 'Peptides', 'Aromatherapy'];
   searchPlaceholders: string[] = ['darphin', 'erborian', 'cream', 'serum', 'korea'];
   selfTyping = signal<string>('');
   searchInput = viewChild<ElementRef<HTMLInputElement>>('input');
@@ -92,7 +92,7 @@ export class SearchControl {
 
   searchCountry(value: string) {
     let country = value.toLowerCase();
-    if (value === 'West (USA / Kanada)') {
+    if (value === 'USA / Kanada') {
       country = 'usa';
     }
     if (value === 'Japan') {
@@ -114,6 +114,56 @@ export class SearchControl {
         })
       ).subscribe((data) => {
         const products = data.flatMap(response => response.filter((product) => product.country === country));
+        if (products.length > 0) {
+          this.results.set(products);
+          this.searchStore.searchResults.set(products);
+        }
+      });
+  }
+
+  searchByUse(value: string) {
+    let use = value.toLowerCase();
+
+    this.searchService.isLoading.set(true);
+
+    this.brandName.set('');
+
+    this.brandCode = 0;
+
+    const brands = Object.keys(BRANDS_CODES);
+
+    this.searchService.getProducts(brands, '')
+      .pipe(
+        finalize(() => {
+          this.searchService.isLoading.set(false);
+        })
+      ).subscribe((data) => {
+        const products = data.flatMap(response => response.filter((product) => product.name.toLowerCase().includes(use)));
+        if (products.length > 0) {
+          this.results.set(products);
+          this.searchStore.searchResults.set(products);
+        }
+      });
+  }
+
+  searchByPurpose(value: string) {
+    let purpose = value.toLowerCase();    
+
+    this.searchService.isLoading.set(true);
+
+    this.brandName.set('');
+
+    this.brandCode = 0;
+
+    const brands = Object.keys(BRANDS_CODES);
+
+    this.searchService.getProducts(brands, '')
+      .pipe(
+        finalize(() => {
+          this.searchService.isLoading.set(false);
+        })
+      ).subscribe((data) => {
+        const products = data.flatMap(response => response.filter((product) => product.purpose === purpose));
         if (products.length > 0) {
           this.results.set(products);
           this.searchStore.searchResults.set(products);
