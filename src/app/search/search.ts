@@ -15,6 +15,7 @@ import { ActivatedRoute } from '@angular/router';
 import { BuyStore } from '../buy/store/buy-store';
 import { SearchControl } from './search-control/search-control';
 import { SearchService } from './service/search-service';
+import { Motion } from '../core/services/motion';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
@@ -33,6 +34,7 @@ export class Search {
   searchStore = inject(SearchStore);
   protected searchService = inject(SearchService);
   hoveredRemove = signal<string | null>(null);
+  motionService = inject(Motion);
 
   ngOnInit() {
     this.currentPage = this.route.snapshot.url[0]?.path;
