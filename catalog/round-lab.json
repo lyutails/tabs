@@ -14,7 +14,8 @@
       "value": 2165
     },
     "popular": true,
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -46,7 +47,8 @@
       "formattedValue": "1 860&nbsp;₽",
       "value": 1860
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -62,7 +64,8 @@
       "formattedValue": "1 289&nbsp;₽",
       "value": 1289
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -111,7 +114,8 @@
       "value": 1279
     },
     "popular": true,
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -159,7 +163,8 @@
       "formattedValue": "1 872&nbsp;₽",
       "value": 1872
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -176,7 +181,8 @@
       "value": 2764
     },
     "popular": true,
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -240,7 +246,8 @@
       "formattedValue": "3 030&nbsp;₽",
       "value": 3030
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -288,7 +295,8 @@
       "formattedValue": "1 895&nbsp;₽",
       "value": 1895
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -304,7 +312,8 @@
       "formattedValue": "2 302&nbsp;₽",
       "value": 2302
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "nourish"
   },
   {
     "brand": {
@@ -352,7 +361,8 @@
       "formattedValue": "1 268&nbsp;₽",
       "value": 1268
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -368,7 +378,8 @@
       "formattedValue": "2 165&nbsp;₽",
       "value": 2165
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -400,7 +411,8 @@
       "formattedValue": "1 757&nbsp;₽",
       "value": 1757
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -416,7 +428,8 @@
       "formattedValue": "3 106&nbsp;₽",
       "value": 3106
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -448,7 +461,8 @@
       "formattedValue": "3 106&nbsp;₽",
       "value": 3106
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {

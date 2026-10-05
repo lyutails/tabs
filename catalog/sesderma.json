@@ -206,7 +206,8 @@
       "formattedValue": "5 098&nbsp;₽",
       "value": 5098
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -238,7 +239,8 @@
       "formattedValue": "4 029&nbsp;₽",
       "value": 4029
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -254,7 +256,8 @@
       "formattedValue": "4 815&nbsp;₽",
       "value": 4815
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -270,7 +273,8 @@
       "formattedValue": "4 815&nbsp;₽",
       "value": 4815
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -478,7 +482,8 @@
       "formattedValue": "3 595&nbsp;₽",
       "value": 3595
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -526,7 +531,8 @@
       "formattedValue": "6 199&nbsp;₽",
       "value": 6199
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -574,7 +580,8 @@
       "formattedValue": "6 399&nbsp;₽",
       "value": 6399
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -622,7 +629,8 @@
       "formattedValue": "5 399&nbsp;₽",
       "value": 5399
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -735,7 +743,8 @@
       "formattedValue": "2 938&nbsp;₽",
       "value": 2938
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -767,7 +776,8 @@
       "formattedValue": "3 009&nbsp;₽",
       "value": 3009
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -880,7 +890,8 @@
       "formattedValue": "3 009&nbsp;₽",
       "value": 3009
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -944,7 +955,8 @@
       "formattedValue": "7 097&nbsp;₽",
       "value": 7097
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -960,7 +972,8 @@
       "formattedValue": "3 363&nbsp;₽",
       "value": 3363
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1008,7 +1021,8 @@
       "formattedValue": "3 009&nbsp;₽",
       "value": 3009
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1024,7 +1038,8 @@
       "formattedValue": "6 999&nbsp;₽",
       "value": 6999
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -1136,7 +1151,8 @@
       "formattedValue": "3 009&nbsp;₽",
       "value": 3009
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1152,7 +1168,8 @@
       "formattedValue": "2 082&nbsp;₽",
       "value": 2082
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1264,7 +1281,8 @@
       "formattedValue": "4 699&nbsp;₽",
       "value": 4699
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1312,7 +1330,8 @@
       "formattedValue": "6 999&nbsp;₽",
       "value": 6999
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "nourish"
   },
   {
     "brand": {
@@ -1360,7 +1379,8 @@
       "formattedValue": "7 097&nbsp;₽",
       "value": 7097
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -1376,7 +1396,8 @@
       "formattedValue": "9 153&nbsp;₽",
       "value": 9153
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -1440,7 +1461,8 @@
       "formattedValue": "3 342&nbsp;₽",
       "value": 3342
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -1552,7 +1574,8 @@
       "formattedValue": "2 999&nbsp;₽",
       "value": 2999
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {

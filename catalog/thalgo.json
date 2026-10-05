@@ -110,7 +110,8 @@
       "formattedValue": "4 434&nbsp;₽",
       "value": 4434
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -222,7 +223,8 @@
       "formattedValue": "7 120&nbsp;₽",
       "value": 7120
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "nourish"
   },
   {
     "brand": {
@@ -318,7 +320,8 @@
       "formattedValue": "2 417&nbsp;₽",
       "value": 2417
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -510,7 +513,8 @@
       "formattedValue": "2 376&nbsp;₽",
       "value": 2376
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -574,7 +578,8 @@
       "formattedValue": "1 856&nbsp;₽",
       "value": 1856
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -718,7 +723,8 @@
       "formattedValue": "3 039&nbsp;₽",
       "value": 3039
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "repair"
   },
   {
     "brand": {
@@ -734,7 +740,8 @@
       "formattedValue": "1 630&nbsp;₽",
       "value": 1630
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "nourish"
   },
   {
     "brand": {
@@ -846,7 +853,8 @@
       "formattedValue": "4 399&nbsp;₽",
       "value": 4399
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -942,7 +950,8 @@
       "formattedValue": "959&nbsp;₽",
       "value": 959
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1070,7 +1079,8 @@
       "formattedValue": "2 902&nbsp;₽",
       "value": 2902
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1342,7 +1352,8 @@
       "formattedValue": "2 902&nbsp;₽",
       "value": 2902
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1439,7 +1450,8 @@
       "formattedValue": "2 565&nbsp;₽",
       "value": 2565
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "nourish"
   },
   {
     "brand": {
@@ -1487,7 +1499,8 @@
       "formattedValue": "3 300&nbsp;₽",
       "value": 3300
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1519,7 +1532,8 @@
       "formattedValue": "3 987&nbsp;₽",
       "value": 3987
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -1535,7 +1549,8 @@
       "formattedValue": "1 999&nbsp;₽",
       "value": 1999
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1615,7 +1630,8 @@
       "formattedValue": "4 098&nbsp;₽",
       "value": 4098
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -1727,7 +1743,8 @@
       "formattedValue": "3 091&nbsp;₽",
       "value": 3091
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -1839,7 +1856,8 @@
       "formattedValue": "2 733&nbsp;₽",
       "value": 2733
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1887,7 +1905,8 @@
       "formattedValue": "2 320&nbsp;₽",
       "value": 2320
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1903,7 +1922,8 @@
       "formattedValue": "7 038&nbsp;₽",
       "value": 7038
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "nourish"
   },
   {
     "brand": {
@@ -1999,7 +2019,8 @@
       "formattedValue": "5 692&nbsp;₽",
       "value": 5692
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {

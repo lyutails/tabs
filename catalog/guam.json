@@ -701,7 +701,8 @@
       "formattedValue": "2 448&nbsp;₽",
       "value": 2448
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -733,7 +734,8 @@
       "formattedValue": "2 300&nbsp;₽",
       "value": 2300
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "repair"
   },
   {
     "brand": {
@@ -829,7 +831,8 @@
       "formattedValue": "1 701&nbsp;₽",
       "value": 1701
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "repair"
   },
   {
     "brand": {

@@ -13,7 +13,8 @@
       "formattedValue": "1 999&nbsp;₽",
       "value": 1999
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -62,7 +63,8 @@
       "formattedValue": "1 799&nbsp;₽",
       "value": 1799
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -78,7 +80,8 @@
       "formattedValue": "1 699&nbsp;₽",
       "value": 1699
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -94,7 +97,8 @@
       "formattedValue": "2 099&nbsp;₽",
       "value": 2099
     },
-    "country": "usa"
+    "country": "usa",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -127,6 +131,7 @@
       "value": 1399
     },
     "popular": true,
-    "country": "usa"
+    "country": "usa",
+    "purpose": "cleanse"
   }
 ]

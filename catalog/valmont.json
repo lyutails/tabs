@@ -238,7 +238,8 @@
       "value": 18525
     },
     "popular": true,
-    "country": "europe"
+    "country": "europe",
+    "purpose": "repair"
   },
   {
     "brand": {
@@ -398,7 +399,8 @@
       "formattedValue": "12 300&nbsp;₽",
       "value": 12300
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -494,7 +496,8 @@
       "formattedValue": "15 299&nbsp;₽",
       "value": 15299
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -799,7 +802,8 @@
       "formattedValue": "15 075&nbsp;₽",
       "value": 15075
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "exfoliate"
   },
   {
     "brand": {

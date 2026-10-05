@@ -13,7 +13,8 @@
       "formattedValue": "1 990&nbsp;₽",
       "value": 1990
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "peptides"
   },
   {
     "brand": {
@@ -46,7 +47,8 @@
       "value": 2793
     },
     "popular": true,
-    "country": "europe"
+    "country": "europe",
+    "purpose": "peptides"
   },
   {
     "brand": {
@@ -62,7 +64,8 @@
       "formattedValue": "2 493&nbsp;₽",
       "value": 2493
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "peptides"
   },
   {
     "brand": {
@@ -79,7 +82,8 @@
       "value": 5890
     },
     "popular": true,
-    "country": "europe"
+    "country": "europe",
+    "purpose": "pdrn"
   },
   {
     "brand": {
@@ -112,6 +116,7 @@
       "value": 2793
     },
     "popular": true,
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   }
 ]

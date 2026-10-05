@@ -45,7 +45,8 @@
       "formattedValue": "1 058&nbsp;₽",
       "value": 1058
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -77,7 +78,8 @@
       "formattedValue": "1 859&nbsp;₽",
       "value": 1859
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -463,7 +465,8 @@
       "formattedValue": "380&nbsp;₽",
       "value": 380
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -479,7 +482,8 @@
       "formattedValue": "609&nbsp;₽",
       "value": 609
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -607,7 +611,8 @@
       "formattedValue": "686&nbsp;₽",
       "value": 686
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -671,7 +676,8 @@
       "formattedValue": "659&nbsp;₽",
       "value": 659
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -767,7 +773,8 @@
       "formattedValue": "686&nbsp;₽",
       "value": 686
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -815,7 +822,8 @@
       "formattedValue": "380&nbsp;₽",
       "value": 380
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -863,7 +871,8 @@
       "formattedValue": "693&nbsp;₽",
       "value": 693
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -927,7 +936,8 @@
       "formattedValue": "783&nbsp;₽",
       "value": 783
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -943,7 +953,8 @@
       "formattedValue": "1 030&nbsp;₽",
       "value": 1030
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -959,7 +970,8 @@
       "formattedValue": "1 397&nbsp;₽",
       "value": 1397
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "repair"
   },
   {
     "brand": {
@@ -975,7 +987,8 @@
       "formattedValue": "1 030&nbsp;₽",
       "value": 1030
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "repair"
   },
   {
     "brand": {
@@ -991,7 +1004,8 @@
       "formattedValue": "452&nbsp;₽",
       "value": 452
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -1039,7 +1053,8 @@
       "formattedValue": "1 049&nbsp;₽",
       "value": 1049
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1055,7 +1070,8 @@
       "formattedValue": "826&nbsp;₽",
       "value": 826
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1103,7 +1119,8 @@
       "formattedValue": "1 328&nbsp;₽",
       "value": 1328
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1151,7 +1168,8 @@
       "formattedValue": "656&nbsp;₽",
       "value": 656
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "exfoliate"
   },
   {
     "brand": {
@@ -1231,7 +1249,8 @@
       "formattedValue": "1 328&nbsp;₽",
       "value": 1328
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "repair"
   },
   {
     "brand": {
@@ -1247,7 +1266,8 @@
       "formattedValue": "1 169&nbsp;₽",
       "value": 1169
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1263,7 +1283,8 @@
       "formattedValue": "1 101&nbsp;₽",
       "value": 1101
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -1295,7 +1316,8 @@
       "formattedValue": "1 328&nbsp;₽",
       "value": 1328
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "repair"
   },
   {
     "brand": {
@@ -1375,7 +1397,8 @@
       "formattedValue": "1 149&nbsp;₽",
       "value": 1149
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1503,7 +1526,8 @@
       "formattedValue": "1 449&nbsp;₽",
       "value": 1449
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1535,7 +1559,8 @@
       "formattedValue": "1 149&nbsp;₽",
       "value": 1149
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1567,7 +1592,8 @@
       "formattedValue": "1 549&nbsp;₽",
       "value": 1549
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1663,7 +1689,8 @@
       "formattedValue": "606&nbsp;₽",
       "value": 606
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -1695,7 +1722,8 @@
       "formattedValue": "380&nbsp;₽",
       "value": 380
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1711,7 +1739,8 @@
       "formattedValue": "375&nbsp;₽",
       "value": 375
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -1743,7 +1772,8 @@
       "formattedValue": "859&nbsp;₽",
       "value": 859
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -1759,7 +1789,8 @@
       "formattedValue": "1 453&nbsp;₽",
       "value": 1453
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -1871,6 +1902,7 @@
       "formattedValue": "1 030&nbsp;₽",
       "value": 1030
     },
-    "country": "korea"
+    "country": "korea",
+    "purpose": "cleanse"
   }
 ]

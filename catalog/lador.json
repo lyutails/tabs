@@ -159,7 +159,8 @@
       "formattedValue": "378&nbsp;₽",
       "value": 378
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {
@@ -191,7 +192,8 @@
       "formattedValue": "348&nbsp;₽",
       "value": 348
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "moisture"
   },
   {
     "brand": {

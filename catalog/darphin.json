@@ -174,7 +174,8 @@
       "formattedValue": "2 199&nbsp;₽",
       "value": 2199
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -335,7 +336,8 @@
       "formattedValue": "3 649&nbsp;₽",
       "value": 3649
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "cleanse"
   },
   {
     "brand": {
@@ -415,6 +417,7 @@
       "formattedValue": "8 899&nbsp;₽",
       "value": 8899
     },
-    "country": "europe"
+    "country": "europe",
+    "purpose": "repair"
   }
 ]
