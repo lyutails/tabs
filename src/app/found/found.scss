@@ -104,7 +104,28 @@ button {
 }
 
 .found-container--side.found_interested {
-    height: 100%;
+    overflow-y: auto;
+    height: 300px;
+
+    &::-webkit-scrollbar {
+        width: 14px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--secondary-color);
+        border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #d16e80;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #d4697d;
+    }
+
+    scrollbar-color: var(--secondary-color);
 }
 
 
