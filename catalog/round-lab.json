@@ -13,7 +13,8 @@
       "formattedValue": "2 165&nbsp;₽",
       "value": 2165
     },
-    "popular": true
+    "popular": true,
+    "country": "korea"
   },
   {
     "brand": {
@@ -28,7 +29,8 @@
     "price": {
       "formattedValue": "1 800&nbsp;₽",
       "value": 1800
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -43,7 +45,8 @@
     "price": {
       "formattedValue": "1 860&nbsp;₽",
       "value": 1860
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -58,7 +61,8 @@
     "price": {
       "formattedValue": "1 289&nbsp;₽",
       "value": 1289
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -73,7 +77,8 @@
     "price": {
       "formattedValue": "2 359&nbsp;₽",
       "value": 2359
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -88,7 +93,8 @@
     "price": {
       "formattedValue": "2 359&nbsp;₽",
       "value": 2359
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -104,7 +110,8 @@
       "formattedValue": "1 279&nbsp;₽",
       "value": 1279
     },
-    "popular": true
+    "popular": true,
+    "country": "korea"
   },
   {
     "brand": {
@@ -119,7 +126,8 @@
     "price": {
       "formattedValue": "3 025&nbsp;₽",
       "value": 3025
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -134,7 +142,8 @@
     "price": {
       "formattedValue": "2 859&nbsp;₽",
       "value": 2859
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -149,7 +158,8 @@
     "price": {
       "formattedValue": "1 872&nbsp;₽",
       "value": 1872
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -165,7 +175,8 @@
       "formattedValue": "2 764&nbsp;₽",
       "value": 2764
     },
-    "popular": true
+    "popular": true,
+    "country": "korea"
   },
   {
     "brand": {
@@ -180,7 +191,8 @@
     "price": {
       "formattedValue": "446&nbsp;₽",
       "value": 446
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -195,7 +207,8 @@
     "price": {
       "formattedValue": "2 854&nbsp;₽",
       "value": 2854
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -210,7 +223,8 @@
     "price": {
       "formattedValue": "3 106&nbsp;₽",
       "value": 3106
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -225,7 +239,8 @@
     "price": {
       "formattedValue": "3 030&nbsp;₽",
       "value": 3030
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -240,7 +255,8 @@
     "price": {
       "formattedValue": "2 297&nbsp;₽",
       "value": 2297
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -255,7 +271,8 @@
     "price": {
       "formattedValue": "3 424&nbsp;₽",
       "value": 3424
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -270,7 +287,8 @@
     "price": {
       "formattedValue": "1 895&nbsp;₽",
       "value": 1895
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -285,7 +303,8 @@
     "price": {
       "formattedValue": "2 302&nbsp;₽",
       "value": 2302
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -300,7 +319,8 @@
     "price": {
       "formattedValue": "1 525&nbsp;₽",
       "value": 1525
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -315,7 +335,8 @@
     "price": {
       "formattedValue": "3 557&nbsp;₽",
       "value": 3557
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -330,7 +351,8 @@
     "price": {
       "formattedValue": "1 268&nbsp;₽",
       "value": 1268
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -345,7 +367,8 @@
     "price": {
       "formattedValue": "2 165&nbsp;₽",
       "value": 2165
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -360,7 +383,8 @@
     "price": {
       "formattedValue": "1 847&nbsp;₽",
       "value": 1847
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -375,7 +399,8 @@
     "price": {
       "formattedValue": "1 757&nbsp;₽",
       "value": 1757
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -390,7 +415,8 @@
     "price": {
       "formattedValue": "3 106&nbsp;₽",
       "value": 3106
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -405,7 +431,8 @@
     "price": {
       "formattedValue": "2 031&nbsp;₽",
       "value": 2031
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -420,7 +447,8 @@
     "price": {
       "formattedValue": "3 106&nbsp;₽",
       "value": 3106
-    }
+    },
+    "country": "korea"
   },
   {
     "brand": {
@@ -435,6 +463,7 @@
     "price": {
       "formattedValue": "1 550&nbsp;₽",
       "value": 1550
-    }
+    },
+    "country": "korea"
   }
 ]

@@ -5,6 +5,7 @@ export interface Result {
     name: string;
     price: Price;
     popular?: boolean;
+    country?: string;
 }
 
 export interface Brand {

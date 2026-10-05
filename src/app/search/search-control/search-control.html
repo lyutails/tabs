@@ -31,7 +31,8 @@
     >
       @if (showCountry.signal() === true) {
         @for (country of countries; track country) {
-          <button matButton="elevated" type="button" class="search_brand-button">
+          <button matButton="elevated" type="button" class="search_brand-button"
+            (click)="searchCountry(country)">
             {{ country }}
           </button>
         }

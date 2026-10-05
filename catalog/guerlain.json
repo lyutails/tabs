@@ -12,7 +12,8 @@
     "price": {
       "formattedValue": "19 320&nbsp;₽",
       "value": 19320
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -27,7 +28,8 @@
     "price": {
       "formattedValue": "9 150&nbsp;₽",
       "value": 9150
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -42,7 +44,8 @@
     "price": {
       "formattedValue": "10 480&nbsp;₽",
       "value": 10480
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -57,7 +60,8 @@
     "price": {
       "formattedValue": "5 900&nbsp;₽",
       "value": 5900
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -72,7 +76,8 @@
     "price": {
       "formattedValue": "18 910&nbsp;₽",
       "value": 18910
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -87,7 +92,8 @@
     "price": {
       "formattedValue": "19 930&nbsp;₽",
       "value": 19930
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -102,7 +108,8 @@
     "price": {
       "formattedValue": "3 870&nbsp;₽",
       "value": 3870
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -117,7 +124,8 @@
     "price": {
       "formattedValue": "4 070&nbsp;₽",
       "value": 4070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -132,7 +140,8 @@
     "price": {
       "formattedValue": "3 870&nbsp;₽",
       "value": 3870
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -147,7 +156,8 @@
     "price": {
       "formattedValue": "4 070&nbsp;₽",
       "value": 4070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -163,7 +173,8 @@
       "formattedValue": "8 440&nbsp;₽",
       "value": 8440
     },
-    "popular": true
+    "popular": true,
+    "country": "europe"
   },
   {
     "brand": {
@@ -178,7 +189,8 @@
     "price": {
       "formattedValue": "15 250&nbsp;₽",
       "value": 15250
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -193,7 +205,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -208,7 +221,8 @@
     "price": {
       "formattedValue": "4 990&nbsp;₽",
       "value": 4990
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -223,7 +237,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -238,7 +253,8 @@
     "price": {
       "formattedValue": "6 410&nbsp;₽",
       "value": 6410
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -253,7 +269,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -268,7 +285,8 @@
     "price": {
       "formattedValue": "3 460&nbsp;₽",
       "value": 3460
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -283,7 +301,8 @@
     "price": {
       "formattedValue": "4 990&nbsp;₽",
       "value": 4990
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -298,7 +317,8 @@
     "price": {
       "formattedValue": "8 140&nbsp;₽",
       "value": 8140
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -313,7 +333,8 @@
     "price": {
       "formattedValue": "9 150&nbsp;₽",
       "value": 9150
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -328,7 +349,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -343,7 +365,8 @@
     "price": {
       "formattedValue": "4 070&nbsp;₽",
       "value": 4070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -358,7 +381,8 @@
     "price": {
       "formattedValue": "4 070&nbsp;₽",
       "value": 4070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -373,7 +397,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -388,7 +413,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -403,7 +429,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -418,7 +445,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -433,7 +461,8 @@
     "price": {
       "formattedValue": "14 440&nbsp;₽",
       "value": 14440
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -448,7 +477,8 @@
     "price": {
       "formattedValue": "7 930&nbsp;₽",
       "value": 7930
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -463,7 +493,8 @@
     "price": {
       "formattedValue": "6 310&nbsp;₽",
       "value": 6310
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -478,7 +509,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -493,7 +525,8 @@
     "price": {
       "formattedValue": "13 730&nbsp;₽",
       "value": 13730
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -508,7 +541,8 @@
     "price": {
       "formattedValue": "4 830&nbsp;₽",
       "value": 4830
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -523,7 +557,8 @@
     "price": {
       "formattedValue": "10 070&nbsp;₽",
       "value": 10070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -538,7 +573,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -553,7 +589,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -568,7 +605,8 @@
     "price": {
       "formattedValue": "10 070&nbsp;₽",
       "value": 10070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -583,7 +621,8 @@
     "price": {
       "formattedValue": "5 090&nbsp;₽",
       "value": 5090
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -598,7 +637,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -613,7 +653,8 @@
     "price": {
       "formattedValue": "10 070&nbsp;₽",
       "value": 10070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -628,7 +669,8 @@
     "price": {
       "formattedValue": "10 480&nbsp;₽",
       "value": 10480
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -643,7 +685,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -658,7 +701,8 @@
     "price": {
       "formattedValue": "10 480&nbsp;₽",
       "value": 10480
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -673,7 +717,8 @@
     "price": {
       "formattedValue": "5 290&nbsp;₽",
       "value": 5290
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -688,7 +733,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -703,7 +749,8 @@
     "price": {
       "formattedValue": "6 100&nbsp;₽",
       "value": 6100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -718,7 +765,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -733,7 +781,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -748,7 +797,8 @@
     "price": {
       "formattedValue": "5 490&nbsp;₽",
       "value": 5490
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -763,7 +813,8 @@
     "price": {
       "formattedValue": "6 310&nbsp;₽",
       "value": 6310
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -778,7 +829,8 @@
     "price": {
       "formattedValue": "18 200&nbsp;₽",
       "value": 18200
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -793,7 +845,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -808,7 +861,8 @@
     "price": {
       "formattedValue": "13 120&nbsp;₽",
       "value": 13120
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -823,7 +877,8 @@
     "price": {
       "formattedValue": "4 070&nbsp;₽",
       "value": 4070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -838,7 +893,8 @@
     "price": {
       "formattedValue": "6 000&nbsp;₽",
       "value": 6000
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -853,7 +909,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -868,7 +925,8 @@
     "price": {
       "formattedValue": "10 270&nbsp;₽",
       "value": 10270
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -883,7 +941,8 @@
     "price": {
       "formattedValue": "6 990&nbsp;₽",
       "value": 6990
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -898,7 +957,8 @@
     "price": {
       "formattedValue": "14 440&nbsp;₽",
       "value": 14440
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -913,7 +973,8 @@
     "price": {
       "formattedValue": "7 630&nbsp;₽",
       "value": 7630
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -928,7 +989,8 @@
     "price": {
       "formattedValue": "10 070&nbsp;₽",
       "value": 10070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -943,7 +1005,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -958,7 +1021,8 @@
     "price": {
       "formattedValue": "7 630&nbsp;₽",
       "value": 7630
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -973,7 +1037,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -988,7 +1053,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1003,7 +1069,8 @@
     "price": {
       "formattedValue": "4 830&nbsp;₽",
       "value": 4830
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1018,7 +1085,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1033,7 +1101,8 @@
     "price": {
       "formattedValue": "11 290&nbsp;₽",
       "value": 11290
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1048,7 +1117,8 @@
     "price": {
       "formattedValue": "4 580&nbsp;₽",
       "value": 4580
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1063,7 +1133,8 @@
     "price": {
       "formattedValue": "15 760&nbsp;₽",
       "value": 15760
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1078,7 +1149,8 @@
     "price": {
       "formattedValue": "13 730&nbsp;₽",
       "value": 13730
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1093,7 +1165,8 @@
     "price": {
       "formattedValue": "9 150&nbsp;₽",
       "value": 9150
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1108,7 +1181,8 @@
     "price": {
       "formattedValue": "6 410&nbsp;₽",
       "value": 6410
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1123,7 +1197,8 @@
     "price": {
       "formattedValue": "7 020&nbsp;₽",
       "value": 7020
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1138,7 +1213,8 @@
     "price": {
       "formattedValue": "10 070&nbsp;₽",
       "value": 10070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1153,7 +1229,8 @@
     "price": {
       "formattedValue": "13 730&nbsp;₽",
       "value": 13730
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1168,7 +1245,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1183,7 +1261,8 @@
     "price": {
       "formattedValue": "11 290&nbsp;₽",
       "value": 11290
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1198,7 +1277,8 @@
     "price": {
       "formattedValue": "11 290&nbsp;₽",
       "value": 11290
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1213,7 +1293,8 @@
     "price": {
       "formattedValue": "9 150&nbsp;₽",
       "value": 9150
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1228,7 +1309,8 @@
     "price": {
       "formattedValue": "6 410&nbsp;₽",
       "value": 6410
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1243,7 +1325,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1258,7 +1341,8 @@
     "price": {
       "formattedValue": "14 440&nbsp;₽",
       "value": 14440
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1273,7 +1357,8 @@
     "price": {
       "formattedValue": "15 760&nbsp;₽",
       "value": 15760
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1288,7 +1373,8 @@
     "price": {
       "formattedValue": "4 070&nbsp;₽",
       "value": 4070
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1303,7 +1389,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1318,7 +1405,8 @@
     "price": {
       "formattedValue": "13 730&nbsp;₽",
       "value": 13730
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1333,7 +1421,8 @@
     "price": {
       "formattedValue": "11 900&nbsp;₽",
       "value": 11900
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1348,7 +1437,8 @@
     "price": {
       "formattedValue": "8 140&nbsp;₽",
       "value": 8140
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1363,7 +1453,8 @@
     "price": {
       "formattedValue": "17 490&nbsp;₽",
       "value": 17490
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1378,7 +1469,8 @@
     "price": {
       "formattedValue": "7 020&nbsp;₽",
       "value": 7020
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1393,7 +1485,8 @@
     "price": {
       "formattedValue": "7 020&nbsp;₽",
       "value": 7020
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1408,7 +1501,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1423,7 +1517,8 @@
     "price": {
       "formattedValue": "5 290&nbsp;₽",
       "value": 5290
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1438,7 +1533,8 @@
     "price": {
       "formattedValue": "9 150&nbsp;₽",
       "value": 9150
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1453,7 +1549,8 @@
     "price": {
       "formattedValue": "26 330&nbsp;₽",
       "value": 26330
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1468,7 +1565,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1483,7 +1581,8 @@
     "price": {
       "formattedValue": "6 110&nbsp;₽",
       "value": 6110
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1498,7 +1597,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1513,7 +1613,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1528,7 +1629,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1543,7 +1645,8 @@
     "price": {
       "formattedValue": "6 310&nbsp;₽",
       "value": 6310
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1558,7 +1661,8 @@
     "price": {
       "formattedValue": "7 630&nbsp;₽",
       "value": 7630
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1573,7 +1677,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1589,7 +1694,8 @@
       "formattedValue": "55 920&nbsp;₽",
       "value": 55920
     },
-    "popular": true
+    "popular": true,
+    "country": "europe"
   },
   {
     "brand": {
@@ -1604,7 +1710,8 @@
     "price": {
       "formattedValue": "14 240&nbsp;₽",
       "value": 14240
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1619,7 +1726,8 @@
     "price": {
       "formattedValue": "6 310&nbsp;₽",
       "value": 6310
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1634,7 +1742,8 @@
     "price": {
       "formattedValue": "6 110&nbsp;₽",
       "value": 6110
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1649,7 +1758,8 @@
     "price": {
       "formattedValue": "13 210&nbsp;₽",
       "value": 13210
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1664,7 +1774,8 @@
     "price": {
       "formattedValue": "22 880&nbsp;₽",
       "value": 22880
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1679,7 +1790,8 @@
     "price": {
       "formattedValue": "50 330&nbsp;₽",
       "value": 50330
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1694,7 +1806,8 @@
     "price": {
       "formattedValue": "50 330&nbsp;₽",
       "value": 50330
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1709,7 +1822,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1724,7 +1838,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1739,7 +1854,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1754,7 +1870,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1769,7 +1886,8 @@
     "price": {
       "formattedValue": "45 240&nbsp;₽",
       "value": 45240
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1784,7 +1902,8 @@
     "price": {
       "formattedValue": "38 130&nbsp;₽",
       "value": 38130
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1799,7 +1918,8 @@
     "price": {
       "formattedValue": "45 240&nbsp;₽",
       "value": 45240
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1814,7 +1934,8 @@
     "price": {
       "formattedValue": "11 900&nbsp;₽",
       "value": 11900
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1829,7 +1950,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1844,7 +1966,8 @@
     "price": {
       "formattedValue": "4 270&nbsp;₽",
       "value": 4270
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1859,7 +1982,8 @@
     "price": {
       "formattedValue": "34 470&nbsp;₽",
       "value": 34470
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1874,7 +1998,8 @@
     "price": {
       "formattedValue": "18 200&nbsp;₽",
       "value": 18200
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1889,7 +2014,8 @@
     "price": {
       "formattedValue": "6 310&nbsp;₽",
       "value": 6310
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1904,7 +2030,8 @@
     "price": {
       "formattedValue": "7 020&nbsp;₽",
       "value": 7020
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1919,7 +2046,8 @@
     "price": {
       "formattedValue": "39 140&nbsp;₽",
       "value": 39140
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1934,7 +2062,8 @@
     "price": {
       "formattedValue": "55 920&nbsp;₽",
       "value": 55920
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1949,7 +2078,8 @@
     "price": {
       "formattedValue": "20 230&nbsp;₽",
       "value": 20230
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1964,7 +2094,8 @@
     "price": {
       "formattedValue": "52 870&nbsp;₽",
       "value": 52870
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1979,7 +2110,8 @@
     "price": {
       "formattedValue": "48 000&nbsp;₽",
       "value": 48000
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -1994,7 +2126,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2009,7 +2142,8 @@
     "price": {
       "formattedValue": "12 100&nbsp;₽",
       "value": 12100
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2024,7 +2158,8 @@
     "price": {
       "formattedValue": "68 620&nbsp;₽",
       "value": 68620
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2039,7 +2174,8 @@
     "price": {
       "formattedValue": "22 880&nbsp;₽",
       "value": 22880
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2054,7 +2190,8 @@
     "price": {
       "formattedValue": "18 200&nbsp;₽",
       "value": 18200
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2069,7 +2206,8 @@
     "price": {
       "formattedValue": "3 630&nbsp;₽",
       "value": 3630
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2084,7 +2222,8 @@
     "price": {
       "formattedValue": "13 210&nbsp;₽",
       "value": 13210
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2099,7 +2238,8 @@
     "price": {
       "formattedValue": "3 660&nbsp;₽",
       "value": 3660
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2114,7 +2254,8 @@
     "price": {
       "formattedValue": "15 760&nbsp;₽",
       "value": 15760
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2129,7 +2270,8 @@
     "price": {
       "formattedValue": "50 330&nbsp;₽",
       "value": 50330
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2144,7 +2286,8 @@
     "price": {
       "formattedValue": "8 460&nbsp;₽",
       "value": 8460
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2159,7 +2302,8 @@
     "price": {
       "formattedValue": "8 040&nbsp;₽",
       "value": 8040
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2174,7 +2318,8 @@
     "price": {
       "formattedValue": "6 310&nbsp;₽",
       "value": 6310
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2189,7 +2334,8 @@
     "price": {
       "formattedValue": "6 000&nbsp;₽",
       "value": 6000
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2204,7 +2350,8 @@
     "price": {
       "formattedValue": "49 000&nbsp;₽",
       "value": 49000
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2219,7 +2366,8 @@
     "price": {
       "formattedValue": "16 170&nbsp;₽",
       "value": 16170
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2234,7 +2382,8 @@
     "price": {
       "formattedValue": "13 300&nbsp;₽",
       "value": 13300
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -2249,6 +2398,7 @@
     "price": {
       "formattedValue": "9 050&nbsp;₽",
       "value": 9050
-    }
+    },
+    "country": "europe"
   }
 ]

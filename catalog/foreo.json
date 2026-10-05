@@ -12,7 +12,8 @@
     "price": {
       "formattedValue": "9 499&nbsp;₽",
       "value": 9499
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -28,7 +29,8 @@
       "formattedValue": "9 499&nbsp;₽",
       "value": 9499
     },
-    "popular": true
+    "popular": true,
+    "country": "europe"
   },
   {
     "brand": {
@@ -43,7 +45,8 @@
     "price": {
       "formattedValue": "9 499&nbsp;₽",
       "value": 9499
-    }
+    },
+    "country": "europe"
   },
   {
     "brand": {
@@ -59,6 +62,7 @@
       "formattedValue": "9 499&nbsp;₽",
       "value": 9499
     },
-    "popular": true
+    "popular": true,
+    "country": "europe"
   }
 ]
