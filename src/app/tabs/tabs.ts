@@ -38,6 +38,7 @@ export class Tabs {
   navigateService = inject(Navigate);
   advertismentService = inject(AdvertismentService);
   profileService = inject(ProfileService);
+  activeContent = viewChild(ActiveContent);
 
   ngOnInit(): void {
     this.tabsStateService.activeTab.update(() => this.disabledSingleState().indexOf(true));
@@ -64,6 +65,8 @@ export class Tabs {
   activateTab(index: number): void {
     if (this.disabledSingleState()[index] === true) {
       this.tabsStateService.activeTab.set(index);
+
+      this.activeContent()?.activate();
     }
   }
 

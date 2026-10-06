@@ -17,3 +17,23 @@
         padding-top: 5px;
     }
 }
+
+.active {
+    animation-name: tab_background_anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes tab_background_anim {
+    0% {
+        background-color: var(--primary-color);
+    }
+
+    50% {
+        background-color: var(--decorative-elements);
+    }
+
+    100% {
+        background-color: var(--primary-color);
+    }
+}
