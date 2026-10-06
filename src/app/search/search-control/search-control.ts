@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, linkedSignal, signal, viewChild } from '@angular/core';
+import { Component, computed, ElementRef, inject, linkedSignal, signal, viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -42,6 +42,7 @@ export class SearchControl {
   searchPlaceholders: string[] = ['darphin', 'erborian', 'cream', 'serum', 'korea'];
   selfTyping = signal<string>('');
   searchInput = viewChild<ElementRef<HTMLInputElement>>('input');
+  openedFilter = computed(() => this.showFilters.find(filter => filter.signal())?.name ?? '')
 
   getProduct(brands: string[], search: string): void {
     this.searchService.isLoading.set(true);
@@ -60,6 +61,7 @@ export class SearchControl {
 
   searchBrand(value: string) {
     this.brandName.set(value);
+    this.showAvailableFilter('');
     if (BRANDS_CODES[this.brandName()]) {
       this.getProduct([value], '');
     } else {
@@ -76,6 +78,8 @@ export class SearchControl {
 
     const brands = Object.keys(BRANDS_CODES);
 
+    this.showAvailableFilter('');
+
     this.searchService.getProducts(brands, '')
       .pipe(
         finalize(() => {
@@ -91,6 +95,7 @@ export class SearchControl {
   }
 
   searchCountry(value: string) {
+    this.showAvailableFilter('');
     let country = value.toLowerCase();
     if (value === 'USA / Kanada') {
       country = 'usa';
@@ -122,6 +127,7 @@ export class SearchControl {
   }
 
   searchByUse(value: string) {
+    this.showAvailableFilter('');
     let use = value.toLowerCase();
 
     this.searchService.isLoading.set(true);
@@ -147,7 +153,8 @@ export class SearchControl {
   }
 
   searchByPurpose(value: string) {
-    let purpose = value.toLowerCase();    
+    this.showAvailableFilter('');
+    let purpose = value.toLowerCase();
 
     this.searchService.isLoading.set(true);
 
@@ -209,6 +216,9 @@ export class SearchControl {
         filter.signal.set(false);
       }
       if (filter.name !== value) {
+        filter.signal.set(false);
+      }
+      if (value === '') {
         filter.signal.set(false);
       }
     })
