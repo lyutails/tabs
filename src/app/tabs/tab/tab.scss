@@ -42,21 +42,17 @@
     animation-timing-function: ease-in-out;
 }
 
-.active {
-    background-color: green;
-}
-
 @keyframes tab_background_anim {
     0% {
-        background-color: violet;
+        background-color: var(--primary-color);
     }
 
     50% {
-        background-color: var(--tabs-button);
+        background-color: var(--decorative-elements);
     }
 
     100% {
-        background-color: violet;
+        background-color: var(--primary-color);
     }
 }
 
@@ -111,7 +107,7 @@
     &:hover {
         cursor: pointer;
         color: gray;
-       // background-color: lightgray;
+        // background-color: lightgray;
     }
 
     &:disabled {
@@ -143,6 +139,11 @@ h2 {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .tab {
-        height: 250px;
+        height: 180px;
+    }
+
+    h2 {
+        margin-top: 0px;
+        font-size: 20px;
     }
 }

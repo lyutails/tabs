@@ -11,7 +11,7 @@ import { BuyStore } from '../../buy/store/buy-store';
   styleUrl: './tab.scss',
   templateUrl: './tab.html',
   host: {
-    '[class.tab_background-color]': 'sizeTitle() % 10 === 0',
+    '[class.tab_background-color]': 'active() === true',
   }
 })
 export class Tab {
@@ -19,7 +19,6 @@ export class Tab {
   public disabled = input(false);
   public title = model.required<string>();
   public active = input<boolean>(false);
-  public sizeTitle = model(20);
   @ViewChild('tab') tabDecoratorView!: ElementRef<HTMLDivElement>;
   protected tabSignalView = viewChild<ElementRef<HTMLDivElement>>('tab');
   index = input.required<number>();
@@ -50,31 +49,6 @@ export class Tab {
         easing: 'cubic-bezier(.2,.8,.2,1)',
       }
     )
-  }
-
-  increaseSize() {
-    this.sizeTitle.update((previousSize) => previousSize + 1);
-    event?.stopPropagation();
-
-    const tabSig = this.tabSignalView(); 
-    tabSig?.nativeElement.querySelector('h2')?.animate(
-      [
-        { transform: 'scale(1)' },
-        { transform: 'scale(1.1)' },
-        { transform: 'scale(1)' },
-      ],
-      {
-        duration: 200,
-        easing: 'ease-out',
-      }
-    );
-  }
-
-  decreaseSize() {
-    if (this.sizeTitle() > 10) {
-      this.sizeTitle.update((previousSize) => previousSize - 1);
-    }
-    event?.stopPropagation();
   }
 
   toggleSingleTab(index: number): void {

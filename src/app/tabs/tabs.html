@@ -26,8 +26,6 @@
       [disabled]="disabledSingleState()[i]"
       [title]="tabTitle"
       [active]="i === tabsStateService.activeTab()"
-      [sizeTitle]="tabsStateService.defaultTabsTitleSize()[i]"
-      (sizeTitleChange)="setTabTitleSize(i, $event)"
       [index]="$index"
     >
       <button class="tab_details" (click)="navigate(i)" [disabled]="!disabledSingleState()[i]">
