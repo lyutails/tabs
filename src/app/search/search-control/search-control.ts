@@ -36,7 +36,7 @@ export class SearchControl {
   showUse = { name: 'use', signal: signal<boolean>(false) };
   showPurpose = { name: 'purpose', signal: signal<boolean>(false) };
   showFilters = [this.showBrands, this.showCountry, this.showUse, this.showPurpose];
-  countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe', 'USA / Kanada'];
+  countries: string[] = ['Japan', 'Korea', 'China', 'Russia', 'Europe', 'USA / Canada'];
   useCases: string[] = ['Cream', 'Serum', 'Eye cream', 'Toner', 'Essence', 'Body', 'Milk'];
   purposes: string[] = ['Cleanse', 'Moisture', 'Nourish', 'Repair', 'Exfoliate', 'Retinol', 'PDRN', 'Peptides', 'Aromatherapy'];
   searchPlaceholders: string[] = ['darphin', 'erborian', 'cream', 'serum', 'korea'];
