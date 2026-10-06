@@ -43,6 +43,39 @@ body {
     scrollbar-color: #edd1d1;
 }
 
+body.dark {
+    background-color: #f1e9db;
+    color: var(--mat-sys-on-surface);
+    font: var(--mat-sys-body-medium);
+
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::-webkit-scrollbar {
+        width: 14px;
+        background: #ade0ce;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ade0ce;
+        border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #41baba;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #41baba;
+    }
+
+    scrollbar-color: #ade0ce;
+}
+
 tabs-root {
     width: 90%;
 }

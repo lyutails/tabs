@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, effect, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './core/header/header';
 import { Theme } from './core/theme-service/theme';
@@ -15,7 +15,16 @@ import { Footer } from './core/footer/footer';
 })
 export class App implements OnInit {
   themeService = inject(Theme);
-  
+
+  constructor() {
+    effect(() => {
+      document.body.classList.toggle(
+        'dark',
+        this.themeService.theme() === 'dark'
+      );
+    });
+  }
+
   ngOnInit(): void {
     document.fonts?.load('24px "Material Icons"').then(() => {
       document.body.classList.add('material-icons-loaded');

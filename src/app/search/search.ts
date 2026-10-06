@@ -17,6 +17,7 @@ import { SearchControl } from './search-control/search-control';
 import { SearchService } from './service/search-service';
 import { Motion } from '../core/services/motion';
 import { MatTooltip } from '@angular/material/tooltip';
+import { Theme } from '../core/theme-service/theme';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
@@ -44,6 +45,7 @@ export class Search {
     dy: number;
   } | null>(null);
   flyingProductActive = signal(false);
+  themeService = inject(Theme);
 
   ngOnInit() {
     this.currentPage = this.route.snapshot.url[0]?.path;
