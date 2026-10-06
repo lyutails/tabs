@@ -21,11 +21,22 @@ export class BuyStore {
         this.buyResults.set([]);
     }
 
-    addToCart(value: string): void {
-        console.log(value);
+    addToCartFromSearch(value: string): void {
         const result = this.searchStore.searchResults().find((item) => item.code === value);
 
-        console.log(result);
+        if (result) {
+            this.buyResults.update((items) => [...items, result]);
+
+            this.animNumber.set(false);
+
+            requestAnimationFrame(() =>
+                this.animNumber.set(true));
+        }
+    }
+
+    addToCartFromFound(value: string): void {
+        const result = this.searchStore.likedResults().find((item) => item.code === value);
+
         if (result) {
             this.buyResults.update((items) => [...items, result]);
 

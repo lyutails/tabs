@@ -58,7 +58,7 @@
               class="search_add-to-cart"
               [style.background]="'transparent'"
               matTooltip="Add to cart"
-              (click)="buyStore.addToCart(result.code)"
+              (click)="buyStore.addToCartFromSearch(result.code)"
               [disabled]="buyStore.isInCart(result.code)"
             >
               <mat-icon>add_shopping_cart</mat-icon>

@@ -31,7 +31,7 @@
         <button
           class="found_add-to-cart"
           [style.background]="'transparent'"
-          (click)="buyStore.addToCart(result.code)"
+          (click)="buyStore.addToCartFromFound(result.code)"
           [disabled]="buyStore.isInCart(result.code)"
         >
           <mat-icon>add_shopping_cart </mat-icon>
