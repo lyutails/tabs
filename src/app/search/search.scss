@@ -2,6 +2,10 @@ tabs-search-item {
     width: 100%;
 }
 
+tabs-search-control {
+    display: flex;
+}
+
 .search {
     &_button {
         &:hover {
@@ -321,7 +325,8 @@ tabs-search-item {
     scrollbar-color: var(--secondary-color);
 }
 
-.flying-product {position: fixed;
+.flying-product {
+    position: fixed;
 
     width: 80px;
     height: 80px;

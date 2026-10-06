@@ -315,3 +315,45 @@
     height: 300px;
     overflow-y: auto;
 }
+
+@media screen and (min-width: 551px) and (max-width: 768px) {
+    .search {
+        &_filter-button {
+            font-size: 12px;
+
+            &>mat-icon {
+                display: none;
+            }
+        }
+
+        &_popular-button {
+            font-size: 12px;
+            text-align: left;
+        }
+
+        &_suggestions {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 550px) {
+    .search {
+        &_filter-button {
+            font-size: 12px;
+
+            &>mat-icon {
+                display: none;
+            }
+        }
+
+        &_popular-button {
+            font-size: 12px;
+            text-align: left;
+        }
+
+        &_suggestions {
+            width: 68%;
+        }
+    }
+}
