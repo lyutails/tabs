@@ -19,8 +19,24 @@
     type="button"
     class="search_divider"
     [style.visibility]="searchStore.searchResults().length > 0 ? 'visible' : 'hidden'"
-    [style.background-color]="motionService.divider() === true ? '#edd1d1' : '#d16e80'"
-    [style.color]="motionService.divider() === true ? '#d16e80' : '#edd1d1'"
+    [style.background-color]="
+      motionService.divider()
+        ? themeService.theme() === 'light'
+          ? '#edd1d1'
+          : '#ade0ce'
+        : themeService.theme() === 'light'
+          ? '#d16e80'
+          : '#41baba'
+    "
+    [style.color]="
+      motionService.divider()
+        ? themeService.theme() === 'light'
+          ? '#d16e80'
+          : '#41baba'
+        : themeService.theme() === 'light'
+          ? '#edd1d1'
+          : '#ade0ce'
+    "
     [class.search_divider--active]="motionService.divider()"
   >
     <mat-icon>arrow_forward</mat-icon>
@@ -52,12 +68,12 @@
               [price]="result.price.formattedValue"
               [matTooltip]="result.name"
               #tooltip="matTooltip"
+              matTooltipPosition="above"
               (cdkDragStarted)="tooltip.hide()"
             ></tabs-search-item>
             <button
               class="search_add-to-cart"
               [style.background]="'transparent'"
-              matTooltip="Add to cart"
               (click)="buyStore.addToCartFromSearch(result.code)"
               [disabled]="buyStore.isInCart(result.code)"
             >

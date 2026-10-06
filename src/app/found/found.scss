@@ -117,12 +117,12 @@ button {
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #d16e80;
+        background: var(--decorative-elements);
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: #d4697d;
+        background: var(--decorative-elements);
     }
 
     scrollbar-color: var(--secondary-color);
