@@ -378,6 +378,11 @@ tabs-search-item {
         &_no-results-text {
             font-size: 0.9rem;
         }
+
+        &_item-wrapper {
+            width: 100%;
+            position: relative;
+        }
     }
 }
 
@@ -391,11 +396,6 @@ tabs-search-item {
             &:hover {
                 cursor: pointer;
             }
-        }
-
-        &_item-wrapper {
-            width: 100%;
-            position: relative;
         }
     }
 }
