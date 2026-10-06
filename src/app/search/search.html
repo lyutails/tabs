@@ -2,6 +2,7 @@
 <div class="search_wrapper">
   <div class="search_container" [class.search-container--side]="layout() === 'side'">
     <div
+      #foundContainer
       class="search_dropped-container"
       cdkDropList
       id="likedList"
@@ -49,12 +50,15 @@
               [imgSrc]="result.listingImage.url"
               [itemName]="result.name"
               [price]="result.price.formattedValue"
+              [matTooltip]="result.name"
+              #tooltip="matTooltip"
+              (cdkDragStarted)="tooltip.hide()"
             ></tabs-search-item>
             <button
               class="search_add-to-cart"
               [style.background]="'transparent'"
               matTooltip="Add to cart"
-              (click)="buyStore.addToCart(result.code)"
+              (click)="buyStore.addToCartFromSearch(result.code)"
               [disabled]="buyStore.isInCart(result.code)"
             >
               <mat-icon>add_shopping_cart</mat-icon>
@@ -80,3 +84,14 @@
     </div>
   </div>
 </div>
+@if (flyingProduct(); as product) {
+  <img
+    class="flying-product"
+    [class.flying-product--active]="flyingProductActive()"
+    [src]="product.img"
+    [style.left.px]="product.x"
+    [style.top.px]="product.y"
+    [style.--fly-x.px]="product.dx"
+    [style.--fly-y.px]="product.dy"
+  />
+}

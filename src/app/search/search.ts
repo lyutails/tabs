@@ -16,12 +16,12 @@ import { BuyStore } from '../buy/store/buy-store';
 import { SearchControl } from './search-control/search-control';
 import { SearchService } from './service/search-service';
 import { Motion } from '../core/services/motion';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Component({
   imports: [SearchItem, MatProgressSpinnerModule, MatButtonModule, MatInputModule,
     FormsModule, MatFormFieldModule, MatIconModule, CdkDrag, CdkDropList, Found,
-    SearchControl
-  ],
+    SearchControl, MatTooltip],
   selector: 'tabs-search',
   styleUrl: './search.scss',
   templateUrl: './search.html',
@@ -35,6 +35,15 @@ export class Search {
   protected searchService = inject(SearchService);
   hoveredRemove = signal<string | null>(null);
   motionService = inject(Motion);
+  foundContainer = viewChild<ElementRef<HTMLElement>>('foundContainer');
+  flyingProduct = signal<{
+    img: string;
+    x: number;
+    y: number;
+    dx: number;
+    dy: number;
+  } | null>(null);
+  flyingProductActive = signal(false);
 
   ngOnInit() {
     this.currentPage = this.route.snapshot.url[0]?.path;
@@ -47,17 +56,54 @@ export class Search {
 
     const result = event.item.data;
 
-    this.searchStore.likedResults.update((items) => {
-      if (items.some(item => item.code === result.code)) {
-        return items;
-      }
-      return [...items, result];
-    })
+    const draggedElement = event.item.element.nativeElement as HTMLElement;
+    const startRect = draggedElement.getBoundingClientRect();
 
-    this.searchStore.animNumber.set(false);
+    const foundElement = this.foundContainer()?.nativeElement;
+
+    if (!foundElement) {
+      return;
+    }
+
+    const foundRect = foundElement.getBoundingClientRect();
+
+    const startX = startRect.left;
+    const startY = startRect.top;
+
+    const endX = foundRect.left + foundRect.width / 2 - 40;
+    const endY = startY;
+
+    this.flyingProduct.set({
+      img: result.listingImage.url,
+      x: startX,
+      y: startY,
+      dx: endX - startX,
+      dy: endY - startY,
+    });
 
     requestAnimationFrame(() => {
-      this.searchStore.animNumber.set(true);
+      this.flyingProductActive.set(true);
     });
+
+
+    setTimeout(() => {
+      this.searchStore.likedResults.update((items) => {
+        if (items.some(item => item.code === result.code)) {
+          return items;
+        }
+
+        return [...items, result];
+      });
+
+      this.flyingProduct.set(null);
+      this.flyingProductActive.set(false);
+
+      this.searchStore.animNumber.set(false);
+
+      requestAnimationFrame(() => {
+        this.searchStore.animNumber.set(true);
+      });
+
+    }, 550);
   }
 }

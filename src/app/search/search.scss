@@ -322,6 +322,33 @@ tabs-search-item {
     scrollbar-color: var(--secondary-color);
 }
 
+.flying-product {position: fixed;
+
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    pointer-events: none;
+    z-index: 1000;
+
+    opacity: 1;
+
+    transform: translate(0, 0) scale(1);
+
+    transition:
+        transform 650ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        opacity 650ms ease;
+
+    &--active {
+        transform:
+            translate(var(--fly-x),
+                var(--fly-y)) scale(0.45);
+
+        opacity: 0.15;
+    }
+}
+
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
     .search {
         &_no-results-text {
