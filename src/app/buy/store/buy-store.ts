@@ -22,8 +22,10 @@ export class BuyStore {
     }
 
     addToCart(value: string): void {
+        console.log(value);
         const result = this.searchStore.searchResults().find((item) => item.code === value);
 
+        console.log(result);
         if (result) {
             this.buyResults.update((items) => [...items, result]);
 
