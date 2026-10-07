@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "module": "preserve",
+    "moduleResolution": "bundler"
+  },
+  "include": [
+    "scripts/**/*.ts",
+    "src/app/search/brands.constants.ts"
+  ]
+}

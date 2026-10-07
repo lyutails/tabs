@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/medias6/:path*",
-      "destination": "https://api.rivegauche.ru/medias6/:path*"
-    }
-  ]
-}

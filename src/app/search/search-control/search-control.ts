@@ -8,7 +8,7 @@ import { finalize } from 'rxjs';
 import { SearchStore } from '../services/search-store';
 import { BRANDS_CODES } from '../brands.constants';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Result } from '../../../catalog-importer/catalog-importer.model';
+import { Result } from '../../../../scripts/catalog-importer/catalog-importer.model';
 
 @Component({
   imports: [MatIconModule, MatInputModule,
