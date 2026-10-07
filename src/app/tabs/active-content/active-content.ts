@@ -1,4 +1,6 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, inject, input, signal } from '@angular/core';
+import { SearchStore } from '../../search/services/search-store';
+import { TabsState } from '../services/tabs-state';
 
 @Component({
   imports: [],
@@ -9,6 +11,8 @@ import { Component, input, signal } from '@angular/core';
 export class ActiveContent {
   index = input<number>();
   active = signal<boolean>(false);
+  searchStore = inject(SearchStore);
+  tabsState = inject(TabsState);
 
   activate() {
     this.active.set(false);

@@ -37,3 +37,31 @@
         background-color: var(--primary-color);
     }
 }
+
+.arrow-gif {
+    width: 400px;
+    height: 100px;
+    background-image: url('../../../../public/tabs_arrow_draw.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    z-index: 50;
+    top: 550px;
+    transform: scale(0.8);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .arrow-gif {
+        width: 360px;
+        height: 90px;
+        background-image: url('../../../../public/tabs_arrow_draw.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 50;
+        top: 600px;
+        transform: scale(0.8);
+    }
+}
