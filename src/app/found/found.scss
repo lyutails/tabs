@@ -17,6 +17,7 @@ tabs-search-item {
         align-items: flex-start;
         justify-content: space-between;
         gap: 10px;
+        margin-top: 10px;
     }
 
     &_title-wrapper {
@@ -105,7 +106,7 @@ button {
 
 .found-container--side.found_interested {
     overflow-y: auto;
-    height: 460px;
+    height: 450px;
 
     &::-webkit-scrollbar {
         width: 14px;

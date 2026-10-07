@@ -6,12 +6,12 @@
     },
     "code": "979488",
     "listingImage": {
-      "url": "/medias6/product-979488-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4NzI1fGltYWdlL2pwZWd8cHJvZHVjdHMvaDliL2gwMC8xMTQ4OTQ3MTY2MDA2Mi5qcGd8OGE0OWI2MDZkYmRhNjhkYmY5OTY1N2E1YjkwNmI5ZjA2YmUyMTIwZDY5NzEzODk5OTVkZmQxOTYwZGI5ZWFiZQ"
+      "url": "/catalog-images/uriage/979488.jpg"
     },
     "name": "Uriage Eau Thermale Water Cream",
     "price": {
-      "formattedValue": "2 045&nbsp;₽",
-      "value": 2045
+      "formattedValue": "2 341&nbsp;₽",
+      "value": 2341
     },
     "country": "europe"
   },
@@ -22,28 +22,12 @@
     },
     "code": "979482",
     "listingImage": {
-      "url": "/medias6/product-979482-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI5MTYzfGltYWdlL2pwZWd8cHJvZHVjdHMvaDAwL2g4Yy8xMTQ4OTU4NTAzNzM0Mi5qcGd8NTE0MjMwNTY0NTQ0YTM5MGE3MTI1Yjk4N2FiNDJmNGU2YmFmZTQxYzgyYTVkOWY0M2ZkZDc3OTE1ZDAwM2I0NA"
+      "url": "/catalog-images/uriage/979482.jpg"
     },
     "name": "Uriage Eau Thermale Water Eye Contour Cream",
     "price": {
-      "formattedValue": "1 595&nbsp;₽",
-      "value": 1595
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_701",
-      "name": "URIAGE"
-    },
-    "code": "1035950",
-    "listingImage": {
-      "url": "/medias6/-normal-1035950-big-3661434009525.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxOTkxN3xpbWFnZS9qcGVnfGltYWdlcy9oZDMvaGU2LzExNjI0NDY0NjQ2MTc0LmpwZ3xmODE3NzA5YmQ5NmU2ODVmMThmY2I3Y2U3ZDQ2ZWYwZDM1YzllZjRkMjIwZmVlYWY4MGMxN2FhZGE5NTU2YTRi"
-    },
-    "name": "Uriage Eau Thermale H.A. Booster Serum",
-    "price": {
-      "formattedValue": "2 501&nbsp;₽",
-      "value": 2501
+      "formattedValue": "1 615&nbsp;₽",
+      "value": 1615
     },
     "country": "europe"
   },
@@ -54,12 +38,12 @@
     },
     "code": "979542",
     "listingImage": {
-      "url": "/medias6/product-979542-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDQzNTIwfGltYWdlL2pwZWd8cHJvZHVjdHMvaGE1L2hiMi8xMTQ4OTU1NTg0MTA1NC5qcGd8NjQyMjhjZWU5YWI2YTQ5ODI0ZmY5NjUyNTk1ZDhmMTQzNzI4NWNlZjdjYzlhMmExNGY3OGVmODFmNDExYzAwOA"
+      "url": "/catalog-images/uriage/979542.jpg"
     },
     "name": "Uriage Eau Thermale Moisturizing Lipstick with Thermal Water Powder",
     "price": {
-      "formattedValue": "948&nbsp;₽",
-      "value": 948
+      "formattedValue": "852&nbsp;₽",
+      "value": 852
     },
     "country": "europe",
     "purpose": "moisture"
@@ -71,12 +55,12 @@
     },
     "code": "1028282",
     "listingImage": {
-      "url": "/medias6/-normal-1028282-big-3661434006500.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyODE5MHxpbWFnZS9qcGVnfGltYWdlcy9oZTYvaDMzLzE2ODcyNjUyMTQ0NjcwLmpwZ3w5NDA0OTNlNzQ3MDFhM2Q3NTE3MWI3ZjE3MWIwYjdmOGVmZTM2OTAyYzMwYzA5NjA5YTc5NDIyOWUxM2NiZjMw"
+      "url": "/catalog-images/uriage/1028282.jpg"
     },
     "name": "Uriage Bariesun Moisturizing Dry Mist SPF 50+",
     "price": {
-      "formattedValue": "2 268&nbsp;₽",
-      "value": 2268
+      "formattedValue": "2 911&nbsp;₽",
+      "value": 2911
     },
     "country": "europe",
     "purpose": "moisture"
@@ -86,9 +70,25 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
+    "code": "1035950",
+    "listingImage": {
+      "url": "/catalog-images/uriage/1035950.jpg"
+    },
+    "name": "Uriage Eau Thermale H.A. Booster Serum",
+    "price": {
+      "formattedValue": "2 440&nbsp;₽",
+      "value": 2440
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_701",
+      "name": "URIAGE"
+    },
     "code": "base_1136783",
     "listingImage": {
-      "url": "/medias6/-normal-base-1136783-big-3661434032813-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMjY0OXxpbWFnZS9qcGVnfGltYWdlcy9oMDcvaDkwLzE2NzQ1ODI3NDY3Mjk0LmpwZ3wyZWU4ZjQyMWIzMDQxMDI5MTczNjI4Zjk1MmM1MDM0NzRkMTYwNDg3ZDVlYzk5OWFjYmRiYTg0OTJiOGYwZGMy"
+      "url": "/catalog-images/uriage/base_1136783.jpg"
     },
     "name": "Uriage AP Hair Anti-Hair Loss Intensive Serum",
     "price": {
@@ -104,7 +104,7 @@
     },
     "code": "base_1136782",
     "listingImage": {
-      "url": "/medias6/-normal-base-1136782-big-3661434032820-listingDesktop?context=bWFzdGVyfGltYWdlc3wyODc1NXxpbWFnZS9qcGVnfGltYWdlcy9oNGQvaDU3LzE2NzQ1ODI2MDkxMDM4LmpwZ3w3ZDRmOTEwMjFjZDgxZGUyMTYxNDNkYzEzYWJkODk5NzhkNTBiZWU1ZTA1MjNiNjliMDU3ZDYxMGNkYzVjNjdl"
+      "url": "/catalog-images/uriage/base_1136782.jpg"
     },
     "name": "Uriage AP Hair Fortifying Shampoo",
     "price": {
@@ -118,25 +118,9 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
-    "code": "base_979422",
-    "listingImage": {
-      "url": "/medias6/product-979422-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI2NTA1fGltYWdlL2pwZWd8cHJvZHVjdHMvaDlmL2hmOS8xMjkzNDg0MzIwMzYxNC5qcGd8NWI4ZDVjZGY5MThjNTFmOTVjNTUxNDRmNzQ2YjY0YTUzZmMwOGM1YzQ4MzhjODgyOTkxZmVkMDE1YjVkZTFhNw"
-    },
-    "name": "Uriage DS Hair Anti-Dandruff Treatment Shampoo",
-    "price": {
-      "formattedValue": "1 725&nbsp;₽",
-      "value": 1725
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_701",
-      "name": "URIAGE"
-    },
     "code": "1128620",
     "listingImage": {
-      "url": "/medias6/-normal-1128620-big-3661434032233-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTY3MHxpbWFnZS9qcGVnfGltYWdlcy9oODIvaDVkLzE0ODExOTI5ODM3NTk4LmpwZ3w2Yjk5MDdiNmM4M2QxMjAxZWMzNzcwZTEyYzg3NzgwMjMxYzZmOTljMDUxZDIzZjY3MWMwNjI1ZDc3MjU0ZTgx"
+      "url": "/catalog-images/uriage/1128620.jpg"
     },
     "name": "Uriage Roseliane Visible Redness Protocol Set",
     "price": {
@@ -152,12 +136,28 @@
     },
     "code": "1128621",
     "listingImage": {
-      "url": "/medias6/-normal-1128621-big-3661434023439-listingDesktop?context=bWFzdGVyfGltYWdlc3w5NzY5fGltYWdlL2pwZWd8aW1hZ2VzL2gzOC9oZjcvMTQ4MTE5MzA3NTUxMDIuanBnfDdiYjM1N2Q4ZjczZjg3NzkxYTI5OTU0OGM5OTU5NDdhNTM4YTlhNzVhMGNhMGVkNTJlNDZmY2I0ZGViNDRlMDE"
+      "url": "/catalog-images/uriage/1128621.jpg"
     },
     "name": "Uriage Age Absolu Blur-Redensifying Eye Balm",
     "price": {
-      "formattedValue": "3 018&nbsp;₽",
-      "value": 3018
+      "formattedValue": "2 490&nbsp;₽",
+      "value": 2490
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_701",
+      "name": "URIAGE"
+    },
+    "code": "base_979422",
+    "listingImage": {
+      "url": "/catalog-images/uriage/base_979422.jpg"
+    },
+    "name": "Uriage DS Hair Anti-Dandruff Treatment Shampoo",
+    "price": {
+      "formattedValue": "1 748&nbsp;₽",
+      "value": 1748
     },
     "country": "europe"
   },
@@ -168,12 +168,12 @@
     },
     "code": "1100403",
     "listingImage": {
-      "url": "/medias6/-normal-1100403-big-3661434014123-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNjc5NXxpbWFnZS9qcGVnfGltYWdlcy9oMTgvaDI2LzE0MTI3NjY1MDUzNzI2LmpwZ3wzMDFkMjg5YzU4YTlkMzhlNTY3YWQzNDA4MjkzZmQxNDdjM2EzMWFiZTc2MDk4NzQ5YjYxMzNmNWJiZTJkMDNk"
+      "url": "/catalog-images/uriage/1100403.jpg"
     },
     "name": "Uriage Bariesun Invisible Sun Stick SPF 50+",
     "price": {
-      "formattedValue": "2 085&nbsp;₽",
-      "value": 2085
+      "formattedValue": "2 117&nbsp;₽",
+      "value": 2117
     },
     "country": "europe"
   },
@@ -184,7 +184,7 @@
     },
     "code": "1112145",
     "listingImage": {
-      "url": "/medias6/-normal-1112145-big-3661434009747-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDM0NHxpbWFnZS9qcGVnfGltYWdlcy9oZmIvaGZlLzEzNTQwODE3NTM1MDA2LmpwZ3w3ZjdiZjRjYzY5NGVmZWI3MTg5NGIzM2M4NDlkMjJkMzViYjkzMzY2YWI0NTRiODYwYzljNjVkNDIxNGRhNDZk"
+      "url": "/catalog-images/uriage/1112145.jpg"
     },
     "name": "Uriage Promo Baby Travel Kit",
     "price": {
@@ -200,12 +200,12 @@
     },
     "code": "1108780",
     "listingImage": {
-      "url": "/medias6/-normal-1108780-big-3661434010569-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzg4MXxpbWFnZS9qcGVnfGltYWdlcy9oOTQvaGIxLzEzNTE2ODI1MTAwMzE4LmpwZ3xhNGM0MzUyNGFlZTVlODMyMzU0ODc2MjMxZjIwYTg5YjI0YTNkYjFlN2ZhMzg2ODVkZDBjNmMyYzkyMTk2NTU2"
+      "url": "/catalog-images/uriage/1108780.jpg"
     },
     "name": "Uriage Bariederm Cica Hands + Lips Set",
     "price": {
-      "formattedValue": "1 299&nbsp;₽",
-      "value": 1299
+      "formattedValue": "1 290&nbsp;₽",
+      "value": 1290
     },
     "country": "europe"
   },
@@ -216,12 +216,12 @@
     },
     "code": "1108781",
     "listingImage": {
-      "url": "/medias6/-normal-1108781-big-3661434004773-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMDI0OXxpbWFnZS9qcGVnfGltYWdlcy9oODkvaDVhLzEzNTE2NzU5MTcxMTAyLmpwZ3w5ZWIzZjEzYmIxNTY0MmJkOTE0YzUxMzUwODQyM2Y4NDJlMjZmOTdkZGVhMjVkN2ViYTliMGE0Y2IyOTJiNjU3"
+      "url": "/catalog-images/uriage/1108781.jpg"
     },
     "name": "Uriage Moisturizing Lipstick Dried Lips Duo Set",
     "price": {
-      "formattedValue": "1 615&nbsp;₽",
-      "value": 1615
+      "formattedValue": "1 508&nbsp;₽",
+      "value": 1508
     },
     "country": "europe",
     "purpose": "moisture"
@@ -233,7 +233,7 @@
     },
     "code": "1099560",
     "listingImage": {
-      "url": "/medias6/-normal-1099560-big-3661434014116-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzIwM3xpbWFnZS9qcGVnfGltYWdlcy9oM2MvaGNiLzEzNDgwNzExNDg3NTE4LmpwZ3wxOWJhOWU0OTNiNzgzMGEzYTllZDhkMzhhMjdhZGJhOGQ5NDAzZTgzZDQ2YWFiMzg5MTQxYmE0NzUxNWQ5Zjc1"
+      "url": "/catalog-images/uriage/1099560.jpg"
     },
     "name": "Uriage Bariesun Mineral Stick SPF 50+",
     "price": {
@@ -247,14 +247,14 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
-    "code": "1054329",
+    "code": "1091801",
     "listingImage": {
-      "url": "/medias6/-normal-1054329-big-3661434009792.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNjQ1NXxpbWFnZS9qcGVnfGltYWdlcy9oOTIvaDhhLzEyODU2MDQzNjAxOTUwLmpwZ3w4MTAzYjc4M2VhM2VjNGQwZjFlYzliNjgyMDM1YTMwZGM3NTVkNDI0OGQ5ZTIwMDhkYWUyZDcwMDVkYTYwYjgz"
+      "url": "/catalog-images/uriage/1091801.jpg"
     },
-    "name": "Uriage Depiderm Corrective Eye Contour Care",
+    "name": "Uriage Hyseac 3-Regul Global Tinted Skincare SPF 30",
     "price": {
-      "formattedValue": "2 604&nbsp;₽",
-      "value": 2604
+      "formattedValue": "1 606&nbsp;₽",
+      "value": 1606
     },
     "country": "europe"
   },
@@ -265,12 +265,12 @@
     },
     "code": "1091800",
     "listingImage": {
-      "url": "/medias6/-normal-1091800-big-3661434010088.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTUzMnxpbWFnZS9qcGVnfGltYWdlcy9oNDAvaGRjLzEyODU2MDQxOTYzNTUwLmpwZ3xhMDM3MWZmMWEzNTg1MTIzNTg0MGJiYzBiYTVkNGQ1NTQxN2E0NjM2MTg2ZDdjYzg2NTUwYzY3NTBiYTcxYjZi"
+      "url": "/catalog-images/uriage/1091800.jpg"
     },
     "name": "Uriage Hyseac 3-Regul+ Anti-Blemish Global Care",
     "price": {
-      "formattedValue": "1 620&nbsp;₽",
-      "value": 1620
+      "formattedValue": "1 641&nbsp;₽",
+      "value": 1641
     },
     "country": "europe"
   },
@@ -279,14 +279,14 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
-    "code": "1091801",
+    "code": "1054329",
     "listingImage": {
-      "url": "/medias6/-normal-1091801-big-3661434010095.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTExNnxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaDRmLzEyOTMyODMwNjI1ODIyLmpwZ3xlOGJmZmI2NDBhYzIxMzg0YmZiODA1YTNjYjZhZWMwNDAzMDgxN2Q0YzQ4NmRkYzIxZjcxOWFmNDg1MjhlY2Rh"
+      "url": "/catalog-images/uriage/1054329.jpg"
     },
-    "name": "Uriage Hyseac 3-Regul Global Tinted Skincare SPF 30",
+    "name": "Uriage Depiderm Corrective Eye Contour Care",
     "price": {
-      "formattedValue": "1 584&nbsp;₽",
-      "value": 1584
+      "formattedValue": "2 427&nbsp;₽",
+      "value": 2427
     },
     "country": "europe"
   },
@@ -297,7 +297,7 @@
     },
     "code": "1054328",
     "listingImage": {
-      "url": "/medias6/-normal-1054328-big-3661434009785.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzcwNHxpbWFnZS9qcGVnfGltYWdlcy9oZDQvaDI0LzEyODU2MDQyNDIyMzAyLmpwZ3w5NTc1ZDM3YjVmN2NlMDBiNWRjNzNiZTgwYzFjM2NjYzA1YzhiYTM4YTVkMDVlM2JjNjU0ODMxOTRhZmJlZDNi"
+      "url": "/catalog-images/uriage/1054328.jpg"
     },
     "name": "Uriage Depiderm Brightening Cleansing Foaming Cream",
     "price": {
@@ -314,12 +314,12 @@
     },
     "code": "1091798",
     "listingImage": {
-      "url": "/medias6/-normal-1091798-big-3661434009679.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDc5OHxpbWFnZS9qcGVnfGltYWdlcy9oZWQvaDM3LzEyODU2MDQxMTExNTgyLmpwZ3wzOTdkMjQ1MWM1ZDdmNTc5YmRlMDgxNWQyM2UyMGVhZDBmYTExODNiMzQwYjRjYjlhN2RjMjgwNTk1ZmU2YjA2"
+      "url": "/catalog-images/uriage/1091798.jpg"
     },
     "name": "Uriage Pruriced Fresh Soothing Gel",
     "price": {
-      "formattedValue": "1 559&nbsp;₽",
-      "value": 1559
+      "formattedValue": "1 486&nbsp;₽",
+      "value": 1486
     },
     "country": "europe"
   },
@@ -330,7 +330,7 @@
     },
     "code": "1031734",
     "listingImage": {
-      "url": "/medias6/-normal-1031734-big-3661434005237.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTI3NnxpbWFnZS9qcGVnfGltYWdlcy9oNTEvaGNiLzE2NDUzMzU3OTYxMjQ2LmpwZ3wxYWI0NDAwYjkwYTBmMjMyODMyZjFlYTIzYzJlYTJlYWY3MjdmODg2YzZkYmEyMTY1YWNlNTFlZjVmZGEwOWEy"
+      "url": "/catalog-images/uriage/1031734.jpg"
     },
     "name": "Uriage Power 3 Deodorant Pack",
     "price": {
@@ -346,7 +346,7 @@
     },
     "code": "1054332",
     "listingImage": {
-      "url": "/medias6/-normal-1054332-big-3661434009143.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMDg0M3xpbWFnZS9qcGVnfGltYWdlcy9oZmUvaDRjLzEyMzEwMDAzNzQ0Nzk4LmpwZ3xlMzA2ZGZjYjE2OGVhZWI5NWZjZTY2NjY5NjZlNTY5NTM2NmRkYTUyY2E2NDYwOTVlN2ZlZjI3MTdmNjQ3OGVj"
+      "url": "/catalog-images/uriage/1054332.jpg"
     },
     "name": "Uriage Xemose Moisturizing Lipstick Pack",
     "price": {
@@ -363,12 +363,12 @@
     },
     "code": "base_979518",
     "listingImage": {
-      "url": "/medias6/-normal-base-979518-3661434004575.jpg-listingDesktop?context=bWFzdGVyfHJvb3R8MTA0OTl8aW1hZ2UvanBlZ3xoNGEvaGFkLzE1Mzk1NzA0NTA0MzUwLmpwZ3wwNzlmN2FlODVjMzA3M2RjNTdmMTdjMWM3ZDZhYjNmOGZjMjljMTA5YTZjM2E5MzlmYjBjMTY4M2VjNTIyN2Nh"
+      "url": "/catalog-images/uriage/base_979518.jpg"
     },
     "name": "Uriage Power 3 Deodorant",
     "price": {
-      "formattedValue": "1 549&nbsp;₽",
-      "value": 1549
+      "formattedValue": "1 420&nbsp;₽",
+      "value": 1420
     },
     "country": "europe"
   },
@@ -379,12 +379,12 @@
     },
     "code": "base_979425",
     "listingImage": {
-      "url": "/medias6/product-979426-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE3NzY2fGltYWdlL2pwZWd8cHJvZHVjdHMvaDFhL2g2ZS8xMjYzMjY5MzA0NzMyNi5qcGd8N2Y5NTNmMTFlYWUyNzY3MTA3YWE1ZDJmZjhiMzQ0N2E1OGFmMzczYTExYTYwNzMxZmZkNDk3NTQ3MjEwN2EzOA"
+      "url": "/catalog-images/uriage/base_979425.jpg"
     },
     "name": "Uriage Gyn-Phy Refreshing Gel Intimate Hygiene",
     "price": {
-      "formattedValue": "739&nbsp;₽",
-      "value": 739
+      "formattedValue": "748&nbsp;₽",
+      "value": 748
     },
     "country": "europe"
   },
@@ -395,7 +395,7 @@
     },
     "code": "1023568",
     "listingImage": {
-      "url": "/medias6/product-1023568-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDk1NTZ8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oODYvaDEwLzEyNTI5NzAzOTExNDU0LmpwZ3wyNjMxMWQzMTc1N2VhM2JjM2YxZmY2Njg4ZmViZGRlZTI5ZWY2NDAzZjg2OTM5ZDZhMjY5MjRiY2E5ZDYwNDc2"
+      "url": "/catalog-images/uriage/1023568.jpg"
     },
     "name": "Uriage Bariederm Insulating Repairing Hand Cream Pack",
     "price": {
@@ -412,12 +412,12 @@
     },
     "code": "1066953",
     "listingImage": {
-      "url": "/medias6/-normal-1066953-big-3661434009754.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNjE2NHxpbWFnZS9qcGVnfGltYWdlcy9oMTcvaDhlLzEyMTUzMjA5MjU4MDE0LmpwZ3xhOTU3MTNlYWQwNTEzNmIyZmU1YjI1ODQxMzNmMWQ5MmUyYWQ5ZDU0YzFhZmMxYjI4ODJkNmQ2MDYwMDQwMzQw"
+      "url": "/catalog-images/uriage/1066953.jpg"
     },
     "name": "Uriage Depiderm Serum Anti-Taches Booster Eclat",
     "price": {
-      "formattedValue": "3 504&nbsp;₽",
-      "value": 3504
+      "formattedValue": "3 097&nbsp;₽",
+      "value": 3097
     },
     "country": "europe"
   },
@@ -428,7 +428,7 @@
     },
     "code": "1005942",
     "listingImage": {
-      "url": "/medias6/product-1005942-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIzMTYyfGltYWdlL2pwZWd8cHJvZHVjdHMvaGRkL2g5ZC8xMTQ4OTY0Mjg3Mjg2Mi5qcGd8OTE2Njg1ZDA1YTEzYjk0NDJjNTJjMDVhZDhmMTJjYjM0ZmUyM2IzNGQ0NzFkODc1MDdjYjIzZDg0OTBlNWIzNQ"
+      "url": "/catalog-images/uriage/1005942.jpg"
     },
     "name": "Uriage Cleansing Water Foam",
     "price": {
@@ -445,7 +445,7 @@
     },
     "code": "1066952",
     "listingImage": {
-      "url": "/medias6/-normal-1066952-big-3661434009907.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w5MDEzfGltYWdlL2pwZWd8aW1hZ2VzL2gxNi9oZDMvMTI1NzI2OTEzNjU5MTguanBnfGUwOGM5MDU4YjExNDAyMDIyMGE5ZGU0MzI2NDU0ZjVlZTVhYTIxY2M0NjJmNmM3ODkyMDljMTU5YmU5Mzk0YTI"
+      "url": "/catalog-images/uriage/1066952.jpg"
     },
     "name": "Uriage Promo Hyseac 3-Regul+ Hyseac Cleansing Gel",
     "price": {
@@ -462,7 +462,7 @@
     },
     "code": "base_979336",
     "listingImage": {
-      "url": "/medias6/product-base-979336-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI2MjY2fGltYWdlL2pwZWd8cHJvZHVjdHMvaDAyL2gyNS8xNjcyMjk5NTQ3ODU1OC5qcGd8MzU5MWIxOTgxZWU1MjA3MmM4OGQ0OTk5ODE0OGMxMTEwOTA3NzQ3M2U5MDQ5NjkyOTEwNWIyZTRhY2Y1NTEyOA"
+      "url": "/catalog-images/uriage/base_979336.jpg"
     },
     "name": "Uriage Xemose С8+ Anti-itch Cleansing Oil",
     "price": {
@@ -479,12 +479,12 @@
     },
     "code": "979334",
     "listingImage": {
-      "url": "/medias6/-normal-979334-big-3661434004865.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTc0M3xpbWFnZS9qcGVnfGltYWdlcy9oNmQvaDU3LzE0MDIyMjE4MjUyMzE4LmpwZ3w3NDM3MjgzMDNhZTQ5NzliZDQ0ZDcwOWIyOTEzODU0MzcwZjlkOTNkYjI3ZDhjMzZkNDNjYjE2Nzg5NTA2Yjk1"
+      "url": "/catalog-images/uriage/979334.jpg"
     },
     "name": "Uriage Xemose C8+ Soothing Nourishing Face Care Cream",
     "price": {
-      "formattedValue": "1 202&nbsp;₽",
-      "value": 1202
+      "formattedValue": "1 249&nbsp;₽",
+      "value": 1249
     },
     "country": "europe",
     "purpose": "nourish"
@@ -496,7 +496,7 @@
     },
     "code": "1065860",
     "listingImage": {
-      "url": "/medias6/-normal-1065860-big-4687204592805.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMTE4MHxpbWFnZS9qcGVnfGltYWdlcy9oODcvaDBlLzE2NzIzMDQxOTQzNTgyLmpwZ3wxYTkwMTU5MmRjZGM1OWFlODg4YWZmYTBkZWYwZDMwYzBhMjBiOTBmMmI4MzA0ZGViMTdhMTNkMDMyNWQyODUy"
+      "url": "/catalog-images/uriage/1065860.jpg"
     },
     "name": "Uriage Eau Thermale Water Set",
     "price": {
@@ -512,12 +512,12 @@
     },
     "code": "1020792",
     "listingImage": {
-      "url": "/medias6/product-1020792-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4NzE1fGltYWdlL2pwZWd8cHJvZHVjdHMvaDBkL2g4YS8xMTUxODM3NjgzNzE1MC5qcGd8ZGU5YWVjNGM0NTM1ZThlNjE3ZjZkOTBjMTRiNzk5NWM0YmE0N2NlOGM5ZWViMDE2ZDIyMjhhMzZhYWFmYWFkYg"
+      "url": "/catalog-images/uriage/1020792.jpg"
     },
     "name": "Uriage Age Lift Smoothing Eye Care",
     "price": {
-      "formattedValue": "3 446&nbsp;₽",
-      "value": 3446
+      "formattedValue": "3 203&nbsp;₽",
+      "value": 3203
     },
     "country": "europe"
   },
@@ -528,12 +528,12 @@
     },
     "code": "base_1088674",
     "listingImage": {
-      "url": "/medias6/-normal-1088674-big-3661434009990.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMzg2MnxpbWFnZS9qcGVnfGltYWdlcy9oMTQvaGZmLzEyNjY1NzE5Njg1MTUwLmpwZ3w4MzIxZjNmNjRhNTZkMzhiODBkM2NkODYwNjg5ZTU0NmYwNGU1YzBlNTA5OTk0NGY5MTEzOWNlOGFlYzkxOGJh"
+      "url": "/catalog-images/uriage/base_1088674.jpg"
     },
     "name": "Uriage Hyseac Anti-Blemish Cleansing Gel",
     "price": {
-      "formattedValue": "1 414&nbsp;₽",
-      "value": 1414
+      "formattedValue": "1 306&nbsp;₽",
+      "value": 1306
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -545,12 +545,12 @@
     },
     "code": "base_979332",
     "listingImage": {
-      "url": "/medias6/product-base-979332-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE1MzMyfGltYWdlL2pwZWd8cHJvZHVjdHMvaGMzL2gzZi8xNDAyMjI3ODc3NDgxNC5qcGd8YTY0MDMwOTlkOTc5MDA4MmMyNjdmYWQ2ZmY5YmVhNWJkYTk5ZTU5YzU4Mzk0OTIyNDM1OTJmN2U4YmZlZTc1Nw"
+      "url": "/catalog-images/uriage/base_979332.jpg"
     },
     "name": "Uriage Xemose C8+ Lipid-Replenishing Anti-Itch Cream",
     "price": {
-      "formattedValue": "1 417&nbsp;₽",
-      "value": 1417
+      "formattedValue": "1 454&nbsp;₽",
+      "value": 1454
     },
     "country": "europe"
   },
@@ -561,12 +561,12 @@
     },
     "code": "979543",
     "listingImage": {
-      "url": "/medias6/product-979543-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDY5NDB8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oNTAvaDU2LzE3MDIzNTk1MDIwMzE4LmpwZ3w5MTIyMzhlOGVhYWVhMDRiYzUwNWM5Njc5ZDAxNDlkNzMwODc4NzIxN2RhNmE4OGI0ZjljN2U3YWM4YjEwODEy"
+      "url": "/catalog-images/uriage/979543.jpg"
     },
     "name": "Uriage Eau Thermale Water Sleeping Mask",
     "price": {
-      "formattedValue": "2 110&nbsp;₽",
-      "value": 2110
+      "formattedValue": "2 474&nbsp;₽",
+      "value": 2474
     },
     "country": "europe"
   },
@@ -577,12 +577,12 @@
     },
     "code": "979487",
     "listingImage": {
-      "url": "/medias6/product-979487-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE2MzM0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDJmL2gxYi8xMjAwODA0NzU0MjMwMi5qcGd8M2NjYjI5MDhhYzQzMGI3YzJmOTBhODBiNDNiNmRhNDFmNDA4MTM0N2VkYWM4MjJjNDhkYmM4NGQxNGQwODU2MA"
+      "url": "/catalog-images/uriage/979487.jpg"
     },
     "name": "Uriage Eau Thermale Water Cream SPF 20",
     "price": {
-      "formattedValue": "2 232&nbsp;₽",
-      "value": 2232
+      "formattedValue": "2 058&nbsp;₽",
+      "value": 2058
     },
     "country": "europe"
   },
@@ -593,12 +593,12 @@
     },
     "code": "979486",
     "listingImage": {
-      "url": "/medias6/product-979486-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5MjI0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDg0L2g2Ny8xMTQ4OTQ2OTEwNDE1OC5qcGd8YmFhM2Y3N2E0MWUwMGRkMmQ4OTAzODMxNzE2MzdlY2M5YjZhNDcyZWU4YjBlMjBiMjA5NjlhYTdmNzdmYTJkNA"
+      "url": "/catalog-images/uriage/979486.jpg"
     },
     "name": "Uriage Eau Thermale Rich Water Cream",
     "price": {
-      "formattedValue": "1 996&nbsp;₽",
-      "value": 1996
+      "formattedValue": "2 021&nbsp;₽",
+      "value": 2021
     },
     "country": "europe"
   },
@@ -609,12 +609,12 @@
     },
     "code": "base_979517",
     "listingImage": {
-      "url": "/medias6/-normal-base-979517-3661434003110.jpg-listingDesktop?context=bWFzdGVyfHJvb3R8MjE4NjF8aW1hZ2UvanBlZ3xoZTEvaDBiLzE1Mzk1NjYxMzgxNjYyLmpwZ3xjNTQzZWIzZWViN2JjZjgzMDlhNTFmYjJiZmE1MTZhNmJiNDQ1NWNjOWQzNDJlNzhjNDYxMzk3N2RlNDRkMjI0"
+      "url": "/catalog-images/uriage/base_979517.jpg"
     },
     "name": "Uriage Fresh Deodorant",
     "price": {
-      "formattedValue": "1 435&nbsp;₽",
-      "value": 1435
+      "formattedValue": "1 748&nbsp;₽",
+      "value": 1748
     },
     "country": "europe"
   },
@@ -625,12 +625,12 @@
     },
     "code": "base_979345",
     "listingImage": {
-      "url": "/medias6/product-base-979345-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI0OTg2fGltYWdlL2pwZWd8cHJvZHVjdHMvaGIzL2hjZi8xNjcyMzA0OTc3NTEzNC5qcGd8MmI5NmMzNmU3MjM3ZjgzNzgwMGI1ZTE0MGEyMjBiMTQwMmE2ODA3ZmNkMjMxOTZiZDk0YjAwNWY2YjZkOWZkNQ"
+      "url": "/catalog-images/uriage/base_979345.jpg"
     },
     "name": "Uriage Xemose C8+ Lipid-Replenishing Anti-Itch Balm",
     "price": {
-      "formattedValue": "1 361&nbsp;₽",
-      "value": 1361
+      "formattedValue": "1 273&nbsp;₽",
+      "value": 1273
     },
     "popular": true,
     "country": "europe"
@@ -642,7 +642,7 @@
     },
     "code": "base_979498",
     "listingImage": {
-      "url": "/medias6/product-base-979498-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5NTcwfGltYWdlL2pwZWd8cHJvZHVjdHMvaDIwL2gwNy8xMTY4MjQ3Mjk4NDYwNi5qcGd8MzgxMjMzM2UyODE0MmFkMjIwNDhhNzM3Y2ZiZTdhOWExMzhlN2I3MmVhZTE5NTViMzgyNGNhZDcyZmU2Y2E5Ng"
+      "url": "/catalog-images/uriage/base_979498.jpg"
     },
     "name": "Uriage Cleansing Oil",
     "price": {
@@ -659,7 +659,7 @@
     },
     "code": "979342",
     "listingImage": {
-      "url": "/medias6/product-979342-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE1OTAxfGltYWdlL2pwZWd8cHJvZHVjdHMvaGE1L2hjYi8xNjg3MjEzOTA2MzMyNi5qcGd8ZWVhM2ExZWFmNGQyZWZmNjdhYjc0ODM3MGIzMzM5ODBkZTFmMGNhMjgwMTA3MTIxYjUwNDM4MTUzNDBlNjkwMQ"
+      "url": "/catalog-images/uriage/979342.jpg"
     },
     "name": "Uriage Xemose C8+ Soothing Nourishing Palpebral Care",
     "price": {
@@ -676,12 +676,12 @@
     },
     "code": "979531",
     "listingImage": {
-      "url": "/medias6/-normal-979531-big-3661434006494.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzI5OXxpbWFnZS9qcGVnfGltYWdlcy9oNDkvaDdjLzExNjgyNDY0Njk0MzAyLmpwZ3wzZWZkMTliNDVmMzEyZDBhMWQxOWZiNWEwMGQ0NzM1NzQzZjgwNTdmYzI4MGY2NmJmODlkNjEyZmJiNmQ4NDA3"
+      "url": "/catalog-images/uriage/979531.jpg"
     },
     "name": "Uriage Gentle Jelly Face Scrub",
     "price": {
-      "formattedValue": "1 575&nbsp;₽",
-      "value": 1575
+      "formattedValue": "1 452&nbsp;₽",
+      "value": 1452
     },
     "country": "europe"
   },
@@ -692,7 +692,7 @@
     },
     "code": "979529",
     "listingImage": {
-      "url": "/medias6/product-979529-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDM0MDIzfGltYWdlL2pwZWd8cHJvZHVjdHMvaDgxL2g2Zi8xMTQ4OTQ1NjA2MjQ5NC5qcGd8MmFhOWM1OGJmNzcwYmNiNDAxOTUzNjFiYTU0NTY5YTIzMWQ5NTJlMTdhMDI5NzI4NGYzMTg2MmRiNzNjZmQ0MQ"
+      "url": "/catalog-images/uriage/979529.jpg"
     },
     "name": "Uriage Xemose Moisturizing Lipstick",
     "price": {
@@ -709,12 +709,12 @@
     },
     "code": "base_979516",
     "listingImage": {
-      "url": "/medias6/product-979516-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE1NTMxfGltYWdlL2pwZWd8cHJvZHVjdHMvaGRjL2hlOC8xNTM5NTY5OTQ1ODA3OC5qcGd8MTNhODdlOTk5OGFlMDk4ZjVkMWEwN2EwMzZlN2MyNmMzMTMwMmI0YzI1NWJmNGQxNDRmMDdhODI1ZDVhYTJmZQ"
+      "url": "/catalog-images/uriage/base_979516.jpg"
     },
     "name": "Uriage Gentle Deodorant",
     "price": {
-      "formattedValue": "1 549&nbsp;₽",
-      "value": 1549
+      "formattedValue": "1 476&nbsp;₽",
+      "value": 1476
     },
     "country": "europe"
   },
@@ -725,12 +725,12 @@
     },
     "code": "base_979521",
     "listingImage": {
-      "url": "/medias6/product-base-979521-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDMyNDYyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDk5L2gxMi8xNDA4NDY3OTcyOTE4Mi5qcGd8Y2IyMmJlYjA5OGMyYzY0MGJkODUwMDY5MTYyNmZkNWY4MDdhZmFmOTc1NTU2NjE4NWEzODNlYjBlYTdhZDI1OA"
+      "url": "/catalog-images/uriage/base_979521.jpg"
     },
     "name": "Uriage Repairing Thermal Water",
     "price": {
-      "formattedValue": "585&nbsp;₽",
-      "value": 585
+      "formattedValue": "600&nbsp;₽",
+      "value": 600
     },
     "country": "europe",
     "purpose": "repair"
@@ -742,12 +742,12 @@
     },
     "code": "979324",
     "listingImage": {
-      "url": "/medias6/product-979324-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE0NDY2fGltYWdlL2pwZWd8cHJvZHVjdHMvaGFiL2gwMC8xMzA4NDIxMTg3MTc3NC5qcGd8MWQzNDM1MWJmZmU2YjA5N2VjZWFiZjVmOWY0NDY2ODFjZTRkMTgxN2IwYTJhN2FjMTExZTYwMmU4Zjg3MzBjMg"
+      "url": "/catalog-images/uriage/979324.jpg"
     },
     "name": "Uriage Roseliane Anti-Redness Cream SPF 30",
     "price": {
-      "formattedValue": "2 235&nbsp;₽",
-      "value": 2235
+      "formattedValue": "2 182&nbsp;₽",
+      "value": 2182
     },
     "country": "europe"
   },
@@ -758,12 +758,12 @@
     },
     "code": "979323",
     "listingImage": {
-      "url": "/medias6/product-979323-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEzOTk0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDcxL2hmYi8xMzEyNTc4MDE0NDE1OC5qcGd8NjFkMjljN2YwOTllMjIxNzJlMWEwNzNmM2UzOGVkMTRkMGRhZWQ2ZDY4NTYyZTQ3Njg3OGNhYTVhNDhiZGU2NQ"
+      "url": "/catalog-images/uriage/979323.jpg"
     },
     "name": "Uriage Roseliane Visible Redness Neutralizing Care",
     "price": {
-      "formattedValue": "2 326&nbsp;₽",
-      "value": 2326
+      "formattedValue": "2 216&nbsp;₽",
+      "value": 2216
     },
     "country": "europe"
   },
@@ -774,12 +774,12 @@
     },
     "code": "base_1005940",
     "listingImage": {
-      "url": "/medias6/product-base-1005940-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5ODEwfGltYWdlL2pwZWd8cHJvZHVjdHMvaGQ2L2gyYi8xMTUwMTAyMTEzNDg3OC5qcGd8MGI3NGYzYmIwNmRiMWI3MDQzYzIwY2UyMzQ5Yjg1YjYxMDUzZTNiNmNhYzEzYWVjYzc3ZDUwNGViZTBjM2IxMw"
+      "url": "/catalog-images/uriage/base_1005940.jpg"
     },
     "name": "Uriage Thermal Micellar Water Sensitive Skin",
     "price": {
-      "formattedValue": "810&nbsp;₽",
-      "value": 810
+      "formattedValue": "819&nbsp;₽",
+      "value": 819
     },
     "country": "europe"
   },
@@ -790,7 +790,7 @@
     },
     "code": "979538",
     "listingImage": {
-      "url": "/medias6/product-979538-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIyMzQ3fGltYWdlL2pwZWd8cHJvZHVjdHMvaGU2L2gyOS8xMTQ4OTYxODYyNDU0Mi5qcGd8ZDQ1YmJiNDYwMzQ0OGU1OTRjM2RmM2E1MzUwOWE1YzhmNzM0ODI5YzVkZDNhODMzZDg0ZTlmODQ2OTk0NzViMg"
+      "url": "/catalog-images/uriage/979538.jpg"
     },
     "name": "Uriage Bariederm Cica-Lips Protecting Balm",
     "price": {
@@ -806,7 +806,7 @@
     },
     "code": "1088969",
     "listingImage": {
-      "url": "/medias6/-normal-1088969-big-3661434010040.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzk5NXxpbWFnZS9qcGVnfGltYWdlcy9oZmUvaGYzLzEyNzA4Njg0MDA1NDA2LmpwZ3xhMmRjNWQ3MGM5NzU2NzI5Yjg3MDc5OTEwNGIxZTE2Nzg0MTkwMDJjMjc5MGVlODRiNDJlYjA0YjI3YTkzYTM4"
+      "url": "/catalog-images/uriage/1088969.jpg"
     },
     "name": "Uriage Hyseac Hydra Soothing Cream",
     "price": {
@@ -822,7 +822,7 @@
     },
     "code": "base_979456",
     "listingImage": {
-      "url": "/medias6/product-979456-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDMxMTI4fGltYWdlL2pwZWd8cHJvZHVjdHMvaDUwL2gzZi8xMTQ4OTY1MTA5NzYzMC5qcGd8ZGY3MDk5MTBmNmY1YzNkNDA5YWEzYThhN2NiYWM2YTU1ZmNkOWU2MWM4ZmVjYzU2MDI0NzE4NjhhMDIxOThmOA"
+      "url": "/catalog-images/uriage/base_979456.jpg"
     },
     "name": "Uriage 1st Cleansing Oil",
     "price": {
@@ -839,7 +839,7 @@
     },
     "code": "1020791",
     "listingImage": {
-      "url": "/medias6/product-1020791-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5NTMwfGltYWdlL2pwZWd8cHJvZHVjdHMvaGVjL2hiMS8xMTUwNTM5NzMwMTI3OC5qcGd8ZjA3OTEyZDg2YzVjMDY1ZTZkYmE0ZDA4MTEzN2ZkZjJkY2UzMTJmNjkzNWFlMTg0MzljNjM3ZTM0NTMxYmRlZQ"
+      "url": "/catalog-images/uriage/1020791.jpg"
     },
     "name": "Uriage Age Lift Revitalizing Night Smoothing Cream",
     "price": {
@@ -855,12 +855,12 @@
     },
     "code": "1020788",
     "listingImage": {
-      "url": "/medias6/product-1020788-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEwNjcyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDljL2gzZi8xMTUwNTE1Mjc1MzY5NC5qcGd8NzI3ZTQyMGZiYjk2ZmEzY2MwNGUzNWVjZjQzNmRkNzQxYTkyYTZhMTYyZTc3ZTYzMmZmYTRjOWU3ODMxNjFkNg"
+      "url": "/catalog-images/uriage/1020788.jpg"
     },
     "name": "Uriage Age Absolu Redensifying Rosy Cream",
     "price": {
-      "formattedValue": "4 392&nbsp;₽",
-      "value": 4392
+      "formattedValue": "4 636&nbsp;₽",
+      "value": 4636
     },
     "country": "europe"
   },
@@ -871,12 +871,12 @@
     },
     "code": "979461",
     "listingImage": {
-      "url": "/medias6/-normal-979461-big-3661434011931.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNjY3M3xpbWFnZS9qcGVnfGltYWdlcy9oYTgvaDJhLzEyMjE2MjAzMzc4NzE4LmpwZ3w3MTVlOTgwNmNkMjIxMDkwOTVlZTFlNDY5ZjBkNDU2NDVkZGM3ZDg4MTk1YWE0MTRkZGRlYTljMmNiZTc4OTNi"
+      "url": "/catalog-images/uriage/979461.jpg"
     },
     "name": "Uriage Cica Daily Intense Repairing Serum",
     "price": {
-      "formattedValue": "3 870&nbsp;₽",
-      "value": 3870
+      "formattedValue": "3 510&nbsp;₽",
+      "value": 3510
     },
     "country": "europe",
     "purpose": "repair"
@@ -888,12 +888,12 @@
     },
     "code": "979325",
     "listingImage": {
-      "url": "/medias6/product-979325-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDYzNjl8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oM2MvaDIzLzEzMDg0MTAzOTMzOTgyLmpwZ3xiYTYzMmY3NjM5MWU5OTViOTMzYzg1NjlhYjVmZmZiMTI2NGUxODczYTg3YWUyNDE0Y2QxNzUxMjI4OGZmZTRk"
+      "url": "/catalog-images/uriage/979325.jpg"
     },
     "name": "Uriage Roseliane Anti-Redness Rich Cream",
     "price": {
-      "formattedValue": "2 612&nbsp;₽",
-      "value": 2612
+      "formattedValue": "2 481&nbsp;₽",
+      "value": 2481
     },
     "country": "europe"
   },
@@ -904,12 +904,12 @@
     },
     "code": "base_979346",
     "listingImage": {
-      "url": "/medias6/product-base-979346-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIzOTgyfGltYWdlL2pwZWd8cHJvZHVjdHMvaGExL2g4Ni8xNTE5NjQ5NjYyNTY5NC5qcGd8Mjc0ZDc5M2VkMTcxMzIyNzA4NjQzMTJiM2ViMTZkYjgzMzJlNjAwODgxZDYyNjQ1NTI3NzEzOWJjNTYwMTQ0NQ"
+      "url": "/catalog-images/uriage/base_979346.jpg"
     },
     "name": "Uriage Xemose Gentle Cleansing Syndet",
     "price": {
-      "formattedValue": "1 205&nbsp;₽",
-      "value": 1205
+      "formattedValue": "1 189&nbsp;₽",
+      "value": 1189
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -921,12 +921,12 @@
     },
     "code": "1088677",
     "listingImage": {
-      "url": "/medias6/-normal-1088677-big-3661434036644.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDMyM3xpbWFnZS9qcGVnfGltYWdlcy9oNzAvaDY4LzE2NTY5MTk5ODg2MzY2LmpwZ3xmNWVmMGJiNDI0NTAzMDA4MTNiZjNjMTc2YjBiZjUwZmNkZmFjYWRhYjg4YzI0MDhhMWY4MzM1MmFiNjVjYTE0"
+      "url": "/catalog-images/uriage/1088677.jpg"
     },
     "name": "Uriage Hyseac Hydra Soothing Cleansing Cream",
     "price": {
-      "formattedValue": "1 104&nbsp;₽",
-      "value": 1104
+      "formattedValue": "1 135&nbsp;₽",
+      "value": 1135
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -938,7 +938,7 @@
     },
     "code": "1066288",
     "listingImage": {
-      "url": "/medias6/-normal-1066288-big-3661434009761.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxOTQ1MXxpbWFnZS9qcGVnfGltYWdlcy9oYjMvaDQ3LzExOTk2MjE5NTA2NzE4LmpwZ3w3MWE4YzE4MmQ4NDA2M2Q2NjEyZGUyOTUxY2JjZDU2Y2QxYWQ3NmQzYmU4YjU3ZmI5OTJjZDlkMDU5M2VjMjBh"
+      "url": "/catalog-images/uriage/1066288.jpg"
     },
     "name": "Uriage Depiderm Anti-Dark Spot Intensive Care All Skin Types",
     "price": {
@@ -954,12 +954,12 @@
     },
     "code": "979423",
     "listingImage": {
-      "url": "/medias6/-normal-979423-big-3661434009310.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzAzOXxpbWFnZS9qcGVnfGltYWdlcy9oZmQvaGUwLzExNjgyNDY1NDgwNzM0LmpwZ3xmNTY5MmNiZGZiYjc2NjI5YzA2NDJhMTMwYzQwZTUxYzBhZWFmNTYyMTMwYTRiNWFkMGU0Yjc2OGVjOWZkZjRl"
+      "url": "/catalog-images/uriage/979423.jpg"
     },
     "name": "Uriage DS Hair Kerato-Reducing Treatment Shampoo",
     "price": {
-      "formattedValue": "1 697&nbsp;₽",
-      "value": 1697
+      "formattedValue": "2 094&nbsp;₽",
+      "value": 2094
     },
     "country": "europe"
   },
@@ -970,12 +970,12 @@
     },
     "code": "979525",
     "listingImage": {
-      "url": "/medias6/product-979525-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDg4ODl8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oYjYvaDJjLzEyMzUwMjQ2MTU4MzY2LmpwZ3xmOWQ5Mjg4YjYzM2RjZmRiOGFmMGQ5YTM5YThhNGQ5YWY0ODlkODEyZjUwOTE1NDhkOWIyN2I0YjQyNDBjZWUw"
+      "url": "/catalog-images/uriage/979525.jpg"
     },
     "name": "Uriage Hyseac Sos Paste-Local Skincare",
     "price": {
-      "formattedValue": "1 569&nbsp;₽",
-      "value": 1569
+      "formattedValue": "1 591&nbsp;₽",
+      "value": 1591
     },
     "country": "europe"
   },
@@ -986,12 +986,12 @@
     },
     "code": "979479",
     "listingImage": {
-      "url": "/medias6/product-979479-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDM3OTcyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDQ4L2hhYi8xMTQ4OTQ4NDExMTkwMi5qcGd8YWE4NGRmMDczMjBiODJkZGE0N2UyMWZhZjUyMWQyYmJhMTNhYmRhNmM4OTQ5N2VkN2Q4YmU2NmE3ZjQxMTQyOA"
+      "url": "/catalog-images/uriage/979479.jpg"
     },
     "name": "Uriage Eau Thermale Glow Up Water Essence",
     "price": {
-      "formattedValue": "2 133&nbsp;₽",
-      "value": 2133
+      "formattedValue": "2 384&nbsp;₽",
+      "value": 2384
     },
     "country": "europe"
   },
@@ -1002,12 +1002,12 @@
     },
     "code": "1088676",
     "listingImage": {
-      "url": "/medias6/-normal-1088676-big-3661434010101.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzQyM3xpbWFnZS9qcGVnfGltYWdlcy9oZTYvaDY1LzEyNjY1NzIwOTk1ODcwLmpwZ3xiZmYzODllMDNkZDM2NTUyOWZkYmMyZGZhOTFkYjJkYTdhYTAwNmNmOGMwZWNhZTUzZjhlMjI0YzVjODRlODhk"
+      "url": "/catalog-images/uriage/1088676.jpg"
     },
     "name": "Uriage Hyseac Anti-Blemish Booster New Skin Serum",
     "price": {
-      "formattedValue": "2 460&nbsp;₽",
-      "value": 2460
+      "formattedValue": "2 493&nbsp;₽",
+      "value": 2493
     },
     "country": "europe"
   },
@@ -1018,12 +1018,12 @@
     },
     "code": "base_979447",
     "listingImage": {
-      "url": "/medias6/product-base-979447-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIwOTI0fGltYWdlL2pwZWd8cHJvZHVjdHMvaGJhL2gxNS8xMTUwMjQzMDI4OTk1MC5qcGd8MDBmMWEwMDFmZmIwODQyZmU2OTcwNDA1OWIzMGYzYTAwNDIyYTc2NjFkODU3ODc2MWEzMDA4ODg2YmIxNWFjMA"
+      "url": "/catalog-images/uriage/base_979447.jpg"
     },
     "name": "Uriage Bariederm-Cica Cream with Copper-Zinc",
     "price": {
-      "formattedValue": "466&nbsp;₽",
-      "value": 466
+      "formattedValue": "598&nbsp;₽",
+      "value": 598
     },
     "country": "europe"
   },
@@ -1034,12 +1034,12 @@
     },
     "code": "base_979428",
     "listingImage": {
-      "url": "/medias6/product-979428-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI0NzU0fGltYWdlL2pwZWd8cHJvZHVjdHMvaGNlL2hjNS8xMjYzMjczNjU2MzIzMC5qcGd8Njg3MjBhYWYxZTRhY2E1OWY2MjI4MDIwZGJkMTY2MzE3NWY4M2RkZDZlZmY2ZDM5ZGExMGEyMjFkN2ExOGY4Nw"
+      "url": "/catalog-images/uriage/base_979428.jpg"
     },
     "name": "Uriage Gyn-Phy Intimate Hygiene Cleansing Mist",
     "price": {
-      "formattedValue": "1 025&nbsp;₽",
-      "value": 1025
+      "formattedValue": "1 010&nbsp;₽",
+      "value": 1010
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -1051,7 +1051,7 @@
     },
     "code": "1020790",
     "listingImage": {
-      "url": "/medias6/product-1020790-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5MDQ0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDllL2g0NC8xMTUwNTE0OTc3MTgwNi5qcGd8YjYxYzg0ODU1MzhjNDQzZDU5YzhmNTExNmZlMmIwZmRjODBiMTM4N2MyZmMzMDZiMmI3YmVhYTEwYTZmZmZjOA"
+      "url": "/catalog-images/uriage/1020790.jpg"
     },
     "name": "Uriage Age Lift Protective Smoothing Day Cream SPF 30",
     "price": {
@@ -1067,12 +1067,12 @@
     },
     "code": "base_979411",
     "listingImage": {
-      "url": "/medias6/product-base-979411-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI0MDIyfGltYWdlL2pwZWd8cHJvZHVjdHMvaGMxL2g4OC8xMTUwMjQ4NzY2NjcxOC5qcGd8MmYyZjNmMWJiOTRjYjVhMDgxNTE3MTg1OGMyMjc1NTA1MmY3NGVmNjFhZGE3MDE1NjQ0NTI0OTFiZjA1NWU0Nw"
+      "url": "/catalog-images/uriage/base_979411.jpg"
     },
     "name": "Uriage 1st Cleansing Cream",
     "price": {
-      "formattedValue": "1 772&nbsp;₽",
-      "value": 1772
+      "formattedValue": "1 816&nbsp;₽",
+      "value": 1816
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -1084,7 +1084,7 @@
     },
     "code": "base_979455",
     "listingImage": {
-      "url": "/medias6/product-979455-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI0MTI3fGltYWdlL2pwZWd8cHJvZHVjdHMvaDM3L2g2Yi8xMTQ4OTQ4MzY4NTkxOC5qcGd8YTRlZjQwYWUwNTQwZDFlOWIzMTU2NjdlOTM2Mjg5NWM2MGEwYzQwNTk0ZjBkNDgyNzYwNjk1NTk0N2NhMzA5ZQ"
+      "url": "/catalog-images/uriage/base_979455.jpg"
     },
     "name": "Uriage 1st Moisturizing Milk",
     "price": {
@@ -1101,12 +1101,12 @@
     },
     "code": "1020795",
     "listingImage": {
-      "url": "/medias6/product-1020795-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE1NTY5fGltYWdlL2pwZWd8cHJvZHVjdHMvaDY0L2hkMi8xMTUwNTE5OTIxODcxOC5qcGd8NzQxY2ZjYWU1NWY2MDBhZDI2OWM5ZmJhODVhZGZjYWFjNGE1ZGZiNDhjMzhiZGRhODY3ZmU5N2VkNWRmN2M1OQ"
+      "url": "/catalog-images/uriage/1020795.jpg"
     },
     "name": "Uriage Age Lift Filler Instant Filler Care",
     "price": {
-      "formattedValue": "4 175&nbsp;₽",
-      "value": 4175
+      "formattedValue": "3 472&nbsp;₽",
+      "value": 3472
     },
     "country": "europe"
   },
@@ -1117,12 +1117,12 @@
     },
     "code": "1020794",
     "listingImage": {
-      "url": "/medias6/product-1020794-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5NTY3fGltYWdlL2pwZWd8cHJvZHVjdHMvaDFlL2g1ZC8xMTUxODMxMjYxMTg3MC5qcGd8M2I4MzQ0MjNjYzliYzMzMzg5ZmZjZGE5NGQyY2NkZDAwYjJjZDk3Mjk2MGM3OWE2MGVmMGQ5MTM0Y2YyNWI1Mw"
+      "url": "/catalog-images/uriage/1020794.jpg"
     },
     "name": "Uriage Age Lift Intensive Firming Smoothing Serum",
     "price": {
-      "formattedValue": "4 249&nbsp;₽",
-      "value": 4249
+      "formattedValue": "3 993&nbsp;₽",
+      "value": 3993
     },
     "country": "europe"
   },
@@ -1133,7 +1133,7 @@
     },
     "code": "base_979343",
     "listingImage": {
-      "url": "/medias6/-normal-base-979343-big-3661434007910.jpg-listingDesktop?context=bWFzdGVyfHJvb3R8MzA4NTF8aW1hZ2UvanBlZ3xoYWIvaDQxLzE0MDIyMjczNDk5MTY2LmpwZ3wwNGYyMDEzMTU2ZmRlOTIwNjkzN2RlZWE4OWU3NTIwY2FmOGNlNmE4ODg0NmZlM2YyMzNkYjg5NzBhZGRkZWIy"
+      "url": "/catalog-images/uriage/base_979343.jpg"
     },
     "name": "Uriage Xemose C8+ SOS Anti-Itch Mist",
     "price": {
@@ -1149,7 +1149,7 @@
     },
     "code": "979536",
     "listingImage": {
-      "url": "/medias6/product-979536-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE2MzEyfGltYWdlL2pwZWd8cHJvZHVjdHMvaGJkL2g5ZS8xMTQ4OTY1ODQzNzY2Mi5qcGd8YTFhZWE4ZTAyYTU4ZmVhMjFhZjQ1MjhlZGI2YjEyMzljODllMWJiMGZlMTdmMWZkYzA0YTY0YjQ2MjUxYjdlZg"
+      "url": "/catalog-images/uriage/979536.jpg"
     },
     "name": "Uriage Bariederm-Cica Insulating Repairing Hand Cream",
     "price": {
@@ -1166,7 +1166,7 @@
     },
     "code": "1077473",
     "listingImage": {
-      "url": "/medias6/-normal-1077473-big-3661434011917.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4OTMyfGltYWdlL2pwZWd8aW1hZ2VzL2g0ZS9oYTMvMTIyMTYyMDM3NzE5MzQuanBnfGY5MTM1NTY5ZWFiNWYyZjZlZjM1MTUyMDE0ODA2OTlmMTIxMjI5MjhlNzA3OWQ2M2I4MjBlNjQ0MTRjOGJmYTI"
+      "url": "/catalog-images/uriage/1077473.jpg"
     },
     "name": "Uriage Cica Daily Repairing Cream Concentrate",
     "price": {
@@ -1183,12 +1183,12 @@
     },
     "code": "base_979419",
     "listingImage": {
-      "url": "/medias6/product-base-979419-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIzNTYzfGltYWdlL2pwZWd8cHJvZHVjdHMvaGJkL2g5Yi8xMTY4MjQ3MDYyNTMxMC5qcGd8NTEwNDVmOWYwNDIxYjRmOWI3MzIwZjMyZjNhN2E4NjczNGVlMTc5ZGM3M2QxYTRiMmY4MjYyZmEyMWU4YTAzYg"
+      "url": "/catalog-images/uriage/base_979419.jpg"
     },
     "name": "Uriage DS Hair Soft Balancing Shampoo",
     "price": {
-      "formattedValue": "1 624&nbsp;₽",
-      "value": 1624
+      "formattedValue": "1 603&nbsp;₽",
+      "value": 1603
     },
     "country": "europe"
   },
@@ -1199,12 +1199,12 @@
     },
     "code": "979454",
     "listingImage": {
-      "url": "/medias6/product-979454-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE3MDcxfGltYWdlL2pwZWd8cHJvZHVjdHMvaGU3L2hiNy8xMTQ4OTUwNTk2ODE1OC5qcGd8ZDcyN2VlYzE4YzYyYmZiNmYyMzVjYzI4YTQ5ZjdiZmNhNjk3MjRjMmM0MDJhZGQ4NWFjNzljOTY5NWJjYWY2Ng"
+      "url": "/catalog-images/uriage/979454.jpg"
     },
     "name": "Uriage 1st Shampoo",
     "price": {
-      "formattedValue": "1 188&nbsp;₽",
-      "value": 1188
+      "formattedValue": "1 219&nbsp;₽",
+      "value": 1219
     },
     "country": "europe"
   },
@@ -1215,12 +1215,12 @@
     },
     "code": "979326",
     "listingImage": {
-      "url": "/medias6/product-979326-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI2NjQ3fGltYWdlL2pwZWd8cHJvZHVjdHMvaGI4L2hiNS8xMzA4NDA5MzE1MzMxMC5qcGd8NTFkNmI5MzhjOGQ0YTM2OWQyOWRhODA1YWJjYjVkNmJkZjFiZDIxNjFkYzVkMjQzMWQ5OTAyYzAxMDNmNzAxMA"
+      "url": "/catalog-images/uriage/979326.jpg"
     },
     "name": "Uriage Roseliane Dermo-Cleansing Fluid",
     "price": {
-      "formattedValue": "1 746&nbsp;₽",
-      "value": 1746
+      "formattedValue": "1 767&nbsp;₽",
+      "value": 1767
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -1232,12 +1232,12 @@
     },
     "code": "base_979331",
     "listingImage": {
-      "url": "/medias6/normal-base-979331-3661434004834.jpg-listingDesktop?context=bWFzdGVyfHJvb3R8NzAzOHxpbWFnZS9qcGVnfGhhZi9oYTMvMTUyNjI4NTQ5NzE0MjIuanBnfGFlM2JkMGE4NzE0MGI5YmVkMmE1ODMxNmEzZTZhYWNiMTQxY2I2NDI2NDM3OTlmNWEzNzc1NDg4OWZiNDBjZTA"
+      "url": "/catalog-images/uriage/base_979331.jpg"
     },
     "name": "Uriage Xemose Lipid-Replenishing Anti-Irritation Cerat",
     "price": {
-      "formattedValue": "1 990&nbsp;₽",
-      "value": 1990
+      "formattedValue": "1 938&nbsp;₽",
+      "value": 1938
     },
     "country": "europe"
   },
@@ -1248,12 +1248,12 @@
     },
     "code": "979514",
     "listingImage": {
-      "url": "/medias6/product-979514-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDM1MzQ4fGltYWdlL2pwZWd8cHJvZHVjdHMvaDkyL2gyYi8xMTQ4MDU5NDU3OTQ4Ni5qcGd8NWJiODY2YTI1OGZiNTlhMTA4MDk5NjNkMDViMzg1ZjU3N2E4Njg3ODQ5ODJjYjAwN2NkYjI2ZDNmYjVkZTFhNQ"
+      "url": "/catalog-images/uriage/979514.jpg"
     },
     "name": "Uriage Waterproof Eye Make-Up Remover",
     "price": {
-      "formattedValue": "1 545&nbsp;₽",
-      "value": 1545
+      "formattedValue": "1 490&nbsp;₽",
+      "value": 1490
     },
     "country": "europe"
   },
@@ -1264,12 +1264,12 @@
     },
     "code": "1020789",
     "listingImage": {
-      "url": "/medias6/product-1020789-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4ODA4fGltYWdlL2pwZWd8cHJvZHVjdHMvaDg2L2g5Zi8xMTUxODM3NzI2MzEzNC5qcGd8YWRhZGU2NjFjMzVjOGY4OTdhNzk3ZWM2MzRkN2E1MWY3ZjU1N2EyZTNiYTdjYzAzZGUyY2Y3OGU1NDY1N2RiNw"
+      "url": "/catalog-images/uriage/1020789.jpg"
     },
     "name": "Uriage Age Lift Firming Smoothing Day Cream",
     "price": {
-      "formattedValue": "4 221&nbsp;₽",
-      "value": 4221
+      "formattedValue": "4 455&nbsp;₽",
+      "value": 4455
     },
     "country": "europe"
   },
@@ -1280,12 +1280,12 @@
     },
     "code": "base_1005939",
     "listingImage": {
-      "url": "/medias6/-normal-base-1005939-big-3661434009389.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyOTUyNHxpbWFnZS9qcGVnfGltYWdlcy9oOTcvaDZjLzExNjUyNjcwODQ5MDU0LmpwZ3w3NTU5NjE4OWE5YmI4OWUxZDJkNjFlNjUzMGMwN2NlMzZlYjQ5OWY5NDMzYmNjNmI3MzFlM2RjOTM0MDYzNTFk"
+      "url": "/catalog-images/uriage/base_1005939.jpg"
     },
     "name": "Uriage Thermal Micellar Water Normal to Dry Skin",
     "price": {
-      "formattedValue": "855&nbsp;₽",
-      "value": 855
+      "formattedValue": "648&nbsp;₽",
+      "value": 648
     },
     "country": "europe"
   },
@@ -1296,12 +1296,12 @@
     },
     "code": "979330",
     "listingImage": {
-      "url": "/medias6/product-979330-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEzMDMyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDVhL2hhYy8xMzEyNTc2OTkyMDU0Mi5qcGd8MzViMzcwODcwNzMyMGU2ZTczODg0NGNjMmFjNmZlMjBhODMwMzllNzFkNjJmMzY2NjNlY2Q5OTA4ZWExNmFkYw"
+      "url": "/catalog-images/uriage/979330.jpg"
     },
     "name": "Uriage Tolederm Control Fresh Calming Eyecare",
     "price": {
-      "formattedValue": "2 394&nbsp;₽",
-      "value": 2394
+      "formattedValue": "2 181&nbsp;₽",
+      "value": 2181
     },
     "country": "europe"
   },
@@ -1312,12 +1312,12 @@
     },
     "code": "1005943",
     "listingImage": {
-      "url": "/medias6/product-1005943-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI1NzA5fGltYWdlL2pwZWd8cHJvZHVjdHMvaDJiL2gyMy8xMTQ4OTU2MjI2MzU4Mi5qcGd8NDUwN2ZiZDQyNTIyMjYxZWQwMzgzYTYyYmU4MDljYTIyZjczODI2YTEyY2M1NjhiM2JiMTM0YWFhMmZjMGEwYw"
+      "url": "/catalog-images/uriage/1005943.jpg"
     },
     "name": "Uriage Make-Up Removing Milk",
     "price": {
-      "formattedValue": "1 409&nbsp;₽",
-      "value": 1409
+      "formattedValue": "1 479&nbsp;₽",
+      "value": 1479
     },
     "country": "europe"
   },
@@ -1328,12 +1328,12 @@
     },
     "code": "base_1005937",
     "listingImage": {
-      "url": "/medias6/-normal-base-1005937-big-3661434009365.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzU3MnxpbWFnZS9qcGVnfGltYWdlcy9oMzMvaDA0LzExNjUyNjcwNDU1ODM4LmpwZ3w3NGMxYmIxOThiM2ZhNTk2ZjllYWZkMmVlY2Y0NzY3YjhhOGE2N2QxMjg4OWMyMWEzN2E3ZTc0Y2EyZjVjZGQz"
+      "url": "/catalog-images/uriage/base_1005937.jpg"
     },
     "name": "Uriage Thermal Micellar Water Combination to Oily Skin",
     "price": {
-      "formattedValue": "810&nbsp;₽",
-      "value": 810
+      "formattedValue": "819&nbsp;₽",
+      "value": 819
     },
     "country": "europe"
   },
@@ -1344,7 +1344,7 @@
     },
     "code": "979460",
     "listingImage": {
-      "url": "/medias6/-normal-979460-big-3661434011924.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzc5OXxpbWFnZS9qcGVnfGltYWdlcy9oNzMvaDAzLzEyMjE2MjAxODM4NjIyLmpwZ3w4N2RmMjA5OWZhYzIxZThhNTllODk5ZGE3MjhlNTkzZWExMjUwMWUwN2VmOTRjYjBmZDI1NzBhNjk4ZGY4OWI0"
+      "url": "/catalog-images/uriage/979460.jpg"
     },
     "name": "Uriage Cica Daily Repairing Gel-Creme",
     "price": {
@@ -1361,12 +1361,12 @@
     },
     "code": "base_979462",
     "listingImage": {
-      "url": "/medias6/product-979462-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDMxNDE3fGltYWdlL2pwZWd8cHJvZHVjdHMvaDMxL2g1Yi8xMTQ2NTE2MjU1NTQyMi5qcGd8ZmQyZTBkYzQ3NDBhZTBmNzM2NzgzZWJkMmVjYTQwZmQwMzRkZDIyM2QyMmEwNGU4NDE3MDBmYTBmNGVjYzEwZA"
+      "url": "/catalog-images/uriage/base_979462.jpg"
     },
     "name": "Uriage Bariederm Dermatological Cica-Oil",
     "price": {
-      "formattedValue": "1 640&nbsp;₽",
-      "value": 1640
+      "formattedValue": "1 660&nbsp;₽",
+      "value": 1660
     },
     "country": "europe"
   },
@@ -1377,12 +1377,12 @@
     },
     "code": "1088972",
     "listingImage": {
-      "url": "/medias6/-normal-1088972-big-3661434010071.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzgzNHxpbWFnZS9qcGVnfGltYWdlcy9oOTIvaDdjLzEyNzA4Njg1MjE3ODIyLmpwZ3xmMDgzMTk0YWZhOGI1ODA3NDU4MTg0ODJkZGFjMzZjZDFkZjNjZjNlYWEzMzY3NGIyZjExNzIwNjI3YTdmMmQ0"
+      "url": "/catalog-images/uriage/1088972.jpg"
     },
     "name": "Uriage Hyseac Purifying Make-Up Removing Oil",
     "price": {
-      "formattedValue": "1 357&nbsp;₽",
-      "value": 1357
+      "formattedValue": "1 394&nbsp;₽",
+      "value": 1394
     },
     "country": "europe"
   },
@@ -1393,12 +1393,12 @@
     },
     "code": "979451",
     "listingImage": {
-      "url": "/medias6/product-979451-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4OTk4fGltYWdlL2pwZWd8cHJvZHVjdHMvaGZiL2hiNy8xMTQ4OTY0ODExNTc0Mi5qcGd8ZWFlMTZlNDk3MzY4ZjYxYzY0ODU5YTI1YWNkN2I4ZDU5YTMyMTViYTFlZThhNDIwMmJkZDQ0NjU2MDgxYjI4YQ"
+      "url": "/catalog-images/uriage/979451.jpg"
     },
     "name": "Uriage 1st Moisturizing Cream",
     "price": {
-      "formattedValue": "1 273&nbsp;₽",
-      "value": 1273
+      "formattedValue": "1 206&nbsp;₽",
+      "value": 1206
     },
     "country": "europe",
     "purpose": "moisture"
@@ -1410,12 +1410,12 @@
     },
     "code": "base_979484",
     "listingImage": {
-      "url": "/medias6/product-base-979484-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIxOTI3fGltYWdlL2pwZWd8cHJvZHVjdHMvaDgzL2hmOC8xMTUwMjUzMDI2NTExOC5qcGd8YjM3NDY3ZTJjYWNhZWU3ZDg4YTQ0MzRhZGM3ZWEyYTFkZTgwNjBhNzg1M2VhNDBmNWFhNTUzNmY1NWZlN2M2OA"
+      "url": "/catalog-images/uriage/base_979484.jpg"
     },
     "name": "Uriage Eau Thermale Silky Body Lotion",
     "price": {
-      "formattedValue": "2 014&nbsp;₽",
-      "value": 2014
+      "formattedValue": "2 251&nbsp;₽",
+      "value": 2251
     },
     "country": "europe"
   },
@@ -1426,12 +1426,12 @@
     },
     "code": "1020796",
     "listingImage": {
-      "url": "/medias6/product-1020796-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDExMTAwfGltYWdlL2pwZWd8cHJvZHVjdHMvaDA1L2gwMy8xMTUxNjM5Mzc4MzMyNi5qcGd8MGNkZWE4NThhOGVhYWQ1YmM5MzdhOGQyOTI2N2Q0M2Y3ODZkMDEwMmE4MTU5YzNmZGM4OGY2YTc1MTY2MWFhOQ"
+      "url": "/catalog-images/uriage/1020796.jpg"
     },
     "name": "Uriage Age Lift Peel New Skin Night Cream",
     "price": {
-      "formattedValue": "4 042&nbsp;₽",
-      "value": 4042
+      "formattedValue": "4 626&nbsp;₽",
+      "value": 4626
     },
     "country": "europe",
     "purpose": "exfoliate"
@@ -1443,12 +1443,12 @@
     },
     "code": "979328",
     "listingImage": {
-      "url": "/medias6/product-979328-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4MjU5fGltYWdlL2pwZWd8cHJvZHVjdHMvaGMxL2gyZC8xMzEyNTc3MDc3MjUxMC5qcGd8MGYyMTJiNGUzMmNlMjc3NGI4MjMyYWNhNTEwNmE3MTc5MzUyYjVhM2E0OTI4Y2JiMGNjN2YxNzM1YTc2MWE1Yg"
+      "url": "/catalog-images/uriage/979328.jpg"
     },
     "name": "Uriage Tolederm Control Intensive Calming High Tolerance Care",
     "price": {
-      "formattedValue": "2 857&nbsp;₽",
-      "value": 2857
+      "formattedValue": "2 603&nbsp;₽",
+      "value": 2603
     },
     "country": "europe"
   },
@@ -1459,12 +1459,12 @@
     },
     "code": "979511",
     "listingImage": {
-      "url": "/medias6/product-979511-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI5MTYzfGltYWdlL2pwZWd8cHJvZHVjdHMvaGJkL2g5NC8xMTQ4OTQ4MzI1OTkzNC5qcGd8MzkxYWViYzc1ODIzMGU0OWE3NzFkYzhlODIyMzJlODFkZTVmYTkzNjRlMWYxODQxM2NhNWIwNDNiNGYyZWFlOA"
+      "url": "/catalog-images/uriage/979511.jpg"
     },
     "name": "Uriage 1st Eau Thermale Water",
     "price": {
-      "formattedValue": "723&nbsp;₽",
-      "value": 723
+      "formattedValue": "742&nbsp;₽",
+      "value": 742
     },
     "country": "europe"
   },
@@ -1475,12 +1475,12 @@
     },
     "code": "979327",
     "listingImage": {
-      "url": "/medias6/product-979327-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE1MTc1fGltYWdlL2pwZWd8cHJvZHVjdHMvaGNmL2g2Yi8xMzEyNTc3NDU3MzU5OC5qcGd8MGEyMTIzN2ViNmE3YjI0MWJhNDA4MTA0Zjk2YWE1NDZmM2ZjMGU4MTBlNGY4OWEzODIxNTU0OTFiOGM2ZDM5OA"
+      "url": "/catalog-images/uriage/979327.jpg"
     },
     "name": "Uriage Roseliane Visible Redness Neutralizing Tinted Care SPF 50+",
     "price": {
-      "formattedValue": "2 352&nbsp;₽",
-      "value": 2352
+      "formattedValue": "2 902&nbsp;₽",
+      "value": 2902
     },
     "country": "europe"
   },
@@ -1491,7 +1491,7 @@
     },
     "code": "979476",
     "listingImage": {
-      "url": "/medias6/product-979476-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE0NTM2fGltYWdlL2pwZWd8cHJvZHVjdHMvaDZiL2gyYy8xMzA4NDA4MTgxNTU4Mi5qcGd8MGU0YTlmZGIxZWNhNDI4MTE4ZDQyNjFlMTJmNTI1MWUzZjRkYmQxOWQyNjllYTg0YjM4MDdlZjhkNTVlMTM3NA"
+      "url": "/catalog-images/uriage/979476.jpg"
     },
     "name": "Uriage Roseliane CC Cream SPF 30",
     "price": {
@@ -1507,12 +1507,12 @@
     },
     "code": "base_979548",
     "listingImage": {
-      "url": "/medias6/product-base-979548-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI0MzQwfGltYWdlL2pwZWd8cHJvZHVjdHMvaDA4L2gwOS8xMTUwMjQzMTQwNDA2Mi5qcGd8NzM4MjIxNmRmZTEzZDAyMTg2ZWUwMDljNDNlMTk5YWRlNWUzZjRiNjFkZjQxMmU5OGQ2YzY5ZWFiYjZmMWIzMQ"
+      "url": "/catalog-images/uriage/base_979548.jpg"
     },
     "name": "Uriage Cleansing Cream",
     "price": {
-      "formattedValue": "1 231&nbsp;₽",
-      "value": 1231
+      "formattedValue": "1 444&nbsp;₽",
+      "value": 1444
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -1524,12 +1524,12 @@
     },
     "code": "base_979464",
     "listingImage": {
-      "url": "/medias6/product-979464-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDc4NTB8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oNWMvaGQ0LzExNDg5NTcyMjU3ODIyLmpwZ3wxMmE4MDExOWE4NmJkNjJiZWJiODZiOWU4NmFlNjY5ZjE3MTk1Nzg1YjVhNWEzYmY2MjI0OTg4NjQxMzhjNTRk"
+      "url": "/catalog-images/uriage/base_979464.jpg"
     },
     "name": "Uriage Bariederm Stick Fissues Cracks",
     "price": {
-      "formattedValue": "1 588&nbsp;₽",
-      "value": 1588
+      "formattedValue": "1 525&nbsp;₽",
+      "value": 1525
     },
     "country": "europe"
   },
@@ -1540,12 +1540,12 @@
     },
     "code": "1035699",
     "listingImage": {
-      "url": "/medias6/-normal-1035699-big-3661434009426.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxODA5NnxpbWFnZS9qcGVnfGltYWdlcy9oZjcvaDVlLzExNjUyNjcxNzY2NTU4LmpwZ3w0ZDY5NTM4YTE5MzJjOGU3MTM4Y2VhMGE3OTc2MDA5NTY2MmNiZjUxNzU1NmJkZjU0MjUyOWQ0YWJhYzE5MGNk"
+      "url": "/catalog-images/uriage/1035699.jpg"
     },
     "name": "Uriage Refreshing Make-Up Removing Jelly",
     "price": {
-      "formattedValue": "1 624&nbsp;₽",
-      "value": 1624
+      "formattedValue": "1 551&nbsp;₽",
+      "value": 1551
     },
     "country": "europe"
   },
@@ -1556,12 +1556,12 @@
     },
     "code": "1088971",
     "listingImage": {
-      "url": "/medias6/-normal-1088971-big-3661434010057.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjI0N3xpbWFnZS9qcGVnfGltYWdlcy9oOGMvaGI4LzEyNzA4Njg0NzkxODM4LmpwZ3xlZjc1NjliNzNhNGQ0ZjM0N2M1NzI5OWRjOGRjYTQ5ZmQ0ZmFiYWJjOWE4Yjg1ZTQzNTRmZWY2OWJkODU2NTU5"
+      "url": "/catalog-images/uriage/1088971.jpg"
     },
     "name": "Uriage Hyseac Matifying Fluid SPF 50+",
     "price": {
-      "formattedValue": "1 598&nbsp;₽",
-      "value": 1598
+      "formattedValue": "1 889&nbsp;₽",
+      "value": 1889
     },
     "country": "europe"
   },
@@ -1572,12 +1572,12 @@
     },
     "code": "1021112",
     "listingImage": {
-      "url": "/medias6/product-1021112-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE3OTgzfGltYWdlL2pwZWd8cHJvZHVjdHMvaDIzL2hmNS8xMTUxODMxMzk1NTM1OC5qcGd8YjI4NjNlNDg0OTMzMzA1MGY3MTVlOTMwNDc2NDM1ZWE4ZjFlNjRhYTMxYzA1MGE3NjYwZjNjZDE4NDU0OTJmZg"
+      "url": "/catalog-images/uriage/1021112.jpg"
     },
     "name": "Uriage Bariesun Moisturizing Cream SPF 30",
     "price": {
-      "formattedValue": "1 458&nbsp;₽",
-      "value": 1458
+      "formattedValue": "1 480&nbsp;₽",
+      "value": 1480
     },
     "country": "europe",
     "purpose": "moisture"
@@ -1589,12 +1589,12 @@
     },
     "code": "1021115",
     "listingImage": {
-      "url": "/medias6/product-1021115-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEyMTc1fGltYWdlL2pwZWd8cHJvZHVjdHMvaGFiL2gzOC8xMzEyNTc4NDIwNzM5MC5qcGd8NTBjZDlkZTgyMDRhZGMxOGUxODBhOWRhMzA0M2E2NzNiZjg2ZGFiM2U5ZTE1ZDlhZjFjN2I4NmNlZDcwZmUwYw"
+      "url": "/catalog-images/uriage/1021115.jpg"
     },
     "name": "Uriage Tolederm Control Make-Up Removing Milky Gel",
     "price": {
-      "formattedValue": "1 189&nbsp;₽",
-      "value": 1189
+      "formattedValue": "1 250&nbsp;₽",
+      "value": 1250
     },
     "country": "europe"
   },
@@ -1605,7 +1605,7 @@
     },
     "code": "979510",
     "listingImage": {
-      "url": "/medias6/product-979510-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE1NjgwfGltYWdlL2pwZWd8cHJvZHVjdHMvaDU4L2g1OC8xMTQ4OTU0MzcxNjg5NC5qcGd8M2JjY2ZmMWYxOTFiMjEzNGIxMTEzMzM1ZTFmNWEzMzY1Mjc1ODY1MTk3MjI5Mzk0ZjhlNjg4YjA0MTNkYmQwMg"
+      "url": "/catalog-images/uriage/979510.jpg"
     },
     "name": "Uriage Eau Thermale Water Hand Cream",
     "price": {
@@ -1621,12 +1621,12 @@
     },
     "code": "base_979465",
     "listingImage": {
-      "url": "/medias6/product-979465-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDgxNjB8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oN2QvaDE0LzExNDgwNTk1MDA1NDcwLmpwZ3w1ZWVkZWRlMWY5Zjc4NzEwZDBiMDY3Y2IyYjkyMmZhNWIyZDFlN2Y4ODVjMjczNTI1NjhmNWZlYjE1ZTkwMjdj"
+      "url": "/catalog-images/uriage/base_979465.jpg"
     },
     "name": "Uriage Bariederm-Cica Ointment Fissures Cracks",
     "price": {
-      "formattedValue": "2 257&nbsp;₽",
-      "value": 2257
+      "formattedValue": "2 126&nbsp;₽",
+      "value": 2126
     },
     "country": "europe"
   },
@@ -1637,12 +1637,12 @@
     },
     "code": "1020793",
     "listingImage": {
-      "url": "/medias6/product-1020793-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4NjcyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDUxL2hlOS8xMTUxODM2NzgyNTk1MC5qcGd8MTBlZDQzMDExYzdmZmMxMTNjNGIzYzAwNjFjNjBlNjM1NzQ5M2I2YWU4NTJjNGI4YmEzYTM4ZWQ3YWExZGI1Nw"
+      "url": "/catalog-images/uriage/1020793.jpg"
     },
     "name": "Uriage Age Lift Firming Smoothing Day Fluid",
     "price": {
-      "formattedValue": "4 080&nbsp;₽",
-      "value": 4080
+      "formattedValue": "3 705&nbsp;₽",
+      "value": 3705
     },
     "country": "europe"
   },
@@ -1653,12 +1653,12 @@
     },
     "code": "1021117",
     "listingImage": {
-      "url": "/medias6/product-1021117-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5MDQ5fGltYWdlL2pwZWd8cHJvZHVjdHMvaDI1L2hkNy8xMTUxNTgzOTkzODU5MC5qcGd8ZGEwMGFhYzQ3NjM3MjQxNWJmZjM2MzZiNjY5MWJkOWFiZDVmZmE4YzFhNTBhMWY0NmFjOWQxYTFmZDdkYzcyOA"
+      "url": "/catalog-images/uriage/1021117.jpg"
     },
     "name": "Uriage Bariesun Anti-Brown Spot Fluid SPF 50",
     "price": {
-      "formattedValue": "1 906&nbsp;₽",
-      "value": 1906
+      "formattedValue": "1 934&nbsp;₽",
+      "value": 1934
     },
     "country": "europe"
   },
@@ -1669,12 +1669,12 @@
     },
     "code": "979417",
     "listingImage": {
-      "url": "/medias6/product-979417-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIzMjg4fGltYWdlL2pwZWd8cHJvZHVjdHMvaGIxL2g1Mi8xMTQ3NjQwMzkxMjczNC5qcGd8OThhY2Q3NWE5NzlmMWRiN2U5ZjkzYTQyMmQ5MWEwYmZhMTM3ZDY0ODg0MjY3ZWFiZjM2Y2NhNTU3MzM2NTBiYQ"
+      "url": "/catalog-images/uriage/979417.jpg"
     },
     "name": "Uriage DS Regulating Soothing Emulsion",
     "price": {
-      "formattedValue": "2 111&nbsp;₽",
-      "value": 2111
+      "formattedValue": "2 037&nbsp;₽",
+      "value": 2037
     },
     "country": "europe"
   },
@@ -1685,12 +1685,12 @@
     },
     "code": "base_979458",
     "listingImage": {
-      "url": "/medias6/product-979458-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIzNDI4fGltYWdlL2pwZWd8cHJvZHVjdHMvaDk1L2hmMi8xMTQ4OTU1NDUzMDMzNC5qcGd8N2I0ZTgyNDhjNTVlMmM4ODI0NjBjNjFiMTQ5MmQ2M2Q4NTQ5OWY0YTY0ZThiMzZkZjYxZTA3MzhkYmU3MjZjMw"
+      "url": "/catalog-images/uriage/base_979458.jpg"
     },
     "name": "Uriage 1st Change Cream",
     "price": {
-      "formattedValue": "1 599&nbsp;₽",
-      "value": 1599
+      "formattedValue": "1 659&nbsp;₽",
+      "value": 1659
     },
     "country": "europe"
   },
@@ -1701,12 +1701,12 @@
     },
     "code": "1088968",
     "listingImage": {
-      "url": "/medias6/-normal-1088968-big-3661434009976.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wzODI3MXxpbWFnZS9qcGVnfGltYWdlcy9oOTMvaGVmLzEyNzA4NjgzNjEyMTkwLmpwZ3xiZWFlMWQ3ZjY1ODU2NTc0YWFhMTQzYzY0MzIwOTVjYTQ5N2Q5MTMyMDg4MDA1ZDY0NzcyYTgyZGZjYjE3Yjc1"
+      "url": "/catalog-images/uriage/1088968.jpg"
     },
     "name": "Uriage Age Absolu Collagen Booster Micro-Redensifying Serum",
     "price": {
-      "formattedValue": "4 982&nbsp;₽",
-      "value": 4982
+      "formattedValue": "3 690&nbsp;₽",
+      "value": 3690
     },
     "country": "europe"
   },
@@ -1717,7 +1717,7 @@
     },
     "code": "1088970",
     "listingImage": {
-      "url": "/medias6/-normal-1088970-big-3661434010026.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxODI2NXxpbWFnZS9qcGVnfGltYWdlcy9oY2MvaDdiLzEyNzA4Njg0Mzk4NjIyLmpwZ3w3MDYzNTFiODRkNTc1ODg1ZTgyOTUwNzYxZTIyMTc2ZmJjOTE0ZTRjZjFkMWRiYzM5MDliZDBmMmJkZTVkMDFi"
+      "url": "/catalog-images/uriage/1088970.jpg"
     },
     "name": "Uriage Hyseac SOS Drying Gel",
     "price": {
@@ -1733,12 +1733,12 @@
     },
     "code": "979481",
     "listingImage": {
-      "url": "/medias6/product-979481-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4NDMyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDRiL2g1OS8xMTQ4OTU0NTAyNzYxNC5qcGd8ZTJlNjcxZDI4YmU1MjRjNWUxMjcyNjRlMjdkMDAzNDRmOTE2MmE4Nzg0NjM2ODViYmQ5NTUyNmFkOWVkMGQ2Mg"
+      "url": "/catalog-images/uriage/979481.jpg"
     },
     "name": "Uriage Eau Thermale Water Jelly",
     "price": {
-      "formattedValue": "2 259&nbsp;₽",
-      "value": 2259
+      "formattedValue": "2 384&nbsp;₽",
+      "value": 2384
     },
     "country": "europe"
   },
@@ -1749,7 +1749,7 @@
     },
     "code": "base_979452",
     "listingImage": {
-      "url": "/medias6/product-979452-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI0NTI0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDA4L2gwMi8xMTQ4OTQ1ODYxODM5OC5qcGd8OGJjYjg3MTQwMDc2OWU3M2E4MThlMzk0YTY0OTkwMzM4OTIzZWJiMzIyYTBjZTA3YTg1OTYyYjI3YzVhODUzNw"
+      "url": "/catalog-images/uriage/base_979452.jpg"
     },
     "name": "Uriage 1st Copper-Zinc Spray",
     "price": {
@@ -1765,12 +1765,12 @@
     },
     "code": "979545",
     "listingImage": {
-      "url": "/medias6/product-979545-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4MTM0fGltYWdlL2pwZWd8cHJvZHVjdHMvaGFlL2g3NS8xMTQ4OTY3NjE2NTE1MC5qcGd8ZTE3ZDNjMmQ4Nzg1ODJjNDc0ZTRhNGU1YWE0N2I4NmQwZGYyNWFhOThlNGUyMTM4ZDg1ZmFmNDhiNWI4YTQ0OA"
+      "url": "/catalog-images/uriage/979545.jpg"
     },
     "name": "Uriage 1st Cradle Cap Care Cream",
     "price": {
-      "formattedValue": "1 158&nbsp;₽",
-      "value": 1158
+      "formattedValue": "1 126&nbsp;₽",
+      "value": 1126
     },
     "country": "europe"
   },
@@ -1781,12 +1781,12 @@
     },
     "code": "base_979489",
     "listingImage": {
-      "url": "/medias6/product-979489-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDc3Mzl8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oYTgvaGU3LzE0NzEzODQ2MzAwNzAyLmpwZ3wxZDQ5MGI0MDdkNDc0NGY3MzEyZjFkNDZkMDFiZDE4NDE0NjZiYWUxODQ2NzNkZTBkYzg1YjdmZmY0NWI3NWVk"
+      "url": "/catalog-images/uriage/base_979489.jpg"
     },
     "name": "Uriage Eau Thermale Firming Body Balm",
     "price": {
-      "formattedValue": "2 751&nbsp;₽",
-      "value": 2751
+      "formattedValue": "2 783&nbsp;₽",
+      "value": 2783
     },
     "country": "europe"
   },
@@ -1797,12 +1797,12 @@
     },
     "code": "base_990680",
     "listingImage": {
-      "url": "/medias6/product-990680-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDExNzcyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDk1L2g0Yi8xMzYyNDA2NDA0OTE4Mi5qcGd8ZmNkNTg2NDU0N2FiYmM0NzNmZjhkZjM0NGFmZjYzYWI5YmQ0YjMzMDY1YzVkNjkzYjNkNmQ5Y2UyMjcyNzg0YQ"
+      "url": "/catalog-images/uriage/base_990680.jpg"
     },
     "name": "Uriage Xemose Pso Sootning Concentrate",
     "price": {
-      "formattedValue": "1 839&nbsp;₽",
-      "value": 1839
+      "formattedValue": "1 721&nbsp;₽",
+      "value": 1721
     },
     "country": "europe"
   },
@@ -1813,12 +1813,12 @@
     },
     "code": "1031733",
     "listingImage": {
-      "url": "/medias6/-normal-1031733-big-3661434009068.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzAzM3xpbWFnZS9qcGVnfGltYWdlcy9oY2EvaGY1LzE2NDUzMjkwOTE3OTE4LmpwZ3w5MWY4MTRhNmU1ODk5OThmYjYwNmJiYjcxZGE3OWE0OGQ0NTc3MmYxMjc5MzEwMmU5MDM2ZTM2MmU1NTZiNTkz"
+      "url": "/catalog-images/uriage/1031733.jpg"
     },
     "name": "Uriage Fresh Deodorant Pack",
     "price": {
-      "formattedValue": "3 002&nbsp;₽",
-      "value": 3002
+      "formattedValue": "2 290&nbsp;₽",
+      "value": 2290
     },
     "country": "europe"
   },
@@ -1829,12 +1829,12 @@
     },
     "code": "979453",
     "listingImage": {
-      "url": "/medias6/product-979453-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIzOTg3fGltYWdlL2pwZWd8cHJvZHVjdHMvaGU0L2g4My8xMTQ4OTYxNjQ5NDYyMi5qcGd8MTdhYzI1ODg2NTA5YzJkNjlkYjdiY2YwODIyMmU3ZWFkOTBjZTNkMTQ5ZjBjMjkwZGZkMTIyMGY0NjBjNjYwNA"
+      "url": "/catalog-images/uriage/979453.jpg"
     },
     "name": "Uriage 1st Peri-Oral Care",
     "price": {
-      "formattedValue": "1 358&nbsp;₽",
-      "value": 1358
+      "formattedValue": "1 287&nbsp;₽",
+      "value": 1287
     },
     "country": "europe"
   },
@@ -1845,12 +1845,12 @@
     },
     "code": "base_979532",
     "listingImage": {
-      "url": "/medias6/product-979532-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI0ODI3fGltYWdlL2pwZWd8cHJvZHVjdHMvaGMzL2gyMi8xMTQ4OTU5NzEyODczNC5qcGd8MThjZWIwZGI0OTlhYjYyMDg4YThlOWQ3Yjc5YWFkMDQxMGU1MDAyYWJiODg4NjVjOTFjYWZlZTc2OTk0ZDBmYw"
+      "url": "/catalog-images/uriage/base_979532.jpg"
     },
     "name": "Uriage Body Scrubbing Cream",
     "price": {
-      "formattedValue": "2 119&nbsp;₽",
-      "value": 2119
+      "formattedValue": "2 001&nbsp;₽",
+      "value": 2001
     },
     "country": "europe"
   },
@@ -1861,12 +1861,12 @@
     },
     "code": "base_1023574",
     "listingImage": {
-      "url": "/medias6/product-1023574-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE0ODg5fGltYWdlL2pwZWd8cHJvZHVjdHMvaGUxL2g1Ny8xMTUwNTcxMzc0MTg1NC5qcGd8MGM0ZTE4YTE2MDQzOTViZmE3YTAzYjZlNTJhYjEzOWZjMGQ1Y2IwN2M1NzFhMDA5MjZkZGNhNGRhNjA0M2U0NQ"
+      "url": "/catalog-images/uriage/base_1023574.jpg"
     },
     "name": "Uriage Bariederm Cleansing Cica-Gel With Copper-Zinc",
     "price": {
-      "formattedValue": "1 630&nbsp;₽",
-      "value": 1630
+      "formattedValue": "1 650&nbsp;₽",
+      "value": 1650
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -1878,12 +1878,12 @@
     },
     "code": "1029828",
     "listingImage": {
-      "url": "/medias6/-normal-1029828-big-3661434005596.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjI3MnxpbWFnZS9qcGVnfGltYWdlcy9oNmYvaDFlLzExNTg3OTUxODIwODMwLmpwZ3xlODI1ZDUzYTgyYWFlYTgxNTBlZmQxMWFmMDdiNTVmNTc0YTNiMjI4YTAwMjgxM2IyOWEzNzMxNWZhNGFkY2Yy"
+      "url": "/catalog-images/uriage/1029828.jpg"
     },
     "name": "Uriage Bariesun Matifying Fluid SPF 50+",
     "price": {
-      "formattedValue": "1 608&nbsp;₽",
-      "value": 1608
+      "formattedValue": "2 280&nbsp;₽",
+      "value": 2280
     },
     "country": "europe"
   },
@@ -1894,12 +1894,12 @@
     },
     "code": "base_979459",
     "listingImage": {
-      "url": "/medias6/product-979459-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI0NzM4fGltYWdlL2pwZWd8cHJvZHVjdHMvaGEwL2hhMi8xMTQ4OTUyNTM5OTU4Mi5qcGd8MDA5NDZhMDFmZmEzNWYzYzY4YTNlOWVlODFkNTMyY2M5Y2IzZmMxMzM5MmNjYjM0OWJlYWVlMTI1NDk4YWM5ZQ"
+      "url": "/catalog-images/uriage/base_979459.jpg"
     },
     "name": "Uriage 1st Cleansing Water",
     "price": {
-      "formattedValue": "1 578&nbsp;₽",
-      "value": 1578
+      "formattedValue": "1 517&nbsp;₽",
+      "value": 1517
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -1911,12 +1911,12 @@
     },
     "code": "base_979418",
     "listingImage": {
-      "url": "/medias6/product-979418-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5MzcxfGltYWdlL2pwZWd8cHJvZHVjdHMvaDcyL2g4MC8xMTQ3NzEwMDg1NTMyNi5qcGd8ZDIxZTNjYjFlNGQ4ZGYyNzcyZTIxOWRhMTAxOGIyNmZkOTY1NDNmNjlkZGY2YWRlNDY5MGM0ZGVjZWJiNDcxNQ"
+      "url": "/catalog-images/uriage/base_979418.jpg"
     },
     "name": "Uriage DS Regulating Foaming Gel",
     "price": {
-      "formattedValue": "2 286&nbsp;₽",
-      "value": 2286
+      "formattedValue": "1 905&nbsp;₽",
+      "value": 1905
     },
     "country": "europe"
   },
@@ -1927,7 +1927,7 @@
     },
     "code": "base_979449",
     "listingImage": {
-      "url": "/medias6/product-979449-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIyOTU0fGltYWdlL2pwZWd8cHJvZHVjdHMvaGUzL2hhYi8xMTQ4OTY3MjE2NzQ1NC5qcGd8ZmI2ZTkyNGM3ZTUwYzMzMzEzMDUzZjhkNjVkZDEwZWU2MjMzZWE5NDc5MDQ4OGVhMWViZWFhYWI2YmNiNTM1OQ"
+      "url": "/catalog-images/uriage/base_979449.jpg"
     },
     "name": "Uriage Bariederm Drying Repairing Cica-Spray with Copper-Zinc",
     "price": {
@@ -1944,12 +1944,12 @@
     },
     "code": "1023575",
     "listingImage": {
-      "url": "/medias6/-normal-1023575-big-3661434001475.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMDEzNnxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaGVmLzExNTg3OTQ4Njc1MTAyLmpwZ3w2NjJiM2UyYzFlNWRhMjgyMWQxYWEzOWYyMTJjNTc2NGY5Zjc1MWMxYzIxMDU3ODA4Y2FmNGYxMmI5OWQ3MzQw"
+      "url": "/catalog-images/uriage/1023575.jpg"
     },
     "name": "Uriage Bariesun Refreshing Thermal Mist After Sun",
     "price": {
-      "formattedValue": "1 534&nbsp;₽",
-      "value": 1534
+      "formattedValue": "1 557&nbsp;₽",
+      "value": 1557
     },
     "country": "europe"
   },
@@ -1960,7 +1960,7 @@
     },
     "code": "1013555",
     "listingImage": {
-      "url": "/medias6/product-1013555-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE3NDEzfGltYWdlL2pwZWd8cHJvZHVjdHMvaGUxL2g2Mi8xMTQ5NzIwMTIzODA0Ni5qcGd8ZGQ2YjhiZWYwNzI1ODhkNzhlYWM0NzE4NjkzMTg5N2YwMzUzMWI4ODU2ZDRiNzJkMDlmNDc5ZWY5MThjMTNiYQ"
+      "url": "/catalog-images/uriage/1013555.jpg"
     },
     "name": "Uriage Bariederm Duo Cica-Lips",
     "price": {
@@ -1974,25 +1974,9 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
-    "code": "1031735",
-    "listingImage": {
-      "url": "/medias6/-normal-1031735-big-3661434009617.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTQ0MXxpbWFnZS9qcGVnfGltYWdlcy9oNjkvaDdhLzE2NzIzMDQ3MTIwOTI2LmpwZ3w1NDlmNzgyNDk2Y2M5OWJlNTI2Njk4MThlNGUyYTgxYWI4NzEzZDZhM2ZiODVlNjBlNzRlMDllMzUxMDgzNDlj"
-    },
-    "name": "Uriage DS Hair Soft Balancing Shampoo Pack",
-    "price": {
-      "formattedValue": "2 375&nbsp;₽",
-      "value": 2375
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_701",
-      "name": "URIAGE"
-    },
     "code": "1028281",
     "listingImage": {
-      "url": "/medias6/-normal-1028281-big-3661434005473.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMTE2NnxpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGY3LzExNTg3OTUxMDM0Mzk4LmpwZ3xiZTAyMjdhZTdhN2JkNmNkNWI3Mjk1MWI2YTM0M2ZkMjk2YWRkNDQ2YjkwYjczNTkyZWExNjNkODg2YjZkOGY2"
+      "url": "/catalog-images/uriage/1028281.jpg"
     },
     "name": "Uriage Bariesun Moisturizing Dry Mist SPF 30",
     "price": {
@@ -2007,14 +1991,30 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
+    "code": "1031735",
+    "listingImage": {
+      "url": "/catalog-images/uriage/1031735.jpg"
+    },
+    "name": "Uriage DS Hair Soft Balancing Shampoo Pack",
+    "price": {
+      "formattedValue": "2 375&nbsp;₽",
+      "value": 2375
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_701",
+      "name": "URIAGE"
+    },
     "code": "1029829",
     "listingImage": {
-      "url": "/medias6/-normal-1029829-big-3661434028182.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyNjkxN3xpbWFnZS9qcGVnfGltYWdlcy9oYmIvaDZiLzE1Mzc3NTc1MzEzNDM4LmpwZ3xmYjYwOWU2YTIzMzQ2OWJkYTM0NTJkNmU4YjE0NmI5NWMxZTgxY2ZmZWM2YjMyMzljZDYzMDRlMDIyMjlkNjkx"
+      "url": "/catalog-images/uriage/1029829.jpg"
     },
     "name": "Uriage Bariesun Invisible Spray SPF 30",
     "price": {
-      "formattedValue": "2 220&nbsp;₽",
-      "value": 2220
+      "formattedValue": "2 160&nbsp;₽",
+      "value": 2160
     },
     "country": "europe"
   },
@@ -2025,7 +2025,7 @@
     },
     "code": "1028274",
     "listingImage": {
-      "url": "/medias6/-normal-1028274-big-3661434027857.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyNTI1N3xpbWFnZS9qcGVnfGltYWdlcy9oODAvaDE5LzE1Mzc3NTcyNzkwMzAyLmpwZ3wwNWRkNjllZTVjMzU4OWNlODdlNjJjZTM3ZjdiYTIxY2NjNjc5ZmI0NDUyZDBiOTA4ZjFmMGY2OGRjZjE1OTM0"
+      "url": "/catalog-images/uriage/1028274.jpg"
     },
     "name": "Uriage Bariesun Moisturizing Lipstick SPF 30",
     "price": {
@@ -2040,30 +2040,14 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
-    "code": "1097598",
+    "code": "1091799",
     "listingImage": {
-      "url": "/medias6/-normal-1097598-big-3661434009655.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTE3MHxpbWFnZS9qcGVnfGltYWdlcy9oYTgvaDZlLzEyOTg2NTI5MDg3NTE4LmpwZ3xhOGY5ZmI1MmQ1NTM1YzdhZTJjODU0NGYxZDBlY2EyZmY5MTMzNDg2ZGE2NjNkYTI5MTM4OWM2NjhkYzkyN2Q1"
+      "url": "/catalog-images/uriage/1091799.jpg"
     },
-    "name": "Uriage Thermal Micellar Water Normal to Dry Skin Pack",
+    "name": "Uriage Pruriced Soothing Comfort Cream",
     "price": {
-      "formattedValue": "3 339&nbsp;₽",
-      "value": 3339
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_701",
-      "name": "URIAGE"
-    },
-    "code": "1093982",
-    "listingImage": {
-      "url": "/medias6/-normal-1093982-big-3661434010576.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTYyN3xpbWFnZS9qcGVnfGltYWdlcy9oYmUvaGU5LzEyOTQ0MDMwNjYyNjg2LmpwZ3wyZjkwNjMzYmRhZmRkY2M4MTFlMjRiMTZlNTRkMDJhNDQ0NDJkMTFkMzU3OGVkYTY1YjMyYTRlMDlkMjE5M2Fl"
-    },
-    "name": "Uriage Eau Thermale Daily Plumping Duo",
-    "price": {
-      "formattedValue": "2 294&nbsp;₽",
-      "value": 2294
+      "formattedValue": "1 743&nbsp;₽",
+      "value": 1743
     },
     "country": "europe"
   },
@@ -2074,7 +2058,7 @@
     },
     "code": "1088673",
     "listingImage": {
-      "url": "/medias6/-normal-1088673-big-3661434010033.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzY3OHxpbWFnZS9qcGVnfGltYWdlcy9oMWIvaGY2LzEyNjY1NzIwNjAyNjU0LmpwZ3w4YTQ1ZTZkMDU4MWI1NmIwY2M0NTJhYzhiNDJiNjZjNjQ1NjI2NjczYWY5YzE4NTFmNmMwMzkzMWQ4Njg1YWJl"
+      "url": "/catalog-images/uriage/1088673.jpg"
     },
     "name": "Uriage Hyseac Mat Mattifying Gel Cream",
     "price": {
@@ -2088,41 +2072,9 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
-    "code": "979413",
-    "listingImage": {
-      "url": "/medias6/product-979413-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5MDg0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDYxL2hhMi8xMTQ3MzgzODgzMzY5NC5qcGd8MjQyOTFjMDU0MTRkOWU3ZTcwNmM4MWVhMWM3NDVmMGE2NzhhOGM4NDkxMjI0NzZmZTE2YmEwMzUxYzg1ZmFlYg"
-    },
-    "name": "Uriage 1st Mineral Cream SPF 50+",
-    "price": {
-      "formattedValue": "1 667&nbsp;₽",
-      "value": 1667
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_701",
-      "name": "URIAGE"
-    },
-    "code": "979463",
-    "listingImage": {
-      "url": "/medias6/product-979463-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4NzU1fGltYWdlL2pwZWd8cHJvZHVjdHMvaDYwL2g4MC8xMTQ4OTYwNTM1MzUwMi5qcGd8NTZkMWM0OGM0NDI0ZTU0MTI2OThiNTc5Njg5MmRiOWIxYzU1MmE4YzdjZmE5OGVhNTI5MGUzMzQ0YTMzMDI4Mg"
-    },
-    "name": "Uriage Bariederm Cica-Cream SPF 50+",
-    "price": {
-      "formattedValue": "1 705&nbsp;₽",
-      "value": 1705
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_701",
-      "name": "URIAGE"
-    },
     "code": "1028278",
     "listingImage": {
-      "url": "/medias6/-normal-1028278-big-3661434008351.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTAzNXxpbWFnZS9qcGVnfGltYWdlcy9oZGQvaDg5LzExNTg3OTQ5ODU0NzUwLmpwZ3w0YzdkOTkzZGFkZDlhNjY1YmNlY2RkNDk3ZGY1OTRlZDFiMTllNjNjOWFjNDgxYmM2OTA1ODA5MDExNDY3MjNm"
+      "url": "/catalog-images/uriage/1028278.jpg"
     },
     "name": "Uriage Bariesun Moisturizing Kid Lotion SPF 50+",
     "price": {
@@ -2139,7 +2091,7 @@
     },
     "code": "1099559",
     "listingImage": {
-      "url": "/medias6/-normal-1099559-big-3661434023422-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDY1MXxpbWFnZS9qcGVnfGltYWdlcy9oYjcvaGNjLzE1NjY5OTcwMjcyMjg2LmpwZ3xlMGQzODI0M2RmZGM0Zjk5OTg3YWQ0M2IyYTZlMDU2NTI1MTUyYTU1OTVmZTQ5YmUwZTMxODI3NmNiNDc0ZWQ2"
+      "url": "/catalog-images/uriage/1099559.jpg"
     },
     "name": "Uriage Roseliane Visible Redness-Nuetralizing Smoothing Serum",
     "price": {
@@ -2153,14 +2105,14 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
-    "code": "1091799",
+    "code": "1097598",
     "listingImage": {
-      "url": "/medias6/-normal-1091799-big-3661434009686.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxODk4NnxpbWFnZS9qcGVnfGltYWdlcy9oYzQvaGU2LzEyODU2MDQxNTcwMzM0LmpwZ3xkYmVmYjg2MmNhZGZkMDlhMjBiM2I2OWY1OTU1OWRlZjJkMjRlOGQ1YjQxMDJjYTE4MThiNDE4NGZiYTAyY2U0"
+      "url": "/catalog-images/uriage/1097598.jpg"
     },
-    "name": "Uriage Pruriced Soothing Comfort Cream",
+    "name": "Uriage Thermal Micellar Water Normal to Dry Skin Pack",
     "price": {
-      "formattedValue": "1 743&nbsp;₽",
-      "value": 1743
+      "formattedValue": "3 339&nbsp;₽",
+      "value": 3339
     },
     "country": "europe"
   },
@@ -2171,7 +2123,7 @@
     },
     "code": "1054331",
     "listingImage": {
-      "url": "/medias6/-normal-1054331-big-3661434009778.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMjMzMXxpbWFnZS9qcGVnfGltYWdlcy9oNzUvaDFhLzEyODU2MDQyODE1NTE4LmpwZ3w1ODQzNjAzODFiZDYyM2E1OTEyOTViMzZhMjcyOGNlZTY3MmRjYjUwNTIyZDkzNDcwOTg5N2VhMWE0ZWM1MmYy"
+      "url": "/catalog-images/uriage/1054331.jpg"
     },
     "name": "Uriage Depiderm Anti-Dark Spot Daytime Care SPF 50+",
     "price": {
@@ -2187,7 +2139,7 @@
     },
     "code": "1045905",
     "listingImage": {
-      "url": "/medias6/-normal-1045905-big-3661434009556.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTUyOXxpbWFnZS9qcGVnfGltYWdlcy9oYzEvaGIyLzExODY3NzQ2Njk3MjQ2LmpwZ3w1YzdkMjM4OWUxOWFiOTcwMzlkYjk0NTM0MzExZTJhZmMxNWZlMDM3ODBhYzM5ODNiYjMwMjliNThjZTQ4MDgy"
+      "url": "/catalog-images/uriage/1045905.jpg"
     },
     "name": "Uriage Age Lift",
     "price": {
@@ -2203,7 +2155,7 @@
     },
     "code": "1088675",
     "listingImage": {
-      "url": "/medias6/-normal-1088675-big-3661434010125.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyNzc0NXxpbWFnZS9qcGVnfGltYWdlcy9oY2MvaGJjLzEyNjY1NzIwMDc4MzY2LmpwZ3wyMjdlYjA0YTNmNDdjZTRiOTA4ZTZjYzQ5NzY4Y2QxZTkwNzJiMDUyYjJmOGUxMDhhM2MxMTgzZWE3ZmJlYjhi"
+      "url": "/catalog-images/uriage/1088675.jpg"
     },
     "name": "Uriage Hyseac Purifying Peeling Toner",
     "price": {
@@ -2220,12 +2172,12 @@
     },
     "code": "base_979501",
     "listingImage": {
-      "url": "/medias6/product-979501-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE2MzI4fGltYWdlL2pwZWd8cHJvZHVjdHMvaGIyL2hiZS8xMjkzNDgzODE5MDExMC5qcGd8N2M5MmZmMGFhMjAzMTNjMGFiYTg4YTQxMzVkNDFhY2Y5Y2Y1NDQzZWM3NDIxZTIyNzg3MGY3YzkzNzU5MDEyZg"
+      "url": "/catalog-images/uriage/base_979501.jpg"
     },
     "name": "Uriage Extra-Rich Dermatological Gel",
     "price": {
-      "formattedValue": "2 284&nbsp;₽",
-      "value": 2284
+      "formattedValue": "2 164&nbsp;₽",
+      "value": 2164
     },
     "country": "europe"
   },
@@ -2236,7 +2188,7 @@
     },
     "code": "1031730",
     "listingImage": {
-      "url": "/medias6/-normal-1031730-big-3661434009105.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w5MDMxfGltYWdlL2pwZWd8aW1hZ2VzL2g4OC9oYzEvMTI1NzI2OTQxNTExOTguanBnfGNmNmQ1ZGFiODk1YzgwMDIxMmU3ZDQ5NWIzMTcyNTZiNTlmNzhmN2U1MGUyMjk2NTRiOWI3YmY0NjFiZDBhZjI"
+      "url": "/catalog-images/uriage/1031730.jpg"
     },
     "name": "Uriage Bariesun + Thermal Water Set",
     "price": {
@@ -2252,7 +2204,7 @@
     },
     "code": "base_1066950",
     "listingImage": {
-      "url": "/medias6/-normal-1066950-big-3661434009693.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDM1OXxpbWFnZS9qcGVnfGltYWdlcy9oYWYvaGU0LzEyMTUzMjA4NDcxNTgyLmpwZ3w5NTRhODRhN2Y2ZDM3NTg2NDA1Y2JmMTljYjFmZDA3Y2VkZjQ1MTE0ZDdjOTU4OTMzMTc0MzU1YmEwZTc0N2Jh"
+      "url": "/catalog-images/uriage/base_1066950.jpg"
     },
     "name": "Uriage Pruriced SOS After-Stings",
     "price": {
@@ -2268,12 +2220,12 @@
     },
     "code": "1057625",
     "listingImage": {
-      "url": "/medias6/-normal-1057625-big-3661434028069.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNjE5NHxpbWFnZS9qcGVnfGltYWdlcy9oNDEvaDVkLzE2NTY5MTk4MjQ3OTY2LmpwZ3w2YzIyZjg2NDdlNWMxODQ1MTA5ZmZjNDkwYzUwZDA1ZTc2MjhjMDYwN2E2MGI4MzQxMzZjNzhlNmE3ZWI1MWQ5"
+      "url": "/catalog-images/uriage/1057625.jpg"
     },
     "name": "Uriage Bariesun Moisturizing Cream SPF 50+",
     "price": {
-      "formattedValue": "1 630&nbsp;₽",
-      "value": 1630
+      "formattedValue": "2 037&nbsp;₽",
+      "value": 2037
     },
     "country": "europe",
     "purpose": "moisture"
@@ -2285,7 +2237,7 @@
     },
     "code": "base_979491",
     "listingImage": {
-      "url": "/medias6/product-979491-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEzNzE3fGltYWdlL2pwZWd8cHJvZHVjdHMvaGM1L2g2ZC8xMTQ4OTU1NjI2NzAzOC5qcGd8MDY2NTg0YjFlN2M3MGU5NTk3MWNjODQ1ODE1ZWVmYmI2ZDE5ZGExYjJmMTYxNmFhMDMxNmUxYWYwMTQyZmQyNA"
+      "url": "/catalog-images/uriage/base_979491.jpg"
     },
     "name": "Uriage Cleansing Cream Travel Size",
     "price": {
@@ -2302,7 +2254,7 @@
     },
     "code": "base_979513",
     "listingImage": {
-      "url": "/medias6/product-979513-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE0NTY0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDgwL2hiNi8xMTQ4MDU5NTg1NzQzOC5qcGd8ZGEzNDRiMjY5YWJkODFjN2RmZGY3NDdhZGVjMTZmNjI1MmEwMDZiYThlNmZjNGFlOGJhNDRlNDc4OTEyNWVjNQ"
+      "url": "/catalog-images/uriage/base_979513.jpg"
     },
     "name": "Uriage Solid Cleansing Cream",
     "price": {
@@ -2317,9 +2269,25 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
+    "code": "979413",
+    "listingImage": {
+      "url": "/catalog-images/uriage/979413.jpg"
+    },
+    "name": "Uriage 1st Mineral Cream SPF 50+",
+    "price": {
+      "formattedValue": "1 667&nbsp;₽",
+      "value": 1667
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_701",
+      "name": "URIAGE"
+    },
     "code": "1077474",
     "listingImage": {
-      "url": "/medias6/-normal-1077474-big-3661434011900.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w0MzE2fGltYWdlL2pwZWd8aW1hZ2VzL2hkYS9oZDcvMTIyMTYyMDQxNjUxNTAuanBnfDVjNTRjZmYzNDMxMTEzZWZlYzU3YjE1ODA3YzBhNGY0Yjc4ZTcwNmVjZGZiZWM5MDllZDg3YmZmNjQzNDJlNTE"
+      "url": "/catalog-images/uriage/1077474.jpg"
     },
     "name": "Uriage Cica Daily Repairing Cream Concentrate Recharge-Refill",
     "price": {
@@ -2334,14 +2302,30 @@
       "code": "rg_brand_701",
       "name": "URIAGE"
     },
+    "code": "979463",
+    "listingImage": {
+      "url": "/catalog-images/uriage/979463.jpg"
+    },
+    "name": "Uriage Bariederm Cica-Cream SPF 50+",
+    "price": {
+      "formattedValue": "1 705&nbsp;₽",
+      "value": 1705
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_701",
+      "name": "URIAGE"
+    },
     "code": "1029830",
     "listingImage": {
-      "url": "/medias6/-normal-1029830-big-3661434028021.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyODQ3NXxpbWFnZS9qcGVnfGltYWdlcy9oYjIvaDhiLzE1Mzc3NTczOTY5OTUwLmpwZ3w3YWQwOTlhMzM1OTc4ZTI1YzNkZTllYTcxOWMyN2Y1YmQwNjFlMDE4OWViOTZhODM2NWNlYTkyNzBhZTc0Yjhm"
+      "url": "/catalog-images/uriage/1029830.jpg"
     },
     "name": "Uriage Bariesun Invisible Spray SPF 50+",
     "price": {
-      "formattedValue": "2 222&nbsp;₽",
-      "value": 2222
+      "formattedValue": "2 327&nbsp;₽",
+      "value": 2327
     },
     "country": "europe"
   },
@@ -2352,7 +2336,7 @@
     },
     "code": "1028279",
     "listingImage": {
-      "url": "/medias6/-normal-1028279-big-3661434008399.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyNDYxOHxpbWFnZS9qcGVnfGltYWdlcy9oOTUvaDQ3LzExNTg3OTUwMjQ3OTY2LmpwZ3xhYzAxZTk2Y2QwYjU3ZDY0MDY1MGY4ODNkYzcyZjFjMmM2MjI4MGM1MDlmYWZlNzljYjNlZmI2ZGY4MDFhZTdj"
+      "url": "/catalog-images/uriage/1028279.jpg"
     },
     "name": "Uriage Bariesun Moisturizing Kid Spray SPF 50+",
     "price": {
@@ -2369,7 +2353,7 @@
     },
     "code": "1028276",
     "listingImage": {
-      "url": "/medias6/-normal-1028276-big-3661434028120.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzc1MHxpbWFnZS9qcGVnfGltYWdlcy9oMWQvaDViLzE2NTY5MTk5MDk5OTM0LmpwZ3wyODA5NGNmM2E1NDM0ODI1Zjc0YmMzNWY4ZjY4YThlNTZiMmM4NTk4YWYzNjhlYTAwZWY5ODhiMmQzZTdmYjc1"
+      "url": "/catalog-images/uriage/1028276.jpg"
     },
     "name": "Uriage Bariesun After Sun Enveloping Repairing Balm",
     "price": {
@@ -2387,7 +2371,7 @@
     },
     "code": "1021116",
     "listingImage": {
-      "url": "/medias6/product-1021116-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI3NDgyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDRjL2hjMy8xMTUxODMxMzAzNzg1NC5qcGd8YmM4ODk0YTY2ZTZiMmY2ZWMxZDViOTkzMDdmM2ZjZDZmYWVjNDdmY2M0M2E3MmZmMDU2NDFkMzFjNjQzMTNkNg"
+      "url": "/catalog-images/uriage/1021116.jpg"
     },
     "name": "Uriage Bariesun 100 Extreme Protective Fluid SPF 50+",
     "price": {
@@ -2403,7 +2387,7 @@
     },
     "code": "1057624",
     "listingImage": {
-      "url": "/medias6/-normal-1057624-big-3661434009815.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyNzQzMnxpbWFnZS9qcGVnfGltYWdlcy9oNGQvaDYyLzE2ODcyNjA3MzE4MDQ2LmpwZ3w1ZDBhZWUyOTZhMzU4M2QxNzhjYWE0NDUzMmUzNTUxZWFiOTA5Y2RmZDRjOTNjODJlNzIwYjlkM2M2MmQ2MzY2"
+      "url": "/catalog-images/uriage/1057624.jpg"
     },
     "name": "Uriage Bariesun Invisible Spray SPF 50+",
     "price": {
@@ -2419,7 +2403,7 @@
     },
     "code": "1057622",
     "listingImage": {
-      "url": "/medias6/-normal-1057622-big-3661434002557.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMjcxM3xpbWFnZS9qcGVnfGltYWdlcy9oMTMvaGYwLzEyMTEyNjgwMjIyNzUwLmpwZ3w4ZDU1ZmUwMThiNTBkMDY5MWY4NTU1OWJmZjVhMjRmYjZiM2I2MGYzZTc5OGI5MmU5MWM2NzU4NDc1MTM2Zjcy"
+      "url": "/catalog-images/uriage/1057622.jpg"
     },
     "name": "Uriage Bariesun Dry Oil SPF 30",
     "price": {
@@ -2435,12 +2419,12 @@
     },
     "code": "1029823",
     "listingImage": {
-      "url": "/medias6/-normal-1029823-big-3661434008368.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTk4NnxpbWFnZS9qcGVnfGltYWdlcy9oMTcvaDY0LzExNTg3OTUyMjE0MDQ2LmpwZ3w2MmNhNTE5NWU0ZTMwYTgwMzRjOTg5MjZlM2RhOTA5NDdhMzRjZDI5NTY5ZTY2NjFhOWFkNzBjM2NjZTI1MDQw"
+      "url": "/catalog-images/uriage/1029823.jpg"
     },
     "name": "Uriage Bariesun Moisturizing Cream SPF 50+",
     "price": {
-      "formattedValue": "1 630&nbsp;₽",
-      "value": 1630
+      "formattedValue": "2 037&nbsp;₽",
+      "value": 2037
     },
     "country": "europe",
     "purpose": "moisture"

@@ -28,6 +28,7 @@ export class SearchControl {
   isHiddenSliderArrows = linkedSignal<boolean>(() => false);
   protected suggestions = viewChild<ElementRef<HTMLElement>>('suggestions');
   protected brandSuggestions = signal<string[]>(Object.keys(BRANDS_CODES));
+  protected allBrands = signal<string[]>(Object.keys(BRANDS_CODES));
   protected brandCode = 0;
   protected input = viewChild<ElementRef<HTMLInputElement>>('input');
   protected snackBar = inject(MatSnackBar);
@@ -192,7 +193,7 @@ export class SearchControl {
       this.snackBar.open('Change layout to English, please', 'ok', { duration: 5000 });
       return;
     }
-    if (!value) { this.brandSuggestions.set([]); this.getProduct(Object.keys(BRANDS_CODES), ''); return; }
+    if (!value) { this.brandSuggestions.set(this.allBrands()); this.getProduct(Object.keys(BRANDS_CODES), ''); return; }
     const matchedBrand = Object.keys(BRANDS_CODES).find((brand) => this.normalizeBrand(value).startsWith(this.normalizeBrand(brand)));
     if (matchedBrand) {
       const search = value.slice(matchedBrand.length).trim(); this.brandSuggestions.set([matchedBrand]); this.getProduct([matchedBrand], search); return;
