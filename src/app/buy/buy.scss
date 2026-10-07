@@ -164,6 +164,10 @@
         border: 0;
         position: absolute;
         transform: translate(480%, 80%);
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -327,6 +331,74 @@ mat-error.buy-card--side {
 
         &_products-info {
             gap: 20px;
+        }
+
+        &_form {
+            width: 400px;
+        }
+    }
+
+    .form_input-label {
+        display: none;
+    }
+
+    .form_field {
+        width: 70%;
+
+        &.card {
+            padding-top: 70px;
+        }
+    }
+
+    .form_name-surname {
+        width: 70%;
+    }
+
+    .form_date-cvv {
+        width: 70%;
+    }
+
+    .buy_cvv-visibiity {
+        transform: translate(360%, 10%);
+    }
+
+    .buy-card--side {
+        background-size: 100%;
+
+        .form_field {
+            width: 70%;
+
+            &.card {
+                padding-top: 60px;
+            }
+
+            &.name {
+                width: 40%;
+            }
+
+            &.surname {
+                width: 40%;
+            }
+
+            &.date {
+                width: 40%;
+            }
+
+            &.cvv {
+                width: 40%;
+            }
+        }
+
+        .form_input-label {
+            display: none;
+        }
+
+        .form_name-surname {
+            width: 70%;
+        }
+
+        .form_date-cvv {
+            width: 70%;
         }
     }
 }
