@@ -363,6 +363,11 @@ tabs-search-control {
             font-size: 1.3rem;
             margin-bottom: 10px;
         }
+
+        &_item-wrapper {
+            width: 30%;
+            position: relative;
+        }
     }
 }
 
@@ -373,7 +378,7 @@ tabs-search-control {
         }
 
         &_item-wrapper {
-            width: 30%;
+            width: 42%;
             position: relative;
         }
     }
@@ -399,7 +404,7 @@ tabs-search-control {
         }
 
         &_item-wrapper {
-            width: 42%;
+            width: 100%;
             position: relative;
         }
     }

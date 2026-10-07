@@ -140,6 +140,10 @@ button {
         &_dropped-title {
             font-size: 1.3rem;
         }
+
+        &_item-wrapper {
+            width: 30%;
+        }
     }
 }
 
@@ -150,7 +154,7 @@ button {
         }
 
         &_item-wrapper {
-            width: 30%;
+            width: 42%;
         }
     }
 }
@@ -178,7 +182,7 @@ button {
         }
 
         &_item-wrapper {
-            width: 42%;
+            width: 100%;
         }
     }
 }
