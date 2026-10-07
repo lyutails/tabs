@@ -15,6 +15,9 @@
       }
     </div>
   </div>
+  @if (searchStore.searchResults().length === 0 && layout() !== 'side') {
+    <div class="arrow-gif"></div>
+  }
   <button
     type="button"
     class="search_divider"
