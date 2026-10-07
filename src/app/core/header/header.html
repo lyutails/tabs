@@ -13,45 +13,69 @@
   <button class="burger_button" (click)="toggleBurgerMenu()" #burger>
     <mat-icon class="burger_icon">{{ isBurgerOpen() ? 'close' : 'menu' }}</mat-icon>
   </button>
+  <div (click)="isBurgerOpen.set(false)"
+    class="burger_overlay"
+    [style.transform]="isBurgerOpen() ? 'translateX(0%)' : 'translateX(100%)'"
+  ></div>
 }
 
 <ng-template #headerTemplate>
   <div class="header_buttons" [class.openBurger]="isBurgerOpen()">
-    <button class="header_button" [style.background]="'transparent'" (click)="navigate('search')"
-    aria-label="navigates to search page">
+    <button
+      class="header_button"
+      [style.background]="'transparent'"
+      (click)="navigate('search')"
+      aria-label="navigates to search page"
+    >
       <mat-icon>search</mat-icon>
     </button>
-    <button class="header_button" [style.background]="'transparent'" (click)="navigate('liked')"
-    aria-label="navigates to favourites page">
+    <button
+      class="header_button"
+      [style.background]="'transparent'"
+      (click)="navigate('liked')"
+      aria-label="navigates to favourites page"
+    >
       <mat-icon>favorite</mat-icon>
       @if (searchStore.likedResults().length > 0) {
         <span class="header_products-count">{{ searchStore.likedResults().length }}</span>
       }
     </button>
-    <button class="header_button" [style.background]="'transparent'" (click)="navigate('buy')"
-    aria-label="navigates to buy page where you can pay for products">
+    <button
+      class="header_button"
+      [style.background]="'transparent'"
+      (click)="navigate('buy')"
+      aria-label="navigates to buy page where you can pay for products"
+    >
       <mat-icon>shopping_cart</mat-icon>
       @if (buyStore.buyResults().length > 0) {
         <span class="header_products-count">{{ buyStore.buyResults().length }}</span>
       }
     </button>
-    <button class="header_button" [style.background]="'transparent'" (click)="navigate('profile')"
-    aria-label="navigates to profile page">
+    <button
+      class="header_button"
+      [style.background]="'transparent'"
+      (click)="navigate('profile')"
+      aria-label="navigates to profile page"
+    >
       @if (profileService.isUploaded()) {
         <img class="header_profile-img" [src]="profileService.previewUrl()" />
       } @else {
         <mat-icon>person</mat-icon>
       }
     </button>
-    <button aria-label="shows or hides promo running line"
+    <button
+      aria-label="shows or hides promo running line"
       class="header_adv-toggle"
       matTooltip="on/off promo"
       (click)="advertismentService.toggleAdvertisment()"
     >
       <mat-icon>{{ advertismentService.isAdvertisment() === true ? 'check' : 'remove' }}</mat-icon>
     </button>
-    <button class="header_button theme-button" (click)="themeService.toggleTheme()"
-    aria-label="switch theme">
+    <button
+      class="header_button theme-button"
+      (click)="themeService.toggleTheme()"
+      aria-label="switch theme"
+    >
       <mat-icon class="theme-icon">{{
         themeService.theme() === 'light' ? 'light_mode' : 'dark_mode'
       }}</mat-icon>
