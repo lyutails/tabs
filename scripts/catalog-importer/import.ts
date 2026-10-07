@@ -6,7 +6,7 @@ import {
 } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { BRANDS_CODES } from '../app/search/brands.constants';
+import { BRANDS_CODES } from '../../src/app/search/brands.constants';
 import { Result } from './catalog-importer.model';
 
 const API_URL = 'https://api.rivegauche.ru';

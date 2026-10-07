@@ -53,33 +53,33 @@
         width: 100%;
         overflow: hidden;
 
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 80px;
-            z-index: 1;
-            pointer-events: none;
-            backdrop-filter: blur(4px);
-        }
+        // &::before,
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     width: 80px;
+        //     z-index: 1;
+        //     pointer-events: none;
+        //     backdrop-filter: blur(4px);
+        // }
 
-        &::before {
-            left: 0;
-            mask-image: linear-gradient(to right, black 0%, transparent 100%);
-            background: linear-gradient(to right,
-                    rgba(241, 233, 219, 0.8),
-                    transparent);
-        }
+        // &::before {
+        //     left: 0;
+        //     mask-image: linear-gradient(to right, black 0%, transparent 100%);
+        //     background: linear-gradient(to right,
+        //             rgba(241, 233, 219, 0.8),
+        //             transparent);
+        // }
 
-        &::after {
-            right: 0;
-            mask-image: linear-gradient(to left, black 0%, transparent 100%);
-            background: linear-gradient(to left,
-                    rgba(241, 233, 219, 0.8),
-                    transparent);
-        }
+        // &::after {
+        //     right: 0;
+        //     mask-image: linear-gradient(to left, black 0%, transparent 100%);
+        //     background: linear-gradient(to left,
+        //             rgba(241, 233, 219, 0.8),
+        //             transparent);
+        // }
     }
 
     &_slider-button {

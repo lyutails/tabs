@@ -1,7 +1,7 @@
 import { inject, Service, signal } from '@angular/core';
 import { forkJoin, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Result } from '../../../catalog-importer/catalog-importer.model';
+import { Result } from '../../../../scripts/catalog-importer/catalog-importer.model';
 
 @Service()
 export class SearchService {
