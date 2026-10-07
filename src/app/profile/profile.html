@@ -40,7 +40,7 @@
         profileService.email() ? profileService.email() : emailPlaceholder
       }}</span>
     }
-    <button class="profile_edit-button" (click)="toggleEditEmail()">
+    <button class="profile_edit-button" (click)="toggleEditEmail()" aria-label="edit email">
       <mat-icon>{{ isEditEmail() === true ? 'edit_off' : 'edit' }}</mat-icon>
     </button>
   </div>
@@ -68,7 +68,7 @@
         profileService.name() ? profileService.name() : namePlaceholder
       }}</span>
     }
-    <button class="profile_edit-button" (click)="toggleEditName()">
+    <button class="profile_edit-button" (click)="toggleEditName()" aria-label="edit name">
       <mat-icon>{{ isEditName() === true ? 'edit_off' : 'edit' }}</mat-icon>
     </button>
   </div>

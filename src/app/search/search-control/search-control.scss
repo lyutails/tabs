@@ -15,7 +15,7 @@
         gap: 10px;
     }
 
-    &_brand-button {
+    &_filter-options-button {
         flex: 0 0 auto;
         scroll-snap-align: start;
         background-color: var(--button-tab-color);
@@ -23,7 +23,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: var(--tabs-button);
+            background-color: var(--secondary-color);
         }
     }
 
@@ -35,7 +35,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: var(--tabs-button);
+            background-color: var(--secondary-color);
         }
     }
 
@@ -72,17 +72,14 @@
         z-index: 2;
         top: 50%;
         transform: translateY(-50%);
-        background-color: var(--secondary-color);
+        border: 1px solid var(--primary-color);
+        background-color: var(--button-tab-color);
         color: black;
-
         width: 32px;
         height: 32px;
         padding: 0;
-
-        border: none;
         border-radius: 50%;
-        // filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.8));
-        cursor: pointer;
+        transition: all 0.2s ease-in-out;
 
         &.left {
             left: 0px;
@@ -93,7 +90,12 @@
         }
 
         &>mat-icon {
-            color: var(--decorative-elements);
+            color: var(--font-secondary-color);
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: var(--secondary-color);
         }
     }
 
@@ -236,7 +238,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: var(--tabs-button);
+            background-color: var(--secondary-color);
         }
     }
 

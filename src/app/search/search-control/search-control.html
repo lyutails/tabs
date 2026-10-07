@@ -13,7 +13,8 @@
     <button class="search_filter-button" type="button" (click)="showAvailableFilter('brand')">
       Brand
       <mat-icon class="search_inner-button-icon">
-        {{ openedFilter() === 'brand' ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon>
+        {{ openedFilter() === 'brand' ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon
+      >
     </button>
     <div
       class="search_filter-options"
@@ -25,7 +26,7 @@
             matButton="elevated"
             type="button"
             (click)="searchBrand(brand)"
-            class="search_brand-button"
+            class="search_filter-options-button"
           >
             {{ brand }}
           </button>
@@ -37,7 +38,8 @@
     <button class="search_filter-button" type="button" (click)="showAvailableFilter('country')">
       Country
       <mat-icon class="search_inner-button-icon">
-        {{ openedFilter() === 'country' ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon>
+        {{ openedFilter() === 'country' ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon
+      >
     </button>
     <div
       class="search_filter-options"
@@ -48,7 +50,7 @@
           <button
             matButton="elevated"
             type="button"
-            class="search_brand-button"
+            class="search_filter-options-button"
             (click)="searchCountry(country)"
           >
             {{ country }}
@@ -61,7 +63,8 @@
     <button class="search_filter-button" type="button" (click)="showAvailableFilter('use')">
       Use
       <mat-icon class="search_inner-button-icon">
-        {{ openedFilter() === 'use' ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon>
+        {{ openedFilter() === 'use' ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon
+      >
     </button>
     <div
       class="search_filter-options"
@@ -72,7 +75,7 @@
           <button
             matButton="elevated"
             type="button"
-            class="search_brand-button"
+            class="search_filter-options-button"
             (click)="searchByUse(useCase)"
           >
             {{ useCase }}
@@ -85,7 +88,8 @@
     <button class="search_filter-button" type="button" (click)="showAvailableFilter('purpose')">
       Purpose
       <mat-icon class="search_inner-button-icon">
-        {{ openedFilter() === 'purpose' ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon>
+        {{ openedFilter() === 'purpose' ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon
+      >
     </button>
     <div
       class="search_filter-options"
@@ -96,7 +100,7 @@
           <button
             matButton="elevated"
             type="button"
-            class="search_brand-button"
+            class="search_filter-options-button"
             (click)="searchByPurpose(purpose)"
           >
             {{ purpose }}
@@ -115,7 +119,12 @@
     class="search_form-input"
   />
   <div class="search_suggestions-wrapper">
-    <button type="button" class="search_suggestions-arrow left" (click)="scrollSuggestions('left')">
+    <button
+      type="button"
+      class="search_suggestions-arrow left"
+      (click)="scrollSuggestions('left')"
+      aria-label="move left"
+    >
       <mat-icon>arrow_left</mat-icon>
     </button>
     <div class="search_suggestions" #suggestions>
@@ -125,7 +134,7 @@
             matButton="elevated"
             type="button"
             (click)="searchBrand(brand)"
-            class="search_brand-button"
+            class="search_filter-options-button"
           >
             {{ brand }}
           </button>
@@ -136,7 +145,7 @@
             matButton="elevated"
             type="button"
             (click)="searchBrand(brand)"
-            class="search_brand-button"
+            class="search_filter-options-button"
           >
             {{ brand }}
           </button>
@@ -147,6 +156,7 @@
       type="button"
       class="search_suggestions-arrow right"
       (click)="scrollSuggestions('right')"
+      aria-label="move left"
     >
       <mat-icon>arrow_right</mat-icon>
     </button>
