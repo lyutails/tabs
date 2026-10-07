@@ -4,41 +4,9 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
-    "code": "1122354",
-    "listingImage": {
-      "url": "/medias6/-normal-1122354-big-7612017055138-listingDesktop?context=bWFzdGVyfGltYWdlc3w1NjkyfGltYWdlL2pwZWd8aW1hZ2VzL2g3Yi9oZjMvMTQzMTk5MzU2ODQ2MzguanBnfDgyYWQzMmFjMmRiY2JmODU5NWFiMTY0MDkyNTJlMWY3YTVlNjVhOWQ0MTM4NjM4ZjYwN2NkZWQ1ZmFmYjc2ZGE"
-    },
-    "name": "Valmont Hydra3 Mask",
-    "price": {
-      "formattedValue": "25 897&nbsp;₽",
-      "value": 25897
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_300",
-      "name": "VALMONT"
-    },
-    "code": "1122352",
-    "listingImage": {
-      "url": "/medias6/-normal-1122352-big-7612017055145-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjg2MHxpbWFnZS9qcGVnfGltYWdlcy9oYmQvaGRkLzE0MzE5OTM0MzA4MzgyLmpwZ3w4MWY4ZjMxOGE3NmFjNjBlMzAwNTJjMDU0ODQwZjdlNWExYmY3NDVkNjRlNTYzYmIzYWMzMjY0NzkwZDdhMWUy"
-    },
-    "name": "Valmont Hydra3 Booster",
-    "price": {
-      "formattedValue": "26 771&nbsp;₽",
-      "value": 26771
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_300",
-      "name": "VALMONT"
-    },
     "code": "1122355",
     "listingImage": {
-      "url": "/medias6/-normal-1122355-big-7612017055169-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzQyMnxpbWFnZS9qcGVnfGltYWdlcy9oMWYvaDFhLzE0MzE5NTcxNDM1NTUwLmpwZ3w4ZmUzMzY5MzE5NTkyYTQ0MzczZGNmMjQ0NGQ5YjdiZjdiYWM5YjYzYWIwYmU2NWYwZDFlYzQxZTQ1MWVkYTVk"
+      "url": "/catalog-images/valmont/1122355.jpg"
     },
     "name": "Valmont Hydra3 Contour",
     "price": {
@@ -52,14 +20,14 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
-    "code": "1122353",
+    "code": "1122352",
     "listingImage": {
-      "url": "/medias6/-normal-1122353-big-7612017055121-listingDesktop?context=bWFzdGVyfGltYWdlc3w2MzM5fGltYWdlL2pwZWd8aW1hZ2VzL2hkOS9oNTEvMTQzMTkwMjY1MDM3MTAuanBnfGMzOTUzYjAxZjdmMDRiMTMzODllYjg2NmFhYjc5OGRkYjVmMzAzZmViYWMwMTBiOTVlNWIxZGQyNTUzNmY5OTY"
+      "url": "/catalog-images/valmont/1122352.jpg"
     },
-    "name": "Valmont Hydra3 Charging Cream",
+    "name": "Valmont Hydra3 Booster",
     "price": {
-      "formattedValue": "27 798&nbsp;₽",
-      "value": 27798
+      "formattedValue": "26 771&nbsp;₽",
+      "value": 26771
     },
     "country": "europe"
   },
@@ -70,7 +38,7 @@
     },
     "code": "1122351",
     "listingImage": {
-      "url": "/medias6/-normal-1122351-big-7612017055152-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTE5MHxpbWFnZS9qcGVnfGltYWdlcy9oZjkvaDRlLzE0MzE5OTMyOTMyMTI2LmpwZ3w2ZGQ5MzI5MmNhNmQxNDRmYjJmM2NhZDM2ZmIyNDA0ZWU5ODZmMmRjNDVkZDRjYWFhMWRjOWNiMmE3OWUwNWE4"
+      "url": "/catalog-images/valmont/1122351.jpg"
     },
     "name": "Valmont Hydra3 Mist",
     "price": {
@@ -84,9 +52,57 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
+    "code": "1122353",
+    "listingImage": {
+      "url": "/catalog-images/valmont/1122353.jpg"
+    },
+    "name": "Valmont Hydra3 Charging Cream",
+    "price": {
+      "formattedValue": "27 798&nbsp;₽",
+      "value": 27798
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_300",
+      "name": "VALMONT"
+    },
+    "code": "1122354",
+    "listingImage": {
+      "url": "/catalog-images/valmont/1122354.jpg"
+    },
+    "name": "Valmont Hydra3 Mask",
+    "price": {
+      "formattedValue": "25 897&nbsp;₽",
+      "value": 25897
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_300",
+      "name": "VALMONT"
+    },
+    "code": "1133446",
+    "listingImage": {
+      "url": "/catalog-images/valmont/1133446.jpg"
+    },
+    "name": "Valmont Multimasking Set",
+    "price": {
+      "formattedValue": "27 540&nbsp;₽",
+      "value": 27540
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_300",
+      "name": "VALMONT"
+    },
     "code": "1107944",
     "listingImage": {
-      "url": "/medias6/-normal-1107944-big-7612017062143-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDAzMnxpbWFnZS9qcGVnfGltYWdlcy9oMzAvaDAwLzEzODg3OTU1MzcwMDE0LmpwZ3w0YTlkNmM0NGNlOGFjZDMwZjZiMDQzODkzOTk3NDAwMWFlNWY1M2FkOTAwNTExMzYzMTU0ZWIyMWRiNjI1Mjhh"
+      "url": "/catalog-images/valmont/1107944.jpg"
     },
     "name": "Valmont 40 Years Anniversary Set",
     "price": {
@@ -102,7 +118,7 @@
     },
     "code": "1091320",
     "listingImage": {
-      "url": "/medias6/-normal-1091320-big-7612017062075.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w2NTc3fGltYWdlL2pwZWd8aW1hZ2VzL2hhNC9oOGUvMTI4MzU2ODMwNDEzMTAuanBnfGNiOGY4ZGQzNjdmMzU5YTZjYjNmMmFlZmJmOTk1YTMwOTMwMTUzNTQ0Njk2NWRmMTE0YmM5ODAxODc1ZDhiMmU"
+      "url": "/catalog-images/valmont/1091320.jpg"
     },
     "name": "Valmont The Exclusive Hydration Ritual Set",
     "price": {
@@ -118,7 +134,7 @@
     },
     "code": "1088765",
     "listingImage": {
-      "url": "/medias6/-normal-1088765-big-7612017054001.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w1NzE4fGltYWdlL2pwZWd8aW1hZ2VzL2hlZC9oMzkvMTI3OTQyNTQ1MjQ0NDYuanBnfDQ4YWMzNDFhMGEwOGEyOTQzMTEzYzljZTcxMTY5ZGZlY2FhZWM3ZGYyOGFiZmU3MTVmYzc0NjdjNTA3YWZlOTI"
+      "url": "/catalog-images/valmont/1088765.jpg"
     },
     "name": "Valmont Vital 24 Hour Light Cream",
     "price": {
@@ -134,7 +150,7 @@
     },
     "code": "906172",
     "listingImage": {
-      "url": "/medias6/product-906172-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEwMTQ5fGltYWdlL2pwZWd8cHJvZHVjdHMvaDA3L2gzOC8xMTQ3ODIwODI0OTg4Ni5qcGd8NWFkNzVmN2FlNzExODdmMjZlZDM3NWFiNmNlOWVkNWM1MzQwYTBkNzg2NTU4YjViYzFkOWY4M2RjMmUyMzc5Ng"
+      "url": "/catalog-images/valmont/906172.jpg"
     },
     "name": "Valmont Bubble Falls",
     "price": {
@@ -150,7 +166,7 @@
     },
     "code": "base_906170",
     "listingImage": {
-      "url": "/medias6/product-base-906170-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEwMjE1fGltYWdlL2pwZWd8cHJvZHVjdHMvaDA4L2g3MS8xMTQ3MzUwMDI0MTk1MC5qcGd8ZGQyNTRlMjgxMmFlNjBkNDgzMTk5OTA4YmNjYTZhZmIzYTFjOGIzN2UxMjA4ZDMzNjQyZDQxOGQ3MjI4MThlYQ"
+      "url": "/catalog-images/valmont/base_906170.jpg"
     },
     "name": "Valmont Vital Falls",
     "price": {
@@ -166,7 +182,7 @@
     },
     "code": "962732",
     "listingImage": {
-      "url": "/medias6/product-962732-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIxOTU1fGltYWdlL2pwZWd8cHJvZHVjdHMvaDI2L2gxZS8xMTQ3ODE5MzExMTA3MC5qcGd8NmUxNTgyNjMzMTU0NDdmYTY3MDM5ZjVmNTBkN2UzMjFkZWJjNDZhYjMwOGJlNzYyY2QzZGIyMDAwOTIxZDRlOA"
+      "url": "/catalog-images/valmont/962732.jpg"
     },
     "name": "Valmont Hydra3 Eye Emulsion",
     "price": {
@@ -182,7 +198,7 @@
     },
     "code": "673881",
     "listingImage": {
-      "url": "/medias6/product-673881-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEwNTY4fGltYWdlL2pwZWd8cHJvZHVjdHMvaDc2L2hhZi8xMTQ4MTc3NTcwMjA0Ni5qcGd8N2Q1MTk3YzQwZTljZGUxMGNkNTE4MzIzNmRkODgxMjQ1YjkyY2RhNmY1Zjc4NDBlZjU0ZWIzZGY4ZDg3ZDFhZA"
+      "url": "/catalog-images/valmont/673881.jpg"
     },
     "name": "Valmont Elixir Des Glaciers Vos Yeux",
     "price": {
@@ -198,7 +214,7 @@
     },
     "code": "906164",
     "listingImage": {
-      "url": "/medias6/product-906164-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEyNDE5fGltYWdlL2pwZWd8cHJvZHVjdHMvaDZiL2g2MC8xMTQ4MTAzMTQ3NTIzMC5qcGd8NzMyMjM4MTBkMDQzZmU3MGU1OTgxNWM1MTlkNmNjNjMwYjlhYmRkNmYyYjBkZDM4MGE4Zjc2MGY4YzhhZDdlNg"
+      "url": "/catalog-images/valmont/906164.jpg"
     },
     "name": "Valmont Bi-Falls",
     "price": {
@@ -212,25 +228,9 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
-    "code": "base_551697",
-    "listingImage": {
-      "url": "/medias6/product-551697-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDg3NzF8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oY2IvaDI3LzExNDc4MTkwOTgxMTUwLmpwZ3wzNTc3NWQ4OWQ2MjUzYmZhNmI1NTZlMGVmOWE0NWViMzcxY2JkNjljYmViYTE1Nzc1MTEwNGNjMTE3NmRkOGU1"
-    },
-    "name": "Valmont Prime Renewing Pack",
-    "price": {
-      "formattedValue": "35 625&nbsp;₽",
-      "value": 35625
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_300",
-      "name": "VALMONT"
-    },
     "code": "804708",
     "listingImage": {
-      "url": "/medias6/product-804708-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEyNTMyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDQwL2hlNS8xMTQ3ODIwNjExOTk2Ni5qcGd8MzYwMTU5OTM3YmZjMDkyMzIzMDE1MGJkMTFlNjYxZGJmOTExMTg3OTQzMDEwMmRmMWFlODRmNDFmYmQ4ZTA2Mg"
+      "url": "/catalog-images/valmont/804708.jpg"
     },
     "name": "Valmont Prime Lip Repair SPF 15",
     "price": {
@@ -246,9 +246,25 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
+    "code": "base_551697",
+    "listingImage": {
+      "url": "/catalog-images/valmont/base_551697.jpg"
+    },
+    "name": "Valmont Prime Renewing Pack",
+    "price": {
+      "formattedValue": "35 625&nbsp;₽",
+      "value": 35625
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_300",
+      "name": "VALMONT"
+    },
     "code": "1033303",
     "listingImage": {
-      "url": "/medias6/-normal-1033303-big-7612017259611.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4MzE1fGltYWdlL2pwZWd8aW1hZ2VzL2hhYy9oYTIvMTE1OTgxNDcxMjUyNzguanBnfGZmODVkYjFmZTcxNDY1YTY0ZTEwMmI2NzRlNTIwZjMzNWNiMmFmYWNlZTViZTljYmE2MzI4NTYwYjhkYTA0ZTI"
+      "url": "/catalog-images/valmont/1033303.jpg"
     },
     "name": "Valmont V-Firm Cream",
     "price": {
@@ -262,25 +278,9 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
-    "code": "1133446",
-    "listingImage": {
-      "url": "/medias6/-normal-1133446-big-7612017061818-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDcyNHxpbWFnZS9qcGVnfGltYWdlcy9oNzEvaDMzLzE1OTUzODc2MjIxOTgyLmpwZ3w2ZGU0NzhhMmE1ODM4NTBiNDVkNTYzMjI2MWM5MGE0M2ExZTgyYjU5NTUwNTI4NzFkYmI4M2I2MWFjNzlhOTc1"
-    },
-    "name": "Valmont Multimasking Set",
-    "price": {
-      "formattedValue": "27 540&nbsp;₽",
-      "value": 27540
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_300",
-      "name": "VALMONT"
-    },
     "code": "1126532",
     "listingImage": {
-      "url": "/medias6/-normal-1126532-big-7612017051529-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDQzNHxpbWFnZS9qcGVnfGltYWdlcy9oOWUvaGY0LzE2Mjc4MTk0NTUyODYyLmpwZ3wyZTMyZjMwMGRjOGVhZTcwZTZkYmZmNGFmZDUzN2ZlNzM1ODAxZWQ2N2M0MGQxZGU4ZTY1MzFiOWJkYTg5ZjUx"
+      "url": "/catalog-images/valmont/1126532.jpg"
     },
     "name": "Valmont D. Solution Booster",
     "price": {
@@ -296,7 +296,7 @@
     },
     "code": "1128939",
     "listingImage": {
-      "url": "/medias6/-normal-1128939-big-7612017062150-listingDesktop?context=bWFzdGVyfGltYWdlc3w2NDM1fGltYWdlL2pwZWd8aW1hZ2VzL2hiZS9oZDYvMTQ3OTgwOTcwODg1NDIuanBnfDhhNDA5MjI4Njg1ZWY2ZWM5ZmUyMzhjY2JkZTg3NzFlMDUxZTc0MWQ4NDY3OTgwMjNmMjFlNDM1MmI2Y2Y3NDQ"
+      "url": "/catalog-images/valmont/1128939.jpg"
     },
     "name": "Valmont Discovery Set Limited Edition",
     "price": {
@@ -312,7 +312,7 @@
     },
     "code": "1088767",
     "listingImage": {
-      "url": "/medias6/-normal-1088767-big-7612017054049.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w1OTExfGltYWdlL2pwZWd8aW1hZ2VzL2hkNS9oZGUvMTI3OTQyNTYxNjI4NDYuanBnfGY4ZDRmY2Y0MTRiY2UyYTkxMmI2Njk2N2E5ZDQzZWM3M2IyZjIxNGJmYzM0YzQ1YWY1ZTdiOTZiM2I1NWMxMGQ"
+      "url": "/catalog-images/valmont/1088767.jpg"
     },
     "name": "Valmont Vital Contour Cream",
     "price": {
@@ -328,7 +328,7 @@
     },
     "code": "1088763",
     "listingImage": {
-      "url": "/medias6/-normal-1088763-big-7612017054032.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzk3NnxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaDY4LzEyNzk0MjU1MzEwODc4LmpwZ3wwYWNkOWExN2I0ZjBkYzNjMDEzY2VlYTNlYzZjMTgyNzFhZTkxYTBhNjJiYjdjOTBiYzIzMjNlYTZmMzRmNTY5"
+      "url": "/catalog-images/valmont/1088763.jpg"
     },
     "name": "Valmont Vital B.Serum",
     "price": {
@@ -344,7 +344,7 @@
     },
     "code": "1088764",
     "listingImage": {
-      "url": "/medias6/-normal-1088764-big-7612017054018.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDkxN3xpbWFnZS9qcGVnfGltYWdlcy9oZTcvaDc2LzEyNzk0MjU0OTE3NjYyLmpwZ3w0NGFjMmI5ODEzZWU5MGUwMWIxMjA1NThkNmY2YzQzNTY4NzE2ZDI1OWFmY2UzNGVjNDY5ZDBkOWQzOTE1MzAy"
+      "url": "/catalog-images/valmont/1088764.jpg"
     },
     "name": "Valmont Vital B.Fluid",
     "price": {
@@ -360,7 +360,7 @@
     },
     "code": "1088766",
     "listingImage": {
-      "url": "/medias6/-normal-1088766-big-7612017054056.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w1Nzg3fGltYWdlL2pwZWd8aW1hZ2VzL2g3Ny9oNDEvMTI3OTQyNTU3Njk2MzAuanBnfDhkOTExNmY4NTg1OGVmOWRiYjk4NjA0NTI5N2E3YzM0N2NjZGE3MTA0NzY3ODhjYzgxMDdhMTg2NzZhMzk1Njg"
+      "url": "/catalog-images/valmont/1088766.jpg"
     },
     "name": "Valmont Vital Regenera I Rich Cream",
     "price": {
@@ -376,7 +376,7 @@
     },
     "code": "base_1049275",
     "listingImage": {
-      "url": "/medias6/-normal-base-1049275-big-7612017058030.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4Njk5fGltYWdlL2pwZWd8aW1hZ2VzL2hhOC9oYzQvMTE3NzM0MTg2MzUyOTQuanBnfGM4NjM5YTkyNzkyMWM3NDg3OWE5ZGU3NTQyZjExMzAyMzlkZTRlZGYzNWJmMGIzYzdkZTk4ZGQ2YjljYjVkZWM"
+      "url": "/catalog-images/valmont/base_1049275.jpg"
     },
     "name": "Valmont Hand 24 Hour",
     "price": {
@@ -392,7 +392,7 @@
     },
     "code": "906173",
     "listingImage": {
-      "url": "/medias6/product-906173-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDc5MzZ8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oYzUvaGRlLzExNDc5NjQ0NzMzNDcwLmpwZ3wyOTk2NjEwNTJhNTU1MzJhMTc0ZGFiZGM1YTNiMmU2OWE1NDJjN2MxZmI1N2FhZDZhMDI2ODE2NzY4M2Y1OWM1"
+      "url": "/catalog-images/valmont/906173.jpg"
     },
     "name": "Valmont Face Exfoliant",
     "price": {
@@ -409,7 +409,7 @@
     },
     "code": "1033306",
     "listingImage": {
-      "url": "/medias6/-normal-1033306-big-7612017858210.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w5NDA3fGltYWdlL2pwZWd8aW1hZ2VzL2gwMi9oMjkvMTE1OTgxNDgzNzA0NjIuanBnfDNjOGE5ZmQ4ODJlZTk5YzljNDJlYzE0MjI3YjVkNDIxMTM1MGU0YTRmY2RlMWExZWZlYjQ3NGI5OThmN2Y0ZmY"
+      "url": "/catalog-images/valmont/1033306.jpg"
     },
     "name": "Valmont DetO2x Eye",
     "price": {
@@ -425,7 +425,7 @@
     },
     "code": "1080932",
     "listingImage": {
-      "url": "/medias6/-normal-1080932-big-7612017059433.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w2NzY5fGltYWdlL2pwZWd8aW1hZ2VzL2hlOC9oMDcvMTIzMzg3ODg2MzA1NTguanBnfDM5N2FjNTY1M2JlNjNjYTQxOTIzNWQzOGY3MGRmZThlNTk1NWY2YjA2NzE0MDNlYTg4N2E4ZGJhOGIxMjA3Yzg"
+      "url": "/catalog-images/valmont/1080932.jpg"
     },
     "name": "Valmont V-Lift Eye Cream",
     "price": {
@@ -441,7 +441,7 @@
     },
     "code": "base_906161",
     "listingImage": {
-      "url": "/medias6/product-base-906161-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDc5OTJ8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oZmIvaDA0LzExNDQ4MTk1NjQ1NDcwLmpwZ3xkNzY2ODVkNjA5MDQ4NTBmMzQ0Y2Q2ZWZjMDc4NTljYWQ3NzgzODA5N2MzYTNmNTQxMzU2ZTMxNzJkNTBhNzFj"
+      "url": "/catalog-images/valmont/base_906161.jpg"
     },
     "name": "Valmont Wonder Falls",
     "price": {
@@ -457,7 +457,7 @@
     },
     "code": "1033304",
     "listingImage": {
-      "url": "/medias6/-normal-1033304-big-7612017059624.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMDMzNXxpbWFnZS9qcGVnfGltYWdlcy9oYjEvaDY1LzExNTk4MTQ3NTE4NDk0LmpwZ3w5NzE4NTM2ODAwNGNkYjZlYjJjNWViYWIyNjE4ODlmNDg4YjU4ZGViMGQ2MWM0MWZhNTdhZTJmNzc1MTkwMjRj"
+      "url": "/catalog-images/valmont/1033304.jpg"
     },
     "name": "Valmont V-Firm Eye",
     "price": {
@@ -473,7 +473,7 @@
     },
     "code": "839106",
     "listingImage": {
-      "url": "/medias6/product-839106-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDgyMzd8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oYjUvaDY0LzExNDc4MTk5MDc0ODQ2LmpwZ3xhMGM5MTY5ZDg1NmM4NjFlY2Q1ZjMwOTI2YTMzYWI0ODllYzFjZWEyN2UzZWY2YWMwNzlmN2RlODdmMzhiZjQx"
+      "url": "/catalog-images/valmont/839106.jpg"
     },
     "name": "Valmont Energy DETO2X Cream",
     "price": {
@@ -489,7 +489,7 @@
     },
     "code": "826812",
     "listingImage": {
-      "url": "/medias6/product-826812-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEzMDUzfGltYWdlL2pwZWd8cHJvZHVjdHMvaGZkL2g5Ni8xMTUxODgyMDk0MTg1NC5qcGd8YjJiYWRlZmY3ZGRhYjZmMDhhYWQyNGY2YjAxNGUwNWM4NjhiMWFjOWIzNGYxMzc5ZmU3NzRjNzU5OWJjOTE4Mg"
+      "url": "/catalog-images/valmont/826812.jpg"
     },
     "name": "Valmont Moisturizing Booster",
     "price": {
@@ -506,7 +506,7 @@
     },
     "code": "1033305",
     "listingImage": {
-      "url": "/medias6/-normal-1033305-big-7612017059600.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNjY3N3xpbWFnZS9qcGVnfGltYWdlcy9oZTUvaDIzLzExNTk4MTUxNjE0NDk0LmpwZ3xhYWFjMTE1MGI1MmNhNmUzZWM2OWE5Y2JiOTBjOTFiNTAwMGUzNGUxMDZmMWE1ZGNkMjNhZGMyZDMzZGM2ODU4"
+      "url": "/catalog-images/valmont/1033305.jpg"
     },
     "name": "Valmont V-Firm Serum",
     "price": {
@@ -523,7 +523,7 @@
     },
     "code": "986878",
     "listingImage": {
-      "url": "/medias6/product-986878-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE2NDEwfGltYWdlL2pwZWd8cHJvZHVjdHMvaDlhL2hhNy8xMTQ3OTY0MTMyNTU5OC5qcGd8ZWE5YjhmM2M1MjgyODNmNTQ0MWJkZmVjYjA4OGNjNWM3ZjQyMTYxYTlhZTljZGU2MGQyOTI2ZmRjOWI1ZWE5Mw"
+      "url": "/catalog-images/valmont/986878.jpg"
     },
     "name": "Valmont Luminosity LumiCream",
     "price": {
@@ -539,7 +539,7 @@
     },
     "code": "855183",
     "listingImage": {
-      "url": "/medias6/product-855183-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEzOTcwfGltYWdlL2pwZWd8cHJvZHVjdHMvaGIyL2gyOC8xMTQ4MTc3Mzk5ODExMC5qcGd8NDBhMDE2ZDE4OTkxMTdmNjA0MDU3MzAxNDA3MjM1NDFlMGQ0MjdiNjY5NWU0M2U3MGVmOWU3ZjE0OWU1ZDlhYg"
+      "url": "/catalog-images/valmont/855183.jpg"
     },
     "name": "Valmont Restoring Perfection UVB SPF 50",
     "price": {
@@ -555,7 +555,7 @@
     },
     "code": "base_906168",
     "listingImage": {
-      "url": "/medias6/product-base-906168-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEwMTM1fGltYWdlL2pwZWd8cHJvZHVjdHMvaDZmL2hhOC8xMTQ3MzQ3Nzg5NDE3NC5qcGd8MTg4YThkN2JlMDBlNDIwNGRlMDJjNTE5Njc5MzVjM2NkNTM0MDE4NjA5N2E4ODE4ZDRmMzMyNDg1YTFmODVmNg"
+      "url": "/catalog-images/valmont/base_906168.jpg"
     },
     "name": "Valmont Fluid Falls",
     "price": {
@@ -571,7 +571,7 @@
     },
     "code": "1080930",
     "listingImage": {
-      "url": "/medias6/-normal-1080930-big-7612017059426.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w1Nzk3fGltYWdlL2pwZWd8aW1hZ2VzL2hmOS9oNjIvMTIzMzg3ODcxODg3NjYuanBnfGJiN2U4YTJhZjJlYmFhNWY5YTk1YmY1ODAzODM3NTdjZGViZDI2NTg1N2YwMGE3ZTlkYjBlOWQyMTJjNjZiMGQ"
+      "url": "/catalog-images/valmont/1080930.jpg"
     },
     "name": "Valmont V-Lift Cream",
     "price": {
@@ -587,7 +587,7 @@
     },
     "code": "1080931",
     "listingImage": {
-      "url": "/medias6/-normal-1080931-big-7612017059419.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTY0M3xpbWFnZS9qcGVnfGltYWdlcy9oMGYvaGNmLzEyMzM4Nzg3NTgxOTgyLmpwZ3w2MWM5NGNjMDk5M2IxN2ZiYjU5MzllZjE2ODQzZmIyMDBlNjk5NjRlZDhlODNiNGU0NTljY2I3NWExMDY3MzNl"
+      "url": "/catalog-images/valmont/1080931.jpg"
     },
     "name": "Valmont V-Lift Serum",
     "price": {
@@ -603,7 +603,7 @@
     },
     "code": "710658",
     "listingImage": {
-      "url": "/medias6/product-710658-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE4MTg5fGltYWdlL2pwZWd8cHJvZHVjdHMvaDYwL2gzMC8xNjg1NzQ3NjM5OTEzNC5qcGd8NmE1NWYwNmEwMjQ3YmIzYmM3NWYyY2Q1Nzg3YzFmYTMzYWI4ZDA0M2IyMDYyNTViODMwMzJmYzI2NWRlYjZiNg"
+      "url": "/catalog-images/valmont/710658.jpg"
     },
     "name": "Valmont Hydra3 Regenetic Serum",
     "price": {
@@ -619,7 +619,7 @@
     },
     "code": "986877",
     "listingImage": {
-      "url": "/medias6/product-986877-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE2NjQwfGltYWdlL2pwZWd8cHJvZHVjdHMvaDdjL2g1Yi8xMTUyMTQwNjE3MzIxNC5qcGd8ZTI2ODAxNTIzZmY5ODBkYThjNWQ2ZjkzN2Q1MGQ0MDczYTBiYzU4YWMxODRmODA1MzUyYTAxMGI4OTlkNGNhNA"
+      "url": "/catalog-images/valmont/986877.jpg"
     },
     "name": "Valmont Luminosity LumiSence",
     "price": {
@@ -633,25 +633,9 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
-    "code": "673880",
-    "listingImage": {
-      "url": "/medias6/product-673880-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE2MjQ0fGltYWdlL2pwZWd8cHJvZHVjdHMvaGY2L2gzNS8xMTUyNjU0MDM5NDUyNi5qcGd8MzllZTc1YzBmZTNlNDVjMjdhODQxNGIyYzllNmFhMGQ2NTM5Mjk1YTQ0YjdkMTY1OGYyZDdiM2FmYjVhOWVhNA"
-    },
-    "name": "Valmont Elixir Des Glaciers Serum Precieux",
-    "price": {
-      "formattedValue": "66 150&nbsp;₽",
-      "value": 66150
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_300",
-      "name": "VALMONT"
-    },
     "code": "base_906163",
     "listingImage": {
-      "url": "/medias6/product-base-906163-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDc2NjV8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oOWMvaDQ0LzExNDgxMDI1MjE2NTQyLmpwZ3wxMTc3NmQ0N2NhNzcyMzM5N2NkYWRhNmMzNmFhYmEyMzNlN2UyMmY3YzM2Y2ZlMjU2NDc2NjFkYmQ3YjM1ZjIz"
+      "url": "/catalog-images/valmont/base_906163.jpg"
     },
     "name": "Valmont Icy Falls",
     "price": {
@@ -667,7 +651,7 @@
     },
     "code": "base_906166",
     "listingImage": {
-      "url": "/medias6/product-base-906166-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEwMDkxfGltYWdlL2pwZWd8cHJvZHVjdHMvaDJmL2g2My8xMTQ3ODU5MzE3NTU4Mi5qcGd8ODM1NzBkZmE2NjVmODcwMDJmMjg5YzE0ZjhhYjhlZmFkY2NlNmZmMDk1MThiNjg5YzhhOWU4NzIyMWQ3MTM3Yg"
+      "url": "/catalog-images/valmont/base_906166.jpg"
     },
     "name": "Valmont Aqua Falls",
     "price": {
@@ -681,9 +665,25 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
+    "code": "673880",
+    "listingImage": {
+      "url": "/catalog-images/valmont/673880.jpg"
+    },
+    "name": "Valmont Elixir Des Glaciers Serum Precieux",
+    "price": {
+      "formattedValue": "66 150&nbsp;₽",
+      "value": 66150
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_300",
+      "name": "VALMONT"
+    },
     "code": "715882",
     "listingImage": {
-      "url": "/medias6/product-715882-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDk4NjB8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oODMvaGI0LzExNTE4NDk1ODgzMjk0LmpwZ3xmNDIyZGQ4ZjZhZDA2MzE2N2JkZjRhM2U2NzU4ZTE5MjVjZDA1YjdlNDVkOTRkZjUyNmFkYjFlYTFkNWUyMGEw"
+      "url": "/catalog-images/valmont/715882.jpg"
     },
     "name": "Valmont Elixir Des Glaciers Votre Visage",
     "price": {
@@ -699,7 +699,7 @@
     },
     "code": "710657",
     "listingImage": {
-      "url": "/medias6/product-710657-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDg3NDV8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oZGEvaDc3LzExNDc5NjQ5MTU3MTUwLmpwZ3wyNGJkZjQ4OGM2ZGMxYmRlZjZkNGQyOTk3MDY0YTE3ZjlmOTViYWFkZTMwNzI0NjlkYWRkMzdkODM0ZWE0Yzg1"
+      "url": "/catalog-images/valmont/710657.jpg"
     },
     "name": "Valmont Hydra 3 Regenetic Cream",
     "price": {
@@ -715,12 +715,12 @@
     },
     "code": "986879",
     "listingImage": {
-      "url": "/medias6/product-986879-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDYzMTd8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oZmMvaDVkLzExNDc4MTk2NTE4OTQyLmpwZ3w2ZjVmNTdhNWEyZDE3ZWUyZWI0ZmY2NzY5Zjk3ZjFjYzJmM2Q2YmQyNmQ5Y2JiMGZjMjA4NmJlNDI2NzRkZDFm"
+      "url": "/catalog-images/valmont/986879.jpg"
     },
     "name": "Valmont Luminosity LumiMask",
     "price": {
-      "formattedValue": "19 008&nbsp;₽",
-      "value": 19008
+      "formattedValue": "19 305&nbsp;₽",
+      "value": 19305
     },
     "country": "europe"
   },
@@ -731,7 +731,7 @@
     },
     "code": "base_1049277",
     "listingImage": {
-      "url": "/medias6/-normal-base-1049277-7612017054070.jpg-listingDesktop?context=bWFzdGVyfHJvb3R8MTIxMzF8aW1hZ2UvanBlZ3xoODgvaGNjLzE2ODU4NzkyNzU1MjMwLmpwZ3wwNjk0ODk2YWJjMTY0MmZjOWMzMjZmODU0ZjUyOWVmNDA1ZTc0YjkyNTNkMTdlMGNiMDJiYjNlOTU5M2IwMzcx"
+      "url": "/catalog-images/valmont/base_1049277.jpg"
     },
     "name": "Valmont Body 24 Hour",
     "price": {
@@ -747,7 +747,7 @@
     },
     "code": "base_1080933",
     "listingImage": {
-      "url": "/medias6/-normal-1080933-big-7612017059440.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w1ODM2fGltYWdlL2pwZWd8aW1hZ2VzL2hkNi9oMzAvMTIzMzg3ODkwMjM3NzQuanBnfDNhNDZiZjdmNDNiNmY1NWY0MGU0MmU3YmMxNzFmOTFmNGJmZjVlMDliY2RmNDI2OGQwOGNiNzE5OTk3MzY2MWU"
+      "url": "/catalog-images/valmont/base_1080933.jpg"
     },
     "name": "Valmont V-Lift Neck Cream",
     "price": {
@@ -763,12 +763,12 @@
     },
     "code": "677798",
     "listingImage": {
-      "url": "/medias6/product-677798-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDg2Njh8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oOWEvaDhlLzExNDc5Njc0MzU1NzQyLmpwZ3w5NzNkZjZiNmQxZGU2ZGQ0ZDMxMWI3MTE2MGQwOTE3ZmQ0ZWFhYWI0ZmEwOTNlNzJhMTRhZjRkOTM4YTA1Mjll"
+      "url": "/catalog-images/valmont/677798.jpg"
     },
     "name": "Valmont Prime Regenera II",
     "price": {
-      "formattedValue": "26 010&nbsp;₽",
-      "value": 26010
+      "formattedValue": "26 443&nbsp;₽",
+      "value": 26443
     },
     "country": "europe"
   },
@@ -779,7 +779,7 @@
     },
     "code": "956927",
     "listingImage": {
-      "url": "/medias6/product-956927-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDY0NjJ8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oOTkvaGNiLzExNDgxMDc1OTA4NjM4LmpwZ3w4YzA2NDYyMmFiMTNiMWI4ZmI2ZjIyZjUxOTUwMDA4OWFjZDcwOTQ1ZjdjYjJjZTJlYmU5Mjk1ZTNlYWE3YjM3"
+      "url": "/catalog-images/valmont/956927.jpg"
     },
     "name": "Valmont Energy Deto2x Pack",
     "price": {
@@ -795,7 +795,7 @@
     },
     "code": "986876",
     "listingImage": {
-      "url": "/medias6/product-986876-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEzNzk0fGltYWdlL2pwZWd8cHJvZHVjdHMvaGViL2hjZS8xMTQ3ODE5MTgzMzExOC5qcGd8MmZlMTI5YzRiYWE4MzBlOWY4ZDI1MmRlMDM4NzJhNDkyMmVhZDg0ZWM1YjBjMDZlNGZmNTBhYmM1Y2JlODQxYw"
+      "url": "/catalog-images/valmont/986876.jpg"
     },
     "name": "Valmont Luminosity LumiPeel",
     "price": {
@@ -812,7 +812,7 @@
     },
     "code": "1107886",
     "listingImage": {
-      "url": "/medias6/-normal-1107886-big-7612017062099-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMDMwMnxpbWFnZS9qcGVnfGltYWdlcy9oOTgvaGI0LzEzNDgzODY5MDExOTk4LmpwZ3wxODUwOWU0ZGExNWQxOGI5ZTM2YTAwMmEwNzM3MzJhM2ZkMzRjYTI2ZTIyYmJiY2M1M2Y3OGQyYjdiMzlkZTli"
+      "url": "/catalog-images/valmont/1107886.jpg"
     },
     "name": "Valmont Celadon Odyssey Vitality Cracker Set",
     "price": {
@@ -826,25 +826,9 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
-    "code": "1107887",
-    "listingImage": {
-      "url": "/medias6/-normal-1107887-big-7612017051390-listingDesktop?context=bWFzdGVyfGltYWdlc3w0MzE2fGltYWdlL2pwZWd8aW1hZ2VzL2hmYi9oNjUvMTM4ODgwMTM2MzE1MTguanBnfDIzYTFjMmFlZTJkYzUxNzdjODFjNTkyY2IxNzFjMDE4ZGRiMmFkODY5NTRlNmNjY2Y1MzE2ZjJjNzdmYWYxOGE"
-    },
-    "name": "Valmont Intensive Care Regenerating Mask Treatment Pack",
-    "price": {
-      "formattedValue": "75 600&nbsp;₽",
-      "value": 75600
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_300",
-      "name": "VALMONT"
-    },
     "code": "1109505",
     "listingImage": {
-      "url": "/medias6/-normal-1109505-big-7612017051376-listingDesktop?context=bWFzdGVyfGltYWdlc3w0MzE2fGltYWdlL2pwZWd8aW1hZ2VzL2gzOC9oMTcvMTM0OTA1MzgyMTc1MDIuanBnfDhjM2E3ZGEyNWYxZDhkNGM5YmM1Yjg1ZmJiZjhlMDU1ZGQwYThjNzZiM2ZkYWRmMDEwZTI1ZTA0MjQzZTFkMTE"
+      "url": "/catalog-images/valmont/1109505.jpg"
     },
     "name": "Valmont Intensive Care Regenerating Mask Treatment",
     "price": {
@@ -858,9 +842,25 @@
       "code": "rg_brand_300",
       "name": "VALMONT"
     },
+    "code": "1107887",
+    "listingImage": {
+      "url": "/catalog-images/valmont/1107887.jpg"
+    },
+    "name": "Valmont Intensive Care Regenerating Mask Treatment Pack",
+    "price": {
+      "formattedValue": "75 600&nbsp;₽",
+      "value": 75600
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_300",
+      "name": "VALMONT"
+    },
     "code": "1069243",
     "listingImage": {
-      "url": "/medias6/-normal-1069243-big-7612017453019.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMzMvaDYxLzEyMDc5MTc3MTcwOTc0LmpwZ3xlM2E0ZDA4MGQ1NjA5NDRmYjM1NDllNDFmMzdjZjYwOWQ5YTczMmVjMDE4ZjgzMGNhYTNmYzVmZTExNWJmNTNk"
+      "url": "/catalog-images/valmont/1069243.jpg"
     },
     "name": "Valmont LumiCity UV Protection and Radiance Cream SPF 50",
     "price": {
@@ -876,7 +876,7 @@
     },
     "code": "935288",
     "listingImage": {
-      "url": "/medias6/product-935288-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDExNzQzfGltYWdlL2pwZWd8cHJvZHVjdHMvaGMxL2g4NS8xMTQ4MTc3NTI3NjA2Mi5qcGd8NmE1YmU2ZTk3OGIxYWZkMmE5OWQ1ZGQ3NTcxYTQwNDY0ZDViOGI0MmY3MWVkNWM1YmM0ZDhjN2UyYjgzMWQxNQ"
+      "url": "/catalog-images/valmont/935288.jpg"
     },
     "name": "Valmont Primary Veil",
     "price": {
@@ -892,7 +892,7 @@
     },
     "code": "551587",
     "listingImage": {
-      "url": "/medias6/product-551587-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDg0Mzl8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oMTAvaDM0LzExNDc5NjI4MzQ5NDcwLmpwZ3xhNTEwN2QwYTE2M2Y5YmY2YTkxZmEzNmQ1ZGFiYzU3ZDJhOThjODExZTc0OGNkYjQ0MTMxNjU4MjBiODQ4NDE5"
+      "url": "/catalog-images/valmont/551587.jpg"
     },
     "name": "Valmont Purifying Pack",
     "price": {
@@ -908,7 +908,7 @@
     },
     "code": "673866",
     "listingImage": {
-      "url": "/medias6/product-673866-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDg0NjB8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oOGUvaDVjLzExNTI2NTQwMDAxMzEwLmpwZ3wzMzE0ODAwMzg5ZjMwNmQxNjNhMGUxODZhMTlmZDNmMWYwZDEzMTY1MzE1NTkxZDU3YjBhZGQ1ZmNhZDJlMTQx"
+      "url": "/catalog-images/valmont/673866.jpg"
     },
     "name": "Valmont Eye regenerating mask",
     "price": {

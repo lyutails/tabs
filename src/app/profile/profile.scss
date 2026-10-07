@@ -35,9 +35,15 @@
     &_upload-button {
         margin-top: 10px;
         align-self: center;
+        background-color: var(--decorative-elements);
+        color: var(--secondary-color);
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
 
         &:hover {
             cursor: pointer;
+            background-color: var(--secondary-color);
+            color: var(--decorative-elements);
         }
     }
 
@@ -84,6 +90,10 @@
         opacity: 0.1;
         z-index: -1;
     }
+
+    &_ava-info {
+        font-size: 16px;
+    }
 }
 
 p {
@@ -117,7 +127,7 @@ mat-error {
             margin-top: 20px;
         }
 
-        .profile_ava-info{
+        .profile_ava-info {
             width: 80px;
             position: absolute;
             color: black;

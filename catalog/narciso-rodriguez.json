@@ -4,25 +4,9 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
-    "code": "base_1101120",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1101120-big-3423222121976-listingDesktop?context=bWFzdGVyfGltYWdlc3w3MjE0fGltYWdlL2pwZWd8aW1hZ2VzL2g1YS9oNzEvMTMzNTMxNDU1MzI0NDYuanBnfGM1ZGNhMGIyZjM0OTNjODk5MWRjNGMxMmU0MDg2NmE0NDA2ZWY0ZTU4Yjk3YzRmOTIyNzg3NDY3YWVjZmM3MjE"
-    },
-    "name": "Narciso Rodriguez Narciso Radiante Eau de Parfum ",
-    "price": {
-      "formattedValue": "6 390&nbsp;₽",
-      "value": 6390
-    },
-    "country": "usa"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_95",
-      "name": "NARCISO RODRIGUEZ"
-    },
     "code": "base_653807",
     "listingImage": {
-      "url": "/medias6/product-base-653807-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDgzMzh8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oZDkvaDI2LzExNDcwODc2Mzc3MTE4LmpwZ3wzYjMxYzhkMDc3OWM0NmZlNWY1MTQzODZmMzllZDMzMTQ4NWQ3NzQzZGM5NGI5NjI4YWVmYzg1YTk0MWY2Njk1"
+      "url": "/catalog-images/narciso-rodriguez/base_653807.jpg"
     },
     "name": "Narciso Rodriguez For Her Eau de Toilette",
     "price": {
@@ -39,7 +23,7 @@
     },
     "code": "base_819796",
     "listingImage": {
-      "url": "/medias6/product-base-819796-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDY3MDJ8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oYTcvaGM2LzExMzQzMjkzMTg2MDc4LmpwZ3wzZjk2OTZkODI0ZWI1MTlhN2U4OTZkOWQ5Y2I1NTU5MGYyMGRkZWFkMDBlNjA3YjNjMTMxNTc4Njg1MDdmMDU0"
+      "url": "/catalog-images/narciso-rodriguez/base_819796.jpg"
     },
     "name": "Narciso Rodriguez Narciso Poudree Eau de Parfum",
     "price": {
@@ -53,9 +37,25 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
+    "code": "base_1101120",
+    "listingImage": {
+      "url": "/catalog-images/narciso-rodriguez/base_1101120.jpg"
+    },
+    "name": "Narciso Rodriguez Narciso Radiante Eau de Parfum ",
+    "price": {
+      "formattedValue": "6 390&nbsp;₽",
+      "value": 6390
+    },
+    "country": "usa"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_95",
+      "name": "NARCISO RODRIGUEZ"
+    },
     "code": "base_1131125",
     "listingImage": {
-      "url": "/medias6/-normal-base-1131125-big-3423222145057-listingDesktop?context=bWFzdGVyfGltYWdlc3w3Mzg1fGltYWdlL2pwZWd8aW1hZ2VzL2gyMi9oMDgvMTU0MzAwMDc2NTIzODIuanBnfGMyYTIzNWRkNTk4NzhiY2U0NjllMjg4YzYyZTk0MzE3NDYzM2ViMDEwN2U2Mzg3YTE5MDQxYTc4MzkzYWYyMTE"
+      "url": "/catalog-images/narciso-rodriguez/base_1131125.jpg"
     },
     "name": "Narciso Rodriguez For Him Musc Santal Eau de Parfum Intense",
     "price": {
@@ -69,9 +69,25 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
+    "code": "1119224",
+    "listingImage": {
+      "url": "/catalog-images/narciso-rodriguez/1119224.jpg"
+    },
+    "name": "Narciso Rodriguez Narciso Poudree Eau de Parfum Set Limited Edition",
+    "price": {
+      "formattedValue": "7 990&nbsp;₽",
+      "value": 7990
+    },
+    "country": "usa"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_95",
+      "name": "NARCISO RODRIGUEZ"
+    },
     "code": "base_1125276",
     "listingImage": {
-      "url": "/medias6/-normal-base-1125276-big-3423222121600-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDA1NHxpbWFnZS9qcGVnfGltYWdlcy9oMDIvaDZlLzE0NTg4NzczNzI4Mjg2LmpwZ3xjNDU5NDZhZmJkYmQzOTlkNmE4YzdlYjAzYzc4ZWUwYzZmZGZmOTNiODFjNWUwOGI2NjVlMWU3Mjg0NDIwYThk"
+      "url": "/catalog-images/narciso-rodriguez/base_1125276.jpg"
     },
     "name": "Narciso Rodriguez All Of Me Floral Eau de Parum",
     "price": {
@@ -85,30 +101,14 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
-    "code": "1119224",
-    "listingImage": {
-      "url": "/medias6/-normal-1119224-big-3423222133832-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDMzOXxpbWFnZS9qcGVnfGltYWdlcy9oMjMvaGE3LzE0NTg4Njg3MDg5Njk0LmpwZ3xlNzcwNWFhZDZiZWVmMWUyZjlmYzhjY2UyMTgzZWE5MjhjNDIzMTQ2YWVlZmVlZDQ5MzRiZDNjOGI1ZDhkM2Fh"
-    },
-    "name": "Narciso Rodriguez Narciso Poudree Eau de Parfum Set Limited Edition",
-    "price": {
-      "formattedValue": "11 700&nbsp;₽",
-      "value": 11700
-    },
-    "country": "usa"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_95",
-      "name": "NARCISO RODRIGUEZ"
-    },
     "code": "1123467",
     "listingImage": {
-      "url": "/medias6/-normal-1123467-big-3423222133689-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDE0MXxpbWFnZS9qcGVnfGltYWdlcy9oZmMvaDE1LzE0MjUwMTcwMTIyMjcwLmpwZ3xjNmQ0MWE1NDllNTA0M2Q2NjM5MmRhNzA3ZTNhZjAzZDBmMWNiODY3NjkwNGJmNmY0ZWIwZmUwOTc2YWNlYzY4"
+      "url": "/catalog-images/narciso-rodriguez/1123467.jpg"
     },
     "name": "Narciso Rodriguez For Her Set Limited Edition",
     "price": {
-      "formattedValue": "11 925&nbsp;₽",
-      "value": 11925
+      "formattedValue": "7 990&nbsp;₽",
+      "value": 7990
     },
     "country": "usa"
   },
@@ -119,7 +119,7 @@
     },
     "code": "1119218",
     "listingImage": {
-      "url": "/medias6/-normal-1119218-big-3423222133696-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDIxOHxpbWFnZS9qcGVnfGltYWdlcy9oYWUvaGIyLzEzOTM5MDA4MzM5OTk4LmpwZ3w0M2I2NzZhYTI0NTc0YjE1MTZjNjdmNjE2Y2M3NmM1NWNhY2NmODc3NDE4YmJhYjFhZmJkMGRlYzliMjczNGE4"
+      "url": "/catalog-images/narciso-rodriguez/1119218.jpg"
     },
     "name": "Narciso Rodriguez For Her Set II",
     "price": {
@@ -133,14 +133,14 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
-    "code": "1119226",
+    "code": "1119221",
     "listingImage": {
-      "url": "/medias6/-normal-1119226-big-3423222133856-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDg0MHxpbWFnZS9qcGVnfGltYWdlcy9oZDkvaDk0LzEzOTM4NzA3MzMzMTUwLmpwZ3wwNjJiZDM5NmYwZGMwM2IxNWZjNmViMzQzZmYxMzEzMWQ5MjQ4MmU4OTNiZDFiMjA0Yjg4N2FjNjQ4M2ZmNDAz"
+      "url": "/catalog-images/narciso-rodriguez/1119221.jpg"
     },
-    "name": "Narciso Rodriguez All of Me Set",
+    "name": "Narciso Rodriguez For Her Pure Musc Set II",
     "price": {
-      "formattedValue": "13 346&nbsp;₽",
-      "value": 13346
+      "formattedValue": "7 990&nbsp;₽",
+      "value": 7990
     },
     "country": "usa"
   },
@@ -149,14 +149,14 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
-    "code": "1119221",
+    "code": "1119226",
     "listingImage": {
-      "url": "/medias6/-normal-1119221-big-3423222137717-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDU2NXxpbWFnZS9qcGVnfGltYWdlcy9oNDEvaDA2LzEzOTM4Njc4ODkwNTI2LmpwZ3w3YTM5NTkwMGRlZDE0YThhMzZmMWU3NzYwZjJmODE4YmRjMWNmYjdjNGI1MGMxZGU3MTEyNjlkOTk0NjVlZDhh"
+      "url": "/catalog-images/narciso-rodriguez/1119226.jpg"
     },
-    "name": "Narciso Rodriguez For Her Pure Musc Set II",
+    "name": "Narciso Rodriguez All of Me Set",
     "price": {
-      "formattedValue": "11 925&nbsp;₽",
-      "value": 11925
+      "formattedValue": "8 990&nbsp;₽",
+      "value": 8990
     },
     "country": "usa"
   },
@@ -167,7 +167,7 @@
     },
     "code": "base_1110406",
     "listingImage": {
-      "url": "/medias6/-normal-base-1110406-big-3423222055639-listingDesktop?context=bWFzdGVyfGltYWdlc3w3Mjc3fGltYWdlL2pwZWd8aW1hZ2VzL2gyYy9oNDQvMTM1ODc1NzQxNjE0MzguanBnfDI0MmYyMDRiYWEzY2ZiMjJhMmM0NmVjNTRiMDIwYWZkYTdlNzFjZGNkODBmNWVlYmY4NWU1NDcxYmNlYjk2ODQ"
+      "url": "/catalog-images/narciso-rodriguez/base_1110406.jpg"
     },
     "name": "Narciso Rodriguez Narciso Cristal Eau de Parfum",
     "price": {
@@ -181,9 +181,25 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
+    "code": "1106269",
+    "listingImage": {
+      "url": "/catalog-images/narciso-rodriguez/1106269.jpg"
+    },
+    "name": "Narciso Rodriguez For Her Pure Musc Set",
+    "price": {
+      "formattedValue": "14 145&nbsp;₽",
+      "value": 14145
+    },
+    "country": "usa"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_95",
+      "name": "NARCISO RODRIGUEZ"
+    },
     "code": "1106268",
     "listingImage": {
-      "url": "/medias6/-normal-1106268-big-3423222133672-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDc3MnxpbWFnZS9qcGVnfGltYWdlcy9oMzEvaGNjLzEzNTg3MTg1MDA4NjcwLmpwZ3wwYmU2YmQyMWE1M2E4ZTlmY2E4NDcwYzFiNzRlMGU1YjE4MWFhNTdiZTQ2MGY5MzUwZWUwYjcwMTI5MzM4Zjhh"
+      "url": "/catalog-images/narciso-rodriguez/1106268.jpg"
     },
     "name": "Narciso Rodriguez For Her Set",
     "price": {
@@ -198,41 +214,9 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
-    "code": "1106269",
-    "listingImage": {
-      "url": "/medias6/-normal-1106269-big-3423222133801-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDQ1MnxpbWFnZS9qcGVnfGltYWdlcy9oNjUvaDc4LzEzODg3OTE3MzI2MzY2LmpwZ3xiODczYTBlNGMxMDg1NWYyYTZmNTJhNGQ5ZGM0MWM3NDNlYmU2MGUwYTQxYzA5YTJmYzI1NWI0MTdhOTgzYjYz"
-    },
-    "name": "Narciso Rodriguez For Her Pure Musc Set",
-    "price": {
-      "formattedValue": "14 145&nbsp;₽",
-      "value": 14145
-    },
-    "country": "usa"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_95",
-      "name": "NARCISO RODRIGUEZ"
-    },
-    "code": "base_1101116",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1101116-big-3423222108281-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjE1MHxpbWFnZS9qcGVnfGltYWdlcy9oZGMvaGMzLzEzMzU5Nzk1NjAxNDM4LmpwZ3w1OTg5OTFlZjU4N2MwZDIxYzg4Mzk1N2I2ODU3ODUzNWRjMDNlNGU2ZmNjMTY3NzMzODk4Y2NiMDQ5YWEwZmUw"
-    },
-    "name": "Narciso Rodriguez All of Me Eau de Parfum Intense",
-    "price": {
-      "formattedValue": "5 750&nbsp;₽",
-      "value": 5750
-    },
-    "country": "usa"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_95",
-      "name": "NARCISO RODRIGUEZ"
-    },
     "code": "base_1101113",
     "listingImage": {
-      "url": "/medias6/-normal-base-1101113-big-3423222121297-listingDesktop?context=bWFzdGVyfGltYWdlc3w5OTg5fGltYWdlL2pwZWd8aW1hZ2VzL2hkZS9oMGUvMTMzNTc4NTE2MDcwNzAuanBnfDM0ZjhjMjczYjZlMGU5ZThlMjAzYzJjMzUyZWIyNmNkZGEwZDJmMDIxMDM3MWRjNDU2ZTJkOTFiYjdjZGQ0YzU"
+      "url": "/catalog-images/narciso-rodriguez/base_1101113.jpg"
     },
     "name": "Narciso Rodriguez For Her Eau de Parfum Intense",
     "price": {
@@ -246,9 +230,41 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
+    "code": "base_1101116",
+    "listingImage": {
+      "url": "/catalog-images/narciso-rodriguez/base_1101116.jpg"
+    },
+    "name": "Narciso Rodriguez All of Me Eau de Parfum Intense",
+    "price": {
+      "formattedValue": "5 750&nbsp;₽",
+      "value": 5750
+    },
+    "country": "usa"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_95",
+      "name": "NARCISO RODRIGUEZ"
+    },
+    "code": "base_1093564",
+    "listingImage": {
+      "url": "/catalog-images/narciso-rodriguez/base_1093564.jpg"
+    },
+    "name": "Narciso Rodriguez All of Me Scented Shower Gel",
+    "price": {
+      "formattedValue": "2 600&nbsp;₽",
+      "value": 2600
+    },
+    "country": "usa"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_95",
+      "name": "NARCISO RODRIGUEZ"
+    },
     "code": "base_1093565",
     "listingImage": {
-      "url": "/medias6/-normal-1093565-big-3423222081409.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDA2NHxpbWFnZS9qcGVnfGltYWdlcy9oNTgvaGZkLzEyOTA0MjA4OTkwMjM4LmpwZ3xkYTdmZGZkZmZlNWE3NzVlYjkxY2I1NjM0ZGZiY2Y1ZmQ4YjY1MWE2NDQyODNmYzUzZWE5YWEyMTBiNTVlNTVi"
+      "url": "/catalog-images/narciso-rodriguez/base_1093565.jpg"
     },
     "name": "Narciso Rodriguez All of Me Scented Body Lotion",
     "price": {
@@ -264,7 +280,7 @@
     },
     "code": "base_1093541",
     "listingImage": {
-      "url": "/medias6/-normal-base-1093541-big-3423222080969.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDYyOHxpbWFnZS9qcGVnfGltYWdlcy9oZmQvaDUyLzEyOTA0MjA5OTczMjc4LmpwZ3wzYTdkNTYwNjIzNDgxMDE0ZjZjMDVkZDQxNzNlZjIwN2ZlMzk1YTFlMmRlM2FjYzI3ZTg3Y2FkYTgwMzVkYTU2"
+      "url": "/catalog-images/narciso-rodriguez/base_1093541.jpg"
     },
     "name": "Narciso Rodriguez All of Me Eau de Parfum",
     "price": {
@@ -278,25 +294,9 @@
       "code": "rg_brand_95",
       "name": "NARCISO RODRIGUEZ"
     },
-    "code": "base_1093564",
-    "listingImage": {
-      "url": "/medias6/-normal-1093564-big-3423222081416.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDA1OHxpbWFnZS9qcGVnfGltYWdlcy9oZDkvaDQ3LzEyOTA0MjA5NDQ4OTkwLmpwZ3w1MWUyYTg3YTYyMDI5NmRkMDE4ZjkwNjM2ZGQ2YzNmNWYzZDU3NDAxOWY5ZWRjNGQ4Y2FhZGIzMTI5ZmQxODQ2"
-    },
-    "name": "Narciso Rodriguez All of Me Scented Shower Gel",
-    "price": {
-      "formattedValue": "2 600&nbsp;₽",
-      "value": 2600
-    },
-    "country": "usa"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_95",
-      "name": "NARCISO RODRIGUEZ"
-    },
     "code": "base_591371",
     "listingImage": {
-      "url": "/medias6/product-base-591371-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDYwMDl8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oYTYvaDYyLzExMzQ2NjQxMDI3MTAyLmpwZ3w5YzkzZDRmZGFjZGRjOGI5NjgwZDMxZWMwMThhMjc1ZjZhZDQzMDM3MWE1Mjk4MzAxOWExN2JiNGI0NGE4NTA3"
+      "url": "/catalog-images/narciso-rodriguez/base_591371.jpg"
     },
     "name": "Narciso Rodriguez For Her Eau de Parfum",
     "price": {
@@ -312,7 +312,7 @@
     },
     "code": "base_903104",
     "listingImage": {
-      "url": "/medias6/product-base-903104-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDUyOTF8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oZjcvaDI2LzExNTAxNzU3NTYyOTEwLmpwZ3w1N2MxYjFiODZhMzZkYzg2MDdjMjcwMDUwMjBhMjZmZjEzNjYzMWFmNDU5MTA4OWVjYjBhYTgyMGU3Y2ZiNTZj"
+      "url": "/catalog-images/narciso-rodriguez/base_903104.jpg"
     },
     "name": "Narciso Rodriguez For Her Pure Musc Eau de Parfum",
     "price": {
@@ -328,7 +328,7 @@
     },
     "code": "base_986441",
     "listingImage": {
-      "url": "/medias6/product-base-986441-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDg2Mzd8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oMjMvaDE3LzExNTAyNDk5MzY0ODk0LmpwZ3w5MmUyNmYwZDEwY2YwMGFlNzlmYzBhODRmMDcwZmQ5ZGE1ZThhNWNkZjA1ZjVjNjExYTg2Y2I3MDRkMDIyZjk4"
+      "url": "/catalog-images/narciso-rodriguez/base_986441.jpg"
     },
     "name": "Narciso Rodriguez For Her Musc Noir Rose Eau de Parfum",
     "price": {
@@ -344,7 +344,7 @@
     },
     "code": "base_934658",
     "listingImage": {
-      "url": "/medias6/product-base-934658-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDY3OTF8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oNDcvaDczLzExNDc4MTc4NjI3NjE0LmpwZ3xlYWU0ZWE3ZDRlMDNjZmM0OTNhZTdlMDBhM2JkZmQwMGQ0NzM2YjczMDZiOGExNDk1OGQ2YjA4MjAyYWE3MmUx"
+      "url": "/catalog-images/narciso-rodriguez/base_934658.jpg"
     },
     "name": "Narciso Rodriguez Narciso Ambree Eau de Parfum",
     "price": {
@@ -360,7 +360,7 @@
     },
     "code": "base_1089395",
     "listingImage": {
-      "url": "/medias6/-normal-base-1089395-big-3423222107635.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w1MDg0fGltYWdlL2pwZWd8aW1hZ2VzL2hmOC9oNTMvMTI3MzI1NDMxMzk4NzAuanBnfDk1NmZiMTFhNzVmOTJiNGMzYTQ5ZTE1ZDk0YjdkNDY3ZWQ1OTJiODI3YTY5ZGJhOWZmZWQ5MjM1NmY3YzQ5ZTE"
+      "url": "/catalog-images/narciso-rodriguez/base_1089395.jpg"
     },
     "name": "Narciso Rodriguez For Her Musc Nude Eau de Parfum",
     "price": {
@@ -377,7 +377,7 @@
     },
     "code": "631336",
     "listingImage": {
-      "url": "/medias6/product-631336-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE1NDU4fGltYWdlL2pwZWd8cHJvZHVjdHMvaGZhL2g2NC8xMTUyNzU2NzkwMDcwMi5qcGd8NzA1NDg1M2IzMjE4NjIxMGVlNGY4Y2M3MGMwMzAyOTUyYmVmMTJmYjk4NGY3NjhiMWY0ZGJmNTg1OTUxMjZjNA"
+      "url": "/catalog-images/narciso-rodriguez/631336.jpg"
     },
     "name": "Narciso Rodriguez For Her Hair Mist Spray",
     "price": {
@@ -393,7 +393,7 @@
     },
     "code": "base_983527",
     "listingImage": {
-      "url": "/medias6/product-base-983527-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDY2Nzh8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oYmYvaDAwLzExNTAyNDU1ODE2MjIyLmpwZ3w2Y2E5ZDY1NzA2NTA0Yjk0MTRmNDViN2NjNTgzZTUwNTYzYzAwZjkyNzFmZjFhMDQ3ZTAzNTk1NTJjZGYwZDU0"
+      "url": "/catalog-images/narciso-rodriguez/base_983527.jpg"
     },
     "name": "Narciso Rodriguez For Him Bleu Noir Parfum",
     "price": {
@@ -409,7 +409,7 @@
     },
     "code": "base_877658",
     "listingImage": {
-      "url": "/medias6/product-base-877658-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDcwNTZ8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oMWMvaDEyLzExNDc4MTcxMzg1ODg2LmpwZ3xjM2I4NjE3MWQ2NDQ4OTE4OTI4NjVjOTFhMTYxNWYwMDVkMjZmN2FmNzE3MGU0MWM2ODI4NDJmNDViM2Q5MzI0"
+      "url": "/catalog-images/narciso-rodriguez/base_877658.jpg"
     },
     "name": "Narciso Rodriguez For Him Bleu Noir Eau De Parfum",
     "price": {
@@ -425,7 +425,7 @@
     },
     "code": "base_1089397",
     "listingImage": {
-      "url": "/medias6/-normal-base-1089397-big-3423222107741.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4OTEzfGltYWdlL2pwZWd8aW1hZ2VzL2gwYS9oMmIvMTI3MzI1NDI3NDY2NTQuanBnfDkyYjcwNTgyODU0YjQ4ZjhmY2RmZWE5Zjk4Mzc2NzVlOWU1YThjNzllYmVkNjQ0NjY1ZDJhMTMxNThjMWE1MTU"
+      "url": "/catalog-images/narciso-rodriguez/base_1089397.jpg"
     },
     "name": "Narciso Rodriguez For Him Vetiver Musc Eau de Toilette",
     "price": {
@@ -441,7 +441,7 @@
     },
     "code": "base_556785",
     "listingImage": {
-      "url": "/medias6/product-556785-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDM2NzF8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oOTcvaGZiLzExNDM0NjM5ODg0MzE4LmpwZ3wyNTZhZGJlYzZiODBmMDM4OTgwYTFkMWMzMTVlY2U3NTBmMjZjNjVkNmRmNzU1NzFmODJhMjhlYjliNGUxOWRm"
+      "url": "/catalog-images/narciso-rodriguez/base_556785.jpg"
     },
     "name": "Narciso Rodriguez For Her Body Lotion",
     "price": {
@@ -457,7 +457,7 @@
     },
     "code": "591372",
     "listingImage": {
-      "url": "/medias6/product-591372-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDI1OTl8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oMWEvaDE0LzExNDM3MTc0Njg1NzI2LmpwZ3xhMGUzODAwZDQ0YzRkOTA5NDAyYzViN2JiYWQ3Y2EzMjBmMDcxOTEwNjdjMmUzZDA0ZmZjMTEzMmUzNmJhOGI4"
+      "url": "/catalog-images/narciso-rodriguez/591372.jpg"
     },
     "name": "Narciso Rodriguez For Her Deodorant Spray",
     "price": {
@@ -473,7 +473,7 @@
     },
     "code": "base_819789",
     "listingImage": {
-      "url": "/medias6/product-base-819789-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDk2MDN8aW1hZ2UvanBlZ3xwcm9kdWN0cy9oNjEvaDhjLzExNTAxNDcxNTk2NTc0LmpwZ3xhMGYyYTNhOGU0Y2NhYzA3ZGIxMTIzYjFhYTNjYzVlNWNkZGIyYWYwZGY4MTI4N2EzNjFhMWZlMjI0ZjliNzVl"
+      "url": "/catalog-images/narciso-rodriguez/base_819789.jpg"
     },
     "name": "Narciso Rodriguez For Him Bleu Noir Eau de Toilette",
     "price": {

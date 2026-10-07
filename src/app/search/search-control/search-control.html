@@ -20,7 +20,7 @@
       [style.overflow-y]="showBrands.signal() === true ? 'scroll' : 'auto'"
     >
       @if (showBrands.signal() === true) {
-        @for (brand of brandSuggestions(); track brand) {
+        @for (brand of allBrands(); track brand) {
           <button
             matButton="elevated"
             type="button"

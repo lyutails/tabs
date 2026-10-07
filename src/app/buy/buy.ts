@@ -44,6 +44,7 @@ export class Buy {
   purchaseMessage = 'We start working on it, the details and the receipt are sent to your email. 💖';
   customerName = '';
   isCvvVisible = signal<boolean>(true);
+  deleteHovered = signal<boolean>(false);
 
   buy(): void {
     if (this.buyForm().invalid()) {

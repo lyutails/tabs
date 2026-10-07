@@ -6,12 +6,12 @@
     },
     "code": "1095985",
     "listingImage": {
-      "url": "/medias6/-normal-1095985-big-8809789634794-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDU1MHxpbWFnZS9qcGVnfGltYWdlcy9oZmYvaDZhLzE1Mzc4MTA5MDM4NjIyLmpwZ3wyOWRlMzg3YzA0Nzg0Y2U5NzRiMzc5YWNjYzFkOWQ0N2Y1ZmE4YWUxYzBiNzRiY2NkMjk5ZjZmMDBlOGE3NzQx"
+      "url": "/catalog-images/lador/1095985.jpg"
     },
     "name": "La'dor Our Leaf Perfumed Hair Oil",
     "price": {
-      "formattedValue": "929&nbsp;₽",
-      "value": 929
+      "formattedValue": "846&nbsp;₽",
+      "value": 846
     },
     "popular": true,
     "country": "europe"
@@ -21,41 +21,9 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
-    "code": "1095996",
-    "listingImage": {
-      "url": "/medias6/-normal-1095996-big-8809789633148.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w5NTYyfGltYWdlL2pwZWd8aW1hZ2VzL2hiYS9oMTMvMTMwNzAwNDk5NjgxNTguanBnfDdjYTc3YWM0ODljZjQwNWMwYzM2MTkzNDY0ZWQ5MTBlMjU3NjdkYzUzZGM2ZGJjYjBkN2RhOTdjMTMyMDA5ODE"
-    },
-    "name": "La'dor La Pitta Perfumed Hair Oil",
-    "price": {
-      "formattedValue": "1 744&nbsp;₽",
-      "value": 1744
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1095997",
-    "listingImage": {
-      "url": "/medias6/-normal-1095997-big-8809789633186.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDQ1NnxpbWFnZS9qcGVnfGltYWdlcy9oM2IvaDQ1LzEzMDcwMDQ5MTgxNzI2LmpwZ3w4MWJlY2Y3ZmVjNjZhNTBlNDNlZGMyNTZlYmRhNTdlYjAxYmRlNmRjZTY1NDgxNzM1ZDcxNzljYWE1Njg5MWRk"
-    },
-    "name": "La'dor Osmanthus Perfumed Hair Oil",
-    "price": {
-      "formattedValue": "1 744&nbsp;₽",
-      "value": 1744
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
     "code": "1095995",
     "listingImage": {
-      "url": "/medias6/-normal-1095995-big-8809789633162.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w5NTI2fGltYWdlL2pwZWd8aW1hZ2VzL2gzMi9oYzQvMTMwNzAwNTAzNjEzNzQuanBnfGYwNGY3NjA4NjQ5ZWY2YzY2NGIwMGQxZWQ2NDQ2NWRlZjdkY2M4NTkwMDc2MGMzMzQxYWU4ZmQ2ZmNmNTA0Yzk"
+      "url": "/catalog-images/lador/1095995.jpg"
     },
     "name": "La'dor Hinoki Perfumed Hair Oil",
     "price": {
@@ -69,9 +37,41 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
+    "code": "1095996",
+    "listingImage": {
+      "url": "/catalog-images/lador/1095996.jpg"
+    },
+    "name": "La'dor La Pitta Perfumed Hair Oil",
+    "price": {
+      "formattedValue": "1 744&nbsp;₽",
+      "value": 1744
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1095986",
+    "listingImage": {
+      "url": "/catalog-images/lador/1095986.jpg"
+    },
+    "name": "La'dor Real Intensive Acid Conditioner",
+    "price": {
+      "formattedValue": "1 523&nbsp;₽",
+      "value": 1523
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
     "code": "1095987",
     "listingImage": {
-      "url": "/medias6/-normal-1095987-big-8808033025807.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzkzMHxpbWFnZS9qcGVnfGltYWdlcy9oZTcvaGRjLzEzMDMzODcyMTk1NjE0LmpwZ3w0ZTk4YTdjZmQ5OWFmOWM2OTA0YTRiYWFiN2I3YWJkY2I4NDE3ZGQ1ZWVjYzc5MDg4NjNkODkyZjFkOTUyMWYw"
+      "url": "/catalog-images/lador/1095987.jpg"
     },
     "name": "La'dor Real Intensive Acid Shampoo",
     "price": {
@@ -85,46 +85,14 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
-    "code": "1095986",
-    "listingImage": {
-      "url": "/medias6/-normal-1095986-big-8808033025814.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzIxMnxpbWFnZS9qcGVnfGltYWdlcy9oNmEvaGE4LzEzMDMzODcxODAyMzk4LmpwZ3xiMTI1NzdjZTA2MzQ0NTFlYzkwNjQ1YzQ4YTg5MzgyNzk0YTEwMDhiZmJkNTlmMzNiZDUzNGQ2NWM5NmU2M2Q3"
-    },
-    "name": "La'dor Real Intensive Acid Conditioner",
-    "price": {
-      "formattedValue": "1 495&nbsp;₽",
-      "value": 1495
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "base_960133",
-    "listingImage": {
-      "url": "/medias6/product-960133-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEzMDk0fGltYWdlL2pwZWd8cHJvZHVjdHMvaGZlL2g3Yy8xMzAxOTY1MjM5MDk0Mi5qcGd8NmQyODBkMmNmOWRhYWRjYzUwNzc1NWNhYmYzZjI1MTVkYTlmNTBhYTQ2MTQzZjhjZmIyOGNjZDQ5NjJjZjVjZA"
-    },
-    "name": "La'dor Hydro LPP Treatment",
-    "price": {
-      "formattedValue": "396&nbsp;₽",
-      "value": 396
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
     "code": "base_960132",
     "listingImage": {
-      "url": "/medias6/product-960132-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDIwMTUxfGltYWdlL2pwZWd8cHJvZHVjdHMvaDU0L2g1Ny8xMzAxNDE5MTA3OTQ1NC5qcGd8OWQwMGIxZDZkYzk2ODUyNDgyOTVlMDI4Njc3MDRhNjIwNDkwYzNmNDczMTBhYmM4MDljMWFmMDg5ZDI1YzBiMQ"
+      "url": "/catalog-images/lador/base_960132.jpg"
     },
     "name": "La'dor Keratin LPP Shampoo",
     "price": {
-      "formattedValue": "328&nbsp;₽",
-      "value": 328
+      "formattedValue": "365&nbsp;₽",
+      "value": 365
     },
     "popular": true,
     "country": "europe"
@@ -134,14 +102,46 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
+    "code": "base_960133",
+    "listingImage": {
+      "url": "/catalog-images/lador/base_960133.jpg"
+    },
+    "name": "La'dor Hydro LPP Treatment",
+    "price": {
+      "formattedValue": "421&nbsp;₽",
+      "value": 421
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
     "code": "960141",
     "listingImage": {
-      "url": "/medias6/product-960141-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5MzExfGltYWdlL2pwZWd8cHJvZHVjdHMvaDZhL2gwZi8xMTUxNTc3NTE4OTAyMi5qcGd8MjNhZTgxODMxNzZhMDQ4NmEyNDZhY2E2NDc3MTMyYjNmZGIxM2YwMTVhYzY2YjE0Mjk5NjVmNWRhYzI5OTFjYQ"
+      "url": "/catalog-images/lador/960141.jpg"
     },
     "name": "La'dor Scalp Scaling Spa",
     "price": {
-      "formattedValue": "304&nbsp;₽",
-      "value": 304
+      "formattedValue": "179&nbsp;₽",
+      "value": 179
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1018725",
+    "listingImage": {
+      "url": "/catalog-images/lador/1018725.jpg"
+    },
+    "name": "La'dor Perfect Hair Fill-Up",
+    "price": {
+      "formattedValue": "689&nbsp;₽",
+      "value": 689
     },
     "country": "europe"
   },
@@ -152,12 +152,12 @@
     },
     "code": "base_1018688",
     "listingImage": {
-      "url": "/medias6/-normal-1018688-big-8809500810889.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjg0OXxpbWFnZS9qcGVnfGltYWdlcy9oMTMvaDdiLzExNTg4Njg4NDQ1NDcwLmpwZ3xjOGMwODdjY2ZjMGU3ZDZkZTdjY2Y1N2FiZjViN2ZjZGY1YmU2M2YxZjg3NDVjNDQzNzAyYjJmNmI2ZGQ1ZDU0"
+      "url": "/catalog-images/lador/base_1018688.jpg"
     },
     "name": "La'dor  Moisture Balancing Shampoo",
     "price": {
-      "formattedValue": "378&nbsp;₽",
-      "value": 378
+      "formattedValue": "366&nbsp;₽",
+      "value": 366
     },
     "country": "europe",
     "purpose": "moisture"
@@ -169,7 +169,7 @@
     },
     "code": "base_1018705",
     "listingImage": {
-      "url": "/medias6/-normal-base-1018705-big-8809500810926.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDE1MnxpbWFnZS9qcGVnfGltYWdlcy9oODAvaDczLzExNTg4Njg1Mjk5NzQyLmpwZ3w4NGQ3OWFkN2JkMGI3NzJhMzQzYjA3MGUwODdmMzYzZmFmZjc4NzdjYjY3YmJjOTZjYTNhOWMyODk4M2E2NGUy"
+      "url": "/catalog-images/lador/base_1018705.jpg"
     },
     "name": "La'dor Damage Protector Acid Shampoo",
     "price": {
@@ -185,7 +185,7 @@
     },
     "code": "base_1018712",
     "listingImage": {
-      "url": "/medias6/-normal-1018712-big-8809500810612.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjI1MnxpbWFnZS9qcGVnfGltYWdlcy9oNjQvaDBhLzExNTUxNjMwOTE3NjYyLmpwZ3w3Y2ExMTZjZjMxZWI5YWYxNGFhNDU3MGZiZjc1NjI4MWQ1NjBiYmY1MzJlNGRiYWU4MTNlZmRjNzhhMzYzZTE5"
+      "url": "/catalog-images/lador/base_1018712.jpg"
     },
     "name": "La'dor Moisture Balancing Conditioner",
     "price": {
@@ -200,41 +200,9 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
-    "code": "1018730",
-    "listingImage": {
-      "url": "/medias6/-normal-1018730-big-8809500815204.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMDIxNXxpbWFnZS9qcGVnfGltYWdlcy9oMGUvaGZlLzExNTUxNjMwMDY1Njk0LmpwZ3xiNjkxYzhhMzJlZmM2YTZmYzVmNjdkZTkxNWY0ZWVmZmVlYmI1YWU2NDkxN2Q4MjgyZjM3Mjg3MWY0M2NlN2M1"
-    },
-    "name": "La'dor Wonder Hair Oil",
-    "price": {
-      "formattedValue": "1 606&nbsp;₽",
-      "value": 1606
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "base_1018720",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1018720-big-8809500817413.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzcxNXxpbWFnZS9qcGVnfGltYWdlcy9oZTMvaGRmLzExNTg4Njg3NjU5MDM4LmpwZ3wxZjRlOTkzNjQ5M2FmM2ViMmYwNDVmZjc4MzRkYmIxMDUxYjRiMGI1NTFjZTUzODllNWJkNDRhMDk1Y2ZkZWQw"
-    },
-    "name": "La'dor Wonder Bubble Shampoo",
-    "price": {
-      "formattedValue": "935&nbsp;₽",
-      "value": 935
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
     "code": "base_960145",
     "listingImage": {
-      "url": "/medias6/product-base-960145-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEyNTg0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDA0L2hjNS8xMTQ3NDEwMzI3MTQ1NC5qcGd8NjkwMzMwOGMzNTBiYzc0NTQ3OGM0N2YxYzcxYWJkNmQ5MTQyYWU3ZWRkODNlMWM4MzM3NWRmZWJhYzk1YjY0MA"
+      "url": "/catalog-images/lador/base_960145.jpg"
     },
     "name": "La'dor Perfect Hair Fill-Up",
     "price": {
@@ -250,7 +218,7 @@
     },
     "code": "1018724",
     "listingImage": {
-      "url": "/medias6/-normal-1018724-big-8809500814030.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wzMjU3MHxpbWFnZS9qcGVnfGltYWdlcy9oMDEvaDNjLzExNTg4Njg2MDg2MTc0LmpwZ3w3NmUzODU1MDIwODFhMjZjMDQ4MGQzM2U4MzJhZmJjYTdhOWY5NmU5YmE5ODIxZWRjNDU1YzU3NTJkMmQ4OWNl"
+      "url": "/catalog-images/lador/1018724.jpg"
     },
     "name": "La'dor Perfect Hair Fill-Up",
     "price": {
@@ -266,7 +234,7 @@
     },
     "code": "1018711",
     "listingImage": {
-      "url": "/medias6/-normal-1018711-big-8809789632103.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjQ1MnxpbWFnZS9qcGVnfGltYWdlcy9oNDEvaGY3LzExNTUxNjMwNDU4OTEwLmpwZ3xlZTEwNmFmMmNjM2I5ZTA4NTYwY2YxNGY5MjhmNDViMmZmYmU5ZWQyM2RiM2YxOTA5ZmZmNmJhODQ2Y2I1NDY3"
+      "url": "/catalog-images/lador/1018711.jpg"
     },
     "name": "La'dor Wonder Bubble Shampoo Travel Size",
     "price": {
@@ -282,7 +250,7 @@
     },
     "code": "base_1018694",
     "listingImage": {
-      "url": "/medias6/-normal-base-1018694-big-8809181935222.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDU2NnxpbWFnZS9qcGVnfGltYWdlcy9oYzQvaGI1LzExNTUxNjI0MDY5MTUwLmpwZ3xjYWNiNjhmYzJiNjU2NmY4YTlmOGU4NTIwZjFkMzIxZjNlYTkwNGZmMzk2MGJjZjcwNzM5ODdkYzVkY2I0Mzg0"
+      "url": "/catalog-images/lador/base_1018694.jpg"
     },
     "name": "La'dor Dermatical Hair-Loss Shampoo for Thin Hair",
     "price": {
@@ -296,217 +264,9 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
-    "code": "base_1018690",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1018690-big-8809181937653.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDk4M3xpbWFnZS9qcGVnfGltYWdlcy9oZWMvaGIxLzExNTUxNjI3MzEzMTgyLmpwZ3xjNjYzOWY2ZjZkMjM3MmQ4MzdkNWU5NmRkODc3OWFiYWY4MWY2MTNhNjJkOTY4MzFlYjEzOTA0NDAxYjA2MjVj"
-    },
-    "name": "La'dor ACV Vinegar Shampoo",
-    "price": {
-      "formattedValue": "786&nbsp;₽",
-      "value": 786
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "base_1018697",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1018697-big-8809181931835.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxODg2OXxpbWFnZS9qcGVnfGltYWdlcy9oM2UvaDhjLzExNTUxNjI0NDk1MTM0LmpwZ3xkMTliZDBjYTZlYjE0Y2Y3MDI0ODZkNzFjNTVmZWNiOTQyNzc1YjM2MWE0MTJhOWJmZjAzZmZiZWE0ZThjYjE3"
-    },
-    "name": "La'dor Herbalism Shampoo",
-    "price": {
-      "formattedValue": "715&nbsp;₽",
-      "value": 715
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "base_1018696",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1018696-big-8809353531924.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzM2OHxpbWFnZS9qcGVnfGltYWdlcy9oZmMvaGYxLzExNTUxNjI1Njc0NzgyLmpwZ3xiYzJiNmMxNGE0ZmM5YTZjZDQ1NjNkZDk4YzE2ZDk4MWYzZjY0N2Y5NDMwOWFmNGYwNTNmOGYyNTdlZTVjNTA2"
-    },
-    "name": "La'dor Dermatical Hair-Loss Shampoo",
-    "price": {
-      "formattedValue": "821&nbsp;₽",
-      "value": 821
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1018713",
-    "listingImage": {
-      "url": "/medias6/-normal-1018713-big-8809500815334.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDY4OXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaGY5LzExNTgyMjU4OTM3ODg2LmpwZ3w2ZjMxNDY0ZjM3NWQ3ZmVjMDc1NzJhNTJlNWI5MGI4OWM4ZTMxNTE4Nzg4OWE3NDY3ZGY5YTYxNGFiNDk1ODEw"
-    },
-    "name": "La'dor Anti-Yellow Shampoo",
-    "price": {
-      "formattedValue": "1 383&nbsp;₽",
-      "value": 1383
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "base_1018717",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1018717-big-8809181935451.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NTI0fGltYWdlL2pwZWd8aW1hZ2VzL2gwOS9oZDEvMTE1NTE2MjUyODE1NjYuanBnfDA3MzAxNDJkNmI3OGYxZGQwOTI5NDUyNzI2NDU4NzM4N2JhM2QyMzkwOGUyYzVhMWI2MjBhNzEwMjdmOTNjYTU"
-    },
-    "name": "La'dor Herbalism Treatment",
-    "price": {
-      "formattedValue": "766&nbsp;₽",
-      "value": 766
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1018691",
-    "listingImage": {
-      "url": "/medias6/-normal-1018691-big-8809500811688.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMTI0N3xpbWFnZS9qcGVnfGltYWdlcy9oNWUvaGJhLzExNTg4Njg4ODM4Njg2LmpwZ3wxNTk4M2I5OTNkNjYzYWEwODYyMWQ5N2Y2MjI5ZDc1ODA5YjBmOTZhZDdlNjVhOGViOTA1MWE0NzQ3ODJkZDBh"
-    },
-    "name": "La'dor Snail Sleeping Hair Ampoule",
-    "price": {
-      "formattedValue": "294&nbsp;₽",
-      "value": 294
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "base_960130",
-    "listingImage": {
-      "url": "/medias6/product-base-960130-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5NTQ2fGltYWdlL2pwZWd8cHJvZHVjdHMvaGE3L2gxMC8xMTUxNjA3MzY3MjczNC5qcGd8ZDc0NDBlODYzMTYwMjNhZjk1ZWEyNzQ5MDk5MTZiODY1YzBhMTNmOThkZjgwMTlmZTRkY2JmMTA4NWE5NjI0Yw"
-    },
-    "name": "La'dor Keratin Power Glue Travel Size",
-    "price": {
-      "formattedValue": "255&nbsp;₽",
-      "value": 255
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1095981",
-    "listingImage": {
-      "url": "/medias6/-normal-1095981-big-8808033025357.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDg4MHxpbWFnZS9qcGVnfGltYWdlcy9oZGIvaGViLzEzMDcwMTI0NzQ0NzM0LmpwZ3xiMzZjOGE1OGZhODJmZjgyZjI4NmRmN2VlNWZlNjFkNGE0ZWE2YWNlN2NjMTgwYzRiNWRmZmRlNDA1ODE5YWFj"
-    },
-    "name": "La'dor Ash Silver Shampoo",
-    "price": {
-      "formattedValue": "2 185&nbsp;₽",
-      "value": 2185
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1095999",
-    "listingImage": {
-      "url": "/medias6/-normal-1095999-big-8809789632882.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTU4OXxpbWFnZS9qcGVnfGltYWdlcy9oMjUvaGMzLzEzMDE0MTk5MTczMTUwLmpwZ3xkZmU5NjQ2NTkyM2QwNzQxMjBiMTcyMTU0ODcyODliMjJhMjQxZDMxN2NiNmMzOGJhMzBhNzM5ZGZlZDdhNDU0"
-    },
-    "name": "La'dor Wonder Full Hair Serum",
-    "price": {
-      "formattedValue": "2 232&nbsp;₽",
-      "value": 2232
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1095884",
-    "listingImage": {
-      "url": "/medias6/-normal-1095884-big-8809982980285.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxODY1MHxpbWFnZS9qcGVnfGltYWdlcy9oOTAvaGEyLzEzMDEzMDM2NDY2MjA2LmpwZ3xmYjY3NTY4ZWJiYTM4Mzg4MTJjZTJjZDdhNTA1MzQ4MWQ3OGQ1YWM4MDkyMTA5MmQ0M2IxNDZlZTBjY2Y2ZTAz"
-    },
-    "name": "La'dor Pro CMC Bubble Hair Essence ",
-    "price": {
-      "formattedValue": "2 660&nbsp;₽",
-      "value": 2660
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1095885",
-    "listingImage": {
-      "url": "/medias6/-normal-1095885-big-8809982980292.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTU5N3xpbWFnZS9qcGVnfGltYWdlcy9oOGIvaDU2LzEzMDE1MTQwMzY4NDE0LmpwZ3xlMGY1N2NiMDZhMzA5OTcwNGQyZDI0ODg3Y2ZmNzgzNjIxZTQyNmMzZDQzNzhjNTU3NGM3ZjJlZWZjZDA2NjE4"
-    },
-    "name": "La'dor Pro CMC Milk Hair Cream",
-    "price": {
-      "formattedValue": "2 314&nbsp;₽",
-      "value": 2314
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "base_960137",
-    "listingImage": {
-      "url": "/medias6/product-base-960137-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE0Mzk3fGltYWdlL2pwZWd8cHJvZHVjdHMvaDZiL2g2My8xMTUyMjM3NTUxNjE5MC5qcGd8YzAzYzQ0YTY3NmQxYTUxNmQwN2Q0MmNlM2Q5MjM2ZGMxZDZlNDdlZjc4NDVhZGUzZDNhOWExY2JlYzNiMmVjMg"
-    },
-    "name": "La'dor Before Care Keratin PPT Travel Size",
-    "price": {
-      "formattedValue": "551&nbsp;₽",
-      "value": 551
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1018721",
-    "listingImage": {
-      "url": "/medias6/-normal-1018721-big-8809500813682.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyNDc3MXxpbWFnZS9qcGVnfGltYWdlcy9oZmEvaGFkLzExNTUxNjMxNzY5NjMwLmpwZ3xmMDg5NWY2ZGNiZTkwZTg5ZTMzNmFmNDZiZTdlMjM0NDU4MDZmMmVlYjAwOGZmNjU1YTJkNjc2YTAxYTAyYjFk"
-    },
-    "name": "La'dor Wonder Pick Hydrolyzed Silk Clinic Water",
-    "price": {
-      "formattedValue": "936&nbsp;₽",
-      "value": 936
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
     "code": "1018695",
     "listingImage": {
-      "url": "/medias6/-normal-1018695-big-8809181936571.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNzE5MXxpbWFnZS9qcGVnfGltYWdlcy9oNmEvaDAyLzExNTUxNjI2NTI2NzUwLmpwZ3w5N2U3MGUxZjMxNDNlNmI3YzljZDI2MTM5ZjUyNGE2NGZjMGU2NjA5ZjAzZGQ3ZmEyNDVhNDliM2VmNzcwZWY4"
+      "url": "/catalog-images/lador/1018695.jpg"
     },
     "name": "La'dor Dermatical Hair-loss Treatment for Thin Hair",
     "price": {
@@ -522,7 +282,7 @@
     },
     "code": "base_1018687",
     "listingImage": {
-      "url": "/medias6/-normal-base-1018687-big-8809181938452.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzc4NHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDRmLzExNTUxNjI0ODg4MzUwLmpwZ3wxNDFjOTZlMTQ1YTE0Mzk4YmQwNzFhNjgyYTBjNDliZjlmYmNhNGExYmU5MTg5MjAyZDEzOWY3YmU5ODZjNzI5"
+      "url": "/catalog-images/lador/base_1018687.jpg"
     },
     "name": "La'dor ACV Vinegar Treatment",
     "price": {
@@ -536,9 +296,248 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
+    "code": "1018718",
+    "listingImage": {
+      "url": "/catalog-images/lador/1018718.jpg"
+    },
+    "name": "La'dor Hydro LPP Treatment Refill",
+    "price": {
+      "formattedValue": "2 099&nbsp;₽",
+      "value": 2099
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "base_1018690",
+    "listingImage": {
+      "url": "/catalog-images/lador/base_1018690.jpg"
+    },
+    "name": "La'dor ACV Vinegar Shampoo",
+    "price": {
+      "formattedValue": "786&nbsp;₽",
+      "value": 786
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "base_1018697",
+    "listingImage": {
+      "url": "/catalog-images/lador/base_1018697.jpg"
+    },
+    "name": "La'dor Herbalism Shampoo",
+    "price": {
+      "formattedValue": "715&nbsp;₽",
+      "value": 715
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "base_1018696",
+    "listingImage": {
+      "url": "/catalog-images/lador/base_1018696.jpg"
+    },
+    "name": "La'dor Dermatical Hair-Loss Shampoo",
+    "price": {
+      "formattedValue": "821&nbsp;₽",
+      "value": 821
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "base_1018717",
+    "listingImage": {
+      "url": "/catalog-images/lador/base_1018717.jpg"
+    },
+    "name": "La'dor Herbalism Treatment",
+    "price": {
+      "formattedValue": "781&nbsp;₽",
+      "value": 781
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1018691",
+    "listingImage": {
+      "url": "/catalog-images/lador/1018691.jpg"
+    },
+    "name": "La'dor Snail Sleeping Hair Ampoule",
+    "price": {
+      "formattedValue": "252&nbsp;₽",
+      "value": 252
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "base_960130",
+    "listingImage": {
+      "url": "/catalog-images/lador/base_960130.jpg"
+    },
+    "name": "La'dor Keratin Power Glue Travel Size",
+    "price": {
+      "formattedValue": "342&nbsp;₽",
+      "value": 342
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1095997",
+    "listingImage": {
+      "url": "/catalog-images/lador/1095997.jpg"
+    },
+    "name": "La'dor Osmanthus Perfumed Hair Oil",
+    "price": {
+      "formattedValue": "1 744&nbsp;₽",
+      "value": 1744
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1095981",
+    "listingImage": {
+      "url": "/catalog-images/lador/1095981.jpg"
+    },
+    "name": "La'dor Ash Silver Shampoo",
+    "price": {
+      "formattedValue": "2 185&nbsp;₽",
+      "value": 2185
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1095999",
+    "listingImage": {
+      "url": "/catalog-images/lador/1095999.jpg"
+    },
+    "name": "La'dor Wonder Full Hair Serum",
+    "price": {
+      "formattedValue": "2 232&nbsp;₽",
+      "value": 2232
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1095884",
+    "listingImage": {
+      "url": "/catalog-images/lador/1095884.jpg"
+    },
+    "name": "La'dor Pro CMC Bubble Hair Essence ",
+    "price": {
+      "formattedValue": "1 904&nbsp;₽",
+      "value": 1904
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1018730",
+    "listingImage": {
+      "url": "/catalog-images/lador/1018730.jpg"
+    },
+    "name": "La'dor Wonder Hair Oil",
+    "price": {
+      "formattedValue": "1 606&nbsp;₽",
+      "value": 1606
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "base_1018720",
+    "listingImage": {
+      "url": "/catalog-images/lador/base_1018720.jpg"
+    },
+    "name": "La'dor Wonder Bubble Shampoo",
+    "price": {
+      "formattedValue": "952&nbsp;₽",
+      "value": 952
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1018722",
+    "listingImage": {
+      "url": "/catalog-images/lador/1018722.jpg"
+    },
+    "name": "La'dor  Wonder Tear",
+    "price": {
+      "formattedValue": "1 582&nbsp;₽",
+      "value": 1582
+    }
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1018713",
+    "listingImage": {
+      "url": "/catalog-images/lador/1018713.jpg"
+    },
+    "name": "La'dor Anti-Yellow Shampoo",
+    "price": {
+      "formattedValue": "2 389&nbsp;₽",
+      "value": 2389
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
     "code": "base_1018726",
     "listingImage": {
-      "url": "/medias6/-normal-1018726-big-8809353530309.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxOTIxN3xpbWFnZS9qcGVnfGltYWdlcy9oMzYvaGYxLzExNTUxNjI3NzA2Mzk4LmpwZ3wwN2JlYzZlNDg3NmJkNTMwZjNlNDQzNGJiYThlZGFjM2U2OGI4MDQzM2Y3YmFiMjkwMmJiODNkNDBlNDYxZjUw"
+      "url": "/catalog-images/lador/base_1018726.jpg"
     },
     "name": "La'dor Dermatical Scalp Tonic",
     "price": {
@@ -554,7 +553,7 @@
     },
     "code": "1095883",
     "listingImage": {
-      "url": "/medias6/-normal-1095883-big-8809982980308.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w5OTM3fGltYWdlL2pwZWd8aW1hZ2VzL2gxNS9oMGUvMTMwMTQyMDA4MTE1NTAuanBnfDE2NTFiMGQyZTRiNWM3Mzg1OTk0N2UxZDQxNDQ5MTc5OGViYmEwNGUyOTMzZWZhNDEwNWMzYWRjMDAwNzRjMWI"
+      "url": "/catalog-images/lador/1095883.jpg"
     },
     "name": "La'dor Pro CMC Balm 03",
     "price": {
@@ -568,9 +567,25 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
+    "code": "1095885",
+    "listingImage": {
+      "url": "/catalog-images/lador/1095885.jpg"
+    },
+    "name": "La'dor Pro CMC Milk Hair Cream",
+    "price": {
+      "formattedValue": "2 314&nbsp;₽",
+      "value": 2314
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
     "code": "1095881",
     "listingImage": {
-      "url": "/medias6/-normal-1095881-big-8808033026286.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NDU0fGltYWdlL2pwZWd8aW1hZ2VzL2hlMC9oNDYvMTMwMTQxOTk5NTk1ODIuanBnfDMxZTEzYTE1MzViMDFjYjk2ZjdjOGQ4NWEwM2ZiNDA2MTVkMTUwN2M5YmRiNmZlMjBhZjM1M2U2MjU5ZDIwNWY"
+      "url": "/catalog-images/lador/1095881.jpg"
     },
     "name": "La'dor Pro CMC Shampoo 01",
     "price": {
@@ -584,25 +599,9 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
-    "code": "1095992",
-    "listingImage": {
-      "url": "/medias6/-normal-1095992-big-8809789632820.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w5MTM1fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oZGUvMTMwMTQxOTgyNTU2NDYuanBnfGI0MWZmNTc5ZjQ1NTAyMTRmODBiODQzM2M1MjY4YmY0NzM2ZGM5Njg4ODE1MTdiNjQzNzQ1N2YzYjA2NWI4ODA"
-    },
-    "name": "La'dor Perfumed Hair Care Movet Keratin LPP Shampoo",
-    "price": {
-      "formattedValue": "1 077&nbsp;₽",
-      "value": 1077
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
     "code": "1095991",
     "listingImage": {
-      "url": "/medias6/-normal-1095991-big-8809789632844.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w5MDk5fGltYWdlL2pwZWd8aW1hZ2VzL2gyMi9oZjYvMTMwMTQxOTc4NjI0MzAuanBnfGY4ZjJhOTJlODJkZWE2MzEwZGI0NzE1ZWNiMzgzNDVhODdkMWE4OGMyOThjYzQ1Nzk2ZWZmODFmYTgyMzBlMTQ"
+      "url": "/catalog-images/lador/1095991.jpg"
     },
     "name": "La'dor Perfumed Hair Care Feige Keratin LPP Shampoo",
     "price": {
@@ -618,7 +617,7 @@
     },
     "code": "1095882",
     "listingImage": {
-      "url": "/medias6/-normal-1095882-big-8808033026293.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w3ODczfGltYWdlL2pwZWd8aW1hZ2VzL2hlZS9oMWQvMTMwMTQyMDAzODU1NjYuanBnfDE1ODA1MmZkMjM0NmI3NTk2MDJlNDIyYTliYTk1ODBjYWYyZDU3YTc4MTRjZWY3M2NiNWE2MDBmZTA4ZDhjNzk"
+      "url": "/catalog-images/lador/1095882.jpg"
     },
     "name": "La'dor Pro CMC Treatment 02",
     "price": {
@@ -634,7 +633,7 @@
     },
     "code": "1095993",
     "listingImage": {
-      "url": "/medias6/-normal-1095993-big-8809789632868.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NzI0fGltYWdlL2pwZWd8aW1hZ2VzL2g4NC9oMzQvMTMwMTQxOTg3MTQzOTguanBnfGJlMjc0Y2JjNTI3MDRiOTYzMjFmYjU3NzRjMTgwZjNiNWE0OGU3MjdjY2FjZDIxM2UyODljYzNiMzQ4NjY3N2U"
+      "url": "/catalog-images/lador/1095993.jpg"
     },
     "name": "La'dor Perfumed Hair Care Pitta Keratin LPP Shampoo",
     "price": {
@@ -648,14 +647,14 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
-    "code": "1018725",
+    "code": "1095992",
     "listingImage": {
-      "url": "/medias6/-normal-1018725-big-8809500816683.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNjIxM3xpbWFnZS9qcGVnfGltYWdlcy9oZmIvaDc4LzExNTg4Njg2NDc5MzkwLmpwZ3w3NTNlNjgzNmRiNTA5MzNhNTczN2Q3ZGExNTA4ZjFkZTY3NmYxNGE5Y2U1YzE5YzIzOTQ5NTg1NmEzZDMyMWFm"
+      "url": "/catalog-images/lador/1095992.jpg"
     },
-    "name": "La'dor Perfect Hair Fill-Up",
+    "name": "La'dor Perfumed Hair Care Movet Keratin LPP Shampoo",
     "price": {
-      "formattedValue": "689&nbsp;₽",
-      "value": 689
+      "formattedValue": "1 094&nbsp;₽",
+      "value": 1094
     },
     "country": "europe"
   },
@@ -666,7 +665,7 @@
     },
     "code": "960136",
     "listingImage": {
-      "url": "/medias6/product-960136-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE3NzE0fGltYWdlL2pwZWd8cHJvZHVjdHMvaDMyL2hiOC8xMTUyMDM5MTQ0NjU1OC5qcGd8Zjc1YTgxYzkzOGRiYmUwOGJiOTBjZTEwMzVlODQ0NjI5ZmJlMmI4MmIwNWY1NjM2ODFlMTBjZWRlYTA4ZjBlNA"
+      "url": "/catalog-images/lador/960136.jpg"
     },
     "name": "La'dor Damage Protector Acid Conditioner",
     "price": {
@@ -680,9 +679,41 @@
       "code": "rg_brand_648",
       "name": "LA'DOR"
     },
+    "code": "base_960137",
+    "listingImage": {
+      "url": "/catalog-images/lador/base_960137.jpg"
+    },
+    "name": "La'dor Before Care Keratin PPT Travel Size",
+    "price": {
+      "formattedValue": "551&nbsp;₽",
+      "value": 551
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
+    "code": "1018721",
+    "listingImage": {
+      "url": "/catalog-images/lador/1018721.jpg"
+    },
+    "name": "La'dor Wonder Pick Hydrolyzed Silk Clinic Water",
+    "price": {
+      "formattedValue": "936&nbsp;₽",
+      "value": 936
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_648",
+      "name": "LA'DOR"
+    },
     "code": "1018732",
     "listingImage": {
-      "url": "/medias6/-normal-1018732-big-8809500815396.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzQzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjgvaDcxLzExNTg4Njg3MjY1ODIyLmpwZ3xiNjY4YjU0ZThmNGMxY2QwZDcyZTA2MjVlNjk1N2UxNWM0YzI2YWEzMmIzNDBlZmU2YjNjMDAxZmVmN2M2YTU3"
+      "url": "/catalog-images/lador/1018732.jpg"
     },
     "name": "La'dor Scalp Scaling Spa",
     "price": {
@@ -698,12 +729,12 @@
     },
     "code": "1018733",
     "listingImage": {
-      "url": "/medias6/-normal-1018733-big-8809500810490.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wxODA1MnxpbWFnZS9qcGVnfGltYWdlcy9oYmMvaDU3LzExNTUxNjI4NDkyODMwLmpwZ3xiODI2ODUwNDQ2Yzk5OGZlMDE2NmY3MWI5NDUzNWY3MTk0NzE3YjUxZTFkN2VmZmEyM2RkMzBmYjY4NTIyYTQ1"
+      "url": "/catalog-images/lador/1018733.jpg"
     },
     "name": "La'dor Premium Morocco Argan Oil",
     "price": {
-      "formattedValue": "2 721&nbsp;₽",
-      "value": 2721
+      "formattedValue": "1 833&nbsp;₽",
+      "value": 1833
     },
     "country": "europe"
   },
@@ -714,28 +745,12 @@
     },
     "code": "base_960126",
     "listingImage": {
-      "url": "/medias6/product-960126-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE5MDkyfGltYWdlL2pwZWd8cHJvZHVjdHMvaGQ2L2g2NC8xMTUyMDQwODQ4NTkxOC5qcGd8Y2Y4MDYxMDhkNzQxYTA4ZDhjYjEyNWJmZmIzM2Y0NTgwYjEwZTYxNTk4Y2I1OTk5ZTYwNmMxNmI2MGZkMmQyMA"
+      "url": "/catalog-images/lador/base_960126.jpg"
     },
     "name": "La'dor Triplex Natural Shampoo",
     "price": {
-      "formattedValue": "907&nbsp;₽",
-      "value": 907
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_648",
-      "name": "LA'DOR"
-    },
-    "code": "1018718",
-    "listingImage": {
-      "url": "/medias6/-normal-1018718-big-8809789631700.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NjIwfGltYWdlL2pwZWd8aW1hZ2VzL2hmZS9oZmMvMTMwMTk2NTQwOTQ4NzguanBnfDJmNDlkOTE0M2NkY2MyYzMzZjdkNDcwNjY0YjY4Mzc1ZDk2ZDY2YjAxNDIwNmUxNTNlOTRiY2UxMDc2MTNjZGY"
-    },
-    "name": "La'dor Hydro LPP Treatment Refill",
-    "price": {
-      "formattedValue": "1 392&nbsp;₽",
-      "value": 1392
+      "formattedValue": "630&nbsp;₽",
+      "value": 630
     },
     "country": "europe"
   },
@@ -746,7 +761,7 @@
     },
     "code": "960127",
     "listingImage": {
-      "url": "/medias6/product-960127-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDEyODI5fGltYWdlL2pwZWd8cHJvZHVjdHMvaDAzL2g1Yi8xMTUyMDQxODQ4MDE1OC5qcGd8NGEzOTg1YWNhZTE3YzViYWZhY2RlYWU0MDQ1MDBkZTExN2YzODQwNTkzNmExMmVlYjM3ZWVlNDA4NmY3ODBmYw"
+      "url": "/catalog-images/lador/960127.jpg"
     },
     "name": "La'dor Tea Tree Scalp Clinic Hair Pack",
     "price": {
@@ -762,12 +777,12 @@
     },
     "code": "base_960131",
     "listingImage": {
-      "url": "/medias6/product-base-960131-0-listingDesktop?context=bWFzdGVyfHByb2R1Y3RzfDE1OTgyfGltYWdlL2pwZWd8cHJvZHVjdHMvaDllL2hhNS8xMTUyMjM4Mjc1NzkxOC5qcGd8NTA0Y2U5OThhMjZkMjMzYzM5YTFlMzk1MTRmZjFmNTA3MzFiNDNjOTI0NTkzMjQxODI3Njg3ZDQ2ODg3OWI1YQ"
+      "url": "/catalog-images/lador/base_960131.jpg"
     },
     "name": "La'dor Keratin Power Glue",
     "price": {
-      "formattedValue": "2 470&nbsp;₽",
-      "value": 2470
+      "formattedValue": "1 794&nbsp;₽",
+      "value": 1794
     },
     "country": "europe"
   },
@@ -778,7 +793,7 @@
     },
     "code": "1018701",
     "listingImage": {
-      "url": "/medias6/-normal-1018701-big-8809500818793.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyODAzNnxpbWFnZS9qcGVnfGltYWdlcy9oMmYvaDEyLzExNTUxNjI5Mjc5MjYyLmpwZ3wxYjMwODFhYjc5M2JjMGJmZGEzZTdjYWE3YzM0Y2M4N2M5ZmE1ZjQwZTRlYjMzZGMxYjlmY2U2MjdhNGUyMjUx"
+      "url": "/catalog-images/lador/1018701.jpg"
     },
     "name": "La'dor Thermal Protection Spray",
     "price": {
@@ -794,7 +809,7 @@
     },
     "code": "1018729",
     "listingImage": {
-      "url": "/medias6/-normal-1018729-big-8809789630093.jpg-listingDesktop?context=bWFzdGVyfGltYWdlc3wyMDAwMXxpbWFnZS9qcGVnfGltYWdlcy9oZWMvaDMwLzExNTUxNjIzNjc1OTM0LmpwZ3xjOTg4Y2JhOTEzZWY2ZGQwNzNhYzg3YWVkZDI5NjZhNWVhMTFlZmUzNDZmYmIzZWZmMDhlNzJiZTE3NmFmNWFk"
+      "url": "/catalog-images/lador/1018729.jpg"
     },
     "name": "La'dor Dermatical Active Ampoule",
     "price": {

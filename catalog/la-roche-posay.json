@@ -6,7 +6,7 @@
     },
     "code": "base_1121844",
     "listingImage": {
-      "url": "/medias6/-normal-base-1121844-big-3337875930048-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzczOXxpbWFnZS9qcGVnfGltYWdlcy9oZjkvaGQ5LzE0NjgxNTI1MzIxNzU4LmpwZ3w4ZDA0MzhmYTE3MDg0MzkxZmE2NDhjMGFkMDM2ZDM3NzhkN2IzNTkxYmU5ODBkZjFkNjliYTY1MGVlZDNlYTRk"
+      "url": "/catalog-images/la-roche-posay/base_1121844.jpg"
     },
     "name": "La Roche-posay Lipikar AP+Max Baume",
     "price": {
@@ -20,9 +20,25 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
+    "code": "1137573",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1137573.jpg"
+    },
+    "name": "La Roche-Posay Vitamin C+ Multi-Dose Gel",
+    "price": {
+      "formattedValue": "5 999&nbsp;₽",
+      "value": 5999
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
     "code": "base_1120393",
     "listingImage": {
-      "url": "/medias6/1-normal-1120393-big-3337875731409-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NDM0fGltYWdlL2pwZWd8aW1hZ2VzL2hkZS9oZTMvMTcwNDg0OTE5MTczNDIuanBnfGUxM2JmNTgyOTlhNGZkZWNiNWNkMTk4MTY1MDhiMTA5ODBlMmMwM2M1MzI2MjFjNDM3ZmZjNDU4ODViZmJjZmQ"
+      "url": "/catalog-images/la-roche-posay/base_1120393.jpg"
     },
     "name": "La Roche-posay Hydraphase HA Rich 72H Intense Moisture",
     "price": {
@@ -37,30 +53,14 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "1137573",
-    "listingImage": {
-      "url": "/medias6/-normal-1137573-big-3337875952965-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDYyM3xpbWFnZS9qcGVnfGltYWdlcy9oOTAvaDgyLzE3MDQ2NjM5MjgwMTU4LmpwZ3wzNTYwMWIwNWRkZjU1ODQwNzJiMjVjNTlkMzZkYzQzYmYyYTQyYjgxZjgzMzA5YjdhM2JhNzAxMzFkOWE5MzQy"
-    },
-    "name": "La Roche-Posay Vitamin C+ Multi-Dose Gel",
-    "price": {
-      "formattedValue": "6 898&nbsp;₽",
-      "value": 6898
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
     "code": "1136240",
     "listingImage": {
-      "url": "/medias6/-normal-1136240-big-3337875941433-listingDesktop?context=bWFzdGVyfGltYWdlc3w4MTg4fGltYWdlL2pwZWd8aW1hZ2VzL2hkZC9oNTIvMTcwNDY2MzYwNjg4OTQuanBnfDE2OWI5MTM0YTk5M2JiMzA5MTJkMjA1YTFiMTQ0NGY4YmY0OGUxYWMzNGZiNmZhOGJhODU5MWI0Zjg1ZmExZmY"
+      "url": "/catalog-images/la-roche-posay/1136240.jpg"
     },
     "name": "La Roche-Posay Mela B3 Eyes Anti-Dark Circles Brightening Care",
     "price": {
-      "formattedValue": "4 392&nbsp;₽",
-      "value": 4392
+      "formattedValue": "3 899&nbsp;₽",
+      "value": 3899
     },
     "country": "europe"
   },
@@ -69,34 +69,16 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "1134936",
+    "code": "base_1120344",
     "listingImage": {
-      "url": "/medias6/-normal-1134936-big-3337875950336-listingDesktop?context=bWFzdGVyfGltYWdlc3w1OTc2fGltYWdlL2pwZWd8aW1hZ2VzL2hhOC9oMTcvMTY1ODU5NzU2NjA1NzQuanBnfGFmZjkxMjk1ODA3MDcyY2IxYzY4YTVjOTg2ZTg0MWMxMWNlMWU2Mzg2Mjc3MGZlMjMzNzRiZTBiMTJlZDNhMTQ"
+      "url": "/catalog-images/la-roche-posay/base_1120344.jpg"
     },
-    "name": "La Roche-Posay Effaclar Supramolecular Oil & Pores Correct Mattifying Moisturizer",
+    "name": "La Roche-posay Effaclar Duo+ M Anti-Imperfections Triple Corrective Care",
     "price": {
-      "formattedValue": "2 124&nbsp;₽",
-      "value": 2124
+      "formattedValue": "1 273&nbsp;₽",
+      "value": 1273
     },
-    "country": "europe",
-    "purpose": "moisture"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1135220",
-    "listingImage": {
-      "url": "/medias6/-normal-1135220-big-3337875846110-listingDesktop?context=bWFzdGVyfGltYWdlc3w3NTIyfGltYWdlL2pwZWd8aW1hZ2VzL2g0NS9oYTMvMTY1ODU5NzcwMzY4MzAuanBnfDhiOWZlYmUwMTZiODE3OTc3YmFlYjg4MWRiNjY3ZWUzOGYyMzU2MzFiMTQ2ZjQ1ZjBiNDAyODVkZmFhNGVkMDE"
-    },
-    "name": "La Roche-Posay Hydraphase HA Light 72H Intense Moisture UV SPF 25",
-    "price": {
-      "formattedValue": "2 842&nbsp;₽",
-      "value": 2842
-    },
-    "country": "europe",
-    "purpose": "moisture"
+    "country": "europe"
   },
   {
     "brand": {
@@ -105,7 +87,7 @@
     },
     "code": "1134935",
     "listingImage": {
-      "url": "/medias6/-normal-1134935-big-3337875944618-listingDesktop?context=bWFzdGVyfGltYWdlc3w0OTAwfGltYWdlL2pwZWd8aW1hZ2VzL2g0YS9oYjEvMTY1ODU5NzUyMDE4MjIuanBnfGMwYTAxMzAyNjBjY2MwNjBhZThiNTE4Zjc0ZDZmYjk0YTE1YTkwN2RmNzNjZWU2MmIzODFhMmE1NTQ1YWRkMGE"
+      "url": "/catalog-images/la-roche-posay/1134935.jpg"
     },
     "name": "La Roche-Posay Mela B3 Double Dose Sunspots & Age Marks Day & Night Intensive Treatment",
     "price": {
@@ -120,58 +102,9 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "base_1134937",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1134937-big-3337875954006-listingDesktop?context=bWFzdGVyfGltYWdlc3w1ODYwfGltYWdlL2pwZWd8aW1hZ2VzL2hmYS9oMjUvMTY1ODU5NzYxMTkzMjYuanBnfDg1NGJlOTBhMTBlYjVkZmI5NDg5ODhmNzIzYWM1NDU0NWM3NjMzNzE4NTRlNWE5NDFlZTlmZWNkYjAwZjMxMjQ"
-    },
-    "name": "La Roche-Posay Effaclar Supramolecular Oil & Pores Correct Jelley Cleanser",
-    "price": {
-      "formattedValue": "1 155&nbsp;₽",
-      "value": 1155
-    },
-    "country": "europe",
-    "purpose": "cleanse"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120344",
-    "listingImage": {
-      "url": "/medias6/-normal-1120344-big-3337875863377-listingDesktop?context=bWFzdGVyfGltYWdlc3w3NTg2fGltYWdlL2pwZWd8aW1hZ2VzL2g2ZS9oMWUvMTQ2Njc4MDk4MTY2MDYuanBnfGVkYTgzZWI5N2RhNzQ2NTQzZjUzZDhjOGIxNWNiNmY5ZDJlYmNkNDhhODYyYWZkZjY4NGZlM2MwODE1MmMyNDI"
-    },
-    "name": "La Roche-posay Effaclar Duo+ M Anti-Imperfections Triple Corrective Care",
-    "price": {
-      "formattedValue": "1 273&nbsp;₽",
-      "value": 1273
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1134934",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1134934-big-3337875941396-listingDesktop?context=bWFzdGVyfGltYWdlc3w1OTQwfGltYWdlL2pwZWd8aW1hZ2VzL2gxZS9oYWMvMTY1OTAzNTU4MjQ2NzAuanBnfDc0YjY0ZjRmYjM0YWVmYjY1MTJkNzllZWE3NGE1ZTA3NDMwZTgwMDQ4MDExYzE3ODFkNjlmNTY4MWMwZTFhNTA"
-    },
-    "name": "La Roche-Posay Mela B3 Anti-Hyperpigmentation Dual Body Treatment",
-    "price": {
-      "formattedValue": "2 811&nbsp;₽",
-      "value": 2811
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
     "code": "base_1120392",
     "listingImage": {
-      "url": "/medias6/1-normal-1120392-big-3337875731638-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NDc2fGltYWdlL2pwZWd8aW1hZ2VzL2gzZi9oNWMvMTY1ODcyOTA1NDIxMTAuanBnfDFiM2ViNDQ4OGZlMzdhNmRiZjZiNWE0YWM3OWQwYmNkOTRlMWNmYjM5MDc4ZjdlYmJjNmNjZGY2YTIxNmY5ZWQ"
+      "url": "/catalog-images/la-roche-posay/base_1120392.jpg"
     },
     "name": "La Roche-posay Hydraphase HA Light 72H Intense Moisture",
     "price": {
@@ -186,9 +119,76 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
+    "code": "1134936",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1134936.jpg"
+    },
+    "name": "La Roche-Posay Effaclar Supramolecular Oil & Pores Correct Mattifying Moisturizer",
+    "price": {
+      "formattedValue": "1 722&nbsp;₽",
+      "value": 1722
+    },
+    "country": "europe",
+    "purpose": "moisture"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1135220",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1135220.jpg"
+    },
+    "name": "La Roche-Posay Hydraphase HA Light 72H Intense Moisture UV SPF 25",
+    "price": {
+      "formattedValue": "2 842&nbsp;₽",
+      "value": 2842
+    },
+    "country": "europe",
+    "purpose": "moisture"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1134934",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1134934.jpg"
+    },
+    "name": "La Roche-Posay Mela B3 Anti-Hyperpigmentation Dual Body Treatment",
+    "price": {
+      "formattedValue": "2 811&nbsp;₽",
+      "value": 2811
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1134937",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1134937.jpg"
+    },
+    "name": "La Roche-Posay Effaclar Supramolecular Oil & Pores Correct Jelley Cleanser",
+    "price": {
+      "formattedValue": "1 155&nbsp;₽",
+      "value": 1155
+    },
+    "country": "europe",
+    "purpose": "cleanse"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
     "code": "base_1120342",
     "listingImage": {
-      "url": "/medias6/1-normal-1120342-big-3337875722827-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjMwM3xpbWFnZS9qcGVnfGltYWdlcy9oMTkvaDU0LzE2NTg4MTYwMDQwOTkwLmpwZ3xlOWNhZTNiYmFlM2ExNjliZGI0OTc1ZTQyNDFjOGUwMGZlZjFlODI3NzIxMjEyZmJjODg5ZWEzOGNkODk5Mzhh"
+      "url": "/catalog-images/la-roche-posay/base_1120342.jpg"
     },
     "name": "La Roche-posay Effaclar Ultra Concentre Serum",
     "price": {
@@ -204,7 +204,7 @@
     },
     "code": "base_1121851",
     "listingImage": {
-      "url": "/medias6/-normal-1121851-big-3337875920582-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjMxN3xpbWFnZS9qcGVnfGltYWdlcy9oODgvaDU4LzE0Njk1NTIwNTAxNzkwLmpwZ3xkYjYwMjdjMTc5MTU0ZGVmZDlmOThjZTQ1ZDVmMzQ2NjdhMzE0ZWViNzczMWQ4MWE4MzVhZmVkNjczNDdiN2Mx"
+      "url": "/catalog-images/la-roche-posay/base_1121851.jpg"
     },
     "name": "La Roche-posay Hyalu B5 Serum Anti-Wrinkle Concentrate",
     "price": {
@@ -218,25 +218,9 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "1131713",
-    "listingImage": {
-      "url": "/medias6/-normal-1131713-big-3337875943963-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjgzNnxpbWFnZS9qcGVnfGltYWdlcy9oODMvaGJmLzE2MTQzMjAyOTQzMDA2LmpwZ3wxMTYwMTEwM2I2MzMwMjc3YTQxZGM0OWZiMzZmZjlhMWNlM2VjYWQ3MzM2ZDgzYmZkZjQ3Y2NlYzUyNzhmYTNm"
-    },
-    "name": "La Roche-posay Effaclar Purifying Foaming Gel",
-    "price": {
-      "formattedValue": "1 641&nbsp;₽",
-      "value": 1641
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
     "code": "1131711",
     "listingImage": {
-      "url": "/medias6/-normal-1131711-big-3337875917407-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNjYxMnxpbWFnZS9qcGVnfGltYWdlcy9oOGYvaDIxLzE2MTQzNDI5NTY2NDk0LmpwZ3w4NDc5NzhkYTVhOTlhZDRhODkzOWEyNjViY2I0MzFiZDdlNzkzMDk3MjYwNjJmYWVlMmJhYTJhMjA2OWY2MWIz"
+      "url": "/catalog-images/la-roche-posay/1131711.jpg"
     },
     "name": "La Roche-posay Anthelios UVmune 400+ Anti-Taches / Anti-Dark Spots SPF 50+ Fluid",
     "price": {
@@ -250,9 +234,26 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
+    "code": "1131716",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1131716.jpg"
+    },
+    "name": "La Roche-posay Lipikar AP+ Anti-Irritation Anti-Grattage Lipid-Replenishing Cleansing Oil",
+    "price": {
+      "formattedValue": "1 650&nbsp;₽",
+      "value": 1650
+    },
+    "country": "europe",
+    "purpose": "cleanse"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
     "code": "1131717",
     "listingImage": {
-      "url": "/medias6/-normal-1131717-big-3337875943901-listingDesktop?context=bWFzdGVyfGltYWdlc3w5ODY3fGltYWdlL2pwZWd8aW1hZ2VzL2gxOS9oMmYvMTYxNDIyNTAzMTE3MTAuanBnfDc5YWI3YmYxMTFlYjhjNzRlZjQ0MWQ3ZWNjNzEzYjk2NWY0MzE0YjJkNDgwNDFiYWY3M2JkZjg0ZDg3NmJhZjM"
+      "url": "/catalog-images/la-roche-posay/1131717.jpg"
     },
     "name": "La Roche-posay Lipikar Syndet AP+ Lipid-Replenishing Wash Cream",
     "price": {
@@ -266,14 +267,112 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "1131716",
+    "code": "1131713",
     "listingImage": {
-      "url": "/medias6/-normal-1131716-big-3337875943918-listingDesktop?context=bWFzdGVyfGltYWdlc3w4OTAxfGltYWdlL2pwZWd8aW1hZ2VzL2gxYy9oZWEvMTYxNDIyNDgwMTc5NTAuanBnfDI1ZjgwOGU5MzRkN2U4MzA3NzE0OGIwYWMzNmNkYTk5NDc0ODM2ZDA2MTRjY2RkMWI5YWYwYWFhMmFlMzIwZWY"
+      "url": "/catalog-images/la-roche-posay/1131713.jpg"
     },
-    "name": "La Roche-posay Lipikar AP+ Anti-Irritation Anti-Grattage Lipid-Replenishing Cleansing Oil",
+    "name": "La Roche-posay Effaclar Purifying Foaming Gel",
     "price": {
-      "formattedValue": "1 697&nbsp;₽",
-      "value": 1697
+      "formattedValue": "1 573&nbsp;₽",
+      "value": 1573
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120419",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120419.jpg"
+    },
+    "name": "La Roche-posay Cicaplast Levres Barrier Repairing Balm",
+    "price": {
+      "formattedValue": "763&nbsp;₽",
+      "value": 763
+    },
+    "popular": true,
+    "country": "europe",
+    "purpose": "repair"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1121399",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1121399.jpg"
+    },
+    "name": "La Roche-posay Anthelios UVMUNE 400 Hydrating Cream SPF 50+",
+    "price": {
+      "formattedValue": "2 114&nbsp;₽",
+      "value": 2114
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120401",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120401.jpg"
+    },
+    "name": "La Roche-posay Lipikar Lait Body Lotion",
+    "price": {
+      "formattedValue": "1 883&nbsp;₽",
+      "value": 1883
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120348",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120348.jpg"
+    },
+    "name": "La Roche-posay Effaclar H Iso-Biome Cleansing Cream-Gel",
+    "price": {
+      "formattedValue": "1 549&nbsp;₽",
+      "value": 1549
+    },
+    "country": "europe",
+    "purpose": "cleanse"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1121392",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1121392.jpg"
+    },
+    "name": "La Roche-posay Anthelios Age Correct SPF 50",
+    "price": {
+      "formattedValue": "2 383&nbsp;₽",
+      "value": 2383
+    }
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120361",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120361.jpg"
+    },
+    "name": "La Roche-posay Toleriane Double Cleanser Hydrating Purifying Foaming Gel",
+    "price": {
+      "formattedValue": "2 473&nbsp;₽",
+      "value": 2473
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -285,12 +384,12 @@
     },
     "code": "1120368",
     "listingImage": {
-      "url": "/medias6/-normal-1120368-big-3337875757614-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NjE5fGltYWdlL2pwZWd8aW1hZ2VzL2g0Zi9oYTYvMTQ2NTU0OTY4NDczOTAuanBnfDgzMDdlZGRhYjU2MmI3MmQ2OTY1NTc1N2FhZWMzYjQyOTkwODIwN2I4NWMzMmI0MzM3NzkwYTkxNTRiNmY5OTE"
+      "url": "/catalog-images/la-roche-posay/1120368.jpg"
     },
     "name": "La Roche-posay Toleriane Dermallergo Crème",
     "price": {
-      "formattedValue": "2 570&nbsp;₽",
-      "value": 2570
+      "formattedValue": "2 497&nbsp;₽",
+      "value": 2497
     },
     "country": "europe"
   },
@@ -301,7 +400,7 @@
     },
     "code": "1120387",
     "listingImage": {
-      "url": "/medias6/-normal-1120387-big-3337875694469-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTc4OXxpbWFnZS9qcGVnfGltYWdlcy9oMjYvaGY4LzE0NjU1NDk5MTQxMTUwLmpwZ3wyMTVlYWU2OWM4NjBiNzY2NmEwN2UwYTZlMDkwZWMwZjkzY2FmMzhhYTVjMTJhMGUyMTNmOTY5MWU4ODU3MDQx"
+      "url": "/catalog-images/la-roche-posay/1120387.jpg"
     },
     "name": "La Roche-posay Retinol B3 Serum",
     "price": {
@@ -316,9 +415,42 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
+    "code": "1120395",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120395.jpg"
+    },
+    "name": "La Roche-posay Nutritic Intense Riche",
+    "price": {
+      "formattedValue": "3 636&nbsp;₽",
+      "value": 3636
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120365",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120365.jpg"
+    },
+    "name": "La Roche-posay Toleriane Sensitive Riche Protective Soothing Moisturiser",
+    "price": {
+      "formattedValue": "1 393&nbsp;₽",
+      "value": 1393
+    },
+    "country": "europe",
+    "purpose": "moisture"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
     "code": "1120359",
     "listingImage": {
-      "url": "/medias6/-normal-1120359-big-3337872413148-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDg5NnxpbWFnZS9qcGVnfGltYWdlcy9oYTAvaGU4LzE0NjY3OTA3MTM3NTY2LmpwZ3w2YjI1OGZhMTVkMTg3NjEzMDJkNTA5MGVlMDNhYTg2YjkzZWI4MzU2YTczY2Q5MGJlNGJlYmZjMzVjY2RmMTU3"
+      "url": "/catalog-images/la-roche-posay/1120359.jpg"
     },
     "name": "La Roche-posay Toleriane Cleansing Micellar Foam",
     "price": {
@@ -335,7 +467,7 @@
     },
     "code": "base_1120384",
     "listingImage": {
-      "url": "/medias6/-normal-base-1120384-big-3337875890021-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjAyNXxpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDA3LzE0NjY3OTA3NTk2MzE4LmpwZ3xkMGJlMDRkNGI2YzRkM2U4YWI5YjFiYTY0M2IyOGFmNmMwNzgzZDUyYTQwN2VmMmNkODJmYTQwNGQyNzNiNWNj"
+      "url": "/catalog-images/la-roche-posay/base_1120384.jpg"
     },
     "name": "La Roche-posay Mela B3 Serum",
     "price": {
@@ -349,32 +481,45 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "1120419",
+    "code": "1121397",
     "listingImage": {
-      "url": "/medias6/-normal-1120419-big-30106659-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDM4MHxpbWFnZS9qcGVnfGltYWdlcy9oMGMvaGViLzE0NjY3OTEwODA3NTgyLmpwZ3xmOTg2NTM0MzJiZDM4MWQwOWMwYzExZWNkYTE0ZDc5ZWIwYTc5Y2ZiOWE4MTM3MGVmZTFhM2Y2YjkxNmM0MjE0"
+      "url": "/catalog-images/la-roche-posay/1121397.jpg"
     },
-    "name": "La Roche-posay Cicaplast Levres Barrier Repairing Balm",
+    "name": "La Roche-posay Anthelios UVMUNE 400 Invisible Fluid SPF 50+",
     "price": {
-      "formattedValue": "763&nbsp;₽",
-      "value": 763
-    },
-    "popular": true,
-    "country": "europe",
-    "purpose": "repair"
+      "formattedValue": "2 128&nbsp;₽",
+      "value": 2128
+    }
   },
   {
     "brand": {
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "1120361",
+    "code": "1120360",
     "listingImage": {
-      "url": "/medias6/-normal-1120361-big-3337875545822-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzM5N3xpbWFnZS9qcGVnfGltYWdlcy9oYzkvaGMxLzE0NjU1NDk1OTI5ODg2LmpwZ3w3NTlhZTA2OTRhYzg5M2YyNjNlMmFjZjVmZTEzZGI4ZTllMDlhMjUwOWI4MDY0NGQ4OTY3NzZlMzVhYzkyMTQ5"
+      "url": "/catalog-images/la-roche-posay/1120360.jpg"
     },
-    "name": "La Roche-posay Toleriane Double Cleanser Hydrating Purifying Foaming Gel",
+    "name": "La Roche-posay Toleriane Tonifying Protecting Soothing Lotion",
     "price": {
-      "formattedValue": "2 581&nbsp;₽",
-      "value": 2581
+      "formattedValue": "2 080&nbsp;₽",
+      "value": 2080
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120403",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120403.jpg"
+    },
+    "name": "La Roche-posay Lipikar AP+ Cleansing Oil",
+    "price": {
+      "formattedValue": "1 894&nbsp;₽",
+      "value": 1894
     },
     "country": "europe",
     "purpose": "cleanse"
@@ -386,7 +531,7 @@
     },
     "code": "1120352",
     "listingImage": {
-      "url": "/medias6/-normal-1120352-big-3433422408159-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjI2MXxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDc0LzE0NjY3ODg1NTc2MjIyLmpwZ3xjNzc5ZTIwYTY0MzE0ZTZiMTYxMmZlNTU0NmZiMGMwMzlkZDBjZDViNGMxOWFjNTNmNjIyNGFiMjRhNWRlNWM1"
+      "url": "/catalog-images/la-roche-posay/1120352.jpg"
     },
     "name": "La Roche-posay Effaclar Micro-Exfoliant Anti-Blackheads Astringent Lotion",
     "price": {
@@ -403,143 +548,12 @@
     },
     "code": "base_1120411",
     "listingImage": {
-      "url": "/medias6/-normal-base-1120411-big-3337875852302-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTYxNnxpbWFnZS9qcGVnfGltYWdlcy9oZWIvaDlkLzE0NjgxNTIxNjUxNzQyLmpwZ3wwZTA5NTBlYzFmMzUzMjc0NDI1NzQzN2M3NDA3ZTgwN2ZmNTk5MjMyOGFmYjdhYmY2MjhmYzNkOGIxNmI3ODYx"
+      "url": "/catalog-images/la-roche-posay/base_1120411.jpg"
     },
     "name": "La Roche-posay Lipikar Lait Urea 10%",
     "price": {
-      "formattedValue": "3 042&nbsp;₽",
-      "value": 3042
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120395",
-    "listingImage": {
-      "url": "/medias6/-normal-1120395-big-3337872413575-listingDesktop?context=bWFzdGVyfGltYWdlc3w1NjAxfGltYWdlL2pwZWd8aW1hZ2VzL2g2Zi9oMzAvMTQ2NTU0OTk1OTk5MDIuanBnfGZiNmZlZWRkOTEzMjI0YWU0ZWY4MjQyNDJkNjI5MjdlNTc0MDJlYTlkNmIwN2QyNDYwY2VmMmUxYjg5ZDVmYzQ"
-    },
-    "name": "La Roche-posay Nutritic Intense Riche",
-    "price": {
-      "formattedValue": "3 636&nbsp;₽",
-      "value": 3636
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120360",
-    "listingImage": {
-      "url": "/medias6/-normal-1120360-big-3337872410321-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjA0OHxpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDM2LzE2ODcyMjg5MDA5Njk0LmpwZ3w1MjVhZDgyNjgyZjNhNGQzMTNhNzVjM2RiYjdmMTA4OTc4N2JlOGM0ZmU4ZjNlNzg3YjFmY2VlMDYyYWRkMTAz"
-    },
-    "name": "La Roche-posay Toleriane Tonifying Protecting Soothing Lotion",
-    "price": {
-      "formattedValue": "2 080&nbsp;₽",
-      "value": 2080
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120403",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120403-big-3337875656764-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjMzNHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDRkLzE0NjY3ODEzNDg2NjIyLmpwZ3xkYTJiNmMzNWRkY2YxZDMxNTU4OGQ0N2VhMGI2OGU2MjdmZjBhMzJhMWYzZTRhZjk0NjY5OTMyODJjZjE1OWZh"
-    },
-    "name": "La Roche-posay Lipikar AP+ Cleansing Oil",
-    "price": {
-      "formattedValue": "1 894&nbsp;₽",
-      "value": 1894
-    },
-    "country": "europe",
-    "purpose": "cleanse"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120348",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120348-big-3337875777759-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTQxNHxpbWFnZS9qcGVnfGltYWdlcy9oMTkvaDU3LzE0NjgxNTYyNTQ2MjA2LmpwZ3wyZjI1NWY0ZWY5MmQ5Yzc4MGVkNDRlYTdiYjk0Y2Y4ZmQyYzMwZGIzZGNmYWIxMDNiNmE3NzI2ZDZmYjA5Y2Mw"
-    },
-    "name": "La Roche-posay Effaclar H Iso-Biome Cleansing Cream-Gel",
-    "price": {
-      "formattedValue": "1 549&nbsp;₽",
-      "value": 1549
-    },
-    "country": "europe",
-    "purpose": "cleanse"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1121399",
-    "listingImage": {
-      "url": "/medias6/-normal-1121399-big-3337875797719-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjA1MnxpbWFnZS9qcGVnfGltYWdlcy9oMTAvaDU1LzE0NjY4MDc1OTU4MzAyLmpwZ3wyODI4ZTY3OTBkNTRjZjQ3YzU0MjljZGQyNzgyYWY0ZjY3MTQ4NDE4ODllMmYzMWJjYzA0ZjNhMWIzMDkwZDFj"
-    },
-    "name": "La Roche-posay Anthelios UVMUNE 400 Hydrating Cream SPF 50+",
-    "price": {
-      "formattedValue": "2 114&nbsp;₽",
-      "value": 2114
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120401",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120401-big-3337875549615-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDM1NXxpbWFnZS9qcGVnfGltYWdlcy9oZWQvaDVjLzE0NjY3OTAxMTczNzkwLmpwZ3xhZDZhMzliNzcyMTZmODU1MTE1ZDI0YTBlMTc0NzdhZjJhOGFhZTJmZGU0ZTQxMTVlZWRkOTIzMjkxMTQwMDA4"
-    },
-    "name": "La Roche-posay Lipikar Lait Body Lotion",
-    "price": {
-      "formattedValue": "1 883&nbsp;₽",
-      "value": 1883
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120365",
-    "listingImage": {
-      "url": "/medias6/-normal-1120365-big-3337875588348-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTEzMXxpbWFnZS9qcGVnfGltYWdlcy9oNzkvaDcwLzE0NjY3ODEwNzM0MTEwLmpwZ3xhYjIzMzhiYTM4Zjc4ZjcxY2IzZDMzODFmM2EzZjQ0ZDlhMGM2NDFkNWU2NGIyMjhlNTdlN2QxMzViYTQ4ZWJj"
-    },
-    "name": "La Roche-posay Toleriane Sensitive Riche Protective Soothing Moisturiser",
-    "price": {
-      "formattedValue": "1 393&nbsp;₽",
-      "value": 1393
-    },
-    "country": "europe",
-    "purpose": "moisture"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120367",
-    "listingImage": {
-      "url": "/medias6/-normal-1120367-big-3337875757669-listingDesktop?context=bWFzdGVyfGltYWdlc3w4ODE2fGltYWdlL2pwZWd8aW1hZ2VzL2hkYy9oNDgvMTQ2NTU0OTYzODg2MzguanBnfDA5YjhkNTk1NDQ5NTc4MmUzOGYyZDAxMjY4YWQ1MTk5MmFjOTBmNGY1YjgxYzc4NWVhZjRjMzUxMDRjNzQ0N2Q"
-    },
-    "name": "La Roche-posay Toleriane Dermallergo Fluide",
-    "price": {
-      "formattedValue": "2 497&nbsp;₽",
-      "value": 2497
+      "formattedValue": "2 467&nbsp;₽",
+      "value": 2467
     },
     "country": "europe"
   },
@@ -550,7 +564,7 @@
     },
     "code": "1120372",
     "listingImage": {
-      "url": "/medias6/-normal-1120372-big-3337875807043-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NTY4fGltYWdlL2pwZWd8aW1hZ2VzL2gxYy9oMTEvMTQ2NTU0OTczMDYxNDIuanBnfDBhOWNiNDk2Yzk1NDY1ZGY4NzFiYzFiZTk0OWQ3MDlmMjY1YjFjMGQ1YzQ0M2MwMjk0MTIwMWQ4Njg0MmJjN2M"
+      "url": "/catalog-images/la-roche-posay/1120372.jpg"
     },
     "name": "La Roche-posay Toleriane Rosaliac AR Concentre",
     "price": {
@@ -566,7 +580,7 @@
     },
     "code": "base_1120542",
     "listingImage": {
-      "url": "/medias6/-normal-base-1120542-big-3337875930307-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzgxNnxpbWFnZS9qcGVnfGltYWdlcy9oNzIvaDMzLzE0NjgxNTU0Mjg4NjcwLmpwZ3wxMzEwNzIxNDUxNWRhOWQ2ZTQ0MGUwODE1MDk4YjQ0MzNmYjhkZjJhMzI1M2M5Y2M5OTUxNzk0ZDM3ZGY5NWZh"
+      "url": "/catalog-images/la-roche-posay/base_1120542.jpg"
     },
     "name": "La Roche-posay Lipikar AP+M Cream",
     "price": {
@@ -580,25 +594,9 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "1120390",
-    "listingImage": {
-      "url": "/medias6/-normal-1120390-big-3337872412592-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDE4N3xpbWFnZS9qcGVnfGltYWdlcy9oYTEvaGQxLzE0NjY3ODEzMDI3ODcwLmpwZ3wxNzVhNDczZWI1OTI3YmUzZGRjY2RhMTk2N2Y4NzU4NTYyNTYyNWU3ZWVjYmE5NmM4MmIxY2ZmMzYyNGY5OGQz"
-    },
-    "name": "La Roche-posay Substiane Riche Replenishing Care",
-    "price": {
-      "formattedValue": "4 743&nbsp;₽",
-      "value": 4743
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
     "code": "base_1120357",
     "listingImage": {
-      "url": "/medias6/-normal-base-1120357-big-3337875528092-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTgxOXxpbWFnZS9qcGVnfGltYWdlcy9oYTgvaDZlLzE0NjY4MDY3NzAwNzY2LmpwZ3xiYjdiMDRlMjc0YjdlYTE0NDg0NjVjMjRhMzY1OTVkY2U1MDQ5ZTljYTEyYjU1NmNhZjkzZDdjZWM0MzdjOGIw"
+      "url": "/catalog-images/la-roche-posay/base_1120357.jpg"
     },
     "name": "La Roche-posay Toleriane Anti-Tightness Anti-Redness Cleansing Make-Up Removing Micellar Water ",
     "price": {
@@ -613,659 +611,9 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "1120421",
-    "listingImage": {
-      "url": "/medias6/-normal-1120421-big-3337872414282-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTY1MXxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDAyLzE0NjY4MDcyMjg4Mjg2LmpwZ3w3NDUxMjg5YzZjMmY3YzRmMTY2MzZlYmU3YWQ2ZjU3MTczMTE5YjJlNDlhYTQ0NDJmZTY2ZWI4ZWM4MzQyZTk0"
-    },
-    "name": "La Roche-posay Kerium Extra Gentle Gel-Shampoo",
-    "price": {
-      "formattedValue": "2 587&nbsp;₽",
-      "value": 2587
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120341",
-    "listingImage": {
-      "url": "/medias6/-normal-1120341-big-3337875947435-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTI3M3xpbWFnZS9qcGVnfGltYWdlcy9oMzQvaGFkLzE0Njk1NDU2Mzc0ODE0LmpwZ3xmYmZlNjQ0OTc0M2I3NmQ3NjUwNmZjYzljM2NhOTc5MGE4MmYzYjc1Y2RhOGFlOTEzODc2MmVmMzJhMzcxMzVm"
-    },
-    "name": "La Roche-posay Effaclar Micro-Peeling Purifying Gel Cleanser Refill",
-    "price": {
-      "formattedValue": "1 835&nbsp;₽",
-      "value": 1835
-    },
-    "country": "europe",
-    "purpose": "cleanse"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120386",
-    "listingImage": {
-      "url": "/medias6/-normal-1120386-big-3337875890113-listingDesktop?context=bWFzdGVyfGltYWdlc3w4MjA2fGltYWdlL2pwZWd8aW1hZ2VzL2g1OS9oN2QvMTQ2Njc5MDg1MTM4MjIuanBnfDUwNzE0NmNlZWJmMWMwMDE1ZTNlODA5NDE5NTFmNDUzMTcyMDMwMjRlZWFlNDYxNjYzNDBmZmRlMmI4OTAzMDg"
-    },
-    "name": "La Roche-posay Mela B3 Anti-Darks Spots Corrective Protective Care SPF 30",
-    "price": {
-      "formattedValue": "2 982&nbsp;₽",
-      "value": 2982
-    },
-    "popular": true,
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120418",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120418-big-3337875876940-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjA3M3xpbWFnZS9qcGVnfGltYWdlcy9oYzkvaGFjLzE0NjgxNTYwNzExMTk4LmpwZ3w5ZTI0MjJlNTk3ZWQ1YWU2OWY3ZTE3YTc4MjA5MjBjY2I5Zjk5YjM4ZjdlMjMwMjQ4OWY3NzRiM2JiZTI4ZTM5"
-    },
-    "name": "La Roche-posay Cicaplast Baume B5+ SPF 50+",
-    "price": {
-      "formattedValue": "1 529&nbsp;₽",
-      "value": 1529
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120369",
-    "listingImage": {
-      "url": "/medias6/-normal-1120369-big-3337875800853-listingDesktop?context=bWFzdGVyfGltYWdlc3w5NzQ5fGltYWdlL2pwZWd8aW1hZ2VzL2g4MC9oYmYvMTQ2Njc4ODY0OTM3MjYuanBnfDI3ZGQ2NWNlOGEwMWIxNmE2MDViNmZiNzkwZjIwZTE4MzZlMTAzNTU1OGNhMWI3ZTJiNzA2OTk4MjI1ZmEyMjQ"
-    },
-    "name": "La Roche-posay Toleriane Dermallergo Nuit",
-    "price": {
-      "formattedValue": "2 742&nbsp;₽",
-      "value": 2742
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120377",
-    "listingImage": {
-      "url": "/medias6/-normal-1120377-big-3337875583589-listingDesktop?context=bWFzdGVyfGltYWdlc3w3MzQ4fGltYWdlL2pwZWd8aW1hZ2VzL2g0MC9oZjcvMTQ2Njc4ODc0MTEyMzAuanBnfDIyMzI2YjFkMjVlYTJkNjY3YjUwODkwYjdmMmNiMzM3Y2E4ZjIwNzhiODQ0MTI3NzFkNmZlYmNhZDVlYTBkYTA"
-    },
-    "name": "La Roche-posay Hyalu B5 Repairing Replumping Anti-Wrinkle Care",
-    "price": {
-      "formattedValue": "3 205&nbsp;₽",
-      "value": 3205
-    },
-    "country": "europe",
-    "purpose": "repair"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120347",
-    "listingImage": {
-      "url": "/medias6/-normal-1120347-big-3337875924887-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDY4MHxpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDllLzE0NjY3ODk2MTI3NTE4LmpwZ3wxOTQ5MmM3YjRhMjc1YjMyYjAwZGQ4ZWY4Y2FhYjkwYWMwNTFlNWY1M2U2YjJhYzdhNDA5MWZlMjgzYzNlNjgw"
-    },
-    "name": "La Roche-posay Effaclar Duo+ M Multi-Action Imperfections Patch",
-    "price": {
-      "formattedValue": "1 008&nbsp;₽",
-      "value": 1008
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120381",
-    "listingImage": {
-      "url": "/medias6/-normal-1120381-big-3337875613668-listingDesktop?context=bWFzdGVyfGltYWdlc3w3MjQ1fGltYWdlL2pwZWd8aW1hZ2VzL2g4MS9oOTgvMTQ2Njc4OTg0MjEyNzguanBnfGM0NzMwZGU1YzhkYWQ5YjI4NGZlYjUwMTQxY2QwMGMyOTRkYzE0N2RmYzg2OWNjNmQ3YjNiZjU2ZTkzZDgwM2I"
-    },
-    "name": "La Roche-posay Hyalu B5 Eyes Anti-Wrinkle Care",
-    "price": {
-      "formattedValue": "2 953&nbsp;₽",
-      "value": 2953
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1121398",
-    "listingImage": {
-      "url": "/medias6/-normal-1121398-big-3337875797641-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDU3OHxpbWFnZS9qcGVnfGltYWdlcy9oYTUvaGY2LzE0NjY3OTA1MzAyNTU4LmpwZ3xiOWIzYWVkM2FjOWMxNmE1ZjM4NWU4MGE1ZGZmMTEwYWMwZTNmY2JiNjFlZTFjYTllYjAwN2E5MzYwYTY3N2M1"
-    },
-    "name": "La Roche-posay Anthelios UVMUNE 400 Tinted Fluid SPF 50+",
-    "price": {
-      "formattedValue": "2 183&nbsp;₽",
-      "value": 2183
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1121410",
-    "listingImage": {
-      "url": "/medias6/-normal-1121410-big-3337875917810-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDgwLzE0NjgxNTU2NTgyNDMwLmpwZ3w3NDkzOGUwM2E3OWJlNTZmZTY5ZDIyYmU4YzIzMWJhOWNhNDVhOGQwNWE3MjE5M2JjMzAwNmQ5YzdhZmE3MTNm"
-    },
-    "name": "La Roche-posay Anthelios UVAIR Fluid SPF 50+",
-    "price": {
-      "formattedValue": "2 090&nbsp;₽",
-      "value": 2090
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120373",
-    "listingImage": {
-      "url": "/medias6/-normal-1120373-big-3337875806961-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjA3MHxpbWFnZS9qcGVnfGltYWdlcy9oMTYvaDViLzE0NjY3ODExNjUxNjE0LmpwZ3xkYTc3ZDViMWMxZmY0NDQzNTdmMGM2NjhmZDFkOGQyYjlhMWM4ZWU5YzEwMTNjZmQxM2Q2M2YzNjg4NjY5YWJl"
-    },
-    "name": "La Roche-posay Toleriane Rosaliac AR High Protection Daily Soothing Moisturizer SPF 30",
-    "price": {
-      "formattedValue": "2 515&nbsp;₽",
-      "value": 2515
-    },
-    "country": "europe",
-    "purpose": "moisture"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120379",
-    "listingImage": {
-      "url": "/medias6/-normal-1120379-big-3337875920728-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzcxMXxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDY1LzE0Njk1NDU2ODMzNTY2LmpwZ3w1ZGYwNmE4ZDM0ODczOWVhYmVlNWU5NzNjMDBiOTNhZGQ3M2U4MjMzOTU5N2JlNmYxODM1MDNmYjM1NjUyNTRj"
-    },
-    "name": "La Roche-posay Hyalu B5 Water Gel",
-    "price": {
-      "formattedValue": "2 128&nbsp;₽",
-      "value": 2128
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120394",
-    "listingImage": {
-      "url": "/medias6/-normal-1120394-big-3337872412646-listingDesktop?context=bWFzdGVyfGltYWdlc3w3MDAyfGltYWdlL2pwZWd8aW1hZ2VzL2g2ZS9oYWEvMTQ2ODE1NTc0OTk5MzQuanBnfGMyZTlkNjRhNTRmMmViZGVjYmI3MDllOGYyMzkyMzliMWFjMDk0OWE5ZDFjYTQyYTczNDUyMGY5MzhjNmIwN2I"
-    },
-    "name": "La Roche-posay Hydraphase HA Yeux 24H Moisture",
-    "price": {
-      "formattedValue": "2 484&nbsp;₽",
-      "value": 2484
-    },
-    "country": "europe",
-    "purpose": "moisture"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120423",
-    "listingImage": {
-      "url": "/medias6/-normal-1120423-big-3337872412158-listingDesktop?context=bWFzdGVyfGltYWdlc3wxOTE1MnxpbWFnZS9qcGVnfGltYWdlcy9oODUvaDFjLzE0NjgxNTI3NjE1NTE4LmpwZ3w4ZGZmNzViMWI5OWM5NDljYjJlODExYWJiYTViNjVmODg4NWUxZTgxODIyYTExNjhmZDAxYTFlZTY0MzI3NjA1"
-    },
-    "name": "La Roche-posay 24H Physiological Deodorant",
-    "price": {
-      "formattedValue": "1 407&nbsp;₽",
-      "value": 1407
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1121382",
-    "listingImage": {
-      "url": "/medias6/-normal-1121382-big-3337875549530-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjQzMnxpbWFnZS9qcGVnfGltYWdlcy9oNTAvaGNlLzE0NzEzMjk3ODI5OTE4LmpwZ3w1ODNiNTI0Mzc3NDJiNjc4ZDdkZDJjMGExZjRmM2I3ODliZDJkODljMDE2ZDMyZTE3Y2Q3YzMzYzJmNGYzMzIz"
-    },
-    "name": "La Roche-posay Anthelios Anti-Shine Mist SPF 50+",
-    "price": {
-      "formattedValue": "2 152&nbsp;₽",
-      "value": 2152
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1121842",
-    "listingImage": {
-      "url": "/medias6/-normal-1121842-big-3337875909235-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjE3OHxpbWFnZS9qcGVnfGltYWdlcy9oZDYvaDg2LzE0NjgxNTI0ODYzMDA2LmpwZ3wyMDJhOWJiZGMzZjRiNGNjNzhkNmQzNzE2OTU1ZWNkZWZhMDk4ODZjMDMzOTIyZjYxYmZkMzE1ZTBhMmM1ODMz"
-    },
-    "name": "La Roche-posay Vitamin C12 Serum",
-    "price": {
-      "formattedValue": "4 068&nbsp;₽",
-      "value": 4068
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120398",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120398-big-3337872418785-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjA0MHxpbWFnZS9qcGVnfGltYWdlcy9oZDIvaGQ5LzE0NjY3OTAwMjU2Mjg2LmpwZ3w0YjkyMTA4NjQxYWRkOWRhMzg2YmU3M2E0NGE0Yzc5ODkwZjIwN2MxZDkzNzY4ZjE1MzM0OWZiMjNkOGMxOGQ5"
-    },
-    "name": "La Roche-posay Lipikar Gel Lavant",
-    "price": {
-      "formattedValue": "1 863&nbsp;₽",
-      "value": 1863
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120396",
-    "listingImage": {
-      "url": "/medias6/-normal-1120396-big-30070349-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjY5MHxpbWFnZS9qcGVnfGltYWdlcy9oMDIvaGUyLzE0NjU1NTAwMDU4NjU0LmpwZ3xlZmE4MzdhMDllZTdhMTNhNzY4MDQ1NDk0NjRlNjc2NmNlNjNmNzRlMjFlZjA5MDIyMzcyNDUyYzIzN2M0NDY1"
-    },
-    "name": "La Roche-posay Nutritic Transforming Care Lips",
-    "price": {
-      "formattedValue": "1 214&nbsp;₽",
-      "value": 1214
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120424",
-    "listingImage": {
-      "url": "/medias6/-normal-1120424-big-3337872412141-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDQzN3xpbWFnZS9qcGVnfGltYWdlcy9oOGMvaDdjLzE0NjgxNTUzODI5OTE4LmpwZ3w2ZmQ5NWU5MjRiNzI1NGNhNmRlNmM3NTlhYmYzYTRiNzkxZjU4ZjVlOGE5ZGZmOWE2MGMxYTJlNzY1MjhlNmY5"
-    },
-    "name": "La Roche-posay Sensitive Skin 48H Deodorant",
-    "price": {
-      "formattedValue": "1 424&nbsp;₽",
-      "value": 1424
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120380",
-    "listingImage": {
-      "url": "/medias6/-normal-1120380-big-3337875806923-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjI2NXxpbWFnZS9qcGVnfGltYWdlcy9oZTgvaDEwLzE0NjY4MDcwNDUzMjc4LmpwZ3xmODkwMDIxMjkyNWM1MmY4NWMzZmMyMWMzYmRlNGVjYThhMGJmNjg5YmJkN2Y3MTMwOTk0MzAzOTA4ZjlmMzAy"
-    },
-    "name": "La Roche-posay Hyalu B5 Serum Yeux / Eye",
-    "price": {
-      "formattedValue": "3 132&nbsp;₽",
-      "value": 3132
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1121381",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1121381-big-3337872420153-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjgzOHxpbWFnZS9qcGVnfGltYWdlcy9oZTkvaDc4LzE0NjY4MDczMjA1NzkwLmpwZ3w2YzNjYjI4NDAwYzFlNGQxOTM0MTU5MmFlOWEyOGY1N2Q4NDRkOTk0MmNkZmM3MDkyZDM4YjIzZDdlZjcxMmM5"
-    },
-    "name": "La Roche-posay Anthelios Invisible Mist SPF 50+",
-    "price": {
-      "formattedValue": "3 456&nbsp;₽",
-      "value": 3456
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120366",
-    "listingImage": {
-      "url": "/medias6/-normal-1120366-big-3337875921336-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzU3M3xpbWFnZS9qcGVnfGltYWdlcy9oOTUvaDY2LzE0NjY3ODk3OTYyNTI2LmpwZ3w1ZjdkMzk1OTY5NDI0ZDVjMDM2ZTIyNTViYmIzNWFiNTAzMGEyODI0YTc1OTIzMThhOWNmNjQwNzNmNTlkYTgy"
-    },
-    "name": "La Roche-posay Toleriane Dermallergo Serum",
-    "price": {
-      "formattedValue": "2 947&nbsp;₽",
-      "value": 2947
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1121391",
-    "listingImage": {
-      "url": "/medias6/-normal-1121391-big-3337875696838-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTczNXxpbWFnZS9qcGVnfGltYWdlcy9oZWUvaGNlLzE0Njk1Njg4ODk2NTQyLmpwZ3xmODZhOTljMzViNWE4MjZhYjE1ZmVmNGYxMDUwMmNlY2U5MGQ5YzQyODJhZGI1ZTg1YzczZGE0NzMwMDk3OTM4"
-    },
-    "name": "La Roche-posay Anthelios Invisible Spray SPF 50+",
-    "price": {
-      "formattedValue": "3 352&nbsp;₽",
-      "value": 3352
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120362",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120362-big-3337875570404-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDAzNXxpbWFnZS9qcGVnfGltYWdlcy9oZWIvaDZhLzE0NjY4MDY4NjE4MjcwLmpwZ3wwZjAzNzc1YTc5NTI4NTI3MzdlMTQ0ZTYxNWFhZWUxNzQyNmRjMjBhNGU3YzZhMmRmNWExOGJlMGE3ZGI0ZTQ2"
-    },
-    "name": "La Roche-posay Toleriane Caring Wash",
-    "price": {
-      "formattedValue": "1 662&nbsp;₽",
-      "value": 1662
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1121395",
-    "listingImage": {
-      "url": "/medias6/-normal-1121395-big-3337875764353-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjM0NXxpbWFnZS9qcGVnfGltYWdlcy9oYjMvaDk2LzE0NjY4MDc0MTIzMjk0LmpwZ3w1NzU4MjdkZjU0NWYzNTc1MWVjNjJkYzMwYmJhMGVjZWRkNmFlZTg4ZmY1YjNmZDYxMTkyMDM3ZGIxNDFmMWQx"
-    },
-    "name": "La Roche-posay Anthelios Age Correct Visible Light SPF 50",
-    "price": {
-      "formattedValue": "2 421&nbsp;₽",
-      "value": 2421
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120337",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120337-big-3337872411083-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDY1MnxpbWFnZS9qcGVnfGltYWdlcy9oZGIvaDk0LzE0NjgxNTI2Njk4MDE0LmpwZ3wxZDQ4ZTVkOGY1ZGVmNzkxNGRiZjYyNzFkYzM5YmI1ZDllYTEyMzYxNTU3YjNmZTA2NTE2MWExNjlhZmY3NTVh"
-    },
-    "name": "La Roche-posay Effaclar Purifying Foaming Gel",
-    "price": {
-      "formattedValue": "1 246&nbsp;₽",
-      "value": 1246
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120354",
-    "listingImage": {
-      "url": "/medias6/-normal-1120354-big-3337872413025-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDY2N3xpbWFnZS9qcGVnfGltYWdlcy9oZmYvaDE5LzE0NjY3ODE3NjE1MzkwLmpwZ3xkNjNhYzMwNjU0ZWU1ZWRiNjk5OGQwZGVmMDgyNWM5NDIzMTQwMTExYjMyNGI3YzI1YmU5OTMxMzczZjc5MGFj"
-    },
-    "name": "La Roche-posay Effaclar Mat+ Sebo-Controlling Moisturizer",
-    "price": {
-      "formattedValue": "2 425&nbsp;₽",
-      "value": 2425
-    },
-    "country": "europe",
-    "purpose": "moisture"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120402",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120402-big-3337875552127-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTEyMHxpbWFnZS9qcGVnfGltYWdlcy9oYjUvaDY4LzE0NjgxNTU3OTU4Njg2LmpwZ3w3NWNjOGMzMGMyZmY3ZDI4N2FiNzRlOTQ0NGUyMTg2MjU0YjcxYmRlZDljNTUyNjdmZWY1Yzg5ZjZkMGUzNzlj"
-    },
-    "name": "La Roche-posay Lipikar Lait Body Milk",
-    "price": {
-      "formattedValue": "1 914&nbsp;₽",
-      "value": 1914
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120345",
-    "listingImage": {
-      "url": "/medias6/-normal-1120345-big-3337875909303-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NzA0fGltYWdlL2pwZWd8aW1hZ2VzL2g1Ny9oYWMvMTQ2NTU0OTUwMTIzODIuanBnfDFkMWE0OGNmZjQ0MWE0YWIzMGY2NTkzZTgwNzNkZDQ0ZDg5Y2U3ZmYwOTcwZWE5YTUxMmZjZDgxM2RjNTlkMzI"
-    },
-    "name": "La Roche-posay Effaclar Duo+ M Unifiant Anti-Imperfections Triple Corrective Tinted Care",
-    "price": {
-      "formattedValue": "1 876&nbsp;₽",
-      "value": 1876
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120383",
-    "listingImage": {
-      "url": "/medias6/-normal-1120383-big-3337875890069-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDU3OHxpbWFnZS9qcGVnfGltYWdlcy9oMGEvaDQzLzE0NjU1NDk4NjgyMzk4LmpwZ3wwOWI0MmNmYTdkMzZkMDFiMDNiZTg0NWU4MjFiMDZhM2NkOThhNjBmMjNlZjk2YWMxNzVkNjBiYzhjYTU4MDkz"
-    },
-    "name": "La Roche-posay Mela B3 Micro-Peeling Gel",
-    "price": {
-      "formattedValue": "2 080&nbsp;₽",
-      "value": 2080
-    },
-    "country": "europe",
-    "purpose": "exfoliate"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120374",
-    "listingImage": {
-      "url": "/medias6/-normal-1120374-big-3337872413704-listingDesktop?context=bWFzdGVyfGltYWdlc3w3OTA2fGltYWdlL2pwZWd8aW1hZ2VzL2hkMi9oYTUvMTQ2Njc4MTIxMTAzNjYuanBnfGZkZWQ0MmE5Y2Y2MWFiYmQ1MWYxYzQ5ZTJlMjczNTRiODhjZjRjYjZjZGFmNDczNzBkMjEwNWExNDVkODlhMjY"
-    },
-    "name": "La Roche-posay Pure Vitamin C Legere Anti-Wrinkle Firming Moisturising Filler",
-    "price": {
-      "formattedValue": "3 912&nbsp;₽",
-      "value": 3912
-    },
-    "country": "europe",
-    "purpose": "moisture"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1121404",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1121404-big-3337875886024-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzA3MnxpbWFnZS9qcGVnfGltYWdlcy9oOWMvaDA5LzE0NjY3ODE2MjM5MTM0LmpwZ3wwZmQyZmQ2NDQ0M2IzZTk2ZTRiYzJiNzVlNGQ4YzhlMzJhMGQ0OWRhNzk3YTVlYWY4ODEzMWQxNGEwNjI1ZmM2"
-    },
-    "name": "La Roche-posay Anthelios Post-UV After-Sun Lotion",
-    "price": {
-      "formattedValue": "1 887&nbsp;₽",
-      "value": 1887
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120540",
-    "listingImage": {
-      "url": "/medias6/-normal-1120540-big-3337875893626-listingDesktop?context=bWFzdGVyfGltYWdlc3w3OTI0fGltYWdlL2pwZWd8aW1hZ2VzL2g2YS9oOGYvMTQ2OTU0NTcyOTIzMTguanBnfGE4NDI0YjNlMGZhMDYzMGU1M2Q0ZjM3NGM1Y2E2YjI0MjNiY2UyODRhNDhlZDdjZjBkOTVlOGJjOTU5NjhmODg"
-    },
-    "name": "La Roche-posay Toleriane Kerium Concentre",
-    "price": {
-      "formattedValue": "2 573&nbsp;₽",
-      "value": 2573
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120541",
-    "listingImage": {
-      "url": "/medias6/-normal-1120541-big-3337875837804-listingDesktop?context=bWFzdGVyfGltYWdlc3w5NTM0fGltYWdlL2pwZWd8aW1hZ2VzL2g2YS9oODEvMTQ2OTU0NTc3NTEwNzAuanBnfDQxYjVlNmFhMjBiMGMzYjQ5NWY3OGQ1MTZhYWU0NmNkYzRlNTczYzY3YTA3NzJiM2Q0NzM1ODA1N2ZjZTM5ODU"
-    },
-    "name": "La Roche-posay Cicaplast B5 Ultra Repair Serum",
-    "price": {
-      "formattedValue": "3 478&nbsp;₽",
-      "value": 3478
-    },
-    "country": "europe",
-    "purpose": "repair"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120422",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120422-big-3337875911184-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDQxOXxpbWFnZS9qcGVnfGltYWdlcy9oMDkvaDYxLzE0Njk1NTE5NTg0Mjg2LmpwZ3xkNjVkZTIyNTZjZTNhMmVlYjhkNjIyYmVmYzRiOTNmZWQ4YWVlNTZjZDRkYzVlOTc3ZDdmNGIzOGZlY2QzMWI2"
-    },
-    "name": "La Roche-posay Kerium DS Anti-Dandruff Treating Shampoo",
-    "price": {
-      "formattedValue": "2 432&nbsp;₽",
-      "value": 2432
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120382",
-    "listingImage": {
-      "url": "/medias6/-normal-1120382-big-3337875760201-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTE3NHxpbWFnZS9qcGVnfGltYWdlcy9oYWMvaGRjLzE0NjU1NDk4MjIzNjQ2LmpwZ3w3ZjUxNDUzZGM1M2MxNzA4MTZiYWRlOGJlMDJmOTMzZmI5NGE3NWNmM2E3NmYyZWNlYWMyYWFkYzk2YWYzODc1"
-    },
-    "name": "La Roche-posay Hyalu B5 Aquagel SPF 30",
-    "price": {
-      "formattedValue": "3 263&nbsp;₽",
-      "value": 3263
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120415",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120415-big-3337875816779-listingDesktop?context=bWFzdGVyfGltYWdlc3w5NjI0fGltYWdlL2pwZWd8aW1hZ2VzL2hjNS9oMmIvMTQ2Njc4MTQ4NjI4NzguanBnfGEyMjExZGFkMmVlY2Q5YWJkNGRlYjBkMDI0ODFhMDBhYzVhZWIwNWY4OTYxZGYyYTIxYjIzYzBiNGMwZjdkZWI"
-    },
-    "name": "La Roche-posay Cicaplast Baume B5+",
-    "price": {
-      "formattedValue": "591&nbsp;₽",
-      "value": 591
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120335",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120335-big-3433422404397-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDkwNnxpbWFnZS9qcGVnfGltYWdlcy9oODQvaDQ4LzE0NjY3ODgzMjgyNDYyLmpwZ3xiNzIwODhiYjcxM2U3ZjI1OTMwYTAxOWUyMWFhN2MwMDQ3MmExOWU4MDMxMzI1YzcwN2NjMGEyMGExMmY5Y2Vm"
-    },
-    "name": "La Roche-posay Thermal Spring Water",
-    "price": {
-      "formattedValue": "897&nbsp;₽",
-      "value": 897
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "base_1120339",
-    "listingImage": {
-      "url": "/medias6/-normal-base-1120339-big-3337875708265-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDI0OXxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaDcyLzE0NjY3ODg0MTk5OTY2LmpwZ3w2NWFlYzhkZmEyMmQ1MzRhZTlmNWE0YjQzYjIxMzRmMGQ2ZDQyYWI0ZmE0MTE3NDk0YWIwODJmYzQ0Nzc1Yjg5"
-    },
-    "name": "La Roche-posay Effaclar Micro-Peeling Purifying Gel Cleanser",
-    "price": {
-      "formattedValue": "1 544&nbsp;₽",
-      "value": 1544
-    },
-    "country": "europe",
-    "purpose": "cleanse"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
-    "code": "1120391",
-    "listingImage": {
-      "url": "/medias6/-normal-1120391-big-3337872412677-listingDesktop?context=bWFzdGVyfGltYWdlc3w3NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2hkNC9oMjcvMTQ2Njc4ODc4Njk5ODIuanBnfGVlZTRkNzBmYjJlNGNlZGQ3MmU2ZDA3MzU3MmZiM2FjMjlhYTIxMTUxMWZkZjc1MDhjMmUzOGJlYjkyZmZmMzY"
-    },
-    "name": "La Roche-posay Substiane Yeux / Eye De-Puffing Replenishing Care",
-    "price": {
-      "formattedValue": "3 978&nbsp;₽",
-      "value": 3978
-    },
-    "country": "europe"
-  },
-  {
-    "brand": {
-      "code": "rg_brand_1468",
-      "name": "LA ROCHE-POSAY"
-    },
     "code": "1120371",
     "listingImage": {
-      "url": "/medias6/-normal-1120371-big-3337872420269-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDUyOXxpbWFnZS9qcGVnfGltYWdlcy9oYTkvaDgwLzE0NjY4MDY5OTk0NTI2LmpwZ3w3YTY1MTIyZDlmNDk2N2FhZWE0NmEwOTkzMjUzNWViMTg1Y2FjOGRjNzlkYjJhMjZhYzJiMGI1NGMwMDRjMzgy"
+      "url": "/catalog-images/la-roche-posay/1120371.jpg"
     },
     "name": "La Roche-posay Toleriane Rosaliac Micellar Makeup Removal Gel",
     "price": {
@@ -1281,7 +629,7 @@
     },
     "code": "1120420",
     "listingImage": {
-      "url": "/medias6/-normal-1120420-big-3337872414145-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjM0NnxpbWFnZS9qcGVnfGltYWdlcy9oOTIvaGIwLzE0NjY4MDcxODI5NTM0LmpwZ3wyNzFmYTE5MDRiYmVkZmM3MDdiZDA5MWVkOGVlZDYxMmM3YWZkYmJlMjM4N2E3ZDAyNThjYjJhMzY4M2QxYjI3"
+      "url": "/catalog-images/la-roche-posay/1120420.jpg"
     },
     "name": "La Roche-posay Cicaplast Mains Barrier Repairing Cream",
     "price": {
@@ -1296,9 +644,25 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
+    "code": "1120421",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120421.jpg"
+    },
+    "name": "La Roche-posay Kerium Extra Gentle Gel-Shampoo",
+    "price": {
+      "formattedValue": "2 587&nbsp;₽",
+      "value": 2587
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
     "code": "1120375",
     "listingImage": {
-      "url": "/medias6/-normal-1120375-big-3337872413735-listingDesktop?context=bWFzdGVyfGltYWdlc3w4ODgwfGltYWdlL2pwZWd8aW1hZ2VzL2hhMy9oNTMvMTQ2Njc4ODY5NTI0NzguanBnfDIwNjE2MzVlNDZmNTExY2JhMTY4OWNhY2U4ZTE5MjA5NzVkMzU0ZTMwNWY4MTMxYjNkNWVmMzRhNzg4ZmM0NzU"
+      "url": "/catalog-images/la-roche-posay/1120375.jpg"
     },
     "name": "La Roche-posay Pure Vitamin C Yeux / Eyes Anti-Wrinkle Firming Moisturising Filler",
     "price": {
@@ -1315,7 +679,7 @@
     },
     "code": "base_1120400",
     "listingImage": {
-      "url": "/medias6/-normal-base-1120400-big-3337875905510-listingDesktop?context=bWFzdGVyfGltYWdlc3w5Mzc4fGltYWdlL2pwZWd8aW1hZ2VzL2g5ZS9oNDUvMTQ2Njc4ODg3ODc0ODYuanBnfGQ0OGYwYWQ1NzI5NWJkYzAwZDJmZDMyNDNkOTNkNzExMTFkYjVlMTQyZjVhMzkxZTVkOWJlMWM3NzlkMWY3NzA"
+      "url": "/catalog-images/la-roche-posay/base_1120400.jpg"
     },
     "name": "La Roche-posay Lipikar Gel Lavant Refill",
     "price": {
@@ -1331,7 +695,7 @@
     },
     "code": "1121403",
     "listingImage": {
-      "url": "/medias6/-normal-1121403-big-3337875847292-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNTA2OXxpbWFnZS9qcGVnfGltYWdlcy9oZTcvaDhmLzE0NjgxNTIzNDg2NzUwLmpwZ3w3M2RmNTU0OTliOGI4NGIxZDdmNzVlMDJmZjEwZTQ3YWYxNmRkNGU1NzE2YmU5OTQxM2EyMTgxMjJlOWRkNGFh"
+      "url": "/catalog-images/la-roche-posay/1121403.jpg"
     },
     "name": "La Roche-posay Anthelios UVMUNE 400 Oil Control Fluid SPF 50+",
     "price": {
@@ -1345,9 +709,25 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
+    "code": "1120347",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120347.jpg"
+    },
+    "name": "La Roche-posay Effaclar Duo+ M Multi-Action Imperfections Patch",
+    "price": {
+      "formattedValue": "1 008&nbsp;₽",
+      "value": 1008
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
     "code": "1120389",
     "listingImage": {
-      "url": "/medias6/-normal-1120389-big-3337872414039-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NTg1fGltYWdlL2pwZWd8aW1hZ2VzL2hiMi9oNmMvMTQ2Njc4OTkzMzg3ODIuanBnfDI1Y2IxNGY4M2U3ZWZhMjViYWE1YWMzNmZmOTFiYzc1YWI0Y2Y3YjFjNmQ3ZjY0MDUwODBiYjQ0Yjg0YmZlNDE"
+      "url": "/catalog-images/la-roche-posay/1120389.jpg"
     },
     "name": "La Roche-posay Redermic Retinol Yeux Intensive",
     "price": {
@@ -1362,9 +742,350 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
+    "code": "1120396",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120396.jpg"
+    },
+    "name": "La Roche-posay Nutritic Transforming Care Lips",
+    "price": {
+      "formattedValue": "1 214&nbsp;₽",
+      "value": 1214
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120424",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120424.jpg"
+    },
+    "name": "La Roche-posay Sensitive Skin 48H Deodorant",
+    "price": {
+      "formattedValue": "1 424&nbsp;₽",
+      "value": 1424
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120380",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120380.jpg"
+    },
+    "name": "La Roche-posay Hyalu B5 Serum Yeux / Eye",
+    "price": {
+      "formattedValue": "3 132&nbsp;₽",
+      "value": 3132
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1121381",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1121381.jpg"
+    },
+    "name": "La Roche-posay Anthelios Invisible Mist SPF 50+",
+    "price": {
+      "formattedValue": "3 456&nbsp;₽",
+      "value": 3456
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120366",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120366.jpg"
+    },
+    "name": "La Roche-posay Toleriane Dermallergo Serum",
+    "price": {
+      "formattedValue": "2 947&nbsp;₽",
+      "value": 2947
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120381",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120381.jpg"
+    },
+    "name": "La Roche-posay Hyalu B5 Eyes Anti-Wrinkle Care",
+    "price": {
+      "formattedValue": "2 953&nbsp;₽",
+      "value": 2953
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1121398",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1121398.jpg"
+    },
+    "name": "La Roche-posay Anthelios UVMUNE 400 Tinted Fluid SPF 50+",
+    "price": {
+      "formattedValue": "2 183&nbsp;₽",
+      "value": 2183
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120382",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120382.jpg"
+    },
+    "name": "La Roche-posay Hyalu B5 Aquagel SPF 30",
+    "price": {
+      "formattedValue": "3 263&nbsp;₽",
+      "value": 3263
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120415",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120415.jpg"
+    },
+    "name": "La Roche-posay Cicaplast Baume B5+",
+    "price": {
+      "formattedValue": "591&nbsp;₽",
+      "value": 591
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120335",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120335.jpg"
+    },
+    "name": "La Roche-posay Thermal Spring Water",
+    "price": {
+      "formattedValue": "897&nbsp;₽",
+      "value": 897
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120339",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120339.jpg"
+    },
+    "name": "La Roche-posay Effaclar Micro-Peeling Purifying Gel Cleanser",
+    "price": {
+      "formattedValue": "1 500&nbsp;₽",
+      "value": 1500
+    },
+    "country": "europe",
+    "purpose": "cleanse"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120369",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120369.jpg"
+    },
+    "name": "La Roche-posay Toleriane Dermallergo Nuit",
+    "price": {
+      "formattedValue": "2 742&nbsp;₽",
+      "value": 2742
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120377",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120377.jpg"
+    },
+    "name": "La Roche-posay Hyalu B5 Repairing Replumping Anti-Wrinkle Care",
+    "price": {
+      "formattedValue": "3 205&nbsp;₽",
+      "value": 3205
+    },
+    "country": "europe",
+    "purpose": "repair"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120391",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120391.jpg"
+    },
+    "name": "La Roche-posay Substiane Yeux / Eye De-Puffing Replenishing Care",
+    "price": {
+      "formattedValue": "3 978&nbsp;₽",
+      "value": 3978
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120345",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120345.jpg"
+    },
+    "name": "La Roche-posay Effaclar Duo+ M Unifiant Anti-Imperfections Triple Corrective Tinted Care",
+    "price": {
+      "formattedValue": "1 876&nbsp;₽",
+      "value": 1876
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120383",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120383.jpg"
+    },
+    "name": "La Roche-posay Mela B3 Micro-Peeling Gel",
+    "price": {
+      "formattedValue": "2 080&nbsp;₽",
+      "value": 2080
+    },
+    "country": "europe",
+    "purpose": "exfoliate"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120374",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120374.jpg"
+    },
+    "name": "La Roche-posay Pure Vitamin C Legere Anti-Wrinkle Firming Moisturising Filler",
+    "price": {
+      "formattedValue": "3 912&nbsp;₽",
+      "value": 3912
+    },
+    "country": "europe",
+    "purpose": "moisture"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1121404",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1121404.jpg"
+    },
+    "name": "La Roche-posay Anthelios Post-UV After-Sun Lotion",
+    "price": {
+      "formattedValue": "1 887&nbsp;₽",
+      "value": 1887
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120540",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120540.jpg"
+    },
+    "name": "La Roche-posay Toleriane Kerium Concentre",
+    "price": {
+      "formattedValue": "2 573&nbsp;₽",
+      "value": 2573
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120541",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120541.jpg"
+    },
+    "name": "La Roche-posay Cicaplast B5 Ultra Repair Serum",
+    "price": {
+      "formattedValue": "3 478&nbsp;₽",
+      "value": 3478
+    },
+    "country": "europe",
+    "purpose": "repair"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120422",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120422.jpg"
+    },
+    "name": "La Roche-posay Kerium DS Anti-Dandruff Treating Shampoo",
+    "price": {
+      "formattedValue": "2 432&nbsp;₽",
+      "value": 2432
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
     "code": "1120346",
     "listingImage": {
-      "url": "/medias6/-normal-1120346-big-3337875549493-listingDesktop?context=bWFzdGVyfGltYWdlc3w3Njc2fGltYWdlL2pwZWd8aW1hZ2VzL2g1Yi9oNzIvMTQ2NTU0OTU0NzExMzQuanBnfDI4YjU3YmM2YTllYjNlMmFhMTY3NjE4ZTEyNDUxOGVmYzBkMTcyM2Q0NWE0YzYzZGY2ZjQwNjQ1NWQ1YWEwMDc"
+      "url": "/catalog-images/la-roche-posay/1120346.jpg"
     },
     "name": "La Roche-posay Effaclar Duo+ Anti-Imperfections Corrective Unclogging Care SPF 30 ",
     "price": {
@@ -1380,7 +1101,7 @@
     },
     "code": "base_1120414",
     "listingImage": {
-      "url": "/medias6/-normal-base-1120414-big-3337875735742-listingDesktop?context=bWFzdGVyfGltYWdlc3w5OTkyfGltYWdlL2pwZWd8aW1hZ2VzL2gxMy9oMTkvMTQ2NTU1MDE4OTM2NjIuanBnfDgxNTY5NzNlZGZlNDg1MzYyMTY3ZDNlMTk2ZGUyYzUxMzZlOTFhMDdkZDc2YWNjNGE2NDg5OWUwN2ZmNTFjNDU"
+      "url": "/catalog-images/la-roche-posay/base_1120414.jpg"
     },
     "name": "La Roche-posay Cicaplast B5 Спрей",
     "price": {
@@ -1396,7 +1117,7 @@
     },
     "code": "1120370",
     "listingImage": {
-      "url": "/medias6/-normal-1120370-big-3337875757515-listingDesktop?context=bWFzdGVyfGltYWdlc3w4NzUyfGltYWdlL2pwZWd8aW1hZ2VzL2g2Mi9oNzAvMTQ2Njc4MTExOTI4NjIuanBnfGU0NjZhMTNiNjI1ZDJiOWRlZjVhOGExZjIxY2QzODAyNzE1NDZlZTBhZDI5ZjgwMmEyNjc5Nzc0MGYzM2I1Njg"
+      "url": "/catalog-images/la-roche-posay/1120370.jpg"
     },
     "name": "La Roche-posay Toleriane Dermallergo Yeux",
     "price": {
@@ -1412,7 +1133,7 @@
     },
     "code": "1120378",
     "listingImage": {
-      "url": "/medias6/-normal-1120378-big-3337875920698-listingDesktop?context=bWFzdGVyfGltYWdlc3w3ODEzfGltYWdlL2pwZWd8aW1hZ2VzL2gyZS9oN2MvMTQ2Njc4MTI1NjkxMTguanBnfDM0MmQzODFhZTFkZGIxZTdjNGM0OTMxYzAyZmIwYzAwNTA3MDRlZmZjYjc3YzE5MjQwYjZlMzQxMzVkZWRmODk"
+      "url": "/catalog-images/la-roche-posay/1120378.jpg"
     },
     "name": "La Roche-posay Hyalu B5 Crème Suractivee",
     "price": {
@@ -1428,7 +1149,7 @@
     },
     "code": "1120364",
     "listingImage": {
-      "url": "/medias6/-normal-1120364-big-3337875578486-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTMxNHxpbWFnZS9qcGVnfGltYWdlcy9oYTQvaDYwLzE0NjY4MDY5NTM1Nzc0LmpwZ3w3Njc5ZjUzYjdmN2IwMzhjMjZjMzVhM2MzYjk1OGM4MDk1NDE4ZmRmMmE3YmRjMGVhMjMzNTY1MzcwNWRkYjM0"
+      "url": "/catalog-images/la-roche-posay/1120364.jpg"
     },
     "name": "La Roche-posay Toleriane Sensitive Crème",
     "price": {
@@ -1444,7 +1165,7 @@
     },
     "code": "1120343",
     "listingImage": {
-      "url": "/medias6/-normal-1120343-big-3337875920742-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDA2OXxpbWFnZS9qcGVnfGltYWdlcy9oOTkvaDRhLzE0NjY4MDc0NTgyMDQ2LmpwZ3xmOWVjOTE2ZDVkM2ExNmMzMGEwYTc4NGM0ODU2MzdmNmNkMWVjNDNmNjcwYmZjYjIyYTJiYmVjMWJhZTBhMzNh"
+      "url": "/catalog-images/la-roche-posay/1120343.jpg"
     },
     "name": "La Roche-posay Effaclar A.Z. Gel-Crème",
     "price": {
@@ -1460,7 +1181,7 @@
     },
     "code": "base_1120355",
     "listingImage": {
-      "url": "/medias6/-normal-base-1120355-big-3337872410338-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMTQ4NnxpbWFnZS9qcGVnfGltYWdlcy9oYmMvaDlkLzE0NjY4MDc1MDQwNzk4LmpwZ3w1ODZjMjcyMDA5ZjdlNjYyM2VjNTc3NTYzZGI5NDk5YTdhMTE2ZTA5NzEwZmE1NTI0MzFlZjQ4MmZhMWE5NjAw"
+      "url": "/catalog-images/la-roche-posay/base_1120355.jpg"
     },
     "name": "La Roche-posay Toleriane Cleansing Make-Up Removing Soothing Micellar Water",
     "price": {
@@ -1477,7 +1198,7 @@
     },
     "code": "base_1120406",
     "listingImage": {
-      "url": "/medias6/-normal-base-1120406-big-3337875537308-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDM1NHxpbWFnZS9qcGVnfGltYWdlcy9oMmYvaDg0LzE0NjgxNTU4ODc2MTkwLmpwZ3w1MGIzZTQxYmY1MmVjNTM4MWM1MjhiYzU0ZWRiMWUxZjZhMDY1OTMwMzY2MjA1NjYwNDJmZmFlNmYyOTM0MDA5"
+      "url": "/catalog-images/la-roche-posay/base_1120406.jpg"
     },
     "name": "La Roche-posay Lipikar Syndet AP+ Lipid-Replenishing Cream Wash",
     "price": {
@@ -1493,7 +1214,7 @@
     },
     "code": "1120397",
     "listingImage": {
-      "url": "/medias6/-normal-1120397-big-3337872412684-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNDAvaGRmLzE0NjY3ODg4MzI4NzM0LmpwZ3wxNDFkOGY5NDVjODc4ZmNkMjIzMGE5OTg1NmE5NTdjNDY0NjU0ODBjODllMWU4ZWNjZjg2NDg3NzU1N2E0NmU4"
+      "url": "/catalog-images/la-roche-posay/1120397.jpg"
     },
     "name": "La Roche-posay Lipikar Xerand Hand Repair Cream",
     "price": {
@@ -1510,7 +1231,7 @@
     },
     "code": "1120412",
     "listingImage": {
-      "url": "/medias6/-normal-1120412-big-3337875909792-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMjYwNnxpbWFnZS9qcGVnfGltYWdlcy9oMGEvaDg0LzE0Njk1NTY2OTY2ODE0LmpwZ3w3OWNhZWMxZDdiYTFlZjMxNzczM2I0NjBkMjMzODQ2NWY4YjM0MzliNDE1OGRkYzRkYmQzNTcxMjYwZThlMWJj"
+      "url": "/catalog-images/la-roche-posay/1120412.jpg"
     },
     "name": "La Roche-posay Lipikar Gel Urea 30%",
     "price": {
@@ -1526,7 +1247,7 @@
     },
     "code": "1120350",
     "listingImage": {
-      "url": "/medias6/-normal-1120350-big-3337875777797-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMDA1N3xpbWFnZS9qcGVnfGltYWdlcy9oY2QvaGI5LzE0NjY3ODk3MDQ1MDIyLmpwZ3xlMzIyYTVhZTgyMTk5NDdjNTBhN2I3YTk0MWZjZmRlYTJmOTZiMDg3N2NlZTA5MTg1NGJhZWJhZDIyZWQzZDFi"
+      "url": "/catalog-images/la-roche-posay/1120350.jpg"
     },
     "name": "La Roche-posay Effaclar H Iso-Biome Anti-Imperfections Ultra Soothing Hydrating Care",
     "price": {
@@ -1542,7 +1263,7 @@
     },
     "code": "1120388",
     "listingImage": {
-      "url": "/medias6/-normal-1120388-big-3337875660549-listingDesktop?context=bWFzdGVyfGltYWdlc3w3NDcwfGltYWdlL2pwZWd8aW1hZ2VzL2gxYi9oNGIvMTQ2Njc4OTg4ODAwMzAuanBnfDYxNGM0MTI0YTZiN2EwNzgxY2EzMTk5MGJkMzM2MTdhMGFkZDUxYzE1MGZjMGJmYWJiNmEwZjc3YzQ4YzE4ODE"
+      "url": "/catalog-images/la-roche-posay/1120388.jpg"
     },
     "name": "La Roche-posay Redermic Retinol Concentre",
     "price": {
@@ -1559,7 +1280,7 @@
     },
     "code": "base_1121406",
     "listingImage": {
-      "url": "/medias6/-normal-base-1121406-big-3337875888851-listingDesktop?context=bWFzdGVyfGltYWdlc3wxMzg0NHxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDEzLzE0NjY3OTA1NzYxMzEwLmpwZ3wwNDUzNjI1NjM3MmRkOTI2YmU4NzUwY2M0MDcwOTA5YjZiNDRiOGFhZTQzZmUzZjRmYmU1MTZlNTg5NzQ0ZDgz"
+      "url": "/catalog-images/la-roche-posay/base_1121406.jpg"
     },
     "name": "La Roche-posay Anthelios UVMUNE 400 Dermo-Pediatrics Hydrating Lotion SPF 50+",
     "price": {
@@ -1573,14 +1294,307 @@
       "code": "rg_brand_1468",
       "name": "LA ROCHE-POSAY"
     },
-    "code": "base_1121393",
+    "code": "1120372",
     "listingImage": {
-      "url": "/medias6/-normal-base-1121393-big-3337875761123-listingDesktop?context=bWFzdGVyfGltYWdlc3wxNDUzNXxpbWFnZS9qcGVnfGltYWdlcy9oNjkvaDljLzE0NjgxNTU1NjY0OTI2LmpwZ3w0Y2NkNTVmMmU1M2VmMjU2MDBjYTNiYTQ0ZjYzNDU2ODE5ODAwZTZkYzgyOWZmOWIyYzM2ZjRmNzlmOTI2OGY4"
+      "url": "/catalog-images/la-roche-posay/1120372.jpg"
     },
-    "name": "La Roche-posay Anthelios Hydrating Lotion SPF 50+",
+    "name": "La Roche-posay Toleriane Rosaliac AR Concentre",
     "price": {
-      "formattedValue": "3 438&nbsp;₽",
-      "value": 3438
+      "formattedValue": "2 549&nbsp;₽",
+      "value": 2549
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120542",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120542.jpg"
+    },
+    "name": "La Roche-posay Lipikar AP+M Cream",
+    "price": {
+      "formattedValue": "1 554&nbsp;₽",
+      "value": 1554
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1121410",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1121410.jpg"
+    },
+    "name": "La Roche-posay Anthelios UVAIR Fluid SPF 50+",
+    "price": {
+      "formattedValue": "2 090&nbsp;₽",
+      "value": 2090
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120373",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120373.jpg"
+    },
+    "name": "La Roche-posay Toleriane Rosaliac AR High Protection Daily Soothing Moisturizer SPF 30",
+    "price": {
+      "formattedValue": "2 515&nbsp;₽",
+      "value": 2515
+    },
+    "country": "europe",
+    "purpose": "moisture"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120341",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120341.jpg"
+    },
+    "name": "La Roche-posay Effaclar Micro-Peeling Purifying Gel Cleanser Refill",
+    "price": {
+      "formattedValue": "1 835&nbsp;₽",
+      "value": 1835
+    },
+    "country": "europe",
+    "purpose": "cleanse"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120379",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120379.jpg"
+    },
+    "name": "La Roche-posay Hyalu B5 Water Gel",
+    "price": {
+      "formattedValue": "2 128&nbsp;₽",
+      "value": 2128
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120386",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120386.jpg"
+    },
+    "name": "La Roche-posay Mela B3 Anti-Darks Spots Corrective Protective Care SPF 30",
+    "price": {
+      "formattedValue": "2 982&nbsp;₽",
+      "value": 2982
+    },
+    "popular": true,
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120394",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120394.jpg"
+    },
+    "name": "La Roche-posay Hydraphase HA Yeux 24H Moisture",
+    "price": {
+      "formattedValue": "2 484&nbsp;₽",
+      "value": 2484
+    },
+    "country": "europe",
+    "purpose": "moisture"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120418",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120418.jpg"
+    },
+    "name": "La Roche-posay Cicaplast Baume B5+ SPF 50+",
+    "price": {
+      "formattedValue": "1 529&nbsp;₽",
+      "value": 1529
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120423",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120423.jpg"
+    },
+    "name": "La Roche-posay 24H Physiological Deodorant",
+    "price": {
+      "formattedValue": "1 447&nbsp;₽",
+      "value": 1447
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1121382",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1121382.jpg"
+    },
+    "name": "La Roche-posay Anthelios Anti-Shine Mist SPF 50+",
+    "price": {
+      "formattedValue": "2 152&nbsp;₽",
+      "value": 2152
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1121842",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1121842.jpg"
+    },
+    "name": "La Roche-posay Vitamin C12 Serum",
+    "price": {
+      "formattedValue": "4 068&nbsp;₽",
+      "value": 4068
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120398",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120398.jpg"
+    },
+    "name": "La Roche-posay Lipikar Gel Lavant",
+    "price": {
+      "formattedValue": "1 863&nbsp;₽",
+      "value": 1863
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1121391",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1121391.jpg"
+    },
+    "name": "La Roche-posay Anthelios Invisible Spray SPF 50+",
+    "price": {
+      "formattedValue": "3 352&nbsp;₽",
+      "value": 3352
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120362",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120362.jpg"
+    },
+    "name": "La Roche-posay Toleriane Caring Wash",
+    "price": {
+      "formattedValue": "1 662&nbsp;₽",
+      "value": 1662
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1121395",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1121395.jpg"
+    },
+    "name": "La Roche-posay Anthelios Age Correct Visible Light SPF 50",
+    "price": {
+      "formattedValue": "2 421&nbsp;₽",
+      "value": 2421
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120337",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120337.jpg"
+    },
+    "name": "La Roche-posay Effaclar Purifying Foaming Gel",
+    "price": {
+      "formattedValue": "1 246&nbsp;₽",
+      "value": 1246
+    },
+    "country": "europe"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "1120354",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/1120354.jpg"
+    },
+    "name": "La Roche-posay Effaclar Mat+ Sebo-Controlling Moisturizer",
+    "price": {
+      "formattedValue": "2 425&nbsp;₽",
+      "value": 2425
+    },
+    "country": "europe",
+    "purpose": "moisture"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_1468",
+      "name": "LA ROCHE-POSAY"
+    },
+    "code": "base_1120402",
+    "listingImage": {
+      "url": "/catalog-images/la-roche-posay/base_1120402.jpg"
+    },
+    "name": "La Roche-posay Lipikar Lait Body Milk",
+    "price": {
+      "formattedValue": "1 914&nbsp;₽",
+      "value": 1914
     },
     "country": "europe"
   }
