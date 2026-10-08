@@ -5,7 +5,7 @@ Created using Angular v22, Signal Forms with validation, signals for state manag
 ## Deploy: 
 [beautyTABS](https://beauty-tabs.vercel.app/)
 
-<img width="1333" height="1049" alt="tabs_arrow" src="https://github.com/user-attachments/assets/456dd392-58a2-4308-b1f3-0e52f2f2f26a" />
+<img width="1314" height="1049" alt="tabs_arrow1" src="https://github.com/user-attachments/assets/9714e739-606e-479d-82ff-e7dc535692c9" />
 
 ## Logic:
 
