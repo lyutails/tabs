@@ -71,6 +71,7 @@
     &_input-placeholder {
         color: black;
         width: 180px;
+        font-size: 14px;
     }
 
     &_input {
@@ -101,11 +102,6 @@
 p {
     margin: 0 0 8px;
     font-size: 16px;
-}
-
-span {
-    color: #777;
-    font-size: 14px;
 }
 
 mat-error {
