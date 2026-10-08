@@ -27,7 +27,9 @@
           (mouseenter)="hoveredLiked.set(result.code)"
           (mouseleave)="hoveredLiked.set(null)"
         >
-          <mat-icon>{{ hoveredLiked() === result.code ? 'heart_broken' : 'favorite' }}</mat-icon>
+          <span class="material-symbols-outlined slider-arrow">{{
+            hoveredLiked() === result.code ? 'heart_broken' : 'favorite'
+          }}</span>
         </button>
         <button
           class="found_add-to-cart"
@@ -35,7 +37,7 @@
           (click)="buyStore.addToCartFromFound(result.code)"
           [disabled]="buyStore.isInCart(result.code)"
         >
-          <mat-icon>add_shopping_cart </mat-icon>
+          <span class="material-symbols-outlined slider-arrow">add_shopping_cart</span>
         </button>
         <button
           class="found_delete-from-cart"
@@ -46,10 +48,20 @@
           (mouseenter)="hoveredRemove.set(result.code)"
           (mouseleave)="hoveredRemove.set(null)"
         >
-          <mat-icon>{{ hoveredRemove() === result.code ? 'delete_forever' : 'delete' }}</mat-icon>
+          <span class="material-symbols-outlined slider-arrow">{{
+            hoveredRemove() === result.code ? 'delete_forever' : 'delete'
+          }}</span>
         </button>
       </div>
     }
   </div>
 </div>
-<div class="found_background"></div>
+<!-- <div class="found_background" fetchpriority=high loading=eager></div> -->
+<img
+  class="found_background"
+  ngSrc="/geisha_branch.avif"
+  width="1920"
+  height="1080"
+  priority
+  alt="geisha and rowan branch image"
+/>

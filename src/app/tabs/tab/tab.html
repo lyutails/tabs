@@ -20,12 +20,12 @@
     </span>
   </div>
   <ng-container *ngIf="index() === tabsStateService.activeTab(); else templateA">
-    <mat-icon [style.color]="'var(--tabs-button)'">{{
+    <span class="material-symbols-outlined" [style.color]="'var(--tabs-button)'">{{
       tabsStateService.tabIcons()[index()]
-    }}</mat-icon>
+    }}</span>
   </ng-container>
   <ng-template #templateA>
-    <mat-icon>{{ tabsStateService.tabIcons()[index()] }}</mat-icon>
+    <span class="material-symbols-outlined">{{ tabsStateService.tabIcons()[index()] }}</span>
   </ng-template>
   <ng-content>Default tab</ng-content>
 </div>

@@ -11,7 +11,9 @@
       (mouseenter)="deleteHovered.set(true)"
       (mouseleave)="deleteHovered.set(false)"
     >
-      <mat-icon>{{ deleteHovered() ? 'delete_forever' : 'delete' }}</mat-icon>
+      <span class="material-symbols-outlined">{{
+        deleteHovered() ? 'delete_forever' : 'delete'
+      }}</span>
     </button>
   </div>
   <div class="buy_slider-buttons">
@@ -22,7 +24,7 @@
         class="buy_slider-button left"
         [disabled]="!canMoveLeft"
       >
-        <mat-icon>keyboard_arrow_left</mat-icon>
+        <span class="material-symbols-outlined">keyboard_arrow_left</span>
       </button>
     }
     <div class="buy_products-viewport">
@@ -43,7 +45,7 @@
         class="buy_slider-button right"
         [disabled]="!canMoveRight"
       >
-        <mat-icon>keyboard_arrow_right</mat-icon>
+        <span class="material-symbols-outlined">keyboard_arrow_right</span>
       </button>
     }
   </div>
@@ -160,7 +162,9 @@
           (click)="toggleCvvVisibility()"
           [class.buy-card--side]="layout() === 'side'"
         >
-          <mat-icon>{{ isCvvVisible() ? 'visibility_off' : 'visibility' }}</mat-icon>
+          <span class="material-symbols-outlined">{{
+            isCvvVisible() ? 'visibility_off' : 'visibility'
+          }}</span>
         </button>
       </div>
     </div>
