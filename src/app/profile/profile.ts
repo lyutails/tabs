@@ -7,7 +7,7 @@ import { MatError } from '@angular/material/input';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
-  imports: [CommonModule, FormField, MatError, MatIcon],
+  imports: [CommonModule, FormField, MatError],
   selector: 'tabs-profile',
   styleUrl: './profile.scss',
   templateUrl: './profile.html',

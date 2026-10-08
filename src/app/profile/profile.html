@@ -41,7 +41,9 @@
       }}</span>
     }
     <button class="profile_edit-button" (click)="toggleEditEmail()" aria-label="edit email">
-      <mat-icon>{{ isEditEmail() === true ? 'edit_off' : 'edit' }}</mat-icon>
+      <span class="material-symbols-outlined">{{
+        isEditEmail() === true ? 'edit_off' : 'edit'
+      }}</span>
     </button>
   </div>
   <div class="profile_label-error">
@@ -69,7 +71,9 @@
       }}</span>
     }
     <button class="profile_edit-button" (click)="toggleEditName()" aria-label="edit name">
-      <mat-icon>{{ isEditName() === true ? 'edit_off' : 'edit' }}</mat-icon>
+      <span class="material-symbols-outlined">{{
+        isEditName() === true ? 'edit_off' : 'edit'
+      }}</span>
     </button>
   </div>
 </div>

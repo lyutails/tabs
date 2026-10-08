@@ -11,9 +11,10 @@
 } @else {
   <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
   <button class="burger_button" (click)="toggleBurgerMenu()" #burger>
-    <mat-icon class="burger_icon">{{ isBurgerOpen() ? 'close' : 'menu' }}</mat-icon>
+    <span class="material-symbols-outlined">{{ isBurgerOpen() ? 'close' : 'menu' }}</span>
   </button>
-  <div (click)="isBurgerOpen.set(false)"
+  <div
+    (click)="isBurgerOpen.set(false)"
     class="burger_overlay"
     [style.transform]="isBurgerOpen() ? 'translateX(0%)' : 'translateX(100%)'"
   ></div>
@@ -27,7 +28,7 @@
       (click)="navigate('search')"
       aria-label="navigates to search page"
     >
-      <mat-icon>search</mat-icon>
+      <span class="material-symbols-outlined"> search </span>
     </button>
     <button
       class="header_button"
@@ -35,7 +36,7 @@
       (click)="navigate('liked')"
       aria-label="navigates to favourites page"
     >
-      <mat-icon>favorite</mat-icon>
+      <span class="material-symbols-outlined"> favorite </span>
       @if (searchStore.likedResults().length > 0) {
         <span class="header_products-count">{{ searchStore.likedResults().length }}</span>
       }
@@ -46,7 +47,7 @@
       (click)="navigate('buy')"
       aria-label="navigates to buy page where you can pay for products"
     >
-      <mat-icon>shopping_cart</mat-icon>
+      <span class="material-symbols-outlined">shopping_cart</span>
       @if (buyStore.buyResults().length > 0) {
         <span class="header_products-count">{{ buyStore.buyResults().length }}</span>
       }
@@ -60,7 +61,7 @@
       @if (profileService.isUploaded()) {
         <img class="header_profile-img" [src]="profileService.previewUrl()" />
       } @else {
-        <mat-icon>person</mat-icon>
+        <span class="material-symbols-outlined">person</span>
       }
     </button>
     <button
@@ -69,16 +70,18 @@
       matTooltip="on/off promo"
       (click)="advertismentService.toggleAdvertisment()"
     >
-      <mat-icon>{{ advertismentService.isAdvertisment() === true ? 'check' : 'remove' }}</mat-icon>
+      <span class="material-symbols-outlined">{{
+        advertismentService.isAdvertisment() === true ? 'check' : 'remove'
+      }}</span>
     </button>
     <button
       class="header_button theme-button"
       (click)="themeService.toggleTheme()"
       aria-label="switch theme"
     >
-      <mat-icon class="theme-icon">{{
+      <span class="material-symbols-outlined">{{
         themeService.theme() === 'light' ? 'light_mode' : 'dark_mode'
-      }}</mat-icon>
+      }}</span>
     </button>
   </div>
   <div class="header_buttons-background" [class.openBurgerBack]="isBurgerOpen()"></div

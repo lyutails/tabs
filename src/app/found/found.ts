@@ -6,9 +6,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BuyStore } from '../buy/store/buy-store';
 import { Navigate } from '../core/services/navigate';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
-  imports: [SearchItem, MatIconModule, MatTooltipModule],
+  imports: [SearchItem, MatIconModule, MatTooltipModule, NgOptimizedImage],
   selector: 'tabs-found',
   styleUrl: './found.scss',
   templateUrl: './found.html',

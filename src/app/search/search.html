@@ -42,7 +42,7 @@
     "
     [class.search_divider--active]="motionService.divider()"
   >
-    <mat-icon>arrow_forward</mat-icon>
+    <span class="material-symbols-outlined">arrow_forward</span>
   </button>
   <div class="search_items-wrapper">
     <div
@@ -80,7 +80,7 @@
               (click)="buyStore.addToCartFromSearch(result.code)"
               [disabled]="buyStore.isInCart(result.code)"
             >
-              <mat-icon>add_shopping_cart</mat-icon>
+              <span class="material-symbols-outlined">add_shopping_cart</span>
             </button>
             <button
               class="search_delete-from-cart"
@@ -91,9 +91,9 @@
               (mouseenter)="hoveredRemove.set(result.code)"
               (mouseleave)="hoveredRemove.set(null)"
             >
-              <mat-icon>{{
+              <span class="material-symbols-outlined">{{
                 hoveredRemove() === result.code ? 'delete_forever' : 'delete'
-              }}</mat-icon>
+              }}</span>
             </button>
           </div>
         }
