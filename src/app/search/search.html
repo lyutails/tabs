@@ -16,7 +16,37 @@
     </div>
   </div>
   @if (searchStore.searchResults().length === 0 && layout() !== 'side') {
-    <div class="arrow-gif"></div>
+    <svg class="arrow" viewBox="0 0 400 100" aria-hidden="true">
+      <g>
+        <path
+          class="arrow_path arrow_main"
+          d="M1.45,97.28S16.06,42.94,74.05,16.91C126.78-6.75,172.22.93,201.91,12.8c29.68,11.87,39.52,33.5,43.84,45.01,7.76,20.71,0,38.09-15.53,48.14-15.53,10.05-46.68,14.15-57.99-11.42-21-47.49,42.92-80.37,96.8-85.84,42.4-4.31,79.58.64,107.76,15.98,43.95,23.93,71.18,69.4,69.44,66.56"
+          fill="none"
+          stroke="#d16e80"
+          stroke-miterlimit="10"
+          stroke-width="3"
+        />
+        <line
+          class="arrow_head arrow_head_1"
+          x1="410.06"
+          y1="85.91"
+          x2="446.23"
+          y2="91.24"
+          fill="none"
+          stroke="#d16e80"
+          stroke-miterlimit="10"
+          stroke-width="3"
+        />
+      </g>
+      <path
+        class="arrow_head arrow_head_2"
+        d="M451.82,58.51c-1.76,10.71-3.83,22.02-5.59,32.72"
+        fill="none"
+        stroke="#d16e80"
+        stroke-miterlimit="10"
+        stroke-width="3"
+      />
+    </svg>
   }
   <button
     type="button"
