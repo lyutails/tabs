@@ -27,7 +27,7 @@ tabs-search-control {
         width: 40%;
     }
 
-    &_brand-button {
+    &_filter-options-button {
         flex: 0 0 auto;
         scroll-snap-align: start;
         border: 1px solid var(--primary-color);
@@ -76,6 +76,8 @@ tabs-search-control {
 
         border: none;
         border-radius: 50%;
+        border: 1px solid var(--primary-color);
+        background-color: var(--button-tab-color);
         cursor: pointer;
 
         &.left {
@@ -440,12 +442,12 @@ tabs-search-control {
 .arrow-gif {
     width: 400px;
     height: 100px;
-    background-image: url('../../../public/tabs_arrow_draw_black.gif');
+    background-image: url('../../../public/tabs_arrow_draw_dustyrose.gif');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     display: block;
-    z-index: 50;
+    z-index: 10;
     top: 250px;
     left: 50%;
     right: 50%;
@@ -456,12 +458,12 @@ tabs-search-control {
     .arrow-gif {
         width: 360px;
         height: 90px;
-        background-image: url('../../../public/tabs_arrow_draw_black.gif');
+        background-image: url('../../../public/tabs_arrow_draw_dustyrose.gif');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
         display: block;
-        z-index: 50;
+        z-index: 10;
         top: 250px;
         left: 50%;
         right: 50%;

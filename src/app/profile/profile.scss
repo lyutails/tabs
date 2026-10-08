@@ -35,15 +35,17 @@
     &_upload-button {
         margin-top: 10px;
         align-self: center;
-        background-color: var(--decorative-elements);
-        color: var(--secondary-color);
+        background-color: var(--button-tab-color);
+        color: var(--font-secondary-color);
+        border: 1px solid var(--primary-color);
         font-size: 16px;
         transition: all 0.2s ease-in-out;
 
         &:hover {
             cursor: pointer;
             background-color: var(--secondary-color);
-            color: var(--decorative-elements);
+            color: var(--font-secondary-color);
+            border: 1px solid var(--primary-color);
         }
     }
 
