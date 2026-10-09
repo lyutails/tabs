@@ -189,6 +189,13 @@ export class InteractiveStore implements OnInit, AfterViewInit {
     this.canvas.style.cursor = nextHovered ? 'pointer' : 'default';
   };
 
+  private getProductQuery(object: THREE.Object3D): string {
+    if (object === this.cream) return 'cream';
+    if (object === this.orange) return 'vitamin c';
+
+    return '';
+  }
+
   private onCanvasClick = () => {
     if (!this.hoveredObject) return;
 
@@ -198,10 +205,14 @@ export class InteractiveStore implements OnInit, AfterViewInit {
       this.selectedObject.name || 'Выбранный объект'
     );
 
+    const query = this.getProductQuery(this.selectedObject);
+
+    if (!query) return;
+
     this.isProductSliderOpen.set(true);
     this.updateSliderPosition();
 
-    this.productsSlider()?.getProducts('cream');
+    this.productsSlider()?.getProducts(query);
   };
 
   private createScene() {
