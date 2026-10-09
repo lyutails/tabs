@@ -310,9 +310,9 @@ export class InteractiveStore implements OnInit, AfterViewInit {
         component.camera
       );
 
-      // if (component.roundPlatformPivot) {
-      //   component.roundPlatformPivot.rotation.y += 0.005;
-      // }
+      if (component.roundPlatformPivot) {
+        component.roundPlatformPivot.rotateY(0.005);
+      }
     })();
   }
 
@@ -452,33 +452,58 @@ export class InteractiveStore implements OnInit, AfterViewInit {
 
   importRoundPlatform() {
     const loaderGLTF = new GLTFLoader();
+
     loaderGLTF.load(this.roundPlatformModelGLB, (gltf: GLTF) => {
       this.roundPlatform = gltf.scene;
 
-      this.roundPlatform.traverse((child: THREE.Object3D) => {
-        if (child instanceof THREE.Mesh) {
-
-          const materials = Array.isArray(child.material)
-            ? child.material
-            : [child.material];
-        }
-      });
-
+      this.roundPlatform.scale.setScalar(1.8);
       this.roundPlatform.rotation.set(
         THREE.MathUtils.degToRad(15),
         THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
+        0
       );
-      this.roundPlatform.position.y = -0.1;
-      this.roundPlatform.position.x = -1.1;
-      this.roundPlatform.position.z = 0.45;
+      this.roundPlatform.position.set(-0.1, -0.09, 0.35);
+
       this.scene.add(this.roundPlatform);
-      this.roundPlatform.scale.set(1.8, 1.8, 1.8);
+      this.roundPlatform.updateWorldMatrix(true, true);
 
       const box = new THREE.Box3().setFromObject(this.roundPlatform);
       const center = box.getCenter(new THREE.Vector3());
 
-      // this.createProductLabel(this.orange, 'Витамин С');
+      const worldPosition = this.roundPlatform.getWorldPosition(
+        new THREE.Vector3()
+      );
+      const worldQuaternion = this.roundPlatform.getWorldQuaternion(
+        new THREE.Quaternion()
+      );
+      const worldScale = this.roundPlatform.getWorldScale(
+        new THREE.Vector3()
+      );
+
+      this.scene.remove(this.roundPlatform);
+
+      const pivot = new THREE.Group();
+      pivot.position.copy(center);
+
+      pivot.rotation.copy(this.store.rotation);
+
+      this.scene.add(pivot);
+
+      pivot.add(this.roundPlatform);
+
+      this.roundPlatform.quaternion
+        .copy(pivot.quaternion)
+        .invert()
+        .multiply(worldQuaternion);
+
+      this.roundPlatform.scale.copy(worldScale);
+
+      this.roundPlatform.position
+        .copy(worldPosition)
+        .sub(center)
+        .applyQuaternion(pivot.quaternion.clone().invert());
+
+      this.roundPlatformPivot = pivot;
     });
   }
 
