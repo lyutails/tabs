@@ -1,8 +1,25 @@
-.store {
+.scene-container {
+    position: relative;
     width: 80vw;
+}
+
+.store {
+    display: block;
+    width: 100%;
     aspect-ratio: 1 / 0.8;
 
     &:hover {
         cursor: pointer;
     }
+}
+
+tabs-products-slider {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, calc(-100% - 12px));
+}
+
+.slider-hidden {
+    visibility: hidden;
+    pointer-events: none;
 }

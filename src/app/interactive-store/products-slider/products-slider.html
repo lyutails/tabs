@@ -1,0 +1,8 @@
+<div class="slider_wrapper">
+  @for (result of results(); track result) {
+    <div class="slider_card" (click)="openProductModal(result)">
+      <div>{{ result.brand.name }}</div>
+      <img class="slider_card-image" [src]="result.listingImage.url" />
+    </div>
+  }
+</div>

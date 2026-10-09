@@ -1,3 +1,10 @@
-@if (this.isBrowser) {
-<canvas #canvas id="canvas" class="store"></canvas>
-}
+<div #sceneContainer class="scene-container">
+  @if (this.isBrowser) {
+    <canvas #canvas id="canvas" class="store"></canvas>
+  }
+  <tabs-products-slider
+    [style.left.px]="sliderX()"
+    [style.top.px]="sliderY()"
+    [class.slider-hidden]="!isProductSliderOpen()"
+  ></tabs-products-slider>
+</div>

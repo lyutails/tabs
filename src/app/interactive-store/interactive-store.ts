@@ -9,6 +9,7 @@ import {
   OnInit,
   PLATFORM_ID,
   signal,
+  viewChild,
   ViewChild,
 } from '@angular/core';
 import * as THREE from 'three';
@@ -24,10 +25,12 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { Result } from '../../../scripts/catalog-importer/catalog-importer.model';
+import { ProductsSlider } from './products-slider/products-slider';
 
 
 @Component({
-  imports: [],
+  imports: [ProductsSlider],
   selector: 'tabs-interactive-store',
   styleUrl: './interactive-store.scss',
   templateUrl: './interactive-store.html',
@@ -54,7 +57,6 @@ export class InteractiveStore implements OnInit, AfterViewInit {
   // private loader = new THREE.TextureLoader();
   // private geometry = new THREE.BoxGeometry(1, 1, 1);
   // private material = new THREE.MeshBasicMaterial({ map: this.loader.load(this.texture) });
-  // private snowflake: THREE.Mesh = new THREE.Mesh(this.geometry, this.material);
   private renderer!: THREE.WebGLRenderer;
   private scene!: THREE.Scene;
   private ambientLight!: THREE.AmbientLight;
@@ -95,6 +97,11 @@ export class InteractiveStore implements OnInit, AfterViewInit {
   private orange!: THREE.Object3D;
   private ga!: THREE.Object3D;
   private roundPlatform!: THREE.Object3D;
+  isProductSliderOpen = signal(false);
+  selectedProduct = signal<Result | null>(null);
+  productsSlider = viewChild(ProductsSlider);
+  sliderX = signal(0);
+  sliderY = signal(0);
   storeModelGLB =
     '/three/store18.glb';
   creamModelGLB =
@@ -104,7 +111,14 @@ export class InteractiveStore implements OnInit, AfterViewInit {
   gaModelGLB =
     '/three/ga.glb';
   roundPlatformModelGLB =
-    '/three/round_platform1.glb';
+    '/three/round_platform1.glb'; 
+    
+  @ViewChild('sceneContainer')
+  private sceneContainerRef!: ElementRef<HTMLElement>;
+
+  private get sceneContainer(): HTMLElement {
+    return this.sceneContainerRef.nativeElement;
+  }
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: InjectionToken<Object>,
@@ -183,6 +197,11 @@ export class InteractiveStore implements OnInit, AfterViewInit {
     this.selectedName.set(
       this.selectedObject.name || 'Выбранный объект'
     );
+
+    this.isProductSliderOpen.set(true);
+    this.updateSliderPosition();
+
+    this.productsSlider()?.getProducts('cream');
   };
 
   private createScene() {
@@ -304,15 +323,20 @@ export class InteractiveStore implements OnInit, AfterViewInit {
     (function render() {
       requestAnimationFrame(render);
       component.animCream();
+
+      if (component.roundPlatformPivot) {
+        component.roundPlatformPivot.rotateY(0.005);
+      }
+
+      if (component.isProductSliderOpen()) {
+        component.updateSliderPosition();
+      }
+
       component.composer.render();
       component.labelRenderer.render(
         component.scene,
         component.camera
       );
-
-      if (component.roundPlatformPivot) {
-        component.roundPlatformPivot.rotateY(0.005);
-      }
     })();
   }
 
@@ -484,7 +508,7 @@ export class InteractiveStore implements OnInit, AfterViewInit {
 
       const pivot = new THREE.Group();
       pivot.position.copy(center);
-      
+
       pivot.rotation.copy(this.store.rotation);
 
       this.scene.add(pivot);
@@ -631,5 +655,42 @@ export class InteractiveStore implements OnInit, AfterViewInit {
     this.labelRenderer.domElement.style.pointerEvents = 'none';
 
     container.appendChild(this.labelRenderer.domElement);
+  }
+
+  private updateSliderPosition(): void {
+    if (!this.selectedObject || !this.camera) return;
+
+    this.selectedObject.updateWorldMatrix(true, true);
+
+    const box = new THREE.Box3().setFromObject(this.selectedObject);
+
+    // Точка над верхней частью объекта
+    const anchor = new THREE.Vector3(
+      (box.min.x + box.max.x) / 2,
+      box.max.y,
+      (box.min.z + box.max.z) / 2
+    );
+
+    anchor.project(this.camera);
+
+    if (anchor.z < -1 || anchor.z > 1) return;
+
+    // Координаты canvas на экране
+    const canvasRect = this.canvas.getBoundingClientRect();
+
+    // Координаты общего контейнера на экране
+    const containerRect = this.sceneContainer.getBoundingClientRect();
+
+    // Переводим координаты Three.js в CSS-пиксели контейнера
+    const screenX =
+      canvasRect.left +
+      ((anchor.x + 1) / 2) * canvasRect.width;
+
+    const screenY =
+      canvasRect.top +
+      ((1 - anchor.y) / 2) * canvasRect.height;
+
+    this.sliderX.set(screenX - containerRect.left);
+    this.sliderY.set(screenY - containerRect.top);
   }
 }
