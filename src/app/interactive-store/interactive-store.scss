@@ -1,0 +1,8 @@
+.store {
+    width: 80vw;
+    aspect-ratio: 1 / 0.8;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
