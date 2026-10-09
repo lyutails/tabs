@@ -96,7 +96,7 @@ export class InteractiveStore implements OnInit, AfterViewInit {
   private ga!: THREE.Object3D;
   private roundPlatform!: THREE.Object3D;
   storeModelGLB =
-    '/three/store14.glb';
+    '/three/store18.glb';
   creamModelGLB =
     '/three/cream3.glb';
   orangeModelGLB =
@@ -373,11 +373,11 @@ export class InteractiveStore implements OnInit, AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.cream.position.y = 0.3;
-      this.cream.position.x = -1.3;
-      this.cream.position.z = 0.35;
+      this.cream.position.x = -1.4;
+      this.cream.position.y = -0.3;
+      this.cream.position.z = 1.2;
       this.scene.add(this.cream);
-      this.cream.scale.set(1.4, 1.4, 1.4);
+      this.cream.scale.set(1.8, 1.8, 1.8);
 
       const box = new THREE.Box3().setFromObject(this.cream);
       const center = box.getCenter(new THREE.Vector3());
@@ -484,7 +484,7 @@ export class InteractiveStore implements OnInit, AfterViewInit {
 
       const pivot = new THREE.Group();
       pivot.position.copy(center);
-
+      
       pivot.rotation.copy(this.store.rotation);
 
       this.scene.add(pivot);
