@@ -164,24 +164,39 @@ export class InteractiveStore implements AfterViewInit {
     }
 
     // Переключаем подсветку только при смене объекта.
-    if (nextHovered !== this.hoveredObject) {
-      if (this.hoveredObject) {
-        this.setHighlight(this.hoveredObject, false);
-      }
+    this.hoveredObject = nextHovered;
 
-      if (nextHovered) {
-        this.setHighlight(nextHovered, true);
-      }
+    const sliderOpen = this.isProductSliderOpen();
 
-      this.hoveredObject = nextHovered;
+    // Выбранный продукт всегда сохраняет хайлайт.
+    if (sliderOpen && this.selectedObject) {
+      this.setHighlight(this.selectedObject, true);
     }
 
-    // Контур вокруг текущего объекта.
-    this.outlinePass.selectedObjects = nextHovered
-      ? [nextHovered]
-      : [];
+    // Остальные продукты подсвечиваются при наведении.
+    for (const object of targets) {
+      if (sliderOpen && object === this.selectedObject) {
+        continue;
+      }
 
-    // Каждый объект управляет собственным лейблом.
+      this.setHighlight(object, object === nextHovered);
+    }
+
+    // Контур выбранного продукта сохраняется,
+    // контур наведённого объекта показывается дополнительно.
+    const outlinedObjects: THREE.Object3D[] = [];
+
+    if (sliderOpen && this.selectedObject) {
+      outlinedObjects.push(this.selectedObject);
+    }
+
+    if (nextHovered && nextHovered !== this.selectedObject) {
+      outlinedObjects.push(nextHovered);
+    }
+
+    this.outlinePass.selectedObjects = outlinedObjects;
+
+    // Лейбл показывается только для объекта под курсором.
     this.labels.forEach((labelObject, model) => {
       labelObject.visible = model === nextHovered;
     });
