@@ -6,11 +6,3 @@
     </div>
   }
 </div>
-@if (modalStateService.isOpenModal() === true) {
-  <tabs-products-modal
-    [name]="currentResult?.name"
-    [brandName]="currentResult?.brand.name"
-    [image]="currentResult?.listingImage.url"
-    [price]="currentResult?.price.formattedValue"
-  ></tabs-products-modal>
-}

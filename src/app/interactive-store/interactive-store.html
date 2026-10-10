@@ -10,3 +10,14 @@
     [class.slider-hidden]="!isProductSliderOpen()"
   ></tabs-products-slider>
 </div>
+@if (modalStateService.isOpenModal() === true) {
+  <tabs-products-modal
+    [name]="productsSlider()?.currentResult?.name"
+    [brandName]="productsSlider()?.currentResult?.brand.name"
+    [image]="productsSlider()?.currentResult?.listingImage.url"
+    [price]="productsSlider()?.currentResult?.price.formattedValue"
+  ></tabs-products-modal>
+}
+@if (modalStateService.isOpenModal() === true) {
+  <div class="modal_overlay"></div>
+}

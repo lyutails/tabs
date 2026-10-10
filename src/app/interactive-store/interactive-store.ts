@@ -28,10 +28,11 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { Result } from '../../../scripts/catalog-importer/catalog-importer.model';
 import { ProductsSlider } from './products-slider/products-slider';
 import { ModalState } from './modal-state';
+import { ProductsModal } from './products-modal/products-modal';
 
 
 @Component({
-  imports: [ProductsSlider],
+  imports: [ProductsSlider, ProductsModal],
   selector: 'tabs-interactive-store',
   styleUrl: './interactive-store.scss',
   templateUrl: './interactive-store.html',
@@ -99,6 +100,7 @@ export class InteractiveStore implements AfterViewInit {
   private ga!: THREE.Object3D;
   private roundPlatform!: THREE.Object3D;
   private foreo!: THREE.Object3D;
+  private heart!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
@@ -117,6 +119,8 @@ export class InteractiveStore implements AfterViewInit {
     '/three/round_platform1.glb';
   foreoModelGLB =
     '/three/foreo1.glb';
+  heartModelGLB =
+    '/three/heart1.glb';
 
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
@@ -259,6 +263,28 @@ export class InteractiveStore implements AfterViewInit {
     this.isProductSliderOpen.set(false);
     this.selectedObject = null;
     this.selectedName.set(null);
+
+    const targets = [
+      this.cream,
+      this.orange,
+      this.foreo,
+    ].filter(
+      (object): object is THREE.Object3D => !!object
+    );
+
+    for (const object of targets) {
+      this.setHighlight(object, object === this.hoveredObject);
+    }
+
+    this.outlinePass.selectedObjects = this.hoveredObject
+      ? [this.hoveredObject]
+      : [];
+
+    this.labels.forEach((labelObject) => {
+      labelObject.visible = false;
+    });
+
+    this.modalStateService.isOpenModal.set(false);
   }
 
   private createScene() {
@@ -286,6 +312,7 @@ export class InteractiveStore implements AfterViewInit {
       this.importGA();
       this.importRoundPlatform();
       this.importForeo();
+      this.importHeart();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -632,6 +659,44 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.foreo,
         'Foreo',
+        1.8,
+        0,
+        0.8
+      );
+    });
+  }
+
+  importHeart() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.heartModelGLB, (gltf: GLTF) => {
+      this.heart = gltf.scene;
+
+      this.heart.traverse((child: THREE.Object3D) => {
+        if (child instanceof THREE.Mesh) {
+
+          const materials = Array.isArray(child.material)
+            ? child.material
+            : [child.material];
+        }
+      });
+
+      this.heart.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.heart.position.x = -0.7;
+      this.heart.position.y = -0.1;
+      this.heart.position.z = 0.5;
+      this.scene.add(this.heart);
+      this.heart.scale.set(1.8, 1.8, 1.8);
+
+      const box = new THREE.Box3().setFromObject(this.heart);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.heart,
+        'Heart',
         1.8,
         0,
         0.8
