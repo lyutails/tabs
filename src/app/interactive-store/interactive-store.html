@@ -1,8 +1,10 @@
-<div #sceneContainer class="scene-container">
-  @if (this.isBrowser) {
+<div #sceneContainer class="scene-container"
+  (click)="onSceneClick($event)">
+  @if (isBrowser) {
     <canvas #canvas id="canvas" class="store"></canvas>
   }
   <tabs-products-slider
+    (click)="$event.stopPropagation()"
     [style.left.px]="sliderX()"
     [style.top.px]="sliderY()"
     [class.slider-hidden]="!isProductSliderOpen()"

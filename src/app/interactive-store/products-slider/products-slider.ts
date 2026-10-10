@@ -4,9 +4,10 @@ import { SearchService } from '../../search/service/search-service';
 import { finalize } from 'rxjs';
 import { SearchStore } from '../../search/services/search-store';
 import { Result } from '../../../../scripts/catalog-importer/catalog-importer.model';
+import { ProductsModal } from '../products-modal/products-modal';
 
 @Component({
-  imports: [],
+  imports: [ProductsModal],
   selector: 'tabs-products-slider',
   styleUrl: './products-slider.scss',
   templateUrl: './products-slider.html',
@@ -15,6 +16,8 @@ export class ProductsSlider {
   searchService = inject(SearchService);
   searchStore = inject(SearchStore);
   protected results = signal<Result[]>([]);
+  isOpenModal = signal<boolean>(false);
+  currentResult: Result | null = null;
   
   getProducts(value: string) {
     const brands = Object.keys(BRANDS_CODES);
@@ -34,5 +37,9 @@ export class ProductsSlider {
       });
   }
 
-  openProductModal(value: Result) {}
+  openProductModal(value: Result) {
+    this.isOpenModal.set(!this.isOpenModal);
+    this.currentResult = value;
+    console.log(value)
+  }
 }

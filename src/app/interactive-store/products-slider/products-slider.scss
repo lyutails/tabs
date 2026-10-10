@@ -3,8 +3,10 @@
         display: flex;
         height: 150px;
         gap: 20px;
-        width: 440px;
+        width: 430px;
         overflow: hidden;
+        background-color: rgba(171, 255, 26, 0.2);
+        filter: drop-shadow(0 0 15px rgba(171, 255, 26, 0.5));
     }
 
     &_card {
@@ -16,6 +18,15 @@
         flex: 0 0 130px;
         background-color: white;
         border-radius: 5px;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        transition: border-color 150ms ease, box-shadow 150ms ease;
+
+        &:hover {
+            cursor: pointer;
+            border-color: #ff3c9d;
+            box-shadow: 0 0 8px rgb(255 0 128 / 35%);
+        }
     }
 
     &_card-image {

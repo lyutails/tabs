@@ -27,6 +27,7 @@ import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { Result } from '../../../scripts/catalog-importer/catalog-importer.model';
 import { ProductsSlider } from './products-slider/products-slider';
+import { ProductsModal } from './products-modal/products-modal';
 
 
 @Component({
@@ -35,7 +36,7 @@ import { ProductsSlider } from './products-slider/products-slider';
   styleUrl: './interactive-store.scss',
   templateUrl: './interactive-store.html',
 })
-export class InteractiveStore implements OnInit, AfterViewInit {
+export class InteractiveStore implements AfterViewInit {
   @ViewChild('canvas')
   private canvasRef!: ElementRef;
   private loaderGLTF = new GLTFLoader();
@@ -97,6 +98,7 @@ export class InteractiveStore implements OnInit, AfterViewInit {
   private orange!: THREE.Object3D;
   private ga!: THREE.Object3D;
   private roundPlatform!: THREE.Object3D;
+  private foreo!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
@@ -111,8 +113,10 @@ export class InteractiveStore implements OnInit, AfterViewInit {
   gaModelGLB =
     '/three/ga.glb';
   roundPlatformModelGLB =
-    '/three/round_platform1.glb'; 
-    
+    '/three/round_platform1.glb';
+  foreoModelGLB =
+    '/three/foreo1.glb';
+
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
 
@@ -127,9 +131,6 @@ export class InteractiveStore implements OnInit, AfterViewInit {
     this.isBrowser = isPlatformBrowser(this.platformId);
   }
 
-  ngOnInit() { }
-
-
   private onPointerMove = (event: PointerEvent): void => {
     if (!this.camera) return;
 
@@ -142,7 +143,7 @@ export class InteractiveStore implements OnInit, AfterViewInit {
 
     this.raycaster.setFromCamera(this.pointer, this.camera);
 
-    const targets = [this.cream, this.orange].filter(
+    const targets = [this.cream, this.orange, this.foreo].filter(
       (object): object is THREE.Object3D => !!object
     );
 
@@ -192,12 +193,23 @@ export class InteractiveStore implements OnInit, AfterViewInit {
   private getProductQuery(object: THREE.Object3D): string {
     if (object === this.cream) return 'cream';
     if (object === this.orange) return 'vitamin c';
+    if (object === this.foreo) return 'foreo';
 
     return '';
   }
 
-  private onCanvasClick = () => {
-    if (!this.hoveredObject) return;
+  private onCanvasClick = (): void => {
+    if (!this.hoveredObject) {
+      this.closeProductSlider();
+      return;
+    }
+
+    const query = this.getProductQuery(this.hoveredObject);
+
+    if (!query) {
+      this.closeProductSlider();
+      return;
+    }
 
     this.selectedObject = this.hoveredObject;
 
@@ -205,15 +217,30 @@ export class InteractiveStore implements OnInit, AfterViewInit {
       this.selectedObject.name || 'Выбранный объект'
     );
 
-    const query = this.getProductQuery(this.selectedObject);
-
-    if (!query) return;
-
     this.isProductSliderOpen.set(true);
     this.updateSliderPosition();
 
     this.productsSlider()?.getProducts(query);
   };
+
+  onSceneClick(event: MouseEvent): void {
+    if (!this.isProductSliderOpen()) return;
+
+    const target = event.target as HTMLElement;
+
+    if (target.closest('tabs-products-slider')) return;
+
+    // Клик по canvas обрабатывает onCanvasClick
+    if (target.closest('canvas')) return;
+
+    this.closeProductSlider();
+  }
+
+  private closeProductSlider(): void {
+    this.isProductSliderOpen.set(false);
+    this.selectedObject = null;
+    this.selectedName.set(null);
+  }
 
   private createScene() {
     if (this.isBrowser) {
@@ -239,6 +266,7 @@ export class InteractiveStore implements OnInit, AfterViewInit {
       this.importOrange();
       this.importGA();
       this.importRoundPlatform();
+      this.importForeo();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -339,9 +367,9 @@ export class InteractiveStore implements OnInit, AfterViewInit {
         component.roundPlatformPivot.rotateY(0.005);
       }
 
-      if (component.isProductSliderOpen()) {
-        component.updateSliderPosition();
-      }
+      // if (component.isProductSliderOpen()) {
+      //   component.updateSliderPosition();
+      // }
 
       component.composer.render();
       component.labelRenderer.render(
@@ -417,7 +445,13 @@ export class InteractiveStore implements OnInit, AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.cream);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(this.cream, "Увлажняющий крем");
+      this.createProductLabel(
+        this.cream,
+        'Увлажняющий крем',
+        2.8,
+        0.3,
+        0.9
+      );
     });
   }
 
@@ -449,7 +483,13 @@ export class InteractiveStore implements OnInit, AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.orange);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(this.orange, 'Витамин С');
+      this.createProductLabel(
+        this.orange,
+        'Витамин С',
+        1.7,
+        0.5,
+        0.5
+      );
     });
   }
 
@@ -542,6 +582,44 @@ export class InteractiveStore implements OnInit, AfterViewInit {
     });
   }
 
+  importForeo() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.foreoModelGLB, (gltf: GLTF) => {
+      this.foreo = gltf.scene;
+
+      this.foreo.traverse((child: THREE.Object3D) => {
+        if (child instanceof THREE.Mesh) {
+
+          const materials = Array.isArray(child.material)
+            ? child.material
+            : [child.material];
+        }
+      });
+
+      this.foreo.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.foreo.position.x = 0.7;
+      this.foreo.position.y = 0;
+      this.foreo.position.z = 0.5;
+      this.scene.add(this.foreo);
+      this.foreo.scale.set(1.8, 1.8, 1.8);
+
+      const box = new THREE.Box3().setFromObject(this.foreo);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.foreo,
+        'Foreo',
+        1.8,
+        0,
+        0.8
+      );
+    });
+  }
+
   private setHighlight(
     object: THREE.Object3D,
     enabled: boolean
@@ -616,7 +694,10 @@ export class InteractiveStore implements OnInit, AfterViewInit {
 
   private createProductLabel(
     model: THREE.Object3D,
-    label: string
+    label: string,
+    anchorX = 0.5,
+    anchorY = 0.8,
+    anchorZ = 0.5
   ): void {
     const element = document.createElement('div');
     element.className = 'product-callout';
@@ -634,15 +715,38 @@ export class InteractiveStore implements OnInit, AfterViewInit {
 
     model.updateWorldMatrix(true, true);
 
-    const box = new THREE.Box3().setFromObject(model);
+    const box = new THREE.Box3();
+
+    model.traverse((child) => {
+      if (!(child instanceof THREE.Mesh)) return;
+
+      if (!child.geometry.boundingBox) {
+        child.geometry.computeBoundingBox();
+      }
+
+      if (!child.geometry.boundingBox) return;
+
+      const meshBox = child.geometry.boundingBox.clone();
+
+      // Переводим геометрию из локальных координат меша
+      // в локальные координаты корневой модели.
+      const relativeMatrix = new THREE.Matrix4()
+        .copy(model.matrixWorld)
+        .invert()
+        .multiply(child.matrixWorld);
+
+      meshBox.applyMatrix4(relativeMatrix);
+      box.union(meshBox);
+    });
+
+    const size = box.getSize(new THREE.Vector3());
 
     const labelPosition = new THREE.Vector3(
-      box.max.x + (box.max.x - box.min.x) * 0.85,
-      box.max.y - (box.max.y - box.min.y) * 0.2,
-      (box.min.z + box.max.z) / 2
+      box.min.x + size.x * anchorX,
+      box.min.y + size.y * anchorY,
+      box.min.z + size.z * anchorZ
     );
 
-    model.worldToLocal(labelPosition);
     labelObject.position.copy(labelPosition);
 
     this.labels.set(model, labelObject);

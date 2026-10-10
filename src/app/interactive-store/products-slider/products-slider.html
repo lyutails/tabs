@@ -6,3 +6,7 @@
     </div>
   }
 </div>
+@if (isOpenModal() === true) {
+    <tabs-products-modal
+    [brandName]="currentResult?.brand.name"></tabs-products-modal>
+}
