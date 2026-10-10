@@ -1,3 +1,10 @@
 <div class="product_card">
-  <div>{{ brandName() }}</div>
+  <button class="product_close-button" (click)="closeModal()">
+    <span class="material-symbols-outlined cross">close</span>
+  </button>
+  <div class="product_brand">{{ brandName() }}</div>
+  <div class="product_name">{{ name() }}</div>
+  <img class="product_card-image" [src]="image()" />
+  <div class="product_price">{{ price() }}</div>
+  <button>to cart</button>
 </div>

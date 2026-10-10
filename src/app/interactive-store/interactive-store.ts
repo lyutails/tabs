@@ -3,10 +3,10 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
+  inject,
   Inject,
   InjectionToken,
   Input,
-  OnInit,
   PLATFORM_ID,
   signal,
   viewChild,
@@ -27,7 +27,7 @@ import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { Result } from '../../../scripts/catalog-importer/catalog-importer.model';
 import { ProductsSlider } from './products-slider/products-slider';
-import { ProductsModal } from './products-modal/products-modal';
+import { ModalState } from './modal-state';
 
 
 @Component({
@@ -104,6 +104,7 @@ export class InteractiveStore implements AfterViewInit {
   productsSlider = viewChild(ProductsSlider);
   sliderX = signal(0);
   sliderY = signal(0);
+  modalStateService = inject(ModalState);
   storeModelGLB =
     '/three/store18.glb';
   creamModelGLB =
@@ -216,6 +217,7 @@ export class InteractiveStore implements AfterViewInit {
   private onCanvasClick = (): void => {
     if (!this.hoveredObject) {
       this.closeProductSlider();
+      this.modalStateService.isOpenModal.set(false);
       return;
     }
 
@@ -223,8 +225,11 @@ export class InteractiveStore implements AfterViewInit {
 
     if (!query) {
       this.closeProductSlider();
+      this.modalStateService.isOpenModal.set(false);
       return;
     }
+
+    this.modalStateService.isOpenModal.set(false);
 
     this.selectedObject = this.hoveredObject;
 
@@ -245,7 +250,6 @@ export class InteractiveStore implements AfterViewInit {
 
     if (target.closest('tabs-products-slider')) return;
 
-    // Клик по canvas обрабатывает onCanvasClick
     if (target.closest('canvas')) return;
 
     this.closeProductSlider();
@@ -743,8 +747,6 @@ export class InteractiveStore implements AfterViewInit {
 
       const meshBox = child.geometry.boundingBox.clone();
 
-      // Переводим геометрию из локальных координат меша
-      // в локальные координаты корневой модели.
       const relativeMatrix = new THREE.Matrix4()
         .copy(model.matrixWorld)
         .invert()
@@ -794,7 +796,6 @@ export class InteractiveStore implements AfterViewInit {
 
     const box = new THREE.Box3().setFromObject(this.selectedObject);
 
-    // Точка над верхней частью объекта
     const anchor = new THREE.Vector3(
       (box.min.x + box.max.x) / 2,
       box.max.y,
@@ -805,13 +806,10 @@ export class InteractiveStore implements AfterViewInit {
 
     if (anchor.z < -1 || anchor.z > 1) return;
 
-    // Координаты canvas на экране
     const canvasRect = this.canvas.getBoundingClientRect();
 
-    // Координаты общего контейнера на экране
     const containerRect = this.sceneContainer.getBoundingClientRect();
 
-    // Переводим координаты Three.js в CSS-пиксели контейнера
     const screenX =
       canvasRect.left +
       ((anchor.x + 1) / 2) * canvasRect.width;
