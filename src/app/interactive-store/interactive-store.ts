@@ -102,6 +102,7 @@ export class InteractiveStore implements AfterViewInit {
   private foreo!: THREE.Object3D;
   private heart!: THREE.Object3D;
   private cloud!: THREE.Object3D;
+  private bottle1!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
@@ -109,21 +110,23 @@ export class InteractiveStore implements AfterViewInit {
   sliderY = signal(0);
   modalStateService = inject(ModalState);
   storeModelGLB =
-    '/three/store21.glb';
+    '/three/store23.glb';
   creamModelGLB =
     '/three/cream5.glb';
   orangeModelGLB =
-    '/three/orange1.glb';
+    '/three/orange2.glb';
   gaModelGLB =
     '/three/ga.glb';
   roundPlatformModelGLB =
-    '/three/round_platform1.glb';
+    '/three/round_platform2.glb';
   foreoModelGLB =
     '/three/foreo1.glb';
   heartModelGLB =
     '/three/heart1.glb';
   cloudModelGLB =
     '/three/cloud1.glb';
+  bottle1ModelGLB =
+    '/three/bottle1_1.glb';
 
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
@@ -370,6 +373,7 @@ export class InteractiveStore implements AfterViewInit {
       this.importForeo();
       this.importHeart();
       this.importCloud();
+      this.importBottleOne();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -551,11 +555,11 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.cream.position.x = -0.2;
-      this.cream.position.y = 0.2;
-      this.cream.position.z = -0.35;
+      this.cream.position.x = 0.05;
+      this.cream.position.y = -0.05;
+      this.cream.position.z = 0.2;
       this.scene.add(this.cream);
-      this.cream.scale.set(1.8, 1.8, 1.8);
+      this.cream.scale.set(2.2, 2.2, 2.2);
 
       const box = new THREE.Box3().setFromObject(this.cream);
       const center = box.getCenter(new THREE.Vector3());
@@ -593,9 +597,9 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.orange.position.y = -0.1;
-      this.orange.position.x = -1.1;
-      this.orange.position.z = 0.45;
+      this.orange.position.x = -0.5;
+      this.orange.position.y = 0.1;
+      this.orange.position.z = -0.1;
       this.scene.add(this.orange);
       this.orange.scale.set(1.8, 1.8, 1.8);
 
@@ -635,11 +639,11 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.ga.position.y = 0.16;
-      this.ga.position.x = -0.8;
-      this.ga.position.z = 0.35;
+      this.ga.position.x = 0.1;
+      this.ga.position.y = -0.06;
+      this.ga.position.z = 0.1;
       this.scene.add(this.ga);
-      this.ga.scale.set(1.8, 1.8, 1.8);
+      this.ga.scale.set(2.2, 2.2, 2.2);
 
       const box = new THREE.Box3().setFromObject(this.ga);
       const center = box.getCenter(new THREE.Vector3());
@@ -814,6 +818,15 @@ export class InteractiveStore implements AfterViewInit {
           material.side = THREE.DoubleSide;
           material.needsUpdate = true;
         });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
       });
 
       this.cloud.rotation.set(
@@ -821,14 +834,63 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.cloud.position.x = 0.7;
-      this.cloud.position.y = -0.1;
-      this.cloud.position.z = 0.3;
+      this.cloud.position.x = 0.5;
+      this.cloud.position.y = -0.2;
+      this.cloud.position.z = 0.8;
       this.scene.add(this.cloud);
-      this.cloud.scale.set(1.8, 1.8, 1.8);
+      this.cloud.scale.set(2.2, 2, 2.2);
 
       const box = new THREE.Box3().setFromObject(this.cloud);
       const center = box.getCenter(new THREE.Vector3());
+    });
+  }
+
+  importBottleOne() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.bottle1ModelGLB, (gltf: GLTF) => {
+      this.bottle1 = gltf.scene;
+
+      this.bottle1.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+
+        console.log(
+          'CREAM MESH:',
+          object.name,
+          object.getWorldPosition(new THREE.Vector3())
+        );
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.bottle1.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.bottle1.position.x = 0.4;
+      this.bottle1.position.y = -0.2;
+      this.bottle1.position.z = 0.9;
+      this.scene.add(this.bottle1);
+      this.bottle1.scale.set(2.2, 2.2, 2.2);
+
+      const box = new THREE.Box3().setFromObject(this.bottle1);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.bottle1,
+        'Увлажняющая сыворотка',
+        2.8,
+        0.3,
+        0.9
+      );
     });
   }
 
