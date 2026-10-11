@@ -9,6 +9,22 @@
     [style.top.px]="sliderY()"
     [class.slider-hidden]="!isProductSliderOpen()"
   ></tabs-products-slider>
+@if (chemistryIngredientsVisible()) {
+  <div class="chemistry-ingredients">
+    @for (ingredient of chemistryIngredients; track ingredient.name; let i = $index) {
+      <button
+        type="button"
+        class="chemistry-ingredients__item"
+        [style.--ingredient-index]="i"
+        [attr.aria-label]="ingredient.name"
+        [title]="ingredient.name"
+        (click)="onIngredientClick(ingredient.query)"
+      >
+        <img [src]="ingredient.image" [alt]="ingredient.name" />
+      </button>
+    }
+  </div>
+}
 </div>
 @if (modalStateService.isOpenModal() === true) {
   <tabs-products-modal

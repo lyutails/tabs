@@ -103,7 +103,12 @@ export class InteractiveStore implements AfterViewInit {
   private heart!: THREE.Object3D;
   private cloud!: THREE.Object3D;
   private bottle1!: THREE.Object3D;
+  private bottle2!: THREE.Object3D;
+  private bottle3!: THREE.Object3D;
   private brand1!: THREE.Object3D;
+  private chemistry!: THREE.Object3D;
+  private molecule!: THREE.Object3D;
+  private fan!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
@@ -111,7 +116,7 @@ export class InteractiveStore implements AfterViewInit {
   sliderY = signal(0);
   modalStateService = inject(ModalState);
   storeModelGLB =
-    '/three/store23.glb';
+    '/three/store27.glb';
   creamModelGLB =
     '/three/cream5.glb';
   orangeModelGLB =
@@ -128,8 +133,41 @@ export class InteractiveStore implements AfterViewInit {
     '/three/cloud1.glb';
   bottle1ModelGLB =
     '/three/bottle1_1.glb';
+  bottle2ModelGLB =
+    '/three/bottle2_1.glb';
+  bottle3ModelGLB =
+    '/three/bottle3_1.glb';
   brand1ModelGLB =
     '/three/brand1_1.glb';
+  chemistryModelGLB =
+    '/three/chemistry.glb';
+  moleculeModelGLB =
+    '/three/molecule2.glb';
+  fanModelGLB =
+    '/three/fan.glb';
+  chemistryIngredientsVisible = signal(false);
+  readonly chemistryIngredients = [
+    {
+      name: 'Центелла',
+      image: '/three/ingredients/centella.jfif', 
+      query: 'centella',
+    },
+    {
+      name: 'Пантенол',
+      image: '/three/ingredients/panthenol1.jfif',
+      query: 'panthenol',
+    },
+    {
+      name: 'Керамиды',
+      image: '/three/ingredients/ceramide1.webp',
+      query: 'ceramide',
+    },
+    {
+      name: 'Ниацинамид',
+      image: '/three/ingredients/niacinamide.png',
+      query: 'niacinamide',
+    },
+  ];
 
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
@@ -157,7 +195,8 @@ export class InteractiveStore implements AfterViewInit {
 
     this.raycaster.setFromCamera(this.pointer, this.camera);
 
-    const targets = [this.cream, this.orange, this.foreo, this.bottle1, this.brand1].filter(
+    const targets = [this.cream, this.orange, this.foreo, this.bottle1, this.bottle2,       
+      this.bottle3, this.brand1, this.chemistry, this.molecule, this.fan].filter(
       (object): object is THREE.Object3D => !!object
     );
 
@@ -223,7 +262,11 @@ export class InteractiveStore implements AfterViewInit {
     if (object === this.orange) return 'vitamin c';
     if (object === this.foreo) return 'foreo';
     if (object === this.bottle1) return 'serum';
+    if (object === this.bottle2) return 'peptide';
+    if (object === this.bottle3) return 'retinol';
     if (object === this.brand1) return 'obagi';
+    if (object === this.chemistry) return 'centella panthenol ceramide ectoin niacinamide';
+    if (object === this.fan) return 'korea';
 
     return '';
   }
@@ -252,8 +295,16 @@ export class InteractiveStore implements AfterViewInit {
     );
 
     this.isProductSliderOpen.set(true);
-    this.updateSliderPosition();
 
+    if (this.selectedObject === this.chemistry) {
+      this.showChemistryIngredients();
+      this.updateSliderPosition();
+      this.productsSlider()?.getProducts(query);
+      return;
+    }
+
+    this.hideChemistryIngredients();
+    this.updateSliderPosition();
     this.productsSlider()?.getProducts(query);
   };
 
@@ -273,13 +324,18 @@ export class InteractiveStore implements AfterViewInit {
     this.isProductSliderOpen.set(false);
     this.selectedObject = null;
     this.selectedName.set(null);
+    this.hideChemistryIngredients();
 
     const targets = [
       this.cream,
       this.orange,
       this.foreo,
       this.bottle1,
+      this.bottle2,
+      this.bottle3,
       this.brand1,
+      this.chemistry,
+      this.fan,
     ].filter(
       (object): object is THREE.Object3D => !!object
     );
@@ -322,7 +378,6 @@ export class InteractiveStore implements AfterViewInit {
         this.store.traverse((object) => {
           if (!(object instanceof THREE.Mesh)) return;
 
-          console.log('Hiding mesh:', object.name);
           object.visible = true;
 
           const materials = Array.isArray(object.material)
@@ -354,22 +409,18 @@ export class InteractiveStore implements AfterViewInit {
 
         });
 
-        console.log('Camera near/far:', this.camera.near, this.camera.far);
-        console.log('Store position:', this.store.position);
-        console.log('Store scale:', this.store.scale);
-
-        this.store.traverse((object) => {
-          if (object instanceof THREE.Mesh) {
-            console.log(
-              'STORE MESH:',
-              object.name,
-              'material:',
-              object.material,
-              'position:',
-              object.getWorldPosition(new THREE.Vector3())
-            );
-          }
-        });
+        // this.store.traverse((object) => {
+        //   if (object instanceof THREE.Mesh) {
+        //     console.log(
+        //       'STORE MESH:',
+        //       object.name,
+        //       'material:',
+        //       object.material,
+        //       'position:',
+        //       object.getWorldPosition(new THREE.Vector3())
+        //     );
+        //   }
+        // });
       });
 
       this.importCream();
@@ -380,7 +431,12 @@ export class InteractiveStore implements AfterViewInit {
       this.importHeart();
       this.importCloud();
       this.importBottleOne();
+      this.importBottleTwo();
+      this.importBottleThree();
       this.importBrandOne();
+      this.importChemistry();
+      this.importMolecule();
+      this.importFan();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -486,6 +542,10 @@ export class InteractiveStore implements AfterViewInit {
       //   component.updateSliderPosition();
       // }
 
+      if (component.chemistryIngredientsVisible()) {
+        component.updateChemistryIngredientsPosition();
+      }
+
       component.composer.render();
       component.labelRenderer.render(
         component.scene,
@@ -541,11 +601,11 @@ export class InteractiveStore implements AfterViewInit {
         if (!(object instanceof THREE.Mesh)) return;
 
 
-        console.log(
-          'CREAM MESH:',
-          object.name,
-          object.getWorldPosition(new THREE.Vector3())
-        );
+        // console.log(
+        //   'CREAM MESH:',
+        //   object.name,
+        //   object.getWorldPosition(new THREE.Vector3())
+        // );
 
         const materials = Array.isArray(object.material)
           ? object.material
@@ -665,13 +725,13 @@ export class InteractiveStore implements AfterViewInit {
     loaderGLTF.load(this.roundPlatformModelGLB, (gltf: GLTF) => {
       this.roundPlatform = gltf.scene;
 
-      this.roundPlatform.scale.setScalar(1.8);
+      this.roundPlatform.scale.setScalar(2.4);
       this.roundPlatform.rotation.set(
         THREE.MathUtils.degToRad(15),
         THREE.MathUtils.degToRad(45),
         0
       );
-      this.roundPlatform.position.set(-0.1, -0.09, 0.35);
+      this.roundPlatform.position.set(0.1, 0.1, -0.3);
 
       this.scene.add(this.roundPlatform);
       this.roundPlatform.updateWorldMatrix(true, true);
@@ -860,13 +920,6 @@ export class InteractiveStore implements AfterViewInit {
       this.bottle1.traverse((object: THREE.Object3D) => {
         if (!(object instanceof THREE.Mesh)) return;
 
-
-        console.log(
-          'CREAM MESH:',
-          object.name,
-          object.getWorldPosition(new THREE.Vector3())
-        );
-
         const materials = Array.isArray(object.material)
           ? object.material
           : [object.material];
@@ -902,6 +955,92 @@ export class InteractiveStore implements AfterViewInit {
     });
   }
 
+  importBottleTwo() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.bottle2ModelGLB, (gltf: GLTF) => {
+      this.bottle2 = gltf.scene;
+
+      this.bottle2.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.bottle2.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.bottle2.position.x = 0.4;
+      this.bottle2.position.y = -0.2;
+      this.bottle2.position.z = 0.9;
+      this.scene.add(this.bottle2);
+      this.bottle2.scale.set(2.2, 2.2, 2.2);
+
+      const box = new THREE.Box3().setFromObject(this.bottle2);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.bottle2,
+        'Peptides',
+        -1.2,
+        0.6,
+        0.9,
+        'left'
+      );
+    });
+  }
+
+  importBottleThree() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.bottle3ModelGLB, (gltf: GLTF) => {
+      this.bottle3 = gltf.scene;
+
+      this.bottle3.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.bottle3.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.bottle3.position.x = 0.4;
+      this.bottle3.position.y = -0.2;
+      this.bottle3.position.z = 0.9;
+      this.scene.add(this.bottle3);
+      this.bottle3.scale.set(2.2, 2.2, 2.2);
+
+      const box = new THREE.Box3().setFromObject(this.bottle3);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.bottle3,
+        'Retinol',
+        -1,
+        0.6,
+        0.9,
+        'left'
+      );
+    });
+  }
+
   importBrandOne() {
     const loaderGLTF = new GLTFLoader();
     loaderGLTF.load(this.brand1ModelGLB, (gltf: GLTF) => {
@@ -909,13 +1048,6 @@ export class InteractiveStore implements AfterViewInit {
 
       this.brand1.traverse((object: THREE.Object3D) => {
         if (!(object instanceof THREE.Mesh)) return;
-
-
-        console.log(
-          'CREAM MESH:',
-          object.name,
-          object.getWorldPosition(new THREE.Vector3())
-        );
 
         const materials = Array.isArray(object.material)
           ? object.material
@@ -932,9 +1064,9 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.brand1.position.x = 0.3;
-      this.brand1.position.y = -0.1;
-      this.brand1.position.z = -0.1;
+      this.brand1.position.x = -0.1;
+      this.brand1.position.y = 0.8;
+      this.brand1.position.z = 0.4;
       this.scene.add(this.brand1);
       this.brand1.scale.set(2.2, 2.2, 2.2);
 
@@ -945,8 +1077,155 @@ export class InteractiveStore implements AfterViewInit {
         this.brand1,
         'Obagi',
         1.2,
-        0.3,
+        0.1,
         0.8
+      );
+    });
+  }
+
+  importChemistry() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.chemistryModelGLB, (gltf: GLTF) => {
+      this.chemistry = gltf.scene;
+
+      this.chemistry.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = true;
+          material.opacity = 0.3;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.chemistry.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.chemistry.position.x = 0.1;
+      this.chemistry.position.y = 0.1;
+      this.chemistry.position.z = -0.2;
+      this.scene.add(this.chemistry);
+      this.chemistry.scale.set(2.2, 2.2, 2.2);
+
+      const box = new THREE.Box3().setFromObject(this.chemistry);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.chemistry,
+        'Repair',
+        1.2,
+        0.1,
+        0.8
+      );
+    });
+  }
+
+  importMolecule() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.moleculeModelGLB, (gltf: GLTF) => {
+      this.molecule = gltf.scene;
+
+      this.molecule.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = true;
+          material.opacity = 0.8;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.molecule.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+
+      this.molecule.position.x = -1.35;
+      this.molecule.position.y = -0.9;
+      this.molecule.position.z = 1;
+      this.scene.add(this.molecule);
+      this.molecule.scale.set(2, 2, 2);
+
+      const box = new THREE.Box3().setFromObject(this.molecule);
+      const center = box.getCenter(new THREE.Vector3());
+    });
+  }
+
+  importFan() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.fanModelGLB, (gltf: GLTF) => {
+      this.fan = gltf.scene;
+
+      this.fan.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.fan.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.fan.position.x = 0.25;
+      this.fan.position.y = 0.1;
+      this.fan.position.z = -0.15;
+      this.scene.add(this.fan);
+      this.fan.scale.set(2, 2, 2);
+
+      const box = new THREE.Box3().setFromObject(this.fan);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.fan,
+        'K-Beauty',
+        -1.8,
+        1.2,
+        0.8,
+        'left'
       );
     });
   }
@@ -1105,6 +1384,12 @@ export class InteractiveStore implements AfterViewInit {
   private updateSliderPosition(): void {
     if (!this.selectedObject || !this.camera) return;
 
+    if (this.selectedObject === this.chemistry) {
+      this.sliderX.set(this.sceneContainer.clientWidth / 2);
+      this.sliderY.set(this.sceneContainer.clientHeight * 0.75);
+      return;
+    }
+
     this.selectedObject.updateWorldMatrix(true, true);
 
     const box = new THREE.Box3().setFromObject(this.selectedObject);
@@ -1133,5 +1418,63 @@ export class InteractiveStore implements AfterViewInit {
 
     this.sliderX.set(screenX - containerRect.left);
     this.sliderY.set(screenY - containerRect.top);
+  }
+
+  showChemistryIngredients() {
+    this.chemistryIngredientsVisible.set(true);
+    this.updateSliderPosition();
+  }
+
+  hideChemistryIngredients() {
+    this.chemistryIngredientsVisible.set(false);
+  }
+
+  onIngredientClick(query: string): void {
+    this.productsSlider()?.getProducts(query);
+  }
+
+  private projectObjectPosition(
+    object: THREE.Object3D,
+    useTop = true
+  ): { x: number; y: number } | null {
+    object.updateWorldMatrix(true, true);
+
+    const box = new THREE.Box3().setFromObject(object);
+
+    const anchor = new THREE.Vector3(
+      (box.min.x + box.max.x) / 2,
+      useTop ? box.max.y : (box.min.y + box.max.y) / 2,
+      (box.min.z + box.max.z) / 2
+    );
+
+    anchor.project(this.camera);
+
+    if (anchor.z < -1 || anchor.z > 1) return null;
+
+    const canvasRect = this.canvas.getBoundingClientRect();
+    const containerRect = this.sceneContainer.getBoundingClientRect();
+
+    return {
+      x: canvasRect.left + ((anchor.x + 1) / 2) * canvasRect.width - containerRect.left,
+      y: canvasRect.top + ((1 - anchor.y) / 2) * canvasRect.height - containerRect.top,
+    };
+  }
+
+  private updateChemistryIngredientsPosition(): void {
+    if (!this.chemistry || !this.chemistryIngredientsVisible()) return;
+
+    const position = this.projectObjectPosition(this.chemistry);
+
+    if (!position) return;
+
+    const container = this.sceneContainer.querySelector(
+      '.chemistry-ingredients'
+    ) as HTMLElement | null;
+
+    if (!container) return;
+
+    container.style.left = `${position.x}px`;
+    container.style.top = `${position.y - 30}px`;
+    container.style.transform = 'translate(-50%, -50%)';
   }
 }
