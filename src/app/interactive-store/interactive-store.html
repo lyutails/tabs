@@ -19,5 +19,5 @@
   ></tabs-products-modal>
 }
 @if (modalStateService.isOpenModal() === true) {
-  <div class="modal_overlay"></div>
+  <div (click)="modalStateService.isOpenModal.set(false)" class="modal_overlay"></div>
 }

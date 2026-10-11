@@ -101,6 +101,7 @@ export class InteractiveStore implements AfterViewInit {
   private roundPlatform!: THREE.Object3D;
   private foreo!: THREE.Object3D;
   private heart!: THREE.Object3D;
+  private cloud!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
@@ -108,9 +109,9 @@ export class InteractiveStore implements AfterViewInit {
   sliderY = signal(0);
   modalStateService = inject(ModalState);
   storeModelGLB =
-    '/three/store18.glb';
+    '/three/store21.glb';
   creamModelGLB =
-    '/three/cream3.glb';
+    '/three/cream5.glb';
   orangeModelGLB =
     '/three/orange1.glb';
   gaModelGLB =
@@ -121,6 +122,8 @@ export class InteractiveStore implements AfterViewInit {
     '/three/foreo1.glb';
   heartModelGLB =
     '/three/heart1.glb';
+  cloudModelGLB =
+    '/three/cloud1.glb';
 
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
@@ -305,6 +308,59 @@ export class InteractiveStore implements AfterViewInit {
         );
         this.scene.add(this.store);
         this.store.scale.set(2.1, 2.1, 2.1);
+
+
+        this.store.traverse((object) => {
+          if (!(object instanceof THREE.Mesh)) return;
+
+          console.log('Hiding mesh:', object.name);
+          object.visible = true;
+
+          const materials = Array.isArray(object.material)
+            ? object.material
+            : [object.material];
+
+          materials.forEach((material) => {
+            material.side = THREE.DoubleSide;
+            material.needsUpdate = true;
+          });
+
+
+          this.store.traverse((object) => {
+            if (!(object instanceof THREE.Mesh)) return;
+
+            const materials = Array.isArray(object.material)
+              ? object.material
+              : [object.material];
+
+            materials.forEach((material) => {
+              material.transparent = false;
+              material.opacity = 1;
+              material.depthTest = true;
+              material.depthWrite = true;
+              material.side = THREE.DoubleSide;
+              material.needsUpdate = true;
+            });
+          });
+
+        });
+
+        console.log('Camera near/far:', this.camera.near, this.camera.far);
+        console.log('Store position:', this.store.position);
+        console.log('Store scale:', this.store.scale);
+
+        this.store.traverse((object) => {
+          if (object instanceof THREE.Mesh) {
+            console.log(
+              'STORE MESH:',
+              object.name,
+              'material:',
+              object.material,
+              'position:',
+              object.getWorldPosition(new THREE.Vector3())
+            );
+          }
+        });
       });
 
       this.importCream();
@@ -313,6 +369,7 @@ export class InteractiveStore implements AfterViewInit {
       this.importRoundPlatform();
       this.importForeo();
       this.importHeart();
+      this.importCloud();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -366,6 +423,7 @@ export class InteractiveStore implements AfterViewInit {
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvas,
       alpha: true,
+      logarithmicDepthBuffer: false,
     });
 
     this.renderer.setClearColor(0x000000, 0);
@@ -468,13 +526,24 @@ export class InteractiveStore implements AfterViewInit {
     loaderGLTF.load(this.creamModelGLB, (gltf: GLTF) => {
       this.cream = gltf.scene;
 
-      this.cream.traverse((child: THREE.Object3D) => {
-        if (child instanceof THREE.Mesh) {
+      this.cream.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
 
-          const materials = Array.isArray(child.material)
-            ? child.material
-            : [child.material];
-        }
+
+        console.log(
+          'CREAM MESH:',
+          object.name,
+          object.getWorldPosition(new THREE.Vector3())
+        );
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
       });
 
       this.cream.rotation.set(
@@ -482,9 +551,9 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.cream.position.x = -1.4;
-      this.cream.position.y = -0.3;
-      this.cream.position.z = 1.2;
+      this.cream.position.x = -0.2;
+      this.cream.position.y = 0.2;
+      this.cream.position.z = -0.35;
       this.scene.add(this.cream);
       this.cream.scale.set(1.8, 1.8, 1.8);
 
@@ -506,13 +575,17 @@ export class InteractiveStore implements AfterViewInit {
     loaderGLTF.load(this.orangeModelGLB, (gltf: GLTF) => {
       this.orange = gltf.scene;
 
-      this.orange.traverse((child: THREE.Object3D) => {
-        if (child instanceof THREE.Mesh) {
+      this.orange.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
 
-          const materials = Array.isArray(child.material)
-            ? child.material
-            : [child.material];
-        }
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
       });
 
       this.orange.rotation.set(
@@ -544,13 +617,17 @@ export class InteractiveStore implements AfterViewInit {
     loaderGLTF.load(this.gaModelGLB, (gltf: GLTF) => {
       this.ga = gltf.scene;
 
-      this.ga.traverse((child: THREE.Object3D) => {
-        if (child instanceof THREE.Mesh) {
+      this.ga.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
 
-          const materials = Array.isArray(child.material)
-            ? child.material
-            : [child.material];
-        }
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
       });
 
       this.ga.rotation.set(
@@ -633,13 +710,26 @@ export class InteractiveStore implements AfterViewInit {
     loaderGLTF.load(this.foreoModelGLB, (gltf: GLTF) => {
       this.foreo = gltf.scene;
 
-      this.foreo.traverse((child: THREE.Object3D) => {
-        if (child instanceof THREE.Mesh) {
+      this.foreo.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
 
-          const materials = Array.isArray(child.material)
-            ? child.material
-            : [child.material];
-        }
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
       });
 
       this.foreo.rotation.set(
@@ -648,7 +738,7 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(0)
       );
       this.foreo.position.x = 0.7;
-      this.foreo.position.y = 0;
+      this.foreo.position.y = -0.1;
       this.foreo.position.z = 0.5;
       this.scene.add(this.foreo);
       this.foreo.scale.set(1.8, 1.8, 1.8);
@@ -671,13 +761,17 @@ export class InteractiveStore implements AfterViewInit {
     loaderGLTF.load(this.heartModelGLB, (gltf: GLTF) => {
       this.heart = gltf.scene;
 
-      this.heart.traverse((child: THREE.Object3D) => {
-        if (child instanceof THREE.Mesh) {
+      this.heart.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
 
-          const materials = Array.isArray(child.material)
-            ? child.material
-            : [child.material];
-        }
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
       });
 
       this.heart.rotation.set(
@@ -701,6 +795,40 @@ export class InteractiveStore implements AfterViewInit {
         0,
         0.8
       );
+    });
+  }
+
+  importCloud() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.cloudModelGLB, (gltf: GLTF) => {
+      this.cloud = gltf.scene;
+
+      this.cloud.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.cloud.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.cloud.position.x = 0.7;
+      this.cloud.position.y = -0.1;
+      this.cloud.position.z = 0.3;
+      this.scene.add(this.cloud);
+      this.cloud.scale.set(1.8, 1.8, 1.8);
+
+      const box = new THREE.Box3().setFromObject(this.cloud);
+      const center = box.getCenter(new THREE.Vector3());
     });
   }
 
