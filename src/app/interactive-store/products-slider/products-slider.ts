@@ -4,11 +4,10 @@ import { SearchService } from '../../search/service/search-service';
 import { finalize } from 'rxjs';
 import { SearchStore } from '../../search/services/search-store';
 import { Result } from '../../../../scripts/catalog-importer/catalog-importer.model';
-import { ProductsModal } from '../products-modal/products-modal';
 import { ModalState } from '../modal-state';
 
 @Component({
-  imports: [ProductsModal],
+  imports: [],
   selector: 'tabs-products-slider',
   styleUrl: './products-slider.scss',
   templateUrl: './products-slider.html',

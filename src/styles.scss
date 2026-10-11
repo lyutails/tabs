@@ -247,6 +247,15 @@ p {
     background: rgb(255 255 255 / 92%);
 }
 
+.product-callout {
+    display: flex;
+    align-items: center;
+
+    &--left {
+        flex-direction: row-reverse;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 1200px) {
     tabs-buy {
         flex-direction: column;

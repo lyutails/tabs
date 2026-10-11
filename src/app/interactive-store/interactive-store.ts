@@ -103,6 +103,7 @@ export class InteractiveStore implements AfterViewInit {
   private heart!: THREE.Object3D;
   private cloud!: THREE.Object3D;
   private bottle1!: THREE.Object3D;
+  private brand1!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
@@ -127,6 +128,8 @@ export class InteractiveStore implements AfterViewInit {
     '/three/cloud1.glb';
   bottle1ModelGLB =
     '/three/bottle1_1.glb';
+  brand1ModelGLB =
+    '/three/brand1_1.glb';
 
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
@@ -154,14 +157,13 @@ export class InteractiveStore implements AfterViewInit {
 
     this.raycaster.setFromCamera(this.pointer, this.camera);
 
-    const targets = [this.cream, this.orange, this.foreo].filter(
+    const targets = [this.cream, this.orange, this.foreo, this.bottle1, this.brand1].filter(
       (object): object is THREE.Object3D => !!object
     );
 
     const intersects = this.raycaster.intersectObjects(targets, true);
     const hitObject = intersects[0]?.object ?? null;
 
-    // Определяем, какой корневой объект задет курсором.
     let current: THREE.Object3D | null = hitObject;
     let nextHovered: THREE.Object3D | null = null;
 
@@ -220,6 +222,8 @@ export class InteractiveStore implements AfterViewInit {
     if (object === this.cream) return 'cream';
     if (object === this.orange) return 'vitamin c';
     if (object === this.foreo) return 'foreo';
+    if (object === this.bottle1) return 'serum';
+    if (object === this.brand1) return 'obagi';
 
     return '';
   }
@@ -274,6 +278,8 @@ export class InteractiveStore implements AfterViewInit {
       this.cream,
       this.orange,
       this.foreo,
+      this.bottle1,
+      this.brand1,
     ].filter(
       (object): object is THREE.Object3D => !!object
     );
@@ -374,6 +380,7 @@ export class InteractiveStore implements AfterViewInit {
       this.importHeart();
       this.importCloud();
       this.importBottleOne();
+      this.importBrandOne();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -567,7 +574,7 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.cream,
         'Увлажняющий крем',
-        2.8,
+        2.4,
         0.3,
         0.9
       );
@@ -887,9 +894,59 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.bottle1,
         'Увлажняющая сыворотка',
-        2.8,
+        -2,
+        0.6,
+        0.9,
+        'left'
+      );
+    });
+  }
+
+  importBrandOne() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.brand1ModelGLB, (gltf: GLTF) => {
+      this.brand1 = gltf.scene;
+
+      this.brand1.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+
+        console.log(
+          'CREAM MESH:',
+          object.name,
+          object.getWorldPosition(new THREE.Vector3())
+        );
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.brand1.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.brand1.position.x = 0.3;
+      this.brand1.position.y = -0.1;
+      this.brand1.position.z = -0.1;
+      this.scene.add(this.brand1);
+      this.brand1.scale.set(2.2, 2.2, 2.2);
+
+      const box = new THREE.Box3().setFromObject(this.brand1);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.brand1,
+        'Obagi',
+        1.2,
         0.3,
-        0.9
+        0.8
       );
     });
   }
@@ -971,10 +1028,11 @@ export class InteractiveStore implements AfterViewInit {
     label: string,
     anchorX = 0.5,
     anchorY = 0.8,
-    anchorZ = 0.5
+    anchorZ = 0.5,
+    lineSide: 'left' | 'right' = 'right'
   ): void {
     const element = document.createElement('div');
-    element.className = 'product-callout';
+    element.className = `product-callout product-callout--${lineSide}`;
 
     element.innerHTML = `
     <span class="product-callout__dot"></span>

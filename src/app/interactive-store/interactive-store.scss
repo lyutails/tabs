@@ -34,3 +34,12 @@ tabs-products-slider {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 70;
 }
+
+.product-callout {
+    display: flex;
+    align-items: center;
+
+    &--left {
+        flex-direction: row-reverse;
+    }
+}
