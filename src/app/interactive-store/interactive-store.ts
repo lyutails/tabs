@@ -107,14 +107,16 @@ export class InteractiveStore implements AfterViewInit {
   private bottle3!: THREE.Object3D;
   private brand1!: THREE.Object3D;
   private chemistry!: THREE.Object3D;
-  private molecule!: THREE.Object3D;
   private fan!: THREE.Object3D;
+  private bakuchiol!: THREE.Object3D;
+  private boxes!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
   sliderX = signal(0);
   sliderY = signal(0);
   modalStateService = inject(ModalState);
+  chemistryIngredientsPositioned = signal(false);
   storeModelGLB =
     '/three/store27.glb';
   creamModelGLB =
@@ -141,15 +143,17 @@ export class InteractiveStore implements AfterViewInit {
     '/three/brand1_1.glb';
   chemistryModelGLB =
     '/three/chemistry.glb';
-  moleculeModelGLB =
-    '/three/molecule2.glb';
   fanModelGLB =
     '/three/fan.glb';
+  bakuchiolModelGLB =
+    '/three/bakuchiol2.glb';
+  boxesModelGLB =
+    '/three/boxes2.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
       name: 'Центелла',
-      image: '/three/ingredients/centella.jfif', 
+      image: '/three/ingredients/centella.jfif',
       query: 'centella',
     },
     {
@@ -195,8 +199,8 @@ export class InteractiveStore implements AfterViewInit {
 
     this.raycaster.setFromCamera(this.pointer, this.camera);
 
-    const targets = [this.cream, this.orange, this.foreo, this.bottle1, this.bottle2,       
-      this.bottle3, this.brand1, this.chemistry, this.molecule, this.fan].filter(
+    const targets = [this.cream, this.orange, this.foreo, this.bottle1, this.bottle2,
+    this.bottle3, this.brand1, this.chemistry, this.fan, this.bakuchiol, this.heart].filter(
       (object): object is THREE.Object3D => !!object
     );
 
@@ -265,8 +269,9 @@ export class InteractiveStore implements AfterViewInit {
     if (object === this.bottle2) return 'peptide';
     if (object === this.bottle3) return 'retinol';
     if (object === this.brand1) return 'obagi';
-    if (object === this.chemistry) return 'centella panthenol ceramide ectoin niacinamide';
+    if (object === this.chemistry) return 'repair';
     if (object === this.fan) return 'korea';
+    if (object === this.bakuchiol) return 'bakuchiol';
 
     return '';
   }
@@ -303,6 +308,12 @@ export class InteractiveStore implements AfterViewInit {
       return;
     }
 
+    if (this.selectedObject === this.fan) {
+      this.productsSlider()?.getByCountry('korea');
+      this.updateSliderPosition();
+      return;
+    }
+
     this.hideChemistryIngredients();
     this.updateSliderPosition();
     this.productsSlider()?.getProducts(query);
@@ -336,6 +347,7 @@ export class InteractiveStore implements AfterViewInit {
       this.brand1,
       this.chemistry,
       this.fan,
+      this.bakuchiol,
     ].filter(
       (object): object is THREE.Object3D => !!object
     );
@@ -372,7 +384,7 @@ export class InteractiveStore implements AfterViewInit {
           THREE.MathUtils.degToRad(0)
         );
         this.scene.add(this.store);
-        this.store.scale.set(2.1, 2.1, 2.1);
+        this.store.scale.set(2.4, 2.4, 2.4);
 
 
         this.store.traverse((object) => {
@@ -435,8 +447,9 @@ export class InteractiveStore implements AfterViewInit {
       this.importBottleThree();
       this.importBrandOne();
       this.importChemistry();
-      this.importMolecule();
       this.importFan();
+      this.importBakuchiol();
+      this.importBoxes();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -626,7 +639,7 @@ export class InteractiveStore implements AfterViewInit {
       this.cream.position.y = -0.05;
       this.cream.position.z = 0.2;
       this.scene.add(this.cream);
-      this.cream.scale.set(2.2, 2.2, 2.2);
+      this.cream.scale.set(2.4, 2.4, 2.4);
 
       const box = new THREE.Box3().setFromObject(this.cream);
       const center = box.getCenter(new THREE.Vector3());
@@ -668,7 +681,7 @@ export class InteractiveStore implements AfterViewInit {
       this.orange.position.y = 0.1;
       this.orange.position.z = -0.1;
       this.scene.add(this.orange);
-      this.orange.scale.set(1.8, 1.8, 1.8);
+      this.orange.scale.set(2, 2, 2);
 
       const box = new THREE.Box3().setFromObject(this.orange);
       const center = box.getCenter(new THREE.Vector3());
@@ -710,7 +723,7 @@ export class InteractiveStore implements AfterViewInit {
       this.ga.position.y = -0.06;
       this.ga.position.z = 0.1;
       this.scene.add(this.ga);
-      this.ga.scale.set(2.2, 2.2, 2.2);
+      this.ga.scale.set(2.4, 2.4, 2.4);
 
       const box = new THREE.Box3().setFromObject(this.ga);
       const center = box.getCenter(new THREE.Vector3());
@@ -725,7 +738,7 @@ export class InteractiveStore implements AfterViewInit {
     loaderGLTF.load(this.roundPlatformModelGLB, (gltf: GLTF) => {
       this.roundPlatform = gltf.scene;
 
-      this.roundPlatform.scale.setScalar(2.4);
+      this.roundPlatform.scale.setScalar(2.6);
       this.roundPlatform.rotation.set(
         THREE.MathUtils.degToRad(15),
         THREE.MathUtils.degToRad(45),
@@ -812,7 +825,7 @@ export class InteractiveStore implements AfterViewInit {
       this.foreo.position.y = -0.1;
       this.foreo.position.z = 0.5;
       this.scene.add(this.foreo);
-      this.foreo.scale.set(1.8, 1.8, 1.8);
+      this.foreo.scale.set(2, 2, 2);
 
       const box = new THREE.Box3().setFromObject(this.foreo);
       const center = box.getCenter(new THREE.Vector3());
@@ -850,18 +863,20 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.heart.position.x = -0.7;
+
+      this.heart.position.x = -0.4;
       this.heart.position.y = -0.1;
       this.heart.position.z = 0.5;
+
       this.scene.add(this.heart);
-      this.heart.scale.set(1.8, 1.8, 1.8);
+      this.heart.scale.set(2.2, 2.2, 2.2);
 
       const box = new THREE.Box3().setFromObject(this.heart);
       const center = box.getCenter(new THREE.Vector3());
 
       this.createProductLabel(
         this.heart,
-        'Heart',
+        'Киоск',
         1.8,
         0,
         0.8
@@ -905,7 +920,7 @@ export class InteractiveStore implements AfterViewInit {
       this.cloud.position.y = -0.2;
       this.cloud.position.z = 0.8;
       this.scene.add(this.cloud);
-      this.cloud.scale.set(2.2, 2, 2.2);
+      this.cloud.scale.set(2.4, 2.2, 2.4);
 
       const box = new THREE.Box3().setFromObject(this.cloud);
       const center = box.getCenter(new THREE.Vector3());
@@ -939,7 +954,7 @@ export class InteractiveStore implements AfterViewInit {
       this.bottle1.position.y = -0.2;
       this.bottle1.position.z = 0.9;
       this.scene.add(this.bottle1);
-      this.bottle1.scale.set(2.2, 2.2, 2.2);
+      this.bottle1.scale.set(2.4, 2.4, 2.4);
 
       const box = new THREE.Box3().setFromObject(this.bottle1);
       const center = box.getCenter(new THREE.Vector3());
@@ -982,7 +997,7 @@ export class InteractiveStore implements AfterViewInit {
       this.bottle2.position.y = -0.2;
       this.bottle2.position.z = 0.9;
       this.scene.add(this.bottle2);
-      this.bottle2.scale.set(2.2, 2.2, 2.2);
+      this.bottle2.scale.set(2.4, 2.4, 2.4);
 
       const box = new THREE.Box3().setFromObject(this.bottle2);
       const center = box.getCenter(new THREE.Vector3());
@@ -1025,7 +1040,7 @@ export class InteractiveStore implements AfterViewInit {
       this.bottle3.position.y = -0.2;
       this.bottle3.position.z = 0.9;
       this.scene.add(this.bottle3);
-      this.bottle3.scale.set(2.2, 2.2, 2.2);
+      this.bottle3.scale.set(2.4, 2.4, 2.4);
 
       const box = new THREE.Box3().setFromObject(this.bottle3);
       const center = box.getCenter(new THREE.Vector3());
@@ -1065,7 +1080,7 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(0)
       );
       this.brand1.position.x = -0.1;
-      this.brand1.position.y = 0.8;
+      this.brand1.position.y = 1.2;
       this.brand1.position.z = 0.4;
       this.scene.add(this.brand1);
       this.brand1.scale.set(2.2, 2.2, 2.2);
@@ -1119,7 +1134,7 @@ export class InteractiveStore implements AfterViewInit {
       this.chemistry.position.y = 0.1;
       this.chemistry.position.z = -0.2;
       this.scene.add(this.chemistry);
-      this.chemistry.scale.set(2.2, 2.2, 2.2);
+      this.chemistry.scale.set(2.4, 2.4, 2.4);
 
       const box = new THREE.Box3().setFromObject(this.chemistry);
       const center = box.getCenter(new THREE.Vector3());
@@ -1131,50 +1146,6 @@ export class InteractiveStore implements AfterViewInit {
         0.1,
         0.8
       );
-    });
-  }
-
-  importMolecule() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.moleculeModelGLB, (gltf: GLTF) => {
-      this.molecule = gltf.scene;
-
-      this.molecule.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = true;
-          material.opacity = 0.8;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.molecule.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-
-      this.molecule.position.x = -1.35;
-      this.molecule.position.y = -0.9;
-      this.molecule.position.z = 1;
-      this.scene.add(this.molecule);
-      this.molecule.scale.set(2, 2, 2);
-
-      const box = new THREE.Box3().setFromObject(this.molecule);
-      const center = box.getCenter(new THREE.Vector3());
     });
   }
 
@@ -1210,11 +1181,11 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.fan.position.x = 0.25;
+      this.fan.position.x = 0.2;
       this.fan.position.y = 0.1;
       this.fan.position.z = -0.15;
       this.scene.add(this.fan);
-      this.fan.scale.set(2, 2, 2);
+      this.fan.scale.set(2.2, 2.2, 2.2);
 
       const box = new THREE.Box3().setFromObject(this.fan);
       const center = box.getCenter(new THREE.Vector3());
@@ -1222,11 +1193,105 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.fan,
         'K-Beauty',
-        -1.8,
-        1.2,
+        -1.4,
+        0.9,
         0.8,
         'left'
       );
+    });
+  }
+
+  importBakuchiol() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.bakuchiolModelGLB, (gltf: GLTF) => {
+      this.bakuchiol = gltf.scene;
+
+      this.bakuchiol.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.bakuchiol.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.bakuchiol.position.x = 0.1;
+      this.bakuchiol.position.y = 0.1;
+      this.bakuchiol.position.z = -0.15;
+      this.scene.add(this.bakuchiol);
+      this.bakuchiol.scale.set(2.2, 2.2, 2.2);
+
+      const box = new THREE.Box3().setFromObject(this.bakuchiol);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.bakuchiol,
+        'Bakuchiol',
+        1.7,
+        0.8,
+        0.8,
+      );
+    });
+  }
+
+  importBoxes() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.boxesModelGLB, (gltf: GLTF) => {
+      this.boxes = gltf.scene;
+
+      this.boxes.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.boxes.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.boxes.position.x = -0.5;
+      this.boxes.position.y = 0.3;
+      this.boxes.position.z = 0.1;
+      this.scene.add(this.boxes);
+      this.boxes.scale.set(2, 2, 2);
+
+      const box = new THREE.Box3().setFromObject(this.boxes);
+      const center = box.getCenter(new THREE.Vector3());
     });
   }
 
@@ -1427,6 +1492,7 @@ export class InteractiveStore implements AfterViewInit {
 
   hideChemistryIngredients() {
     this.chemistryIngredientsVisible.set(false);
+    this.chemistryIngredientsPositioned.set(false);
   }
 
   onIngredientClick(query: string): void {
@@ -1476,5 +1542,9 @@ export class InteractiveStore implements AfterViewInit {
     container.style.left = `${position.x}px`;
     container.style.top = `${position.y - 30}px`;
     container.style.transform = 'translate(-50%, -50%)';
+
+    if (!this.chemistryIngredientsPositioned()) {
+      this.chemistryIngredientsPositioned.set(true);
+    }
   }
 }

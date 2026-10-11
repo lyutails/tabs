@@ -18,7 +18,7 @@ export class ProductsSlider {
   protected results = signal<Result[]>([]);
   currentResult: Result | null = null;
   modalStateService = inject(ModalState);
-  
+
   getProducts(value: string) {
     const brands = Object.keys(BRANDS_CODES);
     let use = value.toLowerCase();
@@ -30,6 +30,24 @@ export class ProductsSlider {
         })
       ).subscribe((data) => {
         const products = data.flatMap(response => response.filter((product) => product.name.toLowerCase().includes(use)));
+        if (products.length > 0) {
+          this.results.set(products);
+          this.searchStore.searchResults.set(products);
+        }
+      });
+  }
+
+  getByCountry(value: string) {
+    const brands = Object.keys(BRANDS_CODES);
+    let country = value.toLowerCase();
+
+    this.searchService.getProducts(brands, '')
+      .pipe(
+        finalize(() => {
+          this.searchService.isLoading.set(false);
+        })
+      ).subscribe((data) => {
+        const products = data.flatMap(response => response.filter((product) => product.country === country));
         if (products.length > 0) {
           this.results.set(products);
           this.searchStore.searchResults.set(products);

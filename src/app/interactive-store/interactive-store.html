@@ -10,7 +10,8 @@
     [class.slider-hidden]="!isProductSliderOpen()"
   ></tabs-products-slider>
 @if (chemistryIngredientsVisible()) {
-  <div class="chemistry-ingredients">
+  <div class="chemistry-ingredients"
+    [class.chemistry-ingredients--positioned]="chemistryIngredientsPositioned()">
     @for (ingredient of chemistryIngredients; track ingredient.name; let i = $index) {
       <button
         type="button"

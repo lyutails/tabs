@@ -1,12 +1,12 @@
 .scene-container {
     position: relative;
-    width: 80vw;
+    width: 90vw;
 }
 
 .store {
     display: block;
     width: 100%;
-    aspect-ratio: 1 / 0.8;
+    aspect-ratio: 1 / 0.6;
 
     &:hover {
         cursor: pointer;
@@ -50,6 +50,11 @@ tabs-products-slider {
     width: 280px;
     height: 150px;
     pointer-events: none;
+    display: none;
+
+    &--positioned {
+        display: block;
+    }
 
     &__item {
         position: absolute;
