@@ -420,19 +420,6 @@ export class InteractiveStore implements AfterViewInit {
           });
 
         });
-
-        // this.store.traverse((object) => {
-        //   if (object instanceof THREE.Mesh) {
-        //     console.log(
-        //       'STORE MESH:',
-        //       object.name,
-        //       'material:',
-        //       object.material,
-        //       'position:',
-        //       object.getWorldPosition(new THREE.Vector3())
-        //     );
-        //   }
-        // });
       });
 
       this.importCream();
@@ -612,13 +599,6 @@ export class InteractiveStore implements AfterViewInit {
 
       this.cream.traverse((object: THREE.Object3D) => {
         if (!(object instanceof THREE.Mesh)) return;
-
-
-        // console.log(
-        //   'CREAM MESH:',
-        //   object.name,
-        //   object.getWorldPosition(new THREE.Vector3())
-        // );
 
         const materials = Array.isArray(object.material)
           ? object.material

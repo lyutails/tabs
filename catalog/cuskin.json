@@ -1,0 +1,34 @@
+[
+  {
+    "brand": {
+      "code": "rg_brand_740",
+      "name": "CUSKIN"
+    },
+    "code": "4246262",
+    "listingImage": {
+      "url": "/catalog-images/cuskin/4246262.jpg"
+    },
+    "name": "CUSKIN Dr.Solution PDRN Bakuchiol Ampoule",
+    "price": {
+      "formattedValue": "5 485&nbsp;₽",
+      "value": 5485
+    },
+    "country": "korea"
+  },
+  {
+    "brand": {
+      "code": "rg_brand_740",
+      "name": "CUSKIN"
+    },
+    "code": "4246573",
+    "listingImage": {
+      "url": "/catalog-images/cuskin/4246573.jpg"
+    },
+    "name": "CUSKIN Dr.Solution PDRN Bakuchiol Cream",
+    "price": {
+      "formattedValue": "5 890&nbsp;₽",
+      "value": 5890
+    },
+    "country": "korea"
+  }
+]
