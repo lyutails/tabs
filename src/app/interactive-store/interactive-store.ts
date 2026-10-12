@@ -119,6 +119,7 @@ export class InteractiveStore implements AfterViewInit {
   sliderY = signal(0);
   modalStateService = inject(ModalState);
   chemistryIngredientsPositioned = signal(false);
+  private pendingPlatformObjects: THREE.Object3D[] = [];
   storeModelGLB =
     '/three/store32.glb';
   creamModelGLB =
@@ -779,6 +780,7 @@ export class InteractiveStore implements AfterViewInit {
         .applyQuaternion(pivot.quaternion.clone().invert());
 
       this.roundPlatformPivot = pivot;
+      this.attachPendingObjects();
     });
   }
 
@@ -1126,12 +1128,14 @@ export class InteractiveStore implements AfterViewInit {
       this.chemistry.position.x = 0.1;
       this.chemistry.position.y = 0.1;
       this.chemistry.position.z = -0.2;
-      this.scene.add(this.chemistry);
+      // this.scene.add(this.chemistry);
       this.chemistry.scale.set(2.8, 2.8, 2.8);
 
       if (this.roundPlatformPivot) {
         this.roundPlatformPivot.attach(this.chemistry);
       }
+
+      this.attachToPlatform(this.chemistry);
 
       const box = new THREE.Box3().setFromObject(this.chemistry);
       const center = box.getCenter(new THREE.Vector3());
@@ -1327,12 +1331,14 @@ export class InteractiveStore implements AfterViewInit {
       this.dna.position.x = 0.1;
       this.dna.position.y = 0.25;
       this.dna.position.z = -0.15;
-      this.scene.add(this.dna);
+      // this.scene.add(this.dna);
       this.dna.scale.set(2.2, 2.2, 2.2);
 
       if (this.roundPlatformPivot) {
         this.roundPlatformPivot.attach(this.dna);
       }
+
+      this.attachToPlatform(this.dna);
 
       const box = new THREE.Box3().setFromObject(this.dna);
       const center = box.getCenter(new THREE.Vector3());
@@ -1650,5 +1656,24 @@ export class InteractiveStore implements AfterViewInit {
     if (!this.chemistryIngredientsPositioned()) {
       this.chemistryIngredientsPositioned.set(true);
     }
+  }
+
+  private attachToPlatform(object: THREE.Object3D): void {
+    if (!this.roundPlatformPivot) {
+      this.pendingPlatformObjects.push(object);
+      return;
+    }
+
+    this.roundPlatformPivot.attach(object);
+  }
+
+  private attachPendingObjects(): void {
+    if (!this.roundPlatformPivot) return;
+
+    for (const object of this.pendingPlatformObjects) {
+      this.roundPlatformPivot.attach(object);
+    }
+
+    this.pendingPlatformObjects = [];
   }
 }
