@@ -111,6 +111,7 @@ export class InteractiveStore implements AfterViewInit {
   private bakuchiol!: THREE.Object3D;
   private boxes!: THREE.Object3D;
   private dna!: THREE.Object3D;
+  private promo!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
@@ -135,23 +136,25 @@ export class InteractiveStore implements AfterViewInit {
   cloudModelGLB =
     '/three/cloud1.glb';
   bottle1ModelGLB =
-    '/three/bottle1_1.glb';
+    '/three/bottle1_3.glb';
   bottle2ModelGLB =
-    '/three/bottle2_1.glb';
+    '/three/bottle2_2.glb';
   bottle3ModelGLB =
-    '/three/bottle3_1.glb';
+    '/three/bottle3_2.glb';
   brand1ModelGLB =
-    '/three/brand1_1.glb';
+    '/three/brand1_2.glb';
   chemistryModelGLB =
-    '/three/chemistry.glb';
+    '/three/chemistry10.glb';
   fanModelGLB =
-    '/three/fan.glb';
+    '/three/fan6.glb';
   bakuchiolModelGLB =
     '/three/bakuchiol2.glb';
   boxesModelGLB =
     '/three/boxes2.glb';
   dnaModelGLB =
-    '/three/dna2.glb';
+    '/three/dna6.glb';
+  promoModelGLB =
+    '/three/promo2.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
@@ -203,7 +206,8 @@ export class InteractiveStore implements AfterViewInit {
     this.raycaster.setFromCamera(this.pointer, this.camera);
 
     const targets = [this.cream, this.orange, this.foreo, this.bottle1, this.bottle2,
-    this.bottle3, this.brand1, this.chemistry, this.fan, this.bakuchiol, this.heart, this.dna].filter(
+    this.bottle3, this.brand1, this.chemistry, this.fan, this.bakuchiol, this.heart, 
+    this.dna, this.promo].filter(
       (object): object is THREE.Object3D => !!object
     );
 
@@ -353,7 +357,8 @@ export class InteractiveStore implements AfterViewInit {
       this.chemistry,
       this.fan,
       this.bakuchiol,
-      this.dna
+      this.dna,
+      this.promo,
     ].filter(
       (object): object is THREE.Object3D => !!object
     );
@@ -444,6 +449,7 @@ export class InteractiveStore implements AfterViewInit {
       this.importBakuchiol();
       this.importBoxes();
       this.importDNA();
+      this.importPromo();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -1067,8 +1073,8 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(0)
       );
       this.brand1.position.x = -0.1;
-      this.brand1.position.y = 1.2;
-      this.brand1.position.z = 0.4;
+      this.brand1.position.y = 0.5;
+      this.brand1.position.z = -0.2;
       this.scene.add(this.brand1);
       this.brand1.scale.set(2.2, 2.2, 2.2);
 
@@ -1104,7 +1110,7 @@ export class InteractiveStore implements AfterViewInit {
 
         materials.forEach((material) => {
           material.transparent = true;
-          material.opacity = 0.3;
+          material.opacity = 0.6;
           material.depthTest = true;
           material.depthWrite = true;
           material.side = THREE.DoubleSide;
@@ -1121,7 +1127,7 @@ export class InteractiveStore implements AfterViewInit {
       this.chemistry.position.y = 0.1;
       this.chemistry.position.z = -0.2;
       this.scene.add(this.chemistry);
-      this.chemistry.scale.set(2.4, 2.4, 2.4);
+      this.chemistry.scale.set(2.8, 2.8, 2.8);
 
       const box = new THREE.Box3().setFromObject(this.chemistry);
       const center = box.getCenter(new THREE.Vector3());
@@ -1232,7 +1238,7 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.bakuchiol,
         'Bakuchiol',
-        1.7,
+        1.9,
         0.8,
         0.8,
       );
@@ -1315,7 +1321,7 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(0)
       );
       this.dna.position.x = 0.1;
-      this.dna.position.y = 0.1;
+      this.dna.position.y = 0.25;
       this.dna.position.z = -0.15;
       this.scene.add(this.dna);
       this.dna.scale.set(2.2, 2.2, 2.2);
@@ -1326,8 +1332,60 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.dna,
         'PDRN',
-        1,
+        -0.5,
         0.8,
+        0.8,
+        'left'
+      );
+    });
+  }
+
+  importPromo() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.promoModelGLB, (gltf: GLTF) => {
+      this.promo = gltf.scene;
+
+      this.promo.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.promo.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.promo.position.x = 0.5;
+      this.promo.position.y = 0;
+      this.promo.position.z = -0.1;
+      this.scene.add(this.promo);
+      this.promo.scale.set(2.4, 2.4, 2.4);
+
+      const box = new THREE.Box3().setFromObject(this.promo);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.promo,
+        'Промокоды',
+        2.3,
+        0.6,
         0.8,
       );
     });
