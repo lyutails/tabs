@@ -110,6 +110,7 @@ export class InteractiveStore implements AfterViewInit {
   private fan!: THREE.Object3D;
   private bakuchiol!: THREE.Object3D;
   private boxes!: THREE.Object3D;
+  private dna!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
@@ -149,6 +150,8 @@ export class InteractiveStore implements AfterViewInit {
     '/three/bakuchiol2.glb';
   boxesModelGLB =
     '/three/boxes2.glb';
+  dnaModelGLB =
+    '/three/dna2.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
@@ -200,7 +203,7 @@ export class InteractiveStore implements AfterViewInit {
     this.raycaster.setFromCamera(this.pointer, this.camera);
 
     const targets = [this.cream, this.orange, this.foreo, this.bottle1, this.bottle2,
-    this.bottle3, this.brand1, this.chemistry, this.fan, this.bakuchiol, this.heart].filter(
+    this.bottle3, this.brand1, this.chemistry, this.fan, this.bakuchiol, this.heart, this.dna].filter(
       (object): object is THREE.Object3D => !!object
     );
 
@@ -272,6 +275,7 @@ export class InteractiveStore implements AfterViewInit {
     if (object === this.chemistry) return 'repair';
     if (object === this.fan) return 'korea';
     if (object === this.bakuchiol) return 'bakuchiol';
+    if (object === this.dna) return 'PDRN';
 
     return '';
   }
@@ -336,6 +340,7 @@ export class InteractiveStore implements AfterViewInit {
     this.selectedObject = null;
     this.selectedName.set(null);
     this.hideChemistryIngredients();
+    this.productsSlider()?.clearResults();
 
     const targets = [
       this.cream,
@@ -348,6 +353,7 @@ export class InteractiveStore implements AfterViewInit {
       this.chemistry,
       this.fan,
       this.bakuchiol,
+      this.dna
     ].filter(
       (object): object is THREE.Object3D => !!object
     );
@@ -437,6 +443,7 @@ export class InteractiveStore implements AfterViewInit {
       this.importFan();
       this.importBakuchiol();
       this.importBoxes();
+      this.importDNA();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -1272,6 +1279,57 @@ export class InteractiveStore implements AfterViewInit {
 
       const box = new THREE.Box3().setFromObject(this.boxes);
       const center = box.getCenter(new THREE.Vector3());
+    });
+  }
+
+  importDNA() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.dnaModelGLB, (gltf: GLTF) => {
+      this.dna = gltf.scene;
+
+      this.dna.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.dna.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.dna.position.x = 0.1;
+      this.dna.position.y = 0.1;
+      this.dna.position.z = -0.15;
+      this.scene.add(this.dna);
+      this.dna.scale.set(2.2, 2.2, 2.2);
+
+      const box = new THREE.Box3().setFromObject(this.dna);
+      const center = box.getCenter(new THREE.Vector3());
+
+      this.createProductLabel(
+        this.dna,
+        'PDRN',
+        1,
+        0.8,
+        0.8,
+      );
     });
   }
 

@@ -59,4 +59,8 @@ export class ProductsSlider {
     this.currentResult = value;
     this.modalStateService.isOpenModal.set(true);
   }
+
+  clearResults(): void {
+    this.results.set([]);
+  }
 }
