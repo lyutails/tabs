@@ -1129,6 +1129,10 @@ export class InteractiveStore implements AfterViewInit {
       this.scene.add(this.chemistry);
       this.chemistry.scale.set(2.8, 2.8, 2.8);
 
+      if (this.roundPlatformPivot) {
+        this.roundPlatformPivot.attach(this.chemistry);
+      }
+
       const box = new THREE.Box3().setFromObject(this.chemistry);
       const center = box.getCenter(new THREE.Vector3());
 
@@ -1325,6 +1329,10 @@ export class InteractiveStore implements AfterViewInit {
       this.dna.position.z = -0.15;
       this.scene.add(this.dna);
       this.dna.scale.set(2.2, 2.2, 2.2);
+
+      if (this.roundPlatformPivot) {
+        this.roundPlatformPivot.attach(this.dna);
+      }
 
       const box = new THREE.Box3().setFromObject(this.dna);
       const center = box.getCenter(new THREE.Vector3());
