@@ -120,27 +120,27 @@ export class InteractiveStore implements AfterViewInit {
   modalStateService = inject(ModalState);
   chemistryIngredientsPositioned = signal(false);
   storeModelGLB =
-    '/three/store27.glb';
+    '/three/store32.glb';
   creamModelGLB =
     '/three/cream5.glb';
   orangeModelGLB =
     '/three/orange2.glb';
   gaModelGLB =
-    '/three/ga.glb';
+    '/three/ga1.glb';
   roundPlatformModelGLB =
-    '/three/round_platform2.glb';
+    '/three/round_platform3.glb';
   foreoModelGLB =
-    '/three/foreo1.glb';
+    '/three/foreo2.glb';
   heartModelGLB =
-    '/three/heart1.glb';
+    '/three/heart6.glb';
   cloudModelGLB =
     '/three/cloud1.glb';
   bottle1ModelGLB =
-    '/three/bottle1_3.glb';
+    '/three/bottle1_4.glb';
   bottle2ModelGLB =
-    '/three/bottle2_2.glb';
+    '/three/bottle2_3.glb';
   bottle3ModelGLB =
-    '/three/bottle3_2.glb';
+    '/three/bottle3_3.glb';
   brand1ModelGLB =
     '/three/brand1_2.glb';
   chemistryModelGLB =
@@ -152,7 +152,7 @@ export class InteractiveStore implements AfterViewInit {
   boxesModelGLB =
     '/three/boxes2.glb';
   dnaModelGLB =
-    '/three/dna6.glb';
+    '/three/dna7.glb';
   promoModelGLB =
     '/three/promo2.glb';
   chemistryIngredientsVisible = signal(false);
@@ -640,7 +640,7 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.cream,
         'Увлажняющий крем',
-        2.4,
+        2,
         0.3,
         0.9
       );
@@ -682,7 +682,7 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.orange,
         'Витамин С',
-        1.7,
+        1.3,
         0.5,
         0.5
       );
@@ -713,7 +713,7 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(0)
       );
       this.ga.position.x = 0.1;
-      this.ga.position.y = -0.06;
+      this.ga.position.y = -0.05;
       this.ga.position.z = 0.1;
       this.scene.add(this.ga);
       this.ga.scale.set(2.4, 2.4, 2.4);
@@ -826,8 +826,8 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.foreo,
         'Foreo',
-        1.8,
-        0,
+        1.2,
+        0.5,
         0.8
       );
     });
@@ -998,7 +998,7 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.bottle2,
         'Peptides',
-        -1.2,
+        -1,
         0.6,
         0.9,
         'left'
@@ -1135,7 +1135,7 @@ export class InteractiveStore implements AfterViewInit {
       this.createProductLabel(
         this.chemistry,
         'Repair',
-        1.2,
+        0.8,
         0.1,
         0.8
       );
