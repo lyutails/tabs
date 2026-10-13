@@ -115,13 +115,14 @@ export class InteractiveStore implements AfterViewInit {
   private decor1!: THREE.Object3D;
   private decor2!: THREE.Object3D;
   private decor3!: THREE.Object3D;
+  private cake!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
   sliderX = signal(0);
   sliderY = signal(0);
   modalStateService = inject(ModalState);
-  chemistryIngredientsPositioned = signal(false); 
+  chemistryIngredientsPositioned = signal(false);
   private productLabels = new Map<
     THREE.Object3D,
     {
@@ -176,6 +177,8 @@ export class InteractiveStore implements AfterViewInit {
     '/three/decor2.glb';
   decor3ModelGLB =
     '/three/decor3.glb';
+  cakeModelGLB =
+    '/three/cake1.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
@@ -233,7 +236,7 @@ export class InteractiveStore implements AfterViewInit {
     this.raycaster.setFromCamera(this.pointer, this.camera);
 
     const targets = [this.cream, this.orange, this.foreo, this.bottle1, this.bottle2,
-    this.bottle3, this.brand1, this.chemistry, this.fan, this.bakuchiol, this.heart, 
+    this.bottle3, this.brand1, this.chemistry, this.fan, this.bakuchiol, this.heart,
     this.dna, this.promo].filter(
       (object): object is THREE.Object3D => !!object
     );
@@ -284,34 +287,6 @@ export class InteractiveStore implements AfterViewInit {
     this.labels.forEach((labelObject, model) => {
       labelObject.visible = model === nextHovered;
     });
-
-    const creamLabel = this.productLabels.get(this.cream);
-
-    if (creamLabel) {
-      creamLabel.element.style.display =
-        nextHovered === this.cream ? 'flex' : 'none';
-    }
-
-    const chemistryLabel = this.productLabels.get(this.chemistry);
-
-    if (chemistryLabel) {
-      chemistryLabel.element.style.display =
-        nextHovered === this.chemistry ? 'flex' : 'none';
-    }
-
-    const dnaLabel = this.productLabels.get(this.dna);
-
-    if (dnaLabel) {
-      dnaLabel.element.style.display =
-        nextHovered === this.dna ? 'flex' : 'none';
-    }
-
-    const bottle1Label = this.productLabels.get(this.bottle1);
-
-    if (bottle1Label) {
-      bottle1Label.element.style.display =
-        nextHovered === this.bottle1 ? 'flex' : 'none';
-    }
 
     this.isCreamHovered.set(nextHovered === this.cream);
     this.canvas.style.cursor = nextHovered ? 'pointer' : 'default';
@@ -482,9 +457,26 @@ export class InteractiveStore implements AfterViewInit {
         });
       });
 
-      this.importCream();
-      this.importOrange();
-      this.importGA();
+      this.importSceneItem(this.creamModelGLB,
+        0.05, -0.05, 0.2,
+        2.4, 2.4, 2.4,
+        (model) => {
+          this.cream = model;
+        },
+        'Увлажняющий крем', 0.5, 0.3, 0.5, 'right', -10, -20,);
+      this.importSceneItem(this.orangeModelGLB,
+        -0.2, 0, 0.1,
+        2.2, 2.2, 2.2,
+        (model) => {
+          this.orange = model;
+        },
+        'Витамин С', 0.6, 0.5, 0.5, 'right', -10, -10,);
+      this.importSceneItem(this.gaModelGLB,
+        0, -0.05, 0.1,
+        2.4, 2.4, 2.4,
+        (model) => {
+          this.ga = model;
+        });
       this.importRoundPlatform();
       this.importForeo();
       this.importHeart();
@@ -498,10 +490,22 @@ export class InteractiveStore implements AfterViewInit {
       this.importBakuchiol();
       this.importBoxes();
       this.importDNA();
+      // this.importSceneItem(
+      //   this.dnaModelGLB,
+      //   'PDRN',
+      //   0.5, 0.8, 0.5,
+      //   'left',
+      //   -100, -20,
+      //   (model) => {
+      //     this.dna = model;
+      //     this.attachToPlatform(model);
+      //   }
+      // );
       this.importPromo();
       this.importDecor1();
       this.importDecor2();
       this.importDecor3();
+      this.importCake();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -628,8 +632,8 @@ export class InteractiveStore implements AfterViewInit {
       if (component.decor3) {
         component.decor3.position.y =
           component.decorInitialY +
-        Math.sin((time - component.decor3Delay) * component.decorFloatSpeed) *
-        component.decorFloatAmplitude;
+          Math.sin((time - component.decor3Delay) * component.decorFloatSpeed) *
+          component.decorFloatAmplitude;
       }
 
       if (component.chemistryIngredientsVisible()) {
@@ -682,6 +686,57 @@ export class InteractiveStore implements AfterViewInit {
     }
   }
 
+  importSceneItem(modelPath: string, positionX: number, positionY: number, positionZ: number, scaleX: number, scaleY: number, scaleZ: number,
+    onLoaded?: (model: THREE.Object3D) => void, labelName?: string, labelAnchorX?: number, labelAnchorY?: number,
+    labelAnchorZ?: number, labelDirection?: 'left' | 'right', labelOffsetX?: number, labelOffsetY?: number,
+  ) {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(modelPath, (gltf: GLTF) => {
+      const model = gltf.scene;
+
+      model.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      model.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      model.position.x = positionX;
+      model.position.y = positionY;
+      model.position.z = positionZ;
+      this.scene.add(model);
+      model.scale.set(scaleX, scaleY, scaleZ);
+
+      onLoaded?.(model);
+
+      const box = new THREE.Box3().setFromObject(model);
+      const center = box.getCenter(new THREE.Vector3());
+
+      if (labelName) {
+        this.createNewProductLabel(
+          model,
+          labelName,
+          labelAnchorX,
+          labelAnchorY,
+          labelAnchorZ,
+          labelDirection,
+          labelOffsetX,
+          labelOffsetY
+        )}
+    });
+  }
+
   importCream() {
     const loaderGLTF = new GLTFLoader();
     loaderGLTF.load(this.creamModelGLB, (gltf: GLTF) => {
@@ -724,87 +779,6 @@ export class InteractiveStore implements AfterViewInit {
         -10,
         -20
       );
-    });
-  }
-
-  importOrange() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.orangeModelGLB, (gltf: GLTF) => {
-      this.orange = gltf.scene;
-
-      this.orange.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.orange.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.orange.position.x = -0.5;
-      this.orange.position.y = 0.1;
-      this.orange.position.z = -0.1;
-      this.scene.add(this.orange);
-      this.orange.scale.set(2, 2, 2);
-
-      const box = new THREE.Box3().setFromObject(this.orange);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.orange,
-        'Витамин С',
-        0.3,
-        0.5,
-        0.5,
-        'right',
-        -10,
-        -10
-      );
-    });
-  }
-
-  importGA() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.gaModelGLB, (gltf: GLTF) => {
-      this.ga = gltf.scene;
-
-      this.ga.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.ga.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.ga.position.x = 0.1;
-      this.ga.position.y = -0.05;
-      this.ga.position.z = 0.1;
-      this.scene.add(this.ga);
-      this.ga.scale.set(2.4, 2.4, 2.4);
-
-      const box = new THREE.Box3().setFromObject(this.ga);
-      const center = box.getCenter(new THREE.Vector3());
-
-      // this.createProductLabel(this.ga, '');
     });
   }
 
@@ -1499,6 +1473,51 @@ export class InteractiveStore implements AfterViewInit {
         -50,
         -50
       );
+    });
+  }
+
+  importCake() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.cakeModelGLB, (gltf: GLTF) => {
+      this.cake = gltf.scene;
+
+      this.cake.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.cake.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.cake.position.x = -0.1;
+      this.cake.position.y = 0.1;
+      this.cake.position.z = -0.2;
+      // this.scene.add(this.cake);
+      this.cake.scale.set(2.4, 2.4, 2.4);
+
+      this.attachToPlatform(this.cake);
+
+      const box = new THREE.Box3().setFromObject(this.cake);
+      const center = box.getCenter(new THREE.Vector3());
     });
   }
 
