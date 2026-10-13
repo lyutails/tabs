@@ -129,6 +129,8 @@ export class InteractiveStore implements AfterViewInit {
       anchorX: number;
       anchorY: number;
       anchorZ: number;
+      offsetX: number;
+      offsetY: number;
     }
   >();
   private pendingPlatformObjects: THREE.Object3D[] = [];
@@ -251,17 +253,14 @@ export class InteractiveStore implements AfterViewInit {
       current = current.parent;
     }
 
-    // Переключаем подсветку только при смене объекта.
     this.hoveredObject = nextHovered;
 
     const sliderOpen = this.isProductSliderOpen();
 
-    // Выбранный продукт всегда сохраняет хайлайт.
     if (sliderOpen && this.selectedObject) {
       this.setHighlight(this.selectedObject, true);
     }
 
-    // Остальные продукты подсвечиваются при наведении.
     for (const object of targets) {
       if (sliderOpen && object === this.selectedObject) {
         continue;
@@ -270,8 +269,6 @@ export class InteractiveStore implements AfterViewInit {
       this.setHighlight(object, object === nextHovered);
     }
 
-    // Контур выбранного продукта сохраняется,
-    // контур наведённого объекта показывается дополнительно.
     const outlinedObjects: THREE.Object3D[] = [];
 
     if (sliderOpen && this.selectedObject) {
@@ -284,10 +281,16 @@ export class InteractiveStore implements AfterViewInit {
 
     this.outlinePass.selectedObjects = outlinedObjects;
 
-    // Лейбл показывается только для объекта под курсором.
     this.labels.forEach((labelObject, model) => {
       labelObject.visible = model === nextHovered;
     });
+
+    const creamLabel = this.productLabels.get(this.cream);
+
+    if (creamLabel) {
+      creamLabel.element.style.display =
+        nextHovered === this.cream ? 'flex' : 'none';
+    }
 
     const chemistryLabel = this.productLabels.get(this.chemistry);
 
@@ -301,6 +304,13 @@ export class InteractiveStore implements AfterViewInit {
     if (dnaLabel) {
       dnaLabel.element.style.display =
         nextHovered === this.dna ? 'flex' : 'none';
+    }
+
+    const bottle1Label = this.productLabels.get(this.bottle1);
+
+    if (bottle1Label) {
+      bottle1Label.element.style.display =
+        nextHovered === this.bottle1 ? 'flex' : 'none';
     }
 
     this.isCreamHovered.set(nextHovered === this.cream);
@@ -704,12 +714,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.cream);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.cream,
         'Увлажняющий крем',
-        2,
+        0.5,
         0.3,
-        0.9
+        0.5,
+        'right',
+        -10,
+        -20
       );
     });
   }
@@ -746,12 +759,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.orange);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.orange,
         'Витамин С',
-        1.3,
+        0.3,
         0.5,
-        0.5
+        0.5,
+        'right',
+        -10,
+        -10
       );
     });
   }
@@ -891,12 +907,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.foreo);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.foreo,
         'Foreo',
-        1.2,
+        0.2,
         0.5,
-        0.8
+        0.8,
+        'right',
+        -50,
+        -50
       );
     });
   }
@@ -935,12 +954,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.heart);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.heart,
         'Киоск',
-        1.8,
+        0.8,
         0,
-        0.8
+        0.8,
+        'right',
+        -50,
+        -50
       );
     });
   }
@@ -1020,13 +1042,13 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.bottle1);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.bottle1,
         'Увлажняющая сыворотка',
-        -2,
-        0.6,
-        0.9,
-        'left'
+        0.5,
+        0.4,
+        0.5,
+        'right'
       );
     });
   }
@@ -1063,13 +1085,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.bottle2);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.bottle2,
         'Peptides',
-        -1,
+        0.5,
         0.6,
         0.9,
-        'left'
+        'left',
+        -50,
+        -50
       );
     });
   }
@@ -1106,13 +1130,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.bottle3);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.bottle3,
         'Retinol',
         -1,
         0.6,
         0.9,
-        'left'
+        'left',
+        -50,
+        -50
       );
     });
   }
@@ -1149,12 +1175,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.brand1);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.brand1,
         'Obagi',
         1.2,
         0.1,
-        0.8
+        0.8,
+        'right',
+        -50,
+        -50
       );
     });
   }
@@ -1253,13 +1282,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.fan);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.fan,
         'K-Beauty',
-        -1.4,
+        0.4,
         0.9,
         0.8,
-        'left'
+        'left',
+        -50,
+        -50
       );
     });
   }
@@ -1305,12 +1336,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.bakuchiol);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.bakuchiol,
         'Bakuchiol',
         1.9,
         0.8,
         0.8,
+        'right',
+        -50,
+        -50
       );
     });
   }
@@ -1398,14 +1432,6 @@ export class InteractiveStore implements AfterViewInit {
 
       this.attachToPlatform(this.dna);
 
-      console.log('DNA local transform:', {
-        position: this.dna.position.toArray(),
-        rotation: this.dna.rotation.toArray(),
-        scale: this.dna.scale.toArray(),
-      });
-
-      console.log('DNA children:', this.dna.children);
-
       const box = new THREE.Box3().setFromObject(this.dna);
       const center = box.getCenter(new THREE.Vector3());
 
@@ -1413,9 +1439,11 @@ export class InteractiveStore implements AfterViewInit {
         this.dna,
         'PDRN',
         0.5,
-        0.65,
+        0.8,
         0.5,
-        'left'
+        'left',
+        -100,
+        -20
       );
     });
   }
@@ -1461,12 +1489,15 @@ export class InteractiveStore implements AfterViewInit {
       const box = new THREE.Box3().setFromObject(this.promo);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.promo,
         'Промокоды',
-        2.3,
+        0.3,
         0.6,
         0.8,
+        'right',
+        -50,
+        -50
       );
     });
   }
@@ -1503,7 +1534,7 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.decor1.position.x = -0.5;
+      this.decor1.position.x = 0.5;
       this.decor1.position.y = 0.3;
       this.decor1.position.z = 0.1;
       this.scene.add(this.decor1);
@@ -1546,7 +1577,7 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.decor2.position.x = -0.5;
+      this.decor2.position.x = 0.7;
       this.decor2.position.y = 0.3;
       this.decor2.position.z = 0.1;
       this.scene.add(this.decor2);
@@ -1589,9 +1620,9 @@ export class InteractiveStore implements AfterViewInit {
         THREE.MathUtils.degToRad(45),
         THREE.MathUtils.degToRad(0)
       );
-      this.decor3.position.x = -0.5;
+      this.decor3.position.x = -0.3;
       this.decor3.position.y = 0.3;
-      this.decor3.position.z = 0.1;
+      this.decor3.position.z = 0.4;
       this.scene.add(this.decor3);
       this.decor3.scale.set(2, 2, 2);
 
@@ -1670,66 +1701,6 @@ export class InteractiveStore implements AfterViewInit {
         }
       }
     });
-  }
-
-  private createProductLabel(
-    model: THREE.Object3D,
-    label: string,
-    anchorX = 0.5,
-    anchorY = 0.8,
-    anchorZ = 0.5,
-    lineSide: 'left' | 'right' = 'right'
-  ): void {
-    const element = document.createElement('div');
-    element.className = `product-callout product-callout--${lineSide}`;
-
-    element.innerHTML = `
-    <span class="product-callout__dot"></span>
-    <span class="product-callout__line"></span>
-    <span class="product-callout__text">${label}</span>
-  `;
-
-    const labelObject = new CSS2DObject(element);
-    labelObject.visible = false;
-
-    model.add(labelObject);
-
-    model.updateWorldMatrix(true, true);
-
-    const box = new THREE.Box3();
-
-    model.traverse((child) => {
-      if (!(child instanceof THREE.Mesh)) return;
-
-      if (!child.geometry.boundingBox) {
-        child.geometry.computeBoundingBox();
-      }
-
-      if (!child.geometry.boundingBox) return;
-
-      const meshBox = child.geometry.boundingBox.clone();
-
-      const relativeMatrix = new THREE.Matrix4()
-        .copy(model.matrixWorld)
-        .invert()
-        .multiply(child.matrixWorld);
-
-      meshBox.applyMatrix4(relativeMatrix);
-      box.union(meshBox);
-    });
-
-    const size = box.getSize(new THREE.Vector3());
-
-    const labelPosition = new THREE.Vector3(
-      box.min.x + size.x * anchorX,
-      box.min.y + size.y * anchorY,
-      box.min.z + size.z * anchorZ
-    );
-
-    labelObject.position.copy(labelPosition);
-
-    this.labels.set(model, labelObject);
-    this.labelElements.set(model, element);
   }
 
   private createLabelRenderer(): void {
@@ -1837,7 +1808,9 @@ export class InteractiveStore implements AfterViewInit {
     anchorX = 0.5,
     anchorY = 0.8,
     anchorZ = 0.5,
-    lineSide: 'left' | 'right' = 'right'
+    lineSide: 'left' | 'right' = 'right',
+    offsetX = 0,
+    offsetY = 0
   ): void {
     const element = document.createElement('div');
     element.className = `product-callout product-callout--${lineSide}`;
@@ -1859,6 +1832,8 @@ export class InteractiveStore implements AfterViewInit {
       anchorX,
       anchorY,
       anchorZ,
+      offsetX,
+      offsetY
     });
   }
 
@@ -1889,6 +1864,7 @@ export class InteractiveStore implements AfterViewInit {
           .multiply(child.matrixWorld);
 
         meshBox.applyMatrix4(relativeMatrix);
+
         localBox.union(meshBox);
       });
 
@@ -1925,12 +1901,14 @@ export class InteractiveStore implements AfterViewInit {
       const x =
         canvasRect.left +
         ((anchor.x + 1) / 2) * canvasRect.width -
-        containerRect.left;
+        containerRect.left +
+        data.offsetX;
 
       const y =
         canvasRect.top +
         ((1 - anchor.y) / 2) * canvasRect.height -
-        containerRect.top;
+        containerRect.top +
+        data.offsetY;
 
       data.element.style.display =
         this.hoveredObject === model
