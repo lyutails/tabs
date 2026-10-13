@@ -112,13 +112,25 @@ export class InteractiveStore implements AfterViewInit {
   private boxes!: THREE.Object3D;
   private dna!: THREE.Object3D;
   private promo!: THREE.Object3D;
+  private decor1!: THREE.Object3D;
+  private decor2!: THREE.Object3D;
+  private decor3!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
   sliderX = signal(0);
   sliderY = signal(0);
   modalStateService = inject(ModalState);
-  chemistryIngredientsPositioned = signal(false);
+  chemistryIngredientsPositioned = signal(false); 
+  private productLabels = new Map<
+    THREE.Object3D,
+    {
+      element: HTMLElement;
+      anchorX: number;
+      anchorY: number;
+      anchorZ: number;
+    }
+  >();
   private pendingPlatformObjects: THREE.Object3D[] = [];
   storeModelGLB =
     '/three/store32.glb';
@@ -156,6 +168,12 @@ export class InteractiveStore implements AfterViewInit {
     '/three/dna7.glb';
   promoModelGLB =
     '/three/promo2.glb';
+  decor1ModelGLB =
+    '/three/decor1.glb';
+  decor2ModelGLB =
+    '/three/decor2.glb';
+  decor3ModelGLB =
+    '/three/decor3.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
@@ -179,6 +197,12 @@ export class InteractiveStore implements AfterViewInit {
       query: 'niacinamide',
     },
   ];
+  private decorInitialY = 0.3;
+  private decorFloatAmplitude = 0.05;
+  private decorFloatSpeed = 1.2;
+  private decor1Delay = 0;
+  private decor2Delay = 1.5;
+  private decor3Delay = 3;
 
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
@@ -264,6 +288,20 @@ export class InteractiveStore implements AfterViewInit {
     this.labels.forEach((labelObject, model) => {
       labelObject.visible = model === nextHovered;
     });
+
+    const chemistryLabel = this.productLabels.get(this.chemistry);
+
+    if (chemistryLabel) {
+      chemistryLabel.element.style.display =
+        nextHovered === this.chemistry ? 'flex' : 'none';
+    }
+
+    const dnaLabel = this.productLabels.get(this.dna);
+
+    if (dnaLabel) {
+      dnaLabel.element.style.display =
+        nextHovered === this.dna ? 'flex' : 'none';
+    }
 
     this.isCreamHovered.set(nextHovered === this.cream);
     this.canvas.style.cursor = nextHovered ? 'pointer' : 'default';
@@ -451,6 +489,9 @@ export class InteractiveStore implements AfterViewInit {
       this.importBoxes();
       this.importDNA();
       this.importPromo();
+      this.importDecor1();
+      this.importDecor2();
+      this.importDecor3();
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -555,6 +596,31 @@ export class InteractiveStore implements AfterViewInit {
       // if (component.isProductSliderOpen()) {
       //   component.updateSliderPosition();
       // }
+
+      component.updateProductLabelsPosition();
+
+      const time = performance.now() * 0.001;
+
+      if (component.decor1) {
+        component.decor1.position.y =
+          component.decorInitialY +
+          Math.sin((time - component.decor1Delay) * component.decorFloatSpeed) *
+          component.decorFloatAmplitude;
+      }
+
+      if (component.decor2) {
+        component.decor2.position.y =
+          component.decorInitialY +
+          Math.sin((time - component.decor2Delay) * component.decorFloatSpeed) *
+          component.decorFloatAmplitude;
+      }
+
+      if (component.decor3) {
+        component.decor3.position.y =
+          component.decorInitialY +
+        Math.sin((time - component.decor3Delay) * component.decorFloatSpeed) *
+        component.decorFloatAmplitude;
+      }
 
       if (component.chemistryIngredientsVisible()) {
         component.updateChemistryIngredientsPosition();
@@ -1131,21 +1197,17 @@ export class InteractiveStore implements AfterViewInit {
       // this.scene.add(this.chemistry);
       this.chemistry.scale.set(2.8, 2.8, 2.8);
 
-      if (this.roundPlatformPivot) {
-        this.roundPlatformPivot.attach(this.chemistry);
-      }
-
       this.attachToPlatform(this.chemistry);
 
       const box = new THREE.Box3().setFromObject(this.chemistry);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.chemistry,
         'Repair',
+        0.5,
         0.8,
-        0.1,
-        0.8
+        0.5
       );
     });
   }
@@ -1334,21 +1396,25 @@ export class InteractiveStore implements AfterViewInit {
       // this.scene.add(this.dna);
       this.dna.scale.set(2.2, 2.2, 2.2);
 
-      if (this.roundPlatformPivot) {
-        this.roundPlatformPivot.attach(this.dna);
-      }
-
       this.attachToPlatform(this.dna);
+
+      console.log('DNA local transform:', {
+        position: this.dna.position.toArray(),
+        rotation: this.dna.rotation.toArray(),
+        scale: this.dna.scale.toArray(),
+      });
+
+      console.log('DNA children:', this.dna.children);
 
       const box = new THREE.Box3().setFromObject(this.dna);
       const center = box.getCenter(new THREE.Vector3());
 
-      this.createProductLabel(
+      this.createNewProductLabel(
         this.dna,
         'PDRN',
-        -0.5,
-        0.8,
-        0.8,
+        0.5,
+        0.65,
+        0.5,
         'left'
       );
     });
@@ -1402,6 +1468,135 @@ export class InteractiveStore implements AfterViewInit {
         0.6,
         0.8,
       );
+    });
+  }
+
+  importDecor1() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.decor1ModelGLB, (gltf: GLTF) => {
+      this.decor1 = gltf.scene;
+
+      this.decor1.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.decor1.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.decor1.position.x = -0.5;
+      this.decor1.position.y = 0.3;
+      this.decor1.position.z = 0.1;
+      this.scene.add(this.decor1);
+      this.decor1.scale.set(2, 2, 2);
+
+      const box = new THREE.Box3().setFromObject(this.decor1);
+      const center = box.getCenter(new THREE.Vector3());
+    });
+  }
+
+  importDecor2() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.decor2ModelGLB, (gltf: GLTF) => {
+      this.decor2 = gltf.scene;
+
+      this.decor2.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.decor2.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.decor2.position.x = -0.5;
+      this.decor2.position.y = 0.3;
+      this.decor2.position.z = 0.1;
+      this.scene.add(this.decor2);
+      this.decor2.scale.set(2, 2, 2);
+
+      const box = new THREE.Box3().setFromObject(this.decor2);
+      const center = box.getCenter(new THREE.Vector3());
+    });
+  }
+
+  importDecor3() {
+    const loaderGLTF = new GLTFLoader();
+    loaderGLTF.load(this.decor3ModelGLB, (gltf: GLTF) => {
+      this.decor3 = gltf.scene;
+
+      this.decor3.traverse((object: THREE.Object3D) => {
+        if (!(object instanceof THREE.Mesh)) return;
+
+        const materials = Array.isArray(object.material)
+          ? object.material
+          : [object.material];
+
+        materials.forEach((material) => {
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+
+        materials.forEach((material) => {
+          material.transparent = false;
+          material.opacity = 1;
+          material.depthTest = true;
+          material.depthWrite = true;
+          material.side = THREE.DoubleSide;
+          material.needsUpdate = true;
+        });
+      });
+
+      this.decor3.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        THREE.MathUtils.degToRad(0)
+      );
+      this.decor3.position.x = -0.5;
+      this.decor3.position.y = 0.3;
+      this.decor3.position.z = 0.1;
+      this.scene.add(this.decor3);
+      this.decor3.scale.set(2, 2, 2);
+
+      const box = new THREE.Box3().setFromObject(this.decor3);
+      const center = box.getCenter(new THREE.Vector3());
     });
   }
 
@@ -1634,6 +1829,117 @@ export class InteractiveStore implements AfterViewInit {
       x: canvasRect.left + ((anchor.x + 1) / 2) * canvasRect.width - containerRect.left,
       y: canvasRect.top + ((1 - anchor.y) / 2) * canvasRect.height - containerRect.top,
     };
+  }
+
+  private createNewProductLabel(
+    model: THREE.Object3D,
+    label: string,
+    anchorX = 0.5,
+    anchorY = 0.8,
+    anchorZ = 0.5,
+    lineSide: 'left' | 'right' = 'right'
+  ): void {
+    const element = document.createElement('div');
+    element.className = `product-callout product-callout--${lineSide}`;
+
+    element.innerHTML = `
+    <span class="product-callout__dot"></span>
+    <span class="product-callout__line"></span>
+    <span class="product-callout__text">${label}</span>
+  `;
+
+    element.style.position = 'absolute';
+    element.style.pointerEvents = 'none';
+    element.style.display = 'none';
+
+    this.sceneContainer.appendChild(element);
+
+    this.productLabels.set(model, {
+      element,
+      anchorX,
+      anchorY,
+      anchorZ,
+    });
+  }
+
+  private updateProductLabelsPosition(): void {
+    if (!this.camera) return;
+
+    for (const [model, data] of this.productLabels) {
+      model.updateWorldMatrix(true, true);
+
+      // Находим bounding box в локальных координатах модели
+      const localBox = new THREE.Box3();
+
+      model.traverse((child) => {
+        if (!(child instanceof THREE.Mesh)) return;
+
+        if (!child.geometry.boundingBox) {
+          child.geometry.computeBoundingBox();
+        }
+
+        if (!child.geometry.boundingBox) return;
+
+        const meshBox = child.geometry.boundingBox.clone();
+
+        // Переводим координаты меша в систему координат модели
+        const relativeMatrix = new THREE.Matrix4()
+          .copy(model.matrixWorld)
+          .invert()
+          .multiply(child.matrixWorld);
+
+        meshBox.applyMatrix4(relativeMatrix);
+        localBox.union(meshBox);
+      });
+
+      if (localBox.isEmpty()) continue;
+
+      const size = localBox.getSize(new THREE.Vector3());
+
+      // Фиксированная точка в локальных координатах модели
+      const anchor = new THREE.Vector3(
+        localBox.min.x + size.x * data.anchorX,
+        localBox.min.y + size.y * data.anchorY,
+        localBox.min.z + size.z * data.anchorZ
+      );
+
+      // Переводим якорь в мировые координаты
+      model.localToWorld(anchor);
+
+      // Проецируем на экран
+      anchor.project(this.camera);
+
+      if (
+        anchor.z < -1 ||
+        anchor.z > 1 ||
+        Math.abs(anchor.x) > 1 ||
+        Math.abs(anchor.y) > 1
+      ) {
+        data.element.style.display = 'none';
+        continue;
+      }
+
+      const canvasRect = this.canvas.getBoundingClientRect();
+      const containerRect = this.sceneContainer.getBoundingClientRect();
+
+      const x =
+        canvasRect.left +
+        ((anchor.x + 1) / 2) * canvasRect.width -
+        containerRect.left;
+
+      const y =
+        canvasRect.top +
+        ((1 - anchor.y) / 2) * canvasRect.height -
+        containerRect.top;
+
+      data.element.style.display =
+        this.hoveredObject === model
+          ? 'flex'
+          : 'none';
+
+      data.element.style.left = `${x}px`;
+      data.element.style.top = `${y}px`;
+    }
   }
 
   private updateChemistryIngredientsPosition(): void {
