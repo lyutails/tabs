@@ -138,7 +138,7 @@ export class InteractiveStore implements AfterViewInit {
   storeModelGLB =
     '/three/store32.glb';
   creamModelGLB =
-    '/three/cream5.glb';
+    '/three/cream7.glb';
   orangeModelGLB =
     '/three/orange2.glb';
   gaModelGLB =
@@ -458,7 +458,7 @@ export class InteractiveStore implements AfterViewInit {
       });
 
       this.importSceneItem(this.creamModelGLB,
-        0.05, -0.05, 0.2,
+        0.05, 0, 0.1,
         2.4, 2.4, 2.4,
         (model) => {
           this.cream = model;
