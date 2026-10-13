@@ -178,7 +178,7 @@ export class InteractiveStore implements AfterViewInit {
   decor3ModelGLB =
     '/three/decor3.glb';
   cakeModelGLB =
-    '/three/cake1.glb';
+    '/three/cake4.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
@@ -463,49 +463,173 @@ export class InteractiveStore implements AfterViewInit {
         (model) => {
           this.cream = model;
         },
-        'Увлажняющий крем', 0.5, 0.3, 0.5, 'right', -10, -20,);
+        false,
+        false, 1,
+        'Увлажняющий крем', 0.5, 0.3, 0.5, 'right', -10, -20);
       this.importSceneItem(this.orangeModelGLB,
         -0.2, 0, 0.1,
         2.2, 2.2, 2.2,
         (model) => {
           this.orange = model;
         },
-        'Витамин С', 0.6, 0.5, 0.5, 'right', -10, -10,);
+        false,
+        false, 1,
+        'Витамин С', 0.6, 0.5, 0.5, 'right', -10, -10);
       this.importSceneItem(this.gaModelGLB,
         0, -0.05, 0.1,
         2.4, 2.4, 2.4,
         (model) => {
           this.ga = model;
-        });
+        },
+        false,
+        false, 1);
+      this.importSceneItem(this.foreoModelGLB,
+        1, 0, 0.1,
+        2, 2, 2,
+        (model) => {
+          this.foreo = model;
+        },
+        false,
+        false, 1,
+        'Foreo', 0.8, 0.2, 0.9, 'right', -50, -50);
+      this.importSceneItem(this.heartModelGLB,
+        -0.4, -0.1, 0.5,
+        2.2, 2.2, 2.2,
+        (model) => {
+          this.heart = model;
+        },
+        false,
+        false, 1,
+        'Киоск', 1.1, -1, 1.2, 'right', -50, -50);
+      this.importSceneItem(this.cloudModelGLB,
+        0.5, -0.2, 0.8,
+        2.4, 2.2, 2.4,
+        (model) => {
+          this.cloud = model;
+        },
+        false);
+      this.importSceneItem(this.bottle1ModelGLB,
+        0.4, -0.2, 0.9,
+        2.4, 2.4, 2.4,
+        (model) => {
+          this.bottle1 = model;
+        },
+        false,
+        false, 1,
+        'Увлажняющая сыворотка', 0.5, 0.4, 0.5, 'right', -10, -10);
+      this.importSceneItem(this.bottle2ModelGLB,
+        0.4, -0.2, 1.4,
+        2.4, 2.4, 2.4,
+        (model) => {
+          this.bottle2 = model;
+        },
+        false,
+        false, 1,
+        'Peptides', 0.5, 0, 0.5, 'left', -120, -80);
+      this.importSceneItem(this.bottle3ModelGLB,
+        0.4, -0.2, 0.9,
+        2.4, 2.4, 2.4,
+        (model) => {
+          this.bottle3 = model;
+        },
+        false,
+        false, 1,
+        'Retinol', 0.5, 0, 0.5, 'left', -120, -80);
+      this.importSceneItem(this.brand1ModelGLB,
+        -0.1, 0.5, -0.2,
+        2.2, 2.2, 2.2,
+        (model) => {
+          this.brand1 = model;
+        },
+        false,
+        false, 1,
+        'Obagi', 0.5, 0, 0.5, 'left', -100, -50);
+      this.importSceneItem(this.fanModelGLB,
+        0.2, 0.1, -0.15,
+        2.2, 2.2, 2.2,
+        (model) => {
+          this.fan = model;
+        },
+        false,
+        false, 1,
+        'K-Beauty', 0.4, 0.6, 0.8, 'left', -180, -20);
+      this.importSceneItem(this.bakuchiolModelGLB,
+        0.1, 0.1, -0.15,
+        2.2, 2.2, 2.2,
+        (model) => {
+          this.bakuchiol = model;
+        },
+        false,
+        false, 1,
+        'Bakuchiol', 0.4, 0.6, 0.8, 'left', -140, -50);
+      this.importSceneItem(this.boxesModelGLB,
+        -0.5, 0.3, 0.1,
+        2, 2, 2,
+        (model) => {
+          this.boxes = model;
+        },
+        false,
+        false, 1);
+      this.importSceneItem(this.promoModelGLB,
+        0.5, 0, -0.1,
+        2.4, 2.4, 2.4,
+        (model) => {
+          this.promo = model;
+        },
+        false,
+        false, 1,
+        'Промокоды', 0.3, 0.6, 0.8, 'left', -140, -20);
+      this.importSceneItem(this.decor1ModelGLB,
+        0.5, 0.3, 0.1,
+        2, 2, 2,
+        (model) => {
+          this.decor1 = model;
+        },
+        false,
+        false, 1);
+      this.importSceneItem(this.decor2ModelGLB,
+        0.7, 0.3, 0.1,
+        2, 2, 2,
+        (model) => {
+          this.decor2 = model;
+        },
+        false,
+        false, 1);
+      this.importSceneItem(this.decor3ModelGLB,
+        -0.3, 0.3, 0.4,
+        2, 2, 2,
+        (model) => {
+          this.decor3 = model;
+        },
+        false,
+        false, 1);
       this.importRoundPlatform();
-      this.importForeo();
-      this.importHeart();
-      this.importCloud();
-      this.importBottleOne();
-      this.importBottleTwo();
-      this.importBottleThree();
-      this.importBrandOne();
-      this.importChemistry();
-      this.importFan();
-      this.importBakuchiol();
-      this.importBoxes();
-      this.importDNA();
-      // this.importSceneItem(
-      //   this.dnaModelGLB,
-      //   'PDRN',
-      //   0.5, 0.8, 0.5,
-      //   'left',
-      //   -100, -20,
-      //   (model) => {
-      //     this.dna = model;
-      //     this.attachToPlatform(model);
-      //   }
-      // );
-      this.importPromo();
-      this.importDecor1();
-      this.importDecor2();
-      this.importDecor3();
-      this.importCake();
+      this.importSceneItem(this.chemistryModelGLB,
+        0.1, 0.1, -0.35,
+        2.8, 2.8, 2.8,
+        (model) => {
+          this.chemistry = model;
+        },
+        true,
+        true, 0.6,
+        'Repair', 0.5, 0.8, 0.5, 'right', 0, -10);
+      this.importSceneItem(this.dnaModelGLB,
+        0.1, 0.25, -0.15,
+        2.2, 2.2, 2.2,
+        (model) => {
+          this.dna = model;
+        },
+        true,
+        false, 1,
+        'PDRN', 0.5, 0.8, 0.5, 'left', -100, -20);
+      this.importSceneItem(this.cakeModelGLB,
+        -0.1, 0.1, -0.2,
+        2.4, 2.4, 2.4,
+        (model) => {
+          this.cake = model;
+        },
+        true,
+        false, 1);
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -687,7 +811,9 @@ export class InteractiveStore implements AfterViewInit {
   }
 
   importSceneItem(modelPath: string, positionX: number, positionY: number, positionZ: number, scaleX: number, scaleY: number, scaleZ: number,
-    onLoaded?: (model: THREE.Object3D) => void, labelName?: string, labelAnchorX?: number, labelAnchorY?: number,
+    onLoaded?: (model: THREE.Object3D) => void,
+    isOnPlatform?: boolean,
+    transparency?: boolean, opacity?: number, labelName?: string, labelAnchorX?: number, labelAnchorY?: number,
     labelAnchorZ?: number, labelDirection?: 'left' | 'right', labelOffsetX?: number, labelOffsetY?: number,
   ) {
     const loaderGLTF = new GLTFLoader();
@@ -705,6 +831,17 @@ export class InteractiveStore implements AfterViewInit {
           material.side = THREE.DoubleSide;
           material.needsUpdate = true;
         });
+
+        if (transparency || opacity) {
+          materials.forEach((material) => {
+            material.transparent = transparency;
+            material.opacity = opacity;
+            material.depthTest = true;
+            material.depthWrite = true;
+            material.side = THREE.DoubleSide;
+            material.needsUpdate = true;
+          });
+        }
       });
 
       model.rotation.set(
@@ -715,8 +852,13 @@ export class InteractiveStore implements AfterViewInit {
       model.position.x = positionX;
       model.position.y = positionY;
       model.position.z = positionZ;
-      this.scene.add(model);
       model.scale.set(scaleX, scaleY, scaleZ);
+
+      if (isOnPlatform) {
+        this.attachToPlatform(model);
+      } else {
+        this.scene.add(model);
+      }
 
       onLoaded?.(model);
 
@@ -733,7 +875,8 @@ export class InteractiveStore implements AfterViewInit {
           labelDirection,
           labelOffsetX,
           labelOffsetY
-        )}
+        )
+      }
     });
   }
 
@@ -838,817 +981,7 @@ export class InteractiveStore implements AfterViewInit {
       this.roundPlatformPivot = pivot;
       this.attachPendingObjects();
     });
-  }
-
-  importForeo() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.foreoModelGLB, (gltf: GLTF) => {
-      this.foreo = gltf.scene;
-
-      this.foreo.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.foreo.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.foreo.position.x = 0.7;
-      this.foreo.position.y = -0.1;
-      this.foreo.position.z = 0.5;
-      this.scene.add(this.foreo);
-      this.foreo.scale.set(2, 2, 2);
-
-      const box = new THREE.Box3().setFromObject(this.foreo);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.foreo,
-        'Foreo',
-        0.2,
-        0.5,
-        0.8,
-        'right',
-        -50,
-        -50
-      );
-    });
-  }
-
-  importHeart() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.heartModelGLB, (gltf: GLTF) => {
-      this.heart = gltf.scene;
-
-      this.heart.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.heart.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-
-      this.heart.position.x = -0.4;
-      this.heart.position.y = -0.1;
-      this.heart.position.z = 0.5;
-
-      this.scene.add(this.heart);
-      this.heart.scale.set(2.2, 2.2, 2.2);
-
-      const box = new THREE.Box3().setFromObject(this.heart);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.heart,
-        'Киоск',
-        0.8,
-        0,
-        0.8,
-        'right',
-        -50,
-        -50
-      );
-    });
-  }
-
-  importCloud() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.cloudModelGLB, (gltf: GLTF) => {
-      this.cloud = gltf.scene;
-
-      this.cloud.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.cloud.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.cloud.position.x = 0.5;
-      this.cloud.position.y = -0.2;
-      this.cloud.position.z = 0.8;
-      this.scene.add(this.cloud);
-      this.cloud.scale.set(2.4, 2.2, 2.4);
-
-      const box = new THREE.Box3().setFromObject(this.cloud);
-      const center = box.getCenter(new THREE.Vector3());
-    });
-  }
-
-  importBottleOne() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.bottle1ModelGLB, (gltf: GLTF) => {
-      this.bottle1 = gltf.scene;
-
-      this.bottle1.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.bottle1.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.bottle1.position.x = 0.4;
-      this.bottle1.position.y = -0.2;
-      this.bottle1.position.z = 0.9;
-      this.scene.add(this.bottle1);
-      this.bottle1.scale.set(2.4, 2.4, 2.4);
-
-      const box = new THREE.Box3().setFromObject(this.bottle1);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.bottle1,
-        'Увлажняющая сыворотка',
-        0.5,
-        0.4,
-        0.5,
-        'right'
-      );
-    });
-  }
-
-  importBottleTwo() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.bottle2ModelGLB, (gltf: GLTF) => {
-      this.bottle2 = gltf.scene;
-
-      this.bottle2.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.bottle2.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.bottle2.position.x = 0.4;
-      this.bottle2.position.y = -0.2;
-      this.bottle2.position.z = 0.9;
-      this.scene.add(this.bottle2);
-      this.bottle2.scale.set(2.4, 2.4, 2.4);
-
-      const box = new THREE.Box3().setFromObject(this.bottle2);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.bottle2,
-        'Peptides',
-        0.5,
-        0.6,
-        0.9,
-        'left',
-        -50,
-        -50
-      );
-    });
-  }
-
-  importBottleThree() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.bottle3ModelGLB, (gltf: GLTF) => {
-      this.bottle3 = gltf.scene;
-
-      this.bottle3.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.bottle3.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.bottle3.position.x = 0.4;
-      this.bottle3.position.y = -0.2;
-      this.bottle3.position.z = 0.9;
-      this.scene.add(this.bottle3);
-      this.bottle3.scale.set(2.4, 2.4, 2.4);
-
-      const box = new THREE.Box3().setFromObject(this.bottle3);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.bottle3,
-        'Retinol',
-        -1,
-        0.6,
-        0.9,
-        'left',
-        -50,
-        -50
-      );
-    });
-  }
-
-  importBrandOne() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.brand1ModelGLB, (gltf: GLTF) => {
-      this.brand1 = gltf.scene;
-
-      this.brand1.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.brand1.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.brand1.position.x = -0.1;
-      this.brand1.position.y = 0.5;
-      this.brand1.position.z = -0.2;
-      this.scene.add(this.brand1);
-      this.brand1.scale.set(2.2, 2.2, 2.2);
-
-      const box = new THREE.Box3().setFromObject(this.brand1);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.brand1,
-        'Obagi',
-        1.2,
-        0.1,
-        0.8,
-        'right',
-        -50,
-        -50
-      );
-    });
-  }
-
-  importChemistry() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.chemistryModelGLB, (gltf: GLTF) => {
-      this.chemistry = gltf.scene;
-
-      this.chemistry.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = true;
-          material.opacity = 0.6;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.chemistry.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.chemistry.position.x = 0.1;
-      this.chemistry.position.y = 0.1;
-      this.chemistry.position.z = -0.2;
-      // this.scene.add(this.chemistry);
-      this.chemistry.scale.set(2.8, 2.8, 2.8);
-
-      this.attachToPlatform(this.chemistry);
-
-      const box = new THREE.Box3().setFromObject(this.chemistry);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.chemistry,
-        'Repair',
-        0.5,
-        0.8,
-        0.5
-      );
-    });
-  }
-
-  importFan() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.fanModelGLB, (gltf: GLTF) => {
-      this.fan = gltf.scene;
-
-      this.fan.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.fan.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.fan.position.x = 0.2;
-      this.fan.position.y = 0.1;
-      this.fan.position.z = -0.15;
-      this.scene.add(this.fan);
-      this.fan.scale.set(2.2, 2.2, 2.2);
-
-      const box = new THREE.Box3().setFromObject(this.fan);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.fan,
-        'K-Beauty',
-        0.4,
-        0.9,
-        0.8,
-        'left',
-        -50,
-        -50
-      );
-    });
-  }
-
-  importBakuchiol() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.bakuchiolModelGLB, (gltf: GLTF) => {
-      this.bakuchiol = gltf.scene;
-
-      this.bakuchiol.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.bakuchiol.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.bakuchiol.position.x = 0.1;
-      this.bakuchiol.position.y = 0.1;
-      this.bakuchiol.position.z = -0.15;
-      this.scene.add(this.bakuchiol);
-      this.bakuchiol.scale.set(2.2, 2.2, 2.2);
-
-      const box = new THREE.Box3().setFromObject(this.bakuchiol);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.bakuchiol,
-        'Bakuchiol',
-        1.9,
-        0.8,
-        0.8,
-        'right',
-        -50,
-        -50
-      );
-    });
-  }
-
-  importBoxes() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.boxesModelGLB, (gltf: GLTF) => {
-      this.boxes = gltf.scene;
-
-      this.boxes.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.boxes.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.boxes.position.x = -0.5;
-      this.boxes.position.y = 0.3;
-      this.boxes.position.z = 0.1;
-      this.scene.add(this.boxes);
-      this.boxes.scale.set(2, 2, 2);
-
-      const box = new THREE.Box3().setFromObject(this.boxes);
-      const center = box.getCenter(new THREE.Vector3());
-    });
-  }
-
-  importDNA() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.dnaModelGLB, (gltf: GLTF) => {
-      this.dna = gltf.scene;
-
-      this.dna.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.dna.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.dna.position.x = 0.1;
-      this.dna.position.y = 0.25;
-      this.dna.position.z = -0.15;
-      // this.scene.add(this.dna);
-      this.dna.scale.set(2.2, 2.2, 2.2);
-
-      this.attachToPlatform(this.dna);
-
-      const box = new THREE.Box3().setFromObject(this.dna);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.dna,
-        'PDRN',
-        0.5,
-        0.8,
-        0.5,
-        'left',
-        -100,
-        -20
-      );
-    });
-  }
-
-  importPromo() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.promoModelGLB, (gltf: GLTF) => {
-      this.promo = gltf.scene;
-
-      this.promo.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.promo.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.promo.position.x = 0.5;
-      this.promo.position.y = 0;
-      this.promo.position.z = -0.1;
-      this.scene.add(this.promo);
-      this.promo.scale.set(2.4, 2.4, 2.4);
-
-      const box = new THREE.Box3().setFromObject(this.promo);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.promo,
-        'Промокоды',
-        0.3,
-        0.6,
-        0.8,
-        'right',
-        -50,
-        -50
-      );
-    });
-  }
-
-  importCake() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.cakeModelGLB, (gltf: GLTF) => {
-      this.cake = gltf.scene;
-
-      this.cake.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.cake.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.cake.position.x = -0.1;
-      this.cake.position.y = 0.1;
-      this.cake.position.z = -0.2;
-      // this.scene.add(this.cake);
-      this.cake.scale.set(2.4, 2.4, 2.4);
-
-      this.attachToPlatform(this.cake);
-
-      const box = new THREE.Box3().setFromObject(this.cake);
-      const center = box.getCenter(new THREE.Vector3());
-    });
-  }
-
-  importDecor1() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.decor1ModelGLB, (gltf: GLTF) => {
-      this.decor1 = gltf.scene;
-
-      this.decor1.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.decor1.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.decor1.position.x = 0.5;
-      this.decor1.position.y = 0.3;
-      this.decor1.position.z = 0.1;
-      this.scene.add(this.decor1);
-      this.decor1.scale.set(2, 2, 2);
-
-      const box = new THREE.Box3().setFromObject(this.decor1);
-      const center = box.getCenter(new THREE.Vector3());
-    });
-  }
-
-  importDecor2() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.decor2ModelGLB, (gltf: GLTF) => {
-      this.decor2 = gltf.scene;
-
-      this.decor2.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.decor2.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.decor2.position.x = 0.7;
-      this.decor2.position.y = 0.3;
-      this.decor2.position.z = 0.1;
-      this.scene.add(this.decor2);
-      this.decor2.scale.set(2, 2, 2);
-
-      const box = new THREE.Box3().setFromObject(this.decor2);
-      const center = box.getCenter(new THREE.Vector3());
-    });
-  }
-
-  importDecor3() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.decor3ModelGLB, (gltf: GLTF) => {
-      this.decor3 = gltf.scene;
-
-      this.decor3.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-
-        materials.forEach((material) => {
-          material.transparent = false;
-          material.opacity = 1;
-          material.depthTest = true;
-          material.depthWrite = true;
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.decor3.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.decor3.position.x = -0.3;
-      this.decor3.position.y = 0.3;
-      this.decor3.position.z = 0.4;
-      this.scene.add(this.decor3);
-      this.decor3.scale.set(2, 2, 2);
-
-      const box = new THREE.Box3().setFromObject(this.decor3);
-      const center = box.getCenter(new THREE.Vector3());
-    });
-  }
+  }  
 
   private setHighlight(
     object: THREE.Object3D,
