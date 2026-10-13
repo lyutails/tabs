@@ -178,7 +178,7 @@ export class InteractiveStore implements AfterViewInit {
   decor3ModelGLB =
     '/three/decor3.glb';
   cakeModelGLB =
-    '/three/cake4.glb';
+    '/three/cake10.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
