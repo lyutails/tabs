@@ -164,7 +164,7 @@ export class InteractiveStore implements AfterViewInit {
   fanModelGLB =
     '/three/fan6.glb';
   bakuchiolModelGLB =
-    '/three/bakuchiol2.glb';
+    '/three/bakuchiol5.glb';
   boxesModelGLB =
     '/three/boxes2.glb';
   dnaModelGLB =
@@ -178,7 +178,7 @@ export class InteractiveStore implements AfterViewInit {
   decor3ModelGLB =
     '/three/decor3.glb';
   cakeModelGLB =
-    '/three/cake10.glb';
+    '/three/cake13.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
@@ -536,7 +536,7 @@ export class InteractiveStore implements AfterViewInit {
         false, 1,
         'Retinol', 0.5, 0, 0.5, 'left', -120, -80);
       this.importSceneItem(this.brand1ModelGLB,
-        -0.1, 0.5, -0.2,
+        0.1, 0.7, -0.2,
         2.2, 2.2, 2.2,
         (model) => {
           this.brand1 = model;
