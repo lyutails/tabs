@@ -142,7 +142,7 @@ export class InteractiveStore implements AfterViewInit {
   orangeModelGLB =
     '/three/orange34.glb';
   gaModelGLB =
-    '/three/ga2.glb';
+    '/three/ga8.glb';
   roundPlatformModelGLB =
     '/three/round_platform3.glb';
   foreoModelGLB =
@@ -421,7 +421,6 @@ export class InteractiveStore implements AfterViewInit {
         this.scene.add(this.store);
         this.store.scale.set(2.4, 2.4, 2.4);
 
-
         this.store.traverse((object) => {
           if (!(object instanceof THREE.Mesh)) return;
 
@@ -482,7 +481,7 @@ export class InteractiveStore implements AfterViewInit {
           this.ga = model;
         },
         false,
-        false, 1);
+        true, 1);
       this.importSceneItem(this.foreoModelGLB,
         1, 0, 0.1,
         2, 2, 2,
