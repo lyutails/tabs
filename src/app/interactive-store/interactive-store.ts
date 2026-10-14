@@ -138,11 +138,11 @@ export class InteractiveStore implements AfterViewInit {
   storeModelGLB =
     '/three/store32.glb';
   creamModelGLB =
-    '/three/cream7.glb';
+    '/three/cream11.glb';
   orangeModelGLB =
-    '/three/orange2.glb';
+    '/three/orange34.glb';
   gaModelGLB =
-    '/three/ga1.glb';
+    '/three/ga2.glb';
   roundPlatformModelGLB =
     '/three/round_platform3.glb';
   foreoModelGLB =
@@ -160,11 +160,11 @@ export class InteractiveStore implements AfterViewInit {
   brand1ModelGLB =
     '/three/brand1_2.glb';
   chemistryModelGLB =
-    '/three/chemistry10.glb';
+    '/three/chemistry12.glb';
   fanModelGLB =
     '/three/fan6.glb';
   bakuchiolModelGLB =
-    '/three/bakuchiol5.glb';
+    '/three/bakuchiol6.glb';
   boxesModelGLB =
     '/three/boxes2.glb';
   dnaModelGLB =
@@ -183,22 +183,22 @@ export class InteractiveStore implements AfterViewInit {
   readonly chemistryIngredients = [
     {
       name: 'Центелла',
-      image: '/three/ingredients/centella.jfif',
+      image: '/three/ingredients/centella.png',
       query: 'centella',
     },
     {
       name: 'Пантенол',
-      image: '/three/ingredients/panthenol1.jfif',
+      image: '/three/ingredients/b5.png',
       query: 'panthenol',
     },
     {
-      name: 'Керамиды',
-      image: '/three/ingredients/ceramide1.webp',
+      name: 'Церамиды',
+      image: '/three/ingredients/cer.png',
       query: 'ceramide',
     },
     {
       name: 'Ниацинамид',
-      image: '/three/ingredients/niacinamide.png',
+      image: '/three/ingredients/pp.png',
       query: 'niacinamide',
     },
   ];
@@ -518,7 +518,7 @@ export class InteractiveStore implements AfterViewInit {
         false, 1,
         'Увлажняющая сыворотка', 0.5, 0.4, 0.5, 'right', -10, -10);
       this.importSceneItem(this.bottle2ModelGLB,
-        0.4, -0.2, 1.4,
+        0.5, -0.35, 1,
         2.4, 2.4, 2.4,
         (model) => {
           this.bottle2 = model;

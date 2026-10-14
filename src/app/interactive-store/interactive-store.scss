@@ -63,35 +63,77 @@ tabs-products-slider {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 65px;
-        height: 65px;
-        padding: 8px;
-        border: 1px solid #e1e1e1;
+        width: 68px;
+        height: 68px;
+        padding: 10px;
         border-radius: 50%;
-        background: #fff;
-        box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
+        border: 3px solid rgba(252, 253, 252, 0.9);
+        background:
+            radial-gradient(circle,
+                rgba(var(--ingredient-color), 0.12) 0%,
+                rgba(var(--ingredient-color), 0.22) 55%,
+                rgba(var(--ingredient-color), 0.35) 100%);
+
+        box-shadow: 0 0 5px rgba(var(--ingredient-color), 0.5),
+            0 0 10px rgba(var(--ingredient-color), 0.3),
+            0 0 15px rgba(var(--ingredient-color), 0.2),
+            inset 0 0 12px rgba(var(--ingredient-color), 0.15);
+
+        backdrop-filter: blur(5px);
+        filter: drop-shadow(0 0 8px rgba(var(--ingredient-color), 0.5));
         cursor: pointer;
         pointer-events: auto;
+        transition:
+            box-shadow 250ms ease,
+            background 250ms ease,
+            transform 250ms ease;
+
+        // Внутренний светящийся контур
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border: 2px solid rgba(252, 253, 252, 0.6);
+            border-radius: inherit;
+            pointer-events: none;
+        }
 
         img {
+            position: relative;
+            z-index: 1;
+
             width: 100%;
             height: 100%;
             object-fit: contain;
+
+            filter: drop-shadow(0 0 4px rgba(var(--ingredient-color), 0.8)) drop-shadow(0 0 8px rgba(var(--ingredient-color), 0.5));
+        }
+
+        &:hover {
+            box-shadow:
+                0 0 8px rgba(var(--ingredient-color), 0.8),
+                0 0 16px rgba(var(--ingredient-color), 0.5),
+                0 0 24px rgba(var(--ingredient-color), 0.3),
+                inset 0 0 16px rgb(15 255 79 / 20%);
         }
 
         &:nth-child(1) {
+            --ingredient-color: 0, 255, 96;
             transform: translate(-50%, -50%) translate(-105px, 25px);
         }
 
         &:nth-child(2) {
+            --ingredient-color: 255, 180, 60;
             transform: translate(-50%, -50%) translate(-55px, -30px);
         }
 
         &:nth-child(3) {
+            --ingredient-color: 255, 100, 180;
             transform: translate(-50%, -50%) translate(25px, -30px);
         }
 
         &:nth-child(4) {
+            --ingredient-color: 80, 180, 255;
             transform: translate(-50%, -50%) translate(85px, 25px);
         }
     }
