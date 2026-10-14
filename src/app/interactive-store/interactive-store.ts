@@ -162,7 +162,7 @@ export class InteractiveStore implements AfterViewInit {
   chemistryModelGLB =
     '/three/chemistry12.glb';
   fanModelGLB =
-    '/three/fan6.glb';
+    '/three/fan11.glb';
   bakuchiolModelGLB =
     '/three/bakuchiol6.glb';
   boxesModelGLB =
@@ -178,12 +178,12 @@ export class InteractiveStore implements AfterViewInit {
   decor3ModelGLB =
     '/three/decor3.glb';
   cakeModelGLB =
-    '/three/cake13.glb';
+    '/three/cake14.glb';
   chemistryIngredientsVisible = signal(false);
   readonly chemistryIngredients = [
     {
       name: 'Центелла',
-      image: '/three/ingredients/centella.png',
+      image: '/three/ingredients/centella2.png',
       query: 'centella',
     },
     {
@@ -193,12 +193,12 @@ export class InteractiveStore implements AfterViewInit {
     },
     {
       name: 'Церамиды',
-      image: '/three/ingredients/cer.png',
+      image: '/three/ingredients/hexa3.png',
       query: 'ceramide',
     },
     {
       name: 'Ниацинамид',
-      image: '/three/ingredients/pp.png',
+      image: '/three/ingredients/molec5.png',
       query: 'niacinamide',
     },
   ];
@@ -550,7 +550,7 @@ export class InteractiveStore implements AfterViewInit {
           this.fan = model;
         },
         false,
-        false, 1,
+        true, 1,
         'K-Beauty', 0.4, 0.6, 0.8, 'left', -180, -20);
       this.importSceneItem(this.bakuchiolModelGLB,
         0.1, 0.1, -0.15,
