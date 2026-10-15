@@ -15,7 +15,7 @@ import {
 import * as THREE from 'three';
 import { GLTFLoader, GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, NgTemplateOutlet } from '@angular/common';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import {
   CSS2DObject,
@@ -32,7 +32,7 @@ import { ProductsModal } from './products-modal/products-modal';
 
 
 @Component({
-  imports: [ProductsSlider, ProductsModal],
+  imports: [ProductsSlider, ProductsModal, NgTemplateOutlet],
   selector: 'tabs-interactive-store',
   styleUrl: './interactive-store.scss',
   templateUrl: './interactive-store.html',
@@ -192,6 +192,7 @@ export class InteractiveStore implements AfterViewInit {
       (Madecassoside, Asiaticoside) —
       успокаивающий растительный ингредиент, который помогает 
       уменьшать раздражение и поддерживать восстановление кожного барьера.`,
+      color: '0, 255, 96',
     },
     {
       name: 'Пантенол',
@@ -200,6 +201,7 @@ export class InteractiveStore implements AfterViewInit {
       description: `Пантенол (Panthenol, провитамин B5) — увлажняющий и 
       восстанавливающий компонент, который помогает поддерживать кожный 
       барьер и уменьшать раздражение.`,
+      color: '255, 180, 60',
     },
     {
       name: 'Церамиды',
@@ -208,6 +210,7 @@ export class InteractiveStore implements AfterViewInit {
       description: `Церамиды (Ceramides) — липиды, естественно присутствующие 
       в роговом слое кожи. Они укрепляют защитный барьер, уменьшают потерю 
       влаги и помогают коже сохранять мягкость и устойчивость к раздражителям.`,
+      color: '255, 100, 180',
     },
     {
       name: 'Ниацинамид',
@@ -216,6 +219,7 @@ export class InteractiveStore implements AfterViewInit {
       description: `Ниацинамид (Niacinamide, витамин B3) — многофункциональный актив, 
       который укрепляет кожный барьер, помогает регулировать выработку себума и 
       уменьшать пигментацию.`,
+      color: '80, 180, 255',
     },
   ];
   dnaIngredientsVisible = signal(false);
@@ -228,6 +232,7 @@ export class InteractiveStore implements AfterViewInit {
       description: `PDRN (Polydeoxyribonucleotide) — фрагменты ДНК, обычно получаемые 
       из рыбного сырья, которые изучаются за способность поддерживать процессы 
       восстановления тканей и уменьшать воспаление.`,
+      color: '255, 113, 106',
     }
   ];
   orangeIngredientsVisible = signal(false);
@@ -239,8 +244,10 @@ export class InteractiveStore implements AfterViewInit {
       query: 'vitamin C',
       description: `Витамин C (Vitamin C) — антиоксидант, который помогает защищать 
       кожу от окислительного стресса, осветлять пигментацию и поддерживать синтез коллагена.`,
+      color: '255, 84, 0',
     }
   ];
+  ingredientTextColor = signal('255, 84, 0');
   private decorInitialY = 0.3;
   private decorFloatAmplitude = 0.05;
   private decorFloatSpeed = 1.2;
@@ -1207,15 +1214,19 @@ export class InteractiveStore implements AfterViewInit {
     );
   }
 
-  onIngredientClick(description: string): void {
+  onIngredientClick(description: string,
+    color: string, event?: Event): void {
+    event?.stopPropagation();
+
     if (this.timer !== undefined) {
       clearTimeout(this.timer);
     }
 
     this.displayedText.set('');
     this.typeText(description);
-  } 
-  
+    this.ingredientTextColor.set(color);
+  }
+
   private stopTyping(): void {
     if (this.timer !== undefined) {
       clearTimeout(this.timer);
@@ -1223,6 +1234,11 @@ export class InteractiveStore implements AfterViewInit {
     }
 
     this.displayedText.set('');
+  }
+
+  closeIngredientText(event: Event) {
+    event?.stopPropagation();
+    this.stopTyping();
   }
 
   private projectObjectPosition(

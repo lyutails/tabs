@@ -303,10 +303,23 @@ tabs-products-slider {
 }
 
 .ingredient_self-typed-text {
+    --ingredient-color: 255, 84, 0;
     position: absolute;
     filter:
-        drop-shadow(0 0 4px rgb(0, 255, 153)) drop-shadow(0 0 8px rgba(0, 255, 0, 0.5));
-        text-align: center;
+        drop-shadow(0 0 4px rgba(var(--ingredient-color), 0.8)) drop-shadow(0 0 8px rgba(var(--ingredient-color), 0.5));
+    text-align: center;
     width: 50%;
     transform: translate(50%, -50%);
+    top: 0;
+    color: black;
+}
+
+.ingredients_text-close {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
