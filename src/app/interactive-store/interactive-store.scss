@@ -87,10 +87,10 @@ tabs-products-slider {
             box-shadow 250ms ease,
             background 250ms ease,
             transform 250ms ease;
-            z-index: 100;
+        z-index: 100;
 
         // Внутренний светящийся контур
-        &::before { 
+        &::before {
             content: '';
             position: absolute;
             inset: 2px;
@@ -304,4 +304,9 @@ tabs-products-slider {
 
 .ingredient_self-typed-text {
     position: absolute;
+    filter:
+        drop-shadow(0 0 4px rgb(0, 255, 153)) drop-shadow(0 0 8px rgba(0, 255, 0, 0.5));
+        text-align: center;
+    width: 50%;
+    transform: translate(50%, -50%);
 }
