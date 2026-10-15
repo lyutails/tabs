@@ -5,6 +5,6 @@
   <div class="product_brand">{{ brandName() }}</div>
   <div class="product_name">{{ name() }}</div>
   <img class="product_card-image" [src]="image()" />
-  <div class="product_price">{{ price() }}</div>
+  <div class="product_price">{{ price() | formatPrice }}</div>
   <button class="product_cart-button">Add to cart</button>
 </div>

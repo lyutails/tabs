@@ -1,9 +1,9 @@
 import { Component, inject, input } from '@angular/core';
-import { Price } from '../../../../scripts/catalog-importer/catalog-importer.model';
 import { ModalState } from '../modal-state';
+import { FormatPricePipe } from '../../buy/pipes/format-price-pipe';
 
 @Component({
-  imports: [],
+  imports: [FormatPricePipe],
   selector: 'tabs-products-modal',
   styleUrl: './products-modal.scss',
   templateUrl: './products-modal.html',

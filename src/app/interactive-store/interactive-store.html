@@ -19,7 +19,41 @@
         [style.--ingredient-index]="i"
         [attr.aria-label]="ingredient.name"
         [title]="ingredient.name"
-        (click)="onIngredientClick(ingredient.query)"
+        (click)="onIngredientClick(ingredient.description)"
+      >
+        <img [src]="ingredient.image" [alt]="ingredient.name" />
+      </button>
+    }
+  </div>
+}
+@if (dnaIngredientsVisible()) {
+  <div class="dna-ingredients"
+    [class.dna-ingredients--positioned]="dnaIngredientsPositioned()">
+    @for (ingredient of dnaIngredients; track ingredient.name; let i = $index) {
+      <button
+        type="button"
+        class="dna-ingredients__item"
+        [style.--ingredient-index]="i"
+        [attr.aria-label]="ingredient.name"
+        [title]="ingredient.name"
+        (click)="onIngredientClick(ingredient.description)"
+      >
+        <img [src]="ingredient.image" [alt]="ingredient.name" />
+      </button>
+    }
+  </div>
+}
+@if (orangeIngredientsVisible()) {
+  <div class="orange-ingredients"
+    [class.orange-ingredients--positioned]="orangeIngredientsPositioned()">
+    @for (ingredient of orangeIngredients; track ingredient.name; let i = $index) {
+      <button
+        type="button"
+        class="orange-ingredients__item"
+        [style.--ingredient-index]="i"
+        [attr.aria-label]="ingredient.name"
+        [title]="ingredient.name"
+        (click)="onIngredientClick(ingredient.description)"
       >
         <img [src]="ingredient.image" [alt]="ingredient.name" />
       </button>

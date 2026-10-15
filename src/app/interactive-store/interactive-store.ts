@@ -116,13 +116,13 @@ export class InteractiveStore implements AfterViewInit {
   private decor2!: THREE.Object3D;
   private decor3!: THREE.Object3D;
   private cake!: THREE.Object3D;
+  private lips!: THREE.Object3D;
   isProductSliderOpen = signal(false);
   selectedProduct = signal<Result | null>(null);
   productsSlider = viewChild(ProductsSlider);
   sliderX = signal(0);
   sliderY = signal(0);
   modalStateService = inject(ModalState);
-  chemistryIngredientsPositioned = signal(false);
   private productLabels = new Map<
     THREE.Object3D,
     {
@@ -138,7 +138,7 @@ export class InteractiveStore implements AfterViewInit {
   storeModelGLB =
     '/three/store32.glb';
   creamModelGLB =
-    '/three/cream11.glb';
+    '/three/cream18.glb';
   orangeModelGLB =
     '/three/orange34.glb';
   gaModelGLB =
@@ -179,28 +179,67 @@ export class InteractiveStore implements AfterViewInit {
     '/three/decor3.glb';
   cakeModelGLB =
     '/three/cake14.glb';
+  lipsModelGLB =
+    '/three/lips4.glb';
   chemistryIngredientsVisible = signal(false);
+  chemistryIngredientsPositioned = signal(false);
   readonly chemistryIngredients = [
     {
       name: 'Центелла',
       image: '/three/ingredients/centella2.png',
       query: 'centella',
+      description: `Центелла азиатская (Centella Asiatica) и её производные 
+      (Madecassoside, Asiaticoside) —
+      успокаивающий растительный ингредиент, который помогает 
+      уменьшать раздражение и поддерживать восстановление кожного барьера.`,
     },
     {
       name: 'Пантенол',
       image: '/three/ingredients/b5.png',
       query: 'panthenol',
+      description: `Пантенол (Panthenol, провитамин B5) — увлажняющий и 
+      восстанавливающий компонент, который помогает поддерживать кожный 
+      барьер и уменьшать раздражение.`,
     },
     {
       name: 'Церамиды',
       image: '/three/ingredients/hexa3.png',
       query: 'ceramide',
+      description: `Церамиды (Ceramides) — липиды, естественно присутствующие 
+      в роговом слое кожи. Они укрепляют защитный барьер, уменьшают потерю 
+      влаги и помогают коже сохранять мягкость и устойчивость к раздражителям.`,
     },
     {
       name: 'Ниацинамид',
       image: '/three/ingredients/molec5.png',
       query: 'niacinamide',
+      description: `Ниацинамид (Niacinamide, витамин B3) — многофункциональный актив, 
+      который укрепляет кожный барьер, помогает регулировать выработку себума и 
+      уменьшать пигментацию.`,
     },
+  ];
+  dnaIngredientsVisible = signal(false);
+  dnaIngredientsPositioned = signal(false);
+  readonly dnaIngredients = [
+    {
+      name: 'PDRN',
+      image: '/three/ingredients/dna1.png',
+      query: 'dna',
+      description: `PDRN (Polydeoxyribonucleotide) — фрагменты ДНК, обычно получаемые 
+      из рыбного сырья, которые изучаются за способность поддерживать процессы 
+      восстановления тканей и уменьшать воспаление.`,
+    }
+  ];
+  orangeIngredientsVisible = signal(false);
+  orangeIngredientsPositioned = signal(false);
+  readonly orangeIngredients = [
+    {
+      name: 'Витамин C',
+      image: '/three/ingredients/orange.png',
+      query: 'vitamin C',
+      description: `Витамин C (Vitamin C) — антиоксидант, который помогает защищать 
+      кожу от окислительного стресса, осветлять пигментацию и поддерживать синтез коллагена.`,
+    }
   ];
   private decorInitialY = 0.3;
   private decorFloatAmplitude = 0.05;
@@ -325,6 +364,10 @@ export class InteractiveStore implements AfterViewInit {
 
     this.modalStateService.isOpenModal.set(false);
 
+    this.hideChemistryIngredients();
+    this.hideDnaIngredients();
+    this.hideOrangeIngredients();
+
     this.selectedObject = this.hoveredObject;
 
     this.selectedName.set(
@@ -340,13 +383,25 @@ export class InteractiveStore implements AfterViewInit {
       return;
     }
 
+    if (this.selectedObject === this.dna) {
+      this.showDnaIngredients();
+      this.updateSliderPosition();
+      this.productsSlider()?.getProducts(query);
+      return;
+    }
+
+    if (this.selectedObject === this.orange) {
+      this.showOrangeIngredients();
+      this.productsSlider()?.getProducts(query);
+      return;
+    }
+
     if (this.selectedObject === this.fan) {
       this.productsSlider()?.getByCountry('korea');
       this.updateSliderPosition();
       return;
     }
 
-    this.hideChemistryIngredients();
     this.updateSliderPosition();
     this.productsSlider()?.getProducts(query);
   };
@@ -368,6 +423,8 @@ export class InteractiveStore implements AfterViewInit {
     this.selectedObject = null;
     this.selectedName.set(null);
     this.hideChemistryIngredients();
+    this.hideDnaIngredients();
+    this.hideOrangeIngredients();
     this.productsSlider()?.clearResults();
 
     const targets = [
@@ -462,8 +519,8 @@ export class InteractiveStore implements AfterViewInit {
         (model) => {
           this.cream = model;
         },
-        false,
-        false, 1,
+        false, 
+        true, 0.9,
         'Увлажняющий крем', 0.5, 0.3, 0.5, 'right', -10, -20);
       this.importSceneItem(this.orangeModelGLB,
         -0.2, 0, 0.1,
@@ -627,8 +684,16 @@ export class InteractiveStore implements AfterViewInit {
         (model) => {
           this.cake = model;
         },
-        true,
+        true, 
         false, 1);
+      this.importSceneItem(this.lipsModelGLB,
+        -0.05, 0.05, -0.05,
+        2.4, 2.4, 2.4,
+        (model) => {
+          this.lips = model;
+        },
+        false,
+        true, 1);
 
       let aspectRatio = this.getAspectRatio();
       this.camera = new THREE.PerspectiveCamera(
@@ -763,6 +828,14 @@ export class InteractiveStore implements AfterViewInit {
         component.updateChemistryIngredientsPosition();
       }
 
+      if (component.dnaIngredientsVisible()) {
+        component.updateDnaIngredientsPosition();
+      }
+
+      if (component.orangeIngredientsVisible()) {
+        component.updateOrangeIngredientsPosition();
+      }
+
       component.composer.render();
       component.labelRenderer.render(
         component.scene,
@@ -876,51 +949,6 @@ export class InteractiveStore implements AfterViewInit {
           labelOffsetY
         )
       }
-    });
-  }
-
-  importCream() {
-    const loaderGLTF = new GLTFLoader();
-    loaderGLTF.load(this.creamModelGLB, (gltf: GLTF) => {
-      this.cream = gltf.scene;
-
-      this.cream.traverse((object: THREE.Object3D) => {
-        if (!(object instanceof THREE.Mesh)) return;
-
-        const materials = Array.isArray(object.material)
-          ? object.material
-          : [object.material];
-
-        materials.forEach((material) => {
-          material.side = THREE.DoubleSide;
-          material.needsUpdate = true;
-        });
-      });
-
-      this.cream.rotation.set(
-        THREE.MathUtils.degToRad(15),
-        THREE.MathUtils.degToRad(45),
-        THREE.MathUtils.degToRad(0)
-      );
-      this.cream.position.x = 0.05;
-      this.cream.position.y = -0.05;
-      this.cream.position.z = 0.2;
-      this.scene.add(this.cream);
-      this.cream.scale.set(2.4, 2.4, 2.4);
-
-      const box = new THREE.Box3().setFromObject(this.cream);
-      const center = box.getCenter(new THREE.Vector3());
-
-      this.createNewProductLabel(
-        this.cream,
-        'Увлажняющий крем',
-        0.5,
-        0.3,
-        0.5,
-        'right',
-        -10,
-        -20
-      );
     });
   }
 
@@ -1082,6 +1110,24 @@ export class InteractiveStore implements AfterViewInit {
       return;
     }
 
+    if (this.selectedObject === this.brand1) {
+      this.sliderX.set(this.sceneContainer.clientWidth / 2);
+      this.sliderY.set(this.sceneContainer.clientHeight * 0.35);
+      return;
+    }
+
+    if (this.selectedObject === this.dna) {
+      this.sliderX.set(this.sceneContainer.clientWidth / 2);
+      this.sliderY.set(this.sceneContainer.clientHeight * 0.75);
+      return;
+    }
+
+    if (this.selectedObject === this.orange) {
+      this.sliderX.set(this.sceneContainer.clientWidth / 3.5);
+      this.sliderY.set(this.sceneContainer.clientHeight * 0.55);
+      return;
+    }
+
     this.selectedObject.updateWorldMatrix(true, true);
 
     const box = new THREE.Box3().setFromObject(this.selectedObject);
@@ -1122,8 +1168,28 @@ export class InteractiveStore implements AfterViewInit {
     this.chemistryIngredientsPositioned.set(false);
   }
 
-  onIngredientClick(query: string): void {
-    this.productsSlider()?.getProducts(query);
+  showDnaIngredients() {
+    this.dnaIngredientsVisible.set(true);
+    this.updateSliderPosition();
+  }
+
+  hideDnaIngredients() {
+    this.dnaIngredientsVisible.set(false);
+    this.dnaIngredientsPositioned.set(false);
+  }
+
+  showOrangeIngredients() {
+    this.orangeIngredientsVisible.set(true);
+    this.updateSliderPosition();
+  }
+
+  hideOrangeIngredients() {
+    this.orangeIngredientsVisible.set(false);
+    this.orangeIngredientsPositioned.set(false);
+  }
+
+  onIngredientClick(data: string): void {
+    console.log(data)
   }
 
   private projectObjectPosition(
@@ -1290,6 +1356,50 @@ export class InteractiveStore implements AfterViewInit {
 
     if (!this.chemistryIngredientsPositioned()) {
       this.chemistryIngredientsPositioned.set(true);
+    }
+  }
+
+  private updateDnaIngredientsPosition(): void {
+    if (!this.dna || !this.dnaIngredientsVisible()) return;
+
+    const position = this.projectObjectPosition(this.dna);
+
+    if (!position) return;
+
+    const container = this.sceneContainer.querySelector(
+      '.dna-ingredients'
+    ) as HTMLElement | null;
+
+    if (!container) return;
+
+    container.style.left = `${position.x + 80}px`;
+    container.style.top = `${position.y - 50}px`;
+    container.style.transform = 'translate(-50%, -50%)';
+
+    if (!this.dnaIngredientsPositioned()) {
+      this.dnaIngredientsPositioned.set(true);
+    }
+  }
+
+  private updateOrangeIngredientsPosition(): void {
+    if (!this.orange || !this.orangeIngredientsVisible()) return;
+
+    const position = this.projectObjectPosition(this.orange);
+
+    if (!position) return;
+
+    const container = this.sceneContainer.querySelector(
+      '.orange-ingredients'
+    ) as HTMLElement | null;
+
+    if (!container) return;
+
+    container.style.left = `${position.x + 100}px`;
+    container.style.top = `${position.y - 80}px`;
+    container.style.transform = 'translate(-50%, -50%)';
+
+    if (!this.orangeIngredientsPositioned()) {
+      this.orangeIngredientsPositioned.set(true);
     }
   }
 
