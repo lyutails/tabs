@@ -247,6 +247,10 @@ export class InteractiveStore implements AfterViewInit {
   private decor1Delay = 0;
   private decor2Delay = 1.5;
   private decor3Delay = 3;
+  private readonly speed = 45;
+  displayedText = signal('');
+  private timer: ReturnType<typeof setTimeout> | undefined;
+  private index = 0;
 
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
@@ -348,6 +352,8 @@ export class InteractiveStore implements AfterViewInit {
   }
 
   private onCanvasClick = (): void => {
+    this.stopTyping();
+
     if (!this.hoveredObject) {
       this.closeProductSlider();
       this.modalStateService.isOpenModal.set(false);
@@ -519,7 +525,7 @@ export class InteractiveStore implements AfterViewInit {
         (model) => {
           this.cream = model;
         },
-        false, 
+        false,
         true, 0.9,
         'Увлажняющий крем', 0.5, 0.3, 0.5, 'right', -10, -20);
       this.importSceneItem(this.orangeModelGLB,
@@ -684,7 +690,7 @@ export class InteractiveStore implements AfterViewInit {
         (model) => {
           this.cake = model;
         },
-        true, 
+        true,
         false, 1);
       this.importSceneItem(this.lipsModelGLB,
         -0.05, 0.05, -0.05,
@@ -1008,7 +1014,7 @@ export class InteractiveStore implements AfterViewInit {
       this.roundPlatformPivot = pivot;
       this.attachPendingObjects();
     });
-  }  
+  }
 
   private setHighlight(
     object: THREE.Object3D,
@@ -1188,8 +1194,35 @@ export class InteractiveStore implements AfterViewInit {
     this.orangeIngredientsPositioned.set(false);
   }
 
-  onIngredientClick(data: string): void {
-    console.log(data)
+  private typeText(text: string, index = 0): void {
+    if (index >= text.length) return;
+
+    this.displayedText.update(
+      value => value + text[index]
+    );
+
+    this.timer = setTimeout(
+      () => this.typeText(text, index + 1),
+      25
+    );
+  }
+
+  onIngredientClick(description: string): void {
+    if (this.timer !== undefined) {
+      clearTimeout(this.timer);
+    }
+
+    this.displayedText.set('');
+    this.typeText(description);
+  } 
+  
+  private stopTyping(): void {
+    if (this.timer !== undefined) {
+      clearTimeout(this.timer);
+      this.timer = undefined;
+    }
+
+    this.displayedText.set('');
   }
 
   private projectObjectPosition(
@@ -1420,5 +1453,11 @@ export class InteractiveStore implements AfterViewInit {
     }
 
     this.pendingPlatformObjects = [];
+  }
+
+  ngOnDestroy(): void {
+    if (this.timer !== undefined) {
+      clearTimeout(this.timer);
+    }
   }
 }
