@@ -13,6 +13,8 @@ https://beauty-tabs.vercel.app/3dstore
 
 <img width="1176" height="600" alt="image" src="https://github.com/user-attachments/assets/66aabf40-d10c-4c91-a64e-a3bbeba31f17" />
 
+https://www.figma.com/design/kUSnJsvX57rr3Jl1a5LLEs/3DStore
+
 ## Logic:
 
 <img width="1586" height="1824" alt="tabs drawio" src="https://github.com/user-attachments/assets/f8720f06-3b09-4425-b450-22198e9476cd" />
