@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, ElementRef, inject, signal, ViewChild } from '@angular/core';
 import { BRANDS_CODES } from '../../search/brands.constants';
 import { SearchService } from '../../search/service/search-service';
 import { finalize } from 'rxjs';
@@ -18,6 +18,10 @@ export class ProductsSlider {
   protected results = signal<Result[]>([]);
   currentResult: Result | null = null;
   modalStateService = inject(ModalState);
+  @ViewChild('productsTrack')
+  private productsTrack!: ElementRef<HTMLElement>;
+  canScrollLeft = signal(false);
+  canScrollRight = signal(false);
 
   getProducts(value: string) {
     const brands = Object.keys(BRANDS_CODES);
@@ -33,6 +37,10 @@ export class ProductsSlider {
         if (products.length > 0) {
           this.results.set(products);
           this.searchStore.searchResults.set(products);
+
+          requestAnimationFrame(() => {
+            this.updateScrollButtons();
+          });
         }
       });
   }
@@ -51,6 +59,10 @@ export class ProductsSlider {
         if (products.length > 0) {
           this.results.set(products);
           this.searchStore.searchResults.set(products);
+
+          requestAnimationFrame(() => {
+            this.updateScrollButtons();
+          });
         }
       });
   }
@@ -62,5 +74,37 @@ export class ProductsSlider {
 
   clearResults(): void {
     this.results.set([]);
+  }
+
+  updateScrollButtons(): void {
+    const track = this.productsTrack?.nativeElement;
+
+    if (!track) return;
+
+    const maxScrollLeft = track.scrollWidth - track.clientWidth;
+
+    this.canScrollLeft.set(track.scrollLeft > 1);
+    this.canScrollRight.set(
+      maxScrollLeft > 1 &&
+      track.scrollLeft < maxScrollLeft - 1
+    );
+  }
+
+  scrollProducts(direction: -1 | 1): void {
+    const track = this.productsTrack?.nativeElement;
+
+    if (!track) return;
+
+    const firstItem = track.firstElementChild as HTMLElement | null;
+
+    if (!firstItem) return;
+
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    const amount = (firstItem.getBoundingClientRect().width + gap) * 2;
+
+    track.scrollBy({
+      left: direction * amount,
+      behavior: 'smooth',
+    });
   }
 }

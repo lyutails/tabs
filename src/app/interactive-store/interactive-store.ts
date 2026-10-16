@@ -258,7 +258,6 @@ export class InteractiveStore implements AfterViewInit {
   displayedText = signal('');
   private timer: ReturnType<typeof setTimeout> | undefined;
   private index = 0;
-
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
 
