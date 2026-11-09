@@ -214,6 +214,48 @@ p {
     margin: 0;
 }
 
+.product-callout {
+    display: flex;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    color: #292124;
+    font-size: 14px;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.product-callout__dot {
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
+    border-radius: 50%;
+    background: #d12646;
+    box-shadow: 0 0 0 3px rgb(209 38 70 / 18%);
+}
+
+.product-callout__line {
+    width: 44px;
+    height: 1px;
+    flex: 0 0 44px;
+    background: #d12646;
+}
+
+.product-callout__text {
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: rgb(255 255 255 / 92%);
+}
+
+.product-callout {
+    display: flex;
+    align-items: center;
+
+    &--left {
+        flex-direction: row-reverse;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 1200px) {
     tabs-buy {
         flex-direction: column;

@@ -37,4 +37,6 @@ export const BRANDS_CODES: Record<string, number> = {
     thalgo: 343,
     uriage: 701,
     valmont: 300,
+    cuskin: 614,
+    skin1004: 615,
 }

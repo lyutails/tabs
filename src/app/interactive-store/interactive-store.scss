@@ -1,0 +1,325 @@
+.scene-container {
+    position: relative;
+    width: 90vw;
+}
+
+.store {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 0.6;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+tabs-products-slider {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, calc(-100% - 12px));
+    display: flex;
+}
+
+.slider-hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 70;
+}
+
+.product-callout {
+    display: flex;
+    align-items: center;
+
+    &--left {
+        flex-direction: row-reverse;
+    }
+}
+
+.chemistry-ingredients {
+    position: absolute;
+    z-index: 10;
+    width: 280px;
+    height: 150px;
+    pointer-events: none;
+    display: none;
+
+    &--positioned {
+        display: block;
+    }
+
+    &__item {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 3px solid rgba(252, 253, 252, 0.9);
+        background:
+            radial-gradient(circle,
+                rgba(var(--ingredient-color), 0.1) 0%,
+                rgba(var(--ingredient-color), 0.2) 55%,
+                rgba(var(--ingredient-color), 0.3) 100%);
+
+        box-shadow: 0 0 3px rgba(var(--ingredient-color), 0.8),
+            0 0 5px rgba(var(--ingredient-color), 0.6),
+            0 0 12px rgba(var(--ingredient-color), 0.5),
+            0 0 18px rgba(var(--ingredient-color), 0.3),
+            inset 0 0 12px rgba(var(--ingredient-color), 0.15);
+
+        backdrop-filter: blur(5px);
+        cursor: pointer;
+        pointer-events: auto;
+        transition:
+            box-shadow 250ms ease,
+            background 250ms ease,
+            transform 250ms ease;
+        z-index: 100;
+
+        // Внутренний светящийся контур
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border: 2px solid rgba(252, 253, 252, 0.7);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        img {
+            position: relative;
+            z-index: 1;
+
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            filter: drop-shadow(0 0 4px rgba(var(--ingredient-color), 0.8)) drop-shadow(0 0 8px rgba(var(--ingredient-color), 0.5));
+        }
+
+        &:hover {
+            box-shadow:
+                0 0 8px rgba(var(--ingredient-color), 0.8),
+                0 0 16px rgba(var(--ingredient-color), 0.5),
+                0 0 24px rgba(var(--ingredient-color), 0.3),
+                inset 0 0 16px rgba(var(--ingredient-color), 0.2);
+        }
+
+        &:nth-child(1) {
+            --ingredient-color: 0, 255, 96;
+            transform: translate(-50%, -50%) translate(-105px, 25px);
+        }
+
+        &:nth-child(2) {
+            --ingredient-color: 255, 180, 60;
+            transform: translate(-50%, -50%) translate(-55px, -30px);
+        }
+
+        &:nth-child(3) {
+            --ingredient-color: 255, 100, 180;
+            transform: translate(-50%, -50%) translate(25px, -30px);
+        }
+
+        &:nth-child(4) {
+            --ingredient-color: 80, 180, 255;
+            transform: translate(-50%, -50%) translate(85px, 25px);
+        }
+    }
+}
+
+.dna-ingredients {
+    position: absolute;
+    z-index: 10;
+    width: 280px;
+    height: 150px;
+    pointer-events: none;
+    display: none;
+
+    &--positioned {
+        display: block;
+    }
+
+    &__item {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 3px solid rgba(252, 253, 252, 0.9);
+        background:
+            radial-gradient(circle,
+                rgba(var(--ingredient-color), 0.1) 0%,
+                rgba(var(--ingredient-color), 0.2) 55%,
+                rgba(var(--ingredient-color), 0.3) 100%);
+
+        box-shadow: 0 0 3px rgba(var(--ingredient-color), 0.8),
+            0 0 5px rgba(var(--ingredient-color), 0.6),
+            0 0 12px rgba(var(--ingredient-color), 0.5),
+            0 0 18px rgba(var(--ingredient-color), 0.3),
+            inset 0 0 12px rgba(var(--ingredient-color), 0.15);
+
+        backdrop-filter: blur(5px);
+        cursor: pointer;
+        pointer-events: auto;
+        transition:
+            box-shadow 250ms ease,
+            background 250ms ease,
+            transform 250ms ease;
+        z-index: 100;
+
+        // Внутренний светящийся контур
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border: 2px solid rgba(252, 253, 252, 0.7);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        img {
+            position: relative;
+            z-index: 1;
+
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            filter: drop-shadow(0 0 4px rgba(var(--ingredient-color), 0.8)) drop-shadow(0 0 8px rgba(var(--ingredient-color), 0.5));
+        }
+
+        &:hover {
+            box-shadow:
+                0 0 8px rgba(var(--ingredient-color), 0.8),
+                0 0 16px rgba(var(--ingredient-color), 0.5),
+                0 0 24px rgba(var(--ingredient-color), 0.3),
+                inset 0 0 16px rgba(var(--ingredient-color), 0.2);
+        }
+
+        &:nth-child(1) {
+            --ingredient-color: 255, 113, 106;
+            transform: translate(-50%, -50%) translate(-105px, 25px);
+        }
+    }
+}
+
+.orange-ingredients {
+    position: absolute;
+    z-index: 10;
+    width: 280px;
+    height: 150px;
+    pointer-events: none;
+    display: none;
+
+    &--positioned {
+        display: block;
+    }
+
+    &__item {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 3px solid rgba(252, 253, 252, 0.9);
+        background:
+            radial-gradient(circle,
+                rgba(var(--ingredient-color), 0.1) 0%,
+                rgba(var(--ingredient-color), 0.2) 55%,
+                rgba(var(--ingredient-color), 0.3) 100%);
+
+        box-shadow: 0 0 3px rgba(var(--ingredient-color), 0.8),
+            0 0 5px rgba(var(--ingredient-color), 0.6),
+            0 0 12px rgba(var(--ingredient-color), 0.5),
+            0 0 18px rgba(var(--ingredient-color), 0.3),
+            inset 0 0 12px rgba(var(--ingredient-color), 0.15);
+
+        backdrop-filter: blur(5px);
+        cursor: pointer;
+        pointer-events: auto;
+        transition:
+            box-shadow 250ms ease,
+            background 250ms ease,
+            transform 250ms ease;
+        z-index: 100;
+
+        // Внутренний светящийся контур
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border: 2px solid rgba(252, 253, 252, 0.7);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        img {
+            position: relative;
+            z-index: 1;
+
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            filter: drop-shadow(0 0 4px rgba(var(--ingredient-color), 0.8)) drop-shadow(0 0 8px rgba(var(--ingredient-color), 0.5));
+        }
+
+        &:hover {
+            box-shadow:
+                0 0 8px rgba(var(--ingredient-color), 0.8),
+                0 0 16px rgba(var(--ingredient-color), 0.5),
+                0 0 24px rgba(var(--ingredient-color), 0.3),
+                inset 0 0 16px rgba(var(--ingredient-color), 0.2);
+        }
+
+        &:nth-child(1) {
+            --ingredient-color: 255, 84, 0;
+            transform: translate(-50%, -50%) translate(-105px, 25px);
+        }
+    }
+}
+
+.ingredient_self-typed-text {
+    --ingredient-color: 255, 84, 0;
+    position: absolute;
+    filter:
+        drop-shadow(0 0 4px rgba(var(--ingredient-color), 0.8)) drop-shadow(0 0 8px rgba(var(--ingredient-color), 0.5));
+    text-align: center;
+    width: 50%;
+    transform: translate(50%, -50%);
+    top: 0;
+    color: black;
+}
+
+.ingredients_text-close {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

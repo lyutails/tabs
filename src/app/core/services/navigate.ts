@@ -20,6 +20,9 @@ export class Navigate {
                 case 'profile':
                     this.router.navigate(['profile']);
                     break;
+                case '3dstore':
+                    this.router.navigate(['3dstore']);
+                    break;
                 default:
                     this.router.navigate(['']);
             }
@@ -38,6 +41,9 @@ export class Navigate {
                     break;
                 case 3:
                     this.router.navigate(['profile']);
+                    break;
+                case 4:
+                    this.router.navigate(['3dstore']);
                     break;
                 default:
                     this.router.navigate(['']);

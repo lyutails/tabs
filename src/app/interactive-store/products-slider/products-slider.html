@@ -1,0 +1,31 @@
+<div class="products-slider">
+  <button
+    class="products-slider__arrow products-slider__arrow--left"
+    type="button"
+    aria-label="Прокрутить товары влево"
+    [disabled]="!canScrollLeft()"
+    (click)="scrollProducts(-1)"
+  >
+    <span class="material-symbols-outlined"> arrow_back_ios </span>
+  </button>
+
+  <div class="slider_wrapper" #productsTrack (scroll)="updateScrollButtons()">
+    @for (result of results(); track result) {
+      <div class="slider_card" (click)="openProductModal(result)">
+        <div>{{ result.brand.name }}</div>
+
+        <img class="slider_card-image" [src]="result.listingImage.url" [alt]="result.brand.name" />
+      </div>
+    }
+  </div>
+
+  <button
+    class="products-slider__arrow products-slider__arrow--right"
+    type="button"
+    aria-label="Прокрутить товары вправо"
+    [disabled]="!canScrollRight()"
+    (click)="scrollProducts(1)"
+  >
+    <span class="material-symbols-outlined"> arrow_forward_ios </span>
+  </button>
+</div>

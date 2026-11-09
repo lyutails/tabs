@@ -32,6 +32,12 @@ export const routes: Routes = [
         title: 'Tabs Editor'
     },
     {
+        path: '3dstore',
+        loadComponent: () =>
+            import('./interactive-store/interactive-store').then(m => m.InteractiveStore),
+        title: 'Tabs Editor'
+    },
+    {
         path: '**',
         loadComponent: () =>
             import('./core/not-found/not-found').then(m => m.NotFound),
