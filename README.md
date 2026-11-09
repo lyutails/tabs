@@ -9,6 +9,7 @@ Created using Angular v22, Signal Forms with validation, signals for state manag
 
 [3DStore](https://beauty-tabs.vercel.app/3dstore)
 <img width="1292" height="748" alt="image" src="https://github.com/user-attachments/assets/44f0b4c7-9652-4381-a1c9-c8fc96eb551b" />
+Concept: https://www.figma.com/design/kUSnJsvX57rr3Jl1a5LLEs/3DStore
 
 ## Logic:
 
