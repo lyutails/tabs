@@ -7,6 +7,9 @@ Created using Angular v22, Signal Forms with validation, signals for state manag
 
 <img width="1314" height="1049" alt="tabs_arrow1" src="https://github.com/user-attachments/assets/9714e739-606e-479d-82ff-e7dc535692c9" />
 
+[3DStore](https://beauty-tabs.vercel.app/3dstore)
+<img width="1292" height="748" alt="image" src="https://github.com/user-attachments/assets/44f0b4c7-9652-4381-a1c9-c8fc96eb551b" />
+
 ## Logic:
 
 <img width="1586" height="1824" alt="tabs drawio" src="https://github.com/user-attachments/assets/f8720f06-3b09-4425-b450-22198e9476cd" />
