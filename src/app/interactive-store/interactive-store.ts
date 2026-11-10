@@ -481,7 +481,7 @@ export class InteractiveStore implements AfterViewInit {
       loaderGLTF.setDRACOLoader(dracoLoader);
 
       loaderGLTF.load(this.storeModelGLB, (gltf: GLTF) => {
-        this.store = gltf.scene.children[0];
+        this.store = gltf.scene;
         this.store.rotation.set(
           THREE.MathUtils.degToRad(15),
           THREE.MathUtils.degToRad(45),
@@ -999,7 +999,11 @@ export class InteractiveStore implements AfterViewInit {
       const pivot = new THREE.Group();
       pivot.position.copy(center);
 
-      pivot.rotation.copy(this.store.rotation);
+      pivot.rotation.set(
+        THREE.MathUtils.degToRad(15),
+        THREE.MathUtils.degToRad(45),
+        0
+      );
 
       this.scene.add(pivot);
 
