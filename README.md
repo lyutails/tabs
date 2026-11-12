@@ -3,20 +3,20 @@
 Created using Angular v22, Signal Forms with validation, signals for state managing.
 
 ## Deploy: 
-beautyTABS
+beautyTABS<br>
 https://beauty-tabs.vercel.app/
 
 <img width="1314" height="1049" alt="tabs_arrow1" src="https://github.com/user-attachments/assets/9714e739-606e-479d-82ff-e7dc535692c9" />
 
-#3DStore
+3DStore<br>
 https://beauty-tabs.vercel.app/3dstore
 
 <img width="1279" height="802" alt="3dstore2" src="https://github.com/user-attachments/assets/fc466898-ad07-4d0a-ba28-ed20279a0238" />
 
 Concept: https://www.figma.com/design/kUSnJsvX57rr3Jl1a5LLEs/3DStore
 
-#Lab
-https://beauty-tabs.vercel.app/lab
+Lab<br>
+https://beauty-tabs.vercel.app/lab<br>
 <img width="506" height="666" alt="lab3" src="https://github.com/user-attachments/assets/a17a709f-28d7-42ac-a4c8-cbd80d7eb2f8" />
 
 
