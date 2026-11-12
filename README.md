@@ -8,15 +8,16 @@ https://beauty-tabs.vercel.app/
 
 <img width="1314" height="1049" alt="tabs_arrow1" src="https://github.com/user-attachments/assets/9714e739-606e-479d-82ff-e7dc535692c9" />
 
-3DStore
+#3DStore
 https://beauty-tabs.vercel.app/3dstore
 
 <img width="1279" height="802" alt="3dstore2" src="https://github.com/user-attachments/assets/fc466898-ad07-4d0a-ba28-ed20279a0238" />
 
 Concept: https://www.figma.com/design/kUSnJsvX57rr3Jl1a5LLEs/3DStore
 
-Lab
-<img width="354" height="499" alt="lab1" src="https://github.com/user-attachments/assets/dc66251b-beae-4d22-8006-0d9345fee0fa" />
+#Lab
+https://beauty-tabs.vercel.app/lab
+<img width="556" height="499" alt="lab2" src="https://github.com/user-attachments/assets/39438062-19a5-4c59-9a9b-3c6d23d7cb72" />
 
 ## Logic:
 
