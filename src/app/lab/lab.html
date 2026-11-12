@@ -1,7 +1,6 @@
 <ng-template #ingredientsDescription>
   @if (displayedText().length !== 0) {
-    <div class="ingredient_self-typed-text"
-      [style.--ingredient-color]="ingredientTextColor()">
+    <div class="ingredient_self-typed-text" [style.--ingredient-color]="ingredientTextColor()">
       <span
         class="material-symbols-outlined ingredients_text-close"
         aria-label="Закрыть описание"
@@ -24,17 +23,15 @@
       class="chemistry-ingredients"
       [class.chemistry-ingredients--positioned]="chemistryIngredientsPositioned()"
     >
-      @for (ingredient of chemistryIngredients; track ingredient.name; let i = $index) {
-        <button
-          type="button"
+      @for (ingredient of labIngredients; track ingredient.name) {
+        <div
           class="chemistry-ingredients__item"
-          [style.--ingredient-index]="i"
+          role="img"
           [attr.aria-label]="ingredient.name"
-          [title]="ingredient.name"
-          (click)="onIngredientClick(ingredient.description, ingredient.color, $event)"
+          [style.--ingredient-color]="ingredient.color"
         >
           <img [src]="ingredient.image" [alt]="ingredient.name" />
-        </button>
+        </div>
       }
     </div>
   }
@@ -48,7 +45,7 @@
           [style.--ingredient-index]="i"
           [attr.aria-label]="ingredient.name"
           [title]="ingredient.name"
-          (click)="onIngredientClick(ingredient.description,  ingredient.color,$event)"
+          (click)="onIngredientClick(ingredient.description, ingredient.color, $event)"
         >
           <img [src]="ingredient.image" [alt]="ingredient.name" />
         </button>
@@ -68,7 +65,7 @@
           [style.--ingredient-index]="i"
           [attr.aria-label]="ingredient.name"
           [title]="ingredient.name"
-          (click)="onIngredientClick(ingredient.description,  ingredient.color,$event)"
+          (click)="onIngredientClick(ingredient.description, ingredient.color, $event)"
         >
           <img [src]="ingredient.image" [alt]="ingredient.name" />
         </button>
@@ -76,4 +73,3 @@
     </div>
   }
 </div>
-
