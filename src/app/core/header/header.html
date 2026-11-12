@@ -31,6 +31,14 @@
       <span class="material-symbols-outlined store">local_convenience_store</span>
     </button>
     <button
+      class="header_button lab"
+      [style.background]="'transparent'"
+      (click)="navigate('lab')"
+      aria-label="ingredients lab"
+    >
+      <span class="material-symbols-outlined lab">experiment</span>
+    </button>
+    <button
       class="header_button"
       [style.background]="'transparent'"
       (click)="navigate('search')"

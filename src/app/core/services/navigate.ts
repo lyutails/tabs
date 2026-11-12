@@ -23,6 +23,9 @@ export class Navigate {
                 case '3dstore':
                     this.router.navigate(['3dstore']);
                     break;
+                case 'lab':
+                    this.router.navigate(['lab']);
+                    break;
                 default:
                     this.router.navigate(['']);
             }
@@ -44,6 +47,9 @@ export class Navigate {
                     break;
                 case 4:
                     this.router.navigate(['3dstore']);
+                    break;
+                case 5:
+                    this.router.navigate(['lab']);
                     break;
                 default:
                     this.router.navigate(['']);

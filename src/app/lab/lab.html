@@ -1,0 +1,79 @@
+<ng-template #ingredientsDescription>
+  @if (displayedText().length !== 0) {
+    <div class="ingredient_self-typed-text"
+      [style.--ingredient-color]="ingredientTextColor()">
+      <span
+        class="material-symbols-outlined ingredients_text-close"
+        aria-label="Закрыть описание"
+        (click)="closeIngredientText($event)"
+      >
+        close
+      </span>
+
+      <p>{{ displayedText() }}</p>
+    </div>
+  }
+</ng-template>
+<div #sceneContainer class="scene-container" (click)="onSceneClick($event)">
+  @if (isBrowser) {
+    <canvas #canvas id="canvas" class="store"></canvas>
+  }
+  @if (chemistryIngredientsVisible()) {
+    <ng-container *ngTemplateOutlet="ingredientsDescription"></ng-container>
+    <div
+      class="chemistry-ingredients"
+      [class.chemistry-ingredients--positioned]="chemistryIngredientsPositioned()"
+    >
+      @for (ingredient of chemistryIngredients; track ingredient.name; let i = $index) {
+        <button
+          type="button"
+          class="chemistry-ingredients__item"
+          [style.--ingredient-index]="i"
+          [attr.aria-label]="ingredient.name"
+          [title]="ingredient.name"
+          (click)="onIngredientClick(ingredient.description, ingredient.color, $event)"
+        >
+          <img [src]="ingredient.image" [alt]="ingredient.name" />
+        </button>
+      }
+    </div>
+  }
+  @if (dnaIngredientsVisible()) {
+    <ng-container *ngTemplateOutlet="ingredientsDescription"></ng-container>
+    <div class="dna-ingredients" [class.dna-ingredients--positioned]="dnaIngredientsPositioned()">
+      @for (ingredient of dnaIngredients; track ingredient.name; let i = $index) {
+        <button
+          type="button"
+          class="dna-ingredients__item"
+          [style.--ingredient-index]="i"
+          [attr.aria-label]="ingredient.name"
+          [title]="ingredient.name"
+          (click)="onIngredientClick(ingredient.description,  ingredient.color,$event)"
+        >
+          <img [src]="ingredient.image" [alt]="ingredient.name" />
+        </button>
+      }
+    </div>
+  }
+  @if (orangeIngredientsVisible()) {
+    <ng-container *ngTemplateOutlet="ingredientsDescription"></ng-container>
+    <div
+      class="orange-ingredients"
+      [class.orange-ingredients--positioned]="orangeIngredientsPositioned()"
+    >
+      @for (ingredient of orangeIngredients; track ingredient.name; let i = $index) {
+        <button
+          type="button"
+          class="orange-ingredients__item"
+          [style.--ingredient-index]="i"
+          [attr.aria-label]="ingredient.name"
+          [title]="ingredient.name"
+          (click)="onIngredientClick(ingredient.description,  ingredient.color,$event)"
+        >
+          <img [src]="ingredient.image" [alt]="ingredient.name" />
+        </button>
+      }
+    </div>
+  }
+</div>
+
