@@ -97,7 +97,7 @@ export class Lab {
       offsetX: number;
       offsetY: number;
     }
-    >();
+  >();
   private chemistry!: THREE.Object3D;
   private chemistryPivot!: THREE.Group;
   private bubbleOne!: THREE.Object3D;
@@ -198,7 +198,8 @@ export class Lab {
   @ViewChild('sceneContainer')
   private sceneContainerRef!: ElementRef<HTMLElement>;
   private chemistryRotationSpeed = 0.005;
-
+  private resizeObserver?: ResizeObserver;
+  private chemistryHorizontalOffset = 0;
   private get sceneContainer(): HTMLElement {
     return this.sceneContainerRef.nativeElement;
   }
@@ -353,13 +354,19 @@ export class Lab {
           this.chemistry = model;
 
           model.updateMatrixWorld(true);
+
           const box = new THREE.Box3().setFromObject(model);
           const center = box.getCenter(new THREE.Vector3());
 
+          this.chemistryHorizontalOffset = -center.x;
+
           this.chemistryPivot = new THREE.Group();
-          this.chemistryPivot.position.copy(center);
+          this.chemistryPivot.position.set(center.x, center.y, center.z);
+
           this.scene.add(this.chemistryPivot);
           this.chemistryPivot.attach(model);
+
+          this.chemistryPivot.position.x = 0;
         },
         true,
         true, 0.6,
@@ -374,6 +381,7 @@ export class Lab {
           this.bubbleOne = model;
           this.scene.add(model);
           this.bubbleInitialY = model.position.y;
+          model.position.x += this.chemistryHorizontalOffset;
         },
         true,
         true, 0.6,
@@ -388,6 +396,7 @@ export class Lab {
           this.bubbleTwo = model;
           this.scene.add(model);
           this.bubbleTwoInitialY = model.position.y;
+          model.position.x += this.chemistryHorizontalOffset;
         },
         true,
         true, 0.6,
@@ -402,6 +411,7 @@ export class Lab {
           this.bubbleThree = model;
           this.scene.add(model);
           this.bubbleThreeInitialY = model.position.y;
+          model.position.x += this.chemistryHorizontalOffset;
         },
         true,
         true, 0.6,
@@ -416,6 +426,7 @@ export class Lab {
         this.farClippingPlane
       );
       this.camera.position.z = this.cameraZ;
+      this.camera.lookAt(0, 0, 0);
 
       this.ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       this.scene.add(this.ambientLight);
@@ -461,7 +472,8 @@ export class Lab {
     this.renderer.setPixelRatio(devicePixelRatio);
     this.renderer.setSize(
       this.canvas.clientWidth,
-      this.canvas.clientHeight
+      this.canvas.clientHeight,
+      false
     );
 
     this.composer = new EffectComposer(this.renderer);
@@ -525,8 +537,8 @@ export class Lab {
       if (component.bubbleThree) {
         component.bubbleThree.position.y =
           component.bubbleThreeInitialY +
-        Math.sin(time * component.bubbleThreeFloatSpeed + 3.8) *
-        component.bubbleThreeFloatAmplitude;
+          Math.sin(time * component.bubbleThreeFloatSpeed + 3.8) *
+          component.bubbleThreeFloatAmplitude;
       }
 
       // if (component.bubbleTwo) {
@@ -588,7 +600,16 @@ export class Lab {
       this.createLabelRenderer();
       this.startRenderingLoop();
       this.createControls();
-      this.canvas.addEventListener('pointermove', this.onPointerMove);
+
+      this.resizeObserver = new ResizeObserver(this.resizeScene);
+      this.resizeObserver.observe(this.sceneContainer);
+
+      this.resizeScene();
+
+      this.canvas.addEventListener(
+        'pointermove',
+        this.onPointerMove
+      );
     }
   }
 
@@ -1002,9 +1023,32 @@ export class Lab {
     }
   }
 
+  private resizeScene = (): void => {
+    const width = this.canvas.clientWidth;
+    const height = this.canvas.clientHeight;
+
+    if (!width || !height) return;
+
+    this.camera.aspect = width / height;
+    this.camera.updateProjectionMatrix();
+
+    this.renderer.setSize(width, height, false);
+
+    this.composer.setSize(width, height);
+
+    this.labelRenderer.setSize(width, height);
+  };
+
   ngOnDestroy(): void {
     if (this.timer !== undefined) {
       clearTimeout(this.timer);
     }
+
+    this.resizeObserver?.disconnect();
+
+    this.canvas.removeEventListener(
+      'pointermove',
+      this.onPointerMove
+    );
   }
 }
