@@ -15,6 +15,9 @@ https://beauty-tabs.vercel.app/3dstore
 
 Concept: https://www.figma.com/design/kUSnJsvX57rr3Jl1a5LLEs/3DStore
 
+Lab
+<img width="354" height="499" alt="lab1" src="https://github.com/user-attachments/assets/dc66251b-beae-4d22-8006-0d9345fee0fa" />
+
 ## Logic:
 
 <img width="1586" height="1824" alt="tabs drawio" src="https://github.com/user-attachments/assets/f8720f06-3b09-4425-b450-22198e9476cd" />
