@@ -115,12 +115,12 @@ export class Lab {
   chemistryModelGLB =
     '/three/chemistry12.glb';
   bubbleOneModelGLB =
-    '/three/bubble_1.glb';
+    '/three/bubble_1_1.glb';
   bubbleTwoModelGLB =
-    '/three/bubble_2.glb';
+    '/three/bubble_2_1.glb';
   bubbleThreeModelGLB =
-    '/three/bubble_3.glb';
-  chemistryIngredientsVisible = signal(false);
+    '/three/bubble_3_1.glb';
+  chemistryIngredientsVisible = signal(true);
   chemistryIngredientsPositioned = signal(false);
   readonly chemistryIngredients = [
     {
@@ -187,6 +187,11 @@ export class Lab {
     }
   ];
   ingredientTextColor = signal('255, 84, 0');
+  readonly labIngredients = [
+    ...this.chemistryIngredients,
+    ...this.dnaIngredients,
+    ...this.orangeIngredients,
+  ];
   private readonly speed = 45;
   displayedText = signal('');
   private timer: ReturnType<typeof setTimeout> | undefined;
@@ -358,7 +363,7 @@ export class Lab {
         },
         true,
         true, 0.6,
-        'Repair', 0.5, 0.8, 0.5, 'right', 0, -10
+        'Lab', 0.5, 0.8, 0.5, 'right', 0, -10
       );
 
       this.importSceneItem(
@@ -372,7 +377,7 @@ export class Lab {
         },
         true,
         true, 0.6,
-        'Repair', 0.5, 0.8, 0.5, 'right', 0, -10
+        '', 0.5, 0.8, 0.5, 'right', 0, -10
       );
 
       this.importSceneItem(
@@ -386,7 +391,7 @@ export class Lab {
         },
         true,
         true, 0.6,
-        'Repair', 0.5, 0.8, 0.5, 'right', 0, -10
+        '', 0.5, 0.8, 0.5, 'right', 0, -10
       );
 
       this.importSceneItem(
@@ -400,7 +405,7 @@ export class Lab {
         },
         true,
         true, 0.6,
-        'Repair', 0.5, 0.8, 0.5, 'right', 0, -10
+        '', 0.5, 0.8, 0.5, 'right', 0, -10
       );
 
       let aspectRatio = this.getAspectRatio();
@@ -412,30 +417,30 @@ export class Lab {
       );
       this.camera.position.z = this.cameraZ;
 
-      this.ambientLight = new THREE.AmbientLight(0xffffff);
+      this.ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       this.scene.add(this.ambientLight);
 
-      this.directionalLight = new THREE.DirectionalLight(0xfffecc, 0.6);
-      this.directionalLight.position.set(0, 1, 0);
+      this.directionalLight = new THREE.DirectionalLight(0xcbff79, 0.6);
+      this.directionalLight.position.set(0, 5, 0);
       this.directionalLight.castShadow = true;
       this.scene.add(this.directionalLight);
-      this.lightOne = new THREE.PointLight(0xffa4d3, 80);
-      this.lightOne.position.set(1, 3, 5);
+      this.lightOne = new THREE.PointLight(0xffa4d3, 60);
+      this.lightOne.position.set(-3, 3, 5);
       this.scene.add(this.lightOne);
-      this.lightTwo = new THREE.PointLight(0xe7ffae, 60);
-      this.lightTwo.position.set(5, -5, 0);
+      this.lightTwo = new THREE.PointLight(0xA6FF70, 50);
+      this.lightTwo.position.set(3, -1, 1);
       this.scene.add(this.lightTwo);
-      this.lightThree = new THREE.PointLight(0xd4ff90, 60);
-      this.lightThree.position.set(1, 5, 1);
+      this.lightThree = new THREE.PointLight(0xd4ff90, 40);
+      this.lightThree.position.set(1, 3, 1);
       this.scene.add(this.lightThree);
-      this.lightFour = new THREE.PointLight(0xc9ff72, 40);
-      this.lightFour.position.set(3, -5, 2);
+      this.lightFour = new THREE.PointLight(0xc9ff72, 50);
+      this.lightFour.position.set(5, -2, 1);
       this.scene.add(this.lightFour);
-      this.lightFive = new THREE.PointLight(0xff8ac6, 30);
-      this.lightFive.position.set(0, 8, 0);
+      this.lightFive = new THREE.PointLight(0xff8ac6, 40);
+      this.lightFive.position.set(0, 3, -1);
       this.scene.add(this.lightFive);
-      this.lightSix = new THREE.PointLight(0xff8dc0, 50);
-      this.lightSix.position.set(-3, 1, 6);
+      this.lightSix = new THREE.PointLight(0xff8dc0, 30);
+      this.lightSix.position.set(-3, 1, 5);
       this.scene.add(this.lightSix);
     }
   }
@@ -558,7 +563,7 @@ export class Lab {
     );
 
     this.controls.enableRotate = false;
-    this.controls.enableZoom = true;
+    this.controls.enableZoom = false;
     this.controls.enablePan = false;
     this.controls.autoRotate = false;
 
@@ -583,9 +588,7 @@ export class Lab {
       this.createLabelRenderer();
       this.startRenderingLoop();
       this.createControls();
-
       this.canvas.addEventListener('pointermove', this.onPointerMove);
-      this.canvas.addEventListener('click', this.onCanvasClick);
     }
   }
 
@@ -980,7 +983,7 @@ export class Lab {
   private updateChemistryIngredientsPosition(): void {
     if (!this.chemistry || !this.chemistryIngredientsVisible()) return;
 
-    const position = this.projectObjectPosition(this.chemistry);
+    const position = this.projectObjectPosition(this.chemistry, false);
 
     if (!position) return;
 
@@ -991,7 +994,7 @@ export class Lab {
     if (!container) return;
 
     container.style.left = `${position.x}px`;
-    container.style.top = `${position.y - 30}px`;
+    container.style.top = `${position.y}px`;
     container.style.transform = 'translate(-50%, -50%)';
 
     if (!this.chemistryIngredientsPositioned()) {
