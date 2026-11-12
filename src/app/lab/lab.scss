@@ -1,0 +1,14 @@
+.scene-container {
+    position: relative;
+    width: 90vw;
+}
+
+.store {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 0.6;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

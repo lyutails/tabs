@@ -11,31 +11,37 @@ export const routes: Routes = [
         path: 'profile',
         loadComponent: () =>
             import('./profile/profile').then(m => m.Profile),
-        title: 'Tabs Editor'
+        title: 'Profile'
     },
     {
         path: 'search',
         loadComponent: () =>
             import('./search/search').then(m => m.Search),
-        title: 'Tabs Editor'
+        title: 'Search'
     },
     {
         path: 'liked',
         loadComponent: () =>
             import('./found/found').then(m => m.Found),
-        title: 'Tabs Editor'
+        title: 'Liked Products'
     },
     {
         path: 'buy',
         loadComponent: () =>
             import('./buy/buy').then(m => m.Buy),
-        title: 'Tabs Editor'
+        title: 'Buy Products'
     },
     {
         path: '3dstore',
         loadComponent: () =>
             import('./interactive-store/interactive-store').then(m => m.InteractiveStore),
-        title: 'Tabs Editor'
+        title: '3D Interactive Store'
+    },
+    {
+        path: 'lab',
+        loadComponent: () =>
+            import('./lab/lab').then(m => m.Lab),
+        title: 'Ingredients Lab'
     },
     {
         path: '**',
