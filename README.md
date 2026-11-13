@@ -18,6 +18,7 @@ Concept: https://www.figma.com/design/kUSnJsvX57rr3Jl1a5LLEs/3DStore
 Lab<br>
 https://beauty-tabs.vercel.app/lab<br>
 <img width="506" height="666" alt="lab3" src="https://github.com/user-attachments/assets/a17a709f-28d7-42ac-a4c8-cbd80d7eb2f8" />
+<img width="403" height="438" alt="image" src="https://github.com/user-attachments/assets/e51f885e-62da-42a9-8acf-5b2ffb5413a4" />
 
 
 ## Logic:
