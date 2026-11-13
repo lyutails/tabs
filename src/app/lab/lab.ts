@@ -113,7 +113,7 @@ export class Lab {
   private bubbleThreeFloatSpeed = 1.2;
   private bubbleThreeFloatAmplitude = 0.32;
   chemistryModelGLB =
-    '/three/chemistry12.glb';
+    '/three/chemistry24.glb';
   bubbleOneModelGLB =
     '/three/bubble_1_1.glb';
   bubbleTwoModelGLB =
@@ -625,6 +625,12 @@ export class Lab {
       model.traverse((object: THREE.Object3D) => {
         if (!(object instanceof THREE.Mesh)) return;
 
+        // object.material = new THREE.MeshStandardMaterial({
+        //   wireframe: false,
+        // });
+
+        object.geometry.computeVertexNormals();
+
         const materials = Array.isArray(object.material)
           ? object.material
           : [object.material];
@@ -689,7 +695,6 @@ export class Lab {
 
       for (const material of materials) {
         if (enabled) {
-          // Запоминаем исходные параметры только один раз.
           if (!this.originalMaterials.has(material)) {
             const original: {
               color?: THREE.Color;
@@ -924,7 +929,6 @@ export class Lab {
     for (const [model, data] of this.productLabels) {
       model.updateWorldMatrix(true, true);
 
-      // Находим bounding box в локальных координатах модели
       const localBox = new THREE.Box3();
 
       model.traverse((child) => {
@@ -935,10 +939,10 @@ export class Lab {
         }
 
         if (!child.geometry.boundingBox) return;
+        
 
         const meshBox = child.geometry.boundingBox.clone();
 
-        // Переводим координаты меша в систему координат модели
         const relativeMatrix = new THREE.Matrix4()
           .copy(model.matrixWorld)
           .invert()
@@ -953,17 +957,14 @@ export class Lab {
 
       const size = localBox.getSize(new THREE.Vector3());
 
-      // Фиксированная точка в локальных координатах модели
       const anchor = new THREE.Vector3(
         localBox.min.x + size.x * data.anchorX,
         localBox.min.y + size.y * data.anchorY,
         localBox.min.z + size.z * data.anchorZ
       );
 
-      // Переводим якорь в мировые координаты
       model.localToWorld(anchor);
 
-      // Проецируем на экран
       anchor.project(this.camera);
 
       if (
