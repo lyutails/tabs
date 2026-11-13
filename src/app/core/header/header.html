@@ -24,6 +24,7 @@
   <div class="header_buttons" [class.openBurger]="isBurgerOpen()">
     <button
       class="header_button store"
+      matTooltip="3D Store"
       [style.background]="'transparent'"
       (click)="navigate('3dstore')"
       aria-label="3d interactive store"
@@ -32,6 +33,7 @@
     </button>
     <button
       class="header_button lab"
+      matTooltip="Lab"
       [style.background]="'transparent'"
       (click)="navigate('lab')"
       aria-label="ingredients lab"
