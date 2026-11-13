@@ -182,3 +182,40 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .scene-container {
+        width: 100%;
+    }
+
+    .chemistry-ingredients {
+        width: 100%;
+        height: auto;
+    }
+
+    .chemistry-ingredients__item {
+        &:nth-child(1) {
+            transform: translate(-50%, -50%) translate(-75px, 0);
+        }
+
+        &:nth-child(2) {
+            transform: translate(-50%, -50%) translate(0, 0);
+        }
+
+        &:nth-child(3) {
+            transform: translate(-50%, -50%) translate(75px, 0);
+        }
+
+        &:nth-child(4) {
+            transform: translate(-50%, -50%) translate(-75px, 75px);
+        }
+
+        &:nth-child(5) {
+            transform: translate(-50%, -50%) translate(0, 75px);
+        }
+
+        &:nth-child(6) {
+            transform: translate(-50%, -50%) translate(75px, 75px);
+        }
+    }
+}

@@ -1014,9 +1014,18 @@ export class Lab {
 
     if (!container) return;
 
+    const isMobile = window.innerWidth <= 600;
+
     container.style.left = `${position.x}px`;
-    container.style.top = `${position.y}px`;
+
+    if (isMobile) {
+      container.style.top = `${position.y + 200}px`;
+    } else {
+      container.style.top = `${position.y}px`;
+    }
+
     container.style.transform = 'translate(-50%, -50%)';
+
 
     if (!this.chemistryIngredientsPositioned()) {
       this.chemistryIngredientsPositioned.set(true);
